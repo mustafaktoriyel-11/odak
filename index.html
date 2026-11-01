@@ -738,6 +738,20 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     arayuz();
     window.MF_KOC=function(k){var kod='';try{kod=localStorage.getItem('mf-koc-kod')||'';}catch(e){}if(!kod)return;k.kod=kod;var q=kuyruk();q.push(k);kaydet(q.slice(-200));gonder();};
     window.addEventListener('online',gonder);gonder();
+    // anonim kullanım sayacı (günde 1 kez)
+    function sayac(mod){
+      var cid='';try{cid=localStorage.getItem('mf-cihaz')||'';if(!cid){cid='C-'+Math.random().toString(36).slice(2,8).toUpperCase();localStorage.setItem('mf-cihaz',cid);}}catch(e){return;}
+      var d=new Date(),gun=d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate(),anahtar=gun+'|'+mod;
+      try{if(localStorage.getItem('mf-sayac')===anahtar)return;}catch(e){}
+      if(!navigator.onLine)return;
+      var plt=ios?'iPhone':(/android/i.test(navigator.userAgent)?'Android':'Bilgisayar');
+      fetch(KOC_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify({tip:'sayac',cihaz:cid,platform:plt,mod:mod,kod:kayitliKod()})})
+        .then(function(){try{localStorage.setItem('mf-sayac',anahtar);}catch(e){}}).catch(function(){});
+    }
+    var acMod=kurulu?'Kurulu':(uyg?'Instagram/TikTok':'Taray\u0131c\u0131');
+    sayac(acMod);
+    window.addEventListener('appinstalled',function(){sayac('Kurulu');});
+    window.addEventListener('online',function(){sayac(acMod);});
   }
 })();
 </script>
