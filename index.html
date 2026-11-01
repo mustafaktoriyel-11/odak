@@ -326,10 +326,10 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     $('pm-hafta').innerHTML=hh.join('');$('pm-hafta').classList.toggle('yedi',yedi);
   }
   // --- sesler ---
-  var ses=null,sesUrl={};
+  var sesUrl={};
   function gurultu(tur){
     if(sesUrl[tur])return sesUrl[tur];
-    var sr=22050,n=sr*12,buf=new ArrayBuffer(44+n*2),v=new DataView(buf);
+    var sr=16000,n=sr*30,buf=new ArrayBuffer(44+n*2),v=new DataView(buf);
     function str(o,s){for(var i=0;i<s.length;i++)v.setUint8(o+i,s.charCodeAt(i));}
     str(0,'RIFF');v.setUint32(4,36+n*2,true);str(8,'WAVE');str(12,'fmt ');v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);
     v.setUint32(24,sr,true);v.setUint32(28,sr*2,true);v.setUint16(32,2,true);v.setUint16(34,16,true);str(36,'data');v.setUint32(40,n*2,true);
@@ -351,11 +351,24 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     return sesUrl[tur];
   }
   function sesGuncelle(){
-    var tur=$('pm-ses').value,sev=+$('pm-seviye').value/100;
-    if(!tur||!d.calisiyor){if(ses){ses.pause();}return;}
-    if(!ses){ses=new Audio();ses.loop=true;}
-    var u=gurultu(tur);if(ses.getAttribute('data-tur')!==tur){ses.src=u;ses.setAttribute('data-tur',tur);}
-    ses.volume=sev;var p=ses.play();if(p&&p.catch)p.catch(function(){});
+    var tur=$('pm-ses').value,sev=+$('pm-seviye').value/100;hedefSes=sev;
+    if(!tur||!d.calisiyor){sesDur();return;}
+    if(!sesA){sesA=new Audio();sesB=new Audio();[sesA,sesB].forEach(function(a){a.preload='auto';a.addEventListener('timeupdate',gecis);});}
+    if(sesTur!==tur){sesDur();var u=gurultu(tur);sesA.src=u;sesB.src=u;sesTur=tur;aktifSes=sesA;}
+    if(!aktifSes)aktifSes=sesA;
+    if(!fadeT)aktifSes.volume=sev;
+    var p=aktifSes.play();if(p&&p.catch)p.catch(function(){});
+  }
+  var sesA=null,sesB=null,aktifSes=null,sesTur='',hedefSes=0.4,fadeT=null;
+  function sesDur(){clearInterval(fadeT);fadeT=null;[sesA,sesB].forEach(function(a){if(a){a.pause();a.__devir=0;}});}
+  function gecis(){
+    var a=this;if(a!==aktifSes||a.__devir||!a.duration||a.currentTime<a.duration-2.5)return;
+    a.__devir=1;var b=a===sesA?sesB:sesA;
+    b.__devir=0;b.currentTime=0;b.volume=0;var p=b.play();if(p&&p.catch)p.catch(function(){});
+    aktifSes=b;var adim=0;clearInterval(fadeT);
+    fadeT=setInterval(function(){adim++;var o=Math.min(1,adim/20);
+      b.volume=hedefSes*o;a.volume=hedefSes*(1-o);
+      if(o>=1){clearInterval(fadeT);fadeT=null;a.pause();a.__devir=0;}},100);
   }
   function bildir(odakti){
     try{if(document.hidden&&'Notification' in window&&Notification.permission==='granted'&&navigator.serviceWorker){
@@ -421,7 +434,7 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
   var mb=kok.querySelectorAll('.pm-mod button');for(var i=0;i<mb.length;i++)mb[i].addEventListener('click',function(){modSec(this.getAttribute('data-m'));});
   ['pm-odak','pm-mola'].forEach(function(id){$(id).addEventListener('change',function(){ayarKaydet();if(!d.calisiyor){d.toplam=d.kalan=sure(d.mod);kaydet();ciz();}});});
   $('pm-ses').addEventListener('change',function(){ayarKaydet();sesGuncelle();});
-  $('pm-seviye').addEventListener('input',function(){ayarKaydet();if(ses)ses.volume=+this.value/100;});
+  $('pm-seviye').addEventListener('input',function(){ayarKaydet();hedefSes=+this.value/100;if(aktifSes&&!fadeT)aktifSes.volume=hedefSes;});
   $('pm-ders').addEventListener('change',function(){ayarKaydet();if(!d.calisiyor||d.mod!=='odak'){d.ders='';}ciz();});
   var sk=kok.querySelectorAll('.pm-sekme button');for(var s=0;s<sk.length;s++)sk[s].addEventListener('click',function(){ARALIK=this.getAttribute('data-a');for(var z=0;z<sk.length;z++)sk[z].classList.toggle('aktif',sk[z]===this);istatistik();});
   $('pm-temizle').addEventListener('click',function(){if(confirm(T.silSor)){yaz(KAYIT_K,{});istatistik();}});
