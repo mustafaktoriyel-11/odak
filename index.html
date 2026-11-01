@@ -38,6 +38,11 @@ details.kart summary{font-weight:700;color:#1E3BD6;cursor:pointer;font-size:16px
 .pm-koc{margin:16px 0 0}
 .pm-koc label{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:600;color:#555}
 .pm-koc input{border:1px solid #C9D2F5;border-radius:8px;padding:10px;font-size:16px;text-transform:uppercase;background:#fff;color:#222}
+.koc-alt{display:flex;align-items:center;gap:10px;margin:8px 0 0;flex-wrap:wrap}
+.koc-alt button{border:1px solid #B8C5FF;background:#fff;color:#1E3BD6;border-radius:999px;padding:7px 14px;font-weight:700;font-size:13px;cursor:pointer}
+#pm-koc-son{font-size:13px;color:#7A8099}
+#pm-koc-son.ok{color:#1FA463}#pm-koc-son.hata{color:#C0392B}
+html.mf-gece .koc-alt button{background:#232B52;border-color:#3A4BA0;color:#B7C5FF}
 .imza{text-align:center;font-size:12px;color:#8A90A8;margin:8px 0 0}
 .imza a{color:#8A90A8}
 html.mf-gece,html.mf-gece body{background:#0E1330;color:#D3D9EE}
@@ -127,6 +132,31 @@ html.mf-gece .pm .pm-kutu{background:none}
 @keyframes alarm-t{from{transform:scale(1)}to{transform:scale(1.03)}}
 html.mf-gece #alarm div{background:#1A2142}
 html.mf-gece #alarm p{color:#D3D9EE}
+
+.pm-sik{flex-direction:row!important;align-items:flex-start;gap:10px!important;background:#FFF3E6;border:1px solid #FFD2A6;border-radius:10px;padding:10px 12px;cursor:pointer}
+.pm-sik input{width:20px;height:20px;margin:2px 0 0;flex:none;accent-color:#FF8A1F}
+.pm-sik span{display:block;font-size:14px;color:#C75F07}
+.pm-sik small{display:block;font-weight:400;font-size:12px;color:#7A8099;margin-top:2px}
+.pm-rehber{background:#F4F6FF;border:1px solid #DCE2FF;border-radius:14px;padding:14px 16px;margin:0 0 18px}
+.pm-rehber summary{font-weight:700;color:#1E3BD6;cursor:pointer;font-size:16px}
+.pm-rehber b{display:block;margin:12px 0 2px;color:#1E3BD6}
+.pm-rehber ul{margin:4px 0;padding-left:20px}
+.pm-rehber li{margin:6px 0;font-size:14px}
+.pm-rehber li b{display:inline;margin:0;color:inherit}
+#pm-curu{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;background:rgba(10,16,48,.75);padding:20px}
+#pm-curu.acik{display:flex}
+#pm-curu div{background:#FAFBFF;border-radius:20px;padding:26px 22px;text-align:center;max-width:340px;width:100%}
+#pm-curu .ikon{font-size:54px;line-height:1;margin-bottom:8px;filter:grayscale(.6) brightness(.8)}
+#pm-curu b{display:block;font-size:22px;color:#C0392B;margin-bottom:6px}
+#pm-curu p{margin:0 0 18px;color:#555;font-size:15px;line-height:1.5}
+#pm-curu button{border:0;border-radius:999px;background:#1E3BD6;color:#fff;font-size:17px;font-weight:800;padding:13px 34px;cursor:pointer}
+html.mf-gece .pm-sik{background:#3A2A1C;border-color:#5C3F22}
+html.mf-gece .pm-sik span{color:#FFB066}
+html.mf-gece .pm-rehber{background:#1A2142;border-color:#2F3970}
+html.mf-gece .pm-rehber summary,html.mf-gece .pm-rehber b{color:#9FB2FF}
+html.mf-gece .pm-rehber li b{color:inherit}
+html.mf-gece #pm-curu div{background:#1A2142}
+html.mf-gece #pm-curu p{color:#D3D9EE}
 </style>
 <script>try{if(localStorage.getItem('mf-tema')==='gece')document.documentElement.classList.add('mf-gece');}catch(e){}</script>
 </head>
@@ -177,6 +207,8 @@ html.mf-gece #alarm p{color:#D3D9EE}
 <select id="pm-ses"><option value="">Kapalı</option><option value="yagmur">Yağmur</option><option value="kahve">Kahverengi gürültü</option><option value="beyaz">Beyaz gürültü</option></select></label>
 <label>Ses seviyesi
 <input type="range" id="pm-seviye" min="0" max="100" value="40"></label>
+<label class="tam pm-sik"><input type="checkbox" id="pm-siki"><span><b>🔒 Sıkı mod</b><small>Odak süresince ekran açık kalır. Uygulamadan 10 saniyeden uzun çıkarsan 🍅 çürür ve tur sayılmaz.</small></span></label>
+
 </div>
 <p class="pm-kucuk">🔒 Telefonun kilitlense de sayaç doğru saymaya devam eder. Arka plan sesi açıkken süre bitiminde zil de zamanında çalar. Ses kapalıyken kilit ekranında zil gecikebilir.</p>
 </div>
@@ -184,6 +216,21 @@ html.mf-gece #alarm p{color:#D3D9EE}
 
 </section>
 
+<details class="pm-rehber"><summary>📵 Telefonu odak moduna al</summary>
+<p style="font-size:14px;margin:10px 0 0">Sıkı mod uygulamadan çıkmanı caydırır ama engelleyemez. Telefonunun kendi özellikleriyle dikkat dağıtan uygulamaları ve bildirimleri de susturabilirsin:</p>
+<b>Android (Samsung)</b>
+<ul>
+<li><b>Uygulama sabitleme:</b> Ayarlar → Güvenlik ve gizlilik → Diğer güvenlik ayarları → <i>Uygulamaları sabitle</i>'yi aç. Sonra Son uygulamalar ekranında bu uygulamanın simgesine dokun → <i>Bu uygulamayı sabitle</i>. Çıkmak için Geri ve Son uygulamalar tuşlarına birlikte basılı tut.</li>
+<li><b>Odak modu:</b> Ayarlar → Dijital Denge ve ebeveyn denetimleri → <i>Odak modu</i> (bazı modellerde <i>Modlar</i>) → çalışırken kullanmak istemediğin uygulamaları seç.</li>
+<li><b>Rahatsız etmeyin:</b> Bildirim panelini aşağı çek, tek dokunuşla aç. Çalışırken bildirim gelmez.</li>
+</ul>
+<b>iPhone</b>
+<ul>
+<li><b>Odaklanma:</b> Ayarlar → Odaklanma → <i>+</i> → Çalışma. İzin verilen kişileri ve uygulamaları seç.</li>
+<li><b>Rehberli Erişim:</b> Ayarlar → Erişilebilirlik → <i>Rehberli Erişim</i>'i aç. Bu sayfadayken yan tuşa üç kez basarak telefonu sadece bu ekrana kilitle.</li>
+</ul>
+<p class="pm-kucuk">Menü adları telefon modeline göre biraz farklı olabilir.</p>
+</details>
 <h3 style="margin:22px 4px 10px">📊 Çalışma kayıtların</h3>
 <section class="kart">
 
@@ -199,6 +246,7 @@ html.mf-gece #alarm p{color:#D3D9EE}
 <div class="pm-hafta" id="pm-hafta"></div></div>
 <div class="pm-koc" id="pm-koc" hidden>
 <label>Koç kodun (isteğe bağlı)<input type="text" id="pm-kod" placeholder="ör. MF-AHMET" autocomplete="off" autocapitalize="characters"></label>
+<div class="koc-alt"><button type="button" id="pm-koc-test">Bağlantıyı test et</button><span id="pm-koc-son"></span></div>
 <p class="pm-kucuk" id="pm-koc-durum">Kodunu girersen çalışma kayıtların (ders, süre, tarih) hocanla paylaşılır. Kod girmezsen hiçbir veri bu telefondan çıkmaz.</p>
 </div>
 <a class="pm-wa" id="pm-wa" href="#" target="_blank" rel="noopener">📲 Haftalık raporumu hocama gönder</a>
@@ -252,6 +300,7 @@ html.mf-gece #alarm p{color:#D3D9EE}
 </details>
 
 <div id="alarm" role="alertdialog"><div><b id="alarm-b">Süre bitti! 🍅</b><p id="alarm-p">Harika iş.</p><button type="button" id="alarm-tamam">Tamam</button></div></div>
+<div id="pm-curu" role="alertdialog"><div><div class="ikon">🍅</div><b id="pm-curu-b"></b><p id="pm-curu-p"></p><button type="button" id="pm-curu-tamam">Yeniden başla</button></div></div>
 <p class="imza">© MustaFaktoriyel · <a href="https://mustafaktoriyel.blogspot.com/p/gizlilik-politikasi.html" target="_blank" rel="noopener">Gizlilik</a></p>
 </main>
 
@@ -263,14 +312,14 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
 
 (function(){
   var kok=document.getElementById('pm');if(!kok)return;
-  var T={"odak": "Odaklanma zamanı", "odakCalis": "Odaklan", "kisa": "Kısa mola", "uzun": "Uzun mola", "duraklat": "Duraklat", "baslat": "Başlat", "devam": "Devam et", "bos": "Henüz kayıt yok. Sayacı başlattığında burada görünecek.", "gunler": ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"], "silSor": "Tüm çalışma kayıtları silinsin mi?", "ort": "{n} gün çalıştın, günlük ortalama {d} dk", "bugunK": "Bugün", "son7": "Son 7 gün", "son30": "Son 30 gün", "aylar": ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"], "rBaslik": "📊 Haftalık çalışma raporum", "rToplam": "Toplam", "rGun": "gün çalıştım", "rBos": "Bu hafta sayacı henüz kullanmadım, bir plan yapabilir miyiz?", "bitOdak": "Odak süresi bitti! 🍅", "bitOdakM": "Harika iş. Şimdi kısa bir mola zamanı.", "bitMola": "Mola bitti", "bitMolaM": "Hazırsan yeni bir odak turuna başla."};
+  var T={"odak": "Odaklanma zamanı", "odakCalis": "Odaklan", "kisa": "Kısa mola", "uzun": "Uzun mola", "duraklat": "Duraklat", "baslat": "Başlat", "devam": "Devam et", "bos": "Henüz kayıt yok. Sayacı başlattığında burada görünecek.", "gunler": ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"], "silSor": "Tüm çalışma kayıtları silinsin mi?", "ort": "{n} gün çalıştın, günlük ortalama {d} dk", "bugunK": "Bugün", "son7": "Son 7 gün", "son30": "Son 30 gün", "aylar": ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"], "rBaslik": "📊 Haftalık çalışma raporum", "rToplam": "Toplam", "rGun": "gün çalıştım", "curuB":"Odaktan çıktın! 🍅 çürüdü", "curuP":"Sıkı moddayken uygulamadan çıktığın için bu tur sayılmadı. {dk} dakikalık çalışman yine de kaydedildi. Hadi yeniden başla!", "rCikis":"Sıkı modda odaktan çıkış","rBos": "Bu hafta sayacı henüz kullanmadım, bir plan yapabilir miyiz?", "bitOdak": "Odak süresi bitti! 🍅", "bitOdakM": "Harika iş. Şimdi kısa bir mola zamanı.", "bitMola": "Mola bitti", "bitMolaM": "Hazırsan yeni bir odak turuna başla."};
   var $=function(id){return document.getElementById(id);};
   var DURUM_K='pm-durum',KAYIT_K='pm-kayit',AYAR_K='pm-ayar';
   function oku(k,v){try{var x=localStorage.getItem(k);return x?JSON.parse(x):v;}catch(e){return v;}}
   function yaz(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
   var ayar=oku(AYAR_K,{odak:'25',mola:'5',ses:'',seviye:40,ders:''});
   $('pm-odak').value=ayar.odak;$('pm-mola').value=ayar.mola;$('pm-ses').value=ayar.ses;$('pm-seviye').value=ayar.seviye;if(ayar.ders)$('pm-ders').value=ayar.ders;
-  function ayarKaydet(){ayar={odak:$('pm-odak').value,mola:$('pm-mola').value,ses:$('pm-ses').value,seviye:+$('pm-seviye').value,ders:$('pm-ders').value};yaz(AYAR_K,ayar);}
+  function ayarKaydet(){ayar={odak:$('pm-odak').value,mola:$('pm-mola').value,ses:$('pm-ses').value,seviye:+$('pm-seviye').value,ders:$('pm-ders').value,siki:$('pm-siki').checked};yaz(AYAR_K,ayar);}
   // durum: mod, toplam(ms), bitis(ms|null), kalan(ms), calisiyor, tur, ders, basla
   var d=oku(DURUM_K,null);
   function sure(m){var o=+$('pm-odak').value,mo=+$('pm-mola').value;return (m==='odak'?o:m==='kisa'?mo:mo*3)*60000;}
@@ -442,8 +491,8 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
 
   function sureYaz(dk){dk=Math.round(dk);var h=Math.floor(dk/60),m=dk%60;return h?(h+' sa'+(m?' '+m+' dk':'')):(m+' dk');}
   function rapor(){
-    var k=oku(KAYIT_K,{}),top=0,p=0,gunSay=0,dd={};
-    for(var i=6;i>=0;i--){var x=k[gun(Date.now()-i*864e5)];if(!x)continue;top+=x.dk;p+=x.p;if(x.dk>0)gunSay++;for(var y in x.d)dd[y]=(dd[y]||0)+x.d[y];}
+    var k=oku(KAYIT_K,{}),top=0,p=0,gunSay=0,dd={},cik=0;
+    for(var i=6;i>=0;i--){var x=k[gun(Date.now()-i*864e5)];if(!x)continue;top+=x.dk;p+=x.p;if(x.dk>0)gunSay++;cik+=x.c||0;for(var y in x.d)dd[y]=(dd[y]||0)+x.d[y];}
     var bas=new Date(Date.now()-6*864e5),son=new Date(),ay=T.aylar;
     var m=T.rBaslik+' ('+bas.getDate()+' '+ay[bas.getMonth()]+' \u2013 '+son.getDate()+' '+ay[son.getMonth()]+')\n';
     if(!top){m+=T.rBos;}
@@ -451,10 +500,41 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
       m+=T.rToplam+': '+sureYaz(top)+' \u00b7 '+p+' \uD83C\uDF45 \u00b7 '+gunSay+' '+T.rGun+'\n';
       var l=[];for(var z in dd)l.push([z,dd[z]]);l.sort(function(a,b){return b[1]-a[1];});
       for(var n=0;n<l.length;n++)m+='\u2022 '+l[n][0]+': '+sureYaz(l[n][1])+'\n';
+      if(cik)m+='\u26A0\uFE0F '+T.rCikis+': '+cik+'\n';
     }
     return m;
   }
   $('pm-wa').addEventListener('click',function(){this.href='https://wa.me/905435819240?text='+encodeURIComponent(rapor());});
+
+  var wl=null,wlBekle=false;
+  function sikiMi(){var c=$('pm-siki');return !!(c&&c.checked);}
+  function ekranAcik(){
+    var gerek=sikiMi()&&d.calisiyor&&d.mod==='odak'&&!document.hidden;
+    if(gerek&&!wl&&!wlBekle&&navigator.wakeLock){wlBekle=true;navigator.wakeLock.request('screen').then(function(w){wl=w;wlBekle=false;w.addEventListener('release',function(){wl=null;});}).catch(function(){wlBekle=false;});}
+    else if(!gerek&&wl){try{wl.release();}catch(e){}wl=null;}
+  }
+  function curut(cikis){
+    var basla=d.bitis-d.toplam,dk=Math.max(0,(cikis-basla)/60000),ders=d.ders||$('pm-ders').value;
+    kayitEkle(dk,ders,false);
+    var k=oku(KAYIT_K,{}),g=gun(Date.now());if(!k[g])k[g]={dk:0,p:0,d:{}};k[g].c=(k[g].c||0)+1;yaz(KAYIT_K,k);
+    d.kalan=d.toplam;d.calisiyor=false;d.bitis=null;d.cikis=0;d.ders='';kaydet();sesGuncelle();ciz();
+    $('pm-curu-b').textContent=T.curuB;$('pm-curu-p').textContent=T.curuP.replace('{dk}',Math.round(dk));
+    $('pm-curu').classList.add('acik');
+    if(navigator.vibrate)navigator.vibrate([200,100,200]);
+  }
+  function cikisKontrol(){
+    if(!d.cikis)return;var c=d.cikis;d.cikis=0;kaydet();
+    if(d.calisiyor&&d.mod==='odak'&&Date.now()-c>10000&&d.bitis>c+10000)curut(c);
+  }
+  document.addEventListener('visibilitychange',function(){
+    if(document.hidden){if(sikiMi()&&d.calisiyor&&d.mod==='odak'){d.cikis=Date.now();kaydet();}}
+    else{cikisKontrol();ekranAcik();}
+  });
+  $('pm-curu-tamam').addEventListener('click',function(){$('pm-curu').classList.remove('acik');});
+  $('pm-siki').checked=!!ayar.siki;
+  $('pm-siki').addEventListener('change',function(){ayarKaydet();ekranAcik();});
+  setInterval(ekranAcik,2000);
+  cikisKontrol();
   function tik(){if(d.calisiyor&&kalanMs()<=0)bitti();else ciz();}
   setInterval(tik,1000);
   document.addEventListener('visibilitychange',tik);
@@ -484,16 +564,29 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
   if(KOC_URL){
     var kk=document.getElementById('pm-koc'),ki=document.getElementById('pm-kod');kk.hidden=false;
     try{ki.value=localStorage.getItem('mf-koc-kod')||'';}catch(e){}
+    ki.addEventListener('blur',function(){var v=ki.value.trim().toUpperCase();try{localStorage.setItem('mf-koc-kod',v);}catch(e){}});
     ki.addEventListener('change',function(){var v=ki.value.trim().toUpperCase();ki.value=v;try{localStorage.setItem('mf-koc-kod',v);}catch(e){}gonder();});
     function kuyruk(){try{return JSON.parse(localStorage.getItem('mf-kuyruk')||'[]');}catch(e){return [];}}
     function kaydet(q){try{localStorage.setItem('mf-kuyruk',JSON.stringify(q));}catch(e){}}
+    function durum(t,c){var e=document.getElementById('pm-koc-son');e.textContent=t;e.className=c||'';try{localStorage.setItem('mf-koc-son',JSON.stringify([t,c||'']));}catch(x){}}
+    try{var sd=JSON.parse(localStorage.getItem('mf-koc-son')||'null');if(sd)durum(sd[0],sd[1]);}catch(x){}
+    function saat(){var d=new Date();return (d.getHours()<10?'0':'')+d.getHours()+':'+(d.getMinutes()<10?'0':'')+d.getMinutes();}
     function gonder(){
-      var kod='';try{kod=localStorage.getItem('mf-koc-kod')||'';}catch(e){}
-      var q=kuyruk();if(!kod||!q.length||!navigator.onLine)return;
-      fetch(KOC_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify({kod:kod,kayitlar:q})})
-        .then(function(){kaydet([]);}).catch(function(){});
+      var q=kuyruk();if(!q.length)return;
+      if(!navigator.onLine){durum('\u23F3 '+q.length+' kay\u0131t internet bekliyor','');return;}
+      var gruplar={};q.forEach(function(r){var k=r.kod||'';if(!k)return;(gruplar[k]=gruplar[k]||[]).push({tarih:r.tarih,ders:r.ders,dk:r.dk,tam:r.tam});});
+      var isler=Object.keys(gruplar).map(function(k){
+        return fetch(KOC_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify({kod:k,kayitlar:gruplar[k]})});
+      });
+      Promise.all(isler).then(function(){kaydet([]);durum('\u2713 Son g\u00F6nderim '+saat(),'ok');}).catch(function(){durum('\u2717 G\u00F6nderilemedi, sonra tekrar denenecek','hata');});
     }
-    window.MF_KOC=function(k){var kod='';try{kod=localStorage.getItem('mf-koc-kod')||'';}catch(e){}if(!kod)return;var q=kuyruk();q.push(k);kaydet(q.slice(-200));gonder();};
+    document.getElementById('pm-koc-test').addEventListener('click',function(){
+      var kod='';try{kod=localStorage.getItem('mf-koc-kod')||'';}catch(e){}
+      var v=ki.value.trim().toUpperCase();if(v&&v!==kod){kod=v;try{localStorage.setItem('mf-koc-kod',v);}catch(e){}}
+      if(!kod){durum('\u00D6nce koç kodunu yaz','hata');return;}
+      var q=kuyruk();q.push({tarih:new Date().toISOString(),ders:'Ba\u011Flant\u0131 testi',dk:1,tam:false,kod:kod});kaydet(q);durum('G\u00F6nderiliyor\u2026','');gonder();
+    });
+    window.MF_KOC=function(k){var kod='';try{kod=localStorage.getItem('mf-koc-kod')||'';}catch(e){}if(!kod)return;k.kod=kod;var q=kuyruk();q.push(k);kaydet(q.slice(-200));gonder();};
     window.addEventListener('online',gonder);gonder();
   }
 })();
