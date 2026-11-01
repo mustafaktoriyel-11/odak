@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MustaFaktoriyel Odak</title>
+<meta name="description" content="Pomodoro odak sayacı, arka plan sesleri ve ders ders çalışma kayıtları.">
+<meta name="theme-color" content="#1E3BD6">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="MF Odak">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:Roboto,-apple-system,"Segoe UI",Arial,sans-serif;background:#ECEFF7;color:#222;-webkit-tap-highlight-color:transparent}
+.ust{background:linear-gradient(135deg,#2346F5,#0F1E8C);color:#fff;padding:calc(14px + env(safe-area-inset-top)) 16px 64px;position:relative}
+.ust-ic{max-width:640px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.ust img{width:44px;height:44px;border-radius:22%;box-shadow:0 4px 10px rgba(0,0,0,.25)}
+.ust h1{margin:0;font-size:20px;line-height:1.2}
+.ust h1 small{display:block;font-size:12px;font-weight:400;opacity:.8}
+.ust .bosluk{flex:1}
+.ikon-btn{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.15);color:#fff;font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.ana{max-width:640px;margin:-48px auto 0;padding:0 12px calc(24px + env(safe-area-inset-bottom));position:relative}
+.kart{background:#FAFBFF;border-radius:16px;box-shadow:0 2px 10px rgba(15,30,140,.08);padding:16px;margin:0 0 16px}
+.yukle{display:none;align-items:center;gap:12px;background:#1E3BD6;color:#fff;border-radius:14px;padding:12px 14px;margin:0 0 16px}
+.yukle.goster{display:flex}
+.yukle p{margin:0;flex:1;font-size:14px;line-height:1.4}
+.yukle button{border:0;border-radius:999px;background:#FF8A1F;color:#fff;font-weight:700;padding:9px 16px;font-size:14px;cursor:pointer}
+.yukle .kapat{background:none;padding:4px 6px;font-size:18px;opacity:.8}
+.alt-link{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 16px}
+.alt-link a{display:block;text-decoration:none;background:#FAFBFF;border:1px solid #DCE2FF;border-radius:12px;padding:12px;color:#1E3BD6;font-weight:700;font-size:14px}
+.alt-link a span{display:block;font-weight:400;font-size:12px;color:#7A8099;margin-top:2px}
+details.kart summary{font-weight:700;color:#1E3BD6;cursor:pointer;font-size:16px}
+.pm-koc{margin:16px 0 0}
+.pm-koc label{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:600;color:#555}
+.pm-koc input{border:1px solid #C9D2F5;border-radius:8px;padding:10px;font-size:16px;text-transform:uppercase;background:#fff;color:#222}
+.imza{text-align:center;font-size:12px;color:#8A90A8;margin:8px 0 0}
+.imza a{color:#8A90A8}
+html.mf-gece body{background:#0E1330;color:#D3D9EE}
+html.mf-gece .kart,html.mf-gece .alt-link a{background:#1A2142;border-color:#2F3970;box-shadow:none}
+html.mf-gece .alt-link a{color:#B7C5FF}
+html.mf-gece details.kart summary{color:#9FB2FF}
+html.mf-gece .pm-koc input{background:#232B52;border-color:#3A4BA0;color:#fff}
+html.mf-gece .pm-koc label{color:#AEB6D3}
+
+.pm{font-family:inherit;color:#222;line-height:1.65}
+.pm h3{color:#1E3BD6;font-size:20px;margin:26px 0 8px}
+.pm ul,.pm ol{padding-left:20px;margin:6px 0}
+.pm li{margin:4px 0}
+.pm-kutu{background:#F4F6FF;border:1px solid #DCE2FF;border-radius:14px;padding:16px;margin:0 0 18px}
+.pm-mod{display:flex;gap:6px;margin:0 0 14px}
+.pm-mod button{flex:1;border:0;border-radius:999px;padding:9px 4px;font-weight:700;font-size:14px;background:#E3E8FF;color:#1E3BD6;cursor:pointer}
+.pm-mod button.aktif{background:#1E3BD6;color:#fff}
+.pm-mod button.aktif[data-m="kisa"],.pm-mod button.aktif[data-m="uzun"]{background:#1FA463}
+.pm-saat{position:relative;width:230px;height:230px;margin:6px auto 10px}
+.pm-saat svg{width:100%;height:100%;transform:rotate(-90deg)}
+.pm-saat circle{fill:none;stroke-width:12}
+.pm-saat .iz{stroke:#DCE2FF}
+.pm-saat .dolu{stroke:#FF8A1F;stroke-linecap:round;transition:stroke-dashoffset .5s linear}
+.pm-saat.mola .dolu{stroke:#1FA463}
+.pm-saat .pm-yazi{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.pm-saat .pm-sure{font-size:48px;font-weight:800;font-variant-numeric:tabular-nums;color:#1E3BD6;line-height:1}
+.pm-saat .pm-etiket{font-size:13px;color:#7A8099;margin-top:6px}
+.pm-domates{text-align:center;font-size:20px;letter-spacing:4px;margin:0 0 12px;min-height:26px}
+.pm-dugmeler{display:flex;gap:10px;justify-content:center;margin:0 0 14px}
+.pm-dugmeler button{border:0;border-radius:999px;padding:12px 26px;font-size:16px;font-weight:700;cursor:pointer}
+.pm-basla{background:#FF8A1F;color:#fff;min-width:140px}
+.pm-sifir{background:#E3E8FF;color:#1E3BD6}
+.pm-ayar{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pm-ayar label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:#555}
+.pm-ayar select,.pm-ayar input[type=range]{width:100%;box-sizing:border-box}
+.pm-ayar select{border:1px solid #C9D2F5;border-radius:8px;padding:8px;font-size:15px;background:#fff;color:#222}
+.pm-ayar .tam{grid-column:1/-1}
+.pm-kucuk{font-size:12px;color:#8A90A8;margin:10px 0 0}
+.pm-ozet{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 14px}
+.pm-ozet div{background:#fff;border:1px solid #E3E7FA;border-radius:10px;padding:10px 6px;text-align:center}
+.pm-ozet b{display:block;font-size:22px;color:#1E3BD6}
+.pm-ozet span{font-size:12px;color:#7A8099}
+.pm-sekme{display:flex;gap:6px;margin:0 0 10px}
+.pm-sekme button{border:0;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;background:#E3E8FF;color:#1E3BD6;cursor:pointer}
+.pm-sekme button.aktif{background:#1E3BD6;color:#fff}
+.pm-ders{display:flex;flex-direction:column;gap:7px}
+.pm-ders .s{display:grid;grid-template-columns:110px 1fr 52px;gap:8px;align-items:center;font-size:13px}
+.pm-ders .bar{height:10px;border-radius:999px;background:#E3E7FA;overflow:hidden}
+.pm-ders .bar i{display:block;height:100%;background:linear-gradient(90deg,#FF8A1F,#FFB066);border-radius:999px}
+.pm-ders .s span:last-child{text-align:right;color:#7A8099}
+.pm-hafta{display:flex;align-items:flex-end;gap:2px;height:120px;margin:6px 0 4px}
+.pm-hafta div{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-size:10px;color:#7A8099}
+.pm-hafta div em{font-style:normal;height:14px;line-height:14px;white-space:nowrap;overflow:visible;font-size:10px;word-break:normal}
+.pm-hafta div.bugun em{align-self:flex-end}
+.pm-hafta.yedi{gap:8px}
+.pm-hafta.yedi i{max-width:34px}
+.pm-hafta{margin-bottom:14px!important;overflow:visible}
+.pm-hafta i{display:block;width:100%;max-width:16px;background:#1E3BD6;border-radius:6px 6px 2px 2px;min-height:2px}
+.pm-hafta div.bugun i{background:#FF8A1F}
+.pm-temizle{background:none;border:0;color:#8A90A8;text-decoration:underline;cursor:pointer;font-size:12px;padding:0;margin-top:8px}
+.pm-wa{display:block;text-align:center;margin:18px 0 0;background:#25D366;color:#fff!important;text-decoration:none!important;border-radius:999px;padding:12px;font-weight:700;font-size:15px}
+.pm-bos{font-size:13px;color:#8A90A8}
+html.mf-gece .pm{color:#D3D9EE}
+html.mf-gece .pm h3{color:#9FB2FF}
+html.mf-gece .pm-kutu{background:#1A2142;border-color:#2F3970}
+html.mf-gece .pm-mod button,html.mf-gece .pm-sifir,html.mf-gece .pm-sekme button{background:#232B52;color:#B7C5FF}
+html.mf-gece .pm-mod button.aktif,html.mf-gece .pm-sekme button.aktif{background:#1E3BD6;color:#fff}
+html.mf-gece .pm-saat .iz{stroke:#2F3970}
+html.mf-gece .pm-saat .pm-sure{color:#fff}
+html.mf-gece .pm-ayar label{color:#AEB6D3}
+html.mf-gece .pm-ayar select{background:#232B52;border-color:#3A4BA0;color:#fff}
+html.mf-gece .pm-ozet div{background:#232B52;border-color:#2F3970}
+html.mf-gece .pm-ozet b{color:#B7C5FF}
+html.mf-gece .pm-ders .bar{background:#2F3970}
+html.mf-gece .pm-hafta b{color:#D3D9EE}
+html.mf-gece .pm-hafta i{background:#6F86FF}
+
+.pm .pm-kutu{background:none;border:0;padding:0;margin:0}
+html.mf-gece .pm .pm-kutu{background:none}
+#alarm{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;background:rgba(10,16,48,.75);padding:20px}
+#alarm.acik{display:flex}
+#alarm div{background:#FAFBFF;border-radius:20px;padding:26px 22px;text-align:center;max-width:340px;width:100%;animation:alarm-t .5s ease-in-out infinite alternate}
+#alarm b{display:block;font-size:24px;color:#1E3BD6;margin-bottom:6px}
+#alarm p{margin:0 0 18px;color:#555}
+#alarm button{border:0;border-radius:999px;background:#FF8A1F;color:#fff;font-size:18px;font-weight:800;padding:14px 40px;cursor:pointer}
+@keyframes alarm-t{from{transform:scale(1)}to{transform:scale(1.03)}}
+html.mf-gece #alarm div{background:#1A2142}
+html.mf-gece #alarm p{color:#D3D9EE}
+</style>
+<script>try{if(localStorage.getItem('mf-tema')==='gece')document.documentElement.classList.add('mf-gece');}catch(e){}</script>
+</head>
+<body>
+<header class="ust"><div class="ust-ic">
+<img src="icon-192.png" alt="">
+<h1>MustaFaktoriyel <small>Odak sayacı &amp; çalışma takibi</small></h1>
+<div class="bosluk"></div>
+<button class="ikon-btn" id="tema" type="button" aria-label="Gece modu">🌙</button>
+</div></header>
+
+<main class="ana pm" id="pm">
+<div class="yukle" id="yukle"><p><b>Uygulamayı yükle</b><br>Ana ekranına ekle, tek dokunuşla aç.</p><button type="button" id="yukle-btn">Yükle</button><button type="button" class="kapat" id="yukle-kapat" aria-label="Kapat">✕</button></div>
+
+<section class="kart">
+
+
+
+
+<div class="pm-kutu">
+<div class="pm-mod">
+<button type="button" class="aktif" data-m="odak">Odak</button>
+<button type="button" data-m="kisa">Kısa mola</button>
+<button type="button" data-m="uzun">Uzun mola</button>
+</div>
+<div class="pm-saat" id="pm-saat">
+<svg viewBox="0 0 120 120"><circle class="iz" cx="60" cy="60" r="52"/><circle class="dolu" id="pm-halka" cx="60" cy="60" r="52"/></svg>
+<div class="pm-yazi"><div class="pm-sure" id="pm-sure">25:00</div><div class="pm-etiket" id="pm-etiket">Odaklanma zamanı</div></div>
+</div>
+<div class="pm-domates" id="pm-domates"></div>
+<div class="pm-dugmeler">
+<button type="button" class="pm-basla" id="pm-basla">Başlat</button>
+<button type="button" class="pm-sifir" id="pm-sifir">Sıfırla</button>
+</div>
+<div class="pm-ayar">
+<label class="tam">Hangi dersi çalışıyorsun?
+<select id="pm-ders">
+<option>TYT Matematik</option><option>AYT Matematik</option><option>Geometri</option><option>Türkçe</option>
+<option>Fizik</option><option>Kimya</option><option>Biyoloji</option><option>Edebiyat</option>
+<option>Tarih</option><option>Coğrafya</option><option>Felsefe</option><option>Din Kültürü</option>
+<option>Yabancı Dil</option><option>Deneme Çözümü</option><option>Diğer</option>
+</select></label>
+<label>Odak süresi
+<select id="pm-odak"><option value="25">25 dakika</option><option value="40">40 dakika</option><option value="50">50 dakika</option></select></label>
+<label>Mola süresi
+<select id="pm-mola"><option value="5">5 dk (uzun 15)</option><option value="10">10 dk (uzun 30)</option></select></label>
+<label>Arka plan sesi
+<select id="pm-ses"><option value="">Kapalı</option><option value="yagmur">Yağmur</option><option value="kahve">Kahverengi gürültü</option><option value="beyaz">Beyaz gürültü</option></select></label>
+<label>Ses seviyesi
+<input type="range" id="pm-seviye" min="0" max="100" value="40"></label>
+</div>
+<p class="pm-kucuk">🔒 Telefonun kilitlense de sayaç doğru saymaya devam eder. Arka plan sesi açıkken süre bitiminde zil de zamanında çalar. Ses kapalıyken kilit ekranında zil gecikebilir.</p>
+</div>
+
+
+</section>
+
+<h3 style="margin:22px 4px 10px">📊 Çalışma kayıtların</h3>
+<section class="kart">
+
+<div class="pm-kutu">
+<div class="pm-ozet">
+<div><b id="pm-bugun-dk">0</b><span>bugün (dk)</span></div>
+<div><b id="pm-bugun-p">0</b><span>bugün 🍅</span></div>
+<div><b id="pm-hafta-dk">0</b><span>30 gün (dk)</span></div>
+</div>
+<div class="pm-sekme"><button type="button" class="aktif" data-a="bugun">Bugün</button><button type="button" data-a="hafta">Son 7 gün</button><button type="button" data-a="ay">Son 30 gün</button></div>
+<div class="pm-ders" id="pm-dersler"></div>
+<div id="pm-grafik"><p style="font-size:13px;font-weight:700;margin:16px 0 0"><span id="pm-gbaslik">Son 30 gün</span> <span id="pm-ort" style="font-weight:400;color:#8A90A8"></span></p>
+<div class="pm-hafta" id="pm-hafta"></div></div>
+<div class="pm-koc" id="pm-koc" hidden>
+<label>Koç kodun (isteğe bağlı)<input type="text" id="pm-kod" placeholder="ör. MF-AHMET" autocomplete="off" autocapitalize="characters"></label>
+<p class="pm-kucuk" id="pm-koc-durum">Kodunu girersen çalışma kayıtların (ders, süre, tarih) hocanla paylaşılır. Kod girmezsen hiçbir veri bu telefondan çıkmaz.</p>
+</div>
+<a class="pm-wa" id="pm-wa" href="#" target="_blank" rel="noopener">📲 Haftalık raporumu hocama gönder</a>
+<p class="pm-kucuk">Butona dokununca son 7 günün özeti WhatsApp'ta hazır mesaj olarak açılır; göndermeden önce düzenleyebilirsin.</p>
+<p class="pm-kucuk">Kayıtlar yalnızca bu cihazda saklanır. <button type="button" class="pm-temizle" id="pm-temizle">Tüm kayıtları sil</button></p>
+</div>
+
+
+</section>
+
+<div class="alt-link">
+<a href="https://mustafaktoriyel.blogspot.com/p/yks-tahmini-puan-hesaplama-2026.html" target="_blank" rel="noopener">🚀 Sonuç Simülatörü<span>Netini gir, puanını gör</span></a>
+<a href="https://mustafaktoriyel.blogspot.com/p/yks.html" target="_blank" rel="noopener">🎯 YKS Konuları<span>Özetler ve testler</span></a>
+</div>
+
+<details class="kart"><summary>🍅 Pomodoro nedir, nasıl çalışmalıyım?</summary>
+<h3>🍅 Pomodoro Tekniği nedir?</h3>
+<p>1980'lerde Francesco Cirillo'nun geliştirdiği bu yöntemde çalışma, kısa molalarla bölünmüş odak bloklarına ayrılır. Adını, Cirillo'nun kullandığı domates şeklindeki mutfak sayacından alır.</p>
+<ol>
+<li><b>Çalışacağın dersi seç</b> ve sayacı başlat (25 dakika).</li>
+<li>Süre boyunca <b>yalnızca o işe odaklan.</b> Aklına başka bir şey gelirse not al, sonra dön.</li>
+<li>Zil çalınca <b>5 dakika mola</b> ver: kalk, su iç, gözlerini dinlendir.</li>
+<li><b>4 pomodoroda bir</b> 15–30 dakikalık <b>uzun mola</b> ver.</li>
+</ol>
+
+<h3>💡 Neden işe yarar?</h3>
+<ul>
+<li><b>Başlamayı kolaylaştırır:</b> "3 saat çalışacağım" yerine "sadece 25 dakika" demek erteleme isteğini azaltır.</li>
+<li><b>Dikkati tazeler:</b> Düzenli molalar, uzun oturuşlarda düşen konsantrasyonu geri getirir.</li>
+<li><b>Ölçülebilir hale getirir:</b> Günde kaç pomodoro yaptığını görmek, ilerlemeni somutlaştırır.</li>
+</ul>
+
+<h3>📌 Verimli çalışma için ipuçları</h3>
+<ul>
+<li><b>Telefonu başka odaya koy</b> ya da en azından bildirimleri kapat. Sayacı bilgisayarda açabilirsin.</li>
+<li><b>Bir pomodoroda tek konu:</b> Matematik çalışırken araya Türkçe sıkıştırma.</li>
+<li><b>Molada ekrana bakma:</b> Sosyal medya molası seni yeniden odaklanmaktan uzaklaştırır.</li>
+<li><b>Zor dersi güne erken başla:</b> Zihnin en dinç olduğu saatleri en zorlandığın derse ayır.</li>
+<li><b>Soru çözümünü sürelendir:</b> Deneme ve test çözümünde gerçek sınav temposunu yakalamaya çalış.</li>
+<li><b>Yavaş yavaş artır:</b> Günde 4 pomodoro ile başla, alıştıkça 8–10'a çıkar.</li>
+</ul>
+
+<h3>🎯 Örnek bir YKS çalışma günü</h3>
+<ul>
+<li><b>Sabah:</b> 4 pomodoro Matematik (konu + soru), uzun mola</li>
+<li><b>Öğleden sonra:</b> 3 pomodoro Fen / Sosyal, 1 pomodoro Türkçe paragraf</li>
+<li><b>Akşam:</b> 2 pomodoro günün tekrarı ve yanlış soru analizi</li>
+</ul>
+<p>Takıldığın konular için <a href="https://mustafaktoriyel.blogspot.com/p/yks.html" target="_blank" rel="noopener">YKS konu dizinine</a> göz atabilir, birebir çalışma planı için Instagram'dan <a href="https://instagram.com/mustafaktoriyel" target="_blank" rel="noopener">@mustafaktoriyel</a> hesabına yazabilirsin.</p>
+
+</details>
+
+<div id="alarm" role="alertdialog"><div><b id="alarm-b">Süre bitti! 🍅</b><p id="alarm-p">Harika iş.</p><button type="button" id="alarm-tamam">Tamam</button></div></div>
+<p class="imza">© MustaFaktoriyel · <a href="https://mustafaktoriyel.blogspot.com/p/gizlilik-politikasi.html" target="_blank" rel="noopener">Gizlilik</a></p>
+</main>
+
+<script>
+// ---- Koç takibi ayarı: Google Apps Script adresi buraya yazılınca koç kodu alanı açılır ----
+var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1WigKtZaalZJ3BIW5Q_K_5NkGhw8tei_relqMUatRpDQ/exec';
+</script>
+<script>
+
+(function(){
+  var kok=document.getElementById('pm');if(!kok)return;
+  var T={"odak": "Odaklanma zamanı", "odakCalis": "Odaklan", "kisa": "Kısa mola", "uzun": "Uzun mola", "duraklat": "Duraklat", "baslat": "Başlat", "devam": "Devam et", "bos": "Henüz kayıt yok. Sayacı başlattığında burada görünecek.", "gunler": ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"], "silSor": "Tüm çalışma kayıtları silinsin mi?", "ort": "{n} gün çalıştın, günlük ortalama {d} dk", "bugunK": "Bugün", "son7": "Son 7 gün", "son30": "Son 30 gün", "aylar": ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"], "rBaslik": "📊 Haftalık çalışma raporum", "rToplam": "Toplam", "rGun": "gün çalıştım", "rBos": "Bu hafta sayacı henüz kullanmadım, bir plan yapabilir miyiz?", "bitOdak": "Odak süresi bitti! 🍅", "bitOdakM": "Harika iş. Şimdi kısa bir mola zamanı.", "bitMola": "Mola bitti", "bitMolaM": "Hazırsan yeni bir odak turuna başla."};
+  var $=function(id){return document.getElementById(id);};
+  var DURUM_K='pm-durum',KAYIT_K='pm-kayit',AYAR_K='pm-ayar';
+  function oku(k,v){try{var x=localStorage.getItem(k);return x?JSON.parse(x):v;}catch(e){return v;}}
+  function yaz(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+  var ayar=oku(AYAR_K,{odak:'25',mola:'5',ses:'',seviye:40,ders:''});
+  $('pm-odak').value=ayar.odak;$('pm-mola').value=ayar.mola;$('pm-ses').value=ayar.ses;$('pm-seviye').value=ayar.seviye;if(ayar.ders)$('pm-ders').value=ayar.ders;
+  function ayarKaydet(){ayar={odak:$('pm-odak').value,mola:$('pm-mola').value,ses:$('pm-ses').value,seviye:+$('pm-seviye').value,ders:$('pm-ders').value};yaz(AYAR_K,ayar);}
+  // durum: mod, toplam(ms), bitis(ms|null), kalan(ms), calisiyor, tur, ders, basla
+  var d=oku(DURUM_K,null);
+  function sure(m){var o=+$('pm-odak').value,mo=+$('pm-mola').value;return (m==='odak'?o:m==='kisa'?mo:mo*3)*60000;}
+  if(!d){d={mod:'odak',toplam:sure('odak'),bitis:null,kalan:sure('odak'),calisiyor:false,tur:0,ders:'',basla:null};}
+  function kaydet(){yaz(DURUM_K,d);}
+  var CEVRE=2*Math.PI*52;$('pm-halka').style.strokeDasharray=CEVRE;
+  function kalanMs(){return d.calisiyor?Math.max(0,d.bitis-Date.now()):d.kalan;}
+  function bicim(ms){var s=Math.ceil(ms/1000),m=Math.floor(s/60);s=s%60;return (m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+  function ciz(){
+    var k=kalanMs();
+    $('pm-sure').textContent=bicim(k);
+    $('pm-halka').style.strokeDashoffset=CEVRE*(1-k/d.toplam);
+    $('pm-saat').classList.toggle('mola',d.mod!=='odak');
+    $('pm-etiket').textContent=d.mod==='odak'?(d.calisiyor?T.odakCalis+' · '+(d.ders||$('pm-ders').value):T.odak):(d.mod==='kisa'?T.kisa:T.uzun);
+    $('pm-basla').textContent=d.calisiyor?T.duraklat:(k===d.toplam?T.baslat:T.devam);
+    var dm='';for(var i=0;i<4;i++)dm+=i<(d.tur%4)?'🍅':'○';
+    $('pm-domates').textContent=dm;
+    var bs=kok.querySelectorAll('.pm-mod button');for(var j=0;j<bs.length;j++)bs[j].classList.toggle('aktif',bs[j].getAttribute('data-m')===d.mod);
+    document.title=(d.calisiyor?bicim(k)+' – ':'')+BASLIK;
+    if(d.calisiyor&&'mediaSession' in navigator){try{navigator.mediaSession.metadata=new MediaMetadata({title:bicim(k)+' '+(d.mod==='odak'?T.odak:T.kisa),artist:'MustaFaktoriyel'});}catch(e){}}
+  }
+  var BASLIK=document.title;
+  // --- kayitlar ---
+  function gun(t){var x=new Date(t);return x.getFullYear()+'-'+(x.getMonth()+1)+'-'+x.getDate();}
+  function kayitEkle(dk,ders,tam){
+    if(dk<1)return;
+    var k=oku(KAYIT_K,{}),g=gun(Date.now());
+    if(!k[g])k[g]={dk:0,p:0,d:{}};
+    k[g].dk+=dk;if(tam)k[g].p+=1;k[g].d[ders]=(k[g].d[ders]||0)+dk;
+    yaz(KAYIT_K,k);istatistik();
+    if(window.MF_KOC)window.MF_KOC({tarih:new Date().toISOString(),ders:ders,dk:Math.round(dk*10)/10,tam:!!tam});
+  }
+  var ARALIK='bugun';
+  function istatistik(){
+    var k=oku(KAYIT_K,{}),bugun=gun(Date.now()),b=k[bugun]||{dk:0,p:0,d:{}};
+    $('pm-bugun-dk').textContent=Math.round(b.dk);$('pm-bugun-p').textContent=b.p;
+    var hafta={dk:0,d:{}},ay={dk:0,d:{}},gunler=[];
+    for(var i=29;i>=0;i--){var t=Date.now()-i*864e5,g=gun(t),x=k[g]||{dk:0,d:{}};gunler.push([t,x.dk]);ay.dk+=x.dk;for(var dd in x.d){ay.d[dd]=(ay.d[dd]||0)+x.d[dd];if(i<7)hafta.d[dd]=(hafta.d[dd]||0)+x.d[dd];}if(i<7)hafta.dk+=x.dk;}
+    $('pm-hafta-dk').textContent=Math.round(ay.dk);
+    var gs=ARALIK==='hafta'?gunler.slice(23):gunler,top=0,aktifGun=0;
+    for(var a2=0;a2<gs.length;a2++){top+=gs[a2][1];if(gs[a2][1]>0)aktifGun++;}
+    $('pm-grafik').style.display=ARALIK==='bugun'?'none':'block';
+    $('pm-gbaslik').textContent=ARALIK==='hafta'?T.son7:T.son30;
+    $('pm-ort').textContent=aktifGun?('\u00b7 '+T.ort.replace('{n}',aktifGun).replace('{d}',Math.round(top/aktifGun))):'';
+    var kaynak=ARALIK==='bugun'?b.d:(ARALIK==='hafta'?hafta.d:ay.d),liste=[];for(var y in kaynak)liste.push([y,kaynak[y]]);
+    liste.sort(function(a,c){return c[1]-a[1];});
+    var mx=liste.length?liste[0][1]:1,h=[];
+    for(var n=0;n<liste.length;n++)h.push('<div class="s"><span>'+liste[n][0]+'</span><div class="bar"><i style="width:'+Math.round(liste[n][1]*100/mx)+'%"></i></div><span>'+Math.round(liste[n][1])+' dk</span></div>');
+    $('pm-dersler').innerHTML=h.length?h.join(''):'<p class="pm-bos">'+T.bos+'</p>';
+    var mh=1;for(var q=0;q<gs.length;q++)mh=Math.max(mh,gs[q][1]);
+    var hh=[],yedi=gs.length===7;for(var r=0;r<gs.length;r++){var gd=new Date(gs[r][0]),son=r===gs.length-1,etk=yedi?T.gunler[gd.getDay()]:((son||(29-r)%5===0)?gd.getDate()+'.'+(gd.getMonth()+1):'');
+      hh.push('<div'+(son?' class="bugun"':'')+' title="'+gd.getDate()+'.'+(gd.getMonth()+1)+': '+Math.round(gs[r][1])+' dk"><i style="height:'+Math.round(gs[r][1]*85/mh)+'%"></i><em>'+(son?T.bugunK:etk)+'</em></div>');}
+    $('pm-hafta').innerHTML=hh.join('');$('pm-hafta').classList.toggle('yedi',yedi);
+  }
+  // --- sesler ---
+  var ses=null,sesUrl={};
+  function gurultu(tur){
+    if(sesUrl[tur])return sesUrl[tur];
+    var sr=22050,n=sr*12,buf=new ArrayBuffer(44+n*2),v=new DataView(buf);
+    function str(o,s){for(var i=0;i<s.length;i++)v.setUint8(o+i,s.charCodeAt(i));}
+    str(0,'RIFF');v.setUint32(4,36+n*2,true);str(8,'WAVE');str(12,'fmt ');v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);
+    v.setUint32(24,sr,true);v.setUint32(28,sr*2,true);v.setUint16(32,2,true);v.setUint16(34,16,true);str(36,'data');v.setUint32(40,n*2,true);
+    var son=0,b0=0,b1=0,b2=0,b3=0,b4=0,b5=0,b6=0,ort=new Float32Array(n),mx=0;
+    for(var i=0;i<n;i++){
+      var w=Math.random()*2-1,x;
+      if(tur==='beyaz'){x=w*0.5;}
+      else if(tur==='kahve'){son=(son+0.02*w)/1.02;x=son*3.5;}
+      else{b0=0.99886*b0+w*0.0555179;b1=0.99332*b1+w*0.0750759;b2=0.969*b2+w*0.153852;b3=0.8665*b3+w*0.3104856;b4=0.55*b4+w*0.5329522;b5=-0.7616*b5-w*0.016898;
+        x=(b0+b1+b2+b3+b4+b5+b6+w*0.5362)*0.11;b6=w*0.115926;
+        if(Math.random()<0.0009)x+=(Math.random()*2-1)*0.35;}
+      ort[i]=x;if(Math.abs(x)>mx)mx=Math.abs(x);
+    }
+    var f=Math.round(sr*0.5);
+    for(var j=0;j<n;j++){var y=ort[j]/(mx||1)*0.8;if(j<f){y=y*(j/f)+ (ort[n-f+j]/(mx||1)*0.8)*(1-j/f);}v.setInt16(44+j*2,Math.max(-1,Math.min(1,y))*32767,true);}
+    // son yarim saniyeyi bastan karistirdik; dongu sonunu kes
+    var kes=new DataView(buf,0,44+(n-f)*2);kes.setUint32(4,36+(n-f)*2,true);kes.setUint32(40,(n-f)*2,true);
+    sesUrl[tur]=URL.createObjectURL(new Blob([buf.slice(0,44+(n-f)*2)],{type:'audio/wav'}));
+    return sesUrl[tur];
+  }
+  function sesGuncelle(){
+    var tur=$('pm-ses').value,sev=+$('pm-seviye').value/100;
+    if(!tur||!d.calisiyor){if(ses){ses.pause();}return;}
+    if(!ses){ses=new Audio();ses.loop=true;}
+    var u=gurultu(tur);if(ses.getAttribute('data-tur')!==tur){ses.src=u;ses.setAttribute('data-tur',tur);}
+    ses.volume=sev;var p=ses.play();if(p&&p.catch)p.catch(function(){});
+  }
+  function bildir(odakti){
+    try{if(document.hidden&&'Notification' in window&&Notification.permission==='granted'&&navigator.serviceWorker){
+      navigator.serviceWorker.ready.then(function(r){r.showNotification(odakti?T.bitOdak:T.bitMola,{body:odakti?T.bitOdakM:T.bitMolaM,icon:'icon-192.png',badge:'icon-192.png',tag:'mf-odak',renotify:true,requireInteraction:true,vibrate:[700,300,700,300,700,300,700]});});
+    }}catch(e){}
+  }
+  var alarmT=null,alarmN=null,alarmBit=0;
+  function alarmBaslat(odakti){
+    alarmDurdur();
+    $('alarm-b').textContent=odakti?T.bitOdak:T.bitMola;$('alarm-p').textContent=odakti?T.bitOdakM:T.bitMolaM;
+    $('alarm').classList.add('acik');
+    alarmBit=Date.now()+120000;
+    function tur(){
+      if(Date.now()>alarmBit){alarmDurdur();return;}
+      zil();
+      if(navigator.vibrate)navigator.vibrate([700,300,700,300,700]);
+    }
+    tur();alarmT=setInterval(tur,3000);
+    bildir(odakti);alarmN=setInterval(function(){if(document.hidden)bildir(odakti);},10000);
+  }
+  function alarmDurdur(){
+    clearInterval(alarmT);clearInterval(alarmN);alarmT=alarmN=null;
+    if(navigator.vibrate)navigator.vibrate(0);
+    var a=$('alarm');if(a)a.classList.remove('acik');
+    try{if(navigator.serviceWorker)navigator.serviceWorker.ready.then(function(r){r.getNotifications({tag:'mf-odak'}).then(function(ns){ns.forEach(function(n){n.close();});});});}catch(e){}
+  }
+  $('alarm-tamam').addEventListener('click',alarmDurdur);
+  function zil(){
+    try{var C=window.AudioContext||window.webkitAudioContext,ac=new C(),t=ac.currentTime;
+      [0,0.35,0.7].forEach(function(dt,i){var o=ac.createOscillator(),g=ac.createGain();o.type='sine';o.frequency.value=[880,1047,1319][i];
+        g.gain.setValueAtTime(0.0001,t+dt);g.gain.exponentialRampToValueAtTime(0.35,t+dt+0.02);g.gain.exponentialRampToValueAtTime(0.0001,t+dt+0.9);
+        o.connect(g);g.connect(ac.destination);o.start(t+dt);o.stop(t+dt+1);});
+      setTimeout(function(){ac.close();},2500);}catch(e){}
+  }
+  // --- kontrol ---
+  function modSec(m){
+    if(d.calisiyor&&d.mod==='odak'&&m!=='odak')odakKaydet(false);
+    d.mod=m;d.toplam=sure(m);d.kalan=d.toplam;d.bitis=null;d.calisiyor=false;d.basla=null;kaydet();sesGuncelle();ciz();
+  }
+  function odakKaydet(tam){
+    var gecen=(d.toplam-kalanMs())/60000;
+    kayitEkle(tam?d.toplam/60000:gecen,d.ders||$('pm-ders').value,tam);
+  }
+  function bitti(){
+    var eski=d.mod;
+    if(eski==='odak'){odakKaydet(true);d.tur+=1;}
+    alarmBaslat(eski==='odak');
+    var yeni=eski==='odak'?((d.tur%4===0)?'uzun':'kisa'):'odak';
+    d.mod=yeni;d.toplam=sure(yeni);d.kalan=d.toplam;d.bitis=null;d.calisiyor=false;kaydet();
+    if(eski==='odak'){basla();}else{sesGuncelle();}
+    ciz();
+  }
+  function basla(){try{if('Notification' in window&&Notification.permission==='default')Notification.requestPermission();}catch(e){}
+    d.calisiyor=true;d.bitis=Date.now()+d.kalan;if(d.mod==='odak'&&!d.ders)d.ders=$('pm-ders').value;kaydet();sesGuncelle();ciz();}
+  $('pm-basla').addEventListener('click',function(){
+    if(d.calisiyor){d.kalan=kalanMs();d.calisiyor=false;d.bitis=null;kaydet();sesGuncelle();ciz();}
+    else{if(d.kalan===d.toplam)d.ders=$('pm-ders').value;basla();}
+  });
+  $('pm-sifir').addEventListener('click',function(){
+    if(d.mod==='odak'&&kalanMs()!==d.toplam)odakKaydet(false);
+    d.kalan=d.toplam=sure(d.mod);d.calisiyor=false;d.bitis=null;d.ders='';kaydet();sesGuncelle();ciz();
+  });
+  var mb=kok.querySelectorAll('.pm-mod button');for(var i=0;i<mb.length;i++)mb[i].addEventListener('click',function(){modSec(this.getAttribute('data-m'));});
+  ['pm-odak','pm-mola'].forEach(function(id){$(id).addEventListener('change',function(){ayarKaydet();if(!d.calisiyor){d.toplam=d.kalan=sure(d.mod);kaydet();ciz();}});});
+  $('pm-ses').addEventListener('change',function(){ayarKaydet();sesGuncelle();});
+  $('pm-seviye').addEventListener('input',function(){ayarKaydet();if(ses)ses.volume=+this.value/100;});
+  $('pm-ders').addEventListener('change',function(){ayarKaydet();if(!d.calisiyor||d.mod!=='odak'){d.ders='';}ciz();});
+  var sk=kok.querySelectorAll('.pm-sekme button');for(var s=0;s<sk.length;s++)sk[s].addEventListener('click',function(){ARALIK=this.getAttribute('data-a');for(var z=0;z<sk.length;z++)sk[z].classList.toggle('aktif',sk[z]===this);istatistik();});
+  $('pm-temizle').addEventListener('click',function(){if(confirm(T.silSor)){yaz(KAYIT_K,{});istatistik();}});
+  if('mediaSession' in navigator){try{navigator.mediaSession.setActionHandler('pause',function(){if(d.calisiyor)$('pm-basla').click();});navigator.mediaSession.setActionHandler('play',function(){if(!d.calisiyor)$('pm-basla').click();});}catch(e){}}
+
+  function sureYaz(dk){dk=Math.round(dk);var h=Math.floor(dk/60),m=dk%60;return h?(h+' sa'+(m?' '+m+' dk':'')):(m+' dk');}
+  function rapor(){
+    var k=oku(KAYIT_K,{}),top=0,p=0,gunSay=0,dd={};
+    for(var i=6;i>=0;i--){var x=k[gun(Date.now()-i*864e5)];if(!x)continue;top+=x.dk;p+=x.p;if(x.dk>0)gunSay++;for(var y in x.d)dd[y]=(dd[y]||0)+x.d[y];}
+    var bas=new Date(Date.now()-6*864e5),son=new Date(),ay=T.aylar;
+    var m=T.rBaslik+' ('+bas.getDate()+' '+ay[bas.getMonth()]+' \u2013 '+son.getDate()+' '+ay[son.getMonth()]+')\n';
+    if(!top){m+=T.rBos;}
+    else{
+      m+=T.rToplam+': '+sureYaz(top)+' \u00b7 '+p+' \uD83C\uDF45 \u00b7 '+gunSay+' '+T.rGun+'\n';
+      var l=[];for(var z in dd)l.push([z,dd[z]]);l.sort(function(a,b){return b[1]-a[1];});
+      for(var n=0;n<l.length;n++)m+='\u2022 '+l[n][0]+': '+sureYaz(l[n][1])+'\n';
+    }
+    return m;
+  }
+  $('pm-wa').addEventListener('click',function(){this.href='https://wa.me/905435819240?text='+encodeURIComponent(rapor());});
+  function tik(){if(d.calisiyor&&kalanMs()<=0)bitti();else ciz();}
+  setInterval(tik,1000);
+  document.addEventListener('visibilitychange',tik);
+  if(d.calisiyor&&kalanMs()<=0){bitti();}
+  ciz();istatistik();
+})();
+
+</script>
+<script>
+(function(){
+  // gece modu
+  var h=document.documentElement,b=document.getElementById('tema');
+  function boya(){b.textContent=h.classList.contains('mf-gece')?'☀️':'🌙';}
+  boya();b.addEventListener('click',function(){h.classList.toggle('mf-gece');try{localStorage.setItem('mf-tema',h.classList.contains('mf-gece')?'gece':'gunduz');}catch(e){}boya();});
+  // service worker
+  if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js');});
+  // yükleme önerisi
+  var olay=null,kutu=document.getElementById('yukle'),kapali=false;
+  try{kapali=localStorage.getItem('mf-yukle-kapat')==='1';}catch(e){}
+  var kurulu=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+  var ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();olay=e;if(!kapali&&!kurulu)kutu.classList.add('goster');});
+  if(ios&&!kurulu&&!kapali){kutu.querySelector('p').innerHTML='<b>Uygulamayı yükle</b><br>Safari\'de <b>Paylaş</b> → <b>Ana Ekrana Ekle</b>.';document.getElementById('yukle-btn').style.display='none';kutu.classList.add('goster');}
+  document.getElementById('yukle-btn').addEventListener('click',function(){if(!olay)return;olay.prompt();olay.userChoice.then(function(){kutu.classList.remove('goster');olay=null;});});
+  document.getElementById('yukle-kapat').addEventListener('click',function(){kutu.classList.remove('goster');try{localStorage.setItem('mf-yukle-kapat','1');}catch(e){}});
+  // koç takibi
+  if(KOC_URL){
+    var kk=document.getElementById('pm-koc'),ki=document.getElementById('pm-kod');kk.hidden=false;
+    try{ki.value=localStorage.getItem('mf-koc-kod')||'';}catch(e){}
+    ki.addEventListener('change',function(){var v=ki.value.trim().toUpperCase();ki.value=v;try{localStorage.setItem('mf-koc-kod',v);}catch(e){}gonder();});
+    function kuyruk(){try{return JSON.parse(localStorage.getItem('mf-kuyruk')||'[]');}catch(e){return [];}}
+    function kaydet(q){try{localStorage.setItem('mf-kuyruk',JSON.stringify(q));}catch(e){}}
+    function gonder(){
+      var kod='';try{kod=localStorage.getItem('mf-koc-kod')||'';}catch(e){}
+      var q=kuyruk();if(!kod||!q.length||!navigator.onLine)return;
+      fetch(KOC_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify({kod:kod,kayitlar:q})})
+        .then(function(){kaydet([]);}).catch(function(){});
+    }
+    window.MF_KOC=function(k){var kod='';try{kod=localStorage.getItem('mf-koc-kod')||'';}catch(e){}if(!kod)return;var q=kuyruk();q.push(k);kaydet(q.slice(-200));gonder();};
+    window.addEventListener('online',gonder);gonder();
+  }
+})();
+</script>
+</body>
+</html>
