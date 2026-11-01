@@ -35,7 +35,7 @@ body{font-family:Roboto,-apple-system,"Segoe UI",Arial,sans-serif;background:#EC
 .alt-link a{display:block;text-decoration:none;background:#FAFBFF;border:1px solid #DCE2FF;border-radius:12px;padding:12px;color:#1E3BD6;font-weight:700;font-size:14px}
 .alt-link a span{display:block;font-weight:400;font-size:12px;color:#7A8099;margin-top:2px}
 details.kart summary{font-weight:700;color:#1E3BD6;cursor:pointer;font-size:16px}
-.pm-koc{margin:16px 0 0}
+.pm-koc{margin:0 0 16px}
 .pm-koc label{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:600;color:#555}
 .pm-koc input{border:1px solid #C9D2F5;border-radius:8px;padding:10px;font-size:16px;text-transform:uppercase;background:#fff;color:#222}
 .koc-alt{display:flex;align-items:center;gap:10px;margin:8px 0 0;flex-wrap:wrap}
@@ -183,6 +183,15 @@ html.mf-gece .pm-acc-b{color:#9FB2FF}
 html.mf-gece .onay-k{background:#1A2142;color:#D3D9EE}
 html.mf-gece .onay-t,html.mf-gece .onay-k a{color:#9FB2FF}
 html.mf-gece #onay-vazgec{background:#232B52;color:#B7C5FF}
+.koc-bas{display:block;font-size:17px;color:#1E3BD6;margin-bottom:10px}
+.koc-satir{display:flex;gap:8px}
+.koc-satir input{flex:1;min-width:0;border:1px solid #C9D2F5;border-radius:10px;padding:11px;font-size:16px;text-transform:uppercase;background:#fff;color:#222}
+#pm-koc-katil{border:0;border-radius:10px;background:#1E3BD6;color:#fff;font-weight:800;font-size:15px;padding:0 18px;cursor:pointer}
+.koc-ok{margin:0 0 6px;font-size:15px;color:#1FA463}
+.koc-ok b{color:inherit}
+html.mf-gece .koc-bas{color:#9FB2FF}
+html.mf-gece .koc-satir input{background:#232B52;border-color:#3A4BA0;color:#fff}
+html.mf-gece .koc-ok{color:#5FD79A}
 </style>
 <script>try{if(localStorage.getItem('mf-tema')==='gece')document.documentElement.classList.add('mf-gece');}catch(e){}</script>
 </head>
@@ -270,11 +279,6 @@ html.mf-gece #onay-vazgec{background:#232B52;color:#B7C5FF}
 <div class="pm-ders" id="pm-dersler"></div>
 <div id="pm-grafik"><p style="font-size:13px;font-weight:700;margin:16px 0 0"><span id="pm-gbaslik">Son 30 gün</span> <span id="pm-ort" style="font-weight:400;color:#8A90A8"></span></p>
 <div class="pm-hafta" id="pm-hafta"></div></div>
-<div class="pm-koc" id="pm-koc" hidden>
-<label>Koç kodun (isteğe bağlı)<input type="text" id="pm-kod" placeholder="ör. MF-AHMET" autocomplete="off" autocapitalize="characters"></label>
-<div class="koc-alt"><button type="button" id="pm-koc-test">Bağlantıyı test et</button><button type="button" id="pm-koc-kaldir" hidden>Kodu kaldır</button><span id="pm-koc-son"></span></div>
-<p class="pm-kucuk" id="pm-koc-durum">Kodunu girersen çalışma kayıtların (ders, süre, tarih) hocanla paylaşılır. Kod girmezsen hiçbir veri bu telefondan çıkmaz.</p>
-</div>
 <a class="pm-wa" id="pm-wa" href="#" target="_blank" rel="noopener">📲 Günlük raporumu hocama gönder</a>
 <p class="pm-kucuk" id="pm-wa-not">Butona dokununca bugünkü çalışmanın özeti WhatsApp'ta hazır mesaj olarak açılır; göndermeden önce düzenleyebilirsin.</p>
 <p class="pm-kucuk">Kayıtlar yalnızca bu cihazda saklanır. <button type="button" class="pm-temizle" id="pm-temizle">Tüm kayıtları sil</button></p>
@@ -283,6 +287,18 @@ html.mf-gece #onay-vazgec{background:#232B52;color:#B7C5FF}
 
 </section>
 </details>
+<section class="kart pm-koc" id="pm-koc" hidden>
+<b class="koc-bas">🤝 Koç Takibi</b>
+<div id="koc-giris">
+<div class="koc-satir"><input type="text" id="pm-kod" placeholder="Koç kodun, ör. MF-AHMET" autocomplete="off" autocapitalize="characters" aria-label="Koç kodu"><button type="button" id="pm-koc-katil">Katıl</button></div>
+<p class="pm-kucuk">Hocandan aldığın kodu girip <b>Katıl</b>'a basarsan çalışma kayıtların (ders, süre, tarih) hocanla paylaşılır. Kod girmezsen hiçbir veri bu telefondan çıkmaz.</p>
+</div>
+<div id="koc-aktif" hidden>
+<p class="koc-ok">✓ <b id="koc-kod-goster"></b> koduyla koç takibindesin.</p>
+<div class="koc-alt"><button type="button" id="pm-koc-test">Bağlantıyı test et</button><button type="button" id="pm-koc-kaldir">Kodu kaldır</button></div>
+<p class="pm-kucuk" style="margin-top:8px"><span id="pm-koc-son"></span></p>
+</div>
+</section>
 
 <div class="alt-link">
 <a href="https://mustafaktoriyel.blogspot.com/p/yks-tahmini-puan-hesaplama-2026.html" target="_blank" rel="noopener">🚀 Sonuç Simülatörü<span>Netini gir, puanını gör</span></a>
@@ -668,9 +684,9 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     function kayitliKod(){try{return localStorage.getItem('mf-koc-kod')||'';}catch(e){return '';}}
     function onayli(v){try{var o=JSON.parse(localStorage.getItem('mf-koc-onay')||'null');return !!(o&&o.kod===v);}catch(e){return false;}}
     var pen=document.getElementById('koc-onay'),o1=document.getElementById('onay-1'),o2=document.getElementById('onay-2'),ot=document.getElementById('onay-tamam'),bekleyen='';
-    function arayuz(){var kod=kayitliKod();document.getElementById('pm-koc-kaldir').hidden=!kod;
+    function arayuz(){var kod=kayitliKod();document.getElementById('koc-giris').hidden=!!kod;document.getElementById('koc-aktif').hidden=!kod;document.getElementById('koc-kod-goster').textContent=kod;if(!kod)ki.value='';
       var wa=document.getElementById('pm-wa'),wn=document.getElementById('pm-wa-not');if(wa)wa.style.display=kod?'none':'';if(wn)wn.style.display=kod?'none':'';}
-    function kodUygula(v){try{localStorage.setItem('mf-koc-kod',v);}catch(e){}ki.value=v;arayuz();durum('\u2713 Kod kaydedildi','ok');gonder();}
+    function kodUygula(v){try{localStorage.setItem('mf-koc-kod',v);}catch(e){}arayuz();durum('\u2713 Kat\u0131ld\u0131n','ok');gonder();}
     function kodIste(){
       if(pen.classList.contains('acik'))return;
       var v=ki.value.trim().toUpperCase();ki.value=v;var mev=kayitliKod();
@@ -688,8 +704,9 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     o1.addEventListener('change',onayGuncelle);o2.addEventListener('change',onayGuncelle);
     ot.addEventListener('click',function(){try{localStorage.setItem('mf-koc-onay',JSON.stringify({kod:bekleyen,zaman:new Date().toISOString()}));}catch(e){}
       pen.classList.remove('acik');kodUygula(bekleyen);bekleyen='';});
-    document.getElementById('onay-vazgec').addEventListener('click',function(){pen.classList.remove('acik');ki.value=kayitliKod();bekleyen='';});
-    ki.addEventListener('change',kodIste);ki.addEventListener('blur',kodIste);
+    document.getElementById('onay-vazgec').addEventListener('click',function(){pen.classList.remove('acik');bekleyen='';});
+    document.getElementById('pm-koc-katil').addEventListener('click',function(){if(!ki.value.trim()){ki.focus();return;}kodIste();});
+    ki.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();ki.blur();if(ki.value.trim())kodIste();}});
     document.getElementById('pm-koc-kaldir').addEventListener('click',function(){kodKaldir(false);});
     document.getElementById('pm-koc-test').addEventListener('click',function(){
       var kod=kayitliKod();
