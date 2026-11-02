@@ -474,7 +474,7 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     $('pm-sure').textContent=bicim(k);$('pm-sure').style.fontSize=k>=3600000?'36px':'';
     $('pm-halka').style.strokeDashoffset=CEVRE*(1-k/d.toplam);
     $('pm-saat').classList.toggle('mola',!calismaMi(d.mod));$('pm-saat').classList.toggle('deneme',d.mod==='deneme');$('pm-sinav-k').classList.toggle('acik',d.mod==='deneme');$('pm-sinav').disabled=d.mod==='deneme'&&k!==d.toplam;
-    $('pm-sifir').textContent=(d.mod==='deneme'&&k!==d.toplam)?'Bitir':'S\u0131f\u0131rla';
+    $('pm-sifir').textContent=(calismaMi(d.mod)&&k!==d.toplam)?'Bitir':'S\u0131f\u0131rla';
     $('pm-domates').style.visibility=d.mod==='deneme'?'hidden':'';
     $('pm-etiket').textContent=d.mod==='deneme'?(SINAV[sinavKod()].ad+' denemesi'):d.mod==='odak'?(d.calisiyor?T.odakCalis+' · '+(d.ders||$('pm-ders').value):T.odak):(d.mod==='kisa'?T.kisa:T.uzun);
     $('pm-basla').textContent=d.calisiyor?T.duraklat:(k===d.toplam?T.baslat:T.devam);
