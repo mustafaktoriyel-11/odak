@@ -127,7 +127,7 @@ html.mf-gece .pm .pm-kutu{background:none}
 #alarm.acik{display:flex}
 #alarm div{background:#FAFBFF;border-radius:20px;padding:26px 22px;text-align:center;max-width:340px;width:100%;animation:alarm-t .5s ease-in-out infinite alternate}
 #alarm b{display:block;font-size:24px;color:#1E3BD6;margin-bottom:6px}
-#alarm p{margin:0 0 18px;color:#555}
+#alarm p{margin:0 0 18px;color:#555;white-space:pre-line}
 #alarm button{border:0;border-radius:999px;background:#FF8A1F;color:#fff;font-size:18px;font-weight:800;padding:14px 40px;cursor:pointer}
 @keyframes alarm-t{from{transform:scale(1)}to{transform:scale(1.03)}}
 html.mf-gece #alarm div{background:#1A2142}
@@ -680,11 +680,21 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     d.kalan=d.toplam=sure('deneme');d.calisiyor=false;d.bitis=null;d.ders='';kaydet();sesGuncelle();ciz();
     if(dk>=10)dnmAc(sinavKod(),Math.round(dk));
   }
+  var GUN_S={1:'1! = 1 · ilk adım atıldı',2:'√4 = 2',3:'∛27 = 3',4:'2² = 4',5:'√25 = 5',6:'√36 = 6',7:'2³ − 1 = 7',8:'2³ = 8',9:'3² = 9',10:'1 + 2 + 3 + 4 = 10',11:'11 = 11 · asal ve kararlı!',12:'3! + 3! = 12'};
+  var TOP_S={24:'4! = 24',50:'7² + 1 = 50',100:'10² = 100',120:'5! = 120',250:'250 = 2 · 5³',500:'500 = 2² · 5³',720:'6! = 720',1000:'10³ = 1000'};
+  function kutlama(){
+    var k=oku(KAYIT_K,{}),b=(k[gun(Date.now())]||{}).p||0,t=0,m='';
+    for(var g in k)t+=k[g].p||0;
+    if(TOP_S[t])m='🎉 Toplam '+t+'. pomodoro: '+TOP_S[t];
+    else if(GUN_S[b])m='🍅 Bugünün '+b+'. pomodorosu: '+GUN_S[b];
+    else{var r=Math.round(Math.sqrt(b));if(r*r===b)m='🍅 Bugünün '+b+'. pomodorosu: '+r+'² = '+b;}
+    if(m)$('alarm-p').textContent=$('alarm-p').textContent+'\n'+m;
+  }
   function bitti(){
     var eski=d.mod;
     if(eski==='deneme'){alarmBaslat(true);$('alarm-b').textContent='Deneme bitti! \uD83D\uDCDD';$('alarm-p').textContent='Kalemleri b\u0131rak. Sonu\u00E7lar\u0131n\u0131 girelim.';denemeBitti(true);return;}
     if(eski==='odak'){odakKaydet(true);d.tur+=1;}
-    alarmBaslat(eski==='odak');
+    alarmBaslat(eski==='odak');if(eski==='odak')kutlama();
     var yeni=eski==='odak'?((d.tur%4===0)?'uzun':'kisa'):'odak';
     d.mod=yeni;d.toplam=sure(yeni);d.kalan=d.toplam;d.bitis=null;d.calisiyor=false;kaydet();
     if(eski==='odak'){basla();}else{sesGuncelle();}
