@@ -681,15 +681,28 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     for(var i=0;i<n;i++){var y=Math.round(out[i]*32767);pcm[i]=y>32767?32767:(y<-32768?-32768:y);}
     return URL.createObjectURL(new Blob([buf],{type:'audio/wav'}));
   }
-  var tutA=null,zilA=null;
+  var tutA=null,zilA=null,tutBiz=false,tutDis=false,wac=null,wosc=null;
+  // Yedek uyanik tutucu: Web Audio. Android'e "muzik caliyor" demez, YouTube gibi uygulamalari durdurmaz.
+  function waHazir(){try{if(!wac){var C=window.AudioContext||window.webkitAudioContext;if(C)wac=new C();}}catch(e){}}
+  function waBaslat(){
+    try{waHazir();if(!wac)return;if(wac.state==='suspended')wac.resume();
+      if(!wosc){wosc=wac.createOscillator();var g=wac.createGain();wosc.frequency.value=10;g.gain.value=0.0015;wosc.connect(g);g.connect(wac.destination);wosc.start();}}catch(e){}
+  }
+  function waDur(){try{if(wosc){wosc.stop();wosc.disconnect();wosc=null;}if(wac&&wac.state==='running')wac.suspend();}catch(e){}}
   function tutGuncelle(){
     var gerek=d.calisiyor||!!alarmT;
-    if(gerek){
-      // 10 Hz: insan kulaginin duyamayacagi kadar alcak; tarayici yine de "ses caliyor" sayar. 12 sn = tam 120 dalga, dongu atlamasiz
-      if(!tutA){var sr=8000,o=new Float32Array(sr*12);for(var i=0;i<o.length;i++)o[i]=Math.sin(6.283185307*10*i/sr)*0.0015;
-        tutA=new Audio(wavUrl(sr,o));tutA.loop=true;tutA.preload='auto';}
-      if(tutA.paused){var p=tutA.play();if(p&&p.catch)p.catch(function(){});}
-    }else if(tutA&&!tutA.paused)tutA.pause();
+    if(!gerek){
+      if(d.kalan===d.toplam)tutDis=false;
+      waDur();if(tutA&&!tutA.paused){tutBiz=true;tutA.pause();}
+      return;
+    }
+    // 10 Hz: insan kulaginin duyamayacagi kadar alcak; tarayici yine de "ses caliyor" sayar. 12 sn = tam 120 dalga, dongu atlamasiz
+    if(!tutA){var sr=8000,o=new Float32Array(sr*12);for(var i=0;i<o.length;i++)o[i]=Math.sin(6.283185307*10*i/sr)*0.0015;
+      tutA=new Audio(wavUrl(sr,o));tutA.loop=true;tutA.preload='auto';
+      // baska bir uygulama (YouTube vb.) sesi aldiysa geri alma, yedek tutucuya gec
+      tutA.addEventListener('pause',function(){if(tutBiz){tutBiz=false;return;}tutDis=true;waBaslat();});}
+    if(tutDis){waBaslat();return;}
+    if(tutA.paused){var p=tutA.play();if(p&&p.catch)p.catch(function(){tutDis=true;waBaslat();});}
   }
   function zilHazir(){
     if(zilA)return;
@@ -790,7 +803,7 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     ciz();
   }
   function basla(){try{if('Notification' in window&&Notification.permission==='default')Notification.requestPermission();}catch(e){}
-    zilHazir();d.calisiyor=true;d.bitis=Date.now()+d.kalan;if(d.mod==='odak'&&!d.ders)d.ders=$('pm-ders').value;kaydet();sesGuncelle();ciz();}
+    zilHazir();waHazir();d.calisiyor=true;d.bitis=Date.now()+d.kalan;if(d.mod==='odak'&&!d.ders)d.ders=$('pm-ders').value;kaydet();sesGuncelle();ciz();}
   $('pm-basla').addEventListener('click',function(){
     if(d.calisiyor){d.kalan=kalanMs();d.calisiyor=false;d.bitis=null;kaydet();sesGuncelle();ciz();}
     else{if(d.kalan===d.toplam)d.ders=$('pm-ders').value;basla();}
