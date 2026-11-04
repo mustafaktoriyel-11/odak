@@ -702,7 +702,7 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
   }
   function bildir(B,M){
     try{if(document.hidden&&'Notification' in window&&Notification.permission==='granted'&&navigator.serviceWorker){
-      navigator.serviceWorker.ready.then(function(r){r.showNotification(B,{body:M,icon:'icon-192.png',badge:'icon-192.png',tag:'mf-odak',renotify:true,requireInteraction:true,vibrate:[700,300,700,300,700,300,700]});});
+      navigator.serviceWorker.ready.then(function(r){r.showNotification(B,{body:M,icon:'icon-192.png',badge:'icon-192.png',tag:'mf-odak',renotify:true,requireInteraction:true,vibrate:[900,200,900,200,900]});});
     }}catch(e){}
   }
   var alarmT=null,alarmN=null,alarmBit=0;
@@ -718,7 +718,7 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
       if(navigator.vibrate)navigator.vibrate([700,300,700,300,700]);
     }
     tur();alarmT=setInterval(tur,3000);tutGuncelle();
-    bildir(B,M);alarmN=setInterval(function(){if(document.hidden)bildir(B,M);},10000);
+    bildir(B,M);alarmN=setInterval(function(){if(document.hidden)bildir(B,M);},5000);
   }
   function alarmDurdur(yeniden){
     clearInterval(alarmT);clearInterval(alarmN);alarmT=alarmN=null;
