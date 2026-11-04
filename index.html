@@ -301,7 +301,7 @@ html.mf-gece #not-gec{background:#232B52;color:#B7C5FF}
 <label class="tam" id="pm-odak-k">Odak süresi
 <select id="pm-odak"><option value="25">25 dakika (mola 5 / uzun 15)</option><option value="40">40 dakika (mola 10 / uzun 30)</option><option value="50">50 dakika (mola 10 / uzun 30)</option><option value="ozel">Kendim ayarlayayım</option></select></label>
 <label class="tam" id="pm-ozel-k" style="display:none">Kaç dakika odaklanacaksın?
-<span class="pm-ozel-s"><input type="number" id="pm-ozel" inputmode="numeric" min="5" max="180" step="5" value="90"><b>dk</b></span><small id="pm-ozel-not" class="pm-ozel-not"></small></label>
+<span class="pm-ozel-s"><input type="number" id="pm-ozel" inputmode="numeric" min="5" max="720" step="5" value="90"><b>dk</b></span><small id="pm-ozel-not" class="pm-ozel-not"></small></label>
 <label>Arka plan sesi
 <select id="pm-ses"><option value="">Kapalı</option><option value="yagmur">Yağmur, gök gürültüsü ve şömine</option><option value="kozmik">Kozmik odak (uzay ambiyansı)</option><option value="kahve">Kahverengi gürültü</option><option value="beyaz">Beyaz gürültü</option></select></label>
 <label>Ses seviyesi
@@ -474,8 +474,8 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
   function sinavKod(){var v=$('pm-sinav').value;return SINAV[v]?v:'TYT';}
   function calismaMi(m){return m==='odak'||m==='deneme';}
   // mola odak suresine gore otomatik: 25 dk -> 5/15, 40-50 dk -> 10/30
-  // ozel sure: 5-180 dk; mola: 40 dk altinda 5/15, 60 dk'ya kadar 10/30, daha uzunsa 15/30
-  function odakDk(){var v=$('pm-odak').value;if(v==='ozel'){var x=Math.round(+$('pm-ozel').value);return Math.max(5,Math.min(180,x||25));}return +v||25;}
+  // ozel sure: 5-720 dk (12 saat); mola: 40 dk altinda 5/15, 60 dk'ya kadar 10/30, daha uzunsa 15/30
+  function odakDk(){var v=$('pm-odak').value;if(v==='ozel'){var x=Math.round(+$('pm-ozel').value);return Math.max(5,Math.min(720,x||25));}return +v||25;}
   function molaDk(o){return o<40?5:(o<=60?10:15);}
   function sure(m){var o=odakDk(),mo=molaDk(o);if(m==='deneme'){var sv=SINAV[sinavKod()];if(sv.oturum){var f=(d&&d.faz)||1;return (f==='ara'?sv.ara:sv.oturum[f-1])*60000;}return sv.dk*60000;}return (m==='odak'?o:m==='kisa'?mo:Math.min(mo*3,30))*60000;}
   if(!d){d={mod:'odak',toplam:sure('odak'),bitis:null,kalan:sure('odak'),calisiyor:false,tur:0,ders:'',basla:null};}
