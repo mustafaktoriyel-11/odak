@@ -616,6 +616,19 @@ html.mf-gece .st-kok{--y1:#3987e5;--y2:#d95926;--y3:#199e70;--y4:#c98500;--y5:#d
 #ders-p .sheet-k,#an-p .sheet-k{max-height:88vh;overflow-y:auto}
 .sheet-tamam{display:block;width:100%;margin-top:14px;border:0;border-radius:14px;background:#1E3BD6;color:#fff;font:inherit;font-size:16px;font-weight:800;padding:14px;cursor:pointer}
 .dp-konu{margin:4px 0 0;padding:0;list-style:none}.dp-konu li{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid var(--izgara);font-size:13.5px;color:var(--yazi)}.dp-konu li:last-child{border:0}.dp-konu small{color:var(--yazi2);white-space:nowrap}
+.an-one{background:#141B3F;border-radius:18px;padding:16px 16px 14px;margin:0 0 10px;color:#fff}
+.an-krit{margin:0 0 8px;font-size:18px;font-weight:800;line-height:1.35;color:#FFB066}
+.an-krit::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF8A1F;margin-right:8px;vertical-align:2px}
+.an-iyi{margin:0;font-size:15px;font-weight:700;line-height:1.4;color:#8EE3B5}
+.an-iyi::before{content:"✓ ";font-weight:800}
+.an-liste{padding:4px 14px}
+.an-s{display:grid;grid-template-columns:72px minmax(0,1fr);gap:10px;padding:9px 0;border-bottom:1px solid #E3E7FA;align-items:baseline}.an-s:last-child{border:0}
+.an-s>span{font-size:12px;font-weight:800;color:#1E3BD6;text-transform:uppercase;letter-spacing:.4px}
+.an-s p{margin:0;font-size:14px;line-height:1.45;color:#2A3150}
+.an-s .art,.oneri .art{color:#157A49;font-weight:700}.an-s .azal{color:#B3261E;font-weight:700}
+.an-uygula-a{margin:6px 0 0;font-size:12.5px;color:#5A6180;text-align:center}
+.an-vazgec{display:block;margin:4px auto 0;min-height:44px;padding:0 20px;border:0;background:none;color:#5A6180;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+html.mf-gece .an-one{background:#0E1430;border:1px solid #2F3970}html.mf-gece .an-s{border-color:#2F3970}html.mf-gece .an-s>span{color:#9FB2FF}html.mf-gece .an-s p{color:#D3D9EE}html.mf-gece .an-s .art{color:#5FD69A}html.mf-gece .an-s .azal{color:#FF8A80}html.mf-gece .an-uygula-a,html.mf-gece .an-vazgec{color:#AEB6D3}
 .an-k{background:#fff;border:1px solid #E3E7FA;border-radius:16px;padding:12px 14px;margin:0 0 10px}
 .an-k h4{margin:0 0 6px;font-size:14.5px;color:#1E3BD6;display:flex;gap:6px;align-items:center}
 .an-k p{margin:0 0 6px;font-size:14px;line-height:1.55;color:#2A3150}.an-k p:last-child{margin:0}
@@ -989,7 +1002,9 @@ html.mf-gece #pm-koc{border-color:rgba(255,138,31,.35);box-shadow:0 10px 28px rg
 <div class="sheet-tut"></div>
 <div class="sheet-ust"><b id="an-p-b">🧠 Çalışma analizin</b><span id="an-p-a"></span></div>
 <div id="an-ic"></div>
-<button type="button" class="sheet-tamam" id="an-kapat">Tamam</button>
+<button type="button" class="sheet-tamam" id="an-kapat">Önerileri uygula</button>
+<p class="an-uygula-a" id="an-uygula-a" hidden></p>
+<button type="button" class="an-vazgec" id="an-vazgec">Kapat</button>
 </div></div>
 <div id="pm-ses-p" class="pm-sheet" role="dialog" aria-modal="true" aria-labelledby="ses-bas"><div class="sheet-k">
 <div class="sheet-tut"></div>
@@ -1830,6 +1845,9 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
       return {yz:yz,ayr:ayr.join('\n'),kisa:'📅 Bugünkü program: %'+yz+' tamamlandı'};
     };
     window.MF_PR=ciz2;window.MF_SAYFA=sayfa;ciz2();
+    window.MF_PR_SEC=function(ders){sayfa('sayac');window.scrollTo(0,0);if(d.calisiyor)return;if(d.mod==='deneme')modSec('odak');if(d.mod!=='odak')molaAtla(false);var sel=$('pm-ders');sel.value=ders;sel.dispatchEvent(new Event('change'));cipGuncelle();};
+    window.MF_PR_BUGUN=function(ders){return pr.g[bugunI()].some(function(o){return o.ders===ders;});};
+    window.MF_PR_ONER=function(ders,dk){sayfa('program');window.scrollTo(0,0);secGun=bugunI();ciz2();pAc();pDers=ders;pSure=dk;if(SURELER.indexOf(dk)<0){$('pr-p-ozel').value=dk;pCizOzel=true;}pCiz();};
     $('st-halka').addEventListener('click',function(){sayfa('program');window.scrollTo(0,0);});
   })();
   if(d.calisiyor&&kalanMs()<=0){bitti();}
@@ -2163,7 +2181,8 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
   function shAc(id){var p=$(id);p.classList.add('acik');requestAnimationFrame(function(){requestAnimationFrame(function(){p.classList.add('gor');});});}
   function shKapat(id){var p=$(id);p.classList.remove('gor');setTimeout(function(){p.classList.remove('acik');},280);}
   ['ders-p','an-p'].forEach(function(id){$(id).addEventListener('click',function(e){if(e.target===$(id))shKapat(id);});});
-  $('ders-p-kapat').addEventListener('click',function(){shKapat('ders-p');});$('an-kapat').addEventListener('click',function(){shKapat('an-p');});
+  $('ders-p-kapat').addEventListener('click',function(){shKapat('ders-p');});$('an-kapat').addEventListener('click',function(){shKapat('an-p');if(AN_ONER&&AN_ONER[2]&&window.MF_PR_SEC)setTimeout(function(){window.MF_PR_SEC(AN_ONER[0]);},300);else if(AN_ONER&&window.MF_PR_ONER)setTimeout(function(){window.MF_PR_ONER(AN_ONER[0],AN_ONER[1]);},300);else if(window.MF_SAYFA){setTimeout(function(){window.MF_SAYFA('sayac');window.scrollTo(0,0);},300);}});
+  $('an-vazgec').addEventListener('click',function(){shKapat('an-p');});
   function gunOnce(t){var a=new Date();a.setHours(0,0,0,0);var b=new Date(t);b.setHours(0,0,0,0);return Math.round((a-b)/864e5);}
   function onceYaz(n){return n===0?'bugün':n===1?'dün':n+' gün önce';}
   function dersDk(k,ad,t){var x=k[gunK(t)];if(!x||!x.d)return 0;var s=0;for(var z in x.d)if(dAd(z)===ad)s+=x.d[z];return s;}
@@ -2189,69 +2208,82 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
   function programUyum(k){var G;try{G=JSON.parse(localStorage.getItem('mf-program-gecmis')||'{}');}catch(e){return null;}
     var ks=Object.keys(G).map(function(x){var p=x.split('-');return [x,new Date(+p[0],+p[1]-1,+p[2],12)];}).sort(function(a,b){return b[1]-a[1];});
     var bugun=new Date();bugun.setHours(23,59,0,0);var sonuc=[];
-    ks.slice(0,3).forEach(function(e){var plan=G[e[0]],hed=0,yap=0,hedBug=0,acik={};
-      for(var j=0;j<7;j++){var t=new Date(e[1]);t.setDate(t.getDate()+j);var gecti=t<=bugun;(plan[j]||[]).forEach(function(o){var a=dAd(o.ders),y=Math.min(o.dk,dersDk(k,a,t.getTime()));hed+=o.dk;if(gecti){hedBug+=o.dk;yap+=y;acik[a]=(acik[a]||0)+(o.dk-y);}else{}});}
-      if(hed)sonuc.push({bas:e[1],hed:hed,hedBug:hedBug,yap:yap,acik:acik});});
+    ks.slice(0,3).forEach(function(e){var plan=G[e[0]],hed=0,yap=0,hedBug=0,acik={},dset={};
+      for(var j=0;j<7;j++){var t=new Date(e[1]);t.setDate(t.getDate()+j);var gecti=t<=bugun;(plan[j]||[]).forEach(function(o){var a=dAd(o.ders);dset[a]=1;var y=Math.min(o.dk,dersDk(k,a,t.getTime()));hed+=o.dk;if(gecti){hedBug+=o.dk;yap+=y;acik[a]=(acik[a]||0)+(o.dk-y);}else{}});}
+      if(hed)sonuc.push({bas:e[1],hed:hed,hedBug:hedBug,yap:yap,acik:acik,dset:dset});});
     return sonuc;}
   function analiz(){var k;try{k=JSON.parse(localStorage.getItem('pm-kayit')||'{}');}catch(e){k={};}
-    var B=haftaDers(k,0,7),O=haftaDers(k,7,7),D4=haftaDers(k,7,28),N=notlar(),H=[],ON=[];
+    var B=haftaDers(k,0,7),O=haftaDers(k,7,7),D4=haftaDers(k,7,28),N=notlar(),H=[],ON=[];AN_ONER=null;
     var bugunDk=haftaDers(k,0,1).t,aktif=0;for(var i=0;i<7;i++){var x=k[gunK(Date.now()-i*864e5)];if(x&&x.dk>0)aktif++;}
-    if(B.t+O.t<30){$('an-ic').innerHTML='<div class="an-k"><h4>📭 Henüz yeterli kayıt yok</h4><p>Analiz için son iki haftada biraz çalışma kaydı gerekiyor. Birkaç gün sayaçla çalış, sonra tekrar dene.</p></div>';return;}
-    // genel
-    var f=yuzde(B.t,O.t),ort=B.t/7,p='';
-    p+='<p>Son 7 günde <b>'+sk(B.t)+'</b> çalıştın'+(f===null?'.':(f>=5?', önceki haftaya göre <b class="art">%'+f+' daha fazla</b>.':f<=-5?', önceki haftaya göre <b class="azal">%'+(-f)+' daha az</b>.':', önceki haftayla hemen hemen aynı.'))+'</p>';
-    p+='<p>Son 7 günün <b>'+aktif+' gününde</b> çalıştın, günlük ortalaman <b>'+sk(ort)+'</b>.'+(bugunDk?' Bugün şu ana kadar <b>'+sk(bugunDk)+'</b>; '+(bugunDk>=ort?'<b class="art">ortalamanın üstündesin</b>.':'ortalamana '+sk(ort-bugunDk)+' kaldı.'):' Bugün henüz çalışmadın.')+'</p>';
-    H.push(['📊 Genel durum',p]);
-    // dersler
+    if(B.t+O.t<30){$('an-ic').innerHTML='<div class="an-one"><p class="an-krit">Henüz yeterli kayıt yok</p><p class="an-iyi">Birkaç gün sayaçla çalış, analizin burada hazır olacak.</p></div>';anButon();return;}
+    var f=yuzde(B.t,O.t),ort=B.t/7;
     var tum={};Object.keys(B.d).concat(Object.keys(O.d)).forEach(function(a){tum[a]=1;});
     var degis=Object.keys(tum).map(function(a){return [a,(B.d[a]||0)-(O.d[a]||0),B.d[a]||0,O.d[a]||0];});
-    var art=degis.filter(function(x){return x[1]>=20&&x[3]>0;}).sort(function(a,b){return b[1]-a[1];}).slice(0,2);
-    var az=degis.filter(function(x){return x[1]<=-20&&x[2]>0;}).sort(function(a,b){return a[1]-b[1];}).slice(0,2);
+    var art=degis.filter(function(x){return x[1]>=20&&x[3]>0;}).sort(function(a,b){return b[1]-a[1];});
+    var az=degis.filter(function(x){return x[1]<=-20&&x[2]>0;}).sort(function(a,b){return a[1]-b[1];});
     var yeni=Object.keys(B.d).filter(function(a){return !D4.d[a]&&B.d[a]>=20;});
-    var ihmal=Object.keys(D4.d).filter(function(a){return !B.d[a]&&D4.d[a]>=40;}).map(function(a){return [a,sonCalisma(k,a)];}).sort(function(a,b){return b[1]-a[1];});
+    var PU=programUyum(k),PRG=!!(PU&&PU.length&&new Date()-PU[0].bas<8*864e5),PSET=PRG?PU[0].dset:null;
+    var ihmal=Object.keys(D4.d).filter(function(a){return !B.d[a]&&D4.d[a]>=40&&(!PSET||PSET[a]);}).map(function(a){return [a,sonCalisma(k,a)];}).sort(function(a,b){return b[1]-a[1];});
     var bas=Object.keys(B.d).sort(function(a,b){return B.d[b]-B.d[a];})[0];
-    p='';
-    if(bas)p+='<p>Bu hafta en çok <b>'+esc(bas)+'</b> çalıştın: toplam sürenin <b>%'+Math.round(B.d[bas]*100/B.t)+ekN(Math.round(B.d[bas]*100/B.t))+'</b> ('+sk(B.d[bas])+').</p>';
-    if(art.length)p+='<p>Çalışman artan: '+art.map(function(x){return '<b>'+esc(x[0])+'</b> <b class="art">+'+sk(x[1])+'</b>';}).join(', ')+'.</p>';
-    if(az.length)p+='<p>Çalışman azalan: '+az.map(function(x){return '<b>'+esc(x[0])+'</b> <b class="azal">−'+sk(-x[1])+'</b>';}).join(', ')+'.</p>';
-    if(yeni.length)p+='<p>Yeni başladığın: <b>'+yeni.map(esc).join(', ')+'</b>. Güzel bir başlangıç 👏</p>';
-    ihmal.forEach(function(x){p+='<p><b>'+esc(x[0])+'</b> dersini <b class="azal">'+x[1]+' gündür</b> çalışmadın.</p>';});
-    var drs=Object.keys(O.d).filter(function(a){return !B.d[a]&&!D4.d[a];});
-    H.push(['📚 Dersler',p||'<p>Derslerin arasında belirgin bir değişiklik yok.</p>']);
     // soru
     var b7=Date.now()-7*864e5,b14=Date.now()-14*864e5,S1={q:0,d:0,y:0,dr:{}},S0={q:0,d:0,y:0};
     N.forEach(function(x){var t=new Date(x.t).getTime();if(!x.soru)return;var S=t>=b7?S1:(t>=b14?S0:null);if(!S)return;S.q+=x.soru;S.d+=x.d||0;S.y+=x.y||0;
       if(S===S1){var r=S1.dr[x.ders]=S1.dr[x.ders]||{q:0,d:0,y:0};r.q+=x.soru;r.d+=x.d||0;r.y+=x.y||0;}});
-    var zayif=null;
-    if(S1.q){p='<p>Son 7 günde <b>'+S1.q+' soru</b> çözdün'+(S0.q?(S1.q>S0.q?', önceki haftadan <b class="art">'+(S1.q-S0.q)+' fazla</b>.':S1.q<S0.q?', önceki haftadan <b class="azal">'+(S0.q-S1.q)+' az</b>.':', önceki haftayla aynı.'):'.')+(S1.d+S1.y?' Doğruluk oranın <b>%'+Math.round(S1.d*100/(S1.d+S1.y))+'</b>'+(S0.d+S0.y?' (önceki hafta %'+Math.round(S0.d*100/(S0.d+S0.y))+')':'')+'.':'')+'</p>';
-      var dl=Object.keys(S1.dr).filter(function(a){var r=S1.dr[a];return r.d+r.y>=15;}).map(function(a){var r=S1.dr[a];return [a,Math.round(r.d*100/(r.d+r.y)),r.q];}).sort(function(a,b){return a[1]-b[1];});
-      if(dl.length>1){p+='<p>En yüksek doğruluk: <b>'+esc(dl[dl.length-1][0])+'</b> <b class="art">%'+dl[dl.length-1][1]+'</b>. En düşük: <b>'+esc(dl[0][0])+'</b> <b class="azal">%'+dl[0][1]+'</b>.</p>';}
-      if(dl.length&&dl[0][1]<65)zayif=dl[0];
-      H.push(['✏️ Soru çözümü',p]);}
-    else H.push(['✏️ Soru çözümü','<p>Bu hafta soru kaydın yok. Seans sonunda çözdüğün soru sayısını girersen burada doğruluk analizini de görürsün.</p>']);
+    var dog1=S1.d+S1.y?Math.round(S1.d*100/(S1.d+S1.y)):null,dog0=S0.d+S0.y?Math.round(S0.d*100/(S0.d+S0.y)):null;
+    var dl=Object.keys(S1.dr).filter(function(a){var r=S1.dr[a];return r.d+r.y>=15;}).map(function(a){var r=S1.dr[a];return [a,Math.round(r.d*100/(r.d+r.y))];}).sort(function(a,b){return a[1]-b[1];});
+    var zayif=dl.length&&dl[0][1]<65?dl[0]:null;
     // program
-    var PU=programUyum(k),geri=null;
-    if(PU&&PU.length){var bu=PU[0],buYz=bu.hedBug?Math.round(bu.yap*100/bu.hedBug):null,tYz=Math.round(bu.yap*100/bu.hed),onceki=PU.slice(1).map(function(x){return Math.round(Math.min(x.yap,x.hed)*100/x.hed);});
-      p='<p>Bu haftaki programının <b>%'+tYz+ekN(tYz,true)+'</b> tamamladın.'+(buYz!==null?' Bugüne kadar planladığın derslere uyumun <b class="'+(buYz>=80?'art':buYz<50?'azal':'')+'">%'+buYz+'</b>.':'')+'</p>';
-      if(onceki.length)p+='<p>Önceki '+(onceki.length===1?'hafta':onceki.length+' hafta')+': '+onceki.map(function(x){return '%'+x;}).join(', ')+'.</p>';
-      var ac=Object.keys(bu.acik).filter(function(a){return bu.acik[a]>=15;}).sort(function(a,b){return bu.acik[b]-bu.acik[a];});
-      if(ac.length){geri=[ac[0],bu.acik[ac[0]]];p+='<p>Plana göre en çok geride kaldığın ders: <b>'+esc(ac[0])+'</b> ('+sk(bu.acik[ac[0]])+' eksik).</p>';}
-      H.push(['📅 Program uyumu',p]);}
-    // deneme
+    var geri=null,tYz=null,onc=null;
+    if(PRG){var bu=PU[0];tYz=Math.round(bu.yap*100/bu.hed);if(PU[1])onc=Math.round(Math.min(PU[1].yap,PU[1].hed)*100/PU[1].hed);
+      var ac=Object.keys(bu.acik).filter(function(a){return bu.acik[a]>=15;}).sort(function(a,b){return bu.acik[b]-bu.acik[a];});if(ac.length)geri=[ac[0],bu.acik[ac[0]]];}
+    // --- one cikan: 1 kritik + 1 olumlu ---
+    var krit=null,iyi=null;
+    if(PRG&&geri)krit='Programında '+esc(geri[0])+' '+sk(geri[1])+' geride.';
+    else if(ihmal.length)krit=esc(ihmal[0][0])+' '+ihmal[0][1]+' gündür seni bekliyor.';
+    else if(zayif)krit=esc(zayif[0])+' sorularında doğruluk %'+zayif[1]+'.';
+    else if(f!==null&&f<=-20)krit='Bu hafta %'+(-f)+' daha az çalıştın.';
+    if(art.length)iyi=esc(ekDat(art[0][0]))+' ayırdığın süre '+sk(art[0][1])+' arttı.';
+    else if(dog1!==null&&dog0!==null&&dog1>dog0)iyi='Doğruluğun yükseldi: %'+dog0+' → %'+dog1+'.';
+    else if(f!==null&&f>=5)iyi='Geçen haftadan %'+f+' daha fazla çalıştın.';
+    else if(yeni.length)iyi=esc(yeni[0])+' çalışmaya başladın.';
+    else if(aktif>=5)iyi='7 günün '+aktif+' gününde masadaydın, istikrarın güzel.';
+    else if(bugunDk>=ort&&bugunDk)iyi='Bugün ortalamanın üstündesin.';
+    else iyi='Her kayıt bir adım: devam ettiğin sürece toparlarsın.';
+    // --- bolumler (en fazla 2 kisa cumle) ---
+    H.push(['Genel','<b>'+sk(B.t)+'</b>'+(f===null?'':' <span class="'+(f>=5?'art':f<=-5?'azal':'')+'">('+(f>=5?'▲ %'+f:f<=-5?'▼ %'+(-f):'≈ aynı')+')</span>')+' · '+aktif+' gün · günde ort. '+sk(ort)+'.']);
+    var dp=[];if(bas)dp.push('En çok <b>'+esc(bas)+'</b> (%'+Math.round(B.d[bas]*100/B.t)+').');
+    var ad2=[];if(art.length)ad2.push('<span class="art">▲ '+esc(art[0][0])+' +'+sk(art[0][1])+'</span>');if(az.length)ad2.push('<span class="azal">▼ '+esc(az[0][0])+' −'+sk(-az[0][1])+'</span>');
+    if(ad2.length)dp.push(ad2.join(' · ')+'.');
+    if(ihmal.length>1)dp.push(esc(deDa(ihmal[1][0]))+' '+ihmal[1][1]+' gündür ara verdi.');
+    H.push(['Dersler',dp.slice(0,3).join(' ')||'Belirgin bir değişiklik yok.']);
+    if(S1.q)H.push(['Soru','<b>'+S1.q+' soru</b>'+(dog1!==null?', doğruluk <b>%'+dog1+'</b>'+(dog0!==null?' <span class="'+(dog1>dog0?'art':dog1<dog0?'azal':'')+'">(önce %'+dog0+')</span>':''):'')+'.'+(dl.length>1?' En iyi '+esc(dl[dl.length-1][0])+' %'+dl[dl.length-1][1]+', en zayıf '+esc(dl[0][0])+' %'+dl[0][1]+'.':'')]);
+    else H.push(['Soru','Bu hafta soru kaydı yok. Seans sonunda soru sayını girersen doğruluğunu da görürsün.']);
+    if(!PRG)H.push(['Program','Haftalık programın yok. <b>Program</b> sekmesinden kurarsan analizini planına göre yaparım.']);
+    if(tYz!==null)H.push(['Program','Haftanın <b>%'+tYz+ekN(tYz)+'</b> tamam'+(onc!==null?' (geçen hafta %'+onc+')':'')+'.'+(geri?' En çok geride: '+esc(geri[0])+'.':'')]);
     try{var DL=JSON.parse(localStorage.getItem('mf-denemeler')||'[]');if(DL.length>=2){var s1=DL[DL.length-1],s0=null;for(var j=DL.length-2;j>=0;j--)if(DL[j].sinav===s1.sinav&&JSON.stringify(DL[j].ozel||'')===JSON.stringify(s1.ozel||'')){s0=DL[j];break;}
-      if(s0){var fn=Math.round((s1.net-s0.net)*100)/100;H.push(['📈 Deneme',(function(){return '<p>Son denemende <b>'+String(s1.net).replace('.',',')+' net</b> yaptın; bir öncekine göre '+(fn>0?'<b class="art">+'+String(fn).replace('.',',')+'</b>':fn<0?'<b class="azal">'+String(fn).replace('.',',')+'</b>':'aynı')+'.</p>';})()]);}}}catch(e){}
-    // oneriler
-    if(ihmal.length)ON.push('<b>'+esc(ihmal[0][0])+'</b> için bu hafta en az 2 seans ayır; uzun ara konuları unutturur.');
-    if(geri)ON.push('Programını yakalamak için bugün <b>'+esc(geri[0])+'</b> dersine '+sk(Math.min(geri[1],60))+' ayır.');
-    if(zayif)ON.push('<b>'+esc(zayif[0])+'</b> sorularında doğruluk %'+zayif[1]+'. Yeni soruya geçmeden önce yanlışlarının çözümlerine ve konu özetine dön.');
-    if(aktif<5)ON.push('Bu hafta '+aktif+' gün çalıştın. Uzun ama seyrek çalışmak yerine her gün kısa da olsa çalışmak daha kalıcı olur.');
-    if(f!==null&&f<=-20&&!ON.length)ON.push('Çalışma süren düştü. Yarın için küçük bir hedef koy: 2 pomodoro ile başla.');
-    if(az.length&&ON.length<3)ON.push('<b>'+esc(az[0][0])+'</b> çalışman azaldı; programına bu hafta bir seans daha ekleyebilirsin.');
-    if(!ON.length)ON.push('Dengen iyi görünüyor. Bu tempoyu korumak için yarınki ilk seansını şimdiden planla.');
-    var o=H.map(function(h){return '<div class="an-k"><h4>'+h[0]+'</h4>'+h[1]+'</div>';}).join('');
-    o+='<div class="an-k oneri"><h4>💡 Önerilerim</h4><ul>'+ON.slice(0,3).map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>';
-    $('an-ic').innerHTML=o;
+      if(s0){var fn=Math.round((s1.net-s0.net)*100)/100;H.push(['Deneme','Son net <b>'+String(s1.net).replace('.',',')+'</b> '+(fn>0?'<span class="art">(▲ '+String(fn).replace('.',',')+')</span>':fn<0?'<span class="azal">(▼ '+String(-fn).replace('.',',')+')</span>':'(aynı)')+'.']);}}}catch(e){}
+    // --- oneriler (en fazla 2) + uygulanacak ders ---
+    if(geri){ON.push('<b>'+esc(geri[0])+'</b> için bugün '+sk(Math.min(geri[1],60))+' ayırırsan programı yakalarsın.');AN_ONER=[geri[0],Math.min(60,Math.max(25,Math.round(geri[1]/5)*5)),window.MF_PR_BUGUN&&window.MF_PR_BUGUN(geri[0])];}
+    if(ihmal.length){ON.push('<b>'+esc(ihmal[0][0])+'</b> için kısa bir tekrar seansı yap'+(PRG?'; programında var ama '+ihmal[0][1]+' gündür açılmadı.':'.'));if(!AN_ONER)AN_ONER=[ihmal[0][0],40];}
+    if(zayif)ON.push('<b>'+esc(ekLoc(zayif[0]))+'</b> yeni soruya geçmeden yanlışlarının çözümüne dön.');
+    if(aktif<5)ON.push('Her gün kısa da olsa çalışmak, seyrek ve uzun seanslardan daha kalıcı.');
+    if(!ON.length)ON.push('Dengen iyi. Yarınki ilk seansını şimdiden planla.');
+    if(!AN_ONER&&az.length)AN_ONER=[az[0][0],40];
+    var o='<div class="an-one">'+(krit?'<p class="an-krit">'+krit+'</p>':'')+'<p class="an-iyi">'+iyi+'</p></div>';
+    o+='<div class="an-k an-liste">'+H.map(function(h){return '<div class="an-s"><span>'+h[0]+'</span><p>'+h[1]+'</p></div>';}).join('')+'</div>';
+    o+='<div class="an-k oneri"><h4>💡 Bugün için</h4><ul>'+ON.slice(0,2).map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>';
+    $('an-ic').innerHTML=o;anButon();
   }
+  var AN_ONER=null;
+  function sesliU(w){var m=String(w).toLowerCase().match(/[aeıioöuü](?=[^aeıioöuü]*$)/);return m?m[0]:'e';}
+  function kalin(w){return 'aıou'.indexOf(sesliU(w))>=0;}
+  function ekDat(w){var v=kalin(w)?'a':'e',son=String(w).slice(-1).toLowerCase();return w+'\''+('aeıioöuü'.indexOf(son)>=0?'y':'')+v;}
+  function ekLoc(w){var v=kalin(w)?'a':'e',son=String(w).slice(-1).toLowerCase();return w+'\''+('çfhkpsşt'.indexOf(son)>=0?'t':'d')+v;}
+  function deDa(w){return w+' '+(kalin(w)?'da':'de');}
+  function anButon(){var b=$('an-kapat'),a=$('an-uygula-a');
+    if(AN_ONER&&AN_ONER[2]){b.textContent='Önerileri uygula';a.textContent=AN_ONER[0]+' bugünkü programında var. Sayaç '+AN_ONER[0]+' seçili açılacak.';a.hidden=false;}
+    else if(AN_ONER&&window.MF_PR_ONER){b.textContent='Önerileri uygula';a.textContent='Bugünkü programına '+AN_ONER[0]+' ('+AN_ONER[1]+' dk) eklenecek';a.hidden=false;}
+    else{b.textContent='Hadi başlayalım';a.textContent='';a.hidden=true;}}
   $('an-btn').addEventListener('click',function(){var d=new Date();$('an-p-a').textContent='son 7 gün · '+d.getDate()+' '+AYK2[d.getMonth()];analiz();shAc('an-p');});
   // ---- deneme grafikleri ----
   var dgSec=null,AYK2=['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'];
