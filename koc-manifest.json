@@ -1,0 +1,16 @@
+{
+  "id": "/koc.html",
+  "name": "MF Koç Paneli",
+  "short_name": "Koç Paneli",
+  "start_url": "/koc.html",
+  "scope": "/koc",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#141B3F",
+  "theme_color": "#141B3F",
+  "lang": "tr",
+  "icons": [
+    {"src": "/koc-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "/koc-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
