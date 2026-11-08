@@ -336,13 +336,23 @@ html.mf-gece .sik-sahne{background:radial-gradient(circle at 50% 62%,#4A3524,#2A
 #pm-curu .ikon{font-size:54px;line-height:1;margin-bottom:8px;filter:grayscale(.6) brightness(.8)}
 #pm-curu b{display:block;font-size:22px;color:#C0392B;margin-bottom:6px}
 #pm-curu p{margin:0 0 18px;color:#555;font-size:15px;line-height:1.5}
+#sik-izn{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;background:rgba(10,16,48,.6);padding:20px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+#sik-izn.acik{display:flex}
+#sik-izn>div{background:#FAFBFF;border-radius:22px;padding:22px 20px;text-align:center;max-width:340px;width:100%;animation:iznGir .35s ease-out}
+@keyframes iznGir{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}
+#sik-izn b{display:block;font-size:21px;color:#141B3F;margin-bottom:6px}
+#sik-izn p{margin:0 0 10px;color:#555;font-size:14.5px;line-height:1.5}
+#sik-izn ul{list-style:none;margin:0 0 16px;padding:10px 12px;background:#F4F6FF;border-radius:14px;text-align:left;font-size:13.5px;color:#3A4166;line-height:1.55}
+#sik-izn li+li{margin-top:4px}
+#sik-izn-devam{background:#1E3BD6;color:#fff}#sik-izn-sonra{background:transparent;color:#8A90A8;font-weight:700!important}
+html.mf-gece #sik-izn>div{background:#1A2142}html.mf-gece #sik-izn b{color:#fff}html.mf-gece #sik-izn p{color:#D3D9EE}html.mf-gece #sik-izn ul{background:#232B52;color:#D3D9EE}
 #sik-sor{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;background:rgba(10,16,48,.6);padding:20px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 #sik-sor.acik{display:flex}
 #sik-sor>div{background:#FAFBFF;border-radius:22px;padding:22px 20px;text-align:center;max-width:340px;width:100%}
 .sik-sor-ik{width:84px;height:84px;display:block;margin:0 auto 4px}
 #sik-sor b{display:block;font-size:21px;color:#141B3F;margin-bottom:4px}
 #sik-sor p{margin:0 0 16px;color:#555;font-size:14.5px;line-height:1.5}
-.sik-sor-b{display:grid;gap:10px}
+.sik-sor-b,#sik-izn .sik-sor-b{display:grid;gap:10px}
 .sik-sor-b button{border:0;border-radius:14px;padding:13px;font:inherit;font-size:15.5px;font-weight:800;cursor:pointer}
 #sik-sor-kilit{background:#1E3BD6;color:#fff}#sik-sor-baktim{background:#FFF3E6;color:#C2410C;border:1.5px solid #FFD2A6}
 #sik-sor small{display:block;margin-top:12px;font-size:12px;color:#8A90A8}
@@ -892,6 +902,13 @@ html.mf-gece #pm-koc{border-color:rgba(255,138,31,.35);box-shadow:0 10px 28px rg
 </div></div>
 <div class="mf-toast" id="mf-toast" role="status" aria-live="polite"><span id="mf-toast-m"></span><button type="button" id="mf-toast-b">Geri al</button></div>
 <div id="alarm" role="alertdialog"><div><b id="alarm-b">Süre bitti! 🍅</b><p id="alarm-p">Harika iş.</p><div class="alarm-pr" id="alarm-pr" hidden><div class="alarm-pr-u"><span>📅 Bugünkü program</span><b id="alarm-pr-y"></b></div><div class="alarm-pr-bar"><i id="alarm-pr-bar"></i></div><small id="alarm-pr-t"></small></div><button type="button" id="alarm-tamam">Tamam</button></div></div>
+<div id="sik-izn" role="dialog" aria-modal="true" aria-labelledby="sik-izn-b"><div>
+<svg class="sik-sor-ik" viewBox="0 0 120 120" aria-hidden="true"><use href="#mf-aslan"/></svg>
+<b id="sik-izn-b">Aslan nöbette!</b>
+<p>Telefonu kilitlediğinde pomodoron çürümesin diye küçük bir izin isteyeceğiz.</p>
+<ul><li>🔒 Sadece ekranın kilitli olup olmadığını öğreniriz.</li><li>🙈 Ne yaptığını, hangi uygulamayı açtığını görmeyiz.</li><li>📵 Bu bilgi hiçbir yere kaydedilmez, gönderilmez.</li></ul>
+<p style="font-size:13px;margin-bottom:14px">Birazdan çıkacak pencerede <b style="display:inline;font-size:inherit;color:inherit">İzin ver</b>'e dokun.</p>
+<div class="sik-sor-b"><button type="button" id="sik-izn-devam">Devam</button><button type="button" id="sik-izn-sonra">Şimdi değil</button></div></div></div>
 <div id="sik-sor" role="alertdialog" aria-labelledby="sik-sor-b"><div>
 <svg class="sik-sor-ik" viewBox="0 0 120 120" aria-hidden="true"><use href="#mf-aslan"/></svg>
 <b id="sik-sor-b">Neredeydin?</b><p id="sik-sor-p"></p>
@@ -1392,7 +1409,11 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
   }
   function idleIzin(istek){
     if(!('IdleDetector' in window)){idleNot();return;}
-    if(istek){try{IdleDetector.requestPermission().then(function(p){if(p==='granted')idleKur();idleNot();}).catch(function(){});}catch(e){}return;}
+    if(istek){try{navigator.permissions.query({name:'idle-detection'}).then(function(p){
+        if(p.state==='granted'){idleKur();idleNot();return;}
+        if(p.state==='denied'){idleNot();return;}
+        setTimeout(function(){if($('pm-siki').checked)$('sik-izn').classList.add('acik');},2300);
+      }).catch(function(){idleNot();});}catch(e){}return;}
     try{navigator.permissions.query({name:'idle-detection'}).then(function(p){if(p.state==='granted')idleKur();idleNot();}).catch(function(){});}catch(e){}
   }
   function idleNot(){var n=$('sik-izin');if(!n)return;
@@ -1445,6 +1466,9 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
       evrSur=false;haleBitir();document.body.classList.add('hale-patla');},t));
     evT.push(setTimeout(function(){sh.classList.remove('flas','gel');document.body.classList.remove('hale-patla');},t+1800));
   }
+  $('sik-izn-devam').addEventListener('click',function(){$('sik-izn').classList.remove('acik');
+    try{IdleDetector.requestPermission().then(function(p){if(p==='granted')idleKur();idleNot();}).catch(function(){idleNot();});}catch(e){idleNot();}});
+  $('sik-izn-sonra').addEventListener('click',function(){$('sik-izn').classList.remove('acik');idleNot();});
   $('pm-siki').addEventListener('change',function(){ayarKaydet();ekranAcik();sikDurum();evrim(this.checked);if(this.checked)idleIzin(true);});
   if($('pm-siki').checked)idleIzin(false);
   $('pm-sik-bas').addEventListener('click',function(){var ac=this.getAttribute('aria-expanded')!=='true';this.setAttribute('aria-expanded',ac);$('pm-sik-ic').hidden=!ac;});
