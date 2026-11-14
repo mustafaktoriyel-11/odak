@@ -1056,7 +1056,10 @@ html.mf-gece .sn-ince{color:#9DB0FF}
 html.mf-gece .sn-izgara button,html.mf-gece .sn-liste button{background:#232B52;border-color:#3A4BA0;color:#fff}
 html.mf-gece .sn-izgara button b{color:#fff}
 html.mf-gece .sn-izgara button small,html.mf-gece .sn-gec{color:#AEB6D3}
-html.mf-gece .sn-izgara button.on,html.mf-gece .sn-liste button.on{background:#2C3A7A;border-color:#7F95FF}.km-kart{margin:0 0 12px;padding:14px 16px;border-radius:16px;background:#FFF4E8;border:1.5px solid #FFB36B;color:#141B3F}
+html.mf-gece .sn-izgara button.on,html.mf-gece .sn-liste button.on{background:#2C3A7A;border-color:#7F95FF}.bl-serit{display:flex;flex-direction:column;align-items:flex-start;gap:2px;width:100%;box-sizing:border-box;margin:0 0 12px;padding:12px 16px;min-height:52px;border:1.5px solid #F2A9A9;border-radius:14px;background:#FFF0F0;color:#7A1F1F;font:inherit;text-align:left;cursor:pointer}
+.bl-serit[hidden]{display:none}.bl-serit b{font-size:15px}.bl-serit span{font-size:14px;font-weight:700;color:#C0392B}.bl-serit small{display:none;font-size:13px;color:#7A1F1F;margin-top:4px}.bl-serit.acik small{display:block}
+html.mf-gece .bl-serit{background:#3A1A1A;border-color:#8A3A3A;color:#FFD6D6}html.mf-gece .bl-serit span{color:#FF9C9C}html.mf-gece .bl-serit small{color:#FFD6D6}
+.km-kart{margin:0 0 12px;padding:14px 16px;border-radius:16px;background:#FFF4E8;border:1.5px solid #FFB36B;color:#141B3F}
 .km-ust{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.km-ust b{font-size:15px}.km-ust small{font-size:12px;color:#7A5A2E}
 .km-kart p{margin:8px 0 10px;font-size:16px;line-height:1.45;white-space:pre-wrap;word-break:break-word}
 .km-tamam{min-height:44px;padding:0 22px;border:0;border-radius:999px;background:#FF7A1A;color:#fff;font:inherit;font-weight:800;font-size:15px;cursor:pointer}
@@ -5196,6 +5199,28 @@ $('bl-evet').addEventListener('click',function(){
  };
  try{Notification.requestPermission().then(sonra,sonra);}catch(e){sonra();}
 });
+// ---------- koç kodlu öğrenci: izin yoksa her açılışta şerit ----------
+var serit=null;
+function seritGuncelle(){
+ var sayfa=$('pg-sayac');if(!sayfa||!HAZIR||desteksiz)return;
+ var a=oku(),gerek=!!kocKod()&&!(a.acik&&izin()==='granted');
+ if(!gerek){if(serit)serit.hidden=true;return;}
+ if(!serit){serit=document.createElement('button');serit.type='button';serit.className='bl-serit';
+  var km=$('km-kutu');sayfa.insertBefore(serit,km?km.nextSibling:sayfa.firstChild);
+  serit.addEventListener('click',function(){
+   if(izin()==='denied'){serit.classList.add('acik');return;}
+   if(izin()==='granted'){ayarAc();acikDeger=true;swCiz();return;}
+   var sonra=function(){var b=oku();if(izin()==='granted'){b.acik=true;yaz(b);satirGuncelle();tokenleGonder(b).then(satirGuncelle);}seritGuncelle();};
+   try{Notification.requestPermission().then(sonra,sonra);}catch(e){sonra();}
+  });}
+ serit.hidden=false;serit.classList.toggle('acik',izin()==='denied');
+ serit.innerHTML=izin()==='denied'
+  ?'<b>🔕 Koçunun mesajları sana ulaşmıyor</b><span>Bildirim izni telefon ayarlarından kapatılmış.</span><small>Aç: Telefon Ayarları → Uygulamalar → MF Odak (ya da Chrome) → Bildirimler → İzin ver</small>'
+  :'<b>🔕 Koçunun mesajları sana ulaşmıyor</b><span>Bildirimleri aç ›</span>';
+}
+var _sg=satirGuncelle;satirGuncelle=function(){_sg();seritGuncelle();};
+document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')seritGuncelle();});
+setTimeout(seritGuncelle,3000);
 // ---------- başlat ----------
 satirGuncelle();
 ozetYaz();
