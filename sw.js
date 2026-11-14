@@ -1,5 +1,5 @@
 // MustaFaktoriyel Odak - service worker
-var SURUM = 'mf-odak-v99';
+var SURUM = 'mf-odak-v101';
 var DOSYALAR = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', function (e) {
@@ -115,9 +115,7 @@ function mfMesaj(tur, oz, simdi) {
   }
   // gün içi
   if (bugun === 0) {
-    R = { title: 'Bugün henüz 0 dk', body: sec(koc ?
-      ['Koçun bugünkü kaydını görecek. Tek pomodoro ile başla, 25 dk yeter.', 'Henüz başlamadın. Koçun için tek bir pomodoro?'] :
-      ['Henüz başlamadın. Tek bir pomodoro ile açalım mı, 25 dk?', 'Bugün sıfır. Bir pomodoro ile günü aç, gerisi gelir.']) };
+    R = { title: 'Bugün henüz 0 dk', body: 'Geleceğin için masanın başına geçmeye ne dersin?' };
   } else if (hedef > 0 && bugun < hedef) {
     var kal = hedef - bugun;
     R = { title: dkS(bugun) + ' tamam', body: sec(koc ?
