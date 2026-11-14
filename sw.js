@@ -1,5 +1,5 @@
 // MustaFaktoriyel Odak - service worker
-var SURUM = 'mf-odak-v89';
+var SURUM = 'mf-odak-v92';
 var DOSYALAR = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', function (e) {
