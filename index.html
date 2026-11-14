@@ -1056,7 +1056,12 @@ html.mf-gece .sn-ince{color:#9DB0FF}
 html.mf-gece .sn-izgara button,html.mf-gece .sn-liste button{background:#232B52;border-color:#3A4BA0;color:#fff}
 html.mf-gece .sn-izgara button b{color:#fff}
 html.mf-gece .sn-izgara button small,html.mf-gece .sn-gec{color:#AEB6D3}
-html.mf-gece .sn-izgara button.on,html.mf-gece .sn-liste button.on{background:#2C3A7A;border-color:#7F95FF}.bl-zil{position:absolute;top:-6px;left:-14px;z-index:2;width:44px;height:44px;padding:0;border:0;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#E3E8FF;color:#1E3BD6;cursor:pointer;-webkit-tap-highlight-color:transparent}.bl-zil:active{transform:scale(.92)}.bl-zil[hidden]{display:none}
+html.mf-gece .sn-izgara button.on,html.mf-gece .sn-liste button.on{background:#2C3A7A;border-color:#7F95FF}.km-kart{margin:0 0 12px;padding:14px 16px;border-radius:16px;background:#FFF4E8;border:1.5px solid #FFB36B;color:#141B3F}
+.km-ust{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.km-ust b{font-size:15px}.km-ust small{font-size:12px;color:#7A5A2E}
+.km-kart p{margin:8px 0 10px;font-size:16px;line-height:1.45;white-space:pre-wrap;word-break:break-word}
+.km-tamam{min-height:44px;padding:0 22px;border:0;border-radius:999px;background:#FF7A1A;color:#fff;font:inherit;font-weight:800;font-size:15px;cursor:pointer}
+html.mf-gece .km-kart{background:#3A2A14;border-color:#A8651F;color:#fff}html.mf-gece .km-ust small{color:#E7C79C}
+.bl-zil{position:absolute;top:-6px;left:-14px;z-index:2;width:44px;height:44px;padding:0;border:0;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#E3E8FF;color:#1E3BD6;cursor:pointer;-webkit-tap-highlight-color:transparent}.bl-zil:active{transform:scale(.92)}.bl-zil[hidden]{display:none}
 html.mf-gece .bl-zil{background:#232B52;color:#9DB0FF}
 .bl-satir{margin:0 0 10px;display:flex}
 .bl-satir[hidden]{display:none}
@@ -5142,7 +5147,10 @@ function ayarAc(){
  uyari(desteksiz?'Bu cihaz desteklemiyor':(izin()==='denied'?'Telefon ayarlarından izin ver':''));
  P.ac();
 }
-sw.addEventListener('click',function(){acikDeger=!acikDeger;swCiz();});
+function kocKod(){try{return (localStorage.getItem('mf-koc-kod')||'').trim();}catch(e){return '';}}
+sw.addEventListener('click',function(){
+ if(acikDeger&&kocKod()){uyari('Koçluk öğrencilerinde bildirimler açık kalır. Saatlerini değiştirebilirsin.');return;}
+ acikDeger=!acikDeger;swCiz();});
 satir.addEventListener('click',ayarAc);
 P.el.addEventListener('click',function(e){if(e.target===P.el)P.kapatTikla();});
 $('bl-kaydet').addEventListener('click',function(){
@@ -5198,6 +5206,35 @@ document.addEventListener('visibilitychange',function(){
 });
 window.addEventListener('mf-sinif-degisti',ozetYaz);
 setTimeout(gunlukYenile,4000);setTimeout(sorKontrol,5000);
+})();
+</script>
+<script>
+(function(){
+var URL_=typeof KOC_URL!=='undefined'?KOC_URL:'';if(!URL_)return;
+var GOR_K='mf-koc-goruldu',son=0,kutu=null;
+function kod(){try{return (localStorage.getItem('mf-koc-kod')||'').trim().toUpperCase();}catch(e){return '';}}
+function gorulen(){try{return JSON.parse(localStorage.getItem(GOR_K)||'[]');}catch(e){return [];}}
+function gorEkle(id){var g=gorulen();if(g.indexOf(id)<0)g.push(id);while(g.length>50)g.shift();try{localStorage.setItem(GOR_K,JSON.stringify(g));}catch(e){}}
+function esc(x){return String(x).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function zaman(iso){var d=new Date(iso),b=new Date();var g=d.toDateString()===b.toDateString()?'Bugün':d.getDate()+'.'+(d.getMonth()+1);return g+' '+('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2);}
+function ciz(L){
+ var sayfa=document.getElementById('pg-sayac');if(!sayfa)return;
+ if(!kutu){kutu=document.createElement('div');kutu.id='km-kutu';sayfa.insertBefore(kutu,sayfa.firstChild);}
+ kutu.innerHTML=L.map(function(m){return '<div class="km-kart" role="status"><div class="km-ust"><b>💬 Koçundan mesaj</b><small>'+zaman(m.t)+'</small></div><p>'+esc(m.metin)+'</p><button type="button" class="km-tamam" data-id="'+esc(m.id)+'">Tamam</button></div>';}).join('');
+ [].forEach.call(kutu.querySelectorAll('.km-tamam'),function(b){b.addEventListener('click',function(){
+  var id=b.dataset.id;gorEkle(id);var k=b.closest('.km-kart');if(k)k.remove();
+  try{fetch(URL_,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify({tip:'mesajgor',kod:kod(),id:id})});}catch(e){}
+ });});
+}
+function cek(zorla){
+ var k=kod();if(!k||!navigator.onLine)return;
+ if(!zorla&&Date.now()-son<180000)return;son=Date.now();
+ fetch(URL_+'?islem=mesajlarim&kod='+encodeURIComponent(k)+'&_='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(L){
+  if(!Array.isArray(L))return;var g=gorulen();ciz(L.filter(function(m){return m&&m.id&&g.indexOf(m.id)<0;}));
+ }).catch(function(){});
+}
+setTimeout(function(){cek(true);},2500);
+document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')cek(false);});
 })();
 </script></body>
 </html>

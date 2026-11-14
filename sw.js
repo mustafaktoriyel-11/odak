@@ -1,5 +1,5 @@
 // MustaFaktoriyel Odak - service worker
-var SURUM = 'mf-odak-v94';
+var SURUM = 'mf-odak-v95';
 var DOSYALAR = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', function (e) {
@@ -142,6 +142,13 @@ function mfMesaj(tur, oz, simdi) {
 self.addEventListener('push', function (e) {
   var p = {}; try { p = e.data ? e.data.json() : {}; } catch (x) {}
   var d = p.data || p; var tur = d.tur || 'gun';
+  if (tur === 'koc') {
+    e.waitUntil(self.registration.showNotification('Koçundan mesaj', {
+      body: String(d.metin || 'Yeni bir mesajın var.').slice(0, 300), icon: './icon-192.png', badge: './icon-192.png',
+      tag: 'mf-koc-' + (d.id || ''), renotify: true, requireInteraction: true, data: { url: './' }
+    }));
+    return;
+  }
   function goster(m) {
     return self.registration.showNotification(m.title, {
       body: m.body, icon: './icon-192.png', badge: './icon-192.png',
