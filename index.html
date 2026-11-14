@@ -1090,7 +1090,8 @@ html.mf-gece .bl-sw{background:#232B52;border-color:#3A4BA0;color:#fff}
 html.mf-gece .bl-sw i{background:#4A5483}
 html.mf-gece .bl-sw[aria-checked=true] i{background:#FF7A00}
 html.mf-gece .bl-sec select{background:#232B52;border-color:#3A4BA0;color:#fff}
-html.mf-gece .bl-uyari{color:#FFA040}</style>
+html.mf-gece .bl-uyari{color:#FFA040}#pm-saat{cursor:pointer;-webkit-tap-highlight-color:transparent}.pm-ayar .pm-sinav{display:none;margin:0}.pm-ayar .pm-sinav.acik{display:flex}
+</style>
 <script>try{if(localStorage.getItem('mf-tema')==='gece')document.documentElement.classList.add('mf-gece');}catch(e){}</script>
 </head>
 <body>
@@ -1333,8 +1334,7 @@ a.addEventListener('animationend',function(e){if(e.target===a&&(e.animationName=
 <button type="button" class="aktif" data-m="odak">🍅 Odak</button>
 <button type="button" data-m="deneme">📝 Deneme</button>
 </div>
-<label class="pm-sinav" id="pm-sinav-k">Hangi sınav?
-<select id="pm-sinav"><optgroup label="YKS"><option value="TYT">TYT · 165 dk</option><option value="SAY">AYT Sayısal · 180 dk</option><option value="EA">AYT Eşit Ağırlık · 180 dk</option><option value="SOZ">AYT Sözel · 180 dk</option><option value="YDT">YDT · 180 dk</option></optgroup><optgroup label="LGS"><option value="LGS">LGS Tam · 2 oturum + 45 dk ara</option><option value="LGS1">LGS Sözel · 75 dk</option><option value="LGS2">LGS Sayısal · 80 dk</option></optgroup></select></label>
+
 <div class="pm-saat" id="pm-saat">
 <button type="button" class="pm-muzik" id="pm-muzik" aria-label="Arka plan sesi" aria-haspopup="dialog"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 0 0-9 9v6a3 3 0 0 0 3 3h1a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H5v-1a7 7 0 0 1 14 0v1h-2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h1a3 3 0 0 0 3-3v-6a9 9 0 0 0-9-9z"/></svg><i><s></s><s></s><s></s></i></button>
 <svg viewBox="0 0 120 120"><circle class="iz" cx="60" cy="60" r="52"/><circle class="dolu" id="pm-halka" cx="60" cy="60" r="52"/></svg>
@@ -1348,6 +1348,8 @@ a.addEventListener('animationend',function(e){if(e.target===a&&(e.animationName=
 </div>
 <div class="bl-satir"><button type="button" class="bl-deg" id="bl-deg" aria-label="Bildirim ayarları"><span id="bl-et">🔔 Bildirimler</span><i aria-hidden="true">›</i></button></div>
 <div class="pm-ayar">
+<label class="pm-sinav tam" id="pm-sinav-k">Hangi sınav?
+<select id="pm-sinav"><optgroup label="YKS"><option value="TYT">TYT · 165 dk</option><option value="SAY">AYT Sayısal · 180 dk</option><option value="EA">AYT Eşit Ağırlık · 180 dk</option><option value="SOZ">AYT Sözel · 180 dk</option><option value="YDT">YDT · 180 dk</option></optgroup><optgroup label="LGS"><option value="LGS">LGS Tam · 2 oturum + 45 dk ara</option><option value="LGS1">LGS Sözel · 75 dk</option><option value="LGS2">LGS Sayısal · 80 dk</option></optgroup></select></label>
 <div class="tam pm-alan seans-ogesi" id="pm-ders-k"><span>Hangi dersi çalışıyorsun?</span>
 <select id="pm-ders" hidden>
 <option>Matematik</option><option>Geometri</option><option>Türkçe</option><option>Fizik</option><option>Kimya</option>
@@ -5275,5 +5277,11 @@ function cek(zorla){
 setTimeout(function(){cek(true);},2500);
 document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')cek(false);});
 })();
-</script></body>
+</script><script>
+(function(){var h=document.getElementById('pm-saat'),b=document.getElementById('pm-basla');if(!h||!b)return;
+h.setAttribute('role','button');h.setAttribute('tabindex','0');h.setAttribute('aria-label','Sayacı başlat ya da durdur');
+h.addEventListener('click',function(e){if(e.target.closest('button'))return;b.click();});
+h.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target===h){e.preventDefault();b.click();}});})();
+</script>
+</body>
 </html>
