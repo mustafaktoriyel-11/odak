@@ -1056,7 +1056,9 @@ html.mf-gece .sn-ince{color:#9DB0FF}
 html.mf-gece .sn-izgara button,html.mf-gece .sn-liste button{background:#232B52;border-color:#3A4BA0;color:#fff}
 html.mf-gece .sn-izgara button b{color:#fff}
 html.mf-gece .sn-izgara button small,html.mf-gece .sn-gec{color:#AEB6D3}
-html.mf-gece .sn-izgara button.on,html.mf-gece .sn-liste button.on{background:#2C3A7A;border-color:#7F95FF}.bl-satir{margin:0 0 10px;display:flex}
+html.mf-gece .sn-izgara button.on,html.mf-gece .sn-liste button.on{background:#2C3A7A;border-color:#7F95FF}.bl-zil{position:absolute;top:-6px;left:-14px;z-index:2;width:44px;height:44px;padding:0;border:0;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#E3E8FF;color:#1E3BD6;cursor:pointer;-webkit-tap-highlight-color:transparent}.bl-zil:active{transform:scale(.92)}.bl-zil[hidden]{display:none}
+html.mf-gece .bl-zil{background:#232B52;color:#9DB0FF}
+.bl-satir{margin:0 0 10px;display:flex}
 .bl-satir[hidden]{display:none}
 .bl-deg{display:inline-flex;align-items:center;gap:4px;min-height:44px;padding:6px 14px;border:1px solid #C9D2F5;border-radius:999px;background:#EEF1FB;color:#141B3F;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .bl-deg i{font-style:normal;font-size:16px;color:#7A8099}
@@ -5105,10 +5107,16 @@ var satir=$('bl-deg');
 var P=sayfa('bl-p','bl'),Q=sayfa('bl-q','blq',function(){if(!Q.st.karar){Q.st.karar=true;var a=oku();a.tsor=(a.tsor||0)+1;a.tsonsor=Date.now();yaz(a);}});
 if(!satir||!P.el||!Q.el){ozetYaz();return;}
 
+var zil=null,saat=$('pm-saat');
+if(saat){zil=document.createElement('button');zil.type='button';zil.id='bl-zil';zil.className='bl-zil';zil.hidden=true;zil.setAttribute('aria-label','Bildirim ayarları');
+ zil.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1z"/></svg>';
+ saat.appendChild(zil);zil.addEventListener('click',function(){satir.click();});}
 function satirGuncelle(){
  var a=oku(),et=$('bl-et'),kutu=satir.parentNode;
  if(!HAZIR){if(kutu)kutu.hidden=true;return;}
- if(kutu)kutu.hidden=false;
+ var acikMi=!desteksiz&&a.acik&&izin()==='granted';
+ if(kutu)kutu.hidden=acikMi;
+ if(zil)zil.hidden=!acikMi;
  var t;
  if(desteksiz)t='Bu cihaz desteklemiyor';
  else if(izin()==='denied')t='Telefon ayarlarından izin ver';
