@@ -827,7 +827,7 @@ html.mf-gece #yd-kart .yd-son{color:#E9CDD1}
 .kt-mn-b.kt-sil{color:#B3261E}
 .kt-gor-ad{flex:1;min-width:0;font-size:15px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .kt-gor-sayfa{flex:none;font-size:13px;font-variant-numeric:tabular-nums;color:#FFD2A8;padding:0 2px}
-.kt-gor-kaydir{position:relative;flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.kt-gor-kaydir{position:relative;flex:1;min-height:0;overflow:auto;touch-action:pan-x pan-y;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
 .kt-gor-ic{width:max-content;min-width:100%;box-sizing:border-box;padding:8px 0}
 .kt-sf{position:relative;margin:0 auto 8px;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.4)}
 .kt-sf canvas{display:block;width:100%;height:100%}
@@ -4163,11 +4163,43 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
   function zoomDegis(d){
     var g=G;if(!g)return;
     var z=Math.round((g.zoom+d)*100)/100;
-    z=Math.max(.5,Math.min(3,z));
+    z=Math.max(.5,Math.min(4,z));
     if(z===g.zoom)return;
     g.zoom=z;
     if(g.m.tur==='pdf')yerlestir(g,g.sayfa);else resimOlcek(g);
   }
+  // iki parmakla yakınlaştır/uzaklaştır (tarayıcının sayfa zumu yerine belgeyi büyütür)
+  var PN=null;
+  function pnMesafe(t){var a=t[0],b=t[1];return Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY)||1;}
+  function pnMerkez(t){var r=kaydir.getBoundingClientRect();return {x:(t[0].clientX+t[1].clientX)/2-r.left,y:(t[0].clientY+t[1].clientY)/2-r.top};}
+  kaydir.addEventListener('touchstart',function(e){
+    var g=G;if(!g||CZ.acik||e.touches.length!==2)return;
+    var c=pnMerkez(e.touches);
+    PN={d0:pnMesafe(e.touches),c0:c,c:c,f:1,z0:g.zoom,ox:kaydir.scrollLeft+c.x-ic.offsetLeft,oy:kaydir.scrollTop+c.y-ic.offsetTop};
+    ic.style.transformOrigin=PN.ox+'px '+PN.oy+'px';ic.style.willChange='transform';
+  },{passive:true});
+  kaydir.addEventListener('touchmove',function(e){
+    if(!PN)return;if(e.touches.length<2)return;
+    if(e.cancelable)e.preventDefault();
+    var z=Math.max(.5,Math.min(4,PN.z0*pnMesafe(e.touches)/PN.d0));
+    PN.f=z/PN.z0;PN.c=pnMerkez(e.touches);
+    ic.style.transform='translate('+(PN.c.x-PN.c0.x)+'px,'+(PN.c.y-PN.c0.y)+'px) scale('+PN.f+')';
+    sayfaEl.textContent=Math.round(z*100)+'%';
+  },{passive:false});
+  function pnBitir(){
+    var p=PN,g=G;if(!p)return;PN=null;
+    ic.style.transform='';ic.style.transformOrigin='';ic.style.willChange='';
+    if(!g)return;
+    var z=Math.round(p.z0*p.f*100)/100;z=Math.max(.5,Math.min(4,z));
+    if(Math.abs(z-g.zoom)<.02){sayfaEl.textContent=g.m.tur==='pdf'?'':Math.round(g.zoom*100)+'%';if(g.m.tur==='pdf')sayfaGoster(g);return;}
+    var oran=z/g.zoom;g.zoom=z;
+    if(g.m.tur==='pdf')yerlestir(g,g.sayfa);else resimOlcek(g);
+    kaydir.scrollLeft=Math.max(0,p.ox*oran+ic.offsetLeft-p.c.x);
+    kaydir.scrollTop=Math.max(0,p.oy*oran+ic.offsetTop-p.c.y);
+    if(g.m.tur==='pdf')sayfaGoster(g);
+  }
+  kaydir.addEventListener('touchend',function(e){if(PN&&e.touches.length<2)pnBitir();},{passive:true});
+  kaydir.addEventListener('touchcancel',function(){if(PN)pnBitir();},{passive:true});
   $('kt-gor-eksi').addEventListener('click',function(){zoomDegis(-.25);});
   $('kt-gor-arti').addEventListener('click',function(){zoomDegis(.25);});
 
