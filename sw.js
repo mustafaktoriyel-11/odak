@@ -1,5 +1,5 @@
 // MustaFaktoriyel Odak - service worker
-var SURUM = 'mf-odak-v104';
+var SURUM = 'mf-odak-v105';
 var DOSYALAR = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', function (e) {
@@ -19,7 +19,7 @@ self.addEventListener('fetch', function (e) {
   var u = new URL(e.request.url);
   if (e.request.method !== 'GET' || u.origin !== location.origin) return;
   e.respondWith(
-    fetch(e.request).then(function (r) {
+    fetch(e.request.mode === 'navigate' ? new Request(e.request.url, { cache: 'no-cache', credentials: 'same-origin' }) : new Request(e.request, { cache: 'no-cache' })).then(function (r) {
       var kopya = r.clone();
       caches.open(SURUM).then(function (c) { c.put(e.request, kopya); });
       return r;
