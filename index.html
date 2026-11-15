@@ -4217,10 +4217,10 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     var z=Math.round(p.z0*p.f*100)/100;z=Math.max(.5,Math.min(4,z));
     if(Math.abs(z-g.zoom)<.02){sayfaEl.textContent=g.m.tur==='pdf'?'':Math.round(g.zoom*100)+'%';if(g.m.tur==='pdf')sayfaGoster(g);return;}
     var oran=z/g.zoom;g.zoom=z;
-    if(g.m.tur==='pdf')yerlestir(g,g.sayfa);else resimOlcek(g);
+    if(g.m.tur==='pdf')yenidenOlcek(g);else resimOlcek(g);
     kaydir.scrollLeft=Math.max(0,p.ox*oran+ic.offsetLeft-p.c.x);
     kaydir.scrollTop=Math.max(0,p.oy*oran+ic.offsetTop-p.c.y);
-    if(g.m.tur==='pdf')sayfaGoster(g);
+    if(g.m.tur==='pdf'){sayfaGoster(g);cizGorunur(g);}
   }
   kaydir.addEventListener('touchend',function(e){if(PN&&e.touches.length<2)pnBitir();},{passive:true});
   kaydir.addEventListener('touchcancel',function(){if(PN)pnBitir();},{passive:true});
@@ -4316,6 +4316,17 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     g.sayfalar.forEach(function(s){g.obs.observe(s.el);});
     sayfaGoster(g);
   }
+  function yenidenOlcek(g){
+    var gen=Math.max(120,kaydir.clientWidth-16)*g.zoom;
+    g.sayfalar.forEach(function(s){
+      if(s.gorev){try{s.gorev.cancel();}catch(e){}s.gorev=null;}
+      s.is=0;
+      var oran=gen/s.w;s.cw=Math.round(gen);s.ch=Math.round(s.h*oran);s.oran=oran;
+      if(s.el){s.el.style.width=s.cw+'px';s.el.style.height=s.ch+'px';}
+      if(s.canvas){if(s.eskiC){s.eskiC.width=0;s.eskiC.height=0;if(s.eskiC.parentNode)s.eskiC.parentNode.removeChild(s.eskiC);}s.eskiC=s.canvas;s.canvas=null;}
+    });
+  }
+  function cizGorunur(g){g.sayfalar.forEach(function(s){if(s.el&&isGorunur(g,s))ciziliyor(g,s);else if(s.eskiC)bosalt(s);});}
   function sayfaGoster(g){
     sayfaEl.textContent=g.sayfa+' / '+g.sayfalar.length;
   }
@@ -4351,7 +4362,7 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
       s.gorev=gorev;g.gorev.push(gorev);
       try{await gorev.promise;}finally{g.gorev=g.gorev.filter(function(t){return t!==gorev;});}
       if(g.kapali||s.is!==j){return;}
-      s.gorev=null;s.canvas=c;s.el.appendChild(c);s.is=0;notKatman(g,s);
+      s.gorev=null;s.canvas=c;s.el.insertBefore(c,s.el.firstChild);if(s.eskiC){s.eskiC.width=0;s.eskiC.height=0;if(s.eskiC.parentNode)s.eskiC.parentNode.removeChild(s.eskiC);s.eskiC=null;}s.is=0;notKatman(g,s);
       try{page.cleanup();}catch(e){}
     }catch(e){
       if(s.is===j){s.is=0;s.gorev=null;}
@@ -4366,6 +4377,7 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
     s.is=0;
     if(s.gorev){try{s.gorev.cancel();}catch(e){}s.gorev=null;}
     if(s.canvas){s.canvas.width=0;s.canvas.height=0;if(s.canvas.parentNode)s.canvas.parentNode.removeChild(s.canvas);s.canvas=null;}
+    if(s.eskiC){s.eskiC.width=0;s.eskiC.height=0;if(s.eskiC.parentNode)s.eskiC.parentNode.removeChild(s.eskiC);s.eskiC=null;}
     if(s.not){s.not.width=0;s.not.height=0;if(s.not.parentNode)s.not.parentNode.removeChild(s.not);s.not=null;}
   }
 
