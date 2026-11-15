@@ -2849,8 +2849,9 @@ var KOC_URL='https://script.google.com/macros/s/AKfycbzbFUmUiOH8SKpDHL0BRuQdUU1W
   function simdiki(){var b=document.body.classList;return b.contains('s-program')?'program':b.contains('s-istat')?'istat':b.contains('s-mantik')?'mantik':b.contains('s-kutuphane')?'kutuphane':'sayac';}
   function sayfaEl(ad){return document.getElementById('pg-'+ad);}
   function engel(el){
+    var kg=document.getElementById('kt-gor');if(kg&&!kg.hidden)return true;
     if(document.querySelector('.pm-sheet.acik,#alarm.acik,#sik-sor.acik,#pm-curu.acik,#koc-onay.acik,#pm-not.acik,#pm-dnm.acik,#sil-p.acik'))return true;
-    return !!(el&&el.closest&&el.closest('input,select,textarea,.kaydir,.pm-chips,.mt-sec,.mt-noktalar,.pr-gunler,.alt-nav,.st-cizim,.dg-cip,.dg-d'));
+    return !!(el&&el.closest&&el.closest('input,select,textarea,.kaydir,.pm-chips,.mt-sec,.mt-noktalar,.pr-gunler,.alt-nav,.st-cizim,.dg-cip,.dg-d,.kt-gor,.kt-ort,.kt-yan'));
   }
   function ciz(x,gecis){
     var W=window.innerWidth,p=Math.min(1,Math.abs(x)/W);
