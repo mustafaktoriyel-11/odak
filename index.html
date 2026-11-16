@@ -1333,6 +1333,11 @@ body.lv-odak .pm-saat .pm-muzik{opacity:0;visibility:hidden;pointer-events:none;
 #pm-ses-p .ses-sev-s{padding:6px 12px}
 #pm-ses-p .ses-not{margin:8px 2px 10px;font-size:11.5px}
 #pm-ses-p #ses-tamam{padding:11px;font-size:15px;border-radius:12px}
+
+.pm-sik-k{position:relative}
+.pm-sik-bas em{display:none}
+.pm-sik-k>.sik-bas-an{position:absolute;top:13px;right:44px;z-index:2;display:flex;align-items:center;gap:0}
+.pm-sik-k>.sik-bas-an b{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 </style>
 <script>try{if(localStorage.getItem('mf-tema')==='gece')document.documentElement.classList.add('mf-gece');}catch(e){}</script>
 </head>
@@ -1604,11 +1609,12 @@ a.addEventListener('animationend',function(e){if(e.target===a&&(e.animationName=
 <span class="pm-ozel-s"><input type="number" id="pm-ozel" inputmode="numeric" min="5" max="720" step="5" value="90"><b>dk</b></span></label>
 <div class="tam pm-sik-k" id="pm-sik-k">
 <button type="button" class="pm-sik-bas" id="pm-sik-bas" aria-expanded="false" aria-controls="pm-sik-ic"><span class="sik-ad"><i class="sik-hayvan" id="sik-hayvan" aria-hidden="true"><svg class="kedi" viewBox="0 0 120 120"><use href="#mf-kedi"/></svg><svg class="aslan" viewBox="0 0 120 120"><use href="#mf-aslan"/></svg></i>Sıkı mod</span><em id="pm-sik-durum">Kapalı</em><i aria-hidden="true"></i></button>
+<label class="pm-anahtar sik-bas-an"><input type="checkbox" id="pm-siki" role="switch"><span class="ray" aria-hidden="true"></span><b>Sıkı modu kullan</b></label>
 <div class="pm-sik-ic" id="pm-sik-ic" hidden><div class="sik-ic-satir">
 <div class="sik-sahne" id="sik-sahne" data-g="k" aria-hidden="true"><i class="sk-flas"></i><svg class="sk-k" viewBox="0 0 120 120"><use href="#mf-kedi"/></svg><svg class="sk-a" viewBox="0 0 120 120"><use href="#mf-aslan"/></svg>
 <span class="sk-p" style="--x:-46px;--y:-38px">✦</span><span class="sk-p" style="--x:44px;--y:-42px">✦</span><span class="sk-p" style="--x:-50px;--y:22px">✦</span><span class="sk-p" style="--x:50px;--y:26px">✦</span><span class="sk-p" style="--x:0px;--y:-56px">✦</span></div>
-<div><p>Odak süresince ekran açık kalır. Başka bir uygulamaya 10 saniyeden uzun geçersen 🍅 çürür. Telefonu kilitleyip bırakmak sorun değil.</p>
-<label class="pm-anahtar"><input type="checkbox" id="pm-siki" role="switch"><span class="ray" aria-hidden="true"></span><b>Sıkı modu kullan</b></label><small class="sik-izin" id="sik-izin" hidden></small></div>
+<div><p>Uygulamadan 10 saniyeden uzun çıkarsan tur sayılmaz. Telefonu kilitlemek serbest.</p>
+<small class="sik-izin" id="sik-izin" hidden></small></div>
 </div></div></div>
 
 </div>
