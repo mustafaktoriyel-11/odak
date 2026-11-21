@@ -25,6 +25,15 @@
   }
   window.LEX_GERI={ekle:ekle,dus:dus,hepsi:hepsi,sekme:sekmeGec,ust:function(){var u=ust();return u&&!u.iptal?u.k:null;}};
   window.LEX_SEKME=sekme;
+  // Android uygulaması (Capacitor): donanım/hareket geri tuşu web'deki geri mantığına bağlanır; gidecek yer yoksa uygulama kapanır
+  try{
+    var CAP=window.Capacitor,APP=CAP&&CAP.Plugins&&CAP.Plugins.App;
+    if(APP&&APP.addListener)APP.addListener('backButton',function(){
+      if(G.some(function(x){return !x.iptal;}))history.back();
+      else if(sekme()!=='sayac'&&window.MF_SAYFA)window.MF_SAYFA('sayac');
+      else APP.exitApp();
+    });
+  }catch(e){}
   var nav=document.getElementById('alt-nav');
   if(nav)nav.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('button[data-s]');if(b)sekmeGec(b.dataset.s);},true);
 })();

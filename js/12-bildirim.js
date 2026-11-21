@@ -3,7 +3,8 @@ var BL_FB={apiKey:'AIzaSyBT_8z_ffdfhjnsCopEF158ShGI14q7yCk',authDomain:'mf-odak.
 (function(){
 'use strict';
 var KEY='mf-bildirim',FBV='10.14.1';
-var HAZIR=String(BL_FB.apiKey).indexOf('FB_')!==0;
+// Android uygulamasında (Capacitor) web push (Firebase) çalışmaz: bildirim özelliği uygulamada gizli (yerel bildirimlere geçilene dek)
+var HAZIR=String(BL_FB.apiKey).indexOf('FB_')!==0&&!window.Capacitor;
 function $(id){return document.getElementById(id);}
 function ls(k){try{return localStorage.getItem(k);}catch(e){return null;}}
 function lj(k){try{return JSON.parse(ls(k)||'null');}catch(e){return null;}}

@@ -1,6 +1,6 @@
 // MustaFaktoriyel Odak - service worker
 var SURUM = 'mf-odak-v114';
-var DOSYALAR = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png', './css/uygulama.css', './veri/mantik.js', './js/01-sayac.js', './js/02-mantik.js', './js/03-geri-tusu.js', './js/04-yedek.js', './js/05-kutuphane.js', './js/06-program-sablon.js', './js/07-sinif-sinav.js', './js/08-tablet.js', './js/09-kisayol.js', './js/10-mola-hatirlat.js', './js/11-elle-ekle.js', './js/12-bildirim.js', './js/13-koc-mesaj.js', './js/14-sayac-katla.js', './js/15-asagi-kapat.js', './js/16-kadran.js'];
+var DOSYALAR = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png', './css/uygulama.css', './veri/mantik.js', './js/00-android.js', './js/01-sayac.js', './js/02-mantik.js', './js/03-geri-tusu.js', './js/04-yedek.js', './js/05-kutuphane.js', './js/06-program-sablon.js', './js/07-sinif-sinav.js', './js/08-tablet.js', './js/09-kisayol.js', './js/10-mola-hatirlat.js', './js/11-elle-ekle.js', './js/12-bildirim.js', './js/13-koc-mesaj.js', './js/14-sayac-katla.js', './js/15-asagi-kapat.js', './js/16-kadran.js'];
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(SURUM).then(function (c) { return c.addAll(DOSYALAR.map(function (u) { return new Request(u, { cache: 'reload' }); })); }));

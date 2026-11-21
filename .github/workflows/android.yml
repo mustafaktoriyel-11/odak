@@ -1,0 +1,215 @@
+# MF Odak – Android test APK'sı ve Play paketi (AAB)
+# Commit mesajında [apk] varsa, elle başlatılınca ya da her gece derlenir;
+# APK "android-test" sürümüne mf-odak-test.apk olarak konur, AAB derleme çıktısı (artifact) olarak saklanır.
+name: Android APK
+
+# Hız için APK her push'ta değil: commit mesajında [apk] varsa, elle başlatılınca ya da her gece derlenir.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 1 * * *'   # her gece 04:17 (Türkiye)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android
+  cancel-in-progress: true
+
+jobs:
+  apk:
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[apk]')
+    runs-on: ubuntu-latest
+    env:
+      # Play yükleme anahtarı (GitHub > Settings > Secrets and variables > Actions). Yoksa AAB geçici deneme anahtarıyla imzalanır.
+      MF_JKS_B64: ${{ secrets.MF_UPLOAD_KEYSTORE_B64 }}
+      MF_KS_SIFRE: ${{ secrets.MF_UPLOAD_STORE_PASSWORD }}
+      MF_KEY_ALIAS: ${{ secrets.MF_UPLOAD_KEY_ALIAS }}
+      MF_KEY_SIFRE: ${{ secrets.MF_UPLOAD_KEY_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Web dosyalarını www/ klasörüne topla
+        run: |
+          mkdir www
+          rsync -a ./ www/ \
+            --exclude .git --exclude .github --exclude www --exclude node_modules --exclude android \
+            --exclude package.json --exclude package-lock.json --exclude capacitor.config.json \
+            --exclude android-ayar --exclude CNAME --exclude sitemap.xml --exclude robots.txt --exclude magaza
+          ls -la www | head -50
+
+      - name: Capacitor kur
+        run: |
+          npm install --no-audit --no-fund
+          npx cap --version
+          npx cap add android
+          npx cap sync android
+
+      - name: Uygulama ikonu ve açılış ekranı
+        run: |
+          pip install --quiet pillow
+          mkdir -p assets
+          python3 - <<'PY'
+          from PIL import Image
+          ic = Image.open('icon-512.png').convert('RGBA')
+          ic.resize((1024, 1024), Image.LANCZOS).save('assets/icon-only.png')
+          for ad in ('splash.png', 'splash-dark.png'):
+              sp = Image.new('RGBA', (2732, 2732), (0x14, 0x1B, 0x3F, 255))
+              k = ic.resize((600, 600), Image.LANCZOS)
+              sp.paste(k, ((2732 - 600) // 2, (2732 - 600) // 2), k)
+              sp.convert('RGB').save('assets/' + ad)
+          # PWA ikonu gibi: maskable ikon (mavi zemin + yuvarlatılmış kare + M!)
+          Image.open('icon-maskable-512.png').convert('RGB').save('assets/mf_ikon_tam.png')
+          PY
+          npx --yes @capacitor/assets generate --android \
+            --iconBackgroundColor '#1E3BD6' --iconBackgroundColorDark '#1E3BD6' \
+            --splashBackgroundColor '#141B3F' --splashBackgroundColorDark '#141B3F'
+          # Android 8+ uyarlanabilir ikon: web sürümünün maskable ikonu, görünür alana tam oturur (PWA ile aynı görünüm)
+          R=android/app/src/main/res
+          mkdir -p $R/drawable-nodpi $R/drawable $R/mipmap-anydpi-v26
+          cp assets/mf_ikon_tam.png $R/drawable-nodpi/mf_ikon_tam.png
+          printf '%s\n' '<?xml version="1.0" encoding="utf-8"?>' \
+            '<inset xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/mf_ikon_tam" android:inset="12dp"/>' \
+            > $R/drawable/mf_ikon_on.xml
+          printf '%s\n' '<?xml version="1.0" encoding="utf-8"?>' \
+            '<shape xmlns:android="http://schemas.android.com/apk/res/android"><solid android:color="#1E3BD6"/></shape>' \
+            > $R/drawable/mf_ikon_zemin.xml
+          for f in ic_launcher ic_launcher_round; do
+            printf '%s\n' '<?xml version="1.0" encoding="utf-8"?>' \
+              '<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">' \
+              '  <background android:drawable="@drawable/mf_ikon_zemin"/>' \
+              '  <foreground android:drawable="@drawable/mf_ikon_on"/>' \
+              '</adaptive-icon>' > $R/mipmap-anydpi-v26/$f.xml
+          done
+          cat $R/mipmap-anydpi-v26/ic_launcher.xml
+
+      - name: Açılış ekranı zemini (web açılışıyla aynı renk)
+        run: |
+          S=android/app/src/main/res/values/styles.xml
+          grep -n "NoActionBarLaunch" -A4 $S
+          sed -i 's#\(<style name="AppTheme.NoActionBarLaunch"[^>]*>\)#\1\n        <item name="windowSplashScreenBackground">\#141B3F</item>#' $S
+          grep -n "NoActionBarLaunch" -A6 $S
+
+      - name: Açılış davranışı (manifest)
+        run: |
+          M=android/app/src/main/AndroidManifest.xml
+          # her açılışta uygulama kendi ana ekranından başlasın: üstte kalmış ayar sayfası vb. temizlensin
+          sed -i 's#android:name=".MainActivity"#android:name=".MainActivity" android:clearTaskOnLaunch="true"#' $M
+          grep -n "clearTaskOnLaunch" $M
+          tail -4 $M
+
+      - name: Sistem çubukları (MainActivity)
+        run: |
+          F=$(find android/app/src/main/java -name MainActivity.java)
+          cat > "$F" <<'JAVA'
+          package com.mustafaktoriyel.odak;
+
+          import android.graphics.Color;
+          import android.os.Bundle;
+          import android.view.View;
+          import androidx.core.graphics.Insets;
+          import androidx.core.view.ViewCompat;
+          import androidx.core.view.WindowInsetsCompat;
+          import com.getcapacitor.BridgeActivity;
+
+          // Web görünümü durum çubuğu, görev çubuğu ve klavyenin arasında kalır (Chrome'daki PWA gibi)
+          public class MainActivity extends BridgeActivity {
+              @Override
+              public void onCreate(Bundle savedInstanceState) {
+                  super.onCreate(savedInstanceState);
+                  View web = getBridge().getWebView();
+                  View kap = (View) web.getParent();
+                  kap.setBackgroundColor(Color.parseColor("#141B3F"));
+                  ViewCompat.setOnApplyWindowInsetsListener(kap, (v, ins) -> {
+                      Insets i = ins.getInsets(WindowInsetsCompat.Type.systemBars()
+                              | WindowInsetsCompat.Type.displayCutout()
+                              | WindowInsetsCompat.Type.ime());
+                      v.setPadding(i.left, i.top, i.right, i.bottom);
+                      return WindowInsetsCompat.CONSUMED;
+                  });
+                  ViewCompat.requestApplyInsets(kap);
+              }
+          }
+          JAVA
+          head -5 "$F"
+
+      - name: Sürüm numarası ve imza ayarı (build.gradle)
+        run: |
+          SURUM=$(grep -o "mf-odak-v[0-9]*" sw.js | head -1 | grep -o "[0-9]*$")
+          echo "MF_SURUM_KODU=$((SURUM * 100 + GITHUB_RUN_ATTEMPT))" >> $GITHUB_ENV
+          echo "MF_SURUM_ADI=1.0.$SURUM" >> $GITHUB_ENV
+          cat >> android/app/build.gradle <<'GRADLE'
+
+          // ---- MF Odak: sürüm numarası ve Play yükleme imzası (CI ortam değişkenlerinden) ----
+          android {
+              defaultConfig {
+                  versionCode Integer.parseInt(System.getenv('MF_SURUM_KODU') ?: '1')
+                  versionName System.getenv('MF_SURUM_ADI') ?: '1.0'
+              }
+              signingConfigs {
+                  mfYukleme {
+                      storeFile file('yukleme.jks')
+                      storePassword System.getenv('MF_KS_SIFRE')
+                      keyAlias System.getenv('MF_KEY_ALIAS')
+                      keyPassword System.getenv('MF_KEY_SIFRE')
+                  }
+              }
+              buildTypes { release { signingConfig signingConfigs.mfYukleme } }
+          }
+          GRADLE
+          tail -20 android/app/build.gradle
+
+      - name: APK derle
+        working-directory: android
+        run: |
+          # sabit test imzası: yeni sürüm eskisinin üzerine kurulabilsin (yalnız test içindir, Play imzası değildir)
+          mkdir -p ~/.android && cp ../android-ayar/test-imza.keystore ~/.android/debug.keystore
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+          cp app/build/outputs/apk/debug/app-debug.apk ../mf-odak-test.apk
+
+      - name: Yayın paketi (AAB, Play için)
+        working-directory: android
+        run: |
+          if [ -n "$MF_JKS_B64" ]; then
+            echo "$MF_JKS_B64" | base64 -d > app/yukleme.jks; echo "IMZA=play" >> $GITHUB_ENV
+          else
+            # deneme: gizli anahtar yok -> geçici anahtar (Play'e YÜKLENEMEZ, yalnız düzenek testi)
+            export MF_KS_SIFRE=deneme123 MF_KEY_ALIAS=deneme MF_KEY_SIFRE=deneme123
+            echo "MF_KS_SIFRE=deneme123" >> $GITHUB_ENV; echo "MF_KEY_ALIAS=deneme" >> $GITHUB_ENV; echo "MF_KEY_SIFRE=deneme123" >> $GITHUB_ENV
+            keytool -genkeypair -keystore app/yukleme.jks -storepass deneme123 -keypass deneme123 -alias deneme -keyalg RSA -keysize 2048 -validity 30 -dname "CN=Deneme" >/dev/null
+            echo "IMZA=deneme" >> $GITHUB_ENV
+          fi
+          # yayın adı: MF Odak (test APK'sı 'MF Odak Test' kalır)
+          sed -i 's#<string name="app_name">[^<]*</string>#<string name="app_name">MF Odak</string>#; s#<string name="title_activity_main">[^<]*</string>#<string name="title_activity_main">MF Odak</string>#' app/src/main/res/values/strings.xml
+          ./gradlew bundleRelease --no-daemon
+          cp app/build/outputs/bundle/release/app-release.aab ../mf-odak.aab
+          ls -la ../mf-odak.aab
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mf-odak-aab-${{ env.IMZA }}
+          path: mf-odak.aab
+          retention-days: 30
+
+      - name: Sürüme koy (android-test)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: android-test
+          name: Android test sürümü
+          prerelease: true
+          body: |
+            Telefona kurmak için mf-odak-test.apk dosyasını indir.
+            Derleme: ${{ github.sha }}
+          files: mf-odak-test.apk

@@ -162,8 +162,15 @@
         var d=new Date(), ad='mfodak-yedek-'+d.getFullYear()+'-'+iki(d.getMonth()+1)+'-'+iki(d.getDate())+'.zip';
         var dosya;
         try{dosya=new File([blob],ad,{type:'application/zip'});}catch(e){dosya=null;}
-        var tamam=false;
-        if(dosya&&navigator.share&&navigator.canShare&&navigator.canShare({files:[dosya]})){
+        var tamam=false,kayitYol='';
+        // Android uygulaması: yedek önce telefona (Belgeler › MF Odak) kalıcı kaydedilir, sonra isteğe bağlı paylaşma açılır
+        // (Drive/Dosyalarım, paylaşılan geçici dosyayı arka planda okuyamayabiliyor)
+        if(window.Capacitor&&window.MF_DOSYA_KAYDET){
+          try{var kk=await window.MF_DOSYA_KAYDET(blob,ad);kayitYol=kk.yol;tamam=true;}
+          catch(e){mesaj('Yedek telefona kaydedilemedi: '+(e&&e.message?e.message:'bilinmeyen hata'));return;}
+          if(dosya&&navigator.share){try{await navigator.share({files:[dosya],title:'MF Odak yedeği'});}catch(e){}}
+        }
+        if(!tamam&&dosya&&navigator.share&&navigator.canShare&&navigator.canShare({files:[dosya]})){
           try{await navigator.share({files:[dosya],title:'MF Odak yedeği'});tamam=true;}
           catch(e){
             if(e&&e.name==='AbortError'){mesaj('');return;}   // kullanıcı vazgeçti
@@ -180,7 +187,7 @@
         }
         try{localStorage.setItem('mf-son-yedek',String(Date.now()));}catch(e){}
         sonGuncelle();
-        mesaj('Yedek hazır: '+ks+' kayıt, '+md+' dosya');
+        mesaj('Yedek hazır: '+ks+' kayıt, '+md+' dosya'+(kayitYol?' · '+kayitYol:''));
       }catch(e){
         mesaj('Yedek alınamadı.');
       }finally{kilit(false);}

@@ -549,7 +549,8 @@
   function boya(){var g=h.classList.contains('mf-gece');b.textContent=g?'☀️':'🌙';var m=document.querySelector('meta[name=color-scheme]');if(m)m.setAttribute('content',g?'dark':'light');}
   boya();b.addEventListener('click',function(){h.classList.toggle('mf-gece');try{localStorage.setItem('mf-tema',h.classList.contains('mf-gece')?'gece':'gunduz');}catch(e){}boya();if(window.MF_IST_YENILE)window.MF_IST_YENILE();if(window.MF_DNM_YENILE)window.MF_DNM_YENILE();});
   // service worker
-  if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js');});
+  // Android uygulamasında (Capacitor) dosyalar zaten telefonda: service worker gerekmez
+  if('serviceWorker' in navigator&&!window.Capacitor)window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js');});
   // yükleme önerisi
   var olay=null,kutu=document.getElementById('yukle'),kapali=false;
   try{kapali=localStorage.getItem('mf-yukle-kapat')==='1';}catch(e){}

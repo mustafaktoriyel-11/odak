@@ -1,0 +1,14 @@
+{
+  "name": "mf-odak",
+  "private": true,
+  "description": "MF Odak Android kabuğu (Capacitor). Web dosyaları depo kökünde; derleme GitHub Actions'ta.",
+  "dependencies": {
+    "@capacitor/android": "latest",
+    "@capacitor/cli": "latest",
+    "@capacitor/core": "latest",
+    "@capacitor/app": "latest",
+    "@capacitor/filesystem": "latest",
+    "@capacitor/share": "latest",
+    "@capacitor/splash-screen": "latest"
+  }
+}
