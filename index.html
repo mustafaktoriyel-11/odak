@@ -417,7 +417,6 @@ a.addEventListener('animationend',function(e){if(e.target===a&&(e.animationName=
 <div id="mt-test" hidden></div>
 <div id="mt-sonuc" hidden></div>
 </section>
-<script src="veri/mantik.js"></script>
 <section class="pg pg-kutuphane" id="pg-kutuphane">
 <div class="kart kt-bas"><b class="pr-bas">📁 Kütüphane</b><small class="pr-alt">Soru defterin ve ders dosyaların. Hepsi yalnız bu telefonda saklanır.</small></div>
 <div class="mt-kart" id="kt-kart">
@@ -589,7 +588,7 @@ a.addEventListener('animationend',function(e){if(e.target===a&&(e.animationName=
 <nav class="alt-nav" id="alt-nav" aria-label="Sayfalar">
 <button type="button" data-s="sayac" class="on" aria-current="page"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M9 1h6v2H9zm10.03 6.39 1.42-1.42-1.41-1.41-1.42 1.42A9 9 0 1 0 21 13a8.94 8.94 0 0 0-1.97-5.61zM12 20a7 7 0 1 1 7-7 7 7 0 0 1-7 7zm1-12h-2v6h2z"/></svg><span>Çalışma</span></button>
 <button type="button" data-s="kutuphane"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7.5V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9.5a2 2 0 0 0-2-2h-7l-2-2.5H5a2 2 0 0 0-2 2z"/><path d="M8 13h8M8 16.2h5"/></svg><span>Kütüphane</span></button>
-<button type="button" data-s="mantik"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-4 12.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26A7 7 0 0 0 12 2zm2 11.6V16h-4v-2.4l-.43-.3A5 5 0 1 1 14.43 13.3zM9 20h6v2H9z"/></svg><span>Mantık</span><em id="nav-mantik"></em></button>
+<button type="button" data-s="mantik"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm3.9 4.1-5.3 2.5-2.5 5.3 5.3-2.5 2.5-5.3zM12 11a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg><span>Yolculuk</span><em id="nav-mantik"></em></button>
 <button type="button" data-s="program" data-takip="1"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/></svg><span>Takip</span><em id="nav-yuzde"></em></button>
 </nav>
 
@@ -803,5 +802,8 @@ h.addEventListener('click',function(e){if(e.target.closest('button'))return;b.cl
 h.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target===h){e.preventDefault();b.click();}});})();
 </script>
 <script src="js/14-sayac-katla.js"></script><script src="js/15-asagi-kapat.js"></script><script src="js/16-kadran.js"></script>
+<script src="js/izinde-secim.js"></script>
+<script src="js/17-izinde-gorsel.js"></script>
+<script src="js/18-izinde.js"></script>
 </body>
 </html>
