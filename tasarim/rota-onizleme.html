@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8">
+<title>Matematiğin İzinde · rota önizleme</title>
+<style>
+  html,body{margin:0;background:#0E1660}
+  .harita{position:relative;width:2576px;height:1438px}
+  .harita img{position:absolute;inset:0;width:100%;height:100%}
+  .harita svg{position:absolute;inset:0}
+  .gece .gunduz{display:none} .gunduz-mod .gece-img{display:none}
+  @keyframes nabiz{0%,100%{opacity:.25;transform:scale(1)}50%{opacity:.7;transform:scale(1.18)}}
+  .simdi-hale{animation:nabiz 2.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+</style></head><body>
+<div class="harita" id="harita">
+  <img class="gunduz" src="../img/harita-gunduz.webp" alt="">
+  <img class="gece-img" src="../img/harita-gece.webp" alt="">
+  <svg id="kat" viewBox="0 0 2576 1438" width="2576" height="1438"></svg>
+</div>
+
+<!-- Durak simgeleri: 64x64, merkez 32,32. "m" = mürekkep (lacivert), "v" = vurgu (turuncu) rengi CSS değişkeninden -->
+<svg width="0" height="0" style="position:absolute"><defs>
+  <g id="s-kemik"><g transform="rotate(-35 32 32)"><rect x="27" y="12" width="10" height="40" rx="5" fill="#F3E6C8" stroke="var(--m)" stroke-width="2.2"/><path d="M27 19 h5 M27 24 h4 M27 29 h5 M27 34 h4 M27 39 h5 M27 44 h4" stroke="var(--m)" stroke-width="1.8"/></g></g>
+  <g id="s-papirus"><rect x="16" y="18" width="32" height="28" fill="#F3E6C8" stroke="var(--m)" stroke-width="2.2"/><rect x="12" y="15" width="6" height="34" rx="3" fill="var(--v)" stroke="var(--m)" stroke-width="2"/><rect x="46" y="15" width="6" height="34" rx="3" fill="var(--v)" stroke="var(--m)" stroke-width="2"/><path d="M22 25 h20 M22 31 h14 M22 37 h18" stroke="var(--m)" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="s-piramit"><path d="M8 48 L26 20 L44 48 Z" fill="#F3D9A4" stroke="var(--m)" stroke-width="2.2" stroke-linejoin="round"/><path d="M30 48 L43 28 L56 48" fill="#E9C27A" stroke="var(--m)" stroke-width="2.2" stroke-linejoin="round"/><path d="M26 20 L30 48" stroke="var(--m)" stroke-width="1.4" opacity=".6"/><path d="M6 49 h52" stroke="var(--v)" stroke-width="2.4" stroke-linecap="round"/></g>
+  <g id="s-zigurat"><path d="M10 48 h44 v-8 h-6 v-8 h-6 v-8 h-20 v8 h-6 v8 h-6 Z" fill="#E7C99A" stroke="var(--m)" stroke-width="2.2" stroke-linejoin="round"/><path d="M29 48 v-24 h6 v24" fill="var(--v)" stroke="var(--m)" stroke-width="1.6"/></g>
+  <g id="s-pisagor"><path d="M22 42 L42 42 L22 27 Z" fill="#FFF" stroke="var(--m)" stroke-width="2.2" stroke-linejoin="round"/><rect x="22" y="42" width="20" height="12" fill="var(--v)" opacity=".85" stroke="var(--m)" stroke-width="1.6"/><rect x="10" y="27" width="12" height="15" fill="#9FB2FF" stroke="var(--m)" stroke-width="1.6"/><path d="M22 27 L42 42 L52 29 L32 14 Z" fill="#FFE08A" stroke="var(--m)" stroke-width="1.6" stroke-linejoin="round"/><path d="M22 38 h4 v4" stroke="var(--m)" stroke-width="1.4" fill="none"/></g>
+  <g id="s-fener"><path d="M25 52 L28 24 H36 L39 52 Z" fill="#F3E6C8" stroke="var(--m)" stroke-width="2.2" stroke-linejoin="round"/><rect x="27" y="16" width="10" height="8" fill="var(--v)" stroke="var(--m)" stroke-width="2"/><path d="M26 16 L32 10 L38 16 Z" fill="var(--m)"/><path d="M20 15 L10 11 M20 20 L9 21 M44 15 L54 11 M44 20 L55 21" stroke="var(--v)" stroke-width="2.2" stroke-linecap="round"/><path d="M20 52 h24 M27 34 h10 M26 43 h12" stroke="var(--m)" stroke-width="1.6"/></g>
+  <g id="s-arsimet"><circle cx="32" cy="32" r="19" fill="#FFF" stroke="var(--m)" stroke-width="2.2"/><path d="M32 13 L48.5 22.5 L48.5 41.5 L32 51 L15.5 41.5 L15.5 22.5 Z" fill="none" stroke="var(--v)" stroke-width="2.2" stroke-linejoin="round"/><circle cx="32" cy="32" r="2.2" fill="var(--m)"/><path d="M32 32 L48.5 22.5" stroke="var(--m)" stroke-width="1.4"/></g>
+  <g id="s-sifir"><ellipse cx="32" cy="32" rx="13" ry="18" fill="none" stroke="var(--m)" stroke-width="5"/><ellipse cx="32" cy="32" rx="13" ry="18" fill="none" stroke="var(--v)" stroke-width="2"/><circle cx="32" cy="32" r="3" fill="var(--v)"/></g>
+  <g id="s-yorunge"><ellipse cx="32" cy="34" rx="23" ry="11" fill="none" stroke="var(--m)" stroke-width="2" stroke-dasharray="4 3"/><circle cx="32" cy="34" r="8" fill="var(--v)" stroke="var(--m)" stroke-width="2"/><path d="M32 20 v-6 M22 25 l-4 -4 M42 25 l4 -4" stroke="var(--v)" stroke-width="2" stroke-linecap="round"/><circle cx="54" cy="36" r="4" fill="#9FB2FF" stroke="var(--m)" stroke-width="1.8"/></g>
+  <g id="s-cubuklar"><path d="M14 16 v20 M20 16 v20 M26 16 v20 M36 22 h16 M36 28 h16 M36 34 h16 M14 44 h16 M38 40 v14 M44 40 v14 M50 40 v14" stroke="var(--m)" stroke-width="3" stroke-linecap="round"/><path d="M14 16 v20 M36 22 h16" stroke="var(--v)" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="s-cebir"><path d="M32 20 C24 15 14 16 9 18 V48 C14 46 24 45 32 50 C40 45 50 46 55 48 V18 C50 16 40 15 32 20 Z" fill="#FFF" stroke="var(--m)" stroke-width="2.2" stroke-linejoin="round"/><path d="M32 20 V50" stroke="var(--m)" stroke-width="1.6"/><path d="M14 27 h12 M14 33 h10 M14 39 h12" stroke="var(--m)" stroke-width="1.6" opacity=".55"/><path d="M38 27 l11 13 M49 27 l-11 13" stroke="var(--v)" stroke-width="3.2" stroke-linecap="round"/></g>
+  <g id="s-konik"><path d="M10 14 Q32 70 54 14" fill="none" stroke="var(--m)" stroke-width="2.6"/><circle cx="38" cy="36" r="13" fill="none" stroke="var(--v)" stroke-width="2.6"/><circle cx="26.6" cy="33.2" r="2.6" fill="var(--m)"/><circle cx="47.4" cy="27" r="2.6" fill="var(--m)"/></g>
+  <g id="s-rasathane"><path d="M12 52 A40 40 0 0 1 52 12" fill="none" stroke="var(--m)" stroke-width="4"/><path d="M12 52 A40 40 0 0 1 52 12" fill="none" stroke="var(--v)" stroke-width="1.6"/><path d="M14.5 40 l5 1 M17 32 l4.6 2 M21 25 l4 3 M26 19.5 l3.2 3.8 M33 15 l2 4.4 M40 12.8 l1 4.8" stroke="var(--m)" stroke-width="1.6"/><path d="M12 52 h40 v-40" fill="none" stroke="var(--m)" stroke-width="2.2"/><path d="M52 52 L30 26" stroke="var(--v)" stroke-width="2.2" stroke-linecap="round"/></g>
+  <g id="s-kure"><circle cx="32" cy="28" r="17" fill="none" stroke="var(--m)" stroke-width="2.4"/><ellipse cx="32" cy="28" rx="17" ry="6" fill="none" stroke="var(--v)" stroke-width="2"/><ellipse cx="32" cy="28" rx="6" ry="17" fill="none" stroke="var(--m)" stroke-width="1.6"/><path d="M19 17 L45 39" stroke="var(--v)" stroke-width="1.8"/><path d="M32 45 v6 M24 54 h16" stroke="var(--m)" stroke-width="2.4" stroke-linecap="round"/></g>
+  <g id="s-kule"><g transform="rotate(8 32 52)"><rect x="24" y="12" width="16" height="40" rx="2" fill="#FFF" stroke="var(--m)" stroke-width="2.2"/><path d="M24 20 h16 M24 28 h16 M24 36 h16 M24 44 h16" stroke="var(--m)" stroke-width="1.4"/><path d="M27 24 v-2 a2 2 0 0 1 4 0 v2 M33 24 v-2 a2 2 0 0 1 4 0 v2 M27 32 v-2 a2 2 0 0 1 4 0 v2 M33 32 v-2 a2 2 0 0 1 4 0 v2 M27 40 v-2 a2 2 0 0 1 4 0 v2 M33 40 v-2 a2 2 0 0 1 4 0 v2" stroke="var(--v)" stroke-width="1.2" fill="none"/><rect x="26" y="8" width="12" height="4" fill="var(--v)" stroke="var(--m)" stroke-width="1.6"/></g><path d="M14 53 h36" stroke="var(--m)" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="s-koordinat"><path d="M12 52 H54 M16 56 V10" stroke="var(--m)" stroke-width="2.4" stroke-linecap="round"/><path d="M54 52 l-5 -3 v6 Z M16 10 l-3 5 h6 Z" fill="var(--m)"/><path d="M20 26 h20 v22" stroke="var(--m)" stroke-width="1.4" stroke-dasharray="3 3" fill="none"/><circle cx="40" cy="26" r="4.2" fill="var(--v)" stroke="var(--m)" stroke-width="1.6"/><path d="M18 48 C30 46 38 34 52 16" stroke="#9FB2FF" stroke-width="2" fill="none"/></g>
+  <g id="s-elma"><path d="M32 22 C24 15 12 19 13 33 C14 46 24 54 32 50 C40 54 50 46 51 33 C52 19 40 15 32 22 Z" fill="#E4573A" stroke="var(--m)" stroke-width="2.2"/><path d="M32 22 C32 16 34 12 37 10" stroke="var(--m)" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M34 15 C40 8 48 10 48 13 C44 17 38 17 34 15 Z" fill="#1FA463" stroke="var(--m)" stroke-width="1.6"/><path d="M20 30 C21 26 24 24 27 24" stroke="#FFF" stroke-width="2" fill="none" opacity=".7" stroke-linecap="round"/></g>
+  <g id="s-kopru"><path d="M16 18 C24 22 24 30 22 34 M16 18 C12 24 14 30 22 34 M16 18 L32 33 M22 34 L32 33 M22 34 C26 42 22 46 16 48 M22 34 C18 40 12 44 16 48 M32 33 L48 33" stroke="var(--m)" stroke-width="2" fill="none"/><circle cx="16" cy="18" r="4.6" fill="var(--v)" stroke="var(--m)" stroke-width="1.8"/><circle cx="22" cy="34" r="4.6" fill="var(--v)" stroke="var(--m)" stroke-width="1.8"/><circle cx="16" cy="48" r="4.6" fill="var(--v)" stroke="var(--m)" stroke-width="1.8"/><circle cx="48" cy="33" r="4.6" fill="var(--v)" stroke="var(--m)" stroke-width="1.8"/><path d="M16 18 C34 14 44 22 48 33 M16 48 C34 52 44 44 48 33" stroke="var(--m)" stroke-width="2" fill="none"/></g>
+  <g id="s-gauss"><path d="M8 50 H56" stroke="var(--m)" stroke-width="2.2" stroke-linecap="round"/><path d="M8 49 C20 49 22 14 32 14 C42 14 44 49 56 49" fill="#9FB2FF" fill-opacity=".45" stroke="var(--m)" stroke-width="2.4"/><path d="M32 14 V50" stroke="var(--v)" stroke-width="2" stroke-dasharray="3 3"/><path d="M22.5 36 V50 M41.5 36 V50" stroke="var(--v)" stroke-width="1.6"/></g>
+  <g id="s-maya"><path d="M8 52 h48 l-5 -8 h-38 Z M13 44 l4 -8 h30 l4 8 M17 36 l4 -8 h22 l4 8" fill="#D9C08C" stroke="var(--m)" stroke-width="2" stroke-linejoin="round"/><rect x="25" y="16" width="14" height="12" fill="#C9A56A" stroke="var(--m)" stroke-width="2"/><path d="M29 52 V30 h6 v22" fill="var(--v)" stroke="var(--m)" stroke-width="1.4"/><path d="M27 12 q5 -5 10 0" stroke="var(--m)" stroke-width="2" fill="none"/></g>
+  <g id="s-simit"><ellipse cx="32" cy="33" rx="23" ry="14" fill="#FFE2BD" stroke="var(--m)" stroke-width="2.4"/><path d="M21 32 C26 38 38 38 43 32" stroke="var(--m)" stroke-width="2.2" fill="none"/><path d="M24 34.5 C28 30 36 30 40 34.5" stroke="var(--m)" stroke-width="2.2" fill="none"/><path d="M12 30 C18 22 30 28 32 19 C34 13 46 14 52 26" stroke="var(--v)" stroke-width="2.2" fill="none"/></g>
+  <g id="s-tahta"><rect x="8" y="12" width="48" height="32" rx="2" fill="#1F3A2E" stroke="#8A5A2B" stroke-width="3"/><path d="M14 22 q4 -5 8 0 t8 0 M14 32 h10 M28 32 l3 4 l6 -10 M42 20 v10 M38 25 h8" stroke="#E8F0E8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 44 l-4 10 M50 44 l4 10" stroke="#8A5A2B" stroke-width="3" stroke-linecap="round"/><rect x="40" y="40" width="9" height="3" rx="1.4" fill="#FFF"/></g>
+</defs></svg>
+
+<script>
+var ROTA = null, ILERLEME = Number((location.hash.match(/s=(\d+)/)||[])[1] || 20), GECE = /gece/.test(location.hash);
+document.getElementById('harita').className = 'harita ' + (GECE ? 'gece' : 'gunduz-mod');
+fetch('../veri/izinde/rota.json').then(function(r){return r.json();}).then(function(d){ROTA=d;ciz();});
+
+function kontrol(a,b,k){var mx=(a.x+b.x)/2,my=(a.y+b.y)/2,dx=b.x-a.x,dy=b.y-a.y;return {x:mx-dy*(k||0),y:my+dx*(k||0)};}
+function bez(a,c,b,t){var u=1-t;return {x:u*u*a.x+2*u*t*c.x+t*t*b.x,y:u*u*a.y+2*u*t*c.y+t*t*b.y};}
+function ciz(){
+  var D=ROTA.duraklar, svg=document.getElementById('kat'), h='';
+  var m=GECE?'#CFE0FF':'#141B3F', v='#FF8A1F', yolSoluk=GECE?'rgba(159,178,255,.55)':'rgba(20,27,63,.45)';
+  // yol: tamamı soluk noktalı, geçilen kısım turuncu
+  for(var i=1;i<D.length;i++){
+    var a=D[i-1],b=D[i],c=kontrol(a,b,b.kavis), p='M'+a.x+' '+a.y+' Q'+c.x+' '+c.y+' '+b.x+' '+b.y;
+    h+='<path d="'+p+'" fill="none" stroke="'+yolSoluk+'" stroke-width="5" stroke-linecap="round" stroke-dasharray="'+(b.deniz?'14 12':'1 12')+'"/>';
+    var t = ILERLEME>=b.adim?1:(ILERLEME<=a.adim?0:(ILERLEME-a.adim)/(b.adim-a.adim));
+    if(t>0){var n=24,q='M'+a.x+' '+a.y;for(var j=1;j<=n;j++){var o=bez(a,c,b,t*j/n);q+=' L'+o.x.toFixed(1)+' '+o.y.toFixed(1);}
+      h+='<path d="'+q+'" fill="none" stroke="'+v+'" stroke-width="7" stroke-linecap="round" stroke-dasharray="'+(b.deniz?'16 10':'none')+'"/>';}
+    if(t>0&&t<1){var kp=bez(a,c,b,t);h+='<g id="maskot" transform="translate('+kp.x+' '+kp.y+')"><circle r="16" fill="'+v+'" stroke="#FFF" stroke-width="4"/></g>';}
+  }
+  // duraklar
+  var simdi=null; D.forEach(function(d){if(ILERLEME>=d.adim)simdi=d;});
+  D.forEach(function(d){
+    var ulasti=ILERLEME>=d.adim, s=(d===simdi), r=30, bx=d.rozet?d.rozet[0]:d.x, by=d.rozet?d.rozet[1]:d.y;
+    // gerçek nokta + (kaydırılmışsa) rozete ince bağ çizgisi
+    if(d.rozet)h+='<path d="M'+d.x+' '+d.y+' L'+bx+' '+by+'" stroke="'+(ulasti?m:'#A8AEC8')+'" stroke-width="2" opacity=".7"/>';
+    h+='<circle cx="'+d.x+'" cy="'+d.y+'" r="6" fill="'+(ulasti?v:'#B9BDD0')+'" stroke="'+(ulasti?m:'#A8AEC8')+'" stroke-width="2"/>';
+    h+='<g transform="translate('+bx+' '+by+')" style="--m:'+(ulasti?m:'#8C93B0')+';--v:'+(ulasti?v:'#B9BDD0')+'" opacity="'+(ulasti?1:.6)+'">';
+    if(s)h+='<circle class="simdi-hale" r="'+(r+12)+'" fill="'+v+'"/>';
+    h+='<circle r="'+r+'" fill="'+(GECE?'#1A2142':'#FFF8EA')+'" stroke="'+(ulasti?(GECE?'#9FB2FF':'#141B3F'):'#A8AEC8')+'" stroke-width="'+(s?5:3)+'"/>';
+    h+='<use href="#s-'+d.simge+'" transform="translate(-22 -22) scale(.69)"/>';
+    h+='</g>';
+  });
+  svg.innerHTML=h;
+}
+</script>
+</body></html>

@@ -1,0 +1,294 @@
+{
+ "harita": {
+  "gen": 2576,
+  "yuk": 1438
+ },
+ "not": "x,y harita pikseli (img/harita-gunduz.webp). adim = bu durağa varmak için gereken toplam çözülmüş set. bolge = kademe (1-6); bir bölgenin ilk durağına varmak kademe atlatır (seri şartı ayrıca). deniz = önceki duraktan buraya deniz/okyanus aşılarak gelinir (kesik çizgi). kavis = yolun bükülmesi (-1..1). rozet = simge rozetinin merkezi (verilmezse x,y); kalabalık bölgede gerçek noktadan kaydırılır, ince çizgiyle bağlanır.",
+ "duraklar": [
+  {
+   "id": "d01",
+   "yer": "Ishango",
+   "x": 1437,
+   "y": 890,
+   "adim": 0,
+   "bolge": 1,
+   "simge": "kemik"
+  },
+  {
+   "id": "d02",
+   "yer": "Luksor",
+   "x": 1453,
+   "y": 690,
+   "adim": 2,
+   "bolge": 1,
+   "simge": "papirus",
+   "kavis": 0.25,
+   "rozet": [
+    1398,
+    742
+   ]
+  },
+  {
+   "id": "d03",
+   "yer": "Giza",
+   "x": 1451,
+   "y": 641,
+   "adim": 4,
+   "bolge": 1,
+   "simge": "piramit",
+   "kavis": -0.3,
+   "rozet": [
+    1385,
+    676
+   ]
+  },
+  {
+   "id": "d04",
+   "yer": "Babil",
+   "x": 1550,
+   "y": 615,
+   "adim": 6,
+   "bolge": 2,
+   "simge": "zigurat",
+   "kavis": 0.3,
+   "rozet": [
+    1562,
+    668
+   ]
+  },
+  {
+   "id": "d05",
+   "yer": "Sisam",
+   "x": 1420,
+   "y": 563,
+   "adim": 9,
+   "bolge": 2,
+   "simge": "pisagor",
+   "kavis": -0.25,
+   "rozet": [
+    1368,
+    545
+   ]
+  },
+  {
+   "id": "d06",
+   "yer": "İskenderiye",
+   "x": 1445,
+   "y": 620,
+   "adim": 12,
+   "bolge": 2,
+   "simge": "fener",
+   "deniz": true,
+   "kavis": 0.35,
+   "rozet": [
+    1440,
+    603
+   ]
+  },
+  {
+   "id": "d07",
+   "yer": "Siraküza",
+   "x": 1318,
+   "y": 570,
+   "adim": 15,
+   "bolge": 2,
+   "simge": "arsimet",
+   "deniz": true,
+   "kavis": 0.3,
+   "rozet": [
+    1290,
+    612
+   ]
+  },
+  {
+   "id": "d08",
+   "yer": "Ujjain",
+   "x": 1773,
+   "y": 693,
+   "adim": 18,
+   "bolge": 3,
+   "simge": "sifir",
+   "kavis": -0.18
+  },
+  {
+   "id": "d09",
+   "yer": "Patna",
+   "x": 1840,
+   "y": 665,
+   "adim": 22,
+   "bolge": 3,
+   "simge": "yorunge",
+   "kavis": 0.3
+  },
+  {
+   "id": "d10",
+   "yer": "Çin",
+   "x": 2030,
+   "y": 600,
+   "adim": 26,
+   "bolge": 3,
+   "simge": "cubuklar",
+   "kavis": -0.25
+  },
+  {
+   "id": "d11",
+   "yer": "Bağdat",
+   "x": 1545,
+   "y": 600,
+   "adim": 30,
+   "bolge": 4,
+   "simge": "cebir",
+   "kavis": 0.12,
+   "rozet": [
+    1545,
+    553
+   ]
+  },
+  {
+   "id": "d12",
+   "yer": "İsfahan",
+   "x": 1610,
+   "y": 620,
+   "adim": 34,
+   "bolge": 4,
+   "simge": "konik",
+   "kavis": 0.4,
+   "rozet": [
+    1632,
+    610
+   ]
+  },
+  {
+   "id": "d13",
+   "yer": "Semerkant",
+   "x": 1700,
+   "y": 550,
+   "adim": 38,
+   "bolge": 4,
+   "simge": "rasathane",
+   "kavis": -0.3
+  },
+  {
+   "id": "d14",
+   "yer": "İstanbul",
+   "x": 1430,
+   "y": 530,
+   "adim": 42,
+   "bolge": 4,
+   "simge": "kure",
+   "kavis": 0.2,
+   "rozet": [
+    1405,
+    470
+   ]
+  },
+  {
+   "id": "d15",
+   "yer": "Pisa",
+   "x": 1300,
+   "y": 505,
+   "adim": 46,
+   "bolge": 5,
+   "simge": "kule",
+   "kavis": -0.3,
+   "rozet": [
+    1296,
+    505
+   ]
+  },
+  {
+   "id": "d16",
+   "yer": "Paris",
+   "x": 1225,
+   "y": 465,
+   "adim": 50,
+   "bolge": 5,
+   "simge": "koordinat",
+   "kavis": 0.3,
+   "rozet": [
+    1186,
+    466
+   ]
+  },
+  {
+   "id": "d17",
+   "yer": "Cambridge",
+   "x": 1200,
+   "y": 410,
+   "adim": 54,
+   "bolge": 5,
+   "simge": "elma",
+   "deniz": true,
+   "kavis": -0.3,
+   "rozet": [
+    1180,
+    390
+   ]
+  },
+  {
+   "id": "d18",
+   "yer": "Basel",
+   "x": 1255,
+   "y": 480,
+   "adim": 58,
+   "bolge": 5,
+   "simge": "kopru",
+   "deniz": true,
+   "kavis": -0.35,
+   "rozet": [
+    1236,
+    530
+   ]
+  },
+  {
+   "id": "d19",
+   "yer": "Göttingen",
+   "x": 1280,
+   "y": 430,
+   "adim": 62,
+   "bolge": 5,
+   "simge": "gauss",
+   "kavis": 0.3,
+   "rozet": [
+    1286,
+    424
+   ]
+  },
+  {
+   "id": "d20",
+   "yer": "Maya",
+   "x": 535,
+   "y": 750,
+   "adim": 66,
+   "bolge": 6,
+   "simge": "maya",
+   "deniz": true,
+   "kavis": 0.22
+  },
+  {
+   "id": "d21",
+   "yer": "Stanford",
+   "x": 302,
+   "y": 555,
+   "adim": 72,
+   "bolge": 6,
+   "simge": "simit",
+   "kavis": -0.3
+  },
+  {
+   "id": "d22",
+   "yer": "Ankara",
+   "x": 1480,
+   "y": 545,
+   "adim": 80,
+   "bolge": 6,
+   "simge": "tahta",
+   "deniz": true,
+   "kavis": 0.28,
+   "rozet": [
+    1490,
+    482
+   ]
+  }
+ ]
+}
