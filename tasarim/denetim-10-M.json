@@ -1,0 +1,26 @@
+[
+ {
+  "id": "11-0013",
+  "seviye": "ORTA",
+  "sorun": "Açıklamada \"92 ile 96 arasındaki fark görsel olarak yaklaşık iki kat gibi görünür\" deniyor; eksen 90dan başlarsa sütun yükseklikleri 2 ve 6 birim olur, yani yaklaşık ÜÇ kat. Anahtar (C) doğru.",
+  "oneri": "Açıklamada \"yaklaşık iki kat\" yerine \"yaklaşık üç kat (2 birim ile 6 birim)\" yazılsın."
+ },
+ {
+  "id": "11-0035",
+  "seviye": "KÜÇÜK",
+  "sorun": "Açıklamadaki \"Bütün açıların 180°den büyük olabilecek sayısı n-3 ile sınırlıdır\" cümlesi dil olarak yanlış/belirsiz (tüm açılar değil, 180°den büyük açıların sayısı kastediliyor). Anahtar (A=5) doğru.",
+  "oneri": "\"180°den büyük iç açıların sayısı en çok n-3 olabilir (en az 3 köşe dışbükey kalmalıdır)\" biçiminde yazılsın."
+ },
+ {
+  "id": "Mezun-0046",
+  "seviye": "KÜÇÜK",
+  "sorun": "Soru kökü 10-0013 ile birebir aynı (13-14-15 üçgeni, seçenekler de aynı); çözüm kitaplığında tekrar.",
+  "oneri": "Birini değiştir (ör. 9-10-17 veya 7-15-20 üçgeni) ya da Mezun için farklı bir alan sorusu yaz."
+ },
+ {
+  "id": "Mezun-0043",
+  "seviye": "KÜÇÜK",
+  "sorun": "10-0009 ile aynı sayılar (6, 9, 10; BD=4) ve aynı çözüm; tekrar benzerlik. Mezun-0047 da 10-0015 ile aynı (60 cm2, 2:3, 24). Mezun-0064 da 12-0018 ile aynı denklem.",
+  "oneri": "Çeşitlilik için Mezun sorularında sayılar/bağlam değiştirilsin (isteğe bağlı, doğruluk sorunu yok)."
+ }
+]

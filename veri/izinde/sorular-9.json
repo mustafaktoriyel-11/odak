@@ -234,16 +234,16 @@
    "id": "9-0015",
    "konu": "9.1.1",
    "zorluk": 3,
-   "s": "$a=2^{30}$, $b=3^{20}$ ve $c=5^{10}$ sayıları için aşağıdaki sıralamalardan hangisi doğrudur?",
+   "s": "$a=2^{40}$, $b=3^{30}$ ve $c=5^{20}$ sayıları için aşağıdaki sıralamalardan hangisi doğrudur?",
    "o": [
     "$a<b<c$",
-    "$c<a<b$",
+    "$a<c<b$",
     "$b<a<c$",
     "$c<b<a$",
-    "$a<c<b$"
+    "$c<a<b$"
    ],
    "c": 1,
-   "a": "Üsleri $10$'da eşitleriz: $a=8^{10}$, $b=9^{10}$, $c=5^{10}$. Tabanlar $5<8<9$ olduğundan $c<a<b$ olur.",
+   "a": "Üsleri $10$'da eşitleriz: $a=(2^4)^{10}=16^{10}$, $b=(3^3)^{10}=27^{10}$, $c=(5^2)^{10}=25^{10}$. Tabanlar $16<25<27$ olduğundan $a<c<b$ olur.",
    "kaynak": "ozgun"
   },
   {

@@ -53,28 +53,28 @@
    "zorluk": 1,
    "s": "Aşağıdaki sayı çiftlerinden hangisi aralarında asaldır?",
    "o": [
-    "$(15,28)$",
-    "$(14,21)$",
-    "$(18,27)$",
-    "$(16,24)$"
+    "$(21,40)$",
+    "$(22,33)$",
+    "$(26,39)$",
+    "$(34,51)$"
    ],
    "c": 0,
-   "a": "Aralarında asal sayıların EBOB'u $1$ olur. $\\text{EBOB}(15,28)=1$; diğer çiftlerin EBOB'ları sırasıyla $7$, $9$ ve $8$'dir.",
+   "a": "Aralarında asal sayıların EBOB'u $1$ olur. $\\text{EBOB}(21,40)=1$; diğer çiftlerin EBOB'ları sırasıyla $11$, $13$ ve $17$'dir.",
    "kaynak": "ozgun"
   },
   {
    "id": "8-0005",
    "konu": "8.1.1",
    "zorluk": 1,
-   "s": "$360$ sayısının farklı asal çarpanlarının toplamı kaçtır?",
+   "s": "$462$ sayısının farklı asal çarpanlarının toplamı kaçtır?",
    "o": [
-    "$17$",
-    "$10$",
-    "$30$",
-    "$11$"
+    "$21$",
+    "$23$",
+    "$13$",
+    "$24$"
    ],
    "c": 1,
-   "a": "$360=2^{3}\\cdot3^{2}\\cdot5$ olduğundan farklı asal çarpanlar $2$, $3$ ve $5$'tir. Toplam $2+3+5=10$ olur.",
+   "a": "$462=2\\cdot3\\cdot7\\cdot11$ olduğundan farklı asal çarpanlar $2$, $3$, $7$ ve $11$'dir. Toplam $2+3+7+11=23$ olur.",
    "kaynak": "ozgun"
   },
   {
@@ -111,7 +111,7 @@
    "id": "8-0008",
    "konu": "8.1.1",
    "zorluk": 3,
-   "s": "Üç lamba sırasıyla $6$, $8$ ve $12$ saniyede bir yanmaktadır. Üçü birlikte yandıktan sonra $2$ dakika içinde (başlangıç anı hariç) kaç kez daha birlikte yanar?",
+   "s": "Üç lamba sırasıyla $6$, $8$ ve $12$ saniyede bir yanmaktadır. Üçü birlikte yandıktan sonraki $2$ dakika içinde ($120$. saniye dahil) kaç kez daha birlikte yanar?",
    "o": [
     "$6$",
     "$4$",

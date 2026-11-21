@@ -660,7 +660,7 @@
     "$18$"
    ],
    "c": 1,
-   "a": "$\\dfrac{12+x}{30+x}=\\dfrac{1}{2}$ ise $24+2x=30+x$ ve $x=6$ bulunur.",
+   "a": "Göreli sıklığın $0{,}5$ olması için yazı sayısı tura sayısına eşit olmalıdır. Tura $30-12=18$ kez gelmiştir; yazının da $18$ olması için $18-12=6$ atış daha gerekir.",
    "kaynak": "ozgun"
   },
   {
@@ -735,7 +735,7 @@
     "$14$"
    ],
    "c": 1,
-   "a": "$\\dfrac{6+x}{20+x}=\\dfrac{1}{2}$ ise $12+2x=20+x$ ve $x=8$ olur.",
+   "a": "Olasılığın $\\dfrac{1}{2}$ olması için kırmızı bilye sayısı diğer bilyelerin sayısına eşit olmalıdır. Kırmızı olmayan $20-6=14$ bilye vardır; kırmızıların da $14$ olması için $14-6=8$ bilye eklenmelidir.",
    "kaynak": "ozgun"
   },
   {

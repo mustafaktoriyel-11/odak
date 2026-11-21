@@ -209,7 +209,7 @@
     "Değerlerin gerçekte olduğundan çok küçük sanılması"
    ],
    "c": 2,
-   "a": "Eksen $0$'dan başlamadığında sütun yükseklikleri oranı bozulur. $92$ ile $96$ arasındaki küçük fark, görsel olarak yaklaşık iki kat gibi görünür.",
+   "a": "Eksen $90$'dan başlarsa sütunlar $92-90=2$ ve $96-90=6$ birim yüksekliğinde çizilir. Yalnızca $4$ puanlık fark, sütunlarda üç kat gibi görünür; fark olduğundan çok büyük sanılır.",
    "kaynak": "ozgun"
   },
   {
@@ -562,7 +562,7 @@
     "$6$"
    ],
    "c": 0,
-   "a": "$n$ kenarlı çokgende iç açılar toplamı $(n-2)\\cdot 180^\\circ$'dir. Bütün açıların $180^\\circ$'den büyük olabilecek sayısı $n-3$ ile sınırlıdır. Buradan $8-3=5$ bulunur.",
+   "a": "Bir çokgende $180^\\circ$'den büyük iç açıların sayısı en çok $n-3$ olabilir, çünkü en az $3$ köşe dışbükey kalmak zorundadır. $n=8$ için en çok $8-3=5$ bulunur.",
    "kaynak": "ozgun"
   },
   {

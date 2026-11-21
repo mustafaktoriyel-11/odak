@@ -65,16 +65,16 @@
   {
    "id": "7-0005",
    "konu": "7.1.1",
-   "zorluk": 3,
-   "s": "$|x-2|=5$ eşitliğini sağlayan $x$ tam sayılarının çarpımı kaçtır?",
+   "zorluk": 2,
+   "s": "$(-3)\\cdot(-4)-(-20)\\div5$ işleminin sonucu kaçtır?",
    "o": [
-    "$-10$",
-    "$-7$",
-    "$-21$",
-    "$21$"
+    "$8$",
+    "$-8$",
+    "$16$",
+    "$20$"
    ],
    "c": 2,
-   "a": "$x-2=5$ ise $x=7$; $x-2=-5$ ise $x=-3$. Çarpım $7\\cdot(-3)=-21$ olur.",
+   "a": "Önce çarpma ve bölme yapılır: $(-3)\\cdot(-4)=12$ ve $(-20)\\div5=-4$. Sonra $12-(-4)=12+4=16$ olur.",
    "kaynak": "ozgun"
   },
   {
@@ -411,7 +411,7 @@
    "id": "7-0028",
    "konu": "7.2.2",
    "zorluk": 2,
-   "s": "Taban ayrıtları $6$ cm ve $4$ cm, yüksekliği $3$ cm olan üstü açık bir dikdörtgenler prizması biçimindeki kutunun dış yüzeyi kaç cm$^2$'dir?",
+   "s": "Taban ayrıtları $6$ cm ve $4$ cm, yüksekliği $3$ cm olan üstü açık bir dikdörtgenler prizması biçiminde kutu kartondan yapılacaktır. Kutu için kaç cm$^2$ karton gerekir? (Üst yüz yoktur.)",
    "o": [
     "$108$",
     "$84$",

@@ -1,0 +1,50 @@
+[
+ {
+  "id": "8-0008",
+  "seviye": "ORTA",
+  "sorun": "'2 dakika içinde (başlangıç anı hariç)' ifadesi 120. saniyeyi kapsayıp kapsamadığını belirtmiyor. 120 sn dahilse cevap 5 (anahtar), değilse 4 olur; 4 de seçenekte olduğundan belirsizlik var.",
+  "oneri": "Kökü 'ilk 2 dakika boyunca (120. saniye dahil)' diye netleştir; ya da süreyi 130 sn yap (cevap yine 5, belirsizlik kalkar)."
+ },
+ {
+  "id": "7-0028",
+  "seviye": "KÜÇÜK",
+  "sorun": "Üstü açık kutu için 'dış yüzeyi' deyimi belirsiz; üst kapak da dış yüzey sayılabilir (108) diye düşünülebilir. Cevap 84 doğru ama ifade net değil.",
+  "oneri": "'Dış yüzeyi' yerine 'bu kutuyu yapmak için gereken en az karton alanı' / 'kutunun toplam yüzey alanı (üst kapak yok)' yaz."
+ },
+ {
+  "id": "6-0044",
+  "seviye": "KÜÇÜK",
+  "sorun": "Çözümde (12+x)/(30+x)=1/2 biçiminde bilinmeyenli oran denklemi kullanılıyor; 6. sınıf düzeyinin üstünde. Cevap (6) doğru.",
+  "oneri": "Açıklamayı sezgisel anlat: 30+x atışın yarısı yazı olmalı; 12'ye x eklenince 30'a x eklenenin yarısı olmalı; x=6 deneyerek/akıl yürütmeyle bulunur. (6-0049 için de aynı: yazı biçimi sadeleştirilebilir.)"
+ },
+ {
+  "id": "6-0049",
+  "seviye": "KÜÇÜK",
+  "sorun": "Açıklama bilinmeyenli kesirli denklem (6+x)/(20+x)=1/2 kullanıyor; 6. sınıf için ağır. Cevap (8) doğru.",
+  "oneri": "Kırmızı sayısı toplamın yarısı olmalı; mavi/diğer 14 bilye sabit kalır, kırmızı 14 olmalı: 14-6=8 şeklinde anlat."
+ },
+ {
+  "id": "6-0011/8-0005",
+  "seviye": "KÜÇÜK",
+  "sorun": "Aynı soru (360'ın farklı asal çarpanlarının toplamı) hem 6. hem 8. sınıfta var.",
+  "oneri": "8-0005'i farklı sayıyla (örn. 540 veya 2^a·3^b·5 biçimi) değiştir."
+ },
+ {
+  "id": "7-0005/9-0038",
+  "seviye": "KÜÇÜK",
+  "sorun": "|x-2|=5 sorusu 7. ve 9. sınıfta aynen tekrar ediyor.",
+  "oneri": "9-0038'i farklı bir denklemle değiştir (örn. |2x-1|=7)."
+ },
+ {
+  "id": "8-0025/9-0015",
+  "seviye": "KÜÇÜK",
+  "sorun": "Üssü 10'a eşitleme fikriyle neredeyse aynı soru (5^10, 2^30, 3^20) iki sınıfta tekrar ediyor.",
+  "oneri": "Birini farklı tabanlarla yeniden yaz."
+ },
+ {
+  "id": "6-0014/8-0004",
+  "seviye": "KÜÇÜK",
+  "sorun": "Aralarında asal çift sorusu benzer kalıpta iki sınıfta tekrar (cevap farklı çiftler; sorun değil, yalnızca çeşitlilik).",
+  "oneri": "İstenirse 8. sınıf sürümüne EBOB/EKOK bağlamı katan bir değişiklik yap."
+ }
+]
