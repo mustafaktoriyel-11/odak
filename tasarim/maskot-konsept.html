@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8">
+<style>
+  body{margin:0;background:#F4F6FF;font-family:Inter,Roboto,Arial,sans-serif;color:#141B3F}
+  h1{font-size:22px;margin:18px 22px 2px}
+  p.alt{margin:0 22px 10px;color:#5A6390;font-size:13px}
+  .izgara{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:8px 16px 18px}
+  .kart{background:#fff;border:1px solid #DCE2FF;border-radius:16px;padding:6px 6px 10px;text-align:center}
+  .kart svg{width:100%;height:auto;display:block}
+  .no{font-weight:800;color:#1E3BD6;font-size:13px;letter-spacing:.04em}
+  .ad{font-weight:700;font-size:15px;margin-top:2px}
+  .bolge{font-size:12px;color:#5A6390;margin-top:2px}
+  .ok{display:inline-block;background:#FF8A1F;color:#fff;border-radius:99px;padding:1px 8px;font-size:11px;font-weight:700;margin-top:5px}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <radialGradient id="kg" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#FFB25E"/><stop offset="1" stop-color="#F28A2E"/></radialGradient>
+  <radialGradient id="ag" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#F9CB6A"/><stop offset="1" stop-color="#E9A43C"/></radialGradient>
+  <radialGradient id="ay" cx="50%" cy="50%" r="55%"><stop offset=".55" stop-color="#E0782A"/><stop offset="1" stop-color="#B9531B"/></radialGradient>
+  <radialGradient id="altin" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#FFE08A"/><stop offset="1" stop-color="#D99A1E"/></radialGradient>
+
+  <!-- KEDİ parçaları (açılış ekranındaki kediden) -->
+  <g id="k-kuyruk"><path d="M82 100 C102 100 106 82 98 70 C94 64 88 66 90 72 C95 82 92 92 80 93 Z" fill="#F28A2E"/><path d="M97 69 C95 66 91 66 90 70" stroke="#C8651A" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+  <g id="k-govde">
+    <ellipse cx="60" cy="88" rx="25" ry="22" fill="url(#kg)"/><ellipse cx="60" cy="93" rx="13.5" ry="14" fill="#FFE2BD"/>
+    <path d="M38 84 q5 -3 9 0 M36 92 q5 -3 9 0 M82 84 q-5 -3 -9 0 M84 92 q-5 -3 -9 0" stroke="#D9701F" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="50" cy="107" rx="8" ry="5.5" fill="#FFB25E"/><ellipse cx="70" cy="107" rx="8" ry="5.5" fill="#FFB25E"/>
+    <path d="M47 107 v2.5 M50 107.5 v2.5 M53 107 v2.5 M67 107 v2.5 M70 107.5 v2.5 M73 107 v2.5" stroke="#D9701F" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+  <g id="k-bas">
+    <path d="M38 40 L35 16 L56 31 Z" fill="#F28A2E"/><path d="M41 35 L39.5 22 L51 30.5 Z" fill="#FFB3B8"/>
+    <path d="M82 40 L85 16 L64 31 Z" fill="#F28A2E"/><path d="M79 35 L80.5 22 L69 30.5 Z" fill="#FFB3B8"/>
+    <ellipse cx="60" cy="50" rx="27" ry="24" fill="url(#kg)"/>
+    <path d="M55 29 q2 6 0 10 M60 28 q2 6 0 11 M65 29 q2 6 0 10" stroke="#D9701F" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="60" cy="61" rx="13" ry="9" fill="#FFE2BD"/>
+    <ellipse cx="49" cy="50" rx="5.6" ry="6.6" fill="#2A2140"/><ellipse cx="71" cy="50" rx="5.6" ry="6.6" fill="#2A2140"/>
+    <circle cx="51" cy="47.5" r="2.2" fill="#fff"/><circle cx="73" cy="47.5" r="2.2" fill="#fff"/>
+    <circle cx="47.5" cy="53" r="1" fill="#fff"/><circle cx="69.5" cy="53" r="1" fill="#fff"/>
+    <ellipse cx="40" cy="60" rx="5" ry="3" fill="#FF8C94" opacity=".55"/><ellipse cx="80" cy="60" rx="5" ry="3" fill="#FF8C94" opacity=".55"/>
+    <path d="M57.5 57.5 h5 l-2.5 3 Z" fill="#FF7A88" stroke="#FF7A88" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M60 60.5 q-2 4 -5 2 M60 60.5 q2 4 5 2" stroke="#7A3B1A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M44 61 l-12 -2 M44 64 l-11 2 M76 61 l12 -2 M76 64 l11 2" stroke="#7A3B1A" stroke-width="1.2" stroke-linecap="round" opacity=".6"/>
+  </g>
+  <!-- belirmeye başlayan yele (3. kademe) -->
+  <polygon id="k-yele" fill="#F7A54A" points="60,20 66,27 74,23 76,31 85,31 82,39 90,43 83,49 89,56 80,58 82,66 73,64 71,72 64,67 60,74 56,67 49,72 47,64 38,66 40,58 31,56 37,49 30,43 38,39 35,31 44,31 46,23 54,27"/>
+
+  <!-- ASLAN parçaları (açılış ekranındaki aslandan) -->
+  <g id="a-kuyruk"><path d="M84 104 C104 104 112 88 106 74" stroke="#E9A43C" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M106 74 c-6 -4 -4 -12 2 -12 c5 -1 9 6 5 11 c4 2 1 7 -3 5 Z" fill="#9C4416"/></g>
+  <g id="a-govde">
+    <path d="M30 108 C28 84 38 70 60 70 C82 70 92 84 90 108 Z" fill="url(#ag)"/>
+    <path d="M48 108 C46 92 52 82 60 82 C68 82 74 92 72 108 Z" fill="#FBE0A8"/>
+    <ellipse cx="45" cy="108" rx="11" ry="6.5" fill="#F4BA55"/><ellipse cx="75" cy="108" rx="11" ry="6.5" fill="#F4BA55"/>
+    <path d="M40 108 v3 M45 108.5 v3 M50 108 v3 M70 108 v3 M75 108.5 v3 M80 108 v3" stroke="#B8761F" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <g id="a-yele">
+    <polygon fill="url(#ay)" points="60,6 68,18 80,10 82,24 96,22 91,35 104,40 93,49 103,60 90,63 95,76 81,74 80,88 69,79 60,90 51,79 40,88 39,74 25,76 30,63 17,60 27,49 16,40 29,35 24,22 38,24 40,10 52,18"/>
+    <polygon fill="#F08A33" points="60,14 67,24 77,19 78,30 89,30 85,40 95,45 86,52 93,61 82,63 85,73 74,71 72,81 63,74 60,82 57,74 48,81 46,71 35,73 38,63 27,61 34,52 25,45 35,40 31,30 42,30 43,19 53,24"/>
+  </g>
+  <g id="a-bas">
+    <circle cx="42" cy="32" r="7" fill="#E9A43C"/><circle cx="42" cy="32" r="3.6" fill="#C96E2A"/>
+    <circle cx="78" cy="32" r="7" fill="#E9A43C"/><circle cx="78" cy="32" r="3.6" fill="#C96E2A"/>
+    <ellipse cx="60" cy="49" rx="21" ry="22" fill="url(#ag)"/><ellipse cx="60" cy="60" rx="12.5" ry="9.5" fill="#FBE0A8"/>
+    <ellipse cx="50" cy="47" rx="4.6" ry="5.4" fill="#2A2140"/><ellipse cx="70" cy="47" rx="4.6" ry="5.4" fill="#2A2140"/>
+    <circle cx="51.6" cy="45.4" r="1.7" fill="#fff"/><circle cx="71.6" cy="45.4" r="1.7" fill="#fff"/>
+    <path d="M55 55 h10 l-5 5.5 Z" fill="#6B2E12" stroke="#6B2E12" stroke-width="1.4" stroke-linejoin="round"/>
+    <path d="M60 60.5 v2.5 q-3 4 -7 2 M60 63 q3 4 7 2" stroke="#6B2E12" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <circle cx="51" cy="61" r=".9" fill="#B8761F"/><circle cx="48" cy="59" r=".9" fill="#B8761F"/><circle cx="69" cy="61" r=".9" fill="#B8761F"/><circle cx="72" cy="59" r=".9" fill="#B8761F"/>
+  </g>
+  <!-- kaşlar: genç aslan meraklı (yukarı), bilge aslan yumuşak -->
+  <path id="a-kas-genc" d="M45 40 q5 -3 9 -1 M75 40 q-5 -3 -9 -1" stroke="#8A3D14" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path id="a-kas-bilge" d="M44 41 q5 -2 10 0 M76 41 q-5 -2 -10 0" stroke="#F3F0E6" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+</defs></svg>
+
+<h1>Matematiğin İzinde · maskot kademeleri</h1>
+<p class="alt">Konsept taslak. Açılış ekranındaki kedi ve aslandan türetildi. Her kademede bölgeye göre bir eşya.</p>
+<div class="izgara">
+
+<!-- 1: yavru kedi, Afrika ve Mısır: çanta + Ishango kemiği -->
+<div class="kart"><svg viewBox="0 0 120 124">
+  <g transform="translate(12 22) scale(.8)"><use href="#k-kuyruk"/><use href="#k-govde"/></g>
+  <!-- çanta askısı ve çanta -->
+  <path d="M43 80 L77 104" stroke="#8A5A2B" stroke-width="3" stroke-linecap="round"/>
+  <rect x="70" y="98" width="17" height="13" rx="3" fill="#B97A3E"/><path d="M70 102 h17" stroke="#8A5A2B" stroke-width="2"/>
+  <!-- Ishango kemiği (çentikli kemik) -->
+  <g transform="rotate(-28 82 96)"><rect x="76" y="86" width="5" height="16" rx="2.5" fill="#F3E6C8" stroke="#C9B48A" stroke-width=".8"/><path d="M76 89 h2.5 M76 92 h2 M76 95 h2.5 M76 98 h2" stroke="#8A6A3A" stroke-width=".8"/></g>
+  <g transform="translate(9 14) scale(.85)"><use href="#k-bas"/></g>
+</svg><div class="no">1. KADEME</div><div class="ad">Yavru kedi</div><div class="bolge">Afrika ve Mısır · Ishango kemiği</div></div>
+
+<!-- 2: genç kedi, Mezopotamya ve Yunanistan: kil tablet -->
+<div class="kart"><svg viewBox="0 0 120 124">
+  <g transform="translate(0 4)"><use href="#k-kuyruk"/><use href="#k-govde"/>
+  <!-- kil tablet (çivi yazısı yerine soyut kama izleri) -->
+  <g transform="rotate(-6 60 95)"><rect x="45" y="84" width="30" height="22" rx="4" fill="#C99A6A" stroke="#9C7148" stroke-width="1.2"/>
+  <path d="M50 90 l3 1.5 -3 1.5 M56 90 l3 1.5 -3 1.5 M63 90 l3 1.5 -3 1.5 M50 96 l3 1.5 -3 1.5 M58 96 l3 1.5 -3 1.5 M50 102 l3 1.5 -3 1.5 M55 102 l3 1.5 -3 1.5 M60 102 l3 1.5 -3 1.5 M65 102 l3 1.5 -3 1.5" stroke="#7A5434" stroke-width="1.1" fill="none" stroke-linejoin="round"/></g>
+  <ellipse cx="47" cy="99" rx="5" ry="4" fill="#FFB25E"/><ellipse cx="73" cy="99" rx="5" ry="4" fill="#FFB25E"/>
+  <use href="#k-bas"/></g>
+</svg><div class="no">2. KADEME</div><div class="ad">Genç kedi</div><div class="bolge">Mezopotamya ve Yunanistan · kil tablet</div></div>
+
+<!-- 3: büyümüş kedi + belirmeye başlayan yele, Hindistan ve Çin: sıfır madalyonu -->
+<div class="kart"><svg viewBox="0 0 120 124">
+  <g transform="translate(-3 0) scale(1.05)"><use href="#k-kuyruk"/><use href="#k-govde"/></g>
+  <use href="#k-yele" transform="translate(-6 -2) scale(1.1)" opacity=".9"/>
+  <use href="#k-bas" transform="translate(0 2)"/>
+  <!-- kolye: sıfır -->
+  <path d="M44 72 q16 12 32 0" stroke="#8A5A2B" stroke-width="1.6" fill="none"/>
+  <circle cx="60" cy="86" r="8.5" fill="url(#altin)" stroke="#B07812" stroke-width="1.2"/>
+  <ellipse cx="60" cy="86" rx="3.4" ry="5" fill="none" stroke="#7A4E0A" stroke-width="2"/>
+</svg><div class="no">3. KADEME</div><div class="ad">Yelesi belirmiş kedi</div><div class="bolge">Hindistan ve Çin · sıfır madalyonu</div></div>
+
+<!-- 4: dönüşüm, kısa yeleli aslan, Bağdat-Semerkant-İstanbul: usturlap -->
+<div class="kart"><svg viewBox="0 0 120 124">
+  <use href="#a-kuyruk"/><use href="#a-govde"/>
+  <use href="#a-yele" transform="translate(9.6 7) scale(.84)"/>
+  <use href="#a-bas"/><use href="#a-kas-genc"/>
+  <!-- usturlap -->
+  <path d="M46 72 q14 9 28 0" stroke="#8A5A2B" stroke-width="1.6" fill="none"/>
+  <circle cx="60" cy="88" r="10" fill="url(#altin)" stroke="#B07812" stroke-width="1.3"/>
+  <circle cx="60" cy="88" r="6.5" fill="none" stroke="#7A4E0A" stroke-width="1"/>
+  <path d="M60 78 v20 M50 88 h20 M55 83 l10 10" stroke="#7A4E0A" stroke-width="1"/>
+  <circle cx="60" cy="77" r="2" fill="none" stroke="#B07812" stroke-width="1.4"/>
+  <span></span>
+</svg><div class="no">4. KADEME</div><div class="ad">Aslan <span class="ok">dönüşüm</span></div><div class="bolge">Bağdat, Semerkant, İstanbul · usturlap</div></div>
+
+<!-- 5: genç aslan, Avrupa: kalem tüy + koordinat kâğıdı -->
+<div class="kart"><svg viewBox="0 0 120 124">
+  <use href="#a-kuyruk"/><use href="#a-govde"/>
+  <use href="#a-yele" transform="translate(4.8 3.6) scale(.92)"/>
+  <!-- kulak arkasında kalem tüy -->
+  <path d="M84 16 C96 6 104 10 100 16 C96 22 88 24 82 30 Z" fill="#FFFFFF" stroke="#9AA3C7" stroke-width="1"/><path d="M83 29 L99 13" stroke="#9AA3C7" stroke-width="1"/>
+  <use href="#a-bas"/><use href="#a-kas-genc"/>
+  <!-- koordinat kâğıdı -->
+  <g transform="rotate(5 60 96)"><rect x="44" y="84" width="32" height="24" rx="2" fill="#FFFFFF" stroke="#C9D0F0"/>
+  <path d="M48 104 h24 M50 106 v-20" stroke="#1E3BD6" stroke-width="1.2"/>
+  <path d="M51 103 C57 101 61 95 64 90 S70 86 72 86" stroke="#FF8A1F" stroke-width="1.6" fill="none"/></g>
+  <ellipse cx="45" cy="101" rx="6" ry="4.5" fill="#F4BA55"/><ellipse cx="75" cy="101" rx="6" ry="4.5" fill="#F4BA55"/>
+</svg><div class="no">5. KADEME</div><div class="ad">Genç aslan</div><div class="bolge">Avrupa · kalem tüy, koordinat düzlemi</div></div>
+
+<!-- 6: bilge aslan, öbür uç ve bugün: gözlük + tebeşir + kara tahta -->
+<div class="kart"><svg viewBox="0 0 120 124">
+  <!-- kara tahta -->
+  <rect x="2" y="14" width="34" height="26" rx="2" fill="#1F3A2E" stroke="#8A5A2B" stroke-width="2"/>
+  <path d="M7 22 q4 -4 8 0 t8 0 M7 30 h10 M20 30 l3 3 l5 -8" stroke="#E8F0E8" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <use href="#a-kuyruk"/><use href="#a-govde"/>
+  <use href="#a-yele"/>
+  <use href="#a-bas"/><use href="#a-kas-bilge"/>
+  <!-- yuvarlak gözlük -->
+  <circle cx="50" cy="47" r="7.2" fill="#FFFFFF" fill-opacity=".18" stroke="#3A2A1A" stroke-width="1.8"/>
+  <circle cx="70" cy="47" r="7.2" fill="#FFFFFF" fill-opacity=".18" stroke="#3A2A1A" stroke-width="1.8"/>
+  <path d="M57.2 46 q2.8 -2 5.6 0" stroke="#3A2A1A" stroke-width="1.6" fill="none"/>
+  <!-- patide tebeşir -->
+  <rect x="78" y="99" width="9" height="3.6" rx="1.6" fill="#FFFFFF" transform="rotate(-25 82 101)"/>
+</svg><div class="no">6. KADEME</div><div class="ad">Bilge aslan</div><div class="bolge">Dünyanın öbür ucu ve bugün · kara tahta</div></div>
+
+</div></body></html>

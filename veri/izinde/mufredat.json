@@ -1,0 +1,2087 @@
+{
+ "surum": 1,
+ "yil": "2026-2027",
+ "tampon_hafta": 2,
+ "takvim": {
+  "baslangic": "2026-09-14",
+  "yariyil_tatili": [
+   "2027-01-25",
+   "2027-02-05"
+  ],
+  "ara_tatiller": [
+   [
+    "2026-11-16",
+    "2026-11-20"
+   ],
+   [
+    "2027-03-08",
+    "2027-03-12"
+   ]
+  ],
+  "bitis": "2027-06-25",
+  "birinci_donem_bitis": "2027-01-22",
+  "ikinci_donem_baslangic": "2027-02-08"
+ },
+ "siniflar": {
+  "6": {
+   "uniteler": [
+    {
+     "no": 1,
+     "ad": "1. Tema: Sayılar ve Nicelikler (1)",
+     "konular": [
+      {
+       "id": "6.1.1",
+       "ad": "Doğal sayılarda çarpan ve kat",
+       "alan": "matematik",
+       "hafta": "2026-09-14",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.1.2",
+       "ad": "Bölünebilme kuralları (2, 3, 4, 5, 6, 9, 10)",
+       "alan": "matematik",
+       "hafta": "2026-09-14",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.1.3",
+       "ad": "Asal sayılar ve asal çarpanlar",
+       "alan": "matematik",
+       "hafta": "2026-09-21",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.1.4",
+       "ad": "Ortak bölen, ortak kat, aralarında asal sayılar",
+       "alan": "matematik",
+       "hafta": "2026-09-28",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "ad": "5. Tema: İstatistiksel Araştırma Süreci",
+     "konular": [
+      {
+       "id": "6.2.1",
+       "ad": "Kategorik ve nicel kesikli veri",
+       "alan": "matematik",
+       "hafta": "2026-10-05",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.2.2",
+       "ad": "Araştırma sorusu, veri toplama, düzenleme ve görselleştirme",
+       "alan": "matematik",
+       "hafta": "2026-10-05",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.2.3",
+       "ad": "Veri dağılımları: aritmetik ortalama, ortanca, tepe değer",
+       "alan": "matematik",
+       "hafta": "2026-10-12",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.2.4",
+       "ad": "Kök-yaprak gösterimi",
+       "alan": "matematik",
+       "hafta": "2026-10-19",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.2.5",
+       "ad": "İstatistiksel sonuçları yorumlama, hatalı/yanlı yorumları değerlendirme",
+       "alan": "matematik",
+       "hafta": "2026-10-26",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "ad": "6. Tema: Veriden Olasılığa",
+     "konular": [
+      {
+       "id": "6.3.1",
+       "ad": "Deneysel olasılık, deney ve çıktı, tekrar sayısı",
+       "alan": "matematik",
+       "hafta": "2026-11-02",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.3.2",
+       "ad": "Göreli sıklık ve olasılık tahmini",
+       "alan": "matematik",
+       "hafta": "2026-11-09",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.3.3",
+       "ad": "Olasılık değerini yorumlama",
+       "alan": "matematik",
+       "hafta": "2026-11-23",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "ad": "1. Tema: Sayılar ve Nicelikler (2)",
+     "konular": [
+      {
+       "id": "6.4.1",
+       "ad": "Kesirlerle dört işlem ve problemler",
+       "alan": "matematik",
+       "hafta": "2026-11-23",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.4.2",
+       "ad": "Ondalık gösterimleri çözümleme",
+       "alan": "matematik",
+       "hafta": "2026-12-07",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.4.3",
+       "ad": "Kesir-bölme ilişkisi",
+       "alan": "matematik",
+       "hafta": "2026-12-21",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.4.4",
+       "ad": "Standart uzunluk ölçme birimleri ve uzunluk ölçme",
+       "alan": "matematik",
+       "hafta": "2027-01-04",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "ad": "2. Tema: İşlemlerle Cebirsel Düşünme ve Değişimler",
+     "konular": [
+      {
+       "id": "6.5.1",
+       "ad": "Bilinmeyen nicelikler ve değişken kavramı",
+       "alan": "matematik",
+       "hafta": "2027-01-18",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.5.2",
+       "ad": "Örüntüler",
+       "alan": "matematik",
+       "hafta": "2027-02-08",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.5.3",
+       "ad": "Cebirsel ifadeler: terim, katsayı, sabit terim",
+       "alan": "matematik",
+       "hafta": "2027-02-22",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.5.4",
+       "ad": "Cebirsel ifadeler ve algoritma",
+       "alan": "matematik",
+       "hafta": "2027-03-15",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "ad": "3. Tema: Geometrik Şekiller",
+     "konular": [
+      {
+       "id": "6.6.1",
+       "ad": "Paralel doğrular ve kesen: yöndeş, iç ters, dış ters açılar",
+       "alan": "geometri",
+       "hafta": "2027-03-22",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.6.2",
+       "ad": "Üçgenin açıları",
+       "alan": "geometri",
+       "hafta": "2027-03-29",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.6.3",
+       "ad": "Yamuk, paralelkenar, eşkenar dörtgen, dikdörtgen, kare",
+       "alan": "geometri",
+       "hafta": "2027-04-05",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.6.4",
+       "ad": "Dörtgenlerin kenar, açı ve köşegen özellikleri",
+       "alan": "geometri",
+       "hafta": "2027-04-12",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "ad": "4. Tema: Geometrik Nicelikler",
+     "konular": [
+      {
+       "id": "6.7.1",
+       "ad": "Uzunluk ve alan ölçme birimleri arasındaki ilişkiler",
+       "alan": "geometri",
+       "hafta": "2027-04-19",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.7.2",
+       "ad": "Paralelkenarın ve üçgenin alanı",
+       "alan": "geometri",
+       "hafta": "2027-05-03",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.7.3",
+       "ad": "Çember ve çember uzunluğu (çap ilişkisi)",
+       "alan": "geometri",
+       "hafta": "2027-05-17",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "6.7.4",
+       "ad": "Merkez açı, yay uzunluğu",
+       "alan": "geometri",
+       "hafta": "2027-05-24",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    }
+   ],
+   "program": "Maarif"
+  },
+  "7": {
+   "uniteler": [
+    {
+     "no": 1,
+     "ad": "1. Tema: Sayılar ve Nicelikler (1)",
+     "konular": [
+      {
+       "id": "7.1.1",
+       "ad": "Doğal, tam ve rasyonel sayılar; mutlak değer ve sayı doğrusu",
+       "alan": "matematik",
+       "hafta": "2026-09-14",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "7.1.2",
+       "ad": "Rasyonel sayıların ondalık gösterimleri (sonlu ve devirli)",
+       "alan": "matematik",
+       "hafta": "2026-09-21",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "7.1.3",
+       "ad": "Rasyonel sayıların karşılaştırılması ve sıralanması",
+       "alan": "matematik",
+       "hafta": "2026-10-05",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "7.1.4",
+       "ad": "Rasyonel sayılarla dört işlem problemleri",
+       "alan": "matematik",
+       "hafta": "2026-10-19",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "ad": "4. Tema: Geometrik Nicelikler (1)",
+     "konular": [
+      {
+       "id": "7.2.1",
+       "ad": "Eş küplerle yapılar ve görünümleri",
+       "alan": "geometri",
+       "hafta": "2026-11-02",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "7.2.2",
+       "ad": "Dikdörtgenler prizmasının yüzey alanı",
+       "alan": "geometri",
+       "hafta": "2026-11-02",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "7.2.3",
+       "ad": "Eş nesnelerle dikdörtgenler prizmasının hacmi",
+       "alan": "geometri",
+       "hafta": "2026-11-09",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "7.2.4",
+       "ad": "Dikdörtgenler prizmasının hacim bağıntısı",
+       "alan": "geometri",
+       "hafta": "2026-11-09",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "7.2.5",
+       "ad": "Hacim ölçme birimleri arasındaki ilişkiler",
+       "alan": "geometri",
+       "hafta": "2026-11-23",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "7.2.6",
+       "ad": "Yüzey alanı ve hacim problemleri",
+       "alan": "geometri",
+       "hafta": "2026-11-30",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "ad": "6. Tema: İstatistiksel Araştırma Süreci",
+     "konular": [
+      {
+       "id": "7.3.1",
+       "ad": "Veriyle çalışma ve veriye dayalı karar verme",
+       "alan": "matematik",
+       "hafta": "2026-11-30",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "7.3.2",
+       "ad": "Başkalarının istatistiksel sonuç ve yorumlarını tartışma",
+       "alan": "matematik",
+       "hafta": "2026-12-21",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "ad": "3. Tema: Dönüşüm",
+     "konular": [
+      {
+       "id": "7.4.1",
+       "ad": "Yansıma dönüşümü altındaki görüntüler",
+       "alan": "geometri",
+       "hafta": "2027-01-04",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.4.2",
+       "ad": "Orta dikme ve açıortay inşası",
+       "alan": "geometri",
+       "hafta": "2027-01-11",
+       "sinav": [],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "ad": "5. Tema: Geometrik Şekiller",
+     "konular": [
+      {
+       "id": "7.5.1",
+       "ad": "Üçgende yardımcı elemanlar (kenarortay, açıortay, yükseklik)",
+       "alan": "geometri",
+       "hafta": "2027-01-18",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.5.2",
+       "ad": "Orta dikme inşasını kenarortay inşasına uyarlama",
+       "alan": "geometri",
+       "hafta": "2027-01-18",
+       "sinav": [],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "ad": "1. Tema: Sayılar ve Nicelikler (2)",
+     "konular": [
+      {
+       "id": "7.6.1",
+       "ad": "Oran ilişkileri",
+       "alan": "matematik",
+       "hafta": "2027-02-08",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.6.2",
+       "ad": "Orantılı durumları yorumlama",
+       "alan": "matematik",
+       "hafta": "2027-02-15",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.6.3",
+       "ad": "Doğru orantı problemleri",
+       "alan": "matematik",
+       "hafta": "2027-02-22",
+       "sinav": [],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "ad": "2. Tema: İşlemlerle Cebirsel Düşünme ve Değişimler",
+     "konular": [
+      {
+       "id": "7.7.1",
+       "ad": "Cebirsel ifadelerle toplama, çıkarma ve rasyonel sayıyla çarpma",
+       "alan": "matematik",
+       "hafta": "2027-03-01",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.7.2",
+       "ad": "Birinci dereceden bir bilinmeyenli denklem ve eşitsizlik problemleri",
+       "alan": "matematik",
+       "hafta": "2027-03-22",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.7.3",
+       "ad": "Sayılar ve özellikleri: ispat ve muhakeme",
+       "alan": "matematik",
+       "hafta": "2027-04-05",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.7.4",
+       "ad": "Algoritma ile aritmetik/cebirsel süreçler",
+       "alan": "matematik",
+       "hafta": "2027-04-19",
+       "sinav": [],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "ad": "4. Tema: Geometrik Nicelikler (2)",
+     "konular": [
+      {
+       "id": "7.8.1",
+       "ad": "Dairenin alan bağıntısı",
+       "alan": "geometri",
+       "hafta": "2027-05-03",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.8.2",
+       "ad": "Daire ve daire diliminin alanı",
+       "alan": "geometri",
+       "hafta": "2027-05-03",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.8.3",
+       "ad": "Eşkenar dörtgen ve yamuğun alanı",
+       "alan": "geometri",
+       "hafta": "2027-05-10",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.8.4",
+       "ad": "Daire, daire dilimi, eşkenar dörtgen, yamuk alan problemleri",
+       "alan": "geometri",
+       "hafta": "2027-05-17",
+       "sinav": [],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "ad": "7. Tema: Veriden Olasılığa",
+     "konular": [
+      {
+       "id": "7.9.1",
+       "ad": "Bir olayın ve tümleyeninin olasılığı",
+       "alan": "matematik",
+       "hafta": "2027-05-24",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.9.2",
+       "ad": "Eşit olasılıklı olaylar",
+       "alan": "matematik",
+       "hafta": "2027-05-31",
+       "sinav": [],
+       "dogrulandi": false
+      },
+      {
+       "id": "7.9.3",
+       "ad": "Ayrık ve ayrık olmayan olaylar",
+       "alan": "matematik",
+       "hafta": "2027-05-31",
+       "sinav": [],
+       "dogrulandi": false
+      }
+     ]
+    }
+   ],
+   "program": "Maarif"
+  },
+  "8": {
+   "uniteler": [
+    {
+     "no": 1,
+     "ad": "Çarpanlar ve Katlar",
+     "konular": [
+      {
+       "id": "8.1.1",
+       "ad": "Çarpanlar ve katlar (EBOB, EKOK, aralarında asal)",
+       "alan": "matematik",
+       "hafta": "2026-09-14",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "ad": "Üslü İfadeler",
+     "konular": [
+      {
+       "id": "8.2.1",
+       "ad": "Üslü ifadeler (tam sayı kuvvetleri, 10'un kuvvetleri, bilimsel gösterim)",
+       "alan": "matematik",
+       "hafta": "2026-10-12",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "ad": "Kareköklü İfadeler",
+     "konular": [
+      {
+       "id": "8.3.1",
+       "ad": "Kareköklü ifadeler (tam kare, sadeleştirme, işlemler, gerçek sayılar)",
+       "alan": "matematik",
+       "hafta": "2026-11-02",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "ad": "Veri Analizi",
+     "konular": [
+      {
+       "id": "8.4.1",
+       "ad": "Veri analizi (sütun, daire, çizgi grafikleri)",
+       "alan": "matematik",
+       "hafta": "2026-12-07",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "ad": "Basit Olayların Olma Olasılığı",
+     "konular": [
+      {
+       "id": "8.5.1",
+       "ad": "Basit olayların olma olasılığı",
+       "alan": "matematik",
+       "hafta": "2026-12-21",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "ad": "Cebirsel İfadeler ve Özdeşlikler",
+     "konular": [
+      {
+       "id": "8.6.1",
+       "ad": "Cebirsel ifadeler, özdeşlikler, çarpanlara ayırma",
+       "alan": "matematik",
+       "hafta": "2027-01-04",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "ad": "Doğrusal Denklemler",
+     "konular": [
+      {
+       "id": "8.7.1",
+       "ad": "Doğrusal denklemler (koordinat düzlemi, grafik, eğim)",
+       "alan": "matematik",
+       "hafta": "2027-02-08",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "ad": "Eşitsizlikler",
+     "konular": [
+      {
+       "id": "8.8.1",
+       "ad": "Birinci dereceden bir bilinmeyenli eşitsizlikler",
+       "alan": "matematik",
+       "hafta": "2027-03-15",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "ad": "Üçgenler",
+     "konular": [
+      {
+       "id": "8.9.1",
+       "ad": "Üçgenler (üçgen eşitsizliği, Pisagor bağıntısı)",
+       "alan": "geometri",
+       "hafta": "2027-03-29",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "ad": "Eşlik ve Benzerlik",
+     "konular": [
+      {
+       "id": "8.10.1",
+       "ad": "Eşlik ve benzerlik",
+       "alan": "geometri",
+       "hafta": "2027-04-19",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "ad": "Dönüşüm Geometrisi",
+     "konular": [
+      {
+       "id": "8.11.1",
+       "ad": "Dönüşüm geometrisi (öteleme, yansıma, dönme)",
+       "alan": "geometri",
+       "hafta": "2027-05-17",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "ad": "Geometrik Cisimler",
+     "konular": [
+      {
+       "id": "8.12.1",
+       "ad": "Geometrik cisimler (prizma, silindir, koni, piramit)",
+       "alan": "geometri",
+       "hafta": "2027-05-31",
+       "sinav": [
+        "LGS"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    }
+   ],
+   "program": "2018"
+  },
+  "9": {
+   "uniteler": [
+    {
+     "no": 1,
+     "ad": "1. Tema: Sayılar",
+     "konular": [
+      {
+       "id": "9.1.1",
+       "ad": "Üslü ve köklü gösterimlerle işlemler",
+       "alan": "matematik",
+       "hafta": "2026-09-14",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.1.2",
+       "ad": "Gerçek sayı aralıkları ve küme sembolleri",
+       "alan": "matematik",
+       "hafta": "2026-09-21",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.1.3",
+       "ad": "Farklı sayı kümelerinin özellikleri",
+       "alan": "matematik",
+       "hafta": "2026-10-05",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.1.4",
+       "ad": "Gerçek sayıların işlem özellikleri",
+       "alan": "matematik",
+       "hafta": "2026-10-12",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "ad": "2. Tema: Nicelikler ve Değişimler",
+     "konular": [
+      {
+       "id": "9.2.1",
+       "ad": "Doğrusal fonksiyonların nitel özellikleri",
+       "alan": "matematik",
+       "hafta": "2026-10-26",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.2.2",
+       "ad": "Mutlak değer fonksiyonları",
+       "alan": "matematik",
+       "hafta": "2026-11-09",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.2.3",
+       "ad": "Doğrusal fonksiyonlarla denklem ve eşitsizlik problemleri",
+       "alan": "matematik",
+       "hafta": "2026-11-30",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "ad": "3. Tema: Geometrik Şekiller",
+     "konular": [
+      {
+       "id": "9.3.1",
+       "ad": "Üçgende açı ve kenar özellikleri (doğrulama/ispat)",
+       "alan": "geometri",
+       "hafta": "2026-12-14",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "ad": "4. Tema: Eşlik ve Benzerlik",
+     "konular": [
+      {
+       "id": "9.4.1",
+       "ad": "Geometrik dönüşümler",
+       "alan": "geometri",
+       "hafta": "2026-12-28",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.4.2",
+       "ad": "Üçgenlerde eşlik ve benzerlik koşulları",
+       "alan": "geometri",
+       "hafta": "2027-01-04",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.4.3",
+       "ad": "Bir üçgenden benzer üçgenler oluşturma",
+       "alan": "geometri",
+       "hafta": "2027-01-18",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.4.4",
+       "ad": "Tales, Öklid ve Pisagor teoremleri",
+       "alan": "geometri",
+       "hafta": "2027-02-08",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.4.5",
+       "ad": "Eşlik ve benzerlik problemleri",
+       "alan": "geometri",
+       "hafta": "2027-02-15",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "ad": "5. Tema: Algoritma ve Bilişim",
+     "konular": [
+      {
+       "id": "9.5.1",
+       "ad": "Algoritma temelli problem çözme",
+       "alan": "matematik",
+       "hafta": "2027-02-22",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.5.2",
+       "ad": "Mantık bağlaçları ve niceleyiciler",
+       "alan": "matematik",
+       "hafta": "2027-03-22",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "ad": "6. Tema: İstatistiksel Araştırma Süreci",
+     "konular": [
+      {
+       "id": "9.6.1",
+       "ad": "Tek nicel değişkenli veri dağılımları ve veriye dayalı karar",
+       "alan": "matematik",
+       "hafta": "2027-04-05",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.6.2",
+       "ad": "Başkalarının veri yorumlarını tartışma",
+       "alan": "matematik",
+       "hafta": "2027-04-26",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "ad": "7. Tema: Veriden Olasılığa",
+     "konular": [
+      {
+       "id": "9.7.1",
+       "ad": "Gözleme dayalı olasılık tahmini",
+       "alan": "matematik",
+       "hafta": "2027-05-17",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "9.7.2",
+       "ad": "Teorik olasılık ve tümevarımsal akıl yürütme",
+       "alan": "matematik",
+       "hafta": "2027-05-24",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    }
+   ],
+   "program": "Maarif"
+  },
+  "10": {
+   "uniteler": [
+    {
+     "no": 1,
+     "ad": "1. Tema: Geometrik Şekiller",
+     "konular": [
+      {
+       "id": "10.1.1",
+       "ad": "Dik üçgende trigonometrik oranlar ve özdeşlikler",
+       "alan": "geometri",
+       "hafta": "2026-09-14",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.1.2",
+       "ad": "Üçgenin yardımcı elemanları",
+       "alan": "geometri",
+       "hafta": "2026-09-21",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.1.3",
+       "ad": "Üçgenin alanı (kenar ve yükseklik ilişkisi)",
+       "alan": "geometri",
+       "hafta": "2026-10-05",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.1.4",
+       "ad": "Sinüs ve kosinüs teoremleri",
+       "alan": "geometri",
+       "hafta": "2026-10-12",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "ad": "2. Tema: İstatistiksel Araştırma Süreci",
+     "konular": [
+      {
+       "id": "10.2.1",
+       "ad": "İki kategorik değişkenli veriler ve ilişkiye dayalı karar",
+       "alan": "matematik",
+       "hafta": "2026-10-26",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.2.2",
+       "ad": "Başkalarının iki kategorik değişkenli yorumlarını tartışma",
+       "alan": "matematik",
+       "hafta": "2026-11-09",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "ad": "3. Tema: Sayılar",
+     "konular": [
+      {
+       "id": "10.3.1",
+       "ad": "Asal çarpanlar ve bölenler",
+       "alan": "matematik",
+       "hafta": "2026-11-30",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.3.2",
+       "ad": "Ortak bölenler (EBOB) ve ortak katlar (EKOK)",
+       "alan": "matematik",
+       "hafta": "2026-12-07",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.3.3",
+       "ad": "Bölümden kalanlar",
+       "alan": "matematik",
+       "hafta": "2026-12-14",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "ad": "4. Tema: Nicelikler ve Değişimler",
+     "konular": [
+      {
+       "id": "10.4.1",
+       "ad": "Fonksiyon olma şartları ve nitel özellikler",
+       "alan": "matematik",
+       "hafta": "2026-12-21",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.4.2",
+       "ad": "Karesel fonksiyonlar",
+       "alan": "matematik",
+       "hafta": "2026-12-28",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.4.3",
+       "ad": "Karekök fonksiyonlar",
+       "alan": "matematik",
+       "hafta": "2027-01-11",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.4.4",
+       "ad": "Rasyonel fonksiyonlar",
+       "alan": "matematik",
+       "hafta": "2027-02-08",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.4.5",
+       "ad": "Ters fonksiyonlar",
+       "alan": "matematik",
+       "hafta": "2027-02-15",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.4.6",
+       "ad": "Fonksiyonlarla denklem ve eşitsizlik problemleri",
+       "alan": "matematik",
+       "hafta": "2027-03-01",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "ad": "5. Tema: Sayma, Algoritma ve Bilişim",
+     "konular": [
+      {
+       "id": "10.5.1",
+       "ad": "Sayma stratejileriyle problem çözme",
+       "alan": "matematik",
+       "hafta": "2027-03-22",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.5.2",
+       "ad": "Cebirsel ve fonksiyonel işlemleri algoritmik dille yapılandırma",
+       "alan": "matematik",
+       "hafta": "2027-04-05",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "ad": "6. Tema: Analitik İnceleme",
+     "konular": [
+      {
+       "id": "10.6.1",
+       "ad": "İki nokta arası uzaklık ve doğru parçasını bölen nokta",
+       "alan": "geometri",
+       "hafta": "2027-04-19",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.6.2",
+       "ad": "Dik koordinat sisteminde doğru ve doğru problemleri",
+       "alan": "geometri",
+       "hafta": "2027-05-03",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "ad": "7. Tema: Veriden Olasılığa",
+     "konular": [
+      {
+       "id": "10.7.1",
+       "ad": "Koşullu olasılık",
+       "alan": "matematik",
+       "hafta": "2027-05-17",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "10.7.2",
+       "ad": "Veriye dayalı tahmin",
+       "alan": "matematik",
+       "hafta": "2027-05-24",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    }
+   ],
+   "program": "Maarif"
+  },
+  "11": {
+   "uniteler": [
+    {
+     "no": 1,
+     "ad": "1. Tema: İstatistiksel Araştırma Süreci",
+     "konular": [
+      {
+       "id": "11.1.1",
+       "ad": "İki nicel değişkenli verilerle istatistiksel araştırma",
+       "alan": "matematik",
+       "hafta": "2026-09-14",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "11.1.2",
+       "ad": "Başkalarının iki nicel değişkenli sonuçlarını tartışma",
+       "alan": "matematik",
+       "hafta": "2026-09-28",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "ad": "2. Tema: Geometrik Şekiller",
+     "konular": [
+      {
+       "id": "11.2.1",
+       "ad": "Dörtgenlerin özellikleri",
+       "alan": "geometri",
+       "hafta": "2026-10-12",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "11.2.2",
+       "ad": "Özel dörtgenler arasındaki ilişkiler",
+       "alan": "geometri",
+       "hafta": "2026-10-26",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "11.2.3",
+       "ad": "Çokgenlerin içbükey/dışbükey sınıflandırması",
+       "alan": "geometri",
+       "hafta": "2026-11-09",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "11.2.4",
+       "ad": "Dışbükey çokgenlerin özellikleri",
+       "alan": "geometri",
+       "hafta": "2026-11-30",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "11.2.5",
+       "ad": "Çokgen problemleri",
+       "alan": "geometri",
+       "hafta": "2026-12-14",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "ad": "3. Tema: Nicelikler ve Değişimler (1)",
+     "konular": [
+      {
+       "id": "11.3.1",
+       "ad": "Trigonometrik fonksiyonlar ve nitel özellikleri",
+       "alan": "matematik",
+       "hafta": "2026-12-28",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "11.3.2",
+       "ad": "Trigonometrik denklemler",
+       "alan": "matematik",
+       "hafta": "2027-01-18",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "ad": "3. Tema: Nicelikler ve Değişimler (2)",
+     "konular": [
+      {
+       "id": "11.4.1",
+       "ad": "Üstel fonksiyonlar",
+       "alan": "matematik",
+       "hafta": "2027-03-01",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "11.4.2",
+       "ad": "Üstel fonksiyonların tersi ve logaritma",
+       "alan": "matematik",
+       "hafta": "2027-03-22",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "11.4.3",
+       "ad": "Logaritmik fonksiyonlar",
+       "alan": "matematik",
+       "hafta": "2027-03-29",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "11.4.4",
+       "ad": "Üstel/logaritmik denklem ve eşitsizlik problemleri",
+       "alan": "matematik",
+       "hafta": "2027-04-12",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "ad": "3. Tema: Nicelikler ve Değişimler (3)",
+     "konular": [
+      {
+       "id": "11.5.1",
+       "ad": "Bileşke fonksiyonlar",
+       "alan": "matematik",
+       "hafta": "2027-04-26",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "11.5.2",
+       "ad": "Fonksiyonlarda dört işlem",
+       "alan": "matematik",
+       "hafta": "2027-05-17",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    }
+   ],
+   "program": "Maarif"
+  },
+  "12": {
+   "uniteler": [
+    {
+     "no": 1,
+     "ad": "Üstel ve Logaritmik Fonksiyonlar",
+     "konular": [
+      {
+       "id": "12.1.1",
+       "ad": "Üstel fonksiyon",
+       "alan": "matematik",
+       "hafta": "2026-09-14",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "12.1.2",
+       "ad": "Logaritma fonksiyonu",
+       "alan": "matematik",
+       "hafta": "2026-09-28",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "12.1.3",
+       "ad": "Üstel ve logaritmik denklemler ve eşitsizlikler",
+       "alan": "matematik",
+       "hafta": "2026-10-05",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "ad": "Diziler",
+     "konular": [
+      {
+       "id": "12.2.1",
+       "ad": "Gerçek sayı dizileri (genel terim, aritmetik-geometrik dizi)",
+       "alan": "matematik",
+       "hafta": "2026-10-19",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "ad": "Trigonometri",
+     "konular": [
+      {
+       "id": "12.3.1",
+       "ad": "Toplam-fark ve iki kat açı formülleri",
+       "alan": "matematik",
+       "hafta": "2026-11-09",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "12.3.2",
+       "ad": "Trigonometrik denklemler",
+       "alan": "matematik",
+       "hafta": "2026-11-30",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "ad": "Dönüşümler",
+     "konular": [
+      {
+       "id": "12.4.1",
+       "ad": "Analitik düzlemde temel dönüşümler (öteleme, dönme, yansıma)",
+       "alan": "geometri",
+       "hafta": "2026-12-14",
+       "sinav": [],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "ad": "Türev",
+     "konular": [
+      {
+       "id": "12.5.1",
+       "ad": "Limit ve süreklilik",
+       "alan": "matematik",
+       "hafta": "2026-12-28",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "12.5.2",
+       "ad": "Anlık değişim oranı ve türev",
+       "alan": "matematik",
+       "hafta": "2027-02-08",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "12.5.3",
+       "ad": "Türevin uygulamaları",
+       "alan": "matematik",
+       "hafta": "2027-03-01",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "ad": "İntegral",
+     "konular": [
+      {
+       "id": "12.6.1",
+       "ad": "Belirsiz integral",
+       "alan": "matematik",
+       "hafta": "2027-03-29",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "12.6.2",
+       "ad": "Belirli integral ve uygulamaları",
+       "alan": "matematik",
+       "hafta": "2027-04-19",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "ad": "Analitik Geometri",
+     "konular": [
+      {
+       "id": "12.7.1",
+       "ad": "Çemberin analitik incelenmesi",
+       "alan": "geometri",
+       "hafta": "2027-05-10",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    }
+   ],
+   "program": "2018"
+  },
+  "Mezun": {
+   "uniteler": [
+    {
+     "no": 1,
+     "ad": "TYT Matematik",
+     "konular": [
+      {
+       "id": "M.1.1",
+       "ad": "Temel kavramlar",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.2",
+       "ad": "Sayı basamakları",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.3",
+       "ad": "Bölme ve bölünebilme",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.4",
+       "ad": "EBOB-EKOK",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.5",
+       "ad": "Rasyonel sayılar",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.6",
+       "ad": "Basit eşitsizlikler",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.7",
+       "ad": "Mutlak değer",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.8",
+       "ad": "Üslü sayılar",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.9",
+       "ad": "Köklü sayılar",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.10",
+       "ad": "Çarpanlara ayırma",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.11",
+       "ad": "Oran-orantı",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.12",
+       "ad": "Denklem çözme",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.13",
+       "ad": "Sayı ve kesir problemleri",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.14",
+       "ad": "Yaş problemleri",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.15",
+       "ad": "Yüzde, kâr-zarar problemleri",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.16",
+       "ad": "Karışım problemleri",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.17",
+       "ad": "İşçi-havuz problemleri",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.18",
+       "ad": "Hareket problemleri",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.19",
+       "ad": "Grafik ve tablo problemleri",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.20",
+       "ad": "Kümeler",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.21",
+       "ad": "Mantık",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.22",
+       "ad": "Fonksiyonlar",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.23",
+       "ad": "Polinomlar",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.24",
+       "ad": "İkinci dereceden denklemler",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.25",
+       "ad": "Permütasyon ve kombinasyon",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.26",
+       "ad": "Olasılık",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.1.27",
+       "ad": "Veri ve istatistik",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "ad": "TYT Geometri",
+     "konular": [
+      {
+       "id": "M.2.1",
+       "ad": "Temel kavramlar ve doğruda açılar",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.2.2",
+       "ad": "Üçgende açılar",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.2.3",
+       "ad": "Özel üçgenler ve Pisagor",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.2.4",
+       "ad": "Açıortay ve kenarortay",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.2.5",
+       "ad": "Eşlik ve benzerlik",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.2.6",
+       "ad": "Üçgende alan",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.2.7",
+       "ad": "Çokgenler ve dörtgenler",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.2.8",
+       "ad": "Çember ve daire",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.2.9",
+       "ad": "Analitik geometri (nokta ve doğru)",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.2.10",
+       "ad": "Katı cisimler",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "TYT"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "ad": "AYT Matematik",
+     "konular": [
+      {
+       "id": "M.3.1",
+       "ad": "Fonksiyonlar",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.3.2",
+       "ad": "Polinomlar",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.3.3",
+       "ad": "İkinci dereceden denklemler ve eşitsizlikler",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.3.4",
+       "ad": "Parabol",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.3.5",
+       "ad": "Trigonometri",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.3.6",
+       "ad": "Logaritma",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.3.7",
+       "ad": "Diziler",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.3.8",
+       "ad": "Permütasyon, kombinasyon, binom ve olasılık",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.3.9",
+       "ad": "Limit ve süreklilik",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.3.10",
+       "ad": "Türev",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.3.11",
+       "ad": "İntegral",
+       "alan": "matematik",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "ad": "AYT Geometri",
+     "konular": [
+      {
+       "id": "M.4.1",
+       "ad": "Doğrunun analitik incelenmesi",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.4.2",
+       "ad": "Çemberin analitik incelenmesi",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.4.3",
+       "ad": "Dönüşümler",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      },
+      {
+       "id": "M.4.4",
+       "ad": "Katı cisimler (prizma, piramit, silindir, koni, küre)",
+       "alan": "geometri",
+       "hafta": "",
+       "sinav": [
+        "AYT"
+       ],
+       "dogrulandi": false
+      }
+     ]
+    }
+   ],
+   "program": "YKS (TYT+AYT, 2026 kapsamı referans)"
+  }
+ }
+}

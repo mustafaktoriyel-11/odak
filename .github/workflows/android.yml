@@ -46,7 +46,7 @@ jobs:
           rsync -a ./ www/ \
             --exclude .git --exclude .github --exclude www --exclude node_modules --exclude android \
             --exclude package.json --exclude package-lock.json --exclude capacitor.config.json \
-            --exclude android-ayar --exclude CNAME --exclude sitemap.xml --exclude robots.txt --exclude magaza
+            --exclude android-ayar --exclude CNAME --exclude sitemap.xml --exclude robots.txt --exclude magaza --exclude izinde-arac --exclude tasarim
           ls -la www | head -50
 
       - name: Capacitor kur
