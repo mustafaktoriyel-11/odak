@@ -3,7 +3,7 @@
   "gen": 2576,
   "yuk": 1438
  },
- "not": "x,y harita pikseli (img/harita-gunduz.webp). adim = bu durağa varmak için gereken toplam çözülmüş set. bolge = kademe (1-6); bir bölgenin ilk durağına varmak kademe atlatır (seri şartı ayrıca). deniz = önceki duraktan buraya deniz/okyanus aşılarak gelinir (kesik çizgi). kavis = yolun bükülmesi (-1..1). rozet = simge rozetinin merkezi (verilmezse x,y); kalabalık bölgede gerçek noktadan kaydırılır, ince çizgiyle bağlanır.",
+ "not": "x,y harita pikseli (img/harita-gunduz.webp). adim = bu durağa varmak için gereken toplam çözülmüş set. bolge = kademe (1-6); bir bölgenin ilk durağına varmak kademe atlatır (seri şartı ayrıca). deniz = önceki duraktan buraya deniz/okyanus aşılarak gelinir (kesik çizgi). kavis = yolun bükülmesi (-1..1). rozet = simge rozetinin merkezi (verilmezse x,y); kalabalık bölgede gerçek noktadan kaydırılır, ince çizgiyle bağlanır. kademe = kademe eşikleri: toplam çözülen set (adim) ve en uzun seri (seri) birlikte sağlanmalı; set sayısı yetip seri yetmezse maskot yolda ilerler ama dönüşüm/kademe bekler (Mustafa onayı, 21 Kasım).",
  "duraklar": [
   {
    "id": "d01",
@@ -289,6 +289,38 @@
     1490,
     482
    ]
+  }
+ ],
+ "kademe": [
+  {
+   "no": 1,
+   "adim": 0,
+   "seri": 0
+  },
+  {
+   "no": 2,
+   "adim": 6,
+   "seri": 0
+  },
+  {
+   "no": 3,
+   "adim": 18,
+   "seri": 0
+  },
+  {
+   "no": 4,
+   "adim": 30,
+   "seri": 7
+  },
+  {
+   "no": 5,
+   "adim": 46,
+   "seri": 14
+  },
+  {
+   "no": 6,
+   "adim": 66,
+   "seri": 21
   }
  ]
 }
