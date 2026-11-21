@@ -1,0 +1,969 @@
+{
+ "sinif": "11",
+ "surum": 1,
+ "sorular": [
+  {
+   "id": "11-0001",
+   "konu": "11.1.1",
+   "zorluk": 1,
+   "s": "Şekildeki saçılım grafiğine göre $x$ ile $y$ değişkenleri arasındaki ilişki için aşağıdakilerden hangisi söylenebilir?",
+   "o": [
+    "Pozitif yönlü ve zayıf doğrusal ilişki var.",
+    "Pozitif yönlü ve güçlü doğrusal ilişki var.",
+    "Negatif yönlü ve zayıf doğrusal ilişki var.",
+    "Değişkenler arasında doğrusal ilişki yok.",
+    "Negatif yönlü ve güçlü doğrusal ilişki var."
+   ],
+   "c": 1,
+   "a": "$x$ arttıkça $y$ de artıyor ve noktalar bir doğrunun çevresinde yoğunlaşıyor. Bu, pozitif yönlü ve güçlü bir doğrusal ilişkidir.",
+   "sekil": "<svg viewBox=\"0 0 220 150\"><line x1=\"30\" y1=\"10\" x2=\"30\" y2=\"130\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"130\" x2=\"210\" y2=\"130\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"208\" y=\"144\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">x</text><text x=\"18\" y=\"16\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">y</text><circle cx=\"48.9\" cy=\"107.0\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"67.8\" cy=\"95.5\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"86.7\" cy=\"95.5\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"105.6\" cy=\"72.5\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"124.4\" cy=\"61.0\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"143.3\" cy=\"61.0\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"162.2\" cy=\"38.0\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"181.1\" cy=\"26.5\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0002",
+   "konu": "11.1.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki değişken çiftlerinden hangisi için negatif yönlü bir ilişki beklenir?",
+   "o": [
+    "Bir evin metrekaresi - kira bedeli",
+    "Bir aracın yaşı - ikinci el satış fiyatı",
+    "Günlük kitap okuma süresi - kelime dağarcığı",
+    "Boy uzunluğu - ayakkabı numarası",
+    "Haftalık antrenman sayısı - koşu dayanıklılığı"
+   ],
+   "c": 1,
+   "a": "Araç yaşlandıkça ikinci el fiyatı genellikle düşer; yani biri artarken diğeri azalır. Diğer çiftlerde değişkenler birlikte artma eğilimindedir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0003",
+   "konu": "11.1.1",
+   "zorluk": 2,
+   "s": "Bir öğrencinin 5 gün boyunca çözdüğü soru sayısı $x$ (yüz), doğru sayısı $y$ (yüz) olmak üzere veriler $(1,2),(2,4),(3,5),(4,7),(5,7)$ noktalarıdır. En küçük kareler yöntemiyle bulunan eğilim doğrusu $y=1{,}3x+1{,}1$ ise $x=8$ için tahmin kaçtır?",
+   "o": [
+    "$11{,}5$",
+    "$11{,}4$",
+    "$12{,}2$",
+    "$10{,}4$",
+    "$9{,}5$"
+   ],
+   "c": 0,
+   "a": "$x=8$ için $y=1{,}3\\cdot 8+1{,}1=10{,}4+1{,}1=11{,}5$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0004",
+   "konu": "11.1.1",
+   "zorluk": 2,
+   "s": "Bir saçılım grafiğinde çizilen eğilim doğrusu $A(1,12)$ ve $B(9,44)$ noktalarından geçmektedir. Bu doğruya göre $x=6$ için $y$ değeri kaçtır?",
+   "o": [
+    "$30$",
+    "$28$",
+    "$34$",
+    "$36$",
+    "$32$"
+   ],
+   "c": 4,
+   "a": "Eğim $\\dfrac{44-12}{9-1}=4$ olur. Doğru $y-12=4(x-1)$ ise $y=4x+8$ ve $x=6$ için $y=32$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0005",
+   "konu": "11.1.1",
+   "zorluk": 2,
+   "s": "Bir araştırmada $x$ değerleri $10$ ile $30$ arasında alınmış ve eğilim doğrusu $y=0{,}5x+3$ bulunmuştur. Bu doğruyla ilgili aşağıdakilerden hangisi doğrudur?",
+   "o": [
+    "$y$ değerleri her zaman $x$ değerlerinden büyüktür.",
+    "Eğim pozitif olduğu için $y$'nin değişimine $x$ neden olmuştur.",
+    "Doğru, tüm veri noktalarından mutlaka geçer.",
+    "$x=100$ için yapılan tahmin, veri aralığının dışında kaldığından güvenilir olmayabilir.",
+    "$x=100$ için yapılan tahmin, veri aralığının dışında olsa da kesinlikle doğrudur."
+   ],
+   "c": 3,
+   "a": "Eğilim doğrusu yalnızca gözlenen $x$ aralığında güvenle kullanılabilir. Aralık dışına taşan tahminler (dışdeğerleme) güvenilir olmayabilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0006",
+   "konu": "11.1.1",
+   "zorluk": 3,
+   "s": "Bir veri kümesinde $x$ değerlerinin aritmetik ortalaması $4$, $y$ değerlerinin aritmetik ortalaması $10$'dur. Eğilim doğrusu $y=3x+b$ biçiminde olup ortalama noktasından geçtiğine göre $x=7$ için tahmin kaçtır?",
+   "o": [
+    "$17$",
+    "$19$",
+    "$31$",
+    "$21$",
+    "$25$"
+   ],
+   "c": 1,
+   "a": "Doğru $(4,10)$ noktasından geçer: $10=3\\cdot 4+b$ ise $b=-2$ olur. $y=3x-2$ doğrusunda $x=7$ için $y=19$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0007",
+   "konu": "11.1.1",
+   "zorluk": 3,
+   "s": "$(1,2),(2,3),(3,4),(4,5),(5,6)$ ve $(6,20)$ noktalarından oluşan verinin ilk beş noktasına göre eğilim doğrusu $y=x+1$'dir. Altıncı noktanın bu doğruya göre dikey uzaklığı kaç birimdir?",
+   "o": [
+    "$13$",
+    "$14$",
+    "$20$",
+    "$7$",
+    "$12$"
+   ],
+   "c": 0,
+   "a": "$x=6$ için doğrudaki değer $6+1=7$'dir. Gözlenen değer $20$ olduğundan fark $20-7=13$ olur; bu nokta bir aykırı değerdir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0008",
+   "konu": "11.1.2",
+   "zorluk": 1,
+   "s": "Bir şehirde yaz aylarında dondurma satışları ile denizde boğulma vakaları arasında pozitif yönlü bir ilişki bulunmuştur. Bu sonuç için en uygun yorum aşağıdakilerden hangisidir?",
+   "o": [
+    "Hava sıcaklığı gibi üçüncü bir değişken her ikisini de etkiliyor olabilir.",
+    "Dondurma satışı azalırsa hava soğur.",
+    "Boğulma vakaları dondurma satışlarını artırır.",
+    "Dondurma yemek boğulmaya neden olur.",
+    "İlişki, veri sayısına bakılmaksızın kesin nedensellik gösterir."
+   ],
+   "c": 0,
+   "a": "İki değişkenin birlikte değişmesi, birinin diğerinin nedeni olduğunu göstermez. Burada sıcak hava hem dondurma satışını hem de denize girenlerin sayısını artırır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0009",
+   "konu": "11.1.2",
+   "zorluk": 1,
+   "s": "Bir araştırmacı, öğrencilerin ders çalışma süresi ile başarısı arasındaki ilişkiyi incelemek için yalnızca okul kütüphanesinde bulunan $20$ öğrenciyle görüşmüştür. Bu araştırmanın en önemli sorunu hangisidir?",
+   "o": [
+    "Başarının bir sayıyla ifade edilmesi",
+    "Örneklemin, tüm öğrencileri temsil etmeyebilmesi",
+    "Verilerin sayısal olması",
+    "Değişken sayısının iki olması",
+    "Saçılım grafiğinin çizilmesi"
+   ],
+   "c": 1,
+   "a": "Yalnızca kütüphanedeki öğrenciler seçildiği için örneklem çoğunlukla çok çalışanlardan oluşur. Bu yanlı örneklem, sonucun tüm öğrencilere genellenmesini engeller.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0010",
+   "konu": "11.1.2",
+   "zorluk": 1,
+   "s": "Bir çalışmada haftalık çalışma süresi $x$ (saat), deneme neti $y$ olmak üzere eğilim doğrusu $y=0{,}8x+12$ bulunmuştur. Bu doğruya göre çalışma süresi $5$ saat artarsa net ortalama kaç artar?",
+   "o": [
+    "$8$",
+    "$12$",
+    "$16$",
+    "$4$",
+    "$5$"
+   ],
+   "c": 3,
+   "a": "Eğim $0{,}8$ olduğundan $x$ bir birim arttığında $y$ ortalama $0{,}8$ artar. $5$ saat için artış $0{,}8\\cdot 5=4$ nettir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0011",
+   "konu": "11.1.2",
+   "zorluk": 2,
+   "s": "Bir araştırmacı, şekildeki saçılım grafiğine dayanarak \"$x$ değişkeni $y$ değişkenini belirler\" sonucuna varmıştır. Bu sonuç için aşağıdakilerden hangisi söylenebilir?",
+   "o": [
+    "Sonuç, grafik pozitif eğimli olduğu için doğrudur.",
+    "Sonuç, grafik negatif eğimli olduğu için doğrudur.",
+    "Nokta sayısı çift olduğu için sonuç doğrudur.",
+    "Noktalar belirli bir örüntü göstermediğinden sonuç dayanaksızdır.",
+    "Noktalar bir doğru çevresinde toplandığından sonuç doğrudur."
+   ],
+   "c": 3,
+   "a": "Noktalar rastgele dağılmıştır; $x$ arttıkça $y$ için belirgin bir artış veya azalış görülmez. Bu yüzden iki değişken arasında bir ilişki bulunduğu sonucu desteklenmez.",
+   "sekil": "<svg viewBox=\"0 0 220 150\"><line x1=\"30\" y1=\"10\" x2=\"30\" y2=\"130\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"130\" x2=\"210\" y2=\"130\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"208\" y=\"144\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">x</text><text x=\"18\" y=\"16\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">y</text><circle cx=\"48.9\" cy=\"58.1\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"67.8\" cy=\"101.2\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"86.7\" cy=\"43.8\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"105.6\" cy=\"86.9\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"124.4\" cy=\"29.4\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"143.3\" cy=\"101.2\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"162.2\" cy=\"58.1\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"181.1\" cy=\"72.5\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0012",
+   "konu": "11.1.2",
+   "zorluk": 2,
+   "s": "Bir araştırmada A grubu için eğilim doğrusunun eğimi $1{,}2$, B grubu için $0{,}4$ bulunmuştur. Her iki grupta da $x$ ve $y$ aynı birimlerle ölçüldüğüne göre aşağıdakilerden hangisi doğrudur?",
+   "o": [
+    "B grubunda $y$ azalmaktadır.",
+    "B grubunda $x$ ile $y$ arasında ilişki yoktur.",
+    "A grubunda $x$ bir birim arttığında $y$'deki ortalama artış daha fazladır.",
+    "A grubundaki noktalar doğruya daha yakındır.",
+    "Her iki grupta da nedensellik kesindir."
+   ],
+   "c": 2,
+   "a": "Eğim, $x$ bir birim arttığında $y$'nin ortalama değişimini verir. A'da bu değişim $1{,}2$, B'de $0{,}4$ olduğundan A'daki artış daha fazladır. Eğim ilişkinin gücü hakkında bilgi vermez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0013",
+   "konu": "11.1.2",
+   "zorluk": 2,
+   "s": "Bir yayında, kesik bir $y$ ekseni kullanılarak ($y$ ekseni $90$'dan başlatılarak) iki sütunun yükseklikleri $92$ ve $96$ gösterilmiştir. Sütunların görünümü ne gibi bir yanılgı yaratır?",
+   "o": [
+    "Veri sayısının az sanılması",
+    "İki değerin eşit sanılması",
+    "Değerler arasındaki farkın olduğundan çok daha büyük sanılması",
+    "Ortalamanın hesaplanamaması",
+    "Değerlerin gerçekte olduğundan çok küçük sanılması"
+   ],
+   "c": 2,
+   "a": "Eksen $0$'dan başlamadığında sütun yükseklikleri oranı bozulur. $92$ ile $96$ arasındaki küçük fark, görsel olarak yaklaşık iki kat gibi görünür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0014",
+   "konu": "11.1.2",
+   "zorluk": 3,
+   "s": "Bir çalışmada $y=-1{,}5x+60$ eğilim doğrusu bulunmuş ve verilerdeki $x$ değerleri $10$ ile $25$ arasında kalmıştır. Bu çalışmayla ilgili aşağıdakilerden hangisi doğru bir değerlendirmedir?",
+   "o": [
+    "$x=0$ için $y=60$ değeri kesin olarak gözlemlenmiştir.",
+    "$x$ iki katına çıkınca $y$ de mutlaka yarıya iner.",
+    "$x=40$ için elde edilen $y=0$ tahmini, veri aralığı dışında kaldığı için yorumlanırken dikkatli olunmalıdır.",
+    "Bütün gözlemlerde $y$ değeri $60$'tan büyüktür.",
+    "Eğimin negatif olması, değişkenlerin ilişkisiz olduğunu gösterir."
+   ],
+   "c": 2,
+   "a": "$x=40$ için $y=-1{,}5\\cdot 40+60=0$ bulunur; ancak $40$, gözlenen $10$-$25$ aralığının dışındadır. Aralık dışı tahminler güvenilir olmayabilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0015",
+   "konu": "11.2.1",
+   "zorluk": 1,
+   "s": "Bir dörtgenin üç iç açısı $85^\\circ$, $100^\\circ$ ve $70^\\circ$'dir. Dördüncü iç açı kaç derecedir?",
+   "o": [
+    "$100^\\circ$",
+    "$105^\\circ$",
+    "$110^\\circ$",
+    "$115^\\circ$",
+    "$95^\\circ$"
+   ],
+   "c": 1,
+   "a": "Dörtgenin iç açıları toplamı $360^\\circ$'dir. $360^\\circ-(85^\\circ+100^\\circ+70^\\circ)=105^\\circ$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0016",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "$ABCD$ paralelkenarında $m(\\widehat{A})=(2x+10)^\\circ$ ve $m(\\widehat{B})=(3x-20)^\\circ$ olduğuna göre $x$ kaçtır?",
+   "o": [
+    "$38$",
+    "$36$",
+    "$42$",
+    "$34$",
+    "$40$"
+   ],
+   "c": 0,
+   "a": "Paralelkenarda komşu açılar bütünlerdir: $(2x+10)+(3x-20)=180$ ise $5x=190$ ve $x=38$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0017",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "Bir dikdörtgenin köşegen uzunluğu $26$ cm, kısa kenarı $10$ cm'dir. Bu dikdörtgenin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$120$",
+    "$240$",
+    "$340$",
+    "$260$",
+    "$130$"
+   ],
+   "c": 1,
+   "a": "Uzun kenar $\\sqrt{26^2-10^2}=\\sqrt{576}=24$ cm'dir. Alan $10\\cdot 24=240$ $\\text{cm}^2$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0018",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "Köşegen uzunlukları $12$ cm ve $16$ cm olan bir eşkenar dörtgenin çevresi kaç cm'dir?",
+   "o": [
+    "$48$",
+    "$20$",
+    "$40$",
+    "$56$",
+    "$28$"
+   ],
+   "c": 2,
+   "a": "Köşegenler birbirini dik ortalar. Bir kenar $\\sqrt{6^2+8^2}=10$ cm olduğundan çevre $4\\cdot 10=40$ cm'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0019",
+   "konu": "11.2.1",
+   "zorluk": 1,
+   "s": "Tabanları $14$ cm ve $22$ cm olan bir yamuğun orta taban uzunluğu kaç cm'dir?",
+   "o": [
+    "$16$",
+    "$18$",
+    "$36$",
+    "$20$",
+    "$8$"
+   ],
+   "c": 1,
+   "a": "Orta taban, tabanların aritmetik ortalamasıdır: $\\dfrac{14+22}{2}=18$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0020",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "Tabanları $20$ cm ve $8$ cm, yan kenarları $10$ cm olan ikizkenar yamuğun alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$120$",
+    "$112$",
+    "$140$",
+    "$80$",
+    "$96$"
+   ],
+   "c": 1,
+   "a": "Yükseklik, $\\dfrac{20-8}{2}=6$ cm taban farkı ve $10$ cm yan kenarla $\\sqrt{10^2-6^2}=8$ cm bulunur. Alan $\\dfrac{(20+8)\\cdot 8}{2}=112$ $\\text{cm}^2$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0021",
+   "konu": "11.2.1",
+   "zorluk": 3,
+   "s": "$ABCD$ paralelkenarında $|AB|=8$ cm, $|AD|=12$ cm'dir. $A$ açısının açıortayı $[BC]$ kenarını $E$ noktasında kestiğine göre $|EC|$ kaç cm'dir?",
+   "o": [
+    "$8$",
+    "$5$",
+    "$6$",
+    "$4$",
+    "$2$"
+   ],
+   "c": 3,
+   "a": "$AD\\parallel BC$ olduğundan $m(\\widehat{DAE})=m(\\widehat{AEB})$ olur. Açıortay nedeniyle $\\triangle ABE$ ikizkenardır, $|BE|=|AB|=8$. Buradan $|EC|=12-8=4$ cm bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0022",
+   "konu": "11.2.1",
+   "zorluk": 3,
+   "s": "Köşegenleri birbirine dik olan $ABCD$ dörtgeninde $|AB|=6$ cm, $|BC|=7$ cm, $|CD|=8$ cm'dir. $|AD|$ kaç cm'dir?",
+   "o": [
+    "$5$",
+    "$\\sqrt{41}$",
+    "$\\sqrt{149}$",
+    "$\\sqrt{51}$",
+    "$\\sqrt{29}$"
+   ],
+   "c": 3,
+   "a": "Köşegenleri dik dörtgende karşılıklı kenarların kareleri toplamı eşittir: $|AB|^2+|CD|^2=|BC|^2+|AD|^2$. $36+64=49+|AD|^2$ ise $|AD|=\\sqrt{51}$ cm olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0023",
+   "konu": "11.2.2",
+   "zorluk": 1,
+   "s": "Aşağıdaki ifadelerden hangisi her zaman doğrudur?",
+   "o": [
+    "Her yamuk bir paralelkenardır.",
+    "Her eşkenar dörtgen bir karedir.",
+    "Her paralelkenar bir dikdörtgendir.",
+    "Her kare bir eşkenar dörtgendir.",
+    "Her dikdörtgen bir karedir."
+   ],
+   "c": 3,
+   "a": "Karenin dört kenarı eşittir ve karşılıklı kenarları paraleldir; bu yüzden kare, özel bir eşkenar dörtgendir. Diğer ifadelerin tersi doğru değildir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0024",
+   "konu": "11.2.2",
+   "zorluk": 1,
+   "s": "Köşegenleri eş olup birbirini ortalayan dörtgen aşağıdakilerden hangisidir?",
+   "o": [
+    "Genel paralelkenar",
+    "Deltoid",
+    "Yamuk",
+    "Eşkenar dörtgen",
+    "Dikdörtgen"
+   ],
+   "c": 4,
+   "a": "Köşegenleri birbirini ortalayan dörtgen paralelkenardır. Köşegenleri ayrıca eşitse paralelkenar bir dikdörtgendir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0025",
+   "konu": "11.2.2",
+   "zorluk": 2,
+   "s": "Köşegen uzunluğu $8\\sqrt{2}$ cm olan bir karenin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$128$",
+    "$32$",
+    "$8 \\sqrt{2}$",
+    "$16$",
+    "$64$"
+   ],
+   "c": 4,
+   "a": "Kenar uzunluğu $a$ ise köşegen $a\\sqrt{2}$'dir. $a\\sqrt{2}=8\\sqrt{2}$ ise $a=8$ ve alan $8^2=64$ $\\text{cm}^2$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0026",
+   "konu": "11.2.2",
+   "zorluk": 1,
+   "s": "Bir iç açısı $90^\\circ$ olan bir eşkenar dörtgen aşağıdakilerden hangisidir?",
+   "o": [
+    "Dikdörtgen olup kare olmayan",
+    "Genel paralelkenar",
+    "Yamuk olup paralelkenar olmayan",
+    "Kare",
+    "Deltoid olup eşkenar dörtgen olmayan"
+   ],
+   "c": 3,
+   "a": "Eşkenar dörtgenin bir açısı $90^\\circ$ ise bütün açıları $90^\\circ$ olur. Dört kenarı ve dört açısı eşit olan dörtgen karedir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0027",
+   "konu": "11.2.2",
+   "zorluk": 2,
+   "s": "Aşağıdaki dörtgenlerden hangisinde köşegenler birbirini ortalar fakat her zaman dik kesişmez?",
+   "o": [
+    "Deltoid",
+    "Dikdörtgen",
+    "Kare",
+    "İkizkenar yamuk",
+    "Eşkenar dörtgen"
+   ],
+   "c": 1,
+   "a": "Dikdörtgenin köşegenleri birbirini ortalar ama kare değilse dik kesişmez. Kare ve eşkenar dörtgenin köşegenleri diktir; deltoid ile ikizkenar yamukta köşegenler birbirini ortalamaz.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0028",
+   "konu": "11.2.2",
+   "zorluk": 2,
+   "s": "Kenar uzunluğu $6$ cm ve bir iç açısı $60^\\circ$ olan eşkenar dörtgenin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$9 \\sqrt{3}$",
+    "$18$",
+    "$18 \\sqrt{3}$",
+    "$36 \\sqrt{3}$",
+    "$36$"
+   ],
+   "c": 2,
+   "a": "$60^\\circ$'lik açıyı kesen köşegen, kenarla birlikte eşkenar üçgen oluşturur; kısa köşegen $6$ cm, uzun köşegen $6\\sqrt{3}$ cm'dir. Alan $\\dfrac{6\\cdot 6\\sqrt{3}}{2}=18\\sqrt{3}$ $\\text{cm}^2$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0029",
+   "konu": "11.2.2",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi hem dikdörtgenin hem de eşkenar dörtgenin ortak özelliğidir?",
+   "o": [
+    "Bütün açılar eşittir.",
+    "Köşegenler eşittir.",
+    "Köşegenler birbirini ortalar.",
+    "Bütün kenarlar eşittir.",
+    "Köşegenler birbirine diktir."
+   ],
+   "c": 2,
+   "a": "Her iki dörtgen de paralelkenardır; paralelkenarın köşegenleri birbirini ortalar. Diğer özellikler yalnızca birinde veya yalnızca karede bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0030",
+   "konu": "11.2.2",
+   "zorluk": 3,
+   "s": "Kenar uzunlukları $10$ cm ve $24$ cm olan bir dikdörtgenin kenarlarının orta noktaları sırayla birleştirilerek bir dörtgen elde ediliyor. Elde edilen dörtgenin çevresi kaç cm'dir?",
+   "o": [
+    "$26$",
+    "$34$",
+    "$48$",
+    "$52$",
+    "$68$"
+   ],
+   "c": 3,
+   "a": "Orta noktalar birleştirilince köşegenleri $10$ ve $24$ cm olan bir eşkenar dörtgen oluşur. Kenar $\\sqrt{5^2+12^2}=13$ cm olduğundan çevre $4\\cdot 13=52$ cm'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0031",
+   "konu": "11.2.3",
+   "zorluk": 1,
+   "s": "Şekildeki dörtgen için aşağıdakilerden hangisi doğrudur?",
+   "o": [
+    "Dışbükey bir çokgendir; iki köşegeni vardır ve ikisi de içeridedir.",
+    "İçbükey bir çokgendir; bir iç açısı $180^\\circ$'den büyüktür.",
+    "Dışbükey bir çokgendir; tüm iç açıları $180^\\circ$'den küçüktür.",
+    "İçbükey bir çokgendir; iki köşegeni de çokgenin içinde kalır.",
+    "Kenarları paralel olan bir yamuktur."
+   ],
+   "c": 1,
+   "a": "Alt köşedeki girinti nedeniyle şekildeki dörtgenin bir iç açısı $180^\\circ$'den büyüktür. İç açılarından biri $180^\\circ$'den büyük olan çokgen içbükeydir.",
+   "sekil": "<svg viewBox=\"0 0 220 150\"><polygon points=\"40,110 110,15 180,110 110,75\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><text x=\"30\" y=\"122\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"110\" y=\"10\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"190\" y=\"122\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"110\" y=\"92\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">D</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0032",
+   "konu": "11.2.3",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi dışbükey çokgenin tanımına uygundur?",
+   "o": [
+    "Çokgenin en az iki kenarı birbirine paraleldir.",
+    "Çokgenin köşegenlerinden en az biri çokgenin dışında kalır.",
+    "Çokgenin en az bir iç açısı $180^\\circ$'den büyüktür.",
+    "Çokgenin içinde alınan herhangi iki noktayı birleştiren doğru parçası tamamen çokgenin içinde kalır.",
+    "Çokgenin bütün kenarları eşit uzunluktadır."
+   ],
+   "c": 3,
+   "a": "Dışbükey çokgende içindeki iki noktayı birleştiren her doğru parçası çokgenin içinde kalır. Bu durumda tüm iç açılar $180^\\circ$'den küçüktür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0033",
+   "konu": "11.2.3",
+   "zorluk": 2,
+   "s": "Köşeleri sırasıyla verilen çokgenlerden hangisi içbükeydir?",
+   "o": [
+    "$(0,0),(4,0),(6,3),(2,6)$",
+    "$(0,0),(6,0),(6,4),(0,4)$",
+    "$(1,0),(5,1),(6,4),(3,6),(0,3)$",
+    "$(0,0),(4,0),(5,3),(2,5),(-1,3)$",
+    "$(0,0),(5,0),(3,2),(5,5),(0,5)$"
+   ],
+   "c": 4,
+   "a": "Köşeleri sırayla dolaşırken yön hep aynı tarafa dönüyorsa çokgen dışbükeydir. $(5,0)\\to(3,2)\\to(5,5)$ geçişinde dönüş yönü değiştiği için $(3,2)$ köşesindeki iç açı $180^\\circ$'den büyüktür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0034",
+   "konu": "11.2.3",
+   "zorluk": 2,
+   "s": "Bir içbükey dörtgenin iç açılarından biri $230^\\circ$, ikisi $35^\\circ$ ve $45^\\circ$'dir. Dördüncü açı kaç derecedir?",
+   "o": [
+    "$50^\\circ$",
+    "$40^\\circ$",
+    "$105^\\circ$",
+    "$70^\\circ$",
+    "$60^\\circ$"
+   ],
+   "c": 0,
+   "a": "Dörtgenin iç açıları toplamı $360^\\circ$'dir. $360^\\circ-(230^\\circ+35^\\circ+45^\\circ)=50^\\circ$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0035",
+   "konu": "11.2.3",
+   "zorluk": 3,
+   "s": "Kenar sayısı $8$ olan bir içbükey çokgenin $180^\\circ$'den büyük en çok kaç iç açısı olabilir?",
+   "o": [
+    "$5$",
+    "$3$",
+    "$8$",
+    "$4$",
+    "$6$"
+   ],
+   "c": 0,
+   "a": "$n$ kenarlı çokgende iç açılar toplamı $(n-2)\\cdot 180^\\circ$'dir. Bütün açıların $180^\\circ$'den büyük olabilecek sayısı $n-3$ ile sınırlıdır. Buradan $8-3=5$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0036",
+   "konu": "11.2.3",
+   "zorluk": 2,
+   "s": "Bir doğru, dışbükey bir çokgenin sınırını (kenarları üzerinde bir doğru parçası oluşturmayacak biçimde) en çok kaç noktada kesebilir?",
+   "o": [
+    "$3$",
+    "$1$",
+    "$2$",
+    "Çokgenin kenar sayısı kadar",
+    "$4$"
+   ],
+   "c": 2,
+   "a": "Dışbükey çokgende doğruyla çokgenin kesişimi tek bir doğru parçasıdır. Bu parça sınırı yalnızca iki uç noktada keser.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0037",
+   "konu": "11.2.3",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi her zaman dışbükey bir çokgendir?",
+   "o": [
+    "Üçgen",
+    "Deltoid",
+    "Beşgen",
+    "Altıgen",
+    "Dörtgen"
+   ],
+   "c": 0,
+   "a": "Üçgenin her iç açısı $180^\\circ$'den küçüktür; bu yüzden üçgen daima dışbükeydir. Dörtgen ve daha çok kenarlı çokgenler içbükey olabilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0038",
+   "konu": "11.2.4",
+   "zorluk": 1,
+   "s": "Dışbükey bir altıgenin iç açıları toplamı kaç derecedir?",
+   "o": [
+    "$900^\\circ$",
+    "$540^\\circ$",
+    "$720^\\circ$",
+    "$1080^\\circ$",
+    "$360^\\circ$"
+   ],
+   "c": 2,
+   "a": "$n$ kenarlı dışbükey çokgenin iç açıları toplamı $(n-2)\\cdot 180^\\circ$'dir. $n=6$ için $4\\cdot 180^\\circ=720^\\circ$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0039",
+   "konu": "11.2.4",
+   "zorluk": 1,
+   "s": "Düzgün on iki kenarlı çokgenin bir iç açısı kaç derecedir?",
+   "o": [
+    "$120^\\circ$",
+    "$160^\\circ$",
+    "$30^\\circ$",
+    "$135^\\circ$",
+    "$150^\\circ$"
+   ],
+   "c": 4,
+   "a": "Bir dış açı $\\dfrac{360^\\circ}{12}=30^\\circ$ olduğundan iç açı $180^\\circ-30^\\circ=150^\\circ$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0040",
+   "konu": "11.2.4",
+   "zorluk": 2,
+   "s": "Dışbükey bir çokgenin köşegen sayısı $27$'dir. Bu çokgenin kenar sayısı kaçtır?",
+   "o": [
+    "$9$",
+    "$12$",
+    "$10$",
+    "$7$",
+    "$8$"
+   ],
+   "c": 0,
+   "a": "Köşegen sayısı $\\dfrac{n(n-3)}{2}$'dir. $\\dfrac{n(n-3)}{2}=27$ ise $n^2-3n-54=0$ ve $(n-9)(n+6)=0$ olduğundan $n=9$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0041",
+   "konu": "11.2.4",
+   "zorluk": 2,
+   "s": "Düzgün bir çokgenin bir dış açısı $18^\\circ$'dir. Bu çokgenin köşegen sayısı kaçtır?",
+   "o": [
+    "$190$",
+    "$120$",
+    "$150$",
+    "$180$",
+    "$170$"
+   ],
+   "c": 4,
+   "a": "Dış açıların toplamı $360^\\circ$ olduğundan kenar sayısı $\\dfrac{360}{18}=20$ olur. Köşegen sayısı $\\dfrac{20\\cdot 17}{2}=170$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0042",
+   "konu": "11.2.4",
+   "zorluk": 2,
+   "s": "İç açıları toplamı $1980^\\circ$ olan dışbükey çokgenin kenar sayısı kaçtır?",
+   "o": [
+    "$12$",
+    "$14$",
+    "$15$",
+    "$11$",
+    "$13$"
+   ],
+   "c": 4,
+   "a": "$(n-2)\\cdot 180=1980$ ise $n-2=11$ olur, buradan $n=13$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0043",
+   "konu": "11.2.4",
+   "zorluk": 1,
+   "s": "Dışbükey $11$ kenarlı bir çokgenin bir köşesinden çizilen köşegenler çokgeni kaç üçgene ayırır?",
+   "o": [
+    "$12$",
+    "$8$",
+    "$10$",
+    "$9$",
+    "$11$"
+   ],
+   "c": 3,
+   "a": "Bir köşeden çizilen köşegenler $n$ kenarlı çokgeni $n-2$ üçgene ayırır. $11-2=9$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0044",
+   "konu": "11.2.4",
+   "zorluk": 3,
+   "s": "Dışbükey bir çokgenin bir iç açısı dışındaki iç açılarının toplamı $1700^\\circ$'dir. Bu çokgenin kenar sayısı kaçtır?",
+   "o": [
+    "$13$",
+    "$12$",
+    "$14$",
+    "$11$",
+    "$10$"
+   ],
+   "c": 1,
+   "a": "Bütün iç açıların toplamı $(n-2)\\cdot 180^\\circ$ olup $180^\\circ$'nin katıdır. Kalan açı $0^\\circ$ ile $180^\\circ$ arasında olduğundan toplam $1800^\\circ$ olur; $(n-2)\\cdot 180=1800$ ise $n=12$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0045",
+   "konu": "11.2.4",
+   "zorluk": 2,
+   "s": "Dışbükey bir çokgenin köşegen sayısı, kenar sayısının $4$ katıdır. Bu çokgenin kenar sayısı kaçtır?",
+   "o": [
+    "$10$",
+    "$8$",
+    "$9$",
+    "$11$",
+    "$12$"
+   ],
+   "c": 3,
+   "a": "$\\dfrac{n(n-3)}{2}=4n$ ise $n-3=8$ olur, buradan $n=11$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0046",
+   "konu": "11.2.4",
+   "zorluk": 3,
+   "s": "$ABCDEFGH$ düzgün sekizgeninde $m(\\widehat{ACE})$ kaç derecedir?",
+   "o": [
+    "$120^\\circ$",
+    "$60^\\circ$",
+    "$135^\\circ$",
+    "$45^\\circ$",
+    "$90^\\circ$"
+   ],
+   "c": 4,
+   "a": "Düzgün sekizgenin köşeleri bir çember üzerindedir ve her yay $45^\\circ$'dir. $\\widehat{ACE}$, $C$'yi içermeyen $AE$ yayını ($4\\cdot 45^\\circ=180^\\circ$) gören çevre açıdır; ölçüsü $90^\\circ$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0047",
+   "konu": "11.2.4",
+   "zorluk": 2,
+   "s": "Düzgün bir çokgenin bir iç açısı, bir dış açısının $5$ katıdır. Bu çokgenin kenar sayısı kaçtır?",
+   "o": [
+    "$12$",
+    "$8$",
+    "$10$",
+    "$18$",
+    "$15$"
+   ],
+   "c": 0,
+   "a": "İç ve dış açı bütünlerdir: $5d+d=180^\\circ$ ise $d=30^\\circ$ olur. Kenar sayısı $\\dfrac{360}{30}=12$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0048",
+   "konu": "11.2.4",
+   "zorluk": 1,
+   "s": "Düzgün beşgenin bir iç açısı kaç derecedir?",
+   "o": [
+    "$108^\\circ$",
+    "$120^\\circ$",
+    "$135^\\circ$",
+    "$100^\\circ$",
+    "$72^\\circ$"
+   ],
+   "c": 0,
+   "a": "İç açılar toplamı $3\\cdot 180^\\circ=540^\\circ$ olup beş açı eşittir: $\\dfrac{540^\\circ}{5}=108^\\circ$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0049",
+   "konu": "11.2.5",
+   "zorluk": 2,
+   "s": "Kenar uzunluğu $6$ cm olan düzgün altıgenin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$18 \\sqrt{3}$",
+    "$27 \\sqrt{3}$",
+    "$54 \\sqrt{3}$",
+    "$36 \\sqrt{3}$",
+    "$108$"
+   ],
+   "c": 2,
+   "a": "Düzgün altıgen, kenarı $6$ olan $6$ eşkenar üçgenden oluşur. Alan $6\\cdot\\dfrac{6^2\\sqrt{3}}{4}=54\\sqrt{3}$ $\\text{cm}^2$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0050",
+   "konu": "11.2.5",
+   "zorluk": 2,
+   "s": "Düzgün altıgenin kenar uzunluğu $4$ cm'dir. Altıgenin en kısa köşegeni kaç cm'dir?",
+   "o": [
+    "$8$",
+    "$4 \\sqrt{3}$",
+    "$2 \\sqrt{3}$",
+    "$4$",
+    "$4 \\sqrt{2}$"
+   ],
+   "c": 1,
+   "a": "Kısa köşegen, kenarları $4$ olan ve aralarındaki açı $120^\\circ$ olan üçgenin üçüncü kenarıdır: $4\\sqrt{3}$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0051",
+   "konu": "11.2.5",
+   "zorluk": 2,
+   "s": "Çevresi $56$ cm, alanı $192$ $\\text{cm}^2$ olan bir dikdörtgenin köşegeni kaç cm'dir?",
+   "o": [
+    "$16$",
+    "$24$",
+    "$20$",
+    "$22$",
+    "$18$"
+   ],
+   "c": 2,
+   "a": "Yarım çevre $a+b=28$ ve $ab=192$ olduğundan $a^2+b^2=28^2-2\\cdot 192=400$ bulunur. Köşegen $\\sqrt{400}=20$ cm'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0052",
+   "konu": "11.2.5",
+   "zorluk": 2,
+   "s": "Kenar uzunlukları $10$ cm ve $14$ cm, bu kenarlar arasındaki açı $30^\\circ$ olan paralelkenarın alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$35$",
+    "$70 \\sqrt{3}$",
+    "$70$",
+    "$60$",
+    "$140$"
+   ],
+   "c": 2,
+   "a": "Alan, komşu kenarların çarpımı ile aradaki açının sinüsünün çarpımıdır: $10\\cdot 14\\cdot\\sin 30^\\circ=70$ $\\text{cm}^2$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0053",
+   "konu": "11.2.5",
+   "zorluk": 1,
+   "s": "Tabanları $9$ cm ve $15$ cm, yüksekliği $8$ cm olan yamuğun alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$192$",
+    "$72$",
+    "$96$",
+    "$108$",
+    "$120$"
+   ],
+   "c": 2,
+   "a": "Yamuğun alanı $\\dfrac{(9+15)\\cdot 8}{2}=96$ $\\text{cm}^2$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0054",
+   "konu": "11.2.5",
+   "zorluk": 1,
+   "s": "Kenarı $12$ cm olan bir kareden, dört köşesinden kenarı $3$ cm olan birer kare kesiliyor. Kalan şeklin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$96$",
+    "$132$",
+    "$135$",
+    "$120$",
+    "$108$"
+   ],
+   "c": 4,
+   "a": "Karenin alanı $144$, kesilen dört karenin alanı $4\\cdot 9=36$'dır. Kalan alan $144-36=108$ $\\text{cm}^2$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0055",
+   "konu": "11.2.5",
+   "zorluk": 3,
+   "s": "Kenar uzunluğu $10$ cm olan bir karenin dört köşesinden eş ikizkenar dik üçgenler kesilerek düzgün bir sekizgen elde ediliyor. Kesilen her üçgenin dik kenarı kaç cm'dir?",
+   "o": [
+    "$-10 + 10 \\sqrt{2}$",
+    "$\\dfrac{5}{2}$",
+    "$-5 + 5 \\sqrt{2}$",
+    "$5 \\sqrt{2}$",
+    "$10 - 5 \\sqrt{2}$"
+   ],
+   "c": 4,
+   "a": "Dik kenar $x$ ise sekizgenin kenarı $x\\sqrt{2}$'dir. Karenin kenarı $2x+x\\sqrt{2}=10$ olur. Buradan $x=\\dfrac{10}{2+\\sqrt{2}}=10-5\\sqrt{2}$ cm bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0056",
+   "konu": "11.2.5",
+   "zorluk": 2,
+   "s": "Koordinat düzleminde köşeleri $A(0,0)$, $B(6,0)$, $C(8,5)$, $D(2,7)$ olan $ABCD$ dörtgeninin alanı kaç birimkaredir?",
+   "o": [
+    "$37$",
+    "$35$",
+    "$48$",
+    "$42$",
+    "$38$"
+   ],
+   "c": 4,
+   "a": "Köşe koordinatlarıyla alan: $\\dfrac{1}{2}|(0\\cdot0-6\\cdot0)+(6\\cdot5-8\\cdot0)+(8\\cdot7-2\\cdot5)+(2\\cdot0-0\\cdot7)|=\\dfrac{1}{2}\\cdot 76=38$ birimkare bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0057",
+   "konu": "11.2.5",
+   "zorluk": 2,
+   "s": "Tabanları $10$ cm ve $20$ cm, yan kenarları $13$ cm olan ikizkenar yamuğun alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$150$",
+    "$260$",
+    "$120$",
+    "$195$",
+    "$180$"
+   ],
+   "c": 4,
+   "a": "Taban farkının yarısı $5$ cm olduğundan yükseklik $\\sqrt{13^2-5^2}=12$ cm'dir. Alan $\\dfrac{(10+20)\\cdot 12}{2}=180$ $\\text{cm}^2$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0058",
+   "konu": "11.2.5",
+   "zorluk": 3,
+   "s": "Kenar uzunlukları $7$ cm ve $11$ cm olan bir paralelkenarın köşegenlerinden biri $12$ cm ise diğer köşegen kaç cm'dir?",
+   "o": [
+    "$14$",
+    "$18$",
+    "$16$",
+    "$15$",
+    "$13$"
+   ],
+   "c": 0,
+   "a": "Paralelkenarda köşegenlerin kareleri toplamı, komşu kenarların kareleri toplamının iki katıdır: $d_1^2+d_2^2=2(7^2+11^2)=340$. $144+d_2^2=340$ ise $d_2=14$ cm bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0059",
+   "konu": "11.2.5",
+   "zorluk": 2,
+   "s": "Çevresi $72$ cm olan düzgün çokgenin bir iç açısı $135^\\circ$'dir. Bu çokgenin bir kenarı kaç cm'dir?",
+   "o": [
+    "$9$",
+    "$6$",
+    "$7$",
+    "$12$",
+    "$8$"
+   ],
+   "c": 0,
+   "a": "Dış açı $180^\\circ-135^\\circ=45^\\circ$ olduğundan kenar sayısı $\\dfrac{360}{45}=8$ olur. Bir kenar $\\dfrac{72}{8}=9$ cm'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0060",
+   "konu": "11.2.5",
+   "zorluk": 2,
+   "s": "Tabanları $7$ cm ve $19$ cm olan dik yamuğun dik olmayan yan kenarı $13$ cm'dir. Bu yamuğun alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$91$",
+    "$156$",
+    "$78$",
+    "$65$",
+    "$130$"
+   ],
+   "c": 3,
+   "a": "Dik olmayan kenarın taban doğrultusundaki izdüşümü $19-7=12$ cm'dir. Yükseklik $\\sqrt{13^2-12^2}=5$ cm olur. Alan $\\dfrac{(7+19)\\cdot 5}{2}=65$ $\\text{cm}^2$'dir.",
+   "kaynak": "ozgun"
+  }
+ ]
+}

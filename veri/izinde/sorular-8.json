@@ -1,0 +1,762 @@
+{
+ "sinif": "8",
+ "surum": 1,
+ "sorular": [
+  {
+   "id": "8-0001",
+   "konu": "8.1.1",
+   "zorluk": 1,
+   "s": "$48$ ve $72$ sayılarının en büyük ortak böleni (EBOB) kaçtır?",
+   "o": [
+    "$12$",
+    "$24$",
+    "$144$",
+    "$6$"
+   ],
+   "c": 1,
+   "a": "$48=2^{4}\\cdot3$ ve $72=2^{3}\\cdot3^{2}$ olduğundan ortak asal çarpanların en küçük kuvvetleri çarpılır: $2^{3}\\cdot3=24$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0002",
+   "konu": "8.1.1",
+   "zorluk": 2,
+   "s": "Bir durakta A hattı $12$ dakikada bir, B hattı $18$ dakikada bir hareket etmektedir. İkisi saat 08.00'de birlikte hareket ettiğine göre bir sonraki birlikte hareket saati kaçtır?",
+   "o": [
+    "08.30",
+    "08.06",
+    "09.00",
+    "08.36"
+   ],
+   "c": 3,
+   "a": "$12$ ve $18$'in EKOK'u $36$ olduğundan iki hat $36$ dakika sonra, yani 08.36'da yeniden birlikte hareket eder.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0003",
+   "konu": "8.1.1",
+   "zorluk": 2,
+   "s": "Uzunlukları $84$ cm ve $126$ cm olan iki ip, hiç artmayacak ve parça boyları eşit olacak biçimde kesiliyor. Parça boyu en büyük olacaksa toplam kaç parça elde edilir?",
+   "o": [
+    "$42$",
+    "$10$",
+    "$5$",
+    "$6$"
+   ],
+   "c": 2,
+   "a": "Parça boyu $\\text{EBOB}(84,126)=42$ cm olur. Parça sayısı $84\\div 42+126\\div 42=2+3=5$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0004",
+   "konu": "8.1.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki sayı çiftlerinden hangisi aralarında asaldır?",
+   "o": [
+    "$(15,28)$",
+    "$(14,21)$",
+    "$(18,27)$",
+    "$(16,24)$"
+   ],
+   "c": 0,
+   "a": "Aralarında asal sayıların EBOB'u $1$ olur. $\\text{EBOB}(15,28)=1$; diğer çiftlerin EBOB'ları sırasıyla $7$, $9$ ve $8$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0005",
+   "konu": "8.1.1",
+   "zorluk": 1,
+   "s": "$360$ sayısının farklı asal çarpanlarının toplamı kaçtır?",
+   "o": [
+    "$17$",
+    "$10$",
+    "$30$",
+    "$11$"
+   ],
+   "c": 1,
+   "a": "$360=2^{3}\\cdot3^{2}\\cdot5$ olduğundan farklı asal çarpanlar $2$, $3$ ve $5$'tir. Toplam $2+3+5=10$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0006",
+   "konu": "8.1.1",
+   "zorluk": 2,
+   "s": "$72$ sayısının pozitif tam bölenlerinin sayısı kaçtır?",
+   "o": [
+    "$12$",
+    "$6$",
+    "$9$",
+    "$18$"
+   ],
+   "c": 0,
+   "a": "$72=2^{3}\\cdot3^{2}$ olduğundan bölen sayısı $(3+1)(2+1)=12$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0007",
+   "konu": "8.1.1",
+   "zorluk": 3,
+   "s": "İki doğal sayının EBOB'u $6$, EKOK'u $90$'dır. Sayılardan biri $18$ ise diğeri kaçtır?",
+   "o": [
+    "$15$",
+    "$36$",
+    "$30$",
+    "$45$"
+   ],
+   "c": 2,
+   "a": "İki sayının çarpımı EBOB ile EKOK'un çarpımına eşittir: $18\\cdot x=6\\cdot90$ ise $x=30$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0008",
+   "konu": "8.1.1",
+   "zorluk": 3,
+   "s": "Üç lamba sırasıyla $6$, $8$ ve $12$ saniyede bir yanmaktadır. Üçü birlikte yandıktan sonra $2$ dakika içinde (başlangıç anı hariç) kaç kez daha birlikte yanar?",
+   "o": [
+    "$6$",
+    "$4$",
+    "$10$",
+    "$5$"
+   ],
+   "c": 3,
+   "a": "$\\text{EKOK}(6,8,12)=24$ saniyedir. $120\\div24=5$ olduğundan $5$ kez daha birlikte yanar.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0009",
+   "konu": "8.1.1",
+   "zorluk": 2,
+   "s": "$180$ cm $\\times$ $240$ cm ölçülerindeki dikdörtgen biçimli bir zemin, kenarı en büyük olan kare karolarla artmayacak biçimde döşenecektir. Kaç karo gerekir?",
+   "o": [
+    "$12$",
+    "$7$",
+    "$60$",
+    "$48$"
+   ],
+   "c": 0,
+   "a": "Karo kenarı $\\text{EBOB}(180,240)=60$ cm olur. $\\dfrac{180}{60}\\cdot\\dfrac{240}{60}=3\\cdot4=12$ karo gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0010",
+   "konu": "8.1.1",
+   "zorluk": 2,
+   "s": "$2^{a}\\cdot3$ biçimindeki bir doğal sayının tam $12$ pozitif böleni vardır. Buna göre $a$ kaçtır?",
+   "o": [
+    "$6$",
+    "$4$",
+    "$3$",
+    "$5$"
+   ],
+   "c": 3,
+   "a": "Bölen sayısı $(a+1)(1+1)=12$ olmalıdır. Buradan $a+1=6$ ve $a=5$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0011",
+   "konu": "8.1.1",
+   "zorluk": 3,
+   "s": "$4$'e bölündüğünde $3$, $6$'ya bölündüğünde $5$, $10$'a bölündüğünde $9$ kalanını veren en küçük pozitif doğal sayı kaçtır?",
+   "o": [
+    "$60$",
+    "$61$",
+    "$59$",
+    "$29$"
+   ],
+   "c": 2,
+   "a": "Her bölmede kalan, bölenden $1$ eksiktir; yani $x+1$ sayısı $4$, $6$ ve $10$'a bölünür. EKOK $60$ olduğundan en küçük $x=59$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0012",
+   "konu": "8.1.1",
+   "zorluk": 1,
+   "s": "$100$'den küçük pozitif tam sayılardan kaç tanesi $12$'nin katıdır?",
+   "o": [
+    "$9$",
+    "$8$",
+    "$7$",
+    "$12$"
+   ],
+   "c": 1,
+   "a": "$12\\cdot8=96<100<108=12\\cdot9$ olduğundan $12,24,\\dots,96$ olmak üzere $8$ tane vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0013",
+   "konu": "8.1.1",
+   "zorluk": 3,
+   "s": "$1$ ile $18$ arasında ($1$ ve $18$ dahil) $18$ ile aralarında asal olan kaç sayı vardır?",
+   "o": [
+    "$5$",
+    "$6$",
+    "$7$",
+    "$8$"
+   ],
+   "c": 1,
+   "a": "$18=2\\cdot3^{2}$ olduğundan $2$ ve $3$'e bölünmeyenler aranır: $1,5,7,11,13,17$ olmak üzere $6$ sayı vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0014",
+   "konu": "8.2.1",
+   "zorluk": 1,
+   "s": "$(-2)^{4}-2^{4}+(-3)^{2}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$-23$",
+    "$41$",
+    "$-9$",
+    "$9$"
+   ],
+   "c": 3,
+   "a": "$(-2)^{4}=16$, $2^{4}=16$ ve $(-3)^{2}=9$ olduğundan $16-16+9=9$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0015",
+   "konu": "8.2.1",
+   "zorluk": 1,
+   "s": "$\\left(\\dfrac{2}{3}\\right)^{-2}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$\\dfrac{9}{4}$",
+    "$\\dfrac{4}{9}$",
+    "$-\\dfrac{4}{3}$",
+    "$\\dfrac{9}{2}$"
+   ],
+   "c": 0,
+   "a": "Negatif kuvvet, tabanın çarpmaya göre tersinin kuvvetidir: $\\left(\\dfrac{3}{2}\\right)^{2}=\\dfrac{9}{4}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0016",
+   "konu": "8.2.1",
+   "zorluk": 2,
+   "s": "$(3\\cdot10^{4})\\cdot(2\\cdot10^{-6})$ işleminin sonucu aşağıdakilerden hangisidir?",
+   "o": [
+    "$0{,}6$",
+    "$0{,}006$",
+    "$0{,}06$",
+    "$60$"
+   ],
+   "c": 2,
+   "a": "$3\\cdot2=6$ ve $10^{4}\\cdot10^{-6}=10^{-2}$ olduğundan sonuç $6\\cdot10^{-2}=0{,}06$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0017",
+   "konu": "8.2.1",
+   "zorluk": 1,
+   "s": "$0{,}00045$ sayısının bilimsel gösterimi aşağıdakilerden hangisidir?",
+   "o": [
+    "$4{,}5\\cdot10^{-3}$",
+    "$4{,}5\\cdot10^{-5}$",
+    "$4{,}5\\cdot10^{4}$",
+    "$4{,}5\\cdot10^{-4}$"
+   ],
+   "c": 3,
+   "a": "Virgül, ilk sıfırdan farklı rakamın sağına gelecek biçimde $4$ basamak sağa kaydırılır: $4{,}5\\cdot10^{-4}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0018",
+   "konu": "8.2.1",
+   "zorluk": 2,
+   "s": "$4^{3}\\cdot8^{2}=2^{x}$ eşitliğinde $x$ kaçtır?",
+   "o": [
+    "$6$",
+    "$12$",
+    "$5$",
+    "$36$"
+   ],
+   "c": 1,
+   "a": "$4^{3}=2^{6}$ ve $8^{2}=2^{6}$ olduğundan çarpım $2^{12}$ olur. Buradan $x=12$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0019",
+   "konu": "8.2.1",
+   "zorluk": 2,
+   "s": "$5^{10}+5^{10}+5^{10}+5^{10}+5^{10}$ toplamı $5^{x}$ biçiminde yazılırsa $x$ kaçtır?",
+   "o": [
+    "$50$",
+    "$15$",
+    "$11$",
+    "$10$"
+   ],
+   "c": 2,
+   "a": "Toplam $5\\cdot5^{10}=5^{11}$ olduğundan $x=11$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0020",
+   "konu": "8.2.1",
+   "zorluk": 2,
+   "s": "Işık saniyede yaklaşık $3\\cdot10^{5}$ km yol alır. Güneş'ten çıkan ışık Dünya'ya yaklaşık $5\\cdot10^{2}$ saniyede ulaştığına göre Güneş-Dünya uzaklığı yaklaşık kaç km'dir?",
+   "o": [
+    "$1{,}5\\cdot10^{8}$",
+    "$1{,}5\\cdot10^{7}$",
+    "$1{,}5\\cdot10^{10}$",
+    "$8\\cdot10^{7}$"
+   ],
+   "c": 0,
+   "a": "Yol $=$ hız $\\times$ süre olduğundan $3\\cdot10^{5}\\cdot5\\cdot10^{2}=15\\cdot10^{7}=1{,}5\\cdot10^{8}$ km bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0021",
+   "konu": "8.2.1",
+   "zorluk": 1,
+   "s": "$2^{x+1}\\cdot2^{x}=32$ eşitliğini sağlayan $x$ değeri kaçtır?",
+   "o": [
+    "$3$",
+    "$4$",
+    "$5$",
+    "$2$"
+   ],
+   "c": 3,
+   "a": "Tabanlar eşit olduğundan üsler toplanır: $2^{2x+1}=2^{5}$. Buradan $2x+1=5$ ve $x=2$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0022",
+   "konu": "8.2.1",
+   "zorluk": 2,
+   "s": "$12^{3}\\cdot\\left(\\dfrac{1}{6}\\right)^{3}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$6$",
+    "$8$",
+    "$2$",
+    "$72$"
+   ],
+   "c": 1,
+   "a": "Üsler eşit olduğundan tabanlar çarpılır: $\\left(12\\cdot\\dfrac{1}{6}\\right)^{3}=2^{3}=8$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0023",
+   "konu": "8.2.1",
+   "zorluk": 3,
+   "s": "$3^{2027}$ sayısının birler basamağındaki rakam kaçtır?",
+   "o": [
+    "$7$",
+    "$1$",
+    "$3$",
+    "$9$"
+   ],
+   "c": 0,
+   "a": "$3$'ün kuvvetlerinin birler basamağı $3,9,7,1$ diye döner. $2027=4\\cdot506+3$ olduğundan üçüncü terim olan $7$ gelir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0024",
+   "konu": "8.2.1",
+   "zorluk": 1,
+   "s": "$\\dfrac{10^{3}\\cdot10^{-5}}{10^{-4}}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$0{,}01$",
+    "$10$",
+    "$100$",
+    "$1000$"
+   ],
+   "c": 2,
+   "a": "Pay: $10^{3-5}=10^{-2}$. Bölme işleminde üsler çıkarılır: $10^{-2-(-4)}=10^{2}=100$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0025",
+   "konu": "8.2.1",
+   "zorluk": 3,
+   "s": "$a=5^{10}$, $b=2^{30}$ ve $c=3^{20}$ sayıları için aşağıdaki sıralamalardan hangisi doğrudur?",
+   "o": [
+    "$b<a<c$",
+    "$a<c<b$",
+    "$c<b<a$",
+    "$a<b<c$"
+   ],
+   "c": 3,
+   "a": "$2^{30}=(2^{3})^{10}=8^{10}$ ve $3^{20}=(3^{2})^{10}=9^{10}$ olur. Üsler eşit olduğundan $5^{10}<8^{10}<9^{10}$ yani $a<b<c$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0026",
+   "konu": "8.2.1",
+   "zorluk": 2,
+   "s": "$2^{40}$, $4^{15}$, $8^{10}$ ve $16^{8}$ sayılarından hangisi en büyüktür?",
+   "o": [
+    "$2^{40}$",
+    "$4^{15}$",
+    "$8^{10}$",
+    "$16^{8}$"
+   ],
+   "c": 0,
+   "a": "Hepsini $2$ tabanında yazalım: $2^{40}$, $2^{30}$, $2^{30}$ ve $2^{32}$. Üssü en büyük olan $2^{40}$'tır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0027",
+   "konu": "8.3.1",
+   "zorluk": 1,
+   "s": "$\\sqrt{50}$ ifadesinin en sade biçimi aşağıdakilerden hangisidir?",
+   "o": [
+    "$25\\sqrt{2}$",
+    "$5\\sqrt{2}$",
+    "$2\\sqrt{5}$",
+    "$10\\sqrt{5}$"
+   ],
+   "c": 1,
+   "a": "$\\sqrt{50}=\\sqrt{25\\cdot2}=5\\sqrt{2}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0028",
+   "konu": "8.3.1",
+   "zorluk": 2,
+   "s": "$\\sqrt{12}+\\sqrt{27}$ işleminin sonucu aşağıdakilerden hangisidir?",
+   "o": [
+    "$\\sqrt{39}$",
+    "$6\\sqrt{3}$",
+    "$5\\sqrt{3}$",
+    "$13\\sqrt{3}$"
+   ],
+   "c": 2,
+   "a": "$\\sqrt{12}=2\\sqrt{3}$ ve $\\sqrt{27}=3\\sqrt{3}$ olduğundan toplam $5\\sqrt{3}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0029",
+   "konu": "8.3.1",
+   "zorluk": 1,
+   "s": "$\\sqrt{60}$ sayısı aşağıdaki ardışık tam sayı çiftlerinden hangisinin arasındadır?",
+   "o": [
+    "$6 \\text{ ile } 7$",
+    "$7 \\text{ ile } 8$",
+    "$8 \\text{ ile } 9$",
+    "$5 \\text{ ile } 6$"
+   ],
+   "c": 1,
+   "a": "$49<60<64$ olduğundan $7<\\sqrt{60}<8$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0030",
+   "konu": "8.3.1",
+   "zorluk": 1,
+   "s": "$\\dfrac{\\sqrt{72}}{\\sqrt{2}}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$6$",
+    "$36$",
+    "$12$",
+    "$4$"
+   ],
+   "c": 0,
+   "a": "Kareköklü ifadeler birlikte yazılır: $\\sqrt{\\dfrac{72}{2}}=\\sqrt{36}=6$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0031",
+   "konu": "8.3.1",
+   "zorluk": 2,
+   "s": "$\\sqrt{45}\\cdot\\sqrt{20}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$900$",
+    "$15$",
+    "$60$",
+    "$30$"
+   ],
+   "c": 3,
+   "a": "$\\sqrt{45\\cdot20}=\\sqrt{900}=30$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0032",
+   "konu": "8.3.1",
+   "zorluk": 2,
+   "s": "Alanı $98$ cm$^{2}$ olan karenin çevresi kaç cm'dir?",
+   "o": [
+    "$14\\sqrt{2}$",
+    "$7\\sqrt{2}$",
+    "$28\\sqrt{2}$",
+    "$28$"
+   ],
+   "c": 2,
+   "a": "Kenar $\\sqrt{98}=7\\sqrt{2}$ cm olduğundan çevre $4\\cdot7\\sqrt{2}=28\\sqrt{2}$ cm olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0033",
+   "konu": "8.3.1",
+   "zorluk": 2,
+   "s": "$(\\sqrt{7}-\\sqrt{3})(\\sqrt{7}+\\sqrt{3})$ işleminin sonucu kaçtır?",
+   "o": [
+    "$10$",
+    "$2$",
+    "$21$",
+    "$4$"
+   ],
+   "c": 3,
+   "a": "$(a-b)(a+b)=a^{2}-b^{2}$ özdeşliğinden $7-3=4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0034",
+   "konu": "8.3.1",
+   "zorluk": 3,
+   "s": "$2\\sqrt{3}$, $3\\sqrt{2}$, $4$ ve $\\sqrt{13}$ sayıları küçükten büyüğe doğru sıralanırsa aşağıdakilerden hangisi elde edilir?",
+   "o": [
+    "$\\sqrt{13}<2\\sqrt{3}<4<3\\sqrt{2}$",
+    "$2\\sqrt{3}<\\sqrt{13}<4<3\\sqrt{2}$",
+    "$2\\sqrt{3}<4<\\sqrt{13}<3\\sqrt{2}$",
+    "$2\\sqrt{3}<\\sqrt{13}<3\\sqrt{2}<4$"
+   ],
+   "c": 1,
+   "a": "Hepsini kök içine alalım: $\\sqrt{12}$, $\\sqrt{18}$, $\\sqrt{16}$, $\\sqrt{13}$. Sıralama $\\sqrt{12}<\\sqrt{13}<\\sqrt{16}<\\sqrt{18}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0035",
+   "konu": "8.3.1",
+   "zorluk": 2,
+   "s": "$\\sqrt{2^{6}\\cdot3^{2}}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$12$",
+    "$36$",
+    "$24$",
+    "$72$"
+   ],
+   "c": 2,
+   "a": "Kök içindeki çarpanların üsleri yarıya iner: $2^{3}\\cdot3=24$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0036",
+   "konu": "8.3.1",
+   "zorluk": 2,
+   "s": "Aşağıdakilerden hangisi irrasyonel sayıdır?",
+   "o": [
+    "$\\sqrt{18}$",
+    "$\\sqrt{49}$",
+    "$\\sqrt{0{,}25}$",
+    "$\\sqrt{\\dfrac{9}{16}}$"
+   ],
+   "c": 0,
+   "a": "$\\sqrt{49}=7$, $\\sqrt{0{,}25}=0{,}5$ ve $\\sqrt{\\dfrac{9}{16}}=\\dfrac{3}{4}$ rasyoneldir. $18$ tam kare olmadığından $\\sqrt{18}$ irrasyoneldir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0037",
+   "konu": "8.3.1",
+   "zorluk": 2,
+   "s": "$3\\sqrt{5}+2\\sqrt{5}-\\sqrt{20}$ işleminin sonucu aşağıdakilerden hangisidir?",
+   "o": [
+    "$3\\sqrt{5}$",
+    "$5\\sqrt{5}$",
+    "$4\\sqrt{5}$",
+    "$2\\sqrt{5}$"
+   ],
+   "c": 0,
+   "a": "$\\sqrt{20}=2\\sqrt{5}$ olduğundan $3\\sqrt{5}+2\\sqrt{5}-2\\sqrt{5}=3\\sqrt{5}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0038",
+   "konu": "8.3.1",
+   "zorluk": 3,
+   "s": "$n$ bir tam sayı olmak üzere $5<\\sqrt{2n+1}<7$ eşitsizliğini sağlayan kaç farklı $n$ değeri vardır?",
+   "o": [
+    "$10$",
+    "$12$",
+    "$11$",
+    "$13$"
+   ],
+   "c": 2,
+   "a": "Her yanın karesi alınır: $25<2n+1<49$. Buradan $12<n<24$ olur; $n=13,14,\\dots,23$ olmak üzere $11$ değer vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0039",
+   "konu": "8.4.1",
+   "zorluk": 1,
+   "s": "Grafikte bir kitabevinin dört aydaki satış adedi gösterilmiştir. En çok satılan ay ile en az satılan ay arasındaki satış farkı kaçtır?",
+   "o": [
+    "$10$",
+    "$13$",
+    "$7$",
+    "$25$"
+   ],
+   "c": 1,
+   "a": "En çok satış $25$, en az satış $12$ olduğundan fark $25-12=13$ bulunur.",
+   "sekil": "<svg viewBox=\"0 0 220 140\"><line x1=\"25.0\" y1=\"115.0\" x2=\"215.0\" y2=\"115.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"25.0\" y1=\"115.0\" x2=\"25.0\" y2=\"15.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"34.2\" y=\"77.0\" width=\"27.8\" height=\"38.0\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"48.1\" y=\"74.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">12</text><text x=\"48.1\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Oca</text><rect x=\"80.5\" y=\"58.0\" width=\"27.8\" height=\"57.0\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"94.4\" y=\"55.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">18</text><text x=\"94.4\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Şub</text><rect x=\"126.8\" y=\"67.5\" width=\"27.8\" height=\"47.5\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"140.6\" y=\"64.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">15</text><text x=\"140.6\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Mar</text><rect x=\"173.0\" y=\"35.8\" width=\"27.8\" height=\"79.2\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"186.9\" y=\"32.8\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">25</text><text x=\"186.9\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Nis</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0040",
+   "konu": "8.4.1",
+   "zorluk": 2,
+   "s": "Grafikte bir kentin altı günlük sıcaklık değerleri ($^\\circ$C) verilmiştir. Sıcaklıktaki artışın en fazla olduğu ardışık günler aşağıdakilerden hangisidir?",
+   "o": [
+    "Pazartesi-Salı",
+    "Perşembe-Cuma",
+    "Cuma-Cumartesi",
+    "Çarşamba-Perşembe"
+   ],
+   "c": 3,
+   "a": "Ardışık değişimler: $+3$, $-4$, $+7$, $+2$, $-3$. En büyük artış $+7$ ile Çarşamba-Perşembe arasındadır.",
+   "sekil": "<svg viewBox=\"0 0 240 140\"><line x1=\"20.0\" y1=\"115.0\" x2=\"235.0\" y2=\"115.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"20.0\" y1=\"115.0\" x2=\"20.0\" y2=\"12.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polyline points=\"30.0,89.3 69.0,70.0 108.0,95.7 147.0,50.7 186.0,37.9 225.0,57.1\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><circle cx=\"30.0\" cy=\"89.3\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"30.0\" y=\"83.3\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">12</text><text x=\"30.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Pzt</text><circle cx=\"69.0\" cy=\"70.0\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"69.0\" y=\"64.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">15</text><text x=\"69.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Sal</text><circle cx=\"108.0\" cy=\"95.7\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"108.0\" y=\"89.7\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">11</text><text x=\"108.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Çar</text><circle cx=\"147.0\" cy=\"50.7\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"147.0\" y=\"44.7\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">18</text><text x=\"147.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Per</text><circle cx=\"186.0\" cy=\"37.9\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"186.0\" y=\"31.9\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">20</text><text x=\"186.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Cum</text><circle cx=\"225.0\" cy=\"57.1\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"51.1\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">17</text><text x=\"225.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Cmt</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0041",
+   "konu": "8.4.1",
+   "zorluk": 2,
+   "s": "Grafik, $240$ öğrencinin sevdiği etkinlikleri yüzde olarak göstermektedir. Müzik etkinliğini seven öğrenci sayısı kaçtır?",
+   "o": [
+    "$48$",
+    "$60$",
+    "$20$",
+    "$96$"
+   ],
+   "c": 0,
+   "a": "Müzik dilimi $\\%20$ olduğundan $240\\cdot\\dfrac{20}{100}=48$ öğrenci vardır.",
+   "sekil": "<svg viewBox=\"0 0 230 140\"><path d=\"M 70.0 70.0 L 70.0 15.0 A 55 55 0 0 1 102.3 114.5 Z\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"145\" y=\"30\" width=\"10\" height=\"10\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"160.0\" y=\"39.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">Spor %40</text><path d=\"M 70.0 70.0 L 102.3 114.5 A 55 55 0 0 1 25.5 102.3 Z\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"145\" y=\"52\" width=\"10\" height=\"10\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"160.0\" y=\"61.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">Kitap %25</text><path d=\"M 70.0 70.0 L 25.5 102.3 A 55 55 0 0 1 25.5 37.7 Z\" fill=\"#1FA463\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"145\" y=\"74\" width=\"10\" height=\"10\" fill=\"#1FA463\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"160.0\" y=\"83.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">Müzik %20</text><path d=\"M 70.0 70.0 L 25.5 37.7 A 55 55 0 0 1 70.0 15.0 Z\" fill=\"#9AA3C7\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"145\" y=\"96\" width=\"10\" height=\"10\" fill=\"#9AA3C7\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"160.0\" y=\"105.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">Oyun %15</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0042",
+   "konu": "8.4.1",
+   "zorluk": 1,
+   "s": "$40$ öğrencinin bulunduğu bir sınıfta $10$ öğrenci voleybolu seviyor. Sonuçlar daire grafiği ile gösterilirse voleybol diliminin merkez açısı kaç derece olur?",
+   "o": [
+    "$45$",
+    "$25$",
+    "$60$",
+    "$90$"
+   ],
+   "c": 3,
+   "a": "Merkez açı $\\dfrac{10}{40}\\cdot360^\\circ=90^\\circ$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0043",
+   "konu": "8.4.1",
+   "zorluk": 2,
+   "s": "$8,\\ 3,\\ 5,\\ 8,\\ 12,\\ 8,\\ 4$ veri grubunun tepe değeri ile ortancasının toplamı kaçtır?",
+   "o": [
+    "$13$",
+    "$16$",
+    "$14$",
+    "$18$"
+   ],
+   "c": 1,
+   "a": "Tepe değer en çok tekrar eden $8$'dir. Sıralı veri $3,4,5,8,8,8,12$ olduğundan ortanca $8$'dir. Toplam $16$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0044",
+   "konu": "8.4.1",
+   "zorluk": 2,
+   "s": "Bir öğrencinin dört sınavın not ortalaması $78$'dir. Beşinci sınavdan kaç almalıdır ki beş sınavın ortalaması $80$ olsun?",
+   "o": [
+    "$80$",
+    "$82$",
+    "$88$",
+    "$85$"
+   ],
+   "c": 2,
+   "a": "Dört notun toplamı $78\\cdot4=312$, beş notun toplamı $80\\cdot5=400$ olmalıdır. Beşinci not $400-312=88$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0045",
+   "konu": "8.4.1",
+   "zorluk": 3,
+   "s": "$5$ sayının aritmetik ortalaması $14$'tür. Bu sayılara bir sayı eklenince ortalama $16$ oluyor. Eklenen sayı kaçtır?",
+   "o": [
+    "$16$",
+    "$30$",
+    "$32$",
+    "$26$"
+   ],
+   "c": 3,
+   "a": "Beş sayının toplamı $70$, altı sayının toplamı $16\\cdot6=96$ olur. Eklenen sayı $96-70=26$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0046",
+   "konu": "8.4.1",
+   "zorluk": 2,
+   "s": "Bir ailenin aylık $4800$ TL'lik giderini gösteren daire grafiğinde kira dilimi $150^\\circ$'lik merkez açıya sahiptir. Aylık kira kaç TL'dir?",
+   "o": [
+    "$2000$",
+    "$1600$",
+    "$1500$",
+    "$2400$"
+   ],
+   "c": 0,
+   "a": "Kira, giderin $\\dfrac{150}{360}$'ıdır: $4800\\cdot\\dfrac{150}{360}=2000$ TL.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0047",
+   "konu": "8.4.1",
+   "zorluk": 1,
+   "s": "Grafikte bir sınıfın beş günlük ödev tamamlama sayıları verilmiştir. Bu verilerin aritmetik ortalaması kaçtır?",
+   "o": [
+    "$14$",
+    "$18$",
+    "$16$",
+    "$20$"
+   ],
+   "c": 2,
+   "a": "Toplam $12+18+14+20+16=80$ olduğundan ortalama $80\\div5=16$ bulunur.",
+   "sekil": "<svg viewBox=\"0 0 220 140\"><line x1=\"25.0\" y1=\"115.0\" x2=\"215.0\" y2=\"115.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"25.0\" y1=\"115.0\" x2=\"25.0\" y2=\"15.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"32.4\" y=\"67.5\" width=\"22.2\" height=\"47.5\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"43.5\" y=\"64.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">12</text><text x=\"43.5\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">1</text><rect x=\"69.4\" y=\"43.8\" width=\"22.2\" height=\"71.2\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"80.5\" y=\"40.8\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">18</text><text x=\"80.5\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">2</text><rect x=\"106.4\" y=\"59.6\" width=\"22.2\" height=\"55.4\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"117.5\" y=\"56.6\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">14</text><text x=\"117.5\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">3</text><rect x=\"143.4\" y=\"35.8\" width=\"22.2\" height=\"79.2\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"154.5\" y=\"32.8\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">20</text><text x=\"154.5\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">4</text><rect x=\"180.4\" y=\"51.7\" width=\"22.2\" height=\"63.3\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"191.5\" y=\"48.7\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">16</text><text x=\"191.5\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">5</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0048",
+   "konu": "8.4.1",
+   "zorluk": 2,
+   "s": "Bir sütun grafiğinde dikey eksen $90$'dan başlamaktadır. A sütunu $92$, B sütunu $96$ değerini göstermektedir. Aşağıdaki yorumlardan hangisi doğrudur?",
+   "o": [
+    "B'nin değeri A'nın değerinin üç katıdır.",
+    "B sütunu A sütununun üç katı yükseklikte çizilir; grafik değerler arasındaki farkı olduğundan büyük gösterir.",
+    "A'nın değeri B'nin değerinden büyüktür.",
+    "Sütun yüksekliklerinin oranı değerlerin oranına eşittir."
+   ],
+   "c": 1,
+   "a": "Çizilen yükseklikler $92-90=2$ ve $96-90=6$ birimdir; oran $3$'tür. Gerçek değerler ise yalnızca $4$ farklıdır, grafik farkı abartır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0049",
+   "konu": "8.4.1",
+   "zorluk": 2,
+   "s": "Grafikte bir mağazanın altı haftalık müşteri sayıları ($\\times100$) verilmiştir. En yüksek ve en düşük değerler arasındaki fark kaçtır?",
+   "o": [
+    "$6$",
+    "$7$",
+    "$9$",
+    "$14$"
+   ],
+   "c": 2,
+   "a": "En yüksek değer $14$, en düşük değer $5$ olduğundan fark $9$ bulunur.",
+   "sekil": "<svg viewBox=\"0 0 240 140\"><line x1=\"20.0\" y1=\"115.0\" x2=\"235.0\" y2=\"115.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"20.0\" y1=\"115.0\" x2=\"20.0\" y2=\"12.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polyline points=\"30.0,70.0 69.0,86.9 108.0,64.4 147.0,36.2 186.0,58.8 225.0,47.5\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><circle cx=\"30.0\" cy=\"70.0\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"30.0\" y=\"64.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">8</text><text x=\"30.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">1</text><circle cx=\"69.0\" cy=\"86.9\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"69.0\" y=\"80.9\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">5</text><text x=\"69.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">2</text><circle cx=\"108.0\" cy=\"64.4\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"108.0\" y=\"58.4\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">9</text><text x=\"108.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">3</text><circle cx=\"147.0\" cy=\"36.2\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"147.0\" y=\"30.2\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">14</text><text x=\"147.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">4</text><circle cx=\"186.0\" cy=\"58.8\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"186.0\" y=\"52.8\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">10</text><text x=\"186.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">5</text><circle cx=\"225.0\" cy=\"47.5\" r=\"2.5\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"225.0\" y=\"41.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">12</text><text x=\"225.0\" y=\"128.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">6</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "8-0050",
+   "konu": "8.4.1",
+   "zorluk": 3,
+   "s": "Grafik, bir kitaplıktaki $640$ kitabın türlere göre dağılımını göstermektedir. Roman ve Tarih türündeki kitapların toplam sayısı kaçtır?",
+   "o": [
+    "$288$",
+    "$256$",
+    "$224$",
+    "$320$"
+   ],
+   "c": 0,
+   "a": "Roman $\\%30$, Tarih $\\%15$ olduğundan toplam $\\%45$ eder. $640\\cdot\\dfrac{45}{100}=288$ kitap bulunur.",
+   "sekil": "<svg viewBox=\"0 0 230 140\"><path d=\"M 70.0 70.0 L 70.0 15.0 A 55 55 0 0 1 114.5 102.3 Z\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"145\" y=\"30\" width=\"10\" height=\"10\" fill=\"#1E3BD6\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"160.0\" y=\"39.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">Macera %35</text><path d=\"M 70.0 70.0 L 114.5 102.3 A 55 55 0 0 1 25.5 102.3 Z\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"145\" y=\"52\" width=\"10\" height=\"10\" fill=\"#FF8A1F\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"160.0\" y=\"61.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">Roman %30</text><path d=\"M 70.0 70.0 L 25.5 102.3 A 55 55 0 0 1 25.5 37.7 Z\" fill=\"#1FA463\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"145\" y=\"74\" width=\"10\" height=\"10\" fill=\"#1FA463\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"160.0\" y=\"83.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">Bilim %20</text><path d=\"M 70.0 70.0 L 25.5 37.7 A 55 55 0 0 1 70.0 15.0 Z\" fill=\"#9AA3C7\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"145\" y=\"96\" width=\"10\" height=\"10\" fill=\"#9AA3C7\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"160.0\" y=\"105.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">Tarih %15</text></svg>",
+   "kaynak": "ozgun"
+  }
+ ]
+}

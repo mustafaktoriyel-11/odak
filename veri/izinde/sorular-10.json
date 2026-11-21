@@ -1,0 +1,969 @@
+{
+ "sinif": "10",
+ "surum": 1,
+ "sorular": [
+  {
+   "id": "10-0001",
+   "konu": "10.1.1",
+   "zorluk": 2,
+   "s": "$\\alpha$ dar açı ve $\\sin\\alpha=\\dfrac{5}{13}$ ise $\\cos\\alpha+\\tan\\alpha$ kaçtır?",
+   "o": [
+    "$\\dfrac{17}{13}$",
+    "$\\dfrac{209}{156}$",
+    "$\\dfrac{13}{12}$",
+    "$\\dfrac{179}{156}$",
+    "$\\dfrac{229}{156}$"
+   ],
+   "c": 1,
+   "a": "$\\sin^{2}\\alpha+\\cos^{2}\\alpha=1$ ve $\\alpha$ dar olduğundan $\\cos\\alpha=\\dfrac{12}{13}$, $\\tan\\alpha=\\dfrac{5}{12}$ olur. Toplam $\\dfrac{144+65}{156}=\\dfrac{209}{156}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0002",
+   "konu": "10.1.1",
+   "zorluk": 1,
+   "s": "Şekilde $m(\\widehat{B})=90^\\circ$, $|AB|=6$ ve $|BC|=8$ ise $\\sin A$ kaçtır?",
+   "o": [
+    "$\\dfrac{3}{5}$",
+    "$\\dfrac{3}{4}$",
+    "$\\dfrac{4}{3}$",
+    "$\\dfrac{4}{5}$",
+    "$\\dfrac{5}{4}$"
+   ],
+   "c": 3,
+   "a": "Pisagor'dan $|AC|=\\sqrt{36+64}=10$ bulunur. $\\sin A=\\dfrac{|BC|}{|AC|}=\\dfrac{8}{10}=\\dfrac{4}{5}$.",
+   "sekil": "<svg viewBox=\"0 0 220 180\"><polygon points=\"40,150 160,150 40,60\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><polyline points=\"40,138 52,138 52,150\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"26\" y=\"168\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"162\" y=\"166\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"26\" y=\"58\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"24\" y=\"110\" font-size=\"12\" text-anchor=\"middle\" fill=\"#FF8A1F\">6</text><text x=\"100\" y=\"168\" font-size=\"12\" text-anchor=\"middle\" fill=\"#FF8A1F\">8</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0003",
+   "konu": "10.1.1",
+   "zorluk": 3,
+   "s": "$\\sin x+\\cos x=\\dfrac{7}{5}$ ise $\\sin x\\cdot\\cos x$ kaçtır?",
+   "o": [
+    "$\\dfrac{12}{25}$",
+    "$\\dfrac{6}{25}$",
+    "$\\dfrac{1}{5}$",
+    "$\\dfrac{2}{5}$",
+    "$\\dfrac{24}{25}$"
+   ],
+   "c": 0,
+   "a": "Her iki tarafın karesini alırız: $\\sin^{2}x+\\cos^{2}x+2\\sin x\\cos x=\\dfrac{49}{25}$. Buradan $2\\sin x\\cos x=\\dfrac{24}{25}$ ve $\\sin x\\cos x=\\dfrac{12}{25}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0004",
+   "konu": "10.1.1",
+   "zorluk": 1,
+   "s": "$\\sin 30^\\circ+\\cos 60^\\circ\\cdot\\tan 45^\\circ+\\tan 60^\\circ\\cdot\\cot 60^\\circ$ işleminin sonucu kaçtır?",
+   "o": [
+    "$1$",
+    "$\\dfrac{3}{2}$",
+    "$\\dfrac{5}{2}$",
+    "$2$",
+    "$3$"
+   ],
+   "c": 3,
+   "a": "$\\dfrac{1}{2}+\\dfrac{1}{2}\\cdot 1+1=2$ bulunur. ($\\tan 60^\\circ\\cdot\\cot 60^\\circ=1$ olduğuna dikkat edilir.)",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0005",
+   "konu": "10.1.1",
+   "zorluk": 2,
+   "s": "Boyu $13$ m olan bir merdiven duvara dayanmıştır ve ayağı duvardan $5$ m uzaktadır. Merdivenin yerle yaptığı açı $\\alpha$ ise $\\tan\\alpha$ kaçtır?",
+   "o": [
+    "$\\dfrac{5}{12}$",
+    "$\\dfrac{5}{13}$",
+    "$\\dfrac{12}{13}$",
+    "$\\dfrac{13}{12}$",
+    "$\\dfrac{12}{5}$"
+   ],
+   "c": 4,
+   "a": "Duvardaki yükseklik $\\sqrt{13^{2}-5^{2}}=12$ m olur. $\\tan\\alpha=\\dfrac{\\text{karşı}}{\\text{komşu}}=\\dfrac{12}{5}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0006",
+   "konu": "10.1.1",
+   "zorluk": 2,
+   "s": "$\\tan x=2$ ise $\\dfrac{\\sin x+\\cos x}{\\sin x-\\cos x}$ ifadesinin değeri kaçtır?",
+   "o": [
+    "$\\dfrac{1}{3}$",
+    "$1$",
+    "$2$",
+    "$5$",
+    "$3$"
+   ],
+   "c": 4,
+   "a": "Pay ve paydayı $\\cos x$'e böleriz: $\\dfrac{\\tan x+1}{\\tan x-1}=\\dfrac{2+1}{2-1}=3$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0007",
+   "konu": "10.1.2",
+   "zorluk": 1,
+   "s": "$ABC$ üçgeninde $[AD]$ kenarortay ve $G$ ağırlık merkezidir. $|AD|=12$ cm ise $|AG|$ kaç cm'dir?",
+   "o": [
+    "$4$",
+    "$6$",
+    "$8$",
+    "$9$",
+    "$10$"
+   ],
+   "c": 2,
+   "a": "Ağırlık merkezi kenarortayı köşeden $2:1$ oranında böler. $|AG|=\\dfrac{2}{3}\\cdot 12=8$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0008",
+   "konu": "10.1.2",
+   "zorluk": 1,
+   "s": "$m(\\widehat{A})=90^\\circ$ olan $ABC$ üçgeninde $|AB|=6$ cm ve $|AC|=8$ cm'dir. $[BC]$ kenarına ait kenarortayın uzunluğu kaç cm'dir?",
+   "o": [
+    "$4$",
+    "$5$",
+    "$6$",
+    "$7$",
+    "$10$"
+   ],
+   "c": 1,
+   "a": "$|BC|=\\sqrt{36+64}=10$ cm'dir. Dik üçgende hipotenüse ait kenarortay hipotenüsün yarısıdır: $\\dfrac{10}{2}=5$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0009",
+   "konu": "10.1.2",
+   "zorluk": 2,
+   "s": "Şekilde $[AD]$, $\\widehat{A}$ açısının iç açıortayıdır. $|AB|=6$, $|AC|=9$ ve $|BC|=10$ ise $|BD|=x$ kaçtır?",
+   "o": [
+    "$4$",
+    "$3$",
+    "$5$",
+    "$6$",
+    "$4{,}5$"
+   ],
+   "c": 0,
+   "a": "İç açıortay teoremine göre $\\dfrac{|BD|}{|DC|}=\\dfrac{6}{9}=\\dfrac{2}{3}$. $|BC|=10$ olduğundan $|BD|=10\\cdot\\dfrac{2}{5}=4$.",
+   "sekil": "<svg viewBox=\"0 0 240 170\"><polygon points=\"20,150 220,150 75,43\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"75\" y1=\"43\" x2=\"100\" y2=\"150\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><text x=\"70\" y=\"36\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"6\" y=\"164\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"222\" y=\"164\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"96\" y=\"166\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">D</text><text x=\"38\" y=\"92\" font-size=\"12\" fill=\"#FF8A1F\">6</text><text x=\"158\" y=\"92\" font-size=\"12\" fill=\"#FF8A1F\">9</text><text x=\"56\" y=\"144\" font-size=\"12\" text-anchor=\"middle\" fill=\"#FF8A1F\">x</text><text x=\"160\" y=\"168\" font-size=\"12\" text-anchor=\"middle\" fill=\"#FF8A1F\">10</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0010",
+   "konu": "10.1.2",
+   "zorluk": 2,
+   "s": "$|AB|=|AC|=13$ cm ve $|BC|=10$ cm olan $ABC$ üçgeninde $[BC]$ kenarına ait yükseklik kaç cm'dir?",
+   "o": [
+    "$8$",
+    "$12$",
+    "$9$",
+    "$10$",
+    "$11$"
+   ],
+   "c": 1,
+   "a": "İkizkenar üçgende tabana ait yükseklik tabanı ortalar. Yükseklik $\\sqrt{13^{2}-5^{2}}=12$ cm olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0011",
+   "konu": "10.1.2",
+   "zorluk": 3,
+   "s": "$ABC$ üçgeninde $|AB|=12$ cm, $|AC|=18$ cm ve $|BC|=20$ cm'dir. $[AD]$ iç açıortay ve $D\\in[BC]$ olmak üzere $D$ noktasından $[AB]$'ye paralel çizilen doğru $[AC]$'yi $E$'de kesiyor. $|DE|$ kaç cm'dir?",
+   "o": [
+    "$4{,}8$",
+    "$6$",
+    "$7{,}2$",
+    "$8$",
+    "$9$"
+   ],
+   "c": 2,
+   "a": "Açıortay teoreminden $|BD|=8$, $|DC|=12$ bulunur. $DE\\parallel AB$ olduğundan $\\dfrac{|DE|}{12}=\\dfrac{12}{20}$ ve $|DE|=7{,}2$ cm olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0012",
+   "konu": "10.1.2",
+   "zorluk": 2,
+   "s": "$m(\\widehat{A})=90^\\circ$ olan $ABC$ üçgeninde $[AH]\\perp[BC]$, $[AD]$ kenarortaydır. $m(\\widehat{B})=65^\\circ$ ise $m(\\widehat{HAD})$ kaç derecedir?",
+   "o": [
+    "$40$",
+    "$25$",
+    "$35$",
+    "$50$",
+    "$65$"
+   ],
+   "c": 0,
+   "a": "$|AD|=|BD|$ olduğundan $m(\\widehat{DAB})=65^\\circ$. $\\triangle ABH$'de $m(\\widehat{BAH})=25^\\circ$. Fark: $65^\\circ-25^\\circ=40^\\circ$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0013",
+   "konu": "10.1.3",
+   "zorluk": 2,
+   "s": "Kenar uzunlukları $13$, $14$ ve $15$ cm olan üçgenin alanı kaç cm$^{2}$'dir?",
+   "o": [
+    "$84$",
+    "$72$",
+    "$90$",
+    "$91$",
+    "$105$"
+   ],
+   "c": 0,
+   "a": "Yarı çevre $u=21$. Alan $=\\sqrt{21\\cdot 8\\cdot 7\\cdot 6}=\\sqrt{7056}=84$ cm$^{2}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0014",
+   "konu": "10.1.3",
+   "zorluk": 1,
+   "s": "İki kenarının uzunluğu $8$ cm ve $10$ cm, bu kenarlar arasındaki açı $30^\\circ$ olan üçgenin alanı kaç cm$^{2}$'dir?",
+   "o": [
+    "$10$",
+    "$40$",
+    "$20$",
+    "$20 \\sqrt{3}$",
+    "$40 \\sqrt{3}$"
+   ],
+   "c": 2,
+   "a": "Alan $=\\dfrac{1}{2}\\cdot 8\\cdot 10\\cdot\\sin 30^\\circ=\\dfrac{1}{2}\\cdot 80\\cdot\\dfrac{1}{2}=20$ cm$^{2}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0015",
+   "konu": "10.1.3",
+   "zorluk": 2,
+   "s": "Şekilde $D\\in[BC]$, $|BD|=2k$, $|DC|=3k$ ve $A(ABC)=60$ cm$^{2}$ ise $A(ABD)$ kaç cm$^{2}$'dir?",
+   "o": [
+    "$20$",
+    "$30$",
+    "$36$",
+    "$40$",
+    "$24$"
+   ],
+   "c": 4,
+   "a": "$ABD$ ve $ABC$ üçgenlerinin yüksekliği ortaktır; alanlar taban oranıyla orantılıdır. $A(ABD)=60\\cdot\\dfrac{2}{5}=24$ cm$^{2}$.",
+   "sekil": "<svg viewBox=\"0 0 240 170\"><polygon points=\"20,150 220,150 150,30\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"150\" y1=\"30\" x2=\"100\" y2=\"150\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><text x=\"146\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"6\" y=\"164\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"222\" y=\"164\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"96\" y=\"166\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">D</text><text x=\"60\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"#FF8A1F\">2k</text><text x=\"160\" y=\"142\" font-size=\"12\" text-anchor=\"middle\" fill=\"#FF8A1F\">3k</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0016",
+   "konu": "10.1.3",
+   "zorluk": 1,
+   "s": "Bir kenarı $6$ cm olan eşkenar üçgenin alanı kaç cm$^{2}$'dir?",
+   "o": [
+    "$6 \\sqrt{3}$",
+    "$12 \\sqrt{3}$",
+    "$18$",
+    "$36 \\sqrt{3}$",
+    "$9 \\sqrt{3}$"
+   ],
+   "c": 4,
+   "a": "Eşkenar üçgenin alanı $\\dfrac{a^{2}\\sqrt{3}}{4}=\\dfrac{36\\sqrt{3}}{4}=9\\sqrt{3}$ cm$^{2}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0017",
+   "konu": "10.1.3",
+   "zorluk": 2,
+   "s": "$ABC$ üçgeninde $|BC|=a=10$ cm kenarına ait yükseklik $8$ cm, $|AC|=b$ kenarına ait yükseklik $5$ cm ise $b$ kaç cm'dir?",
+   "o": [
+    "$4$",
+    "$16$",
+    "$6{,}25$",
+    "$12$",
+    "$20$"
+   ],
+   "c": 1,
+   "a": "Alan iki biçimde yazılır: $\\dfrac{10\\cdot 8}{2}=\\dfrac{b\\cdot 5}{2}$. Buradan $b=16$ cm bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0018",
+   "konu": "10.1.3",
+   "zorluk": 3,
+   "s": "$ABC$ üçgeninin ağırlık merkezi $G$, $[AB]$ kenarının orta noktası $E$'dir. $A(ABC)=72$ cm$^{2}$ ise $A(GEB)$ kaç cm$^{2}$'dir?",
+   "o": [
+    "$6$",
+    "$8$",
+    "$18$",
+    "$12$",
+    "$24$"
+   ],
+   "c": 3,
+   "a": "Ağırlık merkezi üçgeni eşit alanlı üç üçgene ayırır: $A(AGB)=24$ cm$^{2}$. $[GE]$ kenarortay olduğundan $A(GEB)=\\dfrac{24}{2}=12$ cm$^{2}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0019",
+   "konu": "10.1.4",
+   "zorluk": 1,
+   "s": "$ABC$ üçgeninde $|BC|=6$ cm, $m(\\widehat{A})=30^\\circ$ ve $m(\\widehat{B})=45^\\circ$ ise $|AC|$ kaç cm'dir?",
+   "o": [
+    "$3 \\sqrt{2}$",
+    "$6 \\sqrt{2}$",
+    "$6$",
+    "$6 \\sqrt{3}$",
+    "$12$"
+   ],
+   "c": 1,
+   "a": "Sinüs teoremi: $\\dfrac{|AC|}{\\sin 45^\\circ}=\\dfrac{6}{\\sin 30^\\circ}$. $|AC|=6\\cdot\\dfrac{\\sqrt{2}/2}{1/2}=6\\sqrt{2}$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0020",
+   "konu": "10.1.4",
+   "zorluk": 1,
+   "s": "$ABC$ üçgeninde $|AB|=5$ cm, $|AC|=8$ cm ve $m(\\widehat{A})=60^\\circ$ ise $|BC|$ kaç cm'dir?",
+   "o": [
+    "$6$",
+    "$9$",
+    "$13$",
+    "$7$",
+    "$\\sqrt{89}$"
+   ],
+   "c": 3,
+   "a": "Kosinüs teoremi: $|BC|^{2}=25+64-2\\cdot 5\\cdot 8\\cdot\\cos 60^\\circ=89-40=49$. $|BC|=7$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0021",
+   "konu": "10.1.4",
+   "zorluk": 2,
+   "s": "Kenar uzunlukları $5$, $6$ ve $7$ cm olan üçgende $7$ cm'lik kenarın karşısındaki açının kosinüsü kaçtır?",
+   "o": [
+    "$- \\dfrac{1}{5}$",
+    "$\\dfrac{1}{5}$",
+    "$\\dfrac{1}{7}$",
+    "$\\dfrac{2}{7}$",
+    "$\\dfrac{3}{5}$"
+   ],
+   "c": 1,
+   "a": "$\\cos\\theta=\\dfrac{5^{2}+6^{2}-7^{2}}{2\\cdot 5\\cdot 6}=\\dfrac{12}{60}=\\dfrac{1}{5}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0022",
+   "konu": "10.1.4",
+   "zorluk": 2,
+   "s": "$|BC|=8$ cm ve $m(\\widehat{A})=30^\\circ$ olan $ABC$ üçgeninin çevrel çemberinin yarıçapı kaç cm'dir?",
+   "o": [
+    "$4$",
+    "$16$",
+    "$8$",
+    "$4 \\sqrt{3}$",
+    "$8 \\sqrt{3}$"
+   ],
+   "c": 2,
+   "a": "Sinüs teoremi: $\\dfrac{|BC|}{\\sin A}=2R$ ise $2R=\\dfrac{8}{1/2}=16$ ve $R=8$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0023",
+   "konu": "10.1.4",
+   "zorluk": 3,
+   "s": "$ABC$ üçgeninde $\\sin A:\\sin B:\\sin C=3:5:7$ ise $m(\\widehat{C})$ kaç derecedir?",
+   "o": [
+    "$60$",
+    "$90$",
+    "$120$",
+    "$135$",
+    "$150$"
+   ],
+   "c": 2,
+   "a": "Sinüs teoremine göre kenarlar $3k$, $5k$, $7k$ ile orantılıdır. $\\cos C=\\dfrac{9+25-49}{2\\cdot 3\\cdot 5}=-\\dfrac{1}{2}$ olduğundan $m(\\widehat{C})=120^\\circ$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0024",
+   "konu": "10.1.4",
+   "zorluk": 3,
+   "s": "$ABC$ üçgeninde $|AB|=8$ cm, $|AC|=5$ cm ve $A(ABC)=10\\sqrt{3}$ cm$^{2}$'dir. $\\widehat{A}$ dar açı ise $|BC|$ kaç cm'dir?",
+   "o": [
+    "$6$",
+    "$9$",
+    "$\\sqrt{89}$",
+    "$7$",
+    "$\\sqrt{129}$"
+   ],
+   "c": 3,
+   "a": "$\\dfrac{1}{2}\\cdot 8\\cdot 5\\cdot\\sin A=10\\sqrt{3}$ ise $\\sin A=\\dfrac{\\sqrt{3}}{2}$; dar açı için $A=60^\\circ$. $|BC|^{2}=64+25-40=49$ ve $|BC|=7$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0025",
+   "konu": "10.2.1",
+   "zorluk": 1,
+   "s": "Bir sınıftaki $40$ öğrenciden kızların $9$'u gözlüklü, $11$'i gözlüksüzdür; erkeklerin $6$'sı gözlüklü, $14$'ü gözlüksüzdür. Gözlüklü öğrenciler arasında kızların oranı yüzde kaçtır?",
+   "o": [
+    "%22,5",
+    "%40",
+    "%45",
+    "%60",
+    "%75"
+   ],
+   "c": 3,
+   "a": "Gözlüklü öğrenci sayısı $9+6=15$'tir. Bunların $9$'u kızdır: $\\dfrac{9}{15}=\\dfrac{3}{5}$, yani %60.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0026",
+   "konu": "10.2.1",
+   "zorluk": 2,
+   "s": "Spor yapan $60$ öğrencinin $45$'i, spor yapmayan $40$ öğrencinin $20$'si başarılıdır. Başarılı olma oranları arasındaki fark kaç yüzde puandır?",
+   "o": [
+    "15 puan",
+    "20 puan",
+    "30 puan",
+    "35 puan",
+    "25 puan"
+   ],
+   "c": 4,
+   "a": "Spor yapanlarda oran $\\dfrac{45}{60}=\\%75$, yapmayanlarda $\\dfrac{20}{40}=\\%50$'dir. Fark $25$ yüzde puandır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0027",
+   "konu": "10.2.1",
+   "zorluk": 2,
+   "s": "Bir ankete katılan $120$ kişiden $70$'i kadındır. Kadınlardan $28$'i, erkeklerden $20$'si çay tercih etmiştir. Rastgele seçilen bir katılımcının erkek olup çay tercih etmemiş olma olasılığı kaçtır?",
+   "o": [
+    "$\\dfrac{3}{5}$",
+    "$\\dfrac{7}{12}$",
+    "$\\dfrac{5}{12}$",
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{1}{4}$"
+   ],
+   "c": 4,
+   "a": "Erkek sayısı $120-70=50$'dir. Çay tercih etmeyen erkek sayısı $50-20=30$ olur. Oran $\\dfrac{30}{120}=\\dfrac{1}{4}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0028",
+   "konu": "10.2.1",
+   "zorluk": 2,
+   "s": "Bir okulda $200$ öğrencinin $120$'si kızdır. Bilgisayar kulübüne kızlardan $45$, erkeklerden $55$ öğrenci üyedir. Kulübe üye olmayan kız sayısının, üye olmayan erkek sayısına oranı kaçtır?",
+   "o": [
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{3}{4}$",
+    "$\\dfrac{4}{3}$",
+    "$5$",
+    "$3$"
+   ],
+   "c": 4,
+   "a": "Üye olmayan kız sayısı $120-45=75$, üye olmayan erkek sayısı $80-55=25$'tir. Oran $\\dfrac{75}{25}=3$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0029",
+   "konu": "10.2.1",
+   "zorluk": 3,
+   "s": "A grubundaki $50$ kişinin $20$'si, B grubundaki $80$ kişinin $x$'i bir ürünü tercih ediyor. Gruplar ile ürünü tercih etme arasında ilişki olmaması için $x$ kaç olmalıdır?",
+   "o": [
+    "$25$",
+    "$32$",
+    "$30$",
+    "$36$",
+    "$40$"
+   ],
+   "c": 1,
+   "a": "İlişki olmaması için iki gruptaki tercih oranları eşit olmalıdır: $\\dfrac{20}{50}=\\dfrac{x}{80}$. Buradan $x=32$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0030",
+   "konu": "10.2.1",
+   "zorluk": 2,
+   "s": "$300$ kişilik bir grupta $180$ kişi kadındır. Kadınların %40'ı, erkeklerin %50'si düzenli spor yapmaktadır. Düzenli spor yapanlar arasında kadınların oranı kaçtır?",
+   "o": [
+    "$\\dfrac{6}{11}$",
+    "$\\dfrac{3}{5}$",
+    "$\\dfrac{5}{11}$",
+    "$\\dfrac{2}{5}$",
+    "$\\dfrac{6}{13}$"
+   ],
+   "c": 0,
+   "a": "Spor yapan kadın sayısı $180\\cdot 0{,}4=72$, spor yapan erkek sayısı $120\\cdot 0{,}5=60$'tır. Kadınların oranı $\\dfrac{72}{132}=\\dfrac{6}{11}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0031",
+   "konu": "10.2.2",
+   "zorluk": 1,
+   "s": "Bir yorumcu, 'Kitap okuyan öğrencilerin notları yüksek çıkıyor; demek ki kitap okumak notu yükseltir.' diyor. Bu yorum için aşağıdakilerden hangisi doğrudur?",
+   "o": [
+    "Her ilişki aynı zamanda neden-sonuç bağı gösterir.",
+    "Yüzde kullanıldığı için yorum kesinlikle doğrudur.",
+    "Kategorik değişkenler arasında ilişki aranamaz.",
+    "İki değişken arasındaki ilişki tek başına neden-sonuç bağını kanıtlamaz.",
+    "Notlar sayısal olduğu için yorum yapılamaz."
+   ],
+   "c": 3,
+   "a": "Gözlenen ilişki, üçüncü bir etkenden (ilgi, çalışma süresi vb.) de kaynaklanabilir. İlişki tek başına neden-sonuç kanıtı değildir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0032",
+   "konu": "10.2.2",
+   "zorluk": 2,
+   "s": "A okulunda $90$ öğrencinin $36$'sı, B okulunda $50$ öğrencinin $25$'i yüzme biliyor. Bir yorumcu 'A'da yüzme bilen daha çok, demek ki A'da yüzme daha yaygın.' diyor. Hangisi doğrudur?",
+   "o": [
+    "Sayılar karşılaştırıldığı için yorum doğrudur.",
+    "İki okuldaki oranlar eşittir.",
+    "Oranlar karşılaştırılmalı; B'de oran (%50), A'dakinden (%40) yüksektir.",
+    "A'daki oran %50, B'deki oran %40'tır.",
+    "Okul büyüklükleri farklı olduğu için karşılaştırma yapılamaz."
+   ],
+   "c": 2,
+   "a": "Grup büyüklükleri farklı olduğunda oranlar karşılaştırılır: A'da $\\dfrac{36}{90}=\\%40$, B'de $\\dfrac{25}{50}=\\%50$. Yorum yanlıştır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0033",
+   "konu": "10.2.2",
+   "zorluk": 2,
+   "s": "Tiyatroya giden $100$ kişinin %70'inin kadın olduğu görülmüştür. Yorumcu 'Kadınların %70'i tiyatroya gider.' diyor. Bu yorum için hangisi doğrudur?",
+   "o": [
+    "Doğrudur; iki oran her zaman aynıdır.",
+    "Doğrudur; çünkü %70 çoğunluğu gösterir.",
+    "Yanlıştır; çünkü erkeklerin oranı %70 olmalıdır.",
+    "Yanlıştır; çünkü oran hiçbir zaman yorumlanamaz.",
+    "Yanlıştır; kadınların kaçının gittiği, toplam kadın sayısına bağlıdır."
+   ],
+   "c": 4,
+   "a": "%70, tiyatroya gidenler içindeki kadın oranıdır (sütun oranı). Kadınlar içinde gidenlerin oranı (satır oranı) için toplam kadın sayısı gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0034",
+   "konu": "10.2.2",
+   "zorluk": 3,
+   "s": "Ayşe ve Berk iki denemeye (X ve Y) girmiştir. X'te Ayşe $10$ sorunun $8$'ini, Berk $100$ sorunun $70$'ini; Y'de Ayşe $100$ sorunun $30$'unu, Berk $10$ sorunun $2$'sini doğru yapmıştır. Hangisi doğrudur?",
+   "o": [
+    "Ayşe hem her denemede hem toplamda daha yüksek oranlıdır.",
+    "Berk her denemede daha yüksek oranlıdır.",
+    "İkisinin toplam oranı eşittir.",
+    "Ayşe her denemede, Berk ise toplamda daha yüksek oranlıdır.",
+    "Toplam oran, iki oranın aritmetik ortalamasıdır."
+   ],
+   "c": 3,
+   "a": "X'te $\\%80>\\%70$, Y'de $\\%30>\\%20$ ile Ayşe öndedir. Toplamda Ayşe $\\dfrac{38}{110}\\approx\\%34{,}5$, Berk $\\dfrac{72}{110}\\approx\\%65{,}5$'tir. Gruplar farklı büyüklükte olduğundan sonuç tersine döner.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0035",
+   "konu": "10.2.2",
+   "zorluk": 1,
+   "s": "Bir yorumcu, yalnızca spor salonu çıkışında yaptığı ankete dayanarak 'Şehirdeki herkes düzenli spor yapıyor.' demiştir. Bu yorumun temel sorunu nedir?",
+   "o": [
+    "Anket sorusu sayısal olmalıdır.",
+    "Örneklem şehri temsil etmediği için yanlıdır.",
+    "Yüzde hesaplanmamıştır.",
+    "Veriler grafikle gösterilmemiştir.",
+    "Spor yapmak ölçülemez bir özelliktir."
+   ],
+   "c": 1,
+   "a": "Örneklem yalnızca spor salonundan seçilmiştir; bu kişiler şehir halkını temsil etmez. Sonuç genellenemez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0036",
+   "konu": "10.2.2",
+   "zorluk": 2,
+   "s": "Aşılı $200$ kişiden $4$'ü, aşısız $100$ kişiden $10$'u hastalanmıştır. Hangi yorum bu verilerle uyumludur?",
+   "o": [
+    "Aşısızlarda hastalanma oranı, aşılılarınkinin $5$ katıdır.",
+    "Hastalananların sayısı aşılılarda daha fazladır.",
+    "Aşılılarda hastalanma oranı %4'tür.",
+    "Her iki grupta da hastalanma oranı aynıdır.",
+    "Aşısızlarda hastalanma oranı %1'dir."
+   ],
+   "c": 0,
+   "a": "Aşılılarda oran $\\dfrac{4}{200}=\\%2$, aşısızlarda $\\dfrac{10}{100}=\\%10$'dur. $\\dfrac{10}{2}=5$ olduğundan aşısızlarda oran $5$ kat yüksektir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0037",
+   "konu": "10.2.2",
+   "zorluk": 2,
+   "s": "Bir ürünü tercih edenlerin oranı %20'den %30'a çıkmıştır. Yorumcu 'Tercih oranı %10 artmıştır.' diyor. Hangisi doğrudur?",
+   "o": [
+    "Artış %10'dur; başka bir ölçüyle ifade edilemez.",
+    "Artış 10 yüzde puandır; göreli artış %30'dur.",
+    "Artış 30 yüzde puandır; göreli artış %10'dur.",
+    "Artış 10 yüzde puandır; göreli artış %200'dür.",
+    "Artış 10 yüzde puandır; göreli artış %50'dir."
+   ],
+   "c": 4,
+   "a": "Fark $30-20=10$ yüzde puandır. Göreli artış $\\dfrac{30-20}{20}=\\%50$'dir. 'Yüzde' ile 'yüzde puan' karıştırılmamalıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0038",
+   "konu": "10.3.1",
+   "zorluk": 1,
+   "s": "$360$ sayısının pozitif bölenlerinin sayısı kaçtır?",
+   "o": [
+    "$12$",
+    "$18$",
+    "$20$",
+    "$24$",
+    "$30$"
+   ],
+   "c": 3,
+   "a": "$360=2^{3}\\cdot 3^{2}\\cdot 5$ olduğundan bölen sayısı $(3+1)(2+1)(1+1)=24$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0039",
+   "konu": "10.3.1",
+   "zorluk": 1,
+   "s": "$210$ sayısının asal bölenlerinin toplamı kaçtır?",
+   "o": [
+    "$12$",
+    "$15$",
+    "$17$",
+    "$19$",
+    "$21$"
+   ],
+   "c": 2,
+   "a": "$210=2\\cdot 3\\cdot 5\\cdot 7$ olur. Asal bölenler toplamı $2+3+5+7=17$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0040",
+   "konu": "10.3.1",
+   "zorluk": 2,
+   "s": "$2^{a}\\cdot 3^{2}$ sayısının $18$ tane pozitif böleni varsa $a$ kaçtır?",
+   "o": [
+    "$3$",
+    "$4$",
+    "$6$",
+    "$5$",
+    "$8$"
+   ],
+   "c": 3,
+   "a": "Bölen sayısı $(a+1)(2+1)=18$ ise $a+1=6$ ve $a=5$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0041",
+   "konu": "10.3.1",
+   "zorluk": 2,
+   "s": "$2^{3}\\cdot 3\\cdot 5$ sayısının pozitif bölenlerinden kaç tanesi tek sayıdır?",
+   "o": [
+    "$2$",
+    "$4$",
+    "$8$",
+    "$16$",
+    "$32$"
+   ],
+   "c": 1,
+   "a": "Tek bölenler yalnızca $3\\cdot 5$'in bölenleridir: $1,3,5,15$. Bu nedenle $4$ tanedir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0042",
+   "konu": "10.3.1",
+   "zorluk": 2,
+   "s": "$504$ sayısını tam kare yapan en küçük pozitif tam sayı kaçtır?",
+   "o": [
+    "$2$",
+    "$7$",
+    "$18$",
+    "$28$",
+    "$14$"
+   ],
+   "c": 4,
+   "a": "$504=2^{3}\\cdot 3^{2}\\cdot 7$ olur. Üsleri çift yapmak için $2\\cdot 7=14$ ile çarpılır; $504\\cdot 14=84^{2}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0043",
+   "konu": "10.3.1",
+   "zorluk": 3,
+   "s": "Pozitif bölenlerinin sayısı $15$ olan en küçük doğal sayı kaçtır?",
+   "o": [
+    "$225$",
+    "$324$",
+    "$144$",
+    "$400$",
+    "$1024$"
+   ],
+   "c": 2,
+   "a": "$15=5\\cdot 3$ olduğundan $n=p^{4}q^{2}$ biçimindedir. En küçük değer $2^{4}\\cdot 3^{2}=144$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0044",
+   "konu": "10.3.1",
+   "zorluk": 3,
+   "s": "$3600$ sayısının pozitif bölenlerinden kaç tanesi tam karedir?",
+   "o": [
+    "$8$",
+    "$10$",
+    "$12$",
+    "$15$",
+    "$45$"
+   ],
+   "c": 2,
+   "a": "$3600=2^{4}\\cdot 3^{2}\\cdot 5^{2}$ olur. Tam kare bölenlerin üsleri çift olmalıdır: $3\\cdot 2\\cdot 2=12$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0045",
+   "konu": "10.3.2",
+   "zorluk": 1,
+   "s": "$48$ ile $72$ sayılarının en büyük ortak böleni (EBOB) kaçtır?",
+   "o": [
+    "$24$",
+    "$12$",
+    "$16$",
+    "$36$",
+    "$144$"
+   ],
+   "c": 0,
+   "a": "$48=2^{4}\\cdot 3$ ve $72=2^{3}\\cdot 3^{2}$ olur. Ortak asal çarpanların en küçük üsleri: $2^{3}\\cdot 3=24$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0046",
+   "konu": "10.3.2",
+   "zorluk": 1,
+   "s": "$12$, $18$ ve $30$ sayılarının en küçük ortak katı (EKOK) kaçtır?",
+   "o": [
+    "$180$",
+    "$90$",
+    "$120$",
+    "$360$",
+    "$540$"
+   ],
+   "c": 0,
+   "a": "$12=2^{2}\\cdot 3$, $18=2\\cdot 3^{2}$, $30=2\\cdot 3\\cdot 5$. En büyük üsler alınır: $2^{2}\\cdot 3^{2}\\cdot 5=180$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0047",
+   "konu": "10.3.2",
+   "zorluk": 2,
+   "s": "$84$ kırmızı ve $108$ mavi balon, her pakette aynı sayıda kırmızı ve aynı sayıda mavi balon olacak ve hiç balon artmayacak biçimde paketlenecektir. En çok kaç paket yapılabilir?",
+   "o": [
+    "$6$",
+    "$12$",
+    "$9$",
+    "$18$",
+    "$24$"
+   ],
+   "c": 1,
+   "a": "Paket sayısı hem $84$'ü hem $108$'i bölmelidir. En çok paket sayısı $\\text{EBOB}(84,108)=12$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0048",
+   "konu": "10.3.2",
+   "zorluk": 2,
+   "s": "Üç zil sırasıyla $8$, $12$ ve $18$ dakikada bir çalmaktadır. Saat $09{:}00$'da birlikte çaldıktan sonra tekrar ilk kez saat kaçta birlikte çalarlar?",
+   "o": [
+    "09:36",
+    "10:00",
+    "10:12",
+    "10:48",
+    "11:12"
+   ],
+   "c": 2,
+   "a": "$\\text{EKOK}(8,12,18)=72$ dakika $=1$ saat $12$ dakikadır. $09{:}00$'dan $72$ dakika sonra saat $10{:}12$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0049",
+   "konu": "10.3.2",
+   "zorluk": 2,
+   "s": "$a$ ve $b$ doğal sayıları için $\\text{EBOB}(a,b)=4$, $\\text{EKOK}(a,b)=120$ ve $a=24$ ise $b$ kaçtır?",
+   "o": [
+    "$5$",
+    "$10$",
+    "$30$",
+    "$40$",
+    "$20$"
+   ],
+   "c": 4,
+   "a": "$\\text{EBOB}\\cdot\\text{EKOK}=a\\cdot b$ olduğundan $4\\cdot 120=24\\cdot b$ ve $b=20$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0050",
+   "konu": "10.3.2",
+   "zorluk": 3,
+   "s": "$a>b$ olmak üzere $a$ ve $b$ pozitif tam sayıları için $\\text{EBOB}(a,b)=12$ ve $a+b=96$ ise $a-b$ farkı en çok kaç olabilir?",
+   "o": [
+    "$24$",
+    "$48$",
+    "$60$",
+    "$72$",
+    "$84$"
+   ],
+   "c": 3,
+   "a": "$a=12m$, $b=12n$ ve $m+n=8$, $\\text{EBOB}(m,n)=1$ olmalıdır. $(m,n)\\in\\{(7,1),(5,3)\\}$. Fark $12(7-1)=72$ ve $12(5-3)=24$; en büyüğü $72$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0051",
+   "konu": "10.3.2",
+   "zorluk": 2,
+   "s": "$84$ cm $\\times$ $60$ cm boyutlarındaki dikdörtgen biçimli bir zemin, kenarları tam sayı cm olan eş kare karolarla boşluk kalmadan döşenecektir. En az kaç karo gerekir?",
+   "o": [
+    "$12$",
+    "$35$",
+    "$60$",
+    "$70$",
+    "$140$"
+   ],
+   "c": 1,
+   "a": "Karonun kenarı $84$ ve $60$'ı bölmelidir; karo sayısı en az olsun diye kenar $\\text{EBOB}(84,60)=12$ alınır. Karo sayısı $7\\cdot 5=35$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0052",
+   "konu": "10.3.2",
+   "zorluk": 3,
+   "s": "$n$ pozitif tam sayı olmak üzere $\\text{EKOK}(n,12)=60$ ise $n$ kaç farklı değer alır?",
+   "o": [
+    "$6$",
+    "$4$",
+    "$5$",
+    "$7$",
+    "$8$"
+   ],
+   "c": 0,
+   "a": "$n$, $60$'ın böleni ve $5$'in katı olmalıdır: $n\\in\\{5,10,15,20,30,60\\}$. Hepsinde $\\text{EKOK}(n,12)=60$ olduğundan $6$ değer vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0053",
+   "konu": "10.3.3",
+   "zorluk": 1,
+   "s": "Bir doğal sayı $17$ ile bölündüğünde bölüm $5$, kalan $3$ olmaktadır. Bu sayı kaçtır?",
+   "o": [
+    "$85$",
+    "$86$",
+    "$88$",
+    "$90$",
+    "$102$"
+   ],
+   "c": 2,
+   "a": "Bölünen $=$ bölen $\\cdot$ bölüm $+$ kalan olduğundan $17\\cdot 5+3=88$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0054",
+   "konu": "10.3.3",
+   "zorluk": 1,
+   "s": "$a$ sayısının $7$ ile bölümünden kalan $4$ ise $3a+2$ sayısının $7$ ile bölümünden kalan kaçtır?",
+   "o": [
+    "$1$",
+    "$2$",
+    "$4$",
+    "$6$",
+    "$0$"
+   ],
+   "c": 4,
+   "a": "$a=7k+4$ ise $3a+2=21k+14=7(3k+2)$ olur. Sayı $7$'nin katıdır; kalan $0$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0055",
+   "konu": "10.3.3",
+   "zorluk": 2,
+   "s": "$2^{100}$ sayısının $7$ ile bölümünden kalan kaçtır?",
+   "o": [
+    "$2$",
+    "$1$",
+    "$3$",
+    "$4$",
+    "$6$"
+   ],
+   "c": 0,
+   "a": "$2^{3}=8\\equiv 1\\pmod 7$ olduğundan $2^{100}=(2^{3})^{33}\\cdot 2\\equiv 2\\pmod 7$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0056",
+   "konu": "10.3.3",
+   "zorluk": 2,
+   "s": "$n$ doğal sayısı $5$ ile de $8$ ile de bölündüğünde $3$ kalanını vermektedir. $n$ en küçük üç basamaklı sayı ise $n$ kaçtır?",
+   "o": [
+    "$123$",
+    "$103$",
+    "$113$",
+    "$125$",
+    "$143$"
+   ],
+   "c": 0,
+   "a": "$n-3$ sayısı $\\text{EKOK}(5,8)=40$'ın katıdır. $n=40k+3$ olur; $k=3$ için $n=123$, $k=2$ için $83$ (iki basamaklı).",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0057",
+   "konu": "10.3.3",
+   "zorluk": 2,
+   "s": "$13^{2026}$ sayısının birler basamağındaki rakam kaçtır?",
+   "o": [
+    "$1$",
+    "$3$",
+    "$7$",
+    "$9$",
+    "$8$"
+   ],
+   "c": 3,
+   "a": "Birler basamağı $3^{2026}$ ile aynıdır. $3$'ün kuvvetlerinin birler basamağı $3,9,7,1$ diye tekrar eder. $2026=4\\cdot 506+2$ olduğundan birler basamağı $9$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0058",
+   "konu": "10.3.3",
+   "zorluk": 3,
+   "s": "$n$ sayısı $4$ ile bölündüğünde $3$, $5$ ile bölündüğünde $4$, $6$ ile bölündüğünde $5$ kalanını vermektedir. $n$ en küçük üç basamaklı sayı ise $n$ kaçtır?",
+   "o": [
+    "$59$",
+    "$115$",
+    "$119$",
+    "$120$",
+    "$179$"
+   ],
+   "c": 2,
+   "a": "Her durumda bölenden $1$ eksik kalan vardır; $n+1$ sayısı $\\text{EKOK}(4,5,6)=60$'ın katıdır. $n=60k-1$; en küçük üç basamaklı değer $k=2$ için $119$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0059",
+   "konu": "10.3.3",
+   "zorluk": 1,
+   "s": "$a$ sayısı $9$ ile bölündüğünde $4$, $b$ sayısı $9$ ile bölündüğünde $5$ kalanını veriyor. $a\\cdot b$ sayısının $9$ ile bölümünden kalan kaçtır?",
+   "o": [
+    "$2$",
+    "$0$",
+    "$4$",
+    "$5$",
+    "$8$"
+   ],
+   "c": 0,
+   "a": "$a\\cdot b\\equiv 4\\cdot 5=20\\equiv 2\\pmod 9$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0060",
+   "konu": "10.3.3",
+   "zorluk": 3,
+   "s": "$1!+2!+3!+\\cdots+100!$ toplamının $12$ ile bölümünden kalan kaçtır?",
+   "o": [
+    "$1$",
+    "$9$",
+    "$3$",
+    "$6$",
+    "$11$"
+   ],
+   "c": 1,
+   "a": "$4!=24$ ve sonraki tüm faktöriyeller $12$'nin katıdır. Kalan $1!+2!+3!=9$'un $12$ ile bölümünden kalanıdır: $9$.",
+   "kaynak": "ozgun"
+  }
+ ]
+}

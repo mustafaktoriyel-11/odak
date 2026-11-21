@@ -1,0 +1,907 @@
+{
+ "sinif": "7",
+ "surum": 1,
+ "sorular": [
+  {
+   "id": "7-0001",
+   "konu": "7.1.1",
+   "zorluk": 1,
+   "s": "$|-8|-|-3|$ işleminin sonucu kaçtır?",
+   "o": [
+    "$5$",
+    "$-11$",
+    "$-5$",
+    "$11$"
+   ],
+   "c": 0,
+   "a": "$|-8|=8$ ve $|-3|=3$ olduğundan $8-3=5$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0002",
+   "konu": "7.1.1",
+   "zorluk": 1,
+   "s": "Sayı doğrusunda $-3$ ile $4$ arasında (bu sayılar dahil değil) kaç tane tam sayı vardır?",
+   "o": [
+    "$5$",
+    "$6$",
+    "$7$",
+    "$8$"
+   ],
+   "c": 1,
+   "a": "$-2,-1,0,1,2,3$ olmak üzere $6$ tam sayı vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0003",
+   "konu": "7.1.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki rasyonel sayılardan hangisi aynı zamanda bir tam sayıdır?",
+   "o": [
+    "$\\dfrac{15}{4}$",
+    "$-\\dfrac{9}{2}$",
+    "$\\dfrac{24}{6}$",
+    "$\\dfrac{7}{3}$"
+   ],
+   "c": 2,
+   "a": "$\\dfrac{24}{6}=4$ bir tam sayıdır; diğerleri tam sayıya bölünerek tam sayı vermez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0004",
+   "konu": "7.1.1",
+   "zorluk": 2,
+   "s": "Mutlak değeri $5$'ten küçük olan kaç tane tam sayı vardır?",
+   "o": [
+    "$9$",
+    "$4$",
+    "$8$",
+    "$10$"
+   ],
+   "c": 0,
+   "a": "$-4,-3,-2,-1,0,1,2,3,4$ olmak üzere $9$ tam sayı vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0005",
+   "konu": "7.1.1",
+   "zorluk": 3,
+   "s": "$|x-2|=5$ eşitliğini sağlayan $x$ tam sayılarının çarpımı kaçtır?",
+   "o": [
+    "$-10$",
+    "$-7$",
+    "$-21$",
+    "$21$"
+   ],
+   "c": 2,
+   "a": "$x-2=5$ ise $x=7$; $x-2=-5$ ise $x=-3$. Çarpım $7\\cdot(-3)=-21$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0006",
+   "konu": "7.1.2",
+   "zorluk": 1,
+   "s": "$\\dfrac{3}{8}$ rasyonel sayısının ondalık gösterimi aşağıdakilerden hangisidir?",
+   "o": [
+    "$0{,}38$",
+    "$0{,}375$",
+    "$0{,}125$",
+    "$0{,}83$"
+   ],
+   "c": 1,
+   "a": "$3:8=0{,}375$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0007",
+   "konu": "7.1.2",
+   "zorluk": 1,
+   "s": "$0{,}\\overline{6}$ devirli ondalık gösterimi aşağıdaki kesirlerden hangisine eşittir?",
+   "o": [
+    "$\\dfrac{3}{5}$",
+    "$\\dfrac{5}{9}$",
+    "$\\dfrac{2}{3}$",
+    "$\\dfrac{1}{6}$"
+   ],
+   "c": 2,
+   "a": "$x=0{,}666\\ldots$ için $10x-x=6$ ve $x=\\dfrac{6}{9}=\\dfrac{2}{3}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0008",
+   "konu": "7.1.2",
+   "zorluk": 2,
+   "s": "$2{,}\\overline{18}$ sayısının rasyonel sayı olarak yazılışı hangisidir?",
+   "o": [
+    "$\\dfrac{24}{11}$",
+    "$\\dfrac{109}{50}$",
+    "$\\dfrac{218}{99}$",
+    "$\\dfrac{20}{9}$"
+   ],
+   "c": 0,
+   "a": "$2+\\dfrac{18}{99}=2+\\dfrac{2}{11}=\\dfrac{24}{11}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0009",
+   "konu": "7.1.2",
+   "zorluk": 3,
+   "s": "$\\dfrac{1}{7}=0{,}\\overline{142857}$ olduğuna göre bu ondalık gösterimin virgülden sonraki $50.$ basamağındaki rakam kaçtır?",
+   "o": [
+    "$4$",
+    "$1$",
+    "$2$",
+    "$8$"
+   ],
+   "c": 0,
+   "a": "Devir $6$ basamaklıdır. $50=6\\cdot8+2$ olduğundan $50.$ basamak devrin $2.$ rakamı olan $4$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0010",
+   "konu": "7.1.2",
+   "zorluk": 2,
+   "s": "Aşağıdaki rasyonel sayılardan hangisinin ondalık gösterimi sonludur?",
+   "o": [
+    "$\\dfrac{7}{15}$",
+    "$\\dfrac{5}{12}$",
+    "$\\dfrac{4}{21}$",
+    "$\\dfrac{9}{40}$"
+   ],
+   "c": 3,
+   "a": "$40=2^3\\cdot5$ olduğundan $\\dfrac{9}{40}=0{,}225$ sonludur. Diğer paydalarda $3$ veya $7$ asal çarpanı vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0011",
+   "konu": "7.1.3",
+   "zorluk": 1,
+   "s": "$-\\dfrac{1}{2},\\ -\\dfrac{3}{4},\\ -\\dfrac{2}{3},\\ -\\dfrac{5}{6}$ sayılarından en büyüğü hangisidir?",
+   "o": [
+    "$-\\dfrac{1}{2}$",
+    "$-\\dfrac{3}{4}$",
+    "$-\\dfrac{2}{3}$",
+    "$-\\dfrac{5}{6}$"
+   ],
+   "c": 0,
+   "a": "Paydalar $12$ yapılırsa $-\\dfrac{6}{12},-\\dfrac{9}{12},-\\dfrac{8}{12},-\\dfrac{10}{12}$. Negatiflerde mutlak değeri en küçük olan en büyüktür: $-\\dfrac{1}{2}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0012",
+   "konu": "7.1.3",
+   "zorluk": 2,
+   "s": "$\\dfrac{2}{3},\\ 0{,}7,\\ \\dfrac{5}{8}$ sayıları büyükten küçüğe doğru nasıl sıralanır?",
+   "o": [
+    "$\\dfrac{2}{3}>0{,}7>\\dfrac{5}{8}$",
+    "$\\dfrac{5}{8}>\\dfrac{2}{3}>0{,}7$",
+    "$0{,}7>\\dfrac{5}{8}>\\dfrac{2}{3}$",
+    "$0{,}7>\\dfrac{2}{3}>\\dfrac{5}{8}$"
+   ],
+   "c": 3,
+   "a": "Ondalık yazalım: $0{,}7$, $0{,}666\\ldots$, $0{,}625$. Sıralama $0{,}7>\\dfrac{2}{3}>\\dfrac{5}{8}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0013",
+   "konu": "7.1.3",
+   "zorluk": 2,
+   "s": "$\\dfrac{3}{5}<\\dfrac{x}{10}<\\dfrac{4}{5}$ eşitsizliğini sağlayan $x$ tam sayısı kaçtır?",
+   "o": [
+    "$7$",
+    "$6$",
+    "$8$",
+    "$9$"
+   ],
+   "c": 0,
+   "a": "Paydayı $10$ yaparsak $\\dfrac{6}{10}<\\dfrac{x}{10}<\\dfrac{8}{10}$ olur. Tek tam sayı $x=7$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0014",
+   "konu": "7.1.3",
+   "zorluk": 3,
+   "s": "$-\\dfrac{5}{6}$ ile $-\\dfrac{1}{3}$ arasında paydası $12$ olan, payı tam sayı olan kaç tane rasyonel sayı vardır?",
+   "o": [
+    "$4$",
+    "$5$",
+    "$6$",
+    "$7$"
+   ],
+   "c": 1,
+   "a": "$-\\dfrac{10}{12}<\\dfrac{n}{12}<-\\dfrac{4}{12}$ ise $n=-9,-8,-7,-6,-5$ olup $5$ sayı vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0015",
+   "konu": "7.1.3",
+   "zorluk": 1,
+   "s": "Aşağıdaki karşılaştırmalardan hangisi doğrudur?",
+   "o": [
+    "$-\\dfrac{1}{2}<-\\dfrac{2}{3}$",
+    "$\\dfrac{3}{7}>\\dfrac{1}{2}$",
+    "$-\\dfrac{4}{5}>-\\dfrac{3}{4}$",
+    "$-0{,}6>-\\dfrac{2}{3}$"
+   ],
+   "c": 3,
+   "a": "$-0{,}6=-\\dfrac{9}{15}$ ve $-\\dfrac{2}{3}=-\\dfrac{10}{15}$; $-\\dfrac{9}{15}>-\\dfrac{10}{15}$ olduğundan doğrudur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0016",
+   "konu": "7.1.4",
+   "zorluk": 1,
+   "s": "$-\\dfrac{2}{3}+\\dfrac{3}{4}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$\\dfrac{1}{7}$",
+    "$-\\dfrac{1}{12}$",
+    "$\\dfrac{17}{12}$",
+    "$\\dfrac{1}{12}$"
+   ],
+   "c": 3,
+   "a": "$-\\dfrac{8}{12}+\\dfrac{9}{12}=\\dfrac{1}{12}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0017",
+   "konu": "7.1.4",
+   "zorluk": 2,
+   "s": "$\\left(-\\dfrac{2}{3}\\right)\\cdot\\dfrac{9}{4}:(-3)$ işleminin sonucu kaçtır?",
+   "o": [
+    "$-\\dfrac{1}{2}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{9}{2}$",
+    "$-\\dfrac{9}{2}$"
+   ],
+   "c": 1,
+   "a": "$-\\dfrac{2}{3}\\cdot\\dfrac{9}{4}=-\\dfrac{3}{2}$. $-\\dfrac{3}{2}:(-3)=\\dfrac{1}{2}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0018",
+   "konu": "7.1.4",
+   "zorluk": 2,
+   "s": "Bir dalgıç deniz seviyesinin $12{,}5$ m altında bulunmaktadır. Önce $3{,}75$ m yukarı çıkıyor, sonra $6$ m aşağı iniyor. Dalgıcın son konumu deniz seviyesine göre kaç metredir?",
+   "o": [
+    "$-9{,}25$ m",
+    "$-15{,}25$ m",
+    "$-22{,}25$ m",
+    "$-14{,}75$ m"
+   ],
+   "c": 3,
+   "a": "$-12{,}5+3{,}75=-8{,}75$; $-8{,}75-6=-14{,}75$ m.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0019",
+   "konu": "7.1.4",
+   "zorluk": 2,
+   "s": "Bir kentte sıcaklık sabah $-3{,}5^\\circ$C'dir. Öğlene kadar $11{,}2^\\circ$C artmış, akşama kadar öğleye göre $4{,}8^\\circ$C düşmüştür. Akşam sıcaklığı kaç $^\\circ$C'dir?",
+   "o": [
+    "$-4{,}1$",
+    "$3{,}5$",
+    "$2{,}9$",
+    "$12{,}5$"
+   ],
+   "c": 2,
+   "a": "$-3{,}5+11{,}2=7{,}7$; $7{,}7-4{,}8=2{,}9$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0020",
+   "konu": "7.1.4",
+   "zorluk": 3,
+   "s": "Mert parasının $\\dfrac{2}{5}$'ini harcadı. Kalan parasının $\\dfrac{3}{4}$'ünü biriktirdi ve elinde $45$ TL kaldı. Mert'in başlangıçtaki parası kaç TL'dir?",
+   "o": [
+    "$150$",
+    "$225$",
+    "$450$",
+    "$300$"
+   ],
+   "c": 3,
+   "a": "Harcamadan sonra $\\dfrac{3}{5}$ kalır. Biriktirince $\\dfrac{3}{5}\\cdot\\dfrac{1}{4}=\\dfrac{3}{20}$ kalır. $\\dfrac{3}{20}=45$ ise para $300$ TL'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0021",
+   "konu": "7.2.1",
+   "zorluk": 1,
+   "s": "Tabanı $3\\times4$ birim kare olan ve $2$ kat yüksekliğinde eş küplerle doldurulmuş bir yapıda kaç küp vardır?",
+   "o": [
+    "$12$",
+    "$18$",
+    "$24$",
+    "$36$"
+   ],
+   "c": 2,
+   "a": "Bir katta $12$ küp vardır; $2$ katta $24$ küp olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0022",
+   "konu": "7.2.1",
+   "zorluk": 2,
+   "s": "Üstten görünümü $2$ satır ve $3$ sütundan oluşan bir yapıda, karelerin üzerindeki küp yükseklikleri birinci satırda $1,2,3$, ikinci satırda $2,1,1$'dir. Yapı kaç eş küpten oluşmuştur?",
+   "o": [
+    "$6$",
+    "$9$",
+    "$12$",
+    "$10$"
+   ],
+   "c": 3,
+   "a": "Yükseklikler toplanır: $1+2+3+2+1+1=10$ küp.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0023",
+   "konu": "7.2.1",
+   "zorluk": 2,
+   "s": "Yan yana duran üç küp sütununun yükseklikleri $4,\\ 2$ ve $3$ küptür. Bu yapının önden görünümünde kaç birim kare görünür?",
+   "o": [
+    "$9$",
+    "$3$",
+    "$4$",
+    "$24$"
+   ],
+   "c": 0,
+   "a": "Önden bakınca her sütunun yüksekliği kadar kare görünür: $4+2+3=9$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0024",
+   "konu": "7.2.1",
+   "zorluk": 2,
+   "s": "$3\\times3\\times3$ biçiminde eş küplerle oluşturulmuş büyük bir küpün $8$ köşesindeki küçük küpler çıkarılırsa kaç küp kalır?",
+   "o": [
+    "$8$",
+    "$18$",
+    "$19$",
+    "$25$"
+   ],
+   "c": 2,
+   "a": "Toplam $27$ küp vardır. $8$ köşe küpü çıkarılınca $19$ küp kalır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0025",
+   "konu": "7.2.1",
+   "zorluk": 3,
+   "s": "Dış yüzeyi tamamen boyanmış $4\\times4\\times4$ biçimindeki büyük küp, eş küçük küplere ayrılıyor. Tam iki yüzü boyalı olan kaç küçük küp vardır?",
+   "o": [
+    "$8$",
+    "$12$",
+    "$24$",
+    "$36$"
+   ],
+   "c": 2,
+   "a": "Tam iki yüzü boyalı olanlar ayrıtların köşe olmayan küplerdir. Her ayrıtta $2$ tane, $12$ ayrıtta $24$ küp vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0026",
+   "konu": "7.2.2",
+   "zorluk": 1,
+   "s": "Ayrıtları $3$ cm, $4$ cm ve $5$ cm olan dikdörtgenler prizmasının yüzey alanı kaç cm$^2$'dir?",
+   "o": [
+    "$60$",
+    "$47$",
+    "$94$",
+    "$188$"
+   ],
+   "c": 2,
+   "a": "$2(3\\cdot4+3\\cdot5+4\\cdot5)=2(12+15+20)=94$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0027",
+   "konu": "7.2.2",
+   "zorluk": 1,
+   "s": "Bir ayrıtı $6$ cm olan küpün yüzey alanı kaç cm$^2$'dir?",
+   "o": [
+    "$216$",
+    "$36$",
+    "$72$",
+    "$144$"
+   ],
+   "c": 0,
+   "a": "Küpün $6$ yüzü vardır: $6\\cdot6^2=216$ cm$^2$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0028",
+   "konu": "7.2.2",
+   "zorluk": 2,
+   "s": "Taban ayrıtları $6$ cm ve $4$ cm, yüksekliği $3$ cm olan üstü açık bir dikdörtgenler prizması biçimindeki kutunun dış yüzeyi kaç cm$^2$'dir?",
+   "o": [
+    "$108$",
+    "$84$",
+    "$72$",
+    "$60$"
+   ],
+   "c": 1,
+   "a": "Alt taban $24$ ve dört yan yüz $2(18+12)=60$ cm$^2$'dir. Toplam $84$ cm$^2$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0029",
+   "konu": "7.2.2",
+   "zorluk": 2,
+   "s": "Şekildeki dikdörtgenler prizmasının ayrıtları $6$ cm, $4$ cm ve $3$ cm'dir. Prizmanın yüzey alanı kaç cm$^2$'dir?",
+   "o": [
+    "$72$",
+    "$108$",
+    "$144$",
+    "$192$"
+   ],
+   "c": 1,
+   "a": "$2(6\\cdot4+6\\cdot3+4\\cdot3)=2(24+18+12)=108$ cm$^2$.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 160 130\"><polygon points=\"20,50 100,50 100,100 20,100\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"20,50 50,30 130,30 100,50\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"100,50 130,30 130,80 100,100\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"60\" y=\"116\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">6 cm</text><text x=\"12\" y=\"78\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">3 cm</text><text x=\"124\" y=\"46\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">4 cm</text></svg>"
+  },
+  {
+   "id": "7-0030",
+   "konu": "7.2.2",
+   "zorluk": 3,
+   "s": "Tabanı $6$ cm $\\times$ $5$ cm olan bir dikdörtgenler prizmasının yüzey alanı $148$ cm$^2$'dir. Prizmanın yüksekliği kaç cm'dir?",
+   "o": [
+    "$3$",
+    "$4$",
+    "$5$",
+    "$6$"
+   ],
+   "c": 1,
+   "a": "$2(30+6h+5h)=148$ ise $30+11h=74$ ve $11h=44$, yani $h=4$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0031",
+   "konu": "7.2.2",
+   "zorluk": 2,
+   "s": "Bir küpün her ayrıtı $2$ katına çıkarılırsa yüzey alanı kaç katına çıkar?",
+   "o": [
+    "$2$",
+    "$6$",
+    "$4$",
+    "$8$"
+   ],
+   "c": 2,
+   "a": "Yüzey alanı ayrıt uzunluğunun karesiyle orantılıdır: $2^2=4$ katına çıkar.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0032",
+   "konu": "7.2.3",
+   "zorluk": 1,
+   "s": "Ayrıtı $1$ cm olan küplerle $4\\times3\\times2$ cm boyutlarındaki boş bir kutu tamamen dolduruluyor. Kaç küp gerekir?",
+   "o": [
+    "$9$",
+    "$24$",
+    "$12$",
+    "$14$"
+   ],
+   "c": 1,
+   "a": "$4\\cdot3\\cdot2=24$ küp gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0033",
+   "konu": "7.2.3",
+   "zorluk": 2,
+   "s": "İç boyutları $8$ cm, $6$ cm ve $4$ cm olan bir kutu, ayrıtı $2$ cm olan küplerle boşluk kalmadan dolduruluyor. Kaç küp kullanılır?",
+   "o": [
+    "$12$",
+    "$24$",
+    "$48$",
+    "$96$"
+   ],
+   "c": 1,
+   "a": "Ayrıtlar boyunca $4,3,2$ küp sığar: $4\\cdot3\\cdot2=24$ küp.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0034",
+   "konu": "7.2.3",
+   "zorluk": 1,
+   "s": "Bir kutuda her katta $5$ sıra ve her sırada $6$ küp olacak şekilde $3$ kat küp vardır. Bu kutudan $3$ küp alınırsa kaç küp kalır?",
+   "o": [
+    "$87$",
+    "$30$",
+    "$75$",
+    "$90$"
+   ],
+   "c": 0,
+   "a": "$5\\cdot6\\cdot3=90$ küp vardır. $3$ küp alınınca $87$ küp kalır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0035",
+   "konu": "7.2.3",
+   "zorluk": 2,
+   "s": "Hacmi $60$ birimküp olan bir dikdörtgenler prizmasının tabanı $5\\times4$ birimdir. Prizma kaç kattan oluşur?",
+   "o": [
+    "$2$",
+    "$4$",
+    "$3$",
+    "$12$"
+   ],
+   "c": 2,
+   "a": "Bir katta $5\\cdot4=20$ küp vardır. $60:20=3$ kat vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0036",
+   "konu": "7.2.3",
+   "zorluk": 3,
+   "s": "Tabanı $8$ cm $\\times$ $6$ cm, yüksekliği $12$ cm olan boş bir kutunun $\\dfrac{3}{4}$'ü, ayrıtı $2$ cm olan küplerle dolduruluyor. Kaç küp gerekir?",
+   "o": [
+    "$36$",
+    "$72$",
+    "$432$",
+    "$54$"
+   ],
+   "c": 3,
+   "a": "Kutunun hacmi $576$ cm$^3$; $\\dfrac{3}{4}$'ü $432$ cm$^3$. Bir küp $8$ cm$^3$ olduğundan $432:8=54$ küp gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0037",
+   "konu": "7.2.4",
+   "zorluk": 1,
+   "s": "Ayrıtları $5$ cm, $4$ cm ve $3$ cm olan dikdörtgenler prizmasının hacmi kaç cm$^3$'tür?",
+   "o": [
+    "$60$",
+    "$12$",
+    "$47$",
+    "$94$"
+   ],
+   "c": 0,
+   "a": "$V=5\\cdot4\\cdot3=60$ cm$^3$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0038",
+   "konu": "7.2.4",
+   "zorluk": 1,
+   "s": "Hacmi $96$ cm$^3$, taban alanı $24$ cm$^2$ olan dikdörtgenler prizmasının yüksekliği kaç cm'dir?",
+   "o": [
+    "$3$",
+    "$5$",
+    "$24$",
+    "$4$"
+   ],
+   "c": 3,
+   "a": "$V=$ taban alanı $\\times$ yükseklik olduğundan $h=96:24=4$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0039",
+   "konu": "7.2.4",
+   "zorluk": 2,
+   "s": "Taban ayrıtları $6$ cm ve $5$ cm olan bir dikdörtgenler prizmasının hacmi $150$ cm$^3$'tür. Yüksekliği kaç cm'dir?",
+   "o": [
+    "$4$",
+    "$6$",
+    "$25$",
+    "$5$"
+   ],
+   "c": 3,
+   "a": "Taban alanı $30$ cm$^2$; $h=150:30=5$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0040",
+   "konu": "7.2.4",
+   "zorluk": 2,
+   "s": "Hacmi $125$ cm$^3$ olan bir küpün yüzey alanı kaç cm$^2$'dir?",
+   "o": [
+    "$150$",
+    "$75$",
+    "$125$",
+    "$250$"
+   ],
+   "c": 0,
+   "a": "$a^3=125$ ise $a=5$ cm. Yüzey alanı $6\\cdot25=150$ cm$^2$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0041",
+   "konu": "7.2.4",
+   "zorluk": 3,
+   "s": "Ayrıtlarının uzunlukları $2:3:4$ oranında olan bir dikdörtgenler prizmasının hacmi $192$ cm$^3$'tür. Bu prizmanın yüzey alanı kaç cm$^2$'dir?",
+   "o": [
+    "$104$",
+    "$192$",
+    "$224$",
+    "$208$"
+   ],
+   "c": 3,
+   "a": "Ayrıtlar $2k,3k,4k$ için $24k^3=192$ ve $k=2$; ayrıtlar $4,6,8$. Yüzey alanı $2(24+32+48)=208$ cm$^2$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0042",
+   "konu": "7.2.4",
+   "zorluk": 2,
+   "s": "Ayrıtları $2$ cm, $3$ cm ve $4$ cm olan prizmanın üç ayrıtı da $2$ katına çıkarılıyor. Hacim kaç cm$^3$ artar?",
+   "o": [
+    "$24$",
+    "$48$",
+    "$168$",
+    "$192$"
+   ],
+   "c": 2,
+   "a": "İlk hacim $24$, yeni hacim $4\\cdot6\\cdot8=192$ cm$^3$. Artış $168$ cm$^3$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0043",
+   "konu": "7.2.5",
+   "zorluk": 1,
+   "s": "$3$ litre kaç cm$^3$'tür?",
+   "o": [
+    "$30$",
+    "$300$",
+    "$3000$",
+    "$30000$"
+   ],
+   "c": 2,
+   "a": "$1$ L $=1000$ cm$^3$ olduğundan $3$ L $=3000$ cm$^3$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0044",
+   "konu": "7.2.5",
+   "zorluk": 1,
+   "s": "$2{,}5$ m$^3$ kaç dm$^3$'tür?",
+   "o": [
+    "$25$",
+    "$250$",
+    "$25000$",
+    "$2500$"
+   ],
+   "c": 3,
+   "a": "$1$ m$^3=1000$ dm$^3$ olduğundan $2{,}5\\cdot1000=2500$ dm$^3$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0045",
+   "konu": "7.2.5",
+   "zorluk": 2,
+   "s": "Ayrıtları $4$ dm, $5$ dm ve $3$ dm olan dikdörtgenler prizması biçimindeki bir akvaryum ağzına kadar suyla dolduruluyor. Akvaryumda kaç litre su vardır?",
+   "o": [
+    "$12$",
+    "$60$",
+    "$47$",
+    "$600$"
+   ],
+   "c": 1,
+   "a": "$V=4\\cdot5\\cdot3=60$ dm$^3$ ve $1$ dm$^3=1$ L olduğundan $60$ L su vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0046",
+   "konu": "7.2.5",
+   "zorluk": 2,
+   "s": "$2$ L $250$ mL kaç cm$^3$'tür?",
+   "o": [
+    "$225$",
+    "$2025$",
+    "$2250$",
+    "$2500$"
+   ],
+   "c": 2,
+   "a": "$2$ L $=2000$ mL, toplam $2250$ mL. $1$ mL $=1$ cm$^3$ olduğundan $2250$ cm$^3$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0047",
+   "konu": "7.2.5",
+   "zorluk": 2,
+   "s": "$3\\,400\\,000$ cm$^3$ kaç m$^3$'tür?",
+   "o": [
+    "$0{,}34$",
+    "$3{,}4$",
+    "$34$",
+    "$340$"
+   ],
+   "c": 1,
+   "a": "$1$ m$^3=1\\,000\\,000$ cm$^3$ olduğundan $3\\,400\\,000:1\\,000\\,000=3{,}4$ m$^3$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0048",
+   "konu": "7.2.5",
+   "zorluk": 3,
+   "s": "Boyutları $1{,}2$ m, $50$ cm ve $0{,}8$ m olan dikdörtgenler prizması biçimindeki bir su tankının $\\dfrac{3}{5}$'ü dolu ise tankta kaç litre su vardır?",
+   "o": [
+    "$288$",
+    "$48$",
+    "$288000$",
+    "$480$"
+   ],
+   "c": 0,
+   "a": "Birimler cm yapılır: $120\\cdot50\\cdot80=480\\,000$ cm$^3=480$ L. $\\dfrac{3}{5}\\cdot480=288$ L.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0049",
+   "konu": "7.2.6",
+   "zorluk": 2,
+   "s": "Tabanı $50$ cm $\\times$ $40$ cm olan dikdörtgenler prizması biçimindeki bir akvaryuma $12$ litre su daha ekleniyor. Su seviyesi kaç cm yükselir?",
+   "o": [
+    "$3$",
+    "$12$",
+    "$24$",
+    "$6$"
+   ],
+   "c": 3,
+   "a": "$12$ L $=12\\,000$ cm$^3$. Yükselme $12\\,000:(50\\cdot40)=6$ cm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0050",
+   "konu": "7.2.6",
+   "zorluk": 2,
+   "s": "Tabanı $20$ cm $\\times$ $15$ cm olan dikdörtgenler prizması biçimindeki bir kapta $8$ cm yüksekliğinde su vardır. Kaba bir taş atılınca su seviyesi $10$ cm oluyor. Taşın hacmi kaç cm$^3$'tür?",
+   "o": [
+    "$300$",
+    "$600$",
+    "$450$",
+    "$3000$"
+   ],
+   "c": 1,
+   "a": "Yükselen su hacmi taşın hacmine eşittir: $20\\cdot15\\cdot2=600$ cm$^3$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0051",
+   "konu": "7.2.6",
+   "zorluk": 2,
+   "s": "Yüzey alanı $150$ cm$^2$ olan bir küpün hacmi kaç cm$^3$'tür?",
+   "o": [
+    "$25$",
+    "$75$",
+    "$150$",
+    "$125$"
+   ],
+   "c": 3,
+   "a": "$6a^2=150$ ise $a=5$ cm. Hacim $5^3=125$ cm$^3$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0052",
+   "konu": "7.2.6",
+   "zorluk": 2,
+   "s": "Tabanı $4$ m $\\times$ $3$ m, yüksekliği $2$ m olan dikdörtgenler prizması biçimindeki bir odanın dört duvarı, metrekaresi $15$ TL olan boyayla boyanacaktır. Boya maliyeti kaç TL'dir?",
+   "o": [
+    "$210$ TL",
+    "$360$ TL",
+    "$420$ TL",
+    "$540$ TL"
+   ],
+   "c": 2,
+   "a": "Dört duvarın alanı $2(4+3)\\cdot2=28$ m$^2$. Maliyet $28\\cdot15=420$ TL.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0053",
+   "konu": "7.2.6",
+   "zorluk": 3,
+   "s": "Ayrıtları $6$ cm, $5$ cm ve $4$ cm olan dikdörtgenler prizmasının bir köşesinden, ayrıtı $2$ cm olan bir küp çıkarılıyor. Kalan şeklin yüzey alanı kaç cm$^2$'dir?",
+   "o": [
+    "$140$",
+    "$156$",
+    "$148$",
+    "$172$"
+   ],
+   "c": 2,
+   "a": "Köşeden küp çıkarılınca kaybolan $3$ yüzey kadar yeni $3$ yüzey açılır; yüzey alanı değişmez: $2(30+24+20)=148$ cm$^2$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0054",
+   "konu": "7.2.6",
+   "zorluk": 3,
+   "s": "Bir inşaata $17$ m$^3$ kum gerekmektedir. Kamyon kasasının iç boyutları $2{,}5$ m, $2$ m ve $1{,}2$ m'dir ve kasa her seferinde ağzına kadar doldurulmaktadır. En az kaç sefer gerekir?",
+   "o": [
+    "$3$",
+    "$2$",
+    "$4$",
+    "$7$"
+   ],
+   "c": 0,
+   "a": "Kasa hacmi $2{,}5\\cdot2\\cdot1{,}2=6$ m$^3$. $17:6\\approx2{,}83$ olduğundan en az $3$ sefer gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0055",
+   "konu": "7.3.1",
+   "zorluk": 1,
+   "s": "Bir ayakkabı mağazası bir haftada satılan ayakkabı numaralarını $37,38,38,39,38,40,41,38$ olarak kaydetmiştir. Mağaza en çok satılan numaradan fazla sipariş vereceğine göre hangi numaradan fazla sipariş vermelidir?",
+   "o": [
+    "$38$",
+    "$37$",
+    "$39$",
+    "$41$"
+   ],
+   "c": 0,
+   "a": "En çok tekrar eden değer yani tepe değer $38$'dir ($4$ kez).",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0056",
+   "konu": "7.3.1",
+   "zorluk": 2,
+   "s": "Bir atölyede çalışanların aylık maaşları (bin TL) $8,\\ 9,\\ 9,\\ 10,\\ 11,\\ 60$'tır. Tipik maaşı en iyi temsil eden ölçü ve değeri hangisidir?",
+   "o": [
+    "Aritmetik ortalama: $17{,}8$",
+    "En büyük değer: $60$",
+    "Açıklık: $52$",
+    "Ortanca: $9{,}5$"
+   ],
+   "c": 3,
+   "a": "Uç değer $60$ ortalamayı $17{,}8$'e çıkarır. Ortanca $\\dfrac{9+10}{2}=9{,}5$ olup grubu daha iyi temsil eder.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0057",
+   "konu": "7.3.1",
+   "zorluk": 2,
+   "s": "Efe'nin ilk $5$ matematik sınavının ortalaması $72$'dir. $6$ sınav sonunda ortalamasını $75$ yapmak için altıncı sınavdan kaç almalıdır?",
+   "o": [
+    "$78$",
+    "$90$",
+    "$84$",
+    "$87$"
+   ],
+   "c": 1,
+   "a": "İlk beş notun toplamı $360$. Altı notun toplamı $450$ olmalı; altıncı not $90$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0058",
+   "konu": "7.3.1",
+   "zorluk": 2,
+   "s": "İki sınıfın bir sınavdaki notları A sınıfı: $60,65,70,75,80$; B sınıfı: $68,69,70,71,72$'dir. Ortalamaları eşit olduğuna göre notlar hakkında hangisi söylenebilir?",
+   "o": [
+    "A sınıfının notları daha dar aralıktadır (açıklık $20$).",
+    "B sınıfının notları daha dar aralıktadır (açıklık $4$).",
+    "Sınıfların açıklıkları eşittir.",
+    "B sınıfının ortalaması daha yüksektir."
+   ],
+   "c": 1,
+   "a": "Her iki ortalama $70$'tir. A'nın açıklığı $20$, B'nin açıklığı $4$ olduğundan B'nin notları daha az dağılmıştır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0059",
+   "konu": "7.3.1",
+   "zorluk": 3,
+   "s": "Beş sayının aritmetik ortalaması $12$'dir. Bu sayıların en büyüğü çıkarılınca kalan dört sayının ortalaması $10$ oluyor. Çıkarılan sayı kaçtır?",
+   "o": [
+    "$10$",
+    "$20$",
+    "$16$",
+    "$24$"
+   ],
+   "c": 1,
+   "a": "İlk toplam $60$, kalan dört sayının toplamı $40$. Çıkarılan sayı $60-40=20$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0060",
+   "konu": "7.3.1",
+   "zorluk": 3,
+   "s": "Bir sınıfta kardeş sayısı $0$ olan $3$, $1$ olan $8$, $2$ olan $6$ ve $3$ olan $3$ öğrenci vardır. Öğrencilerin ortalama kardeş sayısı kaçtır?",
+   "o": [
+    "$1{,}45$",
+    "$1{,}5$",
+    "$1{,}25$",
+    "$1{,}6$"
+   ],
+   "c": 0,
+   "a": "Toplam kardeş: $0\\cdot3+1\\cdot8+2\\cdot6+3\\cdot3=29$. Öğrenci sayısı $20$; ortalama $29:20=1{,}45$.",
+   "kaynak": "ozgun"
+  }
+ ]
+}

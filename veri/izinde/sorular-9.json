@@ -16,8 +16,7 @@
    ],
    "c": 1,
    "a": "$\\sqrt{18}=3\\sqrt{2}$, $\\sqrt{8}=2\\sqrt{2}$ olduğundan $3\\sqrt{2}+2\\sqrt{2}-\\sqrt{2}=4\\sqrt{2}$ bulunur.",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
   },
   {
    "id": "9-0002",
@@ -33,8 +32,7 @@
    ],
    "c": 2,
    "a": "$2\\cdot 2^{x}+2^{x}=3\\cdot 2^{x}=48$ ise $2^{x}=16$ olur, buradan $x=4$ bulunur.",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
   },
   {
    "id": "9-0003",
@@ -50,8 +48,7 @@
    ],
    "c": 3,
    "a": "Pay: $3^{n}(9-1)=8\\cdot 3^{n}$. Paydaya bölünce $8\\cdot 3^{n-(n-1)}=8\\cdot 3=24$ olur.",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
   },
   {
    "id": "9-0004",
@@ -67,8 +64,7 @@
    ],
    "c": 0,
    "a": "Ortak elemanlar $1\\le x\\le 5$ aralığındadır. $1$ sayısı $B$'ye, $5$ sayısı $A$'ya dahildir; sonuç $[1,5]$.",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
   },
   {
    "id": "9-0005",
@@ -85,8 +81,7 @@
    "c": 2,
    "a": "$-2$ noktası içi boş (dahil değil), $4$ noktası içi dolu (dahil) olduğundan aralık $(-2,4]$ olur.",
    "sekil": "<svg viewBox=\"0 0 220 64\"><line x1=\"10\" y1=\"35\" x2=\"210\" y2=\"35\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"30\" x2=\"50\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"50\" y=\"54\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">-3</text><line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"70\" y=\"54\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">-2</text><line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"90\" y=\"54\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">-1</text><line x1=\"110\" y1=\"30\" x2=\"110\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"110\" y=\"54\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">0</text><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"130\" y=\"54\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">1</text><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"150\" y=\"54\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">2</text><line x1=\"170\" y1=\"30\" x2=\"170\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"170\" y=\"54\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">3</text><line x1=\"190\" y1=\"30\" x2=\"190\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"190\" y=\"54\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">4</text><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"210\" y=\"54\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">5</text><line x1=\"70\" y1=\"35\" x2=\"190\" y2=\"35\" stroke=\"#1E3BD6\" stroke-width=\"4\"/><circle cx=\"70\" cy=\"35\" r=\"4.5\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><circle cx=\"190\" cy=\"35\" r=\"4.5\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"2\"/></svg>",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
   },
   {
    "id": "9-0006",
@@ -102,8 +97,7 @@
    ],
    "c": 3,
    "a": "$A=\\{-3,-2,-1,0,1,2,3\\}$ olup eleman sayısı $7$'dir.",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
   },
   {
    "id": "9-0007",
@@ -119,8 +113,7 @@
    ],
    "c": 4,
    "a": "$2*3=7$ ve $7*1=15$. $3*1=7$ ve $2*7=11$. Fark $15-11=4$ olur.",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
   },
   {
    "id": "9-0008",
@@ -136,8 +129,7 @@
    ],
    "c": 1,
    "a": "$\\dfrac{\\sqrt{12}}{\\sqrt{3}}=2$ olduğundan sayı $2-\\dfrac{1}{2}=\\dfrac{3}{2}$ olur. Tam sayı değil, rasyonel sayıdır.",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
   },
   {
    "id": "9-0009",
@@ -154,8 +146,7 @@
    "c": 4,
    "a": "Doğru $(0,1)$ ve $(2,5)$ noktalarından geçer; eğim $\\dfrac{5-1}{2-0}=2$, yani $f(x)=2x+1$. $f(5)=11$.",
    "sekil": "<svg viewBox=\"0 0 240 220\"><line x1=\"20\" y1=\"160\" x2=\"225\" y2=\"160\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"212\" x2=\"80\" y2=\"8\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"222\" y=\"174\" font-size=\"11\" fill=\"#141B3F\">x</text><text x=\"86\" y=\"14\" font-size=\"11\" fill=\"#141B3F\">y</text><text x=\"70\" y=\"174\" font-size=\"10\" fill=\"#141B3F\">O</text><line x1=\"58\" y1=\"184\" x2=\"142\" y2=\"16\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><circle cx=\"80\" cy=\"140\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"120\" cy=\"60\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"86\" y=\"136\" font-size=\"11\" fill=\"#141B3F\">(0, 1)</text><text x=\"126\" y=\"64\" font-size=\"11\" fill=\"#141B3F\">(2, 5)</text></svg>",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
   },
   {
    "id": "9-0010",
@@ -172,8 +163,7 @@
    "c": 3,
    "a": "Üçgen eşitsizliği: $8-5<x<8+5$, yani $3<x<13$. $x\\in\\{4,5,\\dots,12\\}$ olup $9$ değer alır.",
    "sekil": "<svg viewBox=\"0 0 220 170\"><polygon points=\"20,140 200,140 80,30\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><text x=\"12\" y=\"154\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"202\" y=\"154\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"76\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"100\" y=\"158\" font-size=\"12\" text-anchor=\"middle\" fill=\"#FF8A1F\">8</text><text x=\"38\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#FF8A1F\">5</text><text x=\"152\" y=\"80\" font-size=\"12\" text-anchor=\"middle\" fill=\"#FF8A1F\">x</text></svg>",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
   },
   {
    "id": "9-0011",
@@ -190,8 +180,7 @@
    "c": 1,
    "a": "Dış açı, kendisine komşu olmayan iki iç açının toplamına eşittir: $x=40^\\circ+65^\\circ=105^\\circ$.",
    "sekil": "<svg viewBox=\"0 0 240 180\"><polygon points=\"20,150 190,150 120,70\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"120\" y1=\"70\" x2=\"85\" y2=\"30\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><text x=\"8\" y=\"164\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"192\" y=\"164\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"126\" y=\"66\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"76\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">D</text><text x=\"46\" y=\"144\" font-size=\"11\" fill=\"#FF8A1F\">40°</text><text x=\"152\" y=\"144\" font-size=\"11\" fill=\"#FF8A1F\">65°</text><text x=\"84\" y=\"64\" font-size=\"12\" fill=\"#FF8A1F\">x</text></svg>",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
   },
   {
    "id": "9-0012",
@@ -207,8 +196,779 @@
    ],
    "c": 0,
    "a": "Hipotenüs $\\sqrt{81+144}=15$. Öklid bağıntısıyla $h\\cdot 15=9\\cdot 12$, buradan $h=7{,}2$.",
-   "kaynak": "ozgun",
-   "ornek": true
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0013",
+   "konu": "9.1.1",
+   "zorluk": 1,
+   "s": "$\\dfrac{4^{3}\\cdot 8^{2}}{2^{10}}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$2$",
+    "$8$",
+    "$16$",
+    "$64$",
+    "$4$"
+   ],
+   "c": 4,
+   "a": "$4^{3}=2^{6}$ ve $8^{2}=2^{6}$ olduğundan pay $2^{12}$ olur. $\\dfrac{2^{12}}{2^{10}}=2^{2}=4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0014",
+   "konu": "9.1.1",
+   "zorluk": 2,
+   "s": "$\\dfrac{10}{\\sqrt{5}-\\sqrt{3}}$ ifadesinin eşiti aşağıdakilerden hangisidir?",
+   "o": [
+    "$- 5 \\sqrt{3} + 5 \\sqrt{5}$",
+    "$10 \\sqrt{3} + 10 \\sqrt{5}$",
+    "$5 \\sqrt{2}$",
+    "$5 \\sqrt{3} + 5 \\sqrt{5}$",
+    "$\\sqrt{2 \\sqrt{15} + 8}$"
+   ],
+   "c": 3,
+   "a": "Pay ve paydayı $\\sqrt{5}+\\sqrt{3}$ ile çarparız. Payda $5-3=2$ olur; $\\dfrac{10(\\sqrt{5}+\\sqrt{3})}{2}=5\\sqrt{5}+5\\sqrt{3}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0015",
+   "konu": "9.1.1",
+   "zorluk": 3,
+   "s": "$a=2^{30}$, $b=3^{20}$ ve $c=5^{10}$ sayıları için aşağıdaki sıralamalardan hangisi doğrudur?",
+   "o": [
+    "$a<b<c$",
+    "$c<a<b$",
+    "$b<a<c$",
+    "$c<b<a$",
+    "$a<c<b$"
+   ],
+   "c": 1,
+   "a": "Üsleri $10$'da eşitleriz: $a=8^{10}$, $b=9^{10}$, $c=5^{10}$. Tabanlar $5<8<9$ olduğundan $c<a<b$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0016",
+   "konu": "9.1.2",
+   "zorluk": 1,
+   "s": "$A=(-\\infty,3)$ ve $B=[1,6]$ için $A\\cup B$ kümesi aşağıdakilerden hangisidir?",
+   "o": [
+    "$(-\\infty,6)$",
+    "$(-\\infty,6]$",
+    "$[1,3)$",
+    "$(-\\infty,1)$",
+    "$[3,6]$"
+   ],
+   "c": 1,
+   "a": "$A$ kümesi $3$'ten küçük tüm sayıları, $B$ kümesi $1$ ile $6$ arasındaki sayıları ($6$ dahil) içerir. Birleşim $(-\\infty,6]$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0017",
+   "konu": "9.1.2",
+   "zorluk": 2,
+   "s": "$A=[-2,5)$ ve $B=(1,9]$ için $A\\setminus B$ kümesi aşağıdakilerden hangisidir?",
+   "o": [
+    "$[-2,1)$",
+    "$[-2,1]$",
+    "$(-2,1]$",
+    "$(1,5)$",
+    "$[5,9]$"
+   ],
+   "c": 1,
+   "a": "$A$'nın $B$'de bulunmayan elemanları $-2\\le x\\le 1$ olanlardır. $1\\notin B$ olduğundan $1$ dahildir; sonuç $[-2,1]$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0018",
+   "konu": "9.1.2",
+   "zorluk": 3,
+   "s": "$A=(-5,3]$ ve $B=[-1,6)$ kümeleri için $A\\setminus B$ kümesindeki tam sayıların toplamı kaçtır?",
+   "o": [
+    "$-14$",
+    "$-10$",
+    "$-6$",
+    "$-5$",
+    "$-9$"
+   ],
+   "c": 4,
+   "a": "$A\\setminus B=(-5,-1)$ olur. Tam sayılar $-4,-3,-2$ olup toplamları $-9$'dur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0019",
+   "konu": "9.1.3",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi bir irrasyonel sayıdır?",
+   "o": [
+    "$\\sqrt{2}\\cdot\\sqrt{8}$",
+    "$\\sqrt{2}+\\sqrt{8}$",
+    "$\\sqrt{\\dfrac{9}{4}}$",
+    "$\\sqrt[3]{-8}$",
+    "$(\\sqrt{3})^{2}$"
+   ],
+   "c": 1,
+   "a": "$\\sqrt{2}+\\sqrt{8}=3\\sqrt{2}$ irrasyoneldir. Diğerleri sırasıyla $4$, $\\dfrac{3}{2}$, $-2$ ve $3$ olup rasyoneldir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0020",
+   "konu": "9.1.3",
+   "zorluk": 1,
+   "s": "Aşağıdaki ifadelerden hangisi doğrudur?",
+   "o": [
+    "$\\mathbb{Z}\\subset\\mathbb{N}$",
+    "$\\mathbb{Q}'\\subset\\mathbb{R}$",
+    "$\\mathbb{Q}\\cap\\mathbb{Q}'=\\mathbb{R}$",
+    "$\\mathbb{Q}'\\subset\\mathbb{Q}$",
+    "$\\mathbb{N}\\cup\\mathbb{Z}^{-}=\\mathbb{Q}$"
+   ],
+   "c": 1,
+   "a": "İrrasyonel sayılar gerçek sayıların bir alt kümesidir. Diğer ifadelerde $\\mathbb{N}\\subset\\mathbb{Z}$, $\\mathbb{Q}\\cap\\mathbb{Q}'=\\emptyset$ ve $\\mathbb{N}\\cup\\mathbb{Z}^{-}=\\mathbb{Z}$ olduğundan yanlıştırlar.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0021",
+   "konu": "9.1.3",
+   "zorluk": 2,
+   "s": "$0{,}\\overline{3}+0{,}1\\overline{6}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$\\dfrac{4}{9}$",
+    "$\\dfrac{2}{3}$",
+    "$\\dfrac{7}{15}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{3}{5}$"
+   ],
+   "c": 3,
+   "a": "$0{,}\\overline{3}=\\dfrac{3}{9}=\\dfrac{1}{3}$ ve $0{,}1\\overline{6}=\\dfrac{16-1}{90}=\\dfrac{1}{6}$ olur. Toplam $\\dfrac{1}{3}+\\dfrac{1}{6}=\\dfrac{1}{2}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0022",
+   "konu": "9.1.3",
+   "zorluk": 2,
+   "s": "$\\sqrt{4}$, $\\sqrt{5}$, $\\pi$, $0{,}\\overline{7}$, $\\sqrt[3]{9}$ ve $\\sqrt{\\dfrac{1}{4}}$ sayılarından kaç tanesi irrasyoneldir?",
+   "o": [
+    "$1$",
+    "$2$",
+    "$4$",
+    "$3$",
+    "$5$"
+   ],
+   "c": 3,
+   "a": "$\\sqrt{4}=2$, $0{,}\\overline{7}=\\dfrac{7}{9}$ ve $\\sqrt{\\dfrac{1}{4}}=\\dfrac{1}{2}$ rasyoneldir. $\\sqrt{5}$, $\\pi$ ve $\\sqrt[3]{9}$ irrasyonel olduğundan $3$ tanedir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0023",
+   "konu": "9.1.3",
+   "zorluk": 3,
+   "s": "$n$ bir doğal sayı olmak üzere $\\sqrt{n}$ irrasyonel ve $5<\\sqrt{n}<6$ ise $n$ kaç farklı değer alır?",
+   "o": [
+    "$8$",
+    "$9$",
+    "$11$",
+    "$12$",
+    "$10$"
+   ],
+   "c": 4,
+   "a": "$25<n<36$ olduğundan $n\\in\\{26,27,\\dots,35\\}$ olup $10$ sayıdır. Aralıkta tam kare yoktur, hepsi uygundur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0024",
+   "konu": "9.1.3",
+   "zorluk": 2,
+   "s": "$-\\sqrt{9}$, $\\dfrac{12}{4}$, $\\dfrac{7}{2}$, $\\sqrt{8}$, $\\sqrt[3]{-1}$ ve $0$ sayılarından kaç tanesi negatif tam sayıdır?",
+   "o": [
+    "$1$",
+    "$3$",
+    "$4$",
+    "$5$",
+    "$2$"
+   ],
+   "c": 4,
+   "a": "Sayılar sırasıyla $-3$, $3$, $\\dfrac{7}{2}$, $2\\sqrt{2}$, $-1$ ve $0$'dır. Negatif tam sayılar $-3$ ve $-1$ olduğundan cevap $2$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0025",
+   "konu": "9.1.4",
+   "zorluk": 1,
+   "s": "$\\mathbb{R}$ üzerinde $a\\oplus b=a+2b$ işlemi tanımlanıyor. $(2\\oplus 3)\\oplus 4$ kaçtır?",
+   "o": [
+    "$12$",
+    "$18$",
+    "$16$",
+    "$20$",
+    "$24$"
+   ],
+   "c": 2,
+   "a": "$2\\oplus 3=2+6=8$ olur. $8\\oplus 4=8+8=16$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0026",
+   "konu": "9.1.4",
+   "zorluk": 2,
+   "s": "$\\mathbb{R}$ üzerinde $a*b=a+b-3$ işleminin birim elemanı kaçtır?",
+   "o": [
+    "$3$",
+    "$-3$",
+    "$0$",
+    "$1$",
+    "$6$"
+   ],
+   "c": 0,
+   "a": "Her $a$ için $a*e=a$ olmalıdır: $a+e-3=a$ ise $e=3$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0027",
+   "konu": "9.1.4",
+   "zorluk": 2,
+   "s": "$\\mathbb{R}$ üzerinde $a\\triangle b=a+b+ab$ işleminde $3$ elemanının tersi kaçtır?",
+   "o": [
+    "$- \\dfrac{3}{4}$",
+    "$-3$",
+    "$- \\dfrac{1}{3}$",
+    "$- \\dfrac{1}{4}$",
+    "$\\dfrac{3}{4}$"
+   ],
+   "c": 0,
+   "a": "Birim eleman: $a+e+ae=a$ ise $e=0$. $3\\triangle y=3+y+3y=0$ ise $y=-\\dfrac{3}{4}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0028",
+   "konu": "9.1.4",
+   "zorluk": 2,
+   "s": "Aşağıdaki işlemlerden hangisi $\\mathbb{Z}$ üzerinde değişme özelliğine sahiptir?",
+   "o": [
+    "$a*b=a-b$",
+    "$a*b=2a+3b$",
+    "$a*b=ab+2(a+b)$",
+    "$a*b=a^{2}b$",
+    "$a*b=a+b^{2}$"
+   ],
+   "c": 2,
+   "a": "$ab+2(a+b)$ ifadesinde $a$ ile $b$ yer değiştirince sonuç değişmez. Diğerlerinde örneğin $a=1,\\ b=2$ için $a*b\\ne b*a$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0029",
+   "konu": "9.1.4",
+   "zorluk": 3,
+   "s": "$\\mathbb{R}$ üzerinde $a*b=ab-a-b+2$ işlemi tanımlanıyor. $(x*3)*2=7$ ise $x$ kaçtır?",
+   "o": [
+    "$2$",
+    "$3$",
+    "$4$",
+    "$5$",
+    "$7$"
+   ],
+   "c": 2,
+   "a": "$a*b=(a-1)(b-1)+1$ biçiminde yazılır. $x*3=2(x-1)+1=2x-1$ olur. $(2x-1)*2=(2x-2)\\cdot 1+1=2x-1=7$ ise $x=4$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0030",
+   "konu": "9.1.4",
+   "zorluk": 1,
+   "s": "$A=\\{-1,0,1\\}$ kümesi aşağıdaki işlemlerden hangisine göre kapalıdır?",
+   "o": [
+    "Toplama işlemi",
+    "Çarpma işlemi",
+    "Çıkarma işlemi",
+    "$a*b=a^{2}+b$",
+    "$a*b=a+b+ab$"
+   ],
+   "c": 1,
+   "a": "Çarpmada $\\{-1,0,1\\}$ elemanlarının çarpımı yine bu kümededir. Toplamada $1+1=2$, çıkarmada $1-(-1)=2$, $a^{2}+b$ için $1*1=2$, $a+b+ab$ için $1*1=3$ kümenin dışındadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0031",
+   "konu": "9.2.1",
+   "zorluk": 1,
+   "s": "Doğrusal bir $f$ fonksiyonu için $f(1)=4$, $f(2)=7$ ve $f(3)=10$ ise $f(8)$ kaçtır?",
+   "o": [
+    "$22$",
+    "$24$",
+    "$27$",
+    "$32$",
+    "$25$"
+   ],
+   "c": 4,
+   "a": "Değerler her adımda $3$ artıyor; eğim $3$'tür. $f(x)=3x+1$ olduğundan $f(8)=25$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0032",
+   "konu": "9.2.1",
+   "zorluk": 2,
+   "s": "Grafiği $A(2,-1)$ ve $B(5,8)$ noktalarından geçen doğrusal $f$ fonksiyonunun grafiği $y$ eksenini hangi noktada keser?",
+   "o": [
+    "$(0,-5)$",
+    "$(0,-3)$",
+    "$(0,-7)$",
+    "$(0,5)$",
+    "$(0,7)$"
+   ],
+   "c": 2,
+   "a": "Eğim $\\dfrac{8-(-1)}{5-2}=3$ olduğundan $f(x)=3x+b$. $f(2)=-1$ ise $b=-7$; grafik $(0,-7)$ noktasında keser.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0033",
+   "konu": "9.2.1",
+   "zorluk": 2,
+   "s": "$f(x)=(m-2)x+5$ fonksiyonunun azalan olması için $m$ hangi aralıkta olmalıdır?",
+   "o": [
+    "$(2,\\infty)$",
+    "$(-\\infty,5)$",
+    "$(-\\infty,2)$",
+    "$(-2,\\infty)$",
+    "$[2,\\infty)$"
+   ],
+   "c": 2,
+   "a": "Doğrusal fonksiyonun azalan olması için eğim negatif olmalıdır: $m-2<0$ ise $m<2$, yani $m\\in(-\\infty,2)$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0034",
+   "konu": "9.2.1",
+   "zorluk": 1,
+   "s": "$f(x)=ax+b$ doğrusal fonksiyonu için $f(2)=7$ ve $f(-1)=1$ ise $f(5)$ kaçtır?",
+   "o": [
+    "$11$",
+    "$12$",
+    "$15$",
+    "$17$",
+    "$13$"
+   ],
+   "c": 4,
+   "a": "$2a+b=7$ ve $-a+b=1$ denklemlerinden $a=2$, $b=3$ bulunur. $f(5)=2\\cdot 5+3=13$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0035",
+   "konu": "9.2.1",
+   "zorluk": 2,
+   "s": "Şekilde doğrusal $f$ fonksiyonunun grafiği verilmiştir. $f(5)$ değeri kaçtır?",
+   "o": [
+    "$-10$",
+    "$-6$",
+    "$-2$",
+    "$-4$",
+    "$4$"
+   ],
+   "c": 3,
+   "a": "Grafik $(0,6)$ ve $(3,0)$ noktalarından geçer; eğim $\\dfrac{0-6}{3-0}=-2$. $f(x)=-2x+6$ olduğundan $f(5)=-4$.",
+   "sekil": "<svg viewBox=\"0 0 220 200\"><line x1=\"20\" y1=\"150\" x2=\"205\" y2=\"150\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"192\" x2=\"60\" y2=\"8\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"204\" y=\"164\" font-size=\"11\" fill=\"#141B3F\">x</text><text x=\"66\" y=\"14\" font-size=\"11\" fill=\"#141B3F\">y</text><text x=\"48\" y=\"164\" font-size=\"10\" fill=\"#141B3F\">O</text><line x1=\"50\" y1=\"10\" x2=\"140\" y2=\"190\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><circle cx=\"60\" cy=\"30\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"120\" cy=\"150\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"68\" y=\"38\" font-size=\"11\" fill=\"#141B3F\">(0, 6)</text><text x=\"106\" y=\"168\" font-size=\"11\" fill=\"#141B3F\">(3, 0)</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0036",
+   "konu": "9.2.1",
+   "zorluk": 3,
+   "s": "$f(x)=ax+b$ azalan bir fonksiyondur ve $f(f(x))=4x-3$ ise $f(2)$ kaçtır?",
+   "o": [
+    "$3$",
+    "$1$",
+    "$5$",
+    "$-3$",
+    "$-1$"
+   ],
+   "c": 4,
+   "a": "$f(f(x))=a^{2}x+ab+b$ olduğundan $a^{2}=4$. Azalan olduğu için $a=-2$. $ab+b=-b=-3$ ise $b=3$. $f(2)=-4+3=-1$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0037",
+   "konu": "9.2.2",
+   "zorluk": 1,
+   "s": "$f(x)=|x-3|+2$ ise $f(-1)$ kaçtır?",
+   "o": [
+    "$0$",
+    "$6$",
+    "$2$",
+    "$4$",
+    "$8$"
+   ],
+   "c": 1,
+   "a": "$f(-1)=|-1-3|+2=4+2=6$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0038",
+   "konu": "9.2.2",
+   "zorluk": 1,
+   "s": "$|x-2|=5$ denkleminin çözüm kümesindeki elemanların toplamı kaçtır?",
+   "o": [
+    "$4$",
+    "$0$",
+    "$2$",
+    "$7$",
+    "$10$"
+   ],
+   "c": 0,
+   "a": "$x-2=5$ ise $x=7$; $x-2=-5$ ise $x=-3$. Toplam $7+(-3)=4$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0039",
+   "konu": "9.2.2",
+   "zorluk": 2,
+   "s": "$f(x)=|2x-6|-4$ fonksiyonunun grafiğinin tepe noktasının koordinatları toplamı kaçtır?",
+   "o": [
+    "$-7$",
+    "$-3$",
+    "$1$",
+    "$-1$",
+    "$7$"
+   ],
+   "c": 3,
+   "a": "$|2x-6|=0$ iken $x=3$ ve $f(3)=-4$ olur. Tepe noktası $(3,-4)$; koordinatlar toplamı $-1$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0040",
+   "konu": "9.2.2",
+   "zorluk": 2,
+   "s": "$|x+2|\\le 3$ eşitsizliğini sağlayan kaç farklı tam sayı vardır?",
+   "o": [
+    "$5$",
+    "$7$",
+    "$6$",
+    "$8$",
+    "$9$"
+   ],
+   "c": 1,
+   "a": "$-3\\le x+2\\le 3$ ise $-5\\le x\\le 1$ olur. Tam sayılar $-5,-4,\\dots,1$ olup $7$ tanedir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0041",
+   "konu": "9.2.2",
+   "zorluk": 2,
+   "s": "Şekilde $f(x)=|x-a|+b$ biçimindeki fonksiyonun grafiği verilmiştir. $f(7)$ kaçtır?",
+   "o": [
+    "$4$",
+    "$5$",
+    "$7$",
+    "$6$",
+    "$8$"
+   ],
+   "c": 3,
+   "a": "Tepe noktası $(2,1)$ olduğundan $a=2$, $b=1$ ve $f(x)=|x-2|+1$ olur. $f(7)=5+1=6$.",
+   "sekil": "<svg viewBox=\"0 0 220 180\"><line x1=\"20\" y1=\"150\" x2=\"210\" y2=\"150\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"175\" x2=\"60\" y2=\"8\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"206\" y=\"165\" font-size=\"11\" fill=\"#141B3F\">x</text><text x=\"66\" y=\"14\" font-size=\"11\" fill=\"#141B3F\">y</text><text x=\"48\" y=\"164\" font-size=\"10\" fill=\"#141B3F\">O</text><polyline points=\"35,50 110,125 185,50\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><circle cx=\"110\" cy=\"125\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"60\" cy=\"75\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"116\" y=\"140\" font-size=\"11\" fill=\"#141B3F\">(2, 1)</text><text x=\"66\" y=\"72\" font-size=\"11\" fill=\"#141B3F\">(0, 3)</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0042",
+   "konu": "9.2.2",
+   "zorluk": 3,
+   "s": "$|x-2|+|x+4|=10$ denkleminin çözüm kümesindeki elemanların toplamı kaçtır?",
+   "o": [
+    "$-2$",
+    "$-6$",
+    "$2$",
+    "$4$",
+    "$10$"
+   ],
+   "c": 0,
+   "a": "$x\\ge 2$ için $2x+2=10$ ise $x=4$. $x\\le -4$ için $-2x-2=10$ ise $x=-6$. $-4<x<2$ aralığında ifade $6$ olur. Toplam $4+(-6)=-2$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0043",
+   "konu": "9.2.2",
+   "zorluk": 2,
+   "s": "$|3x-1|=|x+5|$ denkleminin çözüm kümesindeki elemanların çarpımı kaçtır?",
+   "o": [
+    "$-5$",
+    "$2$",
+    "$3$",
+    "$6$",
+    "$-3$"
+   ],
+   "c": 4,
+   "a": "$3x-1=x+5$ ise $x=3$; $3x-1=-(x+5)$ ise $x=-1$. Çarpım $3\\cdot(-1)=-3$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0044",
+   "konu": "9.2.2",
+   "zorluk": 2,
+   "s": "$f(x)=|x|-2x$ ise $f(-3)+f(3)$ kaçtır?",
+   "o": [
+    "$0$",
+    "$3$",
+    "$6$",
+    "$9$",
+    "$12$"
+   ],
+   "c": 2,
+   "a": "$f(-3)=3+6=9$ ve $f(3)=3-6=-3$ olur. Toplam $9+(-3)=6$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0045",
+   "konu": "9.2.2",
+   "zorluk": 3,
+   "s": "$|x-1|+|x-5|\\le 8$ eşitsizliğini sağlayan kaç tam sayı vardır?",
+   "o": [
+    "$7$",
+    "$8$",
+    "$9$",
+    "$10$",
+    "$11$"
+   ],
+   "c": 2,
+   "a": "$x\\ge 5$ için $2x-6\\le 8$ ise $x\\le 7$. $x\\le 1$ için $6-2x\\le 8$ ise $x\\ge -1$. $1<x<5$ iken ifade $4$'tür, hepsi uygundur. $-1\\le x\\le 7$ aralığında $9$ tam sayı vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0046",
+   "konu": "9.2.3",
+   "zorluk": 1,
+   "s": "Bir taksi açılışta $15$ TL alıyor ve her kilometre için $6$ TL ücret istiyor. $12$ km'lik yolculuğun ücreti kaç TL'dir?",
+   "o": [
+    "$87$",
+    "$72$",
+    "$78$",
+    "$81$",
+    "$90$"
+   ],
+   "c": 0,
+   "a": "Ücret $f(x)=6x+15$ olur. $f(12)=72+15=87$ TL bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0047",
+   "konu": "9.2.3",
+   "zorluk": 2,
+   "s": "Bir internet firmasında A tarifesi sabit $40$ TL ve her GB için $2$ TL, B tarifesi sabit $10$ TL ve her GB için $5$ TL'dir. Kaç GB kullanımda iki tarifenin ücreti eşit olur?",
+   "o": [
+    "$10$",
+    "$6$",
+    "$8$",
+    "$12$",
+    "$15$"
+   ],
+   "c": 0,
+   "a": "$40+2x=10+5x$ denkleminden $3x=30$ ve $x=10$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0048",
+   "konu": "9.2.3",
+   "zorluk": 1,
+   "s": "Sabit ücreti $120$ TL, kilogram başına ücreti $8$ TL olan bir kargo için en fazla $400$ TL ödenebiliyorsa en çok kaç kg gönderilebilir?",
+   "o": [
+    "$34$",
+    "$35$",
+    "$36$",
+    "$40$",
+    "$50$"
+   ],
+   "c": 1,
+   "a": "$120+8x\\le 400$ ise $8x\\le 280$ ve $x\\le 35$ olur. En çok $35$ kg gönderilebilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0049",
+   "konu": "9.2.3",
+   "zorluk": 2,
+   "s": "Başlangıçta $90$ litre su bulunan bir depodan dakikada $4$ litre su boşaltılıyor. Depoda $30$ litre su kalması kaç dakika sürer?",
+   "o": [
+    "$12$",
+    "$18$",
+    "$22$",
+    "$15$",
+    "$30$"
+   ],
+   "c": 3,
+   "a": "$90-4t=30$ ise $4t=60$ ve $t=15$ dakikadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0050",
+   "konu": "9.2.3",
+   "zorluk": 3,
+   "s": "Bir kuryenin kazancı $f(x)=12x+k$ TL'dir ($x$: teslimat sayısı). $5$ teslimatta kazancı $100$ TL ise kazancının en az $200$ TL olması için en az kaç teslimat yapmalıdır?",
+   "o": [
+    "$12$",
+    "$13$",
+    "$15$",
+    "$17$",
+    "$14$"
+   ],
+   "c": 4,
+   "a": "$f(5)=60+k=100$ ise $k=40$. $12x+40\\ge 200$ ise $x\\ge 13{,}33\\ldots$ olur. $x$ tam sayı olduğundan en az $14$ teslimat gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0051",
+   "konu": "9.2.3",
+   "zorluk": 2,
+   "s": "Bir suyun sıcaklığı başlangıçta $20^\\circ$C iken dakikada $3^\\circ$C artmaktadır. Sıcaklığın $95^\\circ$C olması için kaç dakika geçmelidir?",
+   "o": [
+    "$20$",
+    "$24$",
+    "$28$",
+    "$25$",
+    "$30$"
+   ],
+   "c": 3,
+   "a": "$20+3t=95$ ise $3t=75$ ve $t=25$ dakikadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0052",
+   "konu": "9.2.3",
+   "zorluk": 2,
+   "s": "Şekilde bir kargo firmasının ücreti ($y$, TL) ile paket ağırlığı ($x$, kg) arasındaki doğrusal ilişki gösterilmiştir. $7$ kg'lık paketin ücreti kaç TL'dir?",
+   "o": [
+    "$54$",
+    "$56$",
+    "$62$",
+    "$60$",
+    "$64$"
+   ],
+   "c": 2,
+   "a": "Grafik $(0,20)$ ve $(2,32)$ noktalarından geçer; eğim $\\dfrac{32-20}{2}=6$. $y=6x+20$ olduğundan $x=7$ için $y=62$ TL.",
+   "sekil": "<svg viewBox=\"0 0 220 190\"><line x1=\"20\" y1=\"170\" x2=\"212\" y2=\"170\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"186\" x2=\"50\" y2=\"8\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"204\" y=\"184\" font-size=\"11\" fill=\"#141B3F\">x (kg)</text><text x=\"56\" y=\"14\" font-size=\"11\" fill=\"#141B3F\">y (TL)</text><text x=\"38\" y=\"184\" font-size=\"10\" fill=\"#141B3F\">O</text><line x1=\"50\" y1=\"120\" x2=\"200\" y2=\"45\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"120\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"110\" cy=\"90\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"58\" y=\"136\" font-size=\"11\" fill=\"#141B3F\">(0, 20)</text><text x=\"116\" y=\"104\" font-size=\"11\" fill=\"#141B3F\">(2, 32)</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0053",
+   "konu": "9.2.3",
+   "zorluk": 3,
+   "s": "Ali'nin birikimi $150$ TL olup her hafta $25$ TL ekliyor. Bora'nın birikimi $400$ TL olup her hafta $10$ TL ekliyor. Ali'nin birikimi, Bora'nınkini ilk kez kaç hafta sonra geçer?",
+   "o": [
+    "$17$",
+    "$16$",
+    "$18$",
+    "$20$",
+    "$25$"
+   ],
+   "c": 0,
+   "a": "$150+25t>400+10t$ ise $15t>250$ ve $t>16{,}67\\ldots$ olur. Tam hafta sayısı olarak ilk değer $17$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0054",
+   "konu": "9.2.3",
+   "zorluk": 2,
+   "s": "Bir fotokopi merkezinde $x$ sayfa için ücret $0{,}4x+5$ TL'dir. Toplam $33$ TL ödeyen bir kişi kaç sayfa fotokopi çektirmiştir?",
+   "o": [
+    "$60$",
+    "$65$",
+    "$75$",
+    "$70$",
+    "$82$"
+   ],
+   "c": 3,
+   "a": "$0{,}4x+5=33$ ise $0{,}4x=28$ ve $x=70$ sayfadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0055",
+   "konu": "9.3.1",
+   "zorluk": 1,
+   "s": "Bir üçgenin iç açılarının ölçüleri $2x$, $3x$ ve $4x$ derecedir. En büyük açının ölçüsü kaç derecedir?",
+   "o": [
+    "$80$",
+    "$60$",
+    "$70$",
+    "$90$",
+    "$100$"
+   ],
+   "c": 0,
+   "a": "$2x+3x+4x=180^\\circ$ ise $x=20^\\circ$ olur. En büyük açı $4x=80^\\circ$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0056",
+   "konu": "9.3.1",
+   "zorluk": 2,
+   "s": "Şekilde $|AB|=|AC|$, $m(\\widehat{BAC})=50^\\circ$ ve $B$, $C$, $E$ noktaları doğrusaldır. $m(\\widehat{ACE})=x$ ise $x$ kaç derecedir?",
+   "o": [
+    "$115$",
+    "$50$",
+    "$65$",
+    "$130$",
+    "$140$"
+   ],
+   "c": 0,
+   "a": "İkizkenar üçgende taban açıları $\\dfrac{180^\\circ-50^\\circ}{2}=65^\\circ$ olur. $x$ dış açıdır: $x=180^\\circ-65^\\circ=115^\\circ$.",
+   "sekil": "<svg viewBox=\"0 0 240 180\"><polygon points=\"100,20 30,150 160,150\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"160\" y1=\"150\" x2=\"228\" y2=\"150\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><text x=\"96\" y=\"14\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"14\" y=\"164\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"152\" y=\"166\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"226\" y=\"166\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">E</text><text x=\"92\" y=\"48\" font-size=\"11\" fill=\"#FF8A1F\">50°</text><text x=\"172\" y=\"140\" font-size=\"12\" fill=\"#FF8A1F\">x</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0057",
+   "konu": "9.3.1",
+   "zorluk": 1,
+   "s": "$ABC$ üçgeninde $m(\\widehat{A})=50^\\circ$ ve $m(\\widehat{B})=60^\\circ$ ise kenar uzunlukları arasındaki doğru sıralama hangisidir?",
+   "o": [
+    "$|AB|<|AC|<|BC|$",
+    "$|AC|<|BC|<|AB|$",
+    "$|AB|<|BC|<|AC|$",
+    "$|BC|<|AB|<|AC|$",
+    "$|BC|<|AC|<|AB|$"
+   ],
+   "c": 4,
+   "a": "$m(\\widehat{C})=70^\\circ$ olur. $50^\\circ<60^\\circ<70^\\circ$ olduğundan karşılarındaki kenarlar da $|BC|<|AC|<|AB|$ biçiminde sıralanır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0058",
+   "konu": "9.3.1",
+   "zorluk": 3,
+   "s": "$ABC$ üçgeninde $|AB|=5$, $|BC|=9$, $|AC|=x$ ve $m(\\widehat{A})>m(\\widehat{B})>m(\\widehat{C})$ ise $x$ kaç farklı tam sayı değeri alır?",
+   "o": [
+    "$2$",
+    "$4$",
+    "$3$",
+    "$5$",
+    "$9$"
+   ],
+   "c": 2,
+   "a": "Büyük açının karşısındaki kenar büyüktür: $|BC|>|AC|>|AB|$ ise $5<x<9$. Üçgen eşitsizliği ($4<x<14$) de sağlanır. $x\\in\\{6,7,8\\}$ olup $3$ değer vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0059",
+   "konu": "9.3.1",
+   "zorluk": 3,
+   "s": "$ABC$ üçgeninde $B$ ve $C$ açılarının açıortayları $I$ noktasında kesişiyor. $m(\\widehat{A})=64^\\circ$ ise $m(\\widehat{BIC})$ kaç derecedir?",
+   "o": [
+    "$122$",
+    "$58$",
+    "$116$",
+    "$128$",
+    "$148$"
+   ],
+   "c": 0,
+   "a": "$m(\\widehat{BIC})=90^\\circ+\\dfrac{m(\\widehat{A})}{2}=90^\\circ+32^\\circ=122^\\circ$ olur. (Doğrulama: $\\dfrac{B+C}{2}=58^\\circ$ ve $180^\\circ-58^\\circ=122^\\circ$.)",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0060",
+   "konu": "9.3.1",
+   "zorluk": 2,
+   "s": "Bir üçgenin iki dış açısının ölçüsü $110^\\circ$ ve $130^\\circ$ ise üçüncü dış açısının ölçüsü kaç derecedir?",
+   "o": [
+    "$60$",
+    "$100$",
+    "$120$",
+    "$130$",
+    "$140$"
+   ],
+   "c": 2,
+   "a": "Bir üçgenin dış açılarının toplamı $360^\\circ$'dir. Üçüncü dış açı $360^\\circ-(110^\\circ+130^\\circ)=120^\\circ$ olur.",
+   "kaynak": "ozgun"
   }
  ]
 }

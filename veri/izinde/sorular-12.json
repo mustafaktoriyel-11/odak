@@ -1,0 +1,967 @@
+{
+ "sinif": "12",
+ "surum": 1,
+ "sorular": [
+  {
+   "id": "12-0001",
+   "konu": "12.1.1",
+   "zorluk": 1,
+   "s": "$f(x)=3^{x}$ fonksiyonu için $f(2)+f(-1)$ toplamı kaçtır?",
+   "o": [
+    "$\\dfrac{28}{3}$",
+    "$10$",
+    "$\\dfrac{28}{9}$",
+    "$8$",
+    "$\\dfrac{10}{3}$"
+   ],
+   "c": 0,
+   "a": "$f(2)=9$ ve $f(-1)=3^{-1}=\\dfrac{1}{3}$ olduğundan toplam $9+\\dfrac{1}{3}=\\dfrac{28}{3}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0002",
+   "konu": "12.1.1",
+   "zorluk": 1,
+   "s": "$f(x)=2^{x}-3$ fonksiyonunun grafiğinin yatay asimptotunun denklemi aşağıdakilerden hangisidir?",
+   "o": [
+    "$y=3$",
+    "$x=-3$",
+    "$y=0$",
+    "$y=-3$",
+    "$y=-2$"
+   ],
+   "c": 3,
+   "a": "$y=2^{x}$ grafiğinin yatay asimptotu $y=0$'dır. Grafik $3$ birim aşağı ötelendiğinde asimptot $y=-3$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0003",
+   "konu": "12.1.1",
+   "zorluk": 1,
+   "s": "$f(x)=a^{x}$ ve $f(3)=125$ olduğuna göre $f(-1)$ kaçtır?",
+   "o": [
+    "$-5$",
+    "$\\dfrac{1}{125}$",
+    "$\\dfrac{1}{25}$",
+    "$5$",
+    "$\\dfrac{1}{5}$"
+   ],
+   "c": 4,
+   "a": "$a^{3}=125$ ise $a=5$ olur. $f(-1)=5^{-1}=\\dfrac{1}{5}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0004",
+   "konu": "12.1.1",
+   "zorluk": 2,
+   "s": "$f(x)=a\\cdot b^{x}$ biçimindeki bir fonksiyonda $b>0$, $f(1)=6$ ve $f(3)=24$ olduğuna göre $f(4)$ kaçtır?",
+   "o": [
+    "$36$",
+    "$72$",
+    "$96$",
+    "$54$",
+    "$48$"
+   ],
+   "c": 4,
+   "a": "$\\dfrac{f(3)}{f(1)}=b^{2}=4$ ise $b=2$ olur. $a\\cdot 2=6$ ise $a=3$ ve $f(4)=3\\cdot 2^{4}=48$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0005",
+   "konu": "12.1.1",
+   "zorluk": 2,
+   "s": "$f(x)=(m-3)^{x}$ fonksiyonunun artan olması için $m$'nin alabileceği değerlerin kümesi aşağıdakilerden hangisidir?",
+   "o": [
+    "$m>3$",
+    "$m>4$",
+    "$m>5$",
+    "$3<m<4$",
+    "$m<4$"
+   ],
+   "c": 1,
+   "a": "$a^{x}$ fonksiyonu $a>1$ için artandır. $m-3>1$ ise $m>4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0006",
+   "konu": "12.1.1",
+   "zorluk": 2,
+   "s": "Bir bakteri kültüründe bakteri sayısı her $3$ saatte bir iki katına çıkmaktadır. Başlangıçta $100$ bakteri varsa $12$ saat sonra bakteri sayısı kaç olur?",
+   "o": [
+    "$3200$",
+    "$1200$",
+    "$1600$",
+    "$800$",
+    "$2400$"
+   ],
+   "c": 2,
+   "a": "$12$ saat, $4$ tane $3$ saatlik periyottur. Sayı $100\\cdot 2^{4}=1600$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0007",
+   "konu": "12.1.1",
+   "zorluk": 3,
+   "s": "$f(x)=4^{x}-2^{x+2}+7$ fonksiyonunun alabileceği en küçük değer kaçtır?",
+   "o": [
+    "$3$",
+    "$1$",
+    "$4$",
+    "$7$",
+    "$2$"
+   ],
+   "c": 0,
+   "a": "$2^{x}=t>0$ olsun. $f=t^{2}-4t+7=(t-2)^{2}+3$ olur. $t=2$ için ($x=1$) en küçük değer $3$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0008",
+   "konu": "12.1.2",
+   "zorluk": 1,
+   "s": "$\\log_{2}32+\\log_{3}\\dfrac{1}{9}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$3$",
+    "$-3$",
+    "$7$",
+    "$2$",
+    "$1$"
+   ],
+   "c": 0,
+   "a": "$\\log_{2}32=5$ ve $\\log_{3}\\dfrac{1}{9}=\\log_{3}3^{-2}=-2$ olduğundan toplam $3$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0009",
+   "konu": "12.1.2",
+   "zorluk": 2,
+   "s": "$\\log_{2}3=a$ olduğuna göre $\\log_{9}8$ ifadesinin $a$ cinsinden değeri aşağıdakilerden hangisidir?",
+   "o": [
+    "$\\dfrac{2}{3 a}$",
+    "$\\dfrac{3}{2 a}$",
+    "$\\dfrac{3}{a}$",
+    "$\\dfrac{3 a}{2}$",
+    "$\\dfrac{2 a}{3}$"
+   ],
+   "c": 1,
+   "a": "$\\log_{9}8=\\dfrac{\\log_{2}8}{\\log_{2}9}=\\dfrac{3}{2\\log_{2}3}=\\dfrac{3}{2a}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0010",
+   "konu": "12.1.2",
+   "zorluk": 2,
+   "s": "$f(x)=\\log_{x-1}(5-x)$ fonksiyonunun tanımlı olduğu tam sayı değerlerinin sayısı kaçtır?",
+   "o": [
+    "$2$",
+    "$3$",
+    "$0$",
+    "$4$",
+    "$1$"
+   ],
+   "c": 0,
+   "a": "Taban için $x-1>0$ ve $x-1\\neq 1$ olmalı, yani $x>1$, $x\\neq 2$. Logaritmanın içi için $5-x>0$, yani $x<5$. Tam sayılar $3$ ve $4$ olup $2$ tanedir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0011",
+   "konu": "12.1.2",
+   "zorluk": 1,
+   "s": "$\\log 2=a$ ve $\\log 3=b$ olduğuna göre $\\log 72$ değeri aşağıdakilerden hangisidir?",
+   "o": [
+    "$3a+2b$",
+    "$2a+3b$",
+    "$6ab$",
+    "$a+b+2$",
+    "$3a+3b$"
+   ],
+   "c": 0,
+   "a": "$72=2^{3}\\cdot 3^{2}$ olduğundan $\\log 72=3\\log 2+2\\log 3=3a+2b$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0012",
+   "konu": "12.1.2",
+   "zorluk": 2,
+   "s": "$f(x)=\\log_{3}(x-2)+1$ fonksiyonunun tersi $f^{-1}$ olduğuna göre $f^{-1}(3)$ kaçtır?",
+   "o": [
+    "$29$",
+    "$5$",
+    "$7$",
+    "$11$",
+    "$9$"
+   ],
+   "c": 3,
+   "a": "$f(a)=3$ olsun: $\\log_{3}(a-2)+1=3$ ise $\\log_{3}(a-2)=2$ ve $a-2=9$, yani $a=11$ olur. Bu nedenle $f^{-1}(3)=11$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0013",
+   "konu": "12.1.2",
+   "zorluk": 1,
+   "s": "$\\log_{2}(\\log_{3}x)=2$ olduğuna göre $x$ kaçtır?",
+   "o": [
+    "$27$",
+    "$12$",
+    "$64$",
+    "$81$",
+    "$9$"
+   ],
+   "c": 3,
+   "a": "$\\log_{3}x=2^{2}=4$ olur. Buradan $x=3^{4}=81$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0014",
+   "konu": "12.1.2",
+   "zorluk": 3,
+   "s": "$7^{\\log_{7}5+\\log_{49}9}$ ifadesinin değeri kaçtır?",
+   "o": [
+    "$8$",
+    "$15$",
+    "$30$",
+    "$14$",
+    "$45$"
+   ],
+   "c": 1,
+   "a": "$7^{\\log_{7}5}=5$ ve $7^{\\log_{49}9}=7^{\\frac{1}{2}\\log_{7}9}=9^{\\frac{1}{2}}=3$ olur. Üslerin toplamı çarpıma dönüşür: $5\\cdot 3=15$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0015",
+   "konu": "12.1.3",
+   "zorluk": 1,
+   "s": "$5^{x-1}=125$ denklemini sağlayan $x$ değeri kaçtır?",
+   "o": [
+    "$6$",
+    "$5$",
+    "$4$",
+    "$3$",
+    "$2$"
+   ],
+   "c": 2,
+   "a": "$125=5^{3}$ olduğundan $x-1=3$ ve $x=4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0016",
+   "konu": "12.1.3",
+   "zorluk": 1,
+   "s": "$\\log_{3}(2x-1)=2$ denkleminin çözümü kaçtır?",
+   "o": [
+    "$9$",
+    "$5$",
+    "$4$",
+    "$3$",
+    "$10$"
+   ],
+   "c": 1,
+   "a": "$2x-1=3^{2}=9$ ise $2x=10$ ve $x=5$ olur. Logaritmanın içi $9>0$ olduğundan çözüm uygundur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0017",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$\\left(\\dfrac{1}{2}\\right)^{x}>8$ eşitsizliğini sağlayan en büyük tam sayı değeri kaçtır?",
+   "o": [
+    "$3$",
+    "$-3$",
+    "$-2$",
+    "$-4$",
+    "$-5$"
+   ],
+   "c": 3,
+   "a": "$\\left(\\dfrac{1}{2}\\right)^{x}>\\left(\\dfrac{1}{2}\\right)^{-3}$ olur. Taban $1$'den küçük olduğundan eşitsizlik yön değiştirir: $x<-3$. En büyük tam sayı $-4$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0018",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$\\log_{2}x+\\log_{2}(x-2)=3$ denkleminin çözüm kümesi aşağıdakilerden hangisidir?",
+   "o": [
+    "$\\{-2,4\\}$",
+    "$\\{3,4\\}$",
+    "$\\{2\\}$",
+    "$\\{-2\\}$",
+    "$\\{4\\}$"
+   ],
+   "c": 4,
+   "a": "$\\log_{2}[x(x-2)]=3$ ise $x^{2}-2x-8=0$ ve $x=4$ veya $x=-2$ bulunur. $x>2$ koşulu gerektiğinden yalnızca $x=4$ uygundur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0019",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$\\log_{\\frac{1}{3}}(x-1)\\geq -2$ eşitsizliğini sağlayan kaç tam sayı vardır?",
+   "o": [
+    "$8$",
+    "$10$",
+    "$9$",
+    "$11$",
+    "$7$"
+   ],
+   "c": 2,
+   "a": "Taban $\\dfrac{1}{3}$ olduğundan $0<x-1\\leq \\left(\\dfrac{1}{3}\\right)^{-2}=9$ olur. Buradan $1<x\\leq 10$ ve tam sayılar $2,3,\\dots,10$ olup $9$ tanedir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0020",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$4^{x}-6\\cdot 2^{x}+8=0$ denkleminin çözüm kümesindeki elemanların çarpımı kaçtır?",
+   "o": [
+    "$8$",
+    "$1$",
+    "$2$",
+    "$3$",
+    "$6$"
+   ],
+   "c": 2,
+   "a": "$2^{x}=t$ ile $t^{2}-6t+8=0$ ve $t=2$ veya $t=4$ bulunur. Buradan $x=1$ veya $x=2$ olur; çarpım $2$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0021",
+   "konu": "12.1.3",
+   "zorluk": 3,
+   "s": "$3^{x}+3^{2-x}=10$ denkleminin çözüm kümesindeki elemanların toplamı kaçtır?",
+   "o": [
+    "$1$",
+    "$9$",
+    "$0$",
+    "$3$",
+    "$2$"
+   ],
+   "c": 4,
+   "a": "$3^{x}=t$ olsun. $t+\\dfrac{9}{t}=10$ ise $t^{2}-10t+9=0$ ve $t=1$ veya $t=9$ olur. Buradan $x=0$ veya $x=2$; toplam $2$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0022",
+   "konu": "12.1.3",
+   "zorluk": 3,
+   "s": "$\\log_{2}(x^{2}-3x)\\leq 2$ eşitsizliğini sağlayan kaç tam sayı vardır?",
+   "o": [
+    "$2$",
+    "$5$",
+    "$1$",
+    "$4$",
+    "$3$"
+   ],
+   "c": 0,
+   "a": "Önce $x^{2}-3x>0$ olmalıdır: $x<0$ veya $x>3$. Ayrıca $x^{2}-3x\\leq 4$ ise $-1\\leq x\\leq 4$ olur. Ortak çözüm $[-1,0)\\cup(3,4]$ olup tam sayılar $-1$ ve $4$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0023",
+   "konu": "12.2.1",
+   "zorluk": 1,
+   "s": "Genel terimi $a_{n}=3n-2$ olan dizinin $10$. terimi kaçtır?",
+   "o": [
+    "$31$",
+    "$28$",
+    "$30$",
+    "$32$",
+    "$25$"
+   ],
+   "c": 1,
+   "a": "$a_{10}=3\\cdot 10-2=28$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0024",
+   "konu": "12.2.1",
+   "zorluk": 1,
+   "s": "Bir aritmetik dizide $a_{3}=11$ ve $a_{7}=23$ olduğuna göre $a_{20}$ kaçtır?",
+   "o": [
+    "$57$",
+    "$60$",
+    "$62$",
+    "$59$",
+    "$65$"
+   ],
+   "c": 2,
+   "a": "$a_{7}-a_{3}=4d=12$ ise $d=3$ olur. $a_{1}=11-2\\cdot 3=5$ ve $a_{20}=5+19\\cdot 3=62$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0025",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "İlk terimi $5$, ortak farkı $3$ olan aritmetik dizinin ilk $20$ teriminin toplamı kaçtır?",
+   "o": [
+    "$335$",
+    "$620$",
+    "$670$",
+    "$1340$",
+    "$640$"
+   ],
+   "c": 2,
+   "a": "$S_{20}=\\dfrac{20}{2}\\,[2\\cdot 5+19\\cdot 3]=10\\cdot 67=670$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0026",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "Bir geometrik dizide $a_{2}=6$ ve $a_{5}=162$ olduğuna göre $a_{6}$ kaçtır?",
+   "o": [
+    "$480$",
+    "$324$",
+    "$486$",
+    "$1458$",
+    "$243$"
+   ],
+   "c": 2,
+   "a": "$\\dfrac{a_{5}}{a_{2}}=r^{3}=27$ ise $r=3$ olur. $a_{1}=\\dfrac{6}{3}=2$ ve $a_{6}=2\\cdot 3^{5}=486$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0027",
+   "konu": "12.2.1",
+   "zorluk": 1,
+   "s": "Bir aritmetik dizide $a_{4}+a_{10}=44$ olduğuna göre $a_{7}$ kaçtır?",
+   "o": [
+    "$20$",
+    "$22$",
+    "$24$",
+    "$44$",
+    "$11$"
+   ],
+   "c": 1,
+   "a": "$a_{4}+a_{10}=2a_{7}$ olduğundan $a_{7}=\\dfrac{44}{2}=22$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0028",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "Genel terimi $a_{n}=\\dfrac{2n+1}{n+3}$ olan dizinin kaçıncı terimi $\\dfrac{3}{2}$'dir?",
+   "o": [
+    "$8$",
+    "$7$",
+    "$6$",
+    "$9$",
+    "$5$"
+   ],
+   "c": 1,
+   "a": "$\\dfrac{2n+1}{n+3}=\\dfrac{3}{2}$ ise $4n+2=3n+9$ olur. Buradan $n=7$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0029",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "$3+6+12+24+\\dots$ geometrik dizisinin ilk $8$ teriminin toplamı kaçtır?",
+   "o": [
+    "$381$",
+    "$765$",
+    "$768$",
+    "$1533$",
+    "$510$"
+   ],
+   "c": 1,
+   "a": "İlk terim $3$, ortak çarpan $2$'dir. $S_{8}=3\\cdot\\dfrac{2^{8}-1}{2-1}=3\\cdot 255=765$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0030",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "$a_{1}=1$ ve $a_{n+1}=a_{n}+2n$ ($n\\geq 1$) eşitliğiyle tanımlanan dizinin $5$. terimi kaçtır?",
+   "o": [
+    "$21$",
+    "$17$",
+    "$19$",
+    "$31$",
+    "$25$"
+   ],
+   "c": 0,
+   "a": "$a_{2}=1+2=3$, $a_{3}=3+4=7$, $a_{4}=7+6=13$, $a_{5}=13+8=21$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0031",
+   "konu": "12.2.1",
+   "zorluk": 3,
+   "s": "Bir dizinin ilk $n$ teriminin toplamı $S_{n}=n^{2}+4n$ ile veriliyor. Bu dizinin $10$. terimi kaçtır?",
+   "o": [
+    "$21$",
+    "$23$",
+    "$140$",
+    "$24$",
+    "$25$"
+   ],
+   "c": 1,
+   "a": "$a_{10}=S_{10}-S_{9}=(100+40)-(81+36)=140-117=23$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0032",
+   "konu": "12.3.1",
+   "zorluk": 1,
+   "s": "$\\sin 75^\\circ$ değeri aşağıdakilerden hangisidir?",
+   "o": [
+    "$\\dfrac{\\sqrt{2}}{2} + \\dfrac{\\sqrt{6}}{2}$",
+    "$\\dfrac{\\sqrt{3}}{2}$",
+    "$\\dfrac{1}{2} + \\dfrac{\\sqrt{3}}{2}$",
+    "$- \\dfrac{\\sqrt{2}}{4} + \\dfrac{\\sqrt{6}}{4}$",
+    "$\\dfrac{\\sqrt{2}}{4} + \\dfrac{\\sqrt{6}}{4}$"
+   ],
+   "c": 4,
+   "a": "$\\sin 75^\\circ=\\sin(45^\\circ+30^\\circ)=\\dfrac{\\sqrt{2}}{2}\\cdot\\dfrac{\\sqrt{3}}{2}+\\dfrac{\\sqrt{2}}{2}\\cdot\\dfrac{1}{2}=\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0033",
+   "konu": "12.3.1",
+   "zorluk": 1,
+   "s": "$x$ dar açı ve $\\sin x=\\dfrac{3}{5}$ olduğuna göre $\\sin 2x$ kaçtır?",
+   "o": [
+    "$\\dfrac{12}{25}$",
+    "$\\dfrac{6}{5}$",
+    "$\\dfrac{24}{25}$",
+    "$\\dfrac{7}{25}$",
+    "$\\dfrac{4}{5}$"
+   ],
+   "c": 2,
+   "a": "$\\cos x=\\dfrac{4}{5}$ olur. $\\sin 2x=2\\sin x\\cos x=2\\cdot\\dfrac{3}{5}\\cdot\\dfrac{4}{5}=\\dfrac{24}{25}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0034",
+   "konu": "12.3.1",
+   "zorluk": 1,
+   "s": "$\\sin x=\\dfrac{1}{3}$ olduğuna göre $\\cos 2x$ kaçtır?",
+   "o": [
+    "$\\dfrac{2}{9}$",
+    "$\\dfrac{1}{9}$",
+    "$- \\dfrac{7}{9}$",
+    "$\\dfrac{7}{9}$",
+    "$\\dfrac{8}{9}$"
+   ],
+   "c": 3,
+   "a": "$\\cos 2x=1-2\\sin^{2}x=1-2\\cdot\\dfrac{1}{9}=\\dfrac{7}{9}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0035",
+   "konu": "12.3.1",
+   "zorluk": 2,
+   "s": "$\\tan a=2$ ve $\\tan b=3$ olduğuna göre $\\tan(a+b)$ kaçtır?",
+   "o": [
+    "$5$",
+    "$-7$",
+    "$-5$",
+    "$-1$",
+    "$1$"
+   ],
+   "c": 3,
+   "a": "$\\tan(a+b)=\\dfrac{\\tan a+\\tan b}{1-\\tan a\\tan b}=\\dfrac{5}{1-6}=-1$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0036",
+   "konu": "12.3.1",
+   "zorluk": 1,
+   "s": "$\\sin 40^\\circ\\cos 20^\\circ+\\cos 40^\\circ\\sin 20^\\circ$ işleminin sonucu kaçtır?",
+   "o": [
+    "$1$",
+    "$\\dfrac{\\sqrt{3}}{2}$",
+    "$\\dfrac{\\sqrt{2}}{2}$",
+    "$\\dfrac{1}{4}$",
+    "$\\dfrac{1}{2}$"
+   ],
+   "c": 1,
+   "a": "İfade $\\sin(40^\\circ+20^\\circ)=\\sin 60^\\circ=\\dfrac{\\sqrt{3}}{2}$ değerine eşittir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0037",
+   "konu": "12.3.1",
+   "zorluk": 2,
+   "s": "$\\sin x+\\cos x=\\dfrac{1}{2}$ olduğuna göre $\\sin 2x$ kaçtır?",
+   "o": [
+    "$- \\dfrac{3}{4}$",
+    "$\\dfrac{1}{4}$",
+    "$- \\dfrac{1}{4}$",
+    "$\\dfrac{3}{4}$",
+    "$- \\dfrac{1}{2}$"
+   ],
+   "c": 0,
+   "a": "Eşitliğin karesi: $1+2\\sin x\\cos x=\\dfrac{1}{4}$ ise $\\sin 2x=\\dfrac{1}{4}-1=-\\dfrac{3}{4}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0038",
+   "konu": "12.3.1",
+   "zorluk": 2,
+   "s": "$\\tan x=3$ olduğuna göre $\\sin 2x$ kaçtır?",
+   "o": [
+    "$\\dfrac{3}{5}$",
+    "$\\dfrac{6}{5}$",
+    "$\\dfrac{4}{5}$",
+    "$\\dfrac{3}{4}$",
+    "$\\dfrac{3}{10}$"
+   ],
+   "c": 0,
+   "a": "$\\sin 2x=\\dfrac{2\\tan x}{1+\\tan^{2}x}=\\dfrac{6}{10}=\\dfrac{3}{5}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0039",
+   "konu": "12.3.1",
+   "zorluk": 3,
+   "s": "$\\cos 75^\\circ\\cdot\\cos 15^\\circ$ çarpımı kaçtır?",
+   "o": [
+    "$\\dfrac{\\sqrt{3}}{4}$",
+    "$\\dfrac{3}{4}$",
+    "$\\dfrac{1}{8}$",
+    "$\\dfrac{1}{4}$",
+    "$\\dfrac{1}{2}$"
+   ],
+   "c": 3,
+   "a": "$\\cos 75^\\circ=\\sin 15^\\circ$ olduğundan çarpım $\\sin 15^\\circ\\cos 15^\\circ=\\dfrac{1}{2}\\sin 30^\\circ=\\dfrac{1}{4}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0040",
+   "konu": "12.3.1",
+   "zorluk": 3,
+   "s": "$\\dfrac{\\pi}{2}<a<\\pi$, $\\dfrac{3\\pi}{2}<b<2\\pi$, $\\sin a=\\dfrac{4}{5}$ ve $\\cos b=\\dfrac{5}{13}$ olduğuna göre $\\cos(a-b)$ kaçtır?",
+   "o": [
+    "$- \\dfrac{3}{13}$",
+    "$\\dfrac{63}{65}$",
+    "$- \\dfrac{33}{65}$",
+    "$- \\dfrac{63}{65}$",
+    "$\\dfrac{33}{65}$"
+   ],
+   "c": 3,
+   "a": "$\\cos a=-\\dfrac{3}{5}$ ve $\\sin b=-\\dfrac{12}{13}$ olur. $\\cos(a-b)=\\cos a\\cos b+\\sin a\\sin b=-\\dfrac{15}{65}-\\dfrac{48}{65}=-\\dfrac{63}{65}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0041",
+   "konu": "12.3.2",
+   "zorluk": 1,
+   "s": "$\\sin x=\\dfrac{1}{2}$ denkleminin $[0^\\circ,360^\\circ)$ aralığındaki çözümlerinin toplamı kaç derecedir?",
+   "o": [
+    "$210^\\circ$",
+    "$360^\\circ$",
+    "$150^\\circ$",
+    "$30^\\circ$",
+    "$180^\\circ$"
+   ],
+   "c": 4,
+   "a": "Çözümler $30^\\circ$ ve $150^\\circ$'dir. Toplam $180^\\circ$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0042",
+   "konu": "12.3.2",
+   "zorluk": 1,
+   "s": "$2\\cos x-1=0$ denkleminin $[0,2\\pi)$ aralığındaki köklerinin toplamı kaçtır?",
+   "o": [
+    "$\\pi$",
+    "$2 \\pi$",
+    "$3 \\pi$",
+    "$\\dfrac{\\pi}{3}$",
+    "$\\dfrac{4 \\pi}{3}$"
+   ],
+   "c": 1,
+   "a": "$\\cos x=\\dfrac{1}{2}$ ise $x=\\dfrac{\\pi}{3}$ veya $x=\\dfrac{5\\pi}{3}$ olur. Toplam $2\\pi$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0043",
+   "konu": "12.3.2",
+   "zorluk": 2,
+   "s": "$2\\sin^{2}x-\\sin x-1=0$ denkleminin $[0,2\\pi)$ aralığında kaç farklı kökü vardır?",
+   "o": [
+    "$3$",
+    "$5$",
+    "$1$",
+    "$2$",
+    "$4$"
+   ],
+   "c": 0,
+   "a": "$(2\\sin x+1)(\\sin x-1)=0$ olur. $\\sin x=1$ için $x=\\dfrac{\\pi}{2}$; $\\sin x=-\\dfrac{1}{2}$ için $x=\\dfrac{7\\pi}{6}$ ve $x=\\dfrac{11\\pi}{6}$ bulunur. Toplam $3$ kök vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0044",
+   "konu": "12.3.2",
+   "zorluk": 2,
+   "s": "$\\sin 2x=\\sin x$ denkleminin $[0,2\\pi)$ aralığında kaç farklı çözümü vardır?",
+   "o": [
+    "$3$",
+    "$5$",
+    "$6$",
+    "$2$",
+    "$4$"
+   ],
+   "c": 4,
+   "a": "$2\\sin x\\cos x-\\sin x=0$ ise $\\sin x(2\\cos x-1)=0$ olur. $\\sin x=0$ için $x=0,\\pi$; $\\cos x=\\dfrac{1}{2}$ için $x=\\dfrac{\\pi}{3},\\dfrac{5\\pi}{3}$ bulunur. Toplam $4$ çözüm vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0045",
+   "konu": "12.3.2",
+   "zorluk": 3,
+   "s": "$\\cos 2x+3\\sin x-2=0$ denkleminin $[0,2\\pi)$ aralığındaki köklerinin toplamı kaçtır?",
+   "o": [
+    "$2 \\pi$",
+    "$\\pi$",
+    "$\\dfrac{5 \\pi}{2}$",
+    "$\\dfrac{3 \\pi}{2}$",
+    "$3 \\pi$"
+   ],
+   "c": 3,
+   "a": "$1-2\\sin^{2}x+3\\sin x-2=0$ ise $2\\sin^{2}x-3\\sin x+1=0$ ve $\\sin x=1$ veya $\\sin x=\\dfrac{1}{2}$ olur. Kökler $\\dfrac{\\pi}{2},\\dfrac{\\pi}{6},\\dfrac{5\\pi}{6}$ olup toplamları $\\dfrac{3\\pi}{2}$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0046",
+   "konu": "12.3.2",
+   "zorluk": 1,
+   "s": "$\\sin x=-\\dfrac{\\sqrt{3}}{2}$ denkleminin $[0,2\\pi)$ aralığındaki en küçük kökü kaçtır?",
+   "o": [
+    "$\\dfrac{5 \\pi}{3}$",
+    "$\\dfrac{2 \\pi}{3}$",
+    "$\\dfrac{\\pi}{3}$",
+    "$\\dfrac{7 \\pi}{6}$",
+    "$\\dfrac{4 \\pi}{3}$"
+   ],
+   "c": 4,
+   "a": "Sinüs değeri negatif olduğundan kökler 3. ve 4. bölgededir: $\\dfrac{4\\pi}{3}$ ve $\\dfrac{5\\pi}{3}$. En küçüğü $\\dfrac{4\\pi}{3}$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0047",
+   "konu": "12.3.2",
+   "zorluk": 3,
+   "s": "$\\sin 3x=\\dfrac{1}{2}$ denkleminin $[0,\\pi]$ aralığında kaç farklı çözümü vardır?",
+   "o": [
+    "$2$",
+    "$5$",
+    "$6$",
+    "$3$",
+    "$4$"
+   ],
+   "c": 4,
+   "a": "$3x\\in[0,3\\pi]$ aralığında $\\sin t=\\dfrac{1}{2}$ için $t=\\dfrac{\\pi}{6},\\dfrac{5\\pi}{6},\\dfrac{13\\pi}{6},\\dfrac{17\\pi}{6}$ olur. $x=\\dfrac{t}{3}$ olduğundan $4$ çözüm vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0048",
+   "konu": "12.3.2",
+   "zorluk": 2,
+   "s": "$\\sin x+\\cos x=1$ denkleminin $[0,2\\pi)$ aralığındaki köklerinin toplamı kaçtır?",
+   "o": [
+    "$\\dfrac{3 \\pi}{2}$",
+    "$\\dfrac{\\pi}{2}$",
+    "$\\pi$",
+    "$2 \\pi$",
+    "$\\dfrac{\\pi}{4}$"
+   ],
+   "c": 1,
+   "a": "Eşitliğin karesi alınırsa $1+\\sin 2x=1$ ve $\\sin 2x=0$ bulunur. Adaylar $0,\\dfrac{\\pi}{2},\\pi,\\dfrac{3\\pi}{2}$ olup sağlayanlar $0$ ve $\\dfrac{\\pi}{2}$'dir. Toplam $\\dfrac{\\pi}{2}$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0049",
+   "konu": "12.3.2",
+   "zorluk": 2,
+   "s": "$\\cos x=\\dfrac{\\sqrt{2}}{2}$ denkleminin $[0^\\circ,720^\\circ)$ aralığındaki kaç farklı çözümü vardır?",
+   "o": [
+    "$2$",
+    "$8$",
+    "$6$",
+    "$4$",
+    "$3$"
+   ],
+   "c": 3,
+   "a": "$[0^\\circ,360^\\circ)$ aralığında çözümler $45^\\circ$ ve $315^\\circ$'dir. Kosinüsün periyodu $360^\\circ$ olduğundan bir tur daha eklenince $405^\\circ$ ve $675^\\circ$ da çözümdür. Toplam $4$ çözüm vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0050",
+   "konu": "12.4.1",
+   "zorluk": 1,
+   "s": "Şekilde $A$ noktası, bir öteleme ile $A'$ noktasına taşınmıştır. Aynı öteleme ile $B(-1,2)$ noktasının görüntüsünün koordinatları aşağıdakilerden hangisidir?",
+   "o": [
+    "$(-4,0)$",
+    "$(4,2)$",
+    "$(2,3)$",
+    "$(3,4)$",
+    "$(2,4)$"
+   ],
+   "c": 4,
+   "a": "$A(2,1)$ noktası $A'(5,3)$ noktasına gittiğine göre öteleme vektörü $(3,2)$'dir. $B$ için $(-1+3,\\,2+2)=(2,4)$ bulunur.",
+   "sekil": "<svg viewBox=\"0 0 200 150\"><line x1=\"15\" y1=\"105\" x2=\"185\" y2=\"105\" stroke=\"#141B3F\" stroke-width=\"1.2\"/><line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"125\" stroke=\"#141B3F\" stroke-width=\"1.2\"/><line x1=\"15\" y1=\"103\" x2=\"15\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"15\" y=\"117\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">-3</text><line x1=\"30\" y1=\"103\" x2=\"30\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"30\" y=\"117\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">-2</text><line x1=\"45\" y1=\"103\" x2=\"45\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"45\" y=\"117\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">-1</text><line x1=\"60\" y1=\"103\" x2=\"60\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"75\" y1=\"103\" x2=\"75\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"75\" y=\"117\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">1</text><line x1=\"90\" y1=\"103\" x2=\"90\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"90\" y=\"117\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">2</text><line x1=\"105\" y1=\"103\" x2=\"105\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"105\" y=\"117\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">3</text><line x1=\"120\" y1=\"103\" x2=\"120\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"120\" y=\"117\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">4</text><line x1=\"135\" y1=\"103\" x2=\"135\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"135\" y=\"117\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">5</text><line x1=\"150\" y1=\"103\" x2=\"150\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"150\" y=\"117\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">6</text><line x1=\"165\" y1=\"103\" x2=\"165\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"165\" y=\"117\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">7</text><line x1=\"180\" y1=\"103\" x2=\"180\" y2=\"107\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"180\" y=\"117\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">8</text><line x1=\"58\" y1=\"120\" x2=\"62\" y2=\"120\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"54\" y=\"123\" font-size=\"8\" text-anchor=\"end\" fill=\"#141B3F\">-1</text><line x1=\"58\" y1=\"105\" x2=\"62\" y2=\"105\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"58\" y1=\"90\" x2=\"62\" y2=\"90\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"54\" y=\"93\" font-size=\"8\" text-anchor=\"end\" fill=\"#141B3F\">1</text><line x1=\"58\" y1=\"75\" x2=\"62\" y2=\"75\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"54\" y=\"78\" font-size=\"8\" text-anchor=\"end\" fill=\"#141B3F\">2</text><line x1=\"58\" y1=\"60\" x2=\"62\" y2=\"60\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"54\" y=\"63\" font-size=\"8\" text-anchor=\"end\" fill=\"#141B3F\">3</text><line x1=\"58\" y1=\"45\" x2=\"62\" y2=\"45\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"54\" y=\"48\" font-size=\"8\" text-anchor=\"end\" fill=\"#141B3F\">4</text><line x1=\"58\" y1=\"30\" x2=\"62\" y2=\"30\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"54\" y=\"33\" font-size=\"8\" text-anchor=\"end\" fill=\"#141B3F\">5</text><line x1=\"58\" y1=\"15\" x2=\"62\" y2=\"15\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"54\" y=\"18\" font-size=\"8\" text-anchor=\"end\" fill=\"#141B3F\">6</text><circle cx=\"90\" cy=\"90\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><text x=\"96\" y=\"84\" font-size=\"9\" text-anchor=\"start\" fill=\"#141B3F\">A</text><circle cx=\"135\" cy=\"60\" r=\"3\" fill=\"#FF8A1F\" stroke=\"#FF8A1F\" stroke-width=\"1\"/><text x=\"141\" y=\"54\" font-size=\"9\" text-anchor=\"start\" fill=\"#141B3F\">A'</text><circle cx=\"45\" cy=\"75\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><text x=\"51\" y=\"69\" font-size=\"9\" text-anchor=\"start\" fill=\"#141B3F\">B</text><line x1=\"90\" y1=\"90\" x2=\"135\" y2=\"60\" stroke=\"#FF8A1F\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\"/></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0051",
+   "konu": "12.4.1",
+   "zorluk": 1,
+   "s": "$A(3,-2)$ noktasının $x$ eksenine göre yansıması olan noktanın koordinatları aşağıdakilerden hangisidir?",
+   "o": [
+    "$(2,-3)$",
+    "$(-3,-2)$",
+    "$(-3,2)$",
+    "$(3,2)$",
+    "$(-2,3)$"
+   ],
+   "c": 3,
+   "a": "$x$ eksenine göre yansımada $(x,y)\\to(x,-y)$ olur. $A(3,-2)$ için görüntü $(3,2)$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0052",
+   "konu": "12.4.1",
+   "zorluk": 1,
+   "s": "$B(-4,7)$ noktasının $y=x$ doğrusuna göre yansıması aşağıdakilerden hangisidir?",
+   "o": [
+    "$(7,-4)$",
+    "$(-7,4)$",
+    "$(-4,-7)$",
+    "$(4,7)$",
+    "$(4,-7)$"
+   ],
+   "c": 0,
+   "a": "$y=x$ doğrusuna göre yansımada $(x,y)\\to(y,x)$ olur. $B(-4,7)$ için görüntü $(7,-4)$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0053",
+   "konu": "12.4.1",
+   "zorluk": 2,
+   "s": "Orijin etrafında pozitif yönde (saat yönünün tersine) $90^\\circ$ dönme, $(x,y)\\to(-y,x)$ biçimindedir. Bu dönmeyle $P(4,-3)$ noktasının görüntüsü aşağıdakilerden hangisidir?",
+   "o": [
+    "$(-4,-3)$",
+    "$(-3,-4)$",
+    "$(-4,3)$",
+    "$(3,-4)$",
+    "$(3,4)$"
+   ],
+   "c": 4,
+   "a": "$(x,y)=(4,-3)$ için $(-y,x)=(3,4)$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0054",
+   "konu": "12.4.1",
+   "zorluk": 2,
+   "s": "$y=2x+3$ doğrusunun orijine göre simetriği (orijin etrafında $180^\\circ$ dönmüşü) olan doğrunun denklemi aşağıdakilerden hangisidir?",
+   "o": [
+    "$y=-2x+3$",
+    "$y=-2x-3$",
+    "$y=2x+3$",
+    "$y=\\dfrac{x}{2}-3$",
+    "$y=2x-3$"
+   ],
+   "c": 4,
+   "a": "$(x,y)\\to(-x,-y)$ dönüşümünde $-y=2(-x)+3$ olur; yani $y=2x-3$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0055",
+   "konu": "12.4.1",
+   "zorluk": 2,
+   "s": "$y=-x$ doğrusuna göre yansıma $(x,y)\\to(-y,-x)$ biçimindedir. Buna göre $P(5,2)$ noktasının görüntüsü aşağıdakilerden hangisidir?",
+   "o": [
+    "$(-2,5)$",
+    "$(-5,-2)$",
+    "$(-2,-5)$",
+    "$(2,-5)$",
+    "$(2,5)$"
+   ],
+   "c": 2,
+   "a": "$(x,y)=(5,2)$ için $(-y,-x)=(-2,-5)$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0056",
+   "konu": "12.4.1",
+   "zorluk": 2,
+   "s": "$y=x^{2}$ parabolü $2$ birim sağa ve $3$ birim aşağı ötelendiğinde elde edilen eğrinin $y$ eksenini kestiği nokta aşağıdakilerden hangisidir?",
+   "o": [
+    "$(0,-1)$",
+    "$(0,-3)$",
+    "$(0,1)$",
+    "$(0,7)$",
+    "$(0,4)$"
+   ],
+   "c": 2,
+   "a": "Görüntü eğrinin denklemi $y=(x-2)^{2}-3$ olur. $x=0$ için $y=4-3=1$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0057",
+   "konu": "12.4.1",
+   "zorluk": 2,
+   "s": "$A(2,5)$ noktasına önce $x$ eksenine göre yansıma, sonra elde edilen noktaya $y=x$ doğrusuna göre yansıma uygulanıyor. Son noktanın koordinatları aşağıdakilerden hangisidir?",
+   "o": [
+    "$(-2,-5)$",
+    "$(5,-2)$",
+    "$(-2,5)$",
+    "$(-5,2)$",
+    "$(5,2)$"
+   ],
+   "c": 3,
+   "a": "$x$ eksenine göre yansıma: $(2,5)\\to(2,-5)$. $y=x$ doğrusuna göre yansıma: $(2,-5)\\to(-5,2)$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0058",
+   "konu": "12.4.1",
+   "zorluk": 3,
+   "s": "$A(1,2)$ noktasının $x=3$ doğrusuna göre yansıması $A'$ noktasıdır. $A'$ noktası orijin etrafında pozitif yönde $90^\\circ$ döndürülürse ($(x,y)\\to(-y,x)$) elde edilen nokta aşağıdakilerden hangisidir?",
+   "o": [
+    "$(-2,-1)$",
+    "$(-5,2)$",
+    "$(-2,5)$",
+    "$(2,5)$",
+    "$(5,-2)$"
+   ],
+   "c": 2,
+   "a": "$x=3$ doğrusuna göre yansımada $x\\to 6-x$ olur: $A'(5,2)$. $90^\\circ$ dönmeyle $(-2,5)$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0059",
+   "konu": "12.4.1",
+   "zorluk": 3,
+   "s": "$M(1,1)$ merkezli, pozitif yönde $90^\\circ$ dönme ile $B(4,1)$ noktasının görüntüsü aşağıdakilerden hangisidir?",
+   "o": [
+    "$(4,-2)$",
+    "$(-1,4)$",
+    "$(1,4)$",
+    "$(1,-2)$",
+    "$(-2,1)$"
+   ],
+   "c": 2,
+   "a": "$B$'nin $M$'ye göre konum vektörü $(3,0)$'dır. $90^\\circ$ dönmeyle bu vektör $(0,3)$ olur. Görüntü $M+(0,3)=(1,4)$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0060",
+   "konu": "12.4.1",
+   "zorluk": 2,
+   "s": "$y=2x-1$ doğrusunun $y=x$ doğrusuna göre yansıması olan doğrunun eğimi kaçtır?",
+   "o": [
+    "$\\dfrac{1}{2}$",
+    "$2$",
+    "$1$",
+    "$-2$",
+    "$- \\dfrac{1}{2}$"
+   ],
+   "c": 0,
+   "a": "$(x,y)\\to(y,x)$ yansımasında $x=2y-1$ olur; buradan $y=\\dfrac{x+1}{2}$ ve eğim $\\dfrac{1}{2}$ bulunur.",
+   "kaynak": "ozgun"
+  }
+ ]
+}
