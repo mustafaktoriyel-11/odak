@@ -964,6 +964,745 @@
    "c": 3,
    "a": "Dik olmayan kenarın taban doğrultusundaki izdüşümü $19-7=12$ cm'dir. Yükseklik $\\sqrt{13^2-12^2}=5$ cm olur. Alan $\\dfrac{(7+19)\\cdot 5}{2}=65$ $\\text{cm}^2$'dir.",
    "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0061",
+   "konu": "11.1.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki korelasyon katsayısı ($r$) değerlerinden hangisi, iki nicel değişken arasındaki en güçlü negatif yönlü doğrusal ilişkiyi gösterir?",
+   "o": [
+    "$-0{,}35$",
+    "$-0{,}92$",
+    "$0{,}05$",
+    "$0{,}60$",
+    "$0{,}95$"
+   ],
+   "c": 1,
+   "a": "$r$ değeri $-1$'e ne kadar yakınsa ilişki o kadar güçlü ve negatif yönlüdür. Verilenler arasında $-1$'e en yakın değer $-0{,}92$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0062",
+   "konu": "11.1.1",
+   "zorluk": 2,
+   "s": "$(2,5),(4,9),(6,13),(8,17)$ noktalarının hepsi bir doğru üzerindedir. Bu doğru eğilim doğrusu olarak kullanılırsa $x=10$ için tahmin edilen $y$ değeri kaçtır?",
+   "o": [
+    "$21$",
+    "$20$",
+    "$19$",
+    "$22$",
+    "$25$"
+   ],
+   "c": 0,
+   "a": "Doğrunun eğimi $\\dfrac{9-5}{4-2}=2$, $y$-kesişimi $1$ olduğundan $y=2x+1$ bulunur. $x=10$ için $y=21$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0063",
+   "konu": "11.1.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki araştırma sorularından hangisi iki nicel değişken arasındaki ilişkiyi incelemeye uygundur?",
+   "o": [
+    "Hangi sınıf düzeyinde daha çok öğrenci vardır?",
+    "Bir sınıftaki öğrencilerin haftalık uyku süresi ile matematik notu arasında ilişki var mıdır?",
+    "Okulumuzdaki öğrencilerin en sevdiği renk hangisidir?",
+    "Öğrencilerin kaçı gözlük kullanmaktadır?",
+    "Matematik dersini hangi öğretmenin vereceği nasıl belirlenir?"
+   ],
+   "c": 1,
+   "a": "İki nicel değişken (uyku süresi ve not) aynı kişilerden ölçülerek aralarındaki ilişki incelenebilir. Diğer sorular tek bir kategorik değişkene veya sayma işlemine yöneliktir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0065",
+   "konu": "11.1.1",
+   "zorluk": 2,
+   "s": "Bir veri kümesinde $x$ değerlerinin ortalaması $6$, $y$ değerlerinin ortalaması $20$ ve eğilim doğrusunun eğimi $2{,}5$'tir. Bu doğruya göre $x=10$ için tahmin kaçtır?",
+   "o": [
+    "$35$",
+    "$25$",
+    "$32$",
+    "$30$",
+    "$27$"
+   ],
+   "c": 3,
+   "a": "Eğilim doğrusu $(6,20)$ ortalama noktasından geçer: $y-20=2{,}5(x-6)$. $x=10$ için $y=20+2{,}5\\cdot4=30$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0066",
+   "konu": "11.1.1",
+   "zorluk": 2,
+   "s": "Bir lisede devamsızlık gün sayısı $x$ ve deneme neti $y$ olmak üzere eğilim doğrusu $y=-1{,}5x+48$ bulunmuştur. Bu doğrunun eğimiyle ilgili hangi yorum doğrudur?",
+   "o": [
+    "Devamsızlık $1{,}5$ gün arttığında net $1$ azalır.",
+    "Devamsızlık $1$ gün arttığında deneme neti ortalama $48$ azalır.",
+    "Devamsızlık $1$ gün arttığında deneme neti ortalama $1{,}5$ artar.",
+    "Devamsızlık $1$ gün arttığında deneme neti ortalama $1{,}5$ azalır.",
+    "Devamsızlığı olmayan her öğrencinin neti tam olarak $48$'dir."
+   ],
+   "c": 3,
+   "a": "Eğim $-1{,}5$ olduğundan $x$ bir birim arttığında $y$ ortalama $1{,}5$ birim azalır. $48$ ise $x=0$ için tahmindir ve her bireyde tam olarak gerçekleşmez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0067",
+   "konu": "11.1.1",
+   "zorluk": 2,
+   "s": "$(1,3),(2,5),(3,4),(4,7),(5,6)$ noktalarına en küçük kareler yöntemiyle uydurulan eğilim doğrusu $y=0{,}8x+2{,}6$'dır. Bu doğruya göre $x=6$ için tahmin kaçtır?",
+   "o": [
+    "$7{,}8$",
+    "$6{,}8$",
+    "$7{,}2$",
+    "$7$",
+    "$7{,}4$"
+   ],
+   "c": 4,
+   "a": "$y=0{,}8\\cdot6+2{,}6=4{,}8+2{,}6=7{,}4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0068",
+   "konu": "11.1.1",
+   "zorluk": 1,
+   "s": "Bir eğilim doğrusunun eğimi $0$ olarak bulunmuştur. Bu durum için aşağıdakilerden hangisi söylenebilir?",
+   "o": [
+    "Veriler hatalı toplanmıştır.",
+    "$x$ değiştiğinde $y$ için yapılan tahmin değişmez; doğrusal ilişki gözlenmemiştir.",
+    "Tüm noktalar $y$ ekseni üzerindedir.",
+    "$x$ arttıkça $y$ kesinlikle azalır.",
+    "$x$ arttıkça $y$ kesinlikle artar."
+   ],
+   "c": 1,
+   "a": "Eğim $0$ ise doğru yataydır; $x$ ne olursa olsun tahmin edilen $y$ aynı kalır. Bu, değişkenler arasında doğrusal bir ilişki olmadığını gösterir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0069",
+   "konu": "11.1.1",
+   "zorluk": 1,
+   "s": "Şekildeki saçılım grafiğine çizilecek eğilim doğrusu için aşağıdakilerden hangisi doğrudur?",
+   "o": [
+    "Eğimi negatiftir; $x$ arttıkça tahmin edilen $y$ azalır.",
+    "Eğimi pozitiftir; $x$ arttıkça tahmin edilen $y$ artar.",
+    "Eğimi tanımsızdır; doğru dikeydir.",
+    "Eğimi sıfırdır; doğru yataydır.",
+    "Eğimi belirlenemez, çünkü noktalar dağınıktır."
+   ],
+   "c": 0,
+   "a": "Noktalar soldan sağa inen bir doğru çevresinde toplanmıştır; bu yüzden eğilim doğrusunun eğimi negatiftir.",
+   "sekil": "<svg viewBox=\"0 0 220 150\"><line x1=\"30\" y1=\"10\" x2=\"30\" y2=\"130\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"130\" x2=\"210\" y2=\"130\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"208\" y=\"144\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">x</text><text x=\"18\" y=\"16\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">y</text><circle cx=\"54.0\" cy=\"19.8\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"78.0\" cy=\"35.5\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"102.0\" cy=\"40.8\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"126.0\" cy=\"61.8\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"150.0\" cy=\"67.0\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"174.0\" cy=\"82.8\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"198.0\" cy=\"98.5\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0070",
+   "konu": "11.1.1",
+   "zorluk": 3,
+   "s": "Bir veri kümesinde $x$ değerlerinin ortalaması $5$, $y$ değerlerinin ortalaması $12$'dir. Eğilim doğrusu $x=9$ için $20$ tahminini verdiğine göre $x=2$ için tahmin kaçtır?",
+   "o": [
+    "$6$",
+    "$8$",
+    "$10$",
+    "$4$",
+    "$-8$"
+   ],
+   "c": 0,
+   "a": "Doğru $(5,12)$ ve $(9,20)$ noktalarından geçer; eğim $\\dfrac{20-12}{9-5}=2$. $x=2$ için $y=12+2(2-5)=6$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0071",
+   "konu": "11.1.1",
+   "zorluk": 3,
+   "s": "Bir yürüyüşçünün aldığı yol $y$ (km), süre $x$ (dakika) olmak üzere eğilim doğrusu $y=0{,}5x+2$'dir. Süre saat cinsinden $t$ ile ölçülürse ($x=60t$) doğrunun eğimi kaç olur?",
+   "o": [
+    "$32$",
+    "$\\dfrac{1}{120}$",
+    "$\\dfrac{1}{2}$",
+    "$30$",
+    "$60$"
+   ],
+   "c": 3,
+   "a": "$y=0{,}5\\cdot60t+2=30t+2$ olur; yeni eğim $30$'dur ($t$ bir saat arttığında $y$ ortalama $30$ km artar).",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0074",
+   "konu": "11.1.1",
+   "zorluk": 2,
+   "s": "Bir saçılım grafiğinde noktalar \"U\" harfine benzer biçimde dağılmaktadır. Bu grafik için aşağıdakilerden hangisi söylenebilir?",
+   "o": [
+    "Eğilim doğrusu bu veri için en uygun modeldir.",
+    "Değişkenler arasında hiçbir ilişki yoktur.",
+    "Doğrusal ilişki zayıftır; ancak değişkenler arasında doğrusal olmayan bir ilişki olabilir.",
+    "Güçlü ve negatif yönlü doğrusal ilişki vardır.",
+    "Güçlü ve pozitif yönlü doğrusal ilişki vardır."
+   ],
+   "c": 2,
+   "a": "U biçimli dağılımda $x$ arttıkça $y$ önce azalır sonra artar; doğrusal ilişki zayıftır ama ilişki yoktur denemez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0075",
+   "konu": "11.1.1",
+   "zorluk": 2,
+   "s": "Bir eğilim doğrusu $y=0{,}6x+4$ olup verilerdeki $x$ değerleri $20$ ile $60$ arasındadır. Aşağıdaki $x$ değerlerinden hangisi için yapılan tahmin en güvenilirdir?",
+   "o": [
+    "$90$",
+    "$10$",
+    "$150$",
+    "$5$",
+    "$45$"
+   ],
+   "c": 4,
+   "a": "Eğilim doğrusuyla yapılan tahminler, verinin bulunduğu $20-60$ aralığı içinde daha güvenilirdir. Seçenekler arasında yalnız $45$ bu aralıktadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0076",
+   "konu": "11.1.2",
+   "zorluk": 1,
+   "s": "Bir ilkokulda ayakkabı numarası büyük olan çocukların okuma testi puanlarının da yüksek olduğu görülmüştür. Bu sonuç için en uygun açıklama hangisidir?",
+   "o": [
+    "Okuma becerisi arttıkça ayak büyür.",
+    "İki değişken arasında hiçbir ilişki yoktur.",
+    "Yaş gibi üçüncü bir değişken hem ayakkabı numarasını hem de okuma becerisini etkiliyor olabilir.",
+    "Ayakkabı numarasını büyütmek okuma becerisini artırır.",
+    "Veri kesinlikle hatalı toplanmıştır."
+   ],
+   "c": 2,
+   "a": "Yaş gibi üçüncü bir değişken hem ayak büyüklüğünü hem de okuma becerisini etkiliyor olabilir. Bu yüzden iki değişken arasındaki ilişki, birinin diğerine neden olduğunu göstermez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0077",
+   "konu": "11.1.2",
+   "zorluk": 1,
+   "s": "Bir araştırmada iki değişken arasında güçlü bir ilişki bulunmuştur. Aşağıdaki yorumlardan hangisi doğrudur?",
+   "o": [
+    "Güçlü ilişki, değişkenlerden birinin diğerinin nedeni olduğunu tek başına kanıtlamaz.",
+    "Güçlü ilişki varsa üçüncü bir değişken olamaz.",
+    "Güçlü ilişki, nedensel ilişkinin kanıtıdır.",
+    "Güçlü ilişkide tüm noktalar tam bir doğru üzerindedir.",
+    "Güçlü ilişki yalnızca pozitif yönlü olabilir."
+   ],
+   "c": 0,
+   "a": "İlişki ile nedensellik farklıdır; nedenselliği göstermek için deney tasarımı gibi ek kanıtlar gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0078",
+   "konu": "11.1.2",
+   "zorluk": 2,
+   "s": "Bir araştırmacı \"gençlerin günlük internet kullanım süresi\" üzerine anketi yalnızca sosyal medya hesabı olan gençlere uygulamıştır. Bu çalışmanın temel zayıflığı aşağıdakilerden hangisidir?",
+   "o": [
+    "Anket çok kısa olduğu için sonuç elde edilemez.",
+    "Nicel veriler hiçbir zaman karşılaştırılamaz.",
+    "Ortalama internet süresi hesaplanamaz.",
+    "Gençlerin yaşı bilindiği için sonuç hatalıdır.",
+    "Örneklem tüm gençleri temsil etmediğinden sonuçlar genellenemez."
+   ],
+   "c": 4,
+   "a": "Yalnızca sosyal medya kullananlarla yapılan ankette örneklem yanlıdır; sonuçlar tüm gençlere genellenemez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0079",
+   "konu": "11.1.2",
+   "zorluk": 2,
+   "s": "Bir raporda, $20$ noktalık veride yalnızca bir noktanın diğerlerinden çok uzakta olduğu ve eğilim doğrusunun eğiminin bu nokta yüzünden belirgin biçimde değiştiği belirtilmiştir. Bu rapor için en uygun yorum hangisidir?",
+   "o": [
+    "Veri sayısı fazla olduğu için hiçbir yorum yapılamaz.",
+    "Eğilim doğrusu hiçbir zaman uç noktadan etkilenmez.",
+    "Uç nokta incelenmeli; sonuç tek bir noktaya bağlıysa ilişkiye dair yargı temkinli yapılmalıdır.",
+    "Uç nokta, ilişkinin en güvenilir kısmıdır.",
+    "Uç nokta ne olursa olsun silinmeli ve nedeni sorgulanmamalıdır."
+   ],
+   "c": 2,
+   "a": "Uç değerler eğimi çok etkileyebilir. Nedeni araştırılmalı ve sonuç tek bir noktaya dayanıyorsa dikkatle yorumlanmalıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0080",
+   "konu": "11.1.2",
+   "zorluk": 2,
+   "s": "Bir araştırmada günlük okuma süresi $x$ (dakika) ve okunan sayfa sayısı $y$ için eğilim doğrusu $y=2x+10$ bulunmuştur. Bu doğrunun yorumuyla ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+   "o": [
+    "Her öğrencide okuma süresi $1$ dakika arttığında sayfa sayısı tam olarak $2$ artar.",
+    "$x=20$ için tahmin edilen sayfa sayısı $50$'dir.",
+    "$x=3$ için tahmin edilen sayfa sayısı $16$'dır.",
+    "$x=0$ için tahmin edilen sayfa sayısı $10$'dur.",
+    "Okuma süresi $5$ dakika arttığında tahmin edilen sayfa sayısı $10$ artar."
+   ],
+   "c": 0,
+   "a": "Eğilim doğrusu ortalama eğilimi gösterir. Her öğrencide tam olarak $2$ sayfa artış olacağı söylenemez; diğer seçenekler denklemle doğrulanır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0081",
+   "konu": "11.1.2",
+   "zorluk": 3,
+   "s": "Bir araştırmada A ve B gruplarının her birinde $x$ ile $y$ arasında pozitif yönlü ilişki bulunmuştur. Ancak iki grup birleştirildiğinde ilişki negatif yönlü görünmektedir. Bu durum aşağıdakilerden hangisini gösterir?",
+   "o": [
+    "Birleştirilmiş verinin yorumu her zaman daha doğrudur.",
+    "Pozitif ilişki bir hesap hatasıdır.",
+    "Gruplar ayrı incelendiğinde yapılan hesaplar yanlıştır.",
+    "İki grup arasında hiçbir fark yoktur.",
+    "Gruplama değişkeni sonucu etkilemektedir; veriler gruplara göre ayrı yorumlanmalıdır."
+   ],
+   "c": 4,
+   "a": "Grupların ortalama düzeyleri farklı olduğunda birleştirilmiş veri, grup içi eğilimin tersini gösterebilir. Bu yüzden gruplama değişkeni göz önüne alınmalıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0082",
+   "konu": "11.1.2",
+   "zorluk": 2,
+   "s": "Bir yazar \"reklam harcaması iki katına çıkınca satışlar da iki katına çıkar\" demiştir. Eğilim doğrusu $y=0{,}5x+40$ ($x$: harcama, $y$: satış) olduğuna göre harcama $10$'dan $20$'ye çıktığında tahmin edilen satış kaç katına çıkar?",
+   "o": [
+    "$\\dfrac{5}{4}$",
+    "$\\dfrac{10}{9}$",
+    "$2$",
+    "$\\dfrac{3}{2}$",
+    "$\\dfrac{9}{10}$"
+   ],
+   "c": 1,
+   "a": "$x=10$ için $y=45$, $x=20$ için $y=50$ olur. Oran $\\dfrac{50}{45}=\\dfrac{10}{9}$ bulunur; satışlar iki katına çıkmaz.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0083",
+   "konu": "11.1.2",
+   "zorluk": 1,
+   "s": "Bir ankette \"Bu kadar pahalı ve gereksiz olan kantin ürünlerinden memnun musunuz?\" sorusu sorulmuştur. Bu sorunun sakıncası nedir?",
+   "o": [
+    "Soru, katılımcıyı belirli bir cevaba yönlendirdiği için sonuçları yanlı hale getirebilir.",
+    "Evet-hayır soruları hiçbir zaman kullanılamaz.",
+    "Soru nicel bir değişken içerdiği için hatalıdır.",
+    "Sonuçlar yalnızca ortalama ile yorumlanabilir.",
+    "Soru çok kısa olduğu için cevaplanamaz."
+   ],
+   "c": 0,
+   "a": "Sorudaki \"pahalı ve gereksiz\" ifadesi cevabı yönlendirir; bu da toplanan verinin tarafsızlığını bozar.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0084",
+   "konu": "11.1.2",
+   "zorluk": 2,
+   "s": "A çalışması $5$ kişiyle, B çalışması $500$ kişiyle yapılmış ve ikisinde de iki değişken arasında benzer ilişki bulunmuştur. Aşağıdaki yorumlardan hangisi daha uygundur?",
+   "o": [
+    "Örneklem büyüklüğü genellemeyi etkilemez.",
+    "İki çalışma da aynı derecede güvenilirdir.",
+    "Örneklem büyüklüğü daha fazla olan B çalışmasının sonucu, daha güvenilir bir genelleme sağlar.",
+    "A çalışması küçük olduğu için daha kesindir.",
+    "Sonuç yalnız çalışmanın yapıldığı gün sayısına bağlıdır."
+   ],
+   "c": 2,
+   "a": "Küçük örneklemlerde ilişki tesadüfen ortaya çıkabilir. Büyük örneklem, genellemeyi daha güvenilir kılar.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0085",
+   "konu": "11.1.2",
+   "zorluk": 2,
+   "s": "Bir haberde \"çok spor yapan kişiler daha mutludur\" sonucuna ulaşılmış ve \"spor yapmak mutluluğu artırır\" denilmiştir. Bu çıkarım için aşağıdakilerden hangisi söylenebilir?",
+   "o": [
+    "İlişki olduğu için çıkarım kesinlikle doğrudur.",
+    "Sonuç yalnız erkekler için geçerlidir.",
+    "İlişki yönlü olamaz.",
+    "Nedenin yönü belirsizdir; mutlu kişiler daha çok spor yapıyor da olabilir.",
+    "Mutluluk ve spor nicel veri değildir."
+   ],
+   "c": 3,
+   "a": "Yalnızca ilişkiden hareketle neden-sonuç yönü belirlenemez; mutlu kişilerin daha çok spor yapması da mümkündür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0086",
+   "konu": "11.1.2",
+   "zorluk": 3,
+   "s": "Bir veri kümesinde $x$ değerlerinin ortalaması $6$, $y$ değerlerinin ortalaması $20$'dir. Aşağıdaki doğrulardan hangisi bu verinin eğilim doğrusu OLAMAZ?",
+   "o": [
+    "$y=3x+2$",
+    "$y=-x+26$",
+    "$y=4x-4$",
+    "$y=x+15$",
+    "$y=2x+8$"
+   ],
+   "c": 3,
+   "a": "Eğilim doğrusu $(6,20)$ ortalama noktasından geçmelidir. $x=6$ için $y=x+15$ doğrusunda $21$ bulunur; diğerlerinde $20$ çıkar.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0087",
+   "konu": "11.1.2",
+   "zorluk": 1,
+   "s": "Bir gazetede aynı verileri gösteren grafiğin $x$ ekseninde $0-10$ aralığı ile $10-100$ aralığı eşit uzunlukta çizilmiştir. Bu grafik için en uygun yorum hangisidir?",
+   "o": [
+    "Yalnız $y$ ekseni yanıltıcı olabilir.",
+    "Eksen ölçeği grafiğin yorumunu hiç etkilemez.",
+    "Bu çizim her zaman zorunludur.",
+    "Grafik bu nedenle daha doğru okunur.",
+    "Eksen ölçeği düzgün olmadığı için grafik, değişimi yanıltıcı biçimde gösterebilir."
+   ],
+   "c": 4,
+   "a": "Eşit uzunluklu aralıklar farklı büyüklükleri temsil ettiğinde grafik değişimi olduğundan farklı gösterir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0088",
+   "konu": "11.1.2",
+   "zorluk": 3,
+   "s": "Bir grafikte $y$ ekseni $30$'dan başlatılarak değerleri $40$ ve $50$ olan iki sütun çizilmiştir. Sütunlar $30$ çizgisinden itibaren çizildiğine göre uzun sütun kısa sütunun kaç katı yüksekliğinde görünür?",
+   "o": [
+    "$\\dfrac{4}{5}$",
+    "$\\dfrac{3}{2}$",
+    "$2$",
+    "$\\dfrac{5}{3}$",
+    "$\\dfrac{5}{4}$"
+   ],
+   "c": 2,
+   "a": "Görünen yükseklikler $40-30=10$ ve $50-30=20$ ile orantılıdır; oran $2$ olur. Gerçek oran ise $\\dfrac{50}{40}=\\dfrac{5}{4}$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0089",
+   "konu": "11.1.2",
+   "zorluk": 2,
+   "s": "İki araştırmacı aynı veriye $y=2x+1$ ve $y=2{,}5x-1$ doğrularını eğilim doğrusu olarak önermiştir. Bu iki doğrunun aynı tahmini verdiği $x$ değeri kaçtır?",
+   "o": [
+    "$2$",
+    "$3$",
+    "$4$",
+    "$8$",
+    "$5$"
+   ],
+   "c": 2,
+   "a": "$2x+1=2{,}5x-1$ denkleminden $0{,}5x=2$ ve $x=4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0090",
+   "konu": "11.1.2",
+   "zorluk": 2,
+   "s": "Şekildeki saçılım grafiğinde sağ alttaki tek nokta, diğer noktaların oluşturduğu örüntüden çok uzaktadır. Bu nokta veri kümesinden çıkarılırsa aşağıdakilerden hangisi olur?",
+   "o": [
+    "İlişki negatif yönlüye döner.",
+    "Pozitif yönlü ilişki belirgin biçimde güçlenir ve eğilim doğrusunun eğimi artar.",
+    "Hiçbir şey değişmez.",
+    "Eğilim doğrusunun eğimi azalır.",
+    "İlişki tamamen ortadan kalkar."
+   ],
+   "c": 1,
+   "a": "Uç nokta doğruyu aşağı çekmektedir. Çıkarıldığında kalan noktalar daha düzgün bir pozitif örüntü oluşturur; ilişki güçlenir ve eğim artar.",
+   "sekil": "<svg viewBox=\"0 0 220 150\"><line x1=\"30\" y1=\"10\" x2=\"30\" y2=\"130\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"130\" x2=\"210\" y2=\"130\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"208\" y=\"144\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">x</text><text x=\"18\" y=\"16\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">y</text><circle cx=\"52.0\" cy=\"107.0\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"74.0\" cy=\"95.5\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"96.0\" cy=\"86.3\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"118.0\" cy=\"72.5\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"140.0\" cy=\"61.0\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"162.0\" cy=\"49.5\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"184.0\" cy=\"36.9\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"206.0\" cy=\"118.5\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0091",
+   "konu": "11.2.1",
+   "zorluk": 1,
+   "s": "$ABCD$ paralelkenarında $m(\\widehat{A})=3\\cdot m(\\widehat{B})$ olduğuna göre $m(\\widehat{A})$ kaç derecedir?",
+   "o": [
+    "$60^\\circ$",
+    "$45^\\circ$",
+    "$150^\\circ$",
+    "$135^\\circ$",
+    "$120^\\circ$"
+   ],
+   "c": 3,
+   "a": "Komşu açılar bütünlerdir: $A+B=180^\\circ$ ve $A=3B$ ise $4B=180^\\circ$, $B=45^\\circ$, $A=135^\\circ$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0092",
+   "konu": "11.2.1",
+   "zorluk": 1,
+   "s": "$[AB]\\parallel[DC]$ olan $ABCD$ yamuğunda $m(\\widehat{A})=70^\\circ$ ve $m(\\widehat{B})=65^\\circ$ olduğuna göre $m(\\widehat{C})+m(\\widehat{D})$ kaç derecedir?",
+   "o": [
+    "$135^\\circ$",
+    "$180^\\circ$",
+    "$225^\\circ$",
+    "$290^\\circ$",
+    "$115^\\circ$"
+   ],
+   "c": 2,
+   "a": "Dörtgenin iç açıları toplamı $360^\\circ$ olduğundan $m(\\widehat{C})+m(\\widehat{D})=360^\\circ-(70^\\circ+65^\\circ)=225^\\circ$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0093",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "Çevresi $56$ cm olan bir dikdörtgenin kenar uzunlukları $3:4$ oranındadır. Bu dikdörtgenin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$192$",
+    "$216$",
+    "$168$",
+    "$144$",
+    "$196$"
+   ],
+   "c": 0,
+   "a": "Kenarlar $3k$ ve $4k$ ise çevre $2\\cdot7k=56$ ve $k=4$ olur. Kenarlar $12$ ve $16$ cm, alan $192$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0094",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "Çevresi $52$ cm olan bir eşkenar dörtgenin bir köşegeni $24$ cm'dir. Bu eşkenar dörtgenin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$120$",
+    "$312$",
+    "$156$",
+    "$130$",
+    "$144$"
+   ],
+   "c": 0,
+   "a": "Kenar $52/4=13$ cm'dir. Köşegenler dik kesişip birbirini ortalar; yarım köşegen $12$ ise diğer yarım köşegen $\\sqrt{13^2-12^2}=5$ cm'dir. Diğer köşegen $10$ ve alan $\\dfrac{24\\cdot10}{2}=120$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0095",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "Kenar uzunlukları $10$ cm ve $14$ cm olan bir paralelkenarın bu kenarları arasındaki açı $30^\\circ$'dir. Paralelkenarın alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$70$",
+    "$70 \\sqrt{3}$",
+    "$140$",
+    "$35$",
+    "$60$"
+   ],
+   "c": 0,
+   "a": "Alan, komşu kenarların çarpımı ile aradaki açının sinüsünün çarpımıdır: $10\\cdot14\\cdot\\sin30^\\circ=70$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0096",
+   "konu": "11.2.1",
+   "zorluk": 1,
+   "s": "Tabanları $9$ cm ve $15$ cm, yüksekliği $8$ cm olan bir yamuğun alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$120$",
+    "$96$",
+    "$108$",
+    "$192$",
+    "$48$"
+   ],
+   "c": 1,
+   "a": "Alan $=\\dfrac{9+15}{2}\\cdot8=96$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0097",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "Köşegenlerinin uzunlukları $8$ cm ve $10$ cm olan bir dörtgenin köşegenleri arasındaki açı $30^\\circ$'dir. Bu dörtgenin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$10$",
+    "$80$",
+    "$20 \\sqrt{3}$",
+    "$40$",
+    "$20$"
+   ],
+   "c": 4,
+   "a": "Alan $=\\dfrac{1}{2}\\cdot8\\cdot10\\cdot\\sin30^\\circ=20$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0098",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "$ABCD$ paralelkenarında $E$ noktası $[BC]$ kenarının orta noktasıdır. $A(ABE)=12\\ \\text{cm}^2$ olduğuna göre paralelkenarın alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$48$",
+    "$24$",
+    "$96$",
+    "$72$",
+    "$36$"
+   ],
+   "c": 0,
+   "a": "$h$ yükseklik, $|BC|=2t$ olsun. $A(ABE)=\\dfrac{1}{2}\\cdot t\\cdot h=12$ ise $th=24$ ve paralelkenarın alanı $2t\\cdot h=48$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0099",
+   "konu": "11.2.1",
+   "zorluk": 3,
+   "s": "Tabanları $6$ cm ve $14$ cm, yan kenarları $5$ cm olan ikizkenar yamuğun köşegen uzunluğu kaç cm'dir?",
+   "o": [
+    "$\\sqrt{97}$",
+    "$11$",
+    "$10$",
+    "$\\sqrt{106}$",
+    "$\\sqrt{109}$"
+   ],
+   "c": 4,
+   "a": "Yükseklik $\\sqrt{5^2-4^2}=3$ cm'dir. Köşegenin yatay izdüşümü $\\dfrac{14+6}{2}=10$ olduğundan köşegen $\\sqrt{10^2+3^2}=\\sqrt{109}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0100",
+   "konu": "11.2.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki dörtgenlerden hangisinin genel durumda hiç simetri ekseni yoktur?",
+   "o": [
+    "Dikdörtgen",
+    "Kare",
+    "İkizkenar yamuk",
+    "Kenar uzunlukları farklı olan paralelkenar",
+    "Eşkenar dörtgen"
+   ],
+   "c": 3,
+   "a": "Kare $4$, dikdörtgen ve eşkenar dörtgen $2$, ikizkenar yamuk $1$ simetri eksenine sahiptir. Kenarları farklı ve dik açısı olmayan bir paralelkenarın ise simetri ekseni yoktur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0101",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "Köşegen uzunlukları $10$ cm ve $16$ cm olan bir deltoidin köşegenleri birbirine diktir. Bu deltoidin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$40$",
+    "$26$",
+    "$100$",
+    "$160$",
+    "$80$"
+   ],
+   "c": 4,
+   "a": "Köşegenleri dik olan dörtgenin alanı köşegenler çarpımının yarısıdır: $\\dfrac{10\\cdot16}{2}=80$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0102",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "$[AB]\\parallel[DC]$, $|AB|=4$ cm, $|DC|=10$ cm olan $ABCD$ yamuğunda köşegenler $O$ noktasında kesişiyor. $|AC|=21$ cm ise $|AO|$ kaç cm'dir?",
+   "o": [
+    "$8$",
+    "$6$",
+    "$7$",
+    "$9$",
+    "$15$"
+   ],
+   "c": 1,
+   "a": "$\\triangle AOB\\sim\\triangle COD$ olduğundan $\\dfrac{|AO|}{|OC|}=\\dfrac{4}{10}=\\dfrac{2}{5}$ ve $|AO|=21\\cdot\\dfrac{2}{7}=6$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0103",
+   "konu": "11.2.1",
+   "zorluk": 3,
+   "s": "Tabanları $18$ cm ve $8$ cm olan bir yamukta orta taban, köşegenleri $P$ ve $Q$ noktalarında kesmektedir. $|PQ|$ kaç cm'dir?",
+   "o": [
+    "$10$",
+    "$5$",
+    "$9$",
+    "$13$",
+    "$4$"
+   ],
+   "c": 1,
+   "a": "Orta taban $13$ cm'dir. Köşegenlerle ayrılan dış iki parçanın her biri küçük tabanın yarısı olan $4$ cm'dir. Dolayısıyla $|PQ|=13-4-4=5$ cm bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0104",
+   "konu": "11.2.1",
+   "zorluk": 2,
+   "s": "Köşegen uzunluğu $30$ cm olan bir dikdörtgenin kenar uzunlukları $3:4$ oranındadır. Bu dikdörtgenin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$450$",
+    "$360$",
+    "$288$",
+    "$432$",
+    "$216$"
+   ],
+   "c": 3,
+   "a": "Kenarlar $3k$ ve $4k$ ise köşegen $5k=30$ ve $k=6$ olur. Kenarlar $18$ ve $24$ cm, alan $432$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0105",
+   "konu": "11.2.2",
+   "zorluk": 2,
+   "s": "Karşılıklı kenarları paralel olan, köşegenleri hem eş hem de birbirine dik olan dörtgen aşağıdakilerden hangisidir?",
+   "o": [
+    "Paralelkenar",
+    "Dikdörtgen",
+    "Eşkenar dörtgen",
+    "Kare",
+    "İkizkenar yamuk"
+   ],
+   "c": 3,
+   "a": "Karşılıklı kenarları paralel ise paralelkenardır. Köşegenleri eş ise dikdörtgen, dik ise eşkenar dörtgendir; ikisi birden kareyi verir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0106",
+   "konu": "11.2.2",
+   "zorluk": 3,
+   "s": "Köşegenleri birbirine dik ve uzunlukları $12$ cm ile $18$ cm olan bir dörtgenin kenarlarının orta noktaları sırayla birleştirilerek yeni bir dörtgen elde ediliyor. Elde edilen dörtgenin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$216$",
+    "$30$",
+    "$72$",
+    "$108$",
+    "$54$"
+   ],
+   "c": 4,
+   "a": "Orta noktaları birleştirince kenarları köşegenlere paralel ve yarı uzunlukta bir paralelkenar oluşur. Köşegenler dik olduğundan bu bir dikdörtgendir ve kenarları $6$ ile $9$ cm'dir. Alan $54$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0107",
+   "konu": "11.2.3",
+   "zorluk": 2,
+   "s": "Şekildeki çokgenin $180^\\circ$'den büyük kaç iç açısı vardır?",
+   "o": [
+    "$4$",
+    "$0$",
+    "$2$",
+    "$1$",
+    "$3$"
+   ],
+   "c": 2,
+   "a": "Köşelerin içe doğru girdiği noktalarda iç açı $180^\\circ$'den büyüktür. Şekildeki çokgende bu tür köşe sayısı $2$'dir.",
+   "sekil": "<svg viewBox=\"0 0 220 150\"><polygon points=\"20,120 30,30 80,95 130,30 180,95 200,20 210,120\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0108",
+   "konu": "11.2.3",
+   "zorluk": 2,
+   "s": "Köşeleri sırasıyla verilen çokgenlerden hangisi dışbükeydir?",
+   "o": [
+    "$(0,0),(4,0),(2,1),(4,4),(0,4)$",
+    "$(0,0),(3,1),(6,0),(6,5),(0,5)$",
+    "$(0,0),(6,0),(6,2),(3,1),(0,2)$",
+    "$(0,0),(5,0),(6,3),(3,5),(0,3)$",
+    "$(0,0),(4,0),(4,4),(2,2),(0,4)$"
+   ],
+   "c": 3,
+   "a": "Dışbükey çokgende hiçbir köşede içe dönük (reflex) açı yoktur. Diğer çokgenlerin her birinde bir köşe içe doğru girmektedir; yalnız $(0,0),(5,0),(6,3),(3,5),(0,3)$ dışbükeydir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0109",
+   "konu": "11.2.3",
+   "zorluk": 1,
+   "s": "Bir çokgenin köşegenlerinden en az biri çokgenin dışında kalıyorsa bu çokgen için aşağıdakilerden hangisi söylenebilir?",
+   "o": [
+    "Bir üçgendir.",
+    "Dışbükey bir çokgendir.",
+    "İçbükey bir çokgendir.",
+    "Düzgün bir çokgendir.",
+    "Dörtgen olamaz."
+   ],
+   "c": 2,
+   "a": "Dışbükey çokgende tüm köşegenler çokgenin içinde kalır. Bir köşegen dışarıda kalıyorsa çokgen içbükeydir.",
+   "kaynak": "ozgun"
   }
  ]
 }

@@ -9,8 +9,9 @@
   function sayfaEl(ad){return document.getElementById('pg-'+ad);}
   function engel(el){
     var kg=document.getElementById('kt-gor');if(kg&&!kg.hidden)return true;
+    if(document.querySelector('.iz-pencere,.iz-sahne'))return true;   // Yolculuk: açık durak sahnesi/pencere
     if(document.querySelector('.pm-sheet.acik,#alarm.acik,#sik-sor.acik,#pm-curu.acik,#koc-onay.acik,#pm-not.acik,#pm-dnm.acik,#sil-p.acik'))return true;
-    return !!(el&&el.closest&&el.closest('input,select,textarea,.kaydir,.pm-chips,.mt-sec,.mt-noktalar,.pr-gunler,.alt-nav,.st-cizim,.dg-cip,.dg-d,.kt-gor,.kt-ort,.kt-yan'));
+    return !!(el&&el.closest&&el.closest('input,select,textarea,.kaydir,.pm-chips,.mt-sec,.mt-noktalar,.pr-gunler,.alt-nav,.st-cizim,.dg-cip,.dg-d,.kt-gor,.kt-ort,.kt-yan,.iz-harita,.iz-test-ust'));
   }
   function ciz(x,gecis){
     var W=window.innerWidth,p=Math.min(1,Math.abs(x)/W);

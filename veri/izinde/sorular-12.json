@@ -962,6 +962,950 @@
    "c": 0,
    "a": "$(x,y)\\to(y,x)$ yansımasında $x=2y-1$ olur; buradan $y=\\dfrac{x+1}{2}$ ve eğim $\\dfrac{1}{2}$ bulunur.",
    "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0061",
+   "konu": "12.1.1",
+   "zorluk": 1,
+   "s": "$f(x)=2^{x}$ fonksiyonu için $f(5)-f(3)$ farkı kaçtır?",
+   "o": [
+    "$16$",
+    "$24$",
+    "$8$",
+    "$32$",
+    "$40$"
+   ],
+   "c": 1,
+   "a": "$f(5)=32$ ve $f(3)=8$ olduğundan fark $32-8=24$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0062",
+   "konu": "12.1.1",
+   "zorluk": 1,
+   "s": "$f(x)=\\left(\\dfrac{1}{2}\\right)^{x}$ fonksiyonu için $f(-3)$ kaçtır?",
+   "o": [
+    "$\\dfrac{1}{8}$",
+    "$6$",
+    "$-8$",
+    "$8$",
+    "$\\dfrac{1}{6}$"
+   ],
+   "c": 3,
+   "a": "$f(-3)=\\left(\\dfrac{1}{2}\\right)^{-3}=2^{3}=8$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0063",
+   "konu": "12.1.1",
+   "zorluk": 1,
+   "s": "$f(x)=3^{x}+1$ fonksiyonunun grafiği $y$ eksenini kestiği noktanın ordinatı kaçtır?",
+   "o": [
+    "$3$",
+    "$2$",
+    "$0$",
+    "$4$",
+    "$1$"
+   ],
+   "c": 1,
+   "a": "$y$ ekseni üzerinde $x=0$ olur. $f(0)=3^{0}+1=2$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0064",
+   "konu": "12.1.1",
+   "zorluk": 2,
+   "s": "$f(x)=5^{x-1}+2$ fonksiyonunun görüntü kümesi aşağıdakilerden hangisidir?",
+   "o": [
+    "$(0,\\infty)$",
+    "$\\mathbb{R}$",
+    "$(2,\\infty)$",
+    "$(-2,\\infty)$",
+    "$[2,\\infty)$"
+   ],
+   "c": 2,
+   "a": "$5^{x-1}>0$ olduğundan $f(x)>2$ olur. Yatay asimptot $y=2$'dir ve görüntü kümesi $(2,\\infty)$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0065",
+   "konu": "12.1.1",
+   "zorluk": 3,
+   "s": "$a=2^{30}$, $b=3^{20}$ ve $c=5^{10}$ olduğuna göre aşağıdaki sıralamalardan hangisi doğrudur?",
+   "o": [
+    "$c<a<b$",
+    "$a<b<c$",
+    "$a<c<b$",
+    "$b<a<c$",
+    "$c<b<a$"
+   ],
+   "c": 0,
+   "a": "Üsleri $10$'da eşitleyelim: $a=(2^{3})^{10}=8^{10}$, $b=(3^{2})^{10}=9^{10}$, $c=5^{10}$. Taban $5<8<9$ olduğundan $c<a<b$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0066",
+   "konu": "12.1.1",
+   "zorluk": 2,
+   "s": "$f(x)=a^{x}$ fonksiyonunun grafiği $(-2,16)$ noktasından geçmektedir. Buna göre $f(3)$ kaçtır?",
+   "o": [
+    "$8$",
+    "$\\dfrac{1}{16}$",
+    "$64$",
+    "$\\dfrac{1}{8}$",
+    "$\\dfrac{1}{64}$"
+   ],
+   "c": 4,
+   "a": "$a^{-2}=16$ ise $a^{2}=\\dfrac{1}{16}$ ve $a=\\dfrac{1}{4}$ olur. $f(3)=\\left(\\dfrac{1}{4}\\right)^{3}=\\dfrac{1}{64}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0067",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$10\\,000$ TL anapara yıllık $\\%20$ bileşik faizle bankaya yatırılıyor. $3$ yıl sonunda hesaptaki para kaç TL olur?",
+   "o": [
+    "$16000$",
+    "$17280$",
+    "$17200$",
+    "$18000$",
+    "$17000$"
+   ],
+   "c": 1,
+   "a": "Her yıl para $1{,}2$ katına çıkar: $10\\,000\\cdot1{,}2^{3}=10\\,000\\cdot1{,}728=17\\,280$ TL olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0068",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "Bir radyoaktif maddenin miktarı her $5$ yılda yarıya inmektedir. Başlangıçta $640$ gram olan madde $20$ yıl sonra kaç gram olur?",
+   "o": [
+    "$160$",
+    "$80$",
+    "$320$",
+    "$20$",
+    "$40$"
+   ],
+   "c": 4,
+   "a": "$20$ yıl, $4$ yarılanma süresidir: $640\\cdot\\left(\\dfrac{1}{2}\\right)^{4}=40$ gram olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0069",
+   "konu": "12.1.1",
+   "zorluk": 2,
+   "s": "$f(x)=2^{x}$ ve $f(a)=5$ olduğuna göre $f(a+3)+f(a-1)$ toplamı kaçtır?",
+   "o": [
+    "$\\dfrac{85}{2}$",
+    "$90$",
+    "$\\dfrac{75}{2}$",
+    "$40$",
+    "$45$"
+   ],
+   "c": 0,
+   "a": "$f(a+3)=2^{a}\\cdot8=40$ ve $f(a-1)=\\dfrac{2^{a}}{2}=\\dfrac{5}{2}$ olduğundan toplam $\\dfrac{85}{2}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0070",
+   "konu": "12.1.1",
+   "zorluk": 2,
+   "s": "$3^{x+1}-3^{x}=54$ eşitliğini sağlayan $x$ değeri kaçtır?",
+   "o": [
+    "$4$",
+    "$18$",
+    "$27$",
+    "$3$",
+    "$2$"
+   ],
+   "c": 3,
+   "a": "$3^{x}(3-1)=54$ ise $3^{x}=27$ ve $x=3$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0071",
+   "konu": "12.1.1",
+   "zorluk": 3,
+   "s": "$a>0$ olmak üzere $2^{a}+2^{-a}=\\dfrac{5}{2}$ olduğuna göre $a$ kaçtır?",
+   "o": [
+    "$1$",
+    "$2$",
+    "$3$",
+    "$0$",
+    "$\\dfrac{1}{2}$"
+   ],
+   "c": 0,
+   "a": "$t=2^{a}$ olsun. $t+\\dfrac{1}{t}=\\dfrac{5}{2}$ ise $2t^{2}-5t+2=0$ ve $t=2$ ya da $t=\\dfrac{1}{2}$ olur. $a>0$ için $t>1$ olduğundan $2^{a}=2$ ve $a=1$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0072",
+   "konu": "12.1.1",
+   "zorluk": 3,
+   "s": "$f(x)=2^{x}+2^{-x}$ fonksiyonunun alabileceği en küçük değer kaçtır?",
+   "o": [
+    "$2$",
+    "$4$",
+    "$\\dfrac{1}{2}$",
+    "$0$",
+    "$1$"
+   ],
+   "c": 0,
+   "a": "$t=2^{x}>0$ için $t+\\dfrac{1}{t}\\geq2$ olur ve eşitlik $t=1$ yani $x=0$ iken sağlanır. En küçük değer $2$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0073",
+   "konu": "12.1.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki fonksiyonlardan hangisi $\\mathbb{R}$ üzerinde azalandır?",
+   "o": [
+    "$f(x)=\\left(\\dfrac{5}{2}\\right)^{x}$",
+    "$f(x)=\\left(\\dfrac{1}{4}\\right)^{x}$",
+    "$f(x)=7^{x}$",
+    "$f(x)=10^{x}$",
+    "$f(x)=3^{x}$"
+   ],
+   "c": 1,
+   "a": "$f(x)=a^{x}$ fonksiyonu $0<a<1$ için azalandır. Verilenlerde yalnız $\\dfrac{1}{4}$ tabanı $0$ ile $1$ arasındadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0074",
+   "konu": "12.1.1",
+   "zorluk": 2,
+   "s": "$y=3^{x}$ grafiği $2$ birim sağa ve $1$ birim yukarı ötelenerek $f$ fonksiyonunun grafiği elde ediliyor. Buna göre $f(4)$ kaçtır?",
+   "o": [
+    "$10$",
+    "$82$",
+    "$4$",
+    "$9$",
+    "$28$"
+   ],
+   "c": 0,
+   "a": "Öteleme sonucunda $f(x)=3^{x-2}+1$ olur. $f(4)=3^{2}+1=10$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0075",
+   "konu": "12.1.1",
+   "zorluk": 2,
+   "s": "$3^{x}=a$ olduğuna göre $9^{x+1}-3^{x+2}$ ifadesinin $a$ cinsinden eşiti aşağıdakilerden hangisidir?",
+   "o": [
+    "$a^{2}-9a$",
+    "$9a^{2}-a$",
+    "$9a^{2}-9a$",
+    "$3a^{2}-9a$",
+    "$9a^{2}-3a$"
+   ],
+   "c": 2,
+   "a": "$9^{x+1}=9\\cdot(3^{x})^{2}=9a^{2}$ ve $3^{x+2}=9a$ olduğundan ifade $9a^{2}-9a$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0076",
+   "konu": "12.1.2",
+   "zorluk": 1,
+   "s": "$\\log_{10}1000-\\log_{2}16$ işleminin sonucu kaçtır?",
+   "o": [
+    "$7$",
+    "$1$",
+    "$-1$",
+    "$0$",
+    "$-7$"
+   ],
+   "c": 2,
+   "a": "$\\log_{10}1000=3$ ve $\\log_{2}16=4$ olduğundan sonuç $3-4=-1$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0077",
+   "konu": "12.1.2",
+   "zorluk": 1,
+   "s": "$\\log 5+\\log 20$ işleminin sonucu kaçtır?",
+   "o": [
+    "$25$",
+    "$1$",
+    "$10$",
+    "$100$",
+    "$2$"
+   ],
+   "c": 4,
+   "a": "$\\log5+\\log20=\\log100=2$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0078",
+   "konu": "12.1.2",
+   "zorluk": 1,
+   "s": "$\\log_{2}x=3$ ve $\\log_{2}y=5$ olduğuna göre $\\log_{2}(x^{2}y)$ değeri kaçtır?",
+   "o": [
+    "$13$",
+    "$30$",
+    "$9$",
+    "$15$",
+    "$11$"
+   ],
+   "c": 4,
+   "a": "$\\log_{2}(x^{2}y)=2\\log_{2}x+\\log_{2}y=6+5=11$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0079",
+   "konu": "12.1.2",
+   "zorluk": 2,
+   "s": "$f(x)=\\log_{2}(x^{2}-4x-5)$ fonksiyonunun en geniş tanım kümesi aşağıdakilerden hangisidir?",
+   "o": [
+    "$(-1,5)$",
+    "$(-\\infty,-1]\\cup[5,\\infty)$",
+    "$(-5,1)$",
+    "$(-\\infty,-1)\\cup(5,\\infty)$",
+    "$\\mathbb{R}-\\{-1,5\\}$"
+   ],
+   "c": 3,
+   "a": "$x^{2}-4x-5=(x-5)(x+1)>0$ olmalıdır. Bu eşitsizlik $x<-1$ veya $x>5$ için sağlanır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0080",
+   "konu": "12.1.2",
+   "zorluk": 2,
+   "s": "$\\log_{2}3\\cdot\\log_{3}5\\cdot\\log_{5}16$ çarpımının değeri kaçtır?",
+   "o": [
+    "$4$",
+    "$16$",
+    "$5$",
+    "$2$",
+    "$8$"
+   ],
+   "c": 0,
+   "a": "Taban değiştirme ile çarpım $\\log_{2}16=4$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0081",
+   "konu": "12.1.2",
+   "zorluk": 2,
+   "s": "$\\log_{2}5=a$ olduğuna göre $\\log_{4}20$ değerinin $a$ cinsinden eşiti aşağıdakilerden hangisidir?",
+   "o": [
+    "$\\dfrac{a+1}{2}$",
+    "$\\dfrac{a}{2}+2$",
+    "$a+2$",
+    "$\\dfrac{a+2}{2}$",
+    "$\\dfrac{a+2}{4}$"
+   ],
+   "c": 3,
+   "a": "$\\log_{4}20=\\dfrac{\\log_{2}20}{\\log_{2}4}=\\dfrac{\\log_{2}4+\\log_{2}5}{2}=\\dfrac{2+a}{2}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0082",
+   "konu": "12.1.2",
+   "zorluk": 2,
+   "s": "$f(x)=\\log_{3}(x+1)$ fonksiyonu için $f(a)=3$ olduğuna göre $a$ kaçtır?",
+   "o": [
+    "$26$",
+    "$10$",
+    "$8$",
+    "$28$",
+    "$27$"
+   ],
+   "c": 0,
+   "a": "$\\log_{3}(a+1)=3$ ise $a+1=3^{3}=27$ ve $a=26$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0083",
+   "konu": "12.1.2",
+   "zorluk": 2,
+   "s": "$\\log_{x}8=\\dfrac{3}{2}$ olduğuna göre $x$ kaçtır?",
+   "o": [
+    "$16$",
+    "$2$",
+    "$3$",
+    "$4$",
+    "$8$"
+   ],
+   "c": 3,
+   "a": "$x^{3/2}=8$ ise $x=8^{2/3}=4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0084",
+   "konu": "12.1.2",
+   "zorluk": 3,
+   "s": "$\\log2=a$ ve $\\log3=b$ olduğuna göre $\\log_{6}12$ değerinin $a$ ve $b$ cinsinden eşiti aşağıdakilerden hangisidir?",
+   "o": [
+    "$\\dfrac{2a+b}{ab}$",
+    "$2a+b$",
+    "$\\dfrac{a+2b}{a+b}$",
+    "$\\dfrac{a+b}{2a+b}$",
+    "$\\dfrac{2a+b}{a+b}$"
+   ],
+   "c": 4,
+   "a": "$\\log_{6}12=\\dfrac{\\log12}{\\log6}=\\dfrac{2\\log2+\\log3}{\\log2+\\log3}=\\dfrac{2a+b}{a+b}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0085",
+   "konu": "12.1.2",
+   "zorluk": 3,
+   "s": "$\\log_{2}\\sqrt{2\\sqrt{2\\sqrt{2}}}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$\\dfrac{3}{2}$",
+    "$\\dfrac{3}{4}$",
+    "$\\dfrac{7}{8}$",
+    "$\\dfrac{7}{4}$",
+    "$1$"
+   ],
+   "c": 2,
+   "a": "İçten dışa: $\\sqrt{2}=2^{1/2}$, $\\sqrt{2\\cdot2^{1/2}}=2^{3/4}$, $\\sqrt{2\\cdot2^{3/4}}=2^{7/8}$. Dolayısıyla logaritma $\\dfrac{7}{8}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0086",
+   "konu": "12.1.2",
+   "zorluk": 2,
+   "s": "$f(x)=\\log_{a-1}x$ fonksiyonunun azalan olması için $a$'nın alabileceği değerler aşağıdakilerden hangisidir?",
+   "o": [
+    "$a<2$",
+    "$a>2$",
+    "$a>1$",
+    "$1<a<2$",
+    "$0<a<1$"
+   ],
+   "c": 3,
+   "a": "Logaritma tabanı için $a-1>0$ ve $a-1\\neq1$ olmalıdır; fonksiyon azalan ise $0<a-1<1$ yani $1<a<2$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0087",
+   "konu": "12.1.2",
+   "zorluk": 3,
+   "s": "$a=\\log_{2}5$, $b=\\log_{3}10$ ve $c=\\log_{5}20$ olduğuna göre aşağıdaki sıralamalardan hangisi doğrudur?",
+   "o": [
+    "$a<c<b$",
+    "$c<a<b$",
+    "$b<a<c$",
+    "$c<b<a$",
+    "$a<b<c$"
+   ],
+   "c": 3,
+   "a": "$a=\\log_{2}5\\approx2{,}32$, $b=\\log_{3}10\\approx2{,}10$ ve $c=\\log_{5}20\\approx1{,}86$ olduğundan $c<b<a$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0088",
+   "konu": "12.1.2",
+   "zorluk": 2,
+   "s": "Bir çözeltinin pH değeri $\\text{pH}=-\\log[H^{+}]$ ile hesaplanır. $[H^{+}]=4\\cdot10^{-6}$ ve $\\log2=0{,}3$ olduğuna göre bu çözeltinin pH değeri kaçtır?",
+   "o": [
+    "$4{,}6$",
+    "$5{,}7$",
+    "$5{,}4$",
+    "$6{,}3$",
+    "$6{,}6$"
+   ],
+   "c": 2,
+   "a": "$\\log(4\\cdot10^{-6})=2\\log2-6=0{,}6-6=-5{,}4$ olduğundan pH $=5{,}4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0089",
+   "konu": "12.1.2",
+   "zorluk": 1,
+   "s": "$\\log_{7}1+\\log_{7}7+\\log_{7}49$ işleminin sonucu kaçtır?",
+   "o": [
+    "$2$",
+    "$4$",
+    "$3$",
+    "$57$",
+    "$1$"
+   ],
+   "c": 2,
+   "a": "$\\log_{7}1=0$, $\\log_{7}7=1$, $\\log_{7}49=2$ olduğundan toplam $3$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0090",
+   "konu": "12.1.2",
+   "zorluk": 2,
+   "s": "$f(x)=\\log_{3}x$ fonksiyonunun grafiği $(9,m)$ ve $(n,4)$ noktalarından geçmektedir. Buna göre $m+n$ kaçtır?",
+   "o": [
+    "$85$",
+    "$83$",
+    "$11$",
+    "$18$",
+    "$81$"
+   ],
+   "c": 1,
+   "a": "$m=\\log_{3}9=2$ ve $n=3^{4}=81$ olduğundan $m+n=83$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0091",
+   "konu": "12.1.3",
+   "zorluk": 1,
+   "s": "$3^{2x-1}=27$ denklemini sağlayan $x$ değeri kaçtır?",
+   "o": [
+    "$2$",
+    "$1$",
+    "$4$",
+    "$\\dfrac{5}{2}$",
+    "$3$"
+   ],
+   "c": 0,
+   "a": "$3^{2x-1}=3^{3}$ ise $2x-1=3$ ve $x=2$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0092",
+   "konu": "12.1.3",
+   "zorluk": 1,
+   "s": "$\\log_{2}(x+3)=4$ denkleminin çözümü kaçtır?",
+   "o": [
+    "$7$",
+    "$13$",
+    "$19$",
+    "$1$",
+    "$5$"
+   ],
+   "c": 1,
+   "a": "$x+3=2^{4}=16$ ise $x=13$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0093",
+   "konu": "12.1.3",
+   "zorluk": 1,
+   "s": "$2^{x}<16$ eşitsizliğini sağlayan en büyük tam sayı değeri kaçtır?",
+   "o": [
+    "$3$",
+    "$2$",
+    "$4$",
+    "$15$",
+    "$16$"
+   ],
+   "c": 0,
+   "a": "$2^{x}<2^{4}$ ve taban $1$'den büyük olduğundan $x<4$ olur. En büyük tam sayı $3$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0094",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$9^{x}-3^{x+1}-54=0$ denkleminin çözüm kümesi aşağıdakilerden hangisidir?",
+   "o": [
+    "$\\{9\\}$",
+    "$\\{2\\}$",
+    "$\\{-6,9\\}$",
+    "$\\varnothing$",
+    "$\\{3\\}$"
+   ],
+   "c": 1,
+   "a": "$t=3^{x}>0$ olsun. $t^{2}-3t-54=0$ ise $(t-9)(t+6)=0$ olur. $t>0$ olduğundan $t=9$ ve $x=2$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0095",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$\\log(x+1)+\\log(x-2)=1$ denkleminin çözümü kaçtır?",
+   "o": [
+    "$3$",
+    "$4$",
+    "$11$",
+    "$5$",
+    "$-3$"
+   ],
+   "c": 1,
+   "a": "$(x+1)(x-2)=10$ ise $x^{2}-x-12=0$ ve $x=4$ ya da $x=-3$ olur. Logaritmanın tanımı gereği $x>2$ olmalıdır; bu yüzden $x=4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0096",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$2^{x+3}-2^{x}=56$ denklemini sağlayan $x$ değeri kaçtır?",
+   "o": [
+    "$3$",
+    "$7$",
+    "$4$",
+    "$8$",
+    "$2$"
+   ],
+   "c": 0,
+   "a": "$2^{x}(8-1)=56$ ise $2^{x}=8$ ve $x=3$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0097",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$\\log_{2}(x-1)<3$ eşitsizliğini sağlayan kaç tam sayı değeri vardır?",
+   "o": [
+    "$8$",
+    "$9$",
+    "$6$",
+    "$10$",
+    "$7$"
+   ],
+   "c": 4,
+   "a": "Tanım için $x>1$, eşitsizlik için $x-1<8$ yani $x<9$ olur. $1<x<9$ aralığında $2,3,\\ldots,8$ olmak üzere $7$ tam sayı vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0098",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$\\left(\\dfrac{1}{3}\\right)^{x^{2}-4}>\\dfrac{1}{81}$ eşitsizliğini sağlayan kaç tam sayı vardır?",
+   "o": [
+    "$4$",
+    "$7$",
+    "$5$",
+    "$3$",
+    "$6$"
+   ],
+   "c": 2,
+   "a": "Taban $1$'den küçük olduğundan $x^{2}-4<4$ yani $x^{2}<8$ olur. Bu eşitsizliği $-2,-1,0,1,2$ olmak üzere $5$ tam sayı sağlar.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0099",
+   "konu": "12.1.3",
+   "zorluk": 3,
+   "s": "$\\log_{2}x+\\log_{x}2=\\dfrac{5}{2}$ denkleminin çözüm kümesindeki elemanların çarpımı kaçtır?",
+   "o": [
+    "$5$",
+    "$4$",
+    "$2 \\sqrt{2}$",
+    "$8$",
+    "$4 \\sqrt{2}$"
+   ],
+   "c": 4,
+   "a": "$t=\\log_{2}x$ olsun. $t+\\dfrac{1}{t}=\\dfrac{5}{2}$ ise $t=2$ ya da $t=\\dfrac{1}{2}$ olur. Buradan $x=4$ ve $x=\\sqrt{2}$ bulunur; çarpım $4\\sqrt{2}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0100",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$\\log_{2}(x^{2}-2x)=3$ denkleminin çözüm kümesindeki elemanların toplamı kaçtır?",
+   "o": [
+    "$0$",
+    "$6$",
+    "$4$",
+    "$2$",
+    "$-2$"
+   ],
+   "c": 3,
+   "a": "$x^{2}-2x=8$ ise $x^{2}-2x-8=0$ ve $x=4$ ya da $x=-2$ olur. Her iki değer için $x^{2}-2x=8>0$ olduğundan ikisi de geçerlidir; toplam $2$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0101",
+   "konu": "12.1.3",
+   "zorluk": 3,
+   "s": "$3^{x}+3^{x+1}+3^{x+2}=351$ denklemini sağlayan $x$ değeri kaçtır?",
+   "o": [
+    "$27$",
+    "$13$",
+    "$4$",
+    "$2$",
+    "$3$"
+   ],
+   "c": 4,
+   "a": "$3^{x}(1+3+9)=351$ ise $3^{x}=27$ ve $x=3$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0102",
+   "konu": "12.1.3",
+   "zorluk": 3,
+   "s": "$4^{x}-3\\cdot2^{x}-4\\leq0$ eşitsizliğinin çözüm kümesi aşağıdakilerden hangisidir?",
+   "o": [
+    "$[0,2]$",
+    "$(0,4]$",
+    "$(-\\infty,2]$",
+    "$(-\\infty,4]$",
+    "$[2,\\infty)$"
+   ],
+   "c": 2,
+   "a": "$t=2^{x}>0$ için $t^{2}-3t-4\\leq0$ ise $(t-4)(t+1)\\leq0$ ve $0<t\\leq4$ olur. $2^{x}\\leq4$ ise $x\\leq2$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0103",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "$\\log_{x}(x+6)=2$ denklemini sağlayan $x$ değeri kaçtır?",
+   "o": [
+    "$9$",
+    "$3$",
+    "$6$",
+    "$-2$",
+    "$2$"
+   ],
+   "c": 1,
+   "a": "$x^{2}=x+6$ ise $x^{2}-x-6=0$ ve $x=3$ ya da $x=-2$ olur. Taban pozitif olmalı; bu yüzden $x=3$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0104",
+   "konu": "12.1.3",
+   "zorluk": 2,
+   "s": "Bir kültürdeki bakteri sayısı $t$ saat sonra $N(t)=500\\cdot2^{t/3}$ ile modelleniyor. Bakteri sayısı kaç saat sonra $16\\,000$ olur?",
+   "o": [
+    "$9$",
+    "$32$",
+    "$45$",
+    "$15$",
+    "$5$"
+   ],
+   "c": 3,
+   "a": "$500\\cdot2^{t/3}=16000$ ise $2^{t/3}=32=2^{5}$ olur. Buradan $\\dfrac{t}{3}=5$ ve $t=15$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0105",
+   "konu": "12.2.1",
+   "zorluk": 1,
+   "s": "Genel terimi $a_{n}=n^{2}-3n$ olan dizinin $5$. terimi kaçtır?",
+   "o": [
+    "$15$",
+    "$5$",
+    "$12$",
+    "$10$",
+    "$20$"
+   ],
+   "c": 3,
+   "a": "$a_{5}=25-15=10$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0106",
+   "konu": "12.2.1",
+   "zorluk": 1,
+   "s": "$4,9,14,19,\\ldots$ aritmetik dizisinin $12$. terimi kaçtır?",
+   "o": [
+    "$60$",
+    "$64$",
+    "$59$",
+    "$54$",
+    "$55$"
+   ],
+   "c": 2,
+   "a": "İlk terim $4$, ortak fark $5$'tir. $a_{12}=4+11\\cdot5=59$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0107",
+   "konu": "12.2.1",
+   "zorluk": 1,
+   "s": "$2,6,18,\\ldots$ geometrik dizisinin $5$. terimi kaçtır?",
+   "o": [
+    "$54$",
+    "$108$",
+    "$96$",
+    "$162$",
+    "$486$"
+   ],
+   "c": 3,
+   "a": "Ortak çarpan $3$'tür. $a_{5}=2\\cdot3^{4}=162$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0108",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "$5$ ile $41$ arasına $8$ terim eklenerek aritmetik dizi oluşturuluyor. Dizinin ortak farkı kaçtır?",
+   "o": [
+    "$5$",
+    "$3$",
+    "$6$",
+    "$\\dfrac{9}{2}$",
+    "$4$"
+   ],
+   "c": 4,
+   "a": "Toplam $10$ terim olur; $41=5+9d$ ise $d=4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0109",
+   "konu": "12.2.1",
+   "zorluk": 3,
+   "s": "$3$ ile $192$ arasına $5$ pozitif terim eklenerek geometrik dizi oluşturuluyor. Eklenen terimlerin toplamı kaçtır?",
+   "o": [
+    "$93$",
+    "$381$",
+    "$192$",
+    "$189$",
+    "$186$"
+   ],
+   "c": 4,
+   "a": "Toplam $7$ terim vardır; $192=3r^{6}$ ise $r^{6}=64$ ve terimler pozitif olduğundan $r=2$ olur. Eklenen terimler $6,12,24,48,96$ ve toplamları $186$'dır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0110",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "Bir aritmetik dizide $a_{5}=14$ olduğuna göre ilk $9$ terimin toplamı kaçtır?",
+   "o": [
+    "$252$",
+    "$126$",
+    "$63$",
+    "$112$",
+    "$140$"
+   ],
+   "c": 1,
+   "a": "$S_{9}=9\\cdot a_{5}=9\\cdot14=126$ olur (ortadaki terim ile terim sayısının çarpımı).",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0111",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "$7,12,17,\\ldots,102$ aritmetik dizisinde kaç terim vardır?",
+   "o": [
+    "$20$",
+    "$22$",
+    "$19$",
+    "$21$",
+    "$18$"
+   ],
+   "c": 0,
+   "a": "$102=7+(n-1)\\cdot5$ ise $n-1=19$ ve $n=20$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0112",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "Bir geometrik dizide $a_{3}=12$ ve $a_{6}=96$ olduğuna göre ilk $6$ terimin toplamı kaçtır?",
+   "o": [
+    "$186$",
+    "$192$",
+    "$189$",
+    "$93$",
+    "$378$"
+   ],
+   "c": 2,
+   "a": "$r^{3}=\\dfrac{96}{12}=8$ ve $r=2$ olur; $a_{1}=3$ bulunur. $S_{6}=3\\cdot\\dfrac{2^{6}-1}{2-1}=189$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0113",
+   "konu": "12.2.1",
+   "zorluk": 3,
+   "s": "Toplamları $27$, çarpımları $693$ olan üç sayı bir aritmetik dizinin ardışık terimleridir. Bu sayıların en büyüğü kaçtır?",
+   "o": [
+    "$11$",
+    "$12$",
+    "$9$",
+    "$13$",
+    "$15$"
+   ],
+   "c": 0,
+   "a": "Sayılar $9-d,\\ 9,\\ 9+d$ olsun. $9(81-d^{2})=693$ ise $d^{2}=4$ ve sayılar $7,9,11$ olur. En büyük sayı $11$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0114",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "Genel terimi $a_{n}=\\dfrac{3n-1}{n+2}$ olan dizinin kaç terimi $2$'den küçüktür?",
+   "o": [
+    "$6$",
+    "$4$",
+    "$3$",
+    "$5$",
+    "$2$"
+   ],
+   "c": 1,
+   "a": "$\\dfrac{3n-1}{n+2}<2$ ise $3n-1<2n+4$ ve $n<5$ olur. $n=1,2,3,4$ için $4$ terim vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0115",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "Bir dizinin ilk $n$ teriminin toplamı $S_{n}=2^{n}-1$ ile veriliyor. Bu dizinin $5$. terimi kaçtır?",
+   "o": [
+    "$32$",
+    "$15$",
+    "$8$",
+    "$31$",
+    "$16$"
+   ],
+   "c": 4,
+   "a": "$a_{5}=S_{5}-S_{4}=31-15=16$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0116",
+   "konu": "12.2.1",
+   "zorluk": 3,
+   "s": "Bir aritmetik dizinin ilk $5$ teriminin toplamı $40$, ilk $10$ teriminin toplamı $155$'tir. Bu dizinin $20$. terimi kaçtır?",
+   "o": [
+    "$65$",
+    "$57$",
+    "$59$",
+    "$62$",
+    "$56$"
+   ],
+   "c": 2,
+   "a": "$S_{5}=5a_{1}+10d=40$ ve $S_{10}=10a_{1}+45d=155$ denklemlerinden $a_{1}=2$, $d=3$ bulunur. $a_{20}=2+19\\cdot3=59$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0117",
+   "konu": "12.2.1",
+   "zorluk": 2,
+   "s": "$a_{1}=2$ ve $a_{n+1}=3a_{n}-1$ ($n\\geq1$) bağıntısıyla tanımlanan dizinin $4$. terimi kaçtır?",
+   "o": [
+    "$38$",
+    "$40$",
+    "$122$",
+    "$41$",
+    "$14$"
+   ],
+   "c": 3,
+   "a": "$a_{2}=3\\cdot2-1=5$, $a_{3}=3\\cdot5-1=14$, $a_{4}=3\\cdot14-1=41$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0118",
+   "konu": "12.3.1",
+   "zorluk": 2,
+   "s": "$\\tan15^\\circ$ değeri aşağıdakilerden hangisidir?",
+   "o": [
+    "$-3 + 2 \\sqrt{3}$",
+    "$2 - \\sqrt{3}$",
+    "$-1 + \\sqrt{3}$",
+    "$\\sqrt{3} + 2$",
+    "$\\dfrac{1}{2}$"
+   ],
+   "c": 1,
+   "a": "$\\tan(45^\\circ-30^\\circ)=\\dfrac{1-\\frac{\\sqrt{3}}{3}}{1+\\frac{\\sqrt{3}}{3}}=\\dfrac{3-\\sqrt{3}}{3+\\sqrt{3}}=2-\\sqrt{3}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0119",
+   "konu": "12.3.2",
+   "zorluk": 2,
+   "s": "$\\cos2x=\\dfrac{1}{2}$ denkleminin $[0,\\pi]$ aralığındaki köklerinin toplamı kaçtır?",
+   "o": [
+    "$\\dfrac{\\pi}{2}$",
+    "$\\dfrac{7 \\pi}{6}$",
+    "$\\pi$",
+    "$\\dfrac{4 \\pi}{3}$",
+    "$2 \\pi$"
+   ],
+   "c": 2,
+   "a": "$2x\\in[0,2\\pi]$ için $2x=\\dfrac{\\pi}{3}$ veya $2x=\\dfrac{5\\pi}{3}$ olur. Buradan $x=\\dfrac{\\pi}{6}$ ve $x=\\dfrac{5\\pi}{6}$ bulunur; toplam $\\pi$ olur.",
+   "kaynak": "ozgun"
   }
  ]
 }

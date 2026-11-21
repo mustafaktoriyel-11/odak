@@ -1287,6 +1287,1129 @@
    "c": 0,
    "a": "$\\dfrac{4}{3}\\pi r^{3}=36\\pi$ ise $r=3$ olur. Silindirin yüksekliği $2r=6$; hacim $\\pi\\cdot9\\cdot6=54\\pi$ bulunur.",
    "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0081",
+   "konu": "M.1.1",
+   "zorluk": 1,
+   "s": "Ardışık dört pozitif tam sayının toplamı $114$ ise bu sayıların en büyüğü kaçtır?",
+   "o": [
+    "$30$",
+    "$27$",
+    "$28$",
+    "$31$",
+    "$33$"
+   ],
+   "c": 0,
+   "a": "Sayılar $n,n+1,n+2,n+3$ ise $4n+6=114$ ve $n=27$ bulunur. En büyük sayı $27+3=30$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0082",
+   "konu": "M.1.2",
+   "zorluk": 2,
+   "s": "$ab$ iki basamaklı bir doğal sayıdır. Rakamları toplamı $11$ ve rakamlarının yeri değiştirildiğinde sayı $27$ artıyorsa $ab$ sayısı kaçtır?",
+   "o": [
+    "$38$",
+    "$56$",
+    "$47$",
+    "$29$",
+    "$74$"
+   ],
+   "c": 2,
+   "a": "$ba-ab=9(b-a)=27$ olduğundan $b-a=3$ bulunur. $a+b=11$ ile birlikte $b=7$, $a=4$ ve sayı $47$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0083",
+   "konu": "M.1.2",
+   "zorluk": 1,
+   "s": "Üç basamaklı en büyük çift doğal sayı ile üç basamaklı en küçük tek doğal sayının farkı kaçtır?",
+   "o": [
+    "$899$",
+    "$898$",
+    "$887$",
+    "$997$",
+    "$897$"
+   ],
+   "c": 4,
+   "a": "Üç basamaklı en büyük çift sayı $998$, en küçük tek sayı $101$'dir. Fark $998-101=897$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0084",
+   "konu": "M.1.3",
+   "zorluk": 2,
+   "s": "$15$ ile bölündüğünde kalanı $7$ olan en küçük üç basamaklı doğal sayı kaçtır?",
+   "o": [
+    "$100$",
+    "$105$",
+    "$127$",
+    "$112$",
+    "$97$"
+   ],
+   "c": 3,
+   "a": "Sayı $15k+7$ biçimindedir. $15k+7\\ge100$ için en küçük $k=7$ olur ve sayı $15\\cdot7+7=112$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0085",
+   "konu": "M.1.4",
+   "zorluk": 1,
+   "s": "İki pozitif tam sayının çarpımı $504$, EBOB'u $6$ ise EKOK'ları kaçtır?",
+   "o": [
+    "$90$",
+    "$84$",
+    "$3024$",
+    "$78$",
+    "$168$"
+   ],
+   "c": 1,
+   "a": "$\\text{EBOB}\\cdot\\text{EKOK}=$ çarpım olduğundan $6\\cdot\\text{EKOK}=504$ ve $\\text{EKOK}=84$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0086",
+   "konu": "M.1.4",
+   "zorluk": 2,
+   "s": "$A=2^{3}\\cdot3^{2}$ ve $B=2^{2}\\cdot3\\cdot5$ sayıları için $\\text{EBOB}(A,B)+\\text{EKOK}(A,B)$ toplamı kaçtır?",
+   "o": [
+    "$372$",
+    "$360$",
+    "$382$",
+    "$348$",
+    "$732$"
+   ],
+   "c": 0,
+   "a": "$\\text{EBOB}=2^{2}\\cdot3=12$ ve $\\text{EKOK}=2^{3}\\cdot3^{2}\\cdot5=360$ olduğundan toplam $372$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0087",
+   "konu": "M.1.5",
+   "zorluk": 2,
+   "s": "$\\dfrac{0{,}75-\\dfrac{1}{3}}{\\dfrac{5}{6}}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$\\dfrac{5}{12}$",
+    "$\\dfrac{2}{3}$",
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{5}{8}$"
+   ],
+   "c": 3,
+   "a": "$0{,}75-\\dfrac{1}{3}=\\dfrac{3}{4}-\\dfrac{1}{3}=\\dfrac{5}{12}$ olur. $\\dfrac{5}{12}\\cdot\\dfrac{6}{5}=\\dfrac{1}{2}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0088",
+   "konu": "M.1.6",
+   "zorluk": 2,
+   "s": "$x$ gerçek sayısı $-2\\le x<5$ aralığındadır. Buna göre $y=3-2x$ ifadesi kaç farklı tam sayı değeri alır?",
+   "o": [
+    "$13$",
+    "$12$",
+    "$14$",
+    "$15$",
+    "$7$"
+   ],
+   "c": 2,
+   "a": "$-2\\le x<5$ için $-10<-2x\\le4$ ve $-7<y\\le7$ olur. Tam sayı değerleri $-6,-5,\\dots,7$ olup $14$ tanedir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0089",
+   "konu": "M.1.7",
+   "zorluk": 2,
+   "s": "$|x-2|<4$ eşitsizliğini sağlayan tam sayıların toplamı kaçtır?",
+   "o": [
+    "$15$",
+    "$14$",
+    "$9$",
+    "$12$",
+    "$20$"
+   ],
+   "c": 1,
+   "a": "$-4<x-2<4$ ise $-2<x<6$ olur. Tam sayılar $-1,0,1,2,3,4,5$ olup toplamları $14$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0090",
+   "konu": "M.1.8",
+   "zorluk": 2,
+   "s": "$\\dfrac{2^{10}+2^{8}}{5}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$205$",
+    "$128$",
+    "$512$",
+    "$260$",
+    "$256$"
+   ],
+   "c": 4,
+   "a": "Payda $2^{8}$ ortak parantezine alınırsa $2^{8}(4+1)=2^{8}\\cdot5$ olur. $5$ ile sadeleşince $2^{8}=256$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0091",
+   "konu": "M.1.9",
+   "zorluk": 3,
+   "s": "$\\sqrt{3-2\\sqrt{2}}$ ifadesinin değeri aşağıdakilerden hangisidir?",
+   "o": [
+    "$\\sqrt{2}-1$",
+    "$1-\\sqrt{2}$",
+    "$\\sqrt{2}+1$",
+    "$3-\\sqrt{2}$",
+    "$\\sqrt{3}-\\sqrt{2}$"
+   ],
+   "c": 0,
+   "a": "$3-2\\sqrt{2}=(\\sqrt{2}-1)^{2}$ olduğundan $\\sqrt{(\\sqrt{2}-1)^{2}}=|\\sqrt{2}-1|=\\sqrt{2}-1$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0092",
+   "konu": "M.1.10",
+   "zorluk": 2,
+   "s": "$x=7$ için $\\dfrac{x^{2}-5x+6}{x^{2}-4}$ ifadesinin değeri kaçtır?",
+   "o": [
+    "$\\dfrac{1}{9}$",
+    "$\\dfrac{5}{9}$",
+    "$\\dfrac{4}{5}$",
+    "$\\dfrac{2}{3}$",
+    "$\\dfrac{4}{9}$"
+   ],
+   "c": 4,
+   "a": "Pay $(x-2)(x-3)$, payda $(x-2)(x+2)$ biçiminde çarpanlarına ayrılır. Sadeleşince $\\dfrac{x-3}{x+2}=\\dfrac{4}{9}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0093",
+   "konu": "M.1.11",
+   "zorluk": 2,
+   "s": "$3x=4y$ ve $5y=6z$ olduğuna göre $z=20$ iken $x$ kaçtır?",
+   "o": [
+    "$24$",
+    "$32$",
+    "$30$",
+    "$40$",
+    "$36$"
+   ],
+   "c": 1,
+   "a": "$5y=6\\cdot20=120$ olduğundan $y=24$ bulunur. $3x=4\\cdot24=96$ ve $x=32$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0094",
+   "konu": "M.1.12",
+   "zorluk": 2,
+   "s": "$\\dfrac{x+1}{3}-\\dfrac{x-1}{2}=1$ denklemini sağlayan $x$ değeri kaçtır?",
+   "o": [
+    "$1$",
+    "$-5$",
+    "$5$",
+    "$-1$",
+    "$0$"
+   ],
+   "c": 3,
+   "a": "Her iki taraf $6$ ile çarpılırsa $2(x+1)-3(x-1)=6$ olur. $-x+5=6$ ise $x=-1$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0095",
+   "konu": "M.1.13",
+   "zorluk": 1,
+   "s": "Bir sayının $3$ katının $4$ eksiği, aynı sayının yarısının $6$ fazlasına eşittir. Bu sayı kaçtır?",
+   "o": [
+    "$2$",
+    "$5$",
+    "$4$",
+    "$8$",
+    "$10$"
+   ],
+   "c": 2,
+   "a": "Sayı $x$ ise $3x-4=\\dfrac{x}{2}+6$ olur. $\\dfrac{5x}{2}=10$ olduğundan $x=4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0096",
+   "konu": "M.1.13",
+   "zorluk": 2,
+   "s": "Bir kitabın önce $\\dfrac{1}{4}$'ü, ertesi gün kalan sayfaların $\\dfrac{1}{3}$'ü okunuyor. Geriye $60$ sayfa kaldığına göre kitap kaç sayfadır?",
+   "o": [
+    "$120$",
+    "$90$",
+    "$100$",
+    "$144$",
+    "$180$"
+   ],
+   "c": 0,
+   "a": "Kitap $x$ sayfa ise ilk gün sonunda $\\dfrac{3x}{4}$ kalır. İkinci gün bunun $\\dfrac{1}{3}$'ü okununca $\\dfrac{3x}{4}\\cdot\\dfrac{2}{3}=\\dfrac{x}{2}$ kalır. $\\dfrac{x}{2}=60$ ise $x=120$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0097",
+   "konu": "M.1.14",
+   "zorluk": 2,
+   "s": "Annenin yaşı kızının yaşının $4$ katıdır. $10$ yıl sonra ikisinin yaşları toplamı $80$ olacağına göre annenin bugünkü yaşı kaçtır?",
+   "o": [
+    "$36$",
+    "$48$",
+    "$40$",
+    "$44$",
+    "$52$"
+   ],
+   "c": 1,
+   "a": "Kızın yaşı $k$ ise $(4k+10)+(k+10)=80$ olur. $5k=60$ ve $k=12$ bulunur. Annenin yaşı $4\\cdot12=48$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0098",
+   "konu": "M.1.15",
+   "zorluk": 1,
+   "s": "Liste fiyatı üzerinden $\\%20$ indirimle $240$ TL'ye satılan bir pantolonun liste fiyatı kaç TL'dir?",
+   "o": [
+    "$288$",
+    "$192$",
+    "$260$",
+    "$320$",
+    "$300$"
+   ],
+   "c": 4,
+   "a": "İndirimli fiyat liste fiyatının $\\%80$'idir. Liste fiyatı $240\\div0{,}8=300$ TL bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0099",
+   "konu": "M.1.15",
+   "zorluk": 2,
+   "s": "Maliyeti $500$ TL olan bir mal $650$ TL'ye satılıyor. Satıştan elde edilen kâr, maliyet üzerinden yüzde kaçtır?",
+   "o": [
+    "$15$",
+    "$23$",
+    "$30$",
+    "$25$",
+    "$35$"
+   ],
+   "c": 2,
+   "a": "Kâr $650-500=150$ TL'dir. Maliyet üzerinden kâr yüzdesi $\\dfrac{150}{500}\\cdot100=30$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0100",
+   "konu": "M.1.16",
+   "zorluk": 2,
+   "s": "$40$ litrelik $\\%30$'luk şekerli suya kaç litre saf su eklenirse karışım $\\%20$'lik olur?",
+   "o": [
+    "$10$",
+    "$15$",
+    "$25$",
+    "$20$",
+    "$30$"
+   ],
+   "c": 3,
+   "a": "Karışımdaki şeker $40\\cdot0{,}3=12$ litredir. $\\dfrac{12}{40+x}=0{,}2$ ise $40+x=60$ ve $x=20$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0101",
+   "konu": "M.1.17",
+   "zorluk": 2,
+   "s": "Bir işi Ali tek başına $10$ günde, Veli tek başına $15$ günde bitirebilir. İkisi birlikte $3$ gün çalıştıktan sonra Veli işten ayrılıyor. Kalan işi Ali tek başına kaç günde bitirir?",
+   "o": [
+    "$5$",
+    "$3$",
+    "$4$",
+    "$6$",
+    "$7$"
+   ],
+   "c": 0,
+   "a": "Birlikte günde $\\dfrac{1}{10}+\\dfrac{1}{15}=\\dfrac{1}{6}$ iş yaparlar. $3$ günde işin $\\dfrac{1}{2}$'si biter. Kalan $\\dfrac{1}{2}$ işi Ali günde $\\dfrac{1}{10}$ ile $5$ günde bitirir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0102",
+   "konu": "M.1.17",
+   "zorluk": 1,
+   "s": "Aynı hızda çalışan $6$ işçi bir işi $12$ günde bitirebilmektedir. Aynı işi $8$ işçi kaç günde bitirir?",
+   "o": [
+    "$6$",
+    "$8$",
+    "$9$",
+    "$10$",
+    "$16$"
+   ],
+   "c": 2,
+   "a": "İşçi sayısı ile gün sayısı ters orantılıdır: $6\\cdot12=8\\cdot x$ ve $x=9$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0103",
+   "konu": "M.1.18",
+   "zorluk": 2,
+   "s": "Bir araç, yolun yarısını $40$ km/sa, kalan yarısını $60$ km/sa hızla gidiyor. Aracın tüm yol boyunca ortalama hızı kaç km/sa'tir?",
+   "o": [
+    "$50$",
+    "$45$",
+    "$52$",
+    "$48$",
+    "$46$"
+   ],
+   "c": 3,
+   "a": "Yol $2d$ ise süre $\\dfrac{d}{40}+\\dfrac{d}{60}=\\dfrac{d}{24}$ olur. Ortalama hız $\\dfrac{2d}{d/24}=48$ km/sa bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0104",
+   "konu": "M.1.18",
+   "zorluk": 3,
+   "s": "Bir kayık, akıntı yönünde $36$ km'lik yolu $3$ saatte, akıntıya ters yönde aynı yolu $6$ saatte gidiyor. Durgun suda kayığın hızı kaç km/sa'tir?",
+   "o": [
+    "$3$",
+    "$6$",
+    "$12$",
+    "$18$",
+    "$9$"
+   ],
+   "c": 4,
+   "a": "Akıntı yönünde hız $12$, ters yönde $6$ km/sa'tir. Kayığın hızı $v$, akıntının hızı $u$ ise $v+u=12$ ve $v-u=6$ olduğundan $v=9$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0105",
+   "konu": "M.1.19",
+   "zorluk": 2,
+   "s": "Bir taksinin ücreti, gidilen yol ile doğrusal olarak artmaktadır. $2$ km için $31$ TL, $5$ km için $55$ TL ödendiğine göre $12$ km için kaç TL ödenir?",
+   "o": [
+    "$96$",
+    "$111$",
+    "$103$",
+    "$120$",
+    "$123$"
+   ],
+   "c": 1,
+   "a": "Kilometre başına artış $\\dfrac{55-31}{3}=8$ TL'dir. Açılış ücreti $31-2\\cdot8=15$ TL olduğundan $12$ km için $15+12\\cdot8=111$ TL bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0106",
+   "konu": "M.1.20",
+   "zorluk": 2,
+   "s": "$30$ öğrencilik bir sınıfta $18$ öğrenci basketbol, $15$ öğrenci voleybol oynamaktadır. Hiçbir sporu yapmayan $5$ öğrenci olduğuna göre her iki sporu da yapan kaç öğrenci vardır?",
+   "o": [
+    "$8$",
+    "$3$",
+    "$5$",
+    "$10$",
+    "$12$"
+   ],
+   "c": 0,
+   "a": "En az bir spor yapan öğrenci sayısı $30-5=25$'tir. $18+15-s(A\\cap B)=25$ ise $s(A\\cap B)=8$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0107",
+   "konu": "M.1.20",
+   "zorluk": 2,
+   "s": "$A=\\{a,b,c,d,e\\}$ kümesinin $a$ elemanını içeren kaç alt kümesi vardır?",
+   "o": [
+    "$8$",
+    "$15$",
+    "$31$",
+    "$16$",
+    "$32$"
+   ],
+   "c": 3,
+   "a": "$a$ elemanı her zaman alt kümede bulunacağından diğer $4$ eleman serbesttir. Alt küme sayısı $2^{4}=16$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0108",
+   "konu": "M.1.21",
+   "zorluk": 2,
+   "s": "Aşağıdaki önermelerden hangisi $\\neg(p\\land q)$ önermesine denktir?",
+   "o": [
+    "$\\neg p\\land\\neg q$",
+    "$\\neg p\\lor\\neg q$",
+    "$p\\lor\\neg q$",
+    "$\\neg p\\land q$",
+    "$p\\land\\neg q$"
+   ],
+   "c": 1,
+   "a": "De Morgan kuralına göre $\\neg(p\\land q)\\equiv\\neg p\\lor\\neg q$ olur. Doğruluk tablosunda diğer seçenekler farklı sonuç verir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0109",
+   "konu": "M.1.22",
+   "zorluk": 2,
+   "s": "$f(x)=ax+b$ doğrusal fonksiyonu için $f(1)=5$ ve $f(3)=11$ olduğuna göre $f(10)$ kaçtır?",
+   "o": [
+    "$29$",
+    "$30$",
+    "$32$",
+    "$35$",
+    "$50$"
+   ],
+   "c": 2,
+   "a": "$a+b=5$ ve $3a+b=11$ denklemlerinden $a=3$, $b=2$ bulunur. $f(10)=3\\cdot10+2=32$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0110",
+   "konu": "M.1.23",
+   "zorluk": 2,
+   "s": "$P(x-1)=x^{2}+3x+1$ olduğuna göre $P(2)$ kaçtır?",
+   "o": [
+    "$11$",
+    "$14$",
+    "$23$",
+    "$29$",
+    "$19$"
+   ],
+   "c": 4,
+   "a": "$x-1=2$ için $x=3$ alınır. $P(2)=3^{2}+3\\cdot3+1=19$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0111",
+   "konu": "M.1.24",
+   "zorluk": 1,
+   "s": "$x^{2}+kx+12=0$ denkleminin köklerinden biri $3$ ise $k$ kaçtır?",
+   "o": [
+    "$-7$",
+    "$7$",
+    "$-4$",
+    "$4$",
+    "$-12$"
+   ],
+   "c": 0,
+   "a": "$x=3$ yazılırsa $9+3k+12=0$ olur. $3k=-21$ ve $k=-7$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0112",
+   "konu": "M.1.25",
+   "zorluk": 2,
+   "s": "$5$ erkek ve $4$ kız öğrenci arasından $2$ erkek ve $1$ kız öğrenciden oluşan bir grup kaç farklı biçimde seçilir?",
+   "o": [
+    "$20$",
+    "$36$",
+    "$60$",
+    "$90$",
+    "$40$"
+   ],
+   "c": 4,
+   "a": "$2$ erkek $\\binom{5}{2}=10$, $1$ kız $\\binom{4}{1}=4$ biçimde seçilir. Toplam $10\\cdot4=40$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0113",
+   "konu": "M.1.26",
+   "zorluk": 2,
+   "s": "Bir torbada $5$ beyaz ve $3$ siyah top vardır. Torbadan art arda ve geri koymadan iki top çekiliyor. İkisinin de beyaz olma olasılığı kaçtır?",
+   "o": [
+    "$\\dfrac{25}{64}$",
+    "$\\dfrac{5}{8}$",
+    "$\\dfrac{3}{14}$",
+    "$\\dfrac{5}{14}$",
+    "$\\dfrac{5}{28}$"
+   ],
+   "c": 3,
+   "a": "İlk topun beyaz olma olasılığı $\\dfrac{5}{8}$, ikincinin beyaz olma olasılığı $\\dfrac{4}{7}$'dir. Olasılık $\\dfrac{5}{8}\\cdot\\dfrac{4}{7}=\\dfrac{5}{14}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0114",
+   "konu": "M.1.27",
+   "zorluk": 1,
+   "s": "Aritmetik ortalaması $12$ olan veri grubundaki her değer $2$ ile çarpılıp $3$ eklenirse yeni veri grubunun aritmetik ortalaması kaç olur?",
+   "o": [
+    "$24$",
+    "$15$",
+    "$27$",
+    "$26$",
+    "$30$"
+   ],
+   "c": 2,
+   "a": "Her değer $2$ ile çarpılıp $3$ eklenince ortalama da aynı işlemle değişir: $2\\cdot12+3=27$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0115",
+   "konu": "M.2.1",
+   "zorluk": 1,
+   "s": "Şekilde $A$, $O$, $B$ doğrusal noktalardır. $m(\\angle AOC)=3x+10$ ve $m(\\angle COB)=2x+20$ olduğuna göre $m(\\angle COB)$ kaç derecedir?",
+   "o": [
+    "$30$",
+    "$80$",
+    "$70$",
+    "$100$",
+    "$110$"
+   ],
+   "c": 1,
+   "a": "$A$, $O$, $B$ doğrusal olduğundan $3x+10+2x+20=180$ ve $x=30$ bulunur. $m(\\angle COB)=2\\cdot30+20=80^\\circ$ olur.",
+   "sekil": "<svg viewBox=\"0 0 160 120\"><line x1=\"20.0\" y1=\"100.0\" x2=\"140.0\" y2=\"100.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"80.0\" y1=\"100.0\" x2=\"88.7\" y2=\"50.8\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"20.0\" y=\"114.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"140.0\" y=\"114.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"80.0\" y=\"114.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">O</text><text x=\"92.0\" y=\"46.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"52.0\" y=\"84.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">3x+10</text><text x=\"112.0\" y=\"84.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">2x+20</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0116",
+   "konu": "M.2.2",
+   "zorluk": 1,
+   "s": "ABC üçgeninde $m(\\angle B)=40^\\circ$ ve $C$ köşesindeki dış açının ölçüsü $110^\\circ$ ise $m(\\angle A)$ kaç derecedir?",
+   "o": [
+    "$70$",
+    "$30$",
+    "$40$",
+    "$110$",
+    "$150$"
+   ],
+   "c": 0,
+   "a": "Bir dış açı, kendisine komşu olmayan iki iç açının toplamına eşittir. $m(\\angle A)+40=110$ ise $m(\\angle A)=70^\\circ$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0117",
+   "konu": "M.2.3",
+   "zorluk": 2,
+   "s": "Hipotenüs uzunluğu $10\\sqrt{2}$ cm olan ikizkenar dik üçgenin alanı kaç cm$^{2}$'dir?",
+   "o": [
+    "$100$",
+    "$50$",
+    "$25$",
+    "$50\\sqrt{2}$",
+    "$25\\sqrt{2}$"
+   ],
+   "c": 1,
+   "a": "İkizkenar dik üçgende hipotenüs $a\\sqrt{2}$ ise dik kenarlar $a$'dır. Dik kenarlar $10$ cm olur ve alan $\\dfrac{10\\cdot10}{2}=50$ cm$^{2}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0118",
+   "konu": "M.2.4",
+   "zorluk": 2,
+   "s": "Şekilde $m(\\angle A)=90^\\circ$, $|AB|=6$ cm, $|AC|=8$ cm ve $[AD]$ kenarortaydır. $G$ üçgenin ağırlık merkezi olduğuna göre $|AG|$ kaç cm'dir?",
+   "o": [
+    "$\\dfrac{5}{3}$",
+    "$5$",
+    "$4$",
+    "$\\dfrac{10}{3}$",
+    "$\\dfrac{20}{3}$"
+   ],
+   "c": 3,
+   "a": "$|BC|=10$ cm'dir. Hipotenüse ait kenarortay hipotenüsün yarısıdır: $|AD|=5$ cm. Ağırlık merkezi kenarortayı $2:1$ oranında böldüğünden $|AG|=\\dfrac{2}{3}\\cdot5=\\dfrac{10}{3}$ cm bulunur.",
+   "sekil": "<svg viewBox=\"0 0 150 120\"><polygon points=\"30.0,30.0 30.0,90.0 110.0,30.0\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"30.0\" y1=\"30.0\" x2=\"70.0\" y2=\"60.0\" stroke=\"#141B3F\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/><text x=\"22.0\" y=\"26.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"22.0\" y=\"100.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"118.0\" y=\"26.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"78.0\" y=\"66.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"59.7\" y=\"62.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">G</text><text x=\"18.0\" y=\"62.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">6</text><text x=\"70.0\" y=\"24.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">8</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0119",
+   "konu": "M.2.5",
+   "zorluk": 1,
+   "s": "Boyu $1{,}6$ m olan bir kişinin gölgesi $2$ m uzunluğundadır. Aynı anda yanındaki bir ağacın gölgesi $15$ m olduğuna göre ağacın boyu kaç metredir?",
+   "o": [
+    "$10$",
+    "$13$",
+    "$12$",
+    "$18$",
+    "$24$"
+   ],
+   "c": 2,
+   "a": "Aynı anda güneş ışınları aynı açıyla geldiğinden oluşan üçgenler benzerdir: $\\dfrac{1{,}6}{2}=\\dfrac{h}{15}$ ve $h=12$ m bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0120",
+   "konu": "M.2.6",
+   "zorluk": 2,
+   "s": "ABC üçgeninde $|AB|=8$ cm, $|AC|=10$ cm ve $m(\\angle A)=30^\\circ$ ise üçgenin alanı kaç cm$^{2}$'dir?",
+   "o": [
+    "$40$",
+    "$80$",
+    "$10$",
+    "$20\\sqrt{3}$",
+    "$20$"
+   ],
+   "c": 4,
+   "a": "İki kenar ve aralarındaki açı verilince alan $\\dfrac{1}{2}\\cdot8\\cdot10\\cdot\\sin30^\\circ=\\dfrac{1}{2}\\cdot80\\cdot\\dfrac{1}{2}=20$ cm$^{2}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0121",
+   "konu": "M.2.7",
+   "zorluk": 1,
+   "s": "Bir paralelkenarın komşu iki açısının ölçüleri oranı $2:3$'tür. Bu paralelkenarın büyük açısı kaç derecedir?",
+   "o": [
+    "$108$",
+    "$72$",
+    "$120$",
+    "$100$",
+    "$126$"
+   ],
+   "c": 0,
+   "a": "Komşu açılar bütünlerdir: $2k+3k=180^\\circ$ ve $k=36^\\circ$ bulunur. Büyük açı $3\\cdot36=108^\\circ$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0122",
+   "konu": "M.2.7",
+   "zorluk": 2,
+   "s": "Bir dış açısının ölçüsü $36^\\circ$ olan düzgün çokgenin iç açılarının toplamı kaç derecedir?",
+   "o": [
+    "$1260$",
+    "$1620$",
+    "$1440$",
+    "$1800$",
+    "$1080$"
+   ],
+   "c": 2,
+   "a": "Dış açıların toplamı $360^\\circ$ olduğundan kenar sayısı $\\dfrac{360}{36}=10$ olur. İç açılar toplamı $(10-2)\\cdot180=1440^\\circ$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0123",
+   "konu": "M.2.8",
+   "zorluk": 2,
+   "s": "Şekildeki çemberin yarıçapı $10$ cm'dir. Merkez $O$'dan $[AB]$ kirişine olan uzaklık $6$ cm olduğuna göre $|AB|$ kaç cm'dir?",
+   "o": [
+    "$8$",
+    "$16$",
+    "$12$",
+    "$14$",
+    "$20$"
+   ],
+   "c": 1,
+   "a": "Merkezden kirişe inilen dikme kirişi ortalar. Yarım kiriş $\\sqrt{10^{2}-6^{2}}=8$ cm olduğundan $|AB|=16$ cm bulunur.",
+   "sekil": "<svg viewBox=\"0 0 170 140\"><circle cx=\"85.0\" cy=\"70.0\" r=\"50.0\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"45.0\" y1=\"100.0\" x2=\"125.0\" y2=\"100.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"85.0\" y1=\"70.0\" x2=\"85.0\" y2=\"100.0\" stroke=\"#141B3F\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/><line x1=\"85.0\" y1=\"70.0\" x2=\"125.0\" y2=\"100.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"85.0\" y=\"66.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">O</text><text x=\"40.0\" y=\"114.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"130.0\" y=\"114.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"105.0\" y=\"74.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">10</text><text x=\"92.0\" y=\"90.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">6</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0124",
+   "konu": "M.2.9",
+   "zorluk": 1,
+   "s": "Analitik düzlemde $A(1,2)$ ve $B(7,10)$ noktaları arasındaki uzaklık kaç birimdir?",
+   "o": [
+    "$8$",
+    "$12$",
+    "$14$",
+    "$\\sqrt{14}$",
+    "$10$"
+   ],
+   "c": 4,
+   "a": "$|AB|=\\sqrt{(7-1)^{2}+(10-2)^{2}}=\\sqrt{36+64}=10$ birim bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0125",
+   "konu": "M.2.9",
+   "zorluk": 2,
+   "s": "$A(-2,3)$ noktası ile $B$ noktasını birleştiren doğru parçasının orta noktası $M(4,1)$'dir. $B$ noktasının koordinatları toplamı kaçtır?",
+   "o": [
+    "$5$",
+    "$7$",
+    "$11$",
+    "$9$",
+    "$6$"
+   ],
+   "c": 3,
+   "a": "$B(x,y)$ ise $\\dfrac{-2+x}{2}=4$ ve $\\dfrac{3+y}{2}=1$ olduğundan $x=10$, $y=-1$ bulunur. Toplam $9$'dur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0126",
+   "konu": "M.2.10",
+   "zorluk": 2,
+   "s": "Cisim köşegeninin uzunluğu $6\\sqrt{3}$ cm olan küpün hacmi kaç cm$^{3}$'tür?",
+   "o": [
+    "$216$",
+    "$108$",
+    "$72$",
+    "$36$",
+    "$216\\sqrt{3}$"
+   ],
+   "c": 0,
+   "a": "Küpün ayrıtı $a$ ise cisim köşegeni $a\\sqrt{3}$'tür. $a\\sqrt{3}=6\\sqrt{3}$ ise $a=6$ cm ve hacim $6^{3}=216$ cm$^{3}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0127",
+   "konu": "M.3.1",
+   "zorluk": 2,
+   "s": "$f(x)=2x+3$ ve $(f\\circ g)(x)=6x+5$ olduğuna göre $g(2)$ kaçtır?",
+   "o": [
+    "$5$",
+    "$9$",
+    "$11$",
+    "$7$",
+    "$17$"
+   ],
+   "c": 3,
+   "a": "$f(g(x))=2g(x)+3=6x+5$ ise $g(x)=3x+1$ bulunur. $g(2)=7$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0128",
+   "konu": "M.3.1",
+   "zorluk": 3,
+   "s": "Her $x$ gerçek sayısı için $f(x)+2f(-x)=3x+9$ olduğuna göre $f(2)$ kaçtır?",
+   "o": [
+    "$3$",
+    "$-9$",
+    "$9$",
+    "$15$",
+    "$-3$"
+   ],
+   "c": 4,
+   "a": "$x$ yerine $-x$ yazılırsa $f(-x)+2f(x)=-3x+9$ olur. İki denklem birlikte çözülünce $f(x)=-3x+3$ bulunur ve $f(2)=-3$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0129",
+   "konu": "M.3.2",
+   "zorluk": 1,
+   "s": "$P(x)=x^{4}-3x^{3}+2x^{2}-x+5$ polinomunun $x-3$ ile bölümünden kalan kaçtır?",
+   "o": [
+    "$5$",
+    "$20$",
+    "$17$",
+    "$23$",
+    "$86$"
+   ],
+   "c": 1,
+   "a": "Kalan $P(3)$'tür: $81-81+18-3+5=20$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0130",
+   "konu": "M.3.3",
+   "zorluk": 2,
+   "s": "$x^{2}-3x-10\\le0$ eşitsizliğini sağlayan tam sayıların toplamı kaçtır?",
+   "o": [
+    "$14$",
+    "$5$",
+    "$12$",
+    "$7$",
+    "$9$"
+   ],
+   "c": 2,
+   "a": "$x^{2}-3x-10=(x-5)(x+2)$ olduğundan çözüm aralığı $-2\\le x\\le5$ olur. Tam sayılar $-2,\\dots,5$ olup toplamları $12$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0131",
+   "konu": "M.3.3",
+   "zorluk": 2,
+   "s": "$x^{2}-6x+k=0$ denkleminin gerçek kökü olmadığına göre $k$'nın alabileceği en küçük tam sayı değeri kaçtır?",
+   "o": [
+    "$10$",
+    "$9$",
+    "$8$",
+    "$6$",
+    "$36$"
+   ],
+   "c": 0,
+   "a": "Gerçek kök olmaması için $\\Delta=36-4k<0$, yani $k>9$ olmalıdır. En küçük tam sayı $10$'dur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0132",
+   "konu": "M.3.4",
+   "zorluk": 1,
+   "s": "$y=x^{2}-2x-3$ parabolünün $x$ eksenini kestiği iki nokta arasındaki uzaklık kaç birimdir?",
+   "o": [
+    "$2$",
+    "$3$",
+    "$5$",
+    "$6$",
+    "$4$"
+   ],
+   "c": 4,
+   "a": "$x^{2}-2x-3=(x-3)(x+1)=0$ ise kökler $-1$ ve $3$'tür. Uzaklık $3-(-1)=4$ birim bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0133",
+   "konu": "M.3.5",
+   "zorluk": 2,
+   "s": "$x$ dar açı ve $\\tan x=\\dfrac{3}{4}$ olduğuna göre $\\sin x+\\cos x$ kaçtır?",
+   "o": [
+    "$\\dfrac{5}{4}$",
+    "$\\dfrac{12}{25}$",
+    "$\\dfrac{7}{5}$",
+    "$\\dfrac{1}{5}$",
+    "$\\dfrac{9}{5}$"
+   ],
+   "c": 2,
+   "a": "$\\tan x=\\dfrac{3}{4}$ olan dik üçgende kenarlar $3,4,5$'tir. $\\sin x=\\dfrac{3}{5}$, $\\cos x=\\dfrac{4}{5}$ ve toplam $\\dfrac{7}{5}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0134",
+   "konu": "M.3.5",
+   "zorluk": 2,
+   "s": "$\\sin150^\\circ+\\cos120^\\circ+\\tan135^\\circ$ işleminin sonucu kaçtır?",
+   "o": [
+    "$0$",
+    "$1$",
+    "$\\dfrac{1}{2}$",
+    "$-1$",
+    "$-2$"
+   ],
+   "c": 3,
+   "a": "$\\sin150^\\circ=\\dfrac{1}{2}$, $\\cos120^\\circ=-\\dfrac{1}{2}$ ve $\\tan135^\\circ=-1$ olduğundan toplam $-1$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0135",
+   "konu": "M.3.6",
+   "zorluk": 2,
+   "s": "$\\log_{2}3=a$ ve $\\log_{2}5=b$ olduğuna göre $\\log_{2}45$ ifadesinin $a$ ve $b$ cinsinden eşiti aşağıdakilerden hangisidir?",
+   "o": [
+    "$a+2b$",
+    "$2a+b$",
+    "$2ab$",
+    "$a+b+2$",
+    "$3a+b$"
+   ],
+   "c": 1,
+   "a": "$45=3^{2}\\cdot5$ olduğundan $\\log_{2}45=2\\log_{2}3+\\log_{2}5=2a+b$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0136",
+   "konu": "M.3.6",
+   "zorluk": 2,
+   "s": "$\\log_{2}(x+3)-\\log_{2}(x-3)=2$ denklemini sağlayan $x$ değeri kaçtır?",
+   "o": [
+    "$5$",
+    "$3$",
+    "$4$",
+    "$6$",
+    "$9$"
+   ],
+   "c": 0,
+   "a": "$\\log_{2}\\dfrac{x+3}{x-3}=2$ ise $x+3=4(x-3)$ olur. $3x=15$ ve $x=5$ bulunur. Tanım şartı $x>3$ sağlanır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0137",
+   "konu": "M.3.7",
+   "zorluk": 2,
+   "s": "Bir geometrik dizide $a_{2}=6$ ve $a_{5}=48$ olduğuna göre $a_{7}$ kaçtır?",
+   "o": [
+    "$96$",
+    "$192$",
+    "$144$",
+    "$384$",
+    "$768$"
+   ],
+   "c": 1,
+   "a": "$\\dfrac{a_{5}}{a_{2}}=r^{3}=8$ ise $r=2$ bulunur. $a_{7}=a_{5}\\cdot r^{2}=48\\cdot4=192$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0138",
+   "konu": "M.3.7",
+   "zorluk": 1,
+   "s": "İlk terimi $5$, ortak farkı $3$ olan aritmetik dizinin ilk $10$ teriminin toplamı kaçtır?",
+   "o": [
+    "$155$",
+    "$175$",
+    "$185$",
+    "$200$",
+    "$320$"
+   ],
+   "c": 2,
+   "a": "$a_{10}=5+9\\cdot3=32$ olur. $S_{10}=\\dfrac{10(5+32)}{2}=185$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0139",
+   "konu": "M.3.8",
+   "zorluk": 2,
+   "s": "$A,B,C,D,E$ harfleri yan yana sıralanacaktır. $A$ ile $B$ yan yana bulunacağına göre kaç farklı sıralama vardır?",
+   "o": [
+    "$24$",
+    "$36$",
+    "$60$",
+    "$48$",
+    "$120$"
+   ],
+   "c": 3,
+   "a": "$A$ ile $B$ tek bir blok sayılırsa $4$ öğe $4!=24$ biçimde sıralanır. Blok içinde $A$, $B$ iki biçimde yer alabileceğinden $24\\cdot2=48$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0140",
+   "konu": "M.3.9",
+   "zorluk": 2,
+   "s": "$\\displaystyle\\lim_{x\\to2}\\dfrac{x^{2}-4}{x^{2}-3x+2}$ limitinin değeri kaçtır?",
+   "o": [
+    "$0$",
+    "$1$",
+    "$2$",
+    "$\\text{yoktur}$",
+    "$4$"
+   ],
+   "c": 4,
+   "a": "Pay $(x-2)(x+2)$, payda $(x-2)(x-1)$ biçiminde çarpanlarına ayrılır. Sadeleşince $\\dfrac{x+2}{x-1}$ olur ve $x=2$ için değeri $4$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0141",
+   "konu": "M.3.9",
+   "zorluk": 1,
+   "s": "$\\displaystyle\\lim_{x\\to\\infty}\\dfrac{3x^{2}+x}{2x^{2}-5}$ limitinin değeri kaçtır?",
+   "o": [
+    "$\\dfrac{3}{2}$",
+    "$\\dfrac{2}{3}$",
+    "$0$",
+    "$3$",
+    "$\\infty$"
+   ],
+   "c": 0,
+   "a": "Pay ve paydadaki en büyük dereceli terimlerin katsayıları oranlanır: $\\dfrac{3}{2}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0142",
+   "konu": "M.3.10",
+   "zorluk": 2,
+   "s": "$f(x)=x^{3}-3x^{2}+2$ eğrisine $x=3$ noktasında çizilen teğetin denklemi aşağıdakilerden hangisidir?",
+   "o": [
+    "$y=9x-27$",
+    "$y=9x+2$",
+    "$y=9x-25$",
+    "$y=2x-4$",
+    "$y=6x-16$"
+   ],
+   "c": 2,
+   "a": "$f(3)=2$ ve $f'(x)=3x^{2}-6x$ olduğundan $f'(3)=9$ bulunur. Teğet: $y-2=9(x-3)$ yani $y=9x-25$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0143",
+   "konu": "M.3.10",
+   "zorluk": 3,
+   "s": "Çevresi $40$ cm olan dikdörtgenlerin alanı en fazla kaç cm$^{2}$ olabilir?",
+   "o": [
+    "$80$",
+    "$96$",
+    "$99$",
+    "$120$",
+    "$100$"
+   ],
+   "c": 4,
+   "a": "Kenarlar $a$ ve $20-a$ ise alan $A(a)=a(20-a)$ olur. $A'(a)=20-2a=0$ ise $a=10$ ve en büyük alan $10\\cdot10=100$ cm$^{2}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0144",
+   "konu": "M.3.11",
+   "zorluk": 2,
+   "s": "$\\displaystyle\\int_{1}^{4}\\dfrac{1}{\\sqrt{x}}\\,dx$ integralinin değeri kaçtır?",
+   "o": [
+    "$1$",
+    "$3$",
+    "$\\dfrac{3}{2}$",
+    "$2$",
+    "$4$"
+   ],
+   "c": 3,
+   "a": "$\\int x^{-1/2}dx=2\\sqrt{x}$ olduğundan değer $2\\sqrt{4}-2\\sqrt{1}=2$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0145",
+   "konu": "M.3.11",
+   "zorluk": 2,
+   "s": "$y=x^{2}$ eğrisi, $x$ ekseni ve $x=2$ doğrusu arasında kalan bölgenin alanı kaç birim karedir?",
+   "o": [
+    "$\\dfrac{4}{3}$",
+    "$\\dfrac{8}{3}$",
+    "$\\dfrac{2}{3}$",
+    "$4$",
+    "$8$"
+   ],
+   "c": 1,
+   "a": "Alan $\\int_{0}^{2}x^{2}dx=\\dfrac{x^{3}}{3}\\Big|_{0}^{2}=\\dfrac{8}{3}$ birim karedir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0146",
+   "konu": "M.4.1",
+   "zorluk": 2,
+   "s": "$A(2,1)$ ve $B(6,9)$ noktalarından geçen doğruya paralel olan ve $(0,3)$ noktasından geçen doğrunun denklemi aşağıdakilerden hangisidir?",
+   "o": [
+    "$y=2x+3$",
+    "$y=2x+1$",
+    "$y=-2x+3$",
+    "$y=\\dfrac{1}{2}x+3$",
+    "$y=4x+3$"
+   ],
+   "c": 0,
+   "a": "$AB$ doğrusunun eğimi $\\dfrac{9-1}{6-2}=2$'dir. Paralel doğrunun eğimi de $2$'dir ve $(0,3)$ noktasından geçtiği için $y=2x+3$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0147",
+   "konu": "M.4.2",
+   "zorluk": 2,
+   "s": "Merkezi $A(1,2)$ olan ve $x$ eksenine teğet olan çemberin denklemi aşağıdakilerden hangisidir?",
+   "o": [
+    "$(x-1)^{2}+(y-2)^{2}=1$",
+    "$(x-1)^{2}+(y-2)^{2}=2$",
+    "$(x+1)^{2}+(y+2)^{2}=4$",
+    "$(x-1)^{2}+(y-2)^{2}=4$",
+    "$(x-1)^{2}+(y-2)^{2}=5$"
+   ],
+   "c": 3,
+   "a": "$x$ eksenine teğet çemberin yarıçapı merkezin ordinatına eşittir: $r=2$. Denklem $(x-1)^{2}+(y-2)^{2}=4$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0148",
+   "konu": "M.4.2",
+   "zorluk": 2,
+   "s": "$x^{2}+y^{2}=25$ çemberine $(3,4)$ noktasında çizilen teğetin denklemi aşağıdakilerden hangisidir?",
+   "o": [
+    "$4x+3y=25$",
+    "$3x-4y=25$",
+    "$3x+4y=25$",
+    "$3x+4y=5$",
+    "$x+y=7$"
+   ],
+   "c": 2,
+   "a": "Merkez orijin olduğundan $(x_{0},y_{0})$ noktasındaki teğet $x_{0}x+y_{0}y=r^{2}$ biçimindedir: $3x+4y=25$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0149",
+   "konu": "M.4.3",
+   "zorluk": 2,
+   "s": "$A(3,-2)$ noktası orijin etrafında saat yönünün tersine $90^\\circ$ döndürülerek $A'$ noktası elde ediliyor. $A'$ noktasının koordinatları toplamı kaçtır?",
+   "o": [
+    "$1$",
+    "$5$",
+    "$-5$",
+    "$-1$",
+    "$0$"
+   ],
+   "c": 1,
+   "a": "Orijin etrafında $90^\\circ$ dönmede $(x,y)\\to(-y,x)$ olur. $A'(2,3)$ bulunur ve toplam $5$'tir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0150",
+   "konu": "M.4.4",
+   "zorluk": 1,
+   "s": "Taban yarıçapı $3$ cm, yüksekliği $4$ cm olan dik dairesel koninin yanal alanı kaç cm$^{2}$'dir?",
+   "o": [
+    "$12\\pi$",
+    "$20\\pi$",
+    "$24\\pi$",
+    "$30\\pi$",
+    "$15\\pi$"
+   ],
+   "c": 4,
+   "a": "Taban yarıçapı ve yükseklikten ana doğru $\\sqrt{3^{2}+4^{2}}=5$ cm bulunur. Yanal alan $\\pi rl=\\pi\\cdot3\\cdot5=15\\pi$ cm$^{2}$'dir.",
+   "kaynak": "ozgun"
   }
  ]
 }

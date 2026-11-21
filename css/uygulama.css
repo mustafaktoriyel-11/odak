@@ -1364,8 +1364,8 @@ html.mf-gece .pm-saat.mola{--il-a:#2BC27A}
 .iz-sinif{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;border-radius:99px;font:inherit;font-size:12px;font-weight:700;padding:4px 10px;cursor:pointer}
 .iz-hero .iz-yer{margin:0;font-weight:700}
 .iz-harita-kart{background:#FAFBFF;border-radius:18px;box-shadow:0 2px 10px rgba(15,30,140,.08);margin:0 0 14px;overflow:hidden}
-.iz-harita{position:relative;overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;background:#DCE6F2;touch-action:pan-x pan-y}
-.iz-ic{position:relative}
+.iz-harita{position:relative;overflow:hidden;background:#DCE6F2;touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab}
+.iz-ic{position:absolute;left:0;top:0;width:2576px;height:1438px;transform-origin:0 0;will-change:transform}
 .iz-ic img{position:absolute;inset:0;width:100%;height:100%;user-select:none;-webkit-user-drag:none;pointer-events:none}
 .iz-ic .iz-n{display:none}
 .iz-ic svg{position:absolute;inset:0;width:100%;height:100%}
@@ -1463,3 +1463,33 @@ html.mf-gece .iz-coz summary,html.mf-gece .iz-coz div,html.mf-gece .iz-d-sahne,h
 html.mf-gece .iz-d-bilgi{background:#3A2A14;color:#F5D2A8}html.mf-gece .iz-d-dene{background:#232B52;color:#D3D9EE}
 html.mf-gece .iz-d-ust svg{background:#232B52;border-color:#9FB2FF;--m:#CFE0FF!important}
 html.mf-gece .iz-noktalar i{background:#2F3970}
+
+/* Yolculuk: durak sahnesi (hızlanan yakınlaşma -> kararma -> şehrin o dönemi) */
+.iz-karart{position:fixed;inset:0;z-index:9200;background:#05081C;opacity:0;pointer-events:none;transition:opacity .3s}
+.iz-karart.yavas{transition:opacity .45s cubic-bezier(.7,0,1,1) .6s}
+.iz-karart.tam{opacity:1}
+.iz-karart.git{opacity:0;transition:opacity .6s ease-out}
+.iz-sahne{position:fixed;inset:0;z-index:9300;color:#fff;opacity:0;transition:opacity .5s;overflow:hidden;background:#05081C}
+.iz-sahne.acik{opacity:1}
+.iz-sh-arka{position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 30%,color-mix(in srgb,var(--bolge) 70%,#fff 10%),#05081C 75%)}
+.iz-sh-arka img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:izKen 18s ease-out forwards}
+@keyframes izKen{from{transform:scale(1.18)}to{transform:scale(1)}}
+.iz-sh-arka::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,28,.55) 0%,rgba(5,8,28,0) 30%,rgba(5,8,28,.2) 55%,rgba(5,8,28,.92) 100%)}
+.iz-sh-yedek{display:none;position:absolute;left:0;right:0;margin:0 auto;top:10%;width:46vmin;height:46vmin;opacity:.9;filter:drop-shadow(0 0 30px rgba(255,170,80,.45));animation:izKen 18s ease-out forwards}
+.iz-sahne.gorselsiz .iz-sh-yedek{display:block}
+.iz-sahne.kilitli .iz-sh-arka img{filter:grayscale(1) blur(3px) brightness(.55)}
+.iz-sahne.kilitli .iz-sh-yedek{opacity:.35;filter:grayscale(1)}
+.iz-sh-ic{position:absolute;left:0;right:0;bottom:0;max-height:78vh;overflow:auto;padding:18px 18px calc(18px + env(safe-area-inset-bottom));transform:translateY(40px);opacity:0;transition:transform .6s .25s,opacity .6s .25s}
+.iz-sahne.acik .iz-sh-ic{transform:none;opacity:1}
+.iz-sh-ust small{font-size:13px;font-weight:700;letter-spacing:.04em;color:#FFC98A}
+.iz-sh-ust h2{margin:2px 0 12px;font-size:30px;line-height:1.1;text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.iz-sh-kart{background:rgba(250,251,255,.96);color:#141B3F;border-radius:20px;padding:16px}
+.iz-sh-kart.kilit{background:rgba(20,27,63,.85);color:#E6EAFA;border:1px solid rgba(159,178,255,.35)}
+.iz-sh-kart.kilit p{margin:8px 0 0;line-height:1.55}
+.iz-sh-kalan{color:#FFC98A;font-weight:700}
+.iz-sh-kim{display:flex;gap:12px;align-items:center}
+.iz-sh-kim svg{width:56px;height:56px;flex:none;background:#FFF8EA;border:2px solid #141B3F;border-radius:50%;padding:5px}
+.iz-sh-kim b{display:block;font-size:20px}.iz-sh-kim span{font-size:12.5px;color:#5A6390}
+.iz-sh-kapat{margin-top:14px}
+html.mf-gece .iz-sh-kart:not(.kilit){background:rgba(26,33,66,.96);color:#E6EAFA}
+html.mf-gece .iz-sh-kim span{color:#AEB6D3}
