@@ -72,6 +72,13 @@
   // kilit ekranindaki medya karti: buyuk satirda kalan sure, altinda ne yapildigi, ilerleme cubugu
   var MS='mediaSession' in navigator,msBaslik='';
   function kilitEkrani(k){
+    // Android uygulaması: kilit ekranı / bildirim alanında yerel sayaç (00-android.js › MF_KILIT); yalnız durum değişince yazılır
+    if(window.MF_KILIT)try{
+      var kEt=$('pm-etiket').textContent,kCal=calismaMi(d.mod)&&!araMi(),kSb=!!d.serbest&&d.mod==='odak';
+      if(!d.calisiyor&&k===d.toplam)window.MF_KILIT({gizle:true});
+      else if(!d.calisiyor)window.MF_KILIT({calisiyor:false,baslik:'⏸ '+(kSb?bicim(d.toplam-k)+' geçti':bicim(k)+' kaldı')+' · duraklatıldı',metin:kEt,calis:kCal});
+      else window.MF_KILIT({calisiyor:true,serbest:kSb,zaman:kSb?d.bitis-d.toplam:d.bitis,baslik:kEt,metin:kSb?'Serbest çalışma · süre ileri sayıyor':(kCal?'Odak zamanı':'Mola zamanı'),calis:kCal});
+    }catch(e){}
     if(!MS)return;
     try{
       if(!d.calisiyor){if(msBaslik&&k!==d.toplam){msBaslik='';navigator.mediaSession.metadata=new MediaMetadata({title:'⏸ '+bicim(k)+' · duraklatıldı',artist:$('pm-etiket').textContent,album:'MF Odak',artwork:[{src:'kilit-durdu.png',sizes:'512x512',type:'image/png'}]});navigator.mediaSession.playbackState='paused';}return;}
@@ -451,6 +458,7 @@
   $('mf-toast-b').addEventListener('click',geriGetir);
   $('pm-gerial').addEventListener('click',geriGetir);
   copArayuz();
+  window.MF_KILIT_EYLEM=function(e){if(e==='duraklat'&&d.calisiyor)$('pm-basla').click();else if(e==='devam'&&!d.calisiyor)$('pm-basla').click();};
   if('mediaSession' in navigator){try{navigator.mediaSession.setActionHandler('pause',function(){if(d.calisiyor)$('pm-basla').click();});navigator.mediaSession.setActionHandler('play',function(){if(!d.calisiyor)$('pm-basla').click();});}catch(e){}}
 
   function sureYaz(dk){dk=Math.round(dk);var h=Math.floor(dk/60),m=dk%60;return h?(h+' sa'+(m?' '+m+' dk':'')):(m+' dk');}

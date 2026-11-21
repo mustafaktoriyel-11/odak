@@ -48,6 +48,19 @@
     };
   }
 
+  // Kilit ekranı / bildirim alanı sayacı (yerel eklenti MfKilit). Sayaç durumu değişince 01-sayac.js çağırır.
+  var KL=P.MfKilit;
+  if(KL){
+    var sonDurum='',izinSoruldu=false;
+    window.MF_KILIT=function(s){
+      var a=JSON.stringify(s);if(a===sonDurum)return;sonDurum=a;
+      if(s.gizle){KL.gizle().catch(function(){});return;}
+      var yaz=function(){KL.goster(s).catch(function(){});};
+      if(!izinSoruldu&&s.calisiyor){izinSoruldu=true;KL.izinIste().then(yaz,yaz);}else yaz();
+    };
+    KL.addListener('eylem',function(e){try{if(window.MF_KILIT_EYLEM)window.MF_KILIT_EYLEM(e&&e.eylem);}catch(x){}});
+  }
+
   function bildir(t){
     try{var d=document.createElement('div');d.textContent=t;
       d.style.cssText='position:fixed;left:16px;right:16px;bottom:calc(84px + env(safe-area-inset-bottom));z-index:99999;background:#141B3F;color:#fff;padding:12px 14px;border-radius:12px;font:14px/1.4 Roboto,Arial,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.3);text-align:center';

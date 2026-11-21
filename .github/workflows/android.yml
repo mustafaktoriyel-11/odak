@@ -66,8 +66,7 @@ jobs:
           ic.resize((1024, 1024), Image.LANCZOS).save('assets/icon-only.png')
           for ad in ('splash.png', 'splash-dark.png'):
               sp = Image.new('RGBA', (2732, 2732), (0x14, 0x1B, 0x3F, 255))
-              k = ic.resize((600, 600), Image.LANCZOS)
-              sp.paste(k, ((2732 - 600) // 2, (2732 - 600) // 2), k)
+              # ikon yok: düz lacivert zemin, ardından web'deki kedili açılış gelir
               sp.convert('RGB').save('assets/' + ad)
           # PWA ikonu gibi: maskable ikon (mavi zemin + yuvarlatılmış kare + M!)
           Image.open('icon-maskable-512.png').convert('RGB').save('assets/mf_ikon_tam.png')
@@ -94,11 +93,11 @@ jobs:
           done
           cat $R/mipmap-anydpi-v26/ic_launcher.xml
 
-      - name: Açılış ekranı zemini (web açılışıyla aynı renk)
+      - name: Açılış ekranı (ikonsuz, web açılışıyla aynı renk)
         run: |
           S=android/app/src/main/res/values/styles.xml
           grep -n "NoActionBarLaunch" -A4 $S
-          sed -i 's#\(<style name="AppTheme.NoActionBarLaunch"[^>]*>\)#\1\n        <item name="windowSplashScreenBackground">\#141B3F</item>#' $S
+          sed -i 's#\(<style name="AppTheme.NoActionBarLaunch"[^>]*>\)#\1\n        <item name="windowSplashScreenBackground">\#141B3F</item>\n        <item name="windowSplashScreenAnimatedIcon">@drawable/mf_bos</item>#' $S
           grep -n "NoActionBarLaunch" -A6 $S
 
       - name: Açılış davranışı (manifest)
@@ -106,43 +105,17 @@ jobs:
           M=android/app/src/main/AndroidManifest.xml
           # her açılışta uygulama kendi ana ekranından başlasın: üstte kalmış ayar sayfası vb. temizlensin
           sed -i 's#android:name=".MainActivity"#android:name=".MainActivity" android:clearTaskOnLaunch="true"#' $M
+          # kilit ekranı sayacı için bildirim izni (Android 13+ ilk çalışmada sorulur)
+          grep -q 'POST_NOTIFICATIONS' $M || sed -i 's#</manifest>#    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />\n</manifest>#' $M
           grep -n "clearTaskOnLaunch" $M
           tail -4 $M
 
-      - name: Sistem çubukları (MainActivity)
+      - name: Yerel Java kodu (MainActivity + kilit ekranı sayacı) ve kaynaklar
         run: |
-          F=$(find android/app/src/main/java -name MainActivity.java)
-          cat > "$F" <<'JAVA'
-          package com.mustafaktoriyel.odak;
-
-          import android.graphics.Color;
-          import android.os.Bundle;
-          import android.view.View;
-          import androidx.core.graphics.Insets;
-          import androidx.core.view.ViewCompat;
-          import androidx.core.view.WindowInsetsCompat;
-          import com.getcapacitor.BridgeActivity;
-
-          // Web görünümü durum çubuğu, görev çubuğu ve klavyenin arasında kalır (Chrome'daki PWA gibi)
-          public class MainActivity extends BridgeActivity {
-              @Override
-              public void onCreate(Bundle savedInstanceState) {
-                  super.onCreate(savedInstanceState);
-                  View web = getBridge().getWebView();
-                  View kap = (View) web.getParent();
-                  kap.setBackgroundColor(Color.parseColor("#141B3F"));
-                  ViewCompat.setOnApplyWindowInsetsListener(kap, (v, ins) -> {
-                      Insets i = ins.getInsets(WindowInsetsCompat.Type.systemBars()
-                              | WindowInsetsCompat.Type.displayCutout()
-                              | WindowInsetsCompat.Type.ime());
-                      v.setPadding(i.left, i.top, i.right, i.bottom);
-                      return WindowInsetsCompat.CONSUMED;
-                  });
-                  ViewCompat.requestApplyInsets(kap);
-              }
-          }
-          JAVA
-          head -5 "$F"
+          D=$(dirname "$(find android/app/src/main/java -name MainActivity.java)")
+          cp android-ayar/java/*.java "$D"/
+          cp -r android-ayar/res/. android/app/src/main/res/
+          ls "$D" android/app/src/main/res/drawable
 
       - name: Sürüm numarası ve imza ayarı (build.gradle)
         run: |
