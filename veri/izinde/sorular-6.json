@@ -902,6 +902,1748 @@
    "c": 2,
    "a": "En büyük $7{,}42$, en küçük $2{,}47$. Fark $7{,}42-2{,}47=4{,}95$.",
    "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0061",
+   "konu": "6.1.1",
+   "zorluk": 1,
+   "s": "$48$ sayısının pozitif çarpanlarının en büyüğü ile en küçüğünün toplamı kaçtır?",
+   "o": [
+    "$49$",
+    "$48$",
+    "$47$",
+    "$25$"
+   ],
+   "c": 0,
+   "a": "En küçük çarpan $1$, en büyük çarpan sayının kendisi olan $48$'dir. $1+48=49$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0062",
+   "konu": "6.1.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki sayılardan hangisi $7$ sayısının katıdır?",
+   "o": [
+    "$100$",
+    "$91$",
+    "$86$",
+    "$75$"
+   ],
+   "c": 1,
+   "a": "$7\\cdot13=91$ olduğundan $91$, $7$'nin katıdır. Diğerleri $7$ ile kalansız bölünmez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0063",
+   "konu": "6.1.1",
+   "zorluk": 1,
+   "s": "$15$ sayısının pozitif çarpanlarının toplamı kaçtır?",
+   "o": [
+    "$8$",
+    "$15$",
+    "$23$",
+    "$24$"
+   ],
+   "c": 3,
+   "a": "Çarpanlar $1,3,5,15$ olup toplamları $24$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0064",
+   "konu": "6.1.1",
+   "zorluk": 2,
+   "s": "Aşağıdaki sayılardan hangisinin pozitif çarpanlarının sayısı en fazladır?",
+   "o": [
+    "$50$",
+    "$49$",
+    "$60$",
+    "$53$"
+   ],
+   "c": 2,
+   "a": "$60$'ın $12$, $50$'nin $6$, $49$'un $3$, $53$'ün $2$ çarpanı vardır. En fazla çarpan $60$'tadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0065",
+   "konu": "6.1.1",
+   "zorluk": 2,
+   "s": "$9$ ile $20$ arasında (bu sayılar dâhil değil) $4$'ün kaç tane katı vardır?",
+   "o": [
+    "$2$",
+    "$5$",
+    "$3$",
+    "$4$"
+   ],
+   "c": 0,
+   "a": "Bu aralıktaki $4$'ün katları $12$ ve $16$'dır; toplam $2$ tane.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0066",
+   "konu": "6.1.1",
+   "zorluk": 2,
+   "s": "Bir sayının pozitif çarpanları $1,2,4,5,10,20$ ise bu sayı kaçtır?",
+   "o": [
+    "$100$",
+    "$20$",
+    "$40$",
+    "$10$"
+   ],
+   "c": 1,
+   "a": "Bir sayının en büyük çarpanı kendisidir. Verilen çarpanların en büyüğü $20$'dir ve $20$'nin çarpanları tam olarak bunlardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0067",
+   "konu": "6.1.1",
+   "zorluk": 2,
+   "s": "Çarpımları $56$ olan ardışık iki doğal sayının toplamı kaçtır?",
+   "o": [
+    "$13$",
+    "$14$",
+    "$15$",
+    "$16$"
+   ],
+   "c": 2,
+   "a": "$7\\cdot8=56$ olduğundan sayılar $7$ ve $8$'dir. Toplamları $15$'tir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0068",
+   "konu": "6.1.1",
+   "zorluk": 2,
+   "s": "$72$ sayısının $12$'den büyük, $36$'dan küçük çarpanlarının toplamı kaçtır?",
+   "o": [
+    "$24$",
+    "$18$",
+    "$52$",
+    "$42$"
+   ],
+   "c": 3,
+   "a": "$72$'nin çarpanları $1,2,3,4,6,8,9,12,18,24,36,72$'dir. $12$ ile $36$ arasındakiler $18$ ve $24$'tür; toplamları $42$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0069",
+   "konu": "6.1.1",
+   "zorluk": 3,
+   "s": "$4$'ün katı olan iki basamaklı kaç doğal sayı vardır?",
+   "o": [
+    "$21$",
+    "$22$",
+    "$23$",
+    "$24$"
+   ],
+   "c": 1,
+   "a": "İki basamaklı en küçük kat $4\\cdot3=12$, en büyüğü $4\\cdot24=96$'dır. $3$'ten $24$'e kadar $22$ sayı olduğundan $22$ tane bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0070",
+   "konu": "6.1.1",
+   "zorluk": 3,
+   "s": "Çarpanlarının sayısı tek olan bir doğal sayı aşağıdakilerden hangisi olabilir?",
+   "o": [
+    "$36$",
+    "$40$",
+    "$28$",
+    "$24$"
+   ],
+   "c": 0,
+   "a": "Çarpanlar genellikle eşleşerek çift sayıda olur; yalnız tam kare sayılarda ($6\\cdot6=36$) eşleşmeyen bir çarpan kalır. Bu yüzden $36$'nın $9$ çarpanı vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0071",
+   "konu": "6.1.2",
+   "zorluk": 1,
+   "s": "Aşağıdaki sayılardan hangisi $4$ ile kalansız bölünür?",
+   "o": [
+    "$5126$",
+    "$2918$",
+    "$3514$",
+    "$2716$"
+   ],
+   "c": 3,
+   "a": "Son iki basamağın oluşturduğu sayı $4$'e bölünmelidir. $16$, $4$'e bölünür; $14,26,18$ bölünmez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0072",
+   "konu": "6.1.2",
+   "zorluk": 1,
+   "s": "Aşağıdaki sayılardan hangisi hem $2$ hem $5$ ile kalansız bölünür?",
+   "o": [
+    "$3472$",
+    "$3475$",
+    "$3470$",
+    "$3457$"
+   ],
+   "c": 2,
+   "a": "Hem $2$'ye hem $5$'e bölünen sayılar $10$'a bölünür, yani birler basamağı $0$'dır: $3470$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0073",
+   "konu": "6.1.2",
+   "zorluk": 1,
+   "s": "Aşağıdaki sayılardan hangisi $3$ ile kalansız bölünür?",
+   "o": [
+    "$4523$",
+    "$4529$",
+    "$4531$",
+    "$4521$"
+   ],
+   "c": 3,
+   "a": "Rakamları toplamı $3$'ün katı olmalıdır. $4+5+2+1=12$ olduğundan $4521$ bölünür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0074",
+   "konu": "6.1.2",
+   "zorluk": 2,
+   "s": "Üç basamaklı $\\overline{7A2}$ sayısı $9$ ile kalansız bölünebildiğine göre $A$'nın alabileceği değerlerin toplamı kaçtır?",
+   "o": [
+    "$18$",
+    "$5$",
+    "$9$",
+    "$0$"
+   ],
+   "c": 2,
+   "a": "Rakamları toplamı $7+A+2=9+A$ olup $9$'un katı olmalıdır. $A=0$ veya $A=9$ olur; toplamları $9$'dur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0075",
+   "konu": "6.1.2",
+   "zorluk": 2,
+   "s": "$\\overline{3A4}$ üç basamaklı sayısı $6$ ile kalansız bölünüyorsa $A$ en çok kaç olabilir?",
+   "o": [
+    "$8$",
+    "$5$",
+    "$6$",
+    "$7$"
+   ],
+   "c": 0,
+   "a": "Sayı çift olduğundan $2$'ye bölünür. $3$'e bölünmesi için $3+A+4=7+A$ sayısı $3$'ün katı olmalıdır: $A\\in\\{2,5,8\\}$. En büyüğü $8$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0076",
+   "konu": "6.1.2",
+   "zorluk": 2,
+   "s": "$\\overline{2A3A}$ dört basamaklı sayısı $9$ ile kalansız bölünebildiğine göre $A$ kaçtır?",
+   "o": [
+    "$7$",
+    "$2$",
+    "$1$",
+    "$4$"
+   ],
+   "c": 1,
+   "a": "Rakamları toplamı $2+A+3+A=5+2A$ olup $9$'un katı olmalıdır. $A=2$ için toplam $9$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0077",
+   "konu": "6.1.2",
+   "zorluk": 2,
+   "s": "Bölünebilme kurallarıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "o": [
+    "$4$ ile bölünebilen her doğal sayı $2$ ile de bölünebilir.",
+    "$5$ ile bölünebilen her doğal sayı $10$ ile de bölünebilir.",
+    "$6$ ile bölünebilen her doğal sayı $4$ ile de bölünebilir.",
+    "$3$ ile bölünebilen her doğal sayı $9$ ile de bölünebilir."
+   ],
+   "c": 0,
+   "a": "$4$'ün katı olan sayılar çifttir. Diğerleri yanlıştır: $3$ ve $5$ ile bölünen $15$; $9$'a ve $10$'a bölünmez. $6$ ile bölünen $18$, $4$'e bölünmez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0078",
+   "konu": "6.1.2",
+   "zorluk": 2,
+   "s": "Hem $4$ hem $9$ ile kalansız bölünebilen en küçük üç basamaklı doğal sayı kaçtır?",
+   "o": [
+    "$117$",
+    "$100$",
+    "$108$",
+    "$104$"
+   ],
+   "c": 2,
+   "a": "$4$ ve $9$ aralarında asal olduğundan sayı $36$'nın katıdır. $36\\cdot3=108$ olup üç basamaklı en küçük katıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0079",
+   "konu": "6.1.2",
+   "zorluk": 3,
+   "s": "$3$ ile kalansız bölünen fakat $9$ ile kalansız bölünmeyen iki basamaklı kaç doğal sayı vardır?",
+   "o": [
+    "$10$",
+    "$21$",
+    "$30$",
+    "$20$"
+   ],
+   "c": 3,
+   "a": "İki basamaklı $3$'ün katları $12,\\dots,99$ arasında $30$ tanedir. $9$'un katları $18,\\dots,99$ arasında $10$ tanedir. Fark $20$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0080",
+   "konu": "6.1.2",
+   "zorluk": 3,
+   "s": "$2,4,6$ rakamları birer kez kullanılarak yazılabilen üç basamaklı sayılardan kaç tanesi $4$ ile kalansız bölünür?",
+   "o": [
+    "$4$",
+    "$2$",
+    "$1$",
+    "$3$"
+   ],
+   "c": 1,
+   "a": "Son iki basamak $4$'ün katı olmalıdır: $24,64$ olabilir ($46,26,42$ bölünmez). Bu da $624$ ve $264$ sayılarını verir: $2$ tane.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0081",
+   "konu": "6.1.3",
+   "zorluk": 1,
+   "s": "Asal sayılarla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "o": [
+    "$2$ hem çift hem asal bir sayıdır.",
+    "Bütün asal sayılar tektir.",
+    "$9$ asal sayıdır.",
+    "$1$ asal sayıdır."
+   ],
+   "c": 0,
+   "a": "$2$'nin yalnızca $1$ ve kendisi bölenidir; tek çift asal sayıdır. $1$ asal değildir, $9=3\\cdot3$ bileşiktir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0082",
+   "konu": "6.1.3",
+   "zorluk": 1,
+   "s": "$1$ ile $15$ arasındaki (bu sayılar dâhil değil) asal sayıların toplamı kaçtır?",
+   "o": [
+    "$39$",
+    "$48$",
+    "$40$",
+    "$41$"
+   ],
+   "c": 3,
+   "a": "Asal sayılar $2,3,5,7,11,13$'tür. Toplamları $41$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0083",
+   "konu": "6.1.3",
+   "zorluk": 1,
+   "s": "$1$ sayısı için aşağıdakilerden hangisi doğrudur?",
+   "o": [
+    "Asal sayıdır.",
+    "Ne asal ne de bileşik sayıdır.",
+    "Bileşik sayıdır.",
+    "Hem asal hem bileşik sayıdır."
+   ],
+   "c": 1,
+   "a": "Asal sayının tam iki böleni olmalıdır; $1$'in tek böleni vardır. Bileşik de değildir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0084",
+   "konu": "6.1.3",
+   "zorluk": 2,
+   "s": "$84$ sayısının asal çarpanlarının çarpımı biçiminde yazılışı aşağıdakilerden hangisidir?",
+   "o": [
+    "$2\\cdot3\\cdot14$",
+    "$4\\cdot3\\cdot7$",
+    "$2\\cdot2\\cdot3\\cdot7$",
+    "$2\\cdot6\\cdot7$"
+   ],
+   "c": 2,
+   "a": "$84=2\\cdot42=2\\cdot2\\cdot21=2\\cdot2\\cdot3\\cdot7$. Diğerlerinde $4,6,14$ gibi asal olmayan çarpanlar vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0085",
+   "konu": "6.1.3",
+   "zorluk": 2,
+   "s": "Aşağıdaki asal sayı çiftlerinden hangisinin farkı $2$'dir?",
+   "o": [
+    "$17,23$",
+    "$13,19$",
+    "$7,11$",
+    "$11,13$"
+   ],
+   "c": 3,
+   "a": "$13-11=2$'dir. Diğer çiftlerin farkları $4,6,6$'dır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0086",
+   "konu": "6.1.3",
+   "zorluk": 2,
+   "s": "$50$'den küçük en büyük asal sayı kaçtır?",
+   "o": [
+    "$47$",
+    "$43$",
+    "$48$",
+    "$49$"
+   ],
+   "c": 0,
+   "a": "$49=7\\cdot7$ ve $48$ çifttir, asal değildir. $47$'nin $1$ ve $47$ dışında böleni yoktur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0087",
+   "konu": "6.1.3",
+   "zorluk": 2,
+   "s": "Çarpımları $91$ olan iki asal sayının toplamı kaçtır?",
+   "o": [
+    "$14$",
+    "$20$",
+    "$92$",
+    "$26$"
+   ],
+   "c": 1,
+   "a": "$91=7\\cdot13$ olup $7$ ve $13$ asaldır. Toplamları $20$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0088",
+   "konu": "6.1.3",
+   "zorluk": 2,
+   "s": "Asal çarpanları yalnızca $2$ ve $3$ olan, ikisini de çarpan olarak içeren üç basamaklı en küçük doğal sayı kaçtır?",
+   "o": [
+    "$128$",
+    "$144$",
+    "$108$",
+    "$162$"
+   ],
+   "c": 2,
+   "a": "Aday sayılar: $96=2^5\\cdot3$ iki basamaklıdır. $108=2^2\\cdot3^3$ üç basamaklıdır ve $100$ ile $108$ arasında başka aday yoktur. Cevap $108$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0089",
+   "konu": "6.1.3",
+   "zorluk": 3,
+   "s": "Toplamı $36$ olan ardışık iki asal sayının çarpımı kaçtır?",
+   "o": [
+    "$275$",
+    "$323$",
+    "$325$",
+    "$35$"
+   ],
+   "c": 1,
+   "a": "Ardışık asal sayılar $17$ ve $19$'dur ($17+19=36$). Çarpımları $17\\cdot19=323$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0090",
+   "konu": "6.1.3",
+   "zorluk": 3,
+   "s": "Ardışık üç tek sayının üçü de asal ise bu sayıların toplamı kaçtır?",
+   "o": [
+    "$31$",
+    "$33$",
+    "$21$",
+    "$15$"
+   ],
+   "c": 3,
+   "a": "$3,5,7$ üçü de asaldır. Diğer ardışık tek sayı üçlülerinden birinde $3$'ün katı bir sayı bulunur ve o sayı asal olamaz. Toplam $15$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0091",
+   "konu": "6.1.4",
+   "zorluk": 1,
+   "s": "$12$ ve $18$ sayılarının kaç tane ortak böleni vardır?",
+   "o": [
+    "$3$",
+    "$6$",
+    "$4$",
+    "$5$"
+   ],
+   "c": 2,
+   "a": "$12$'nin bölenleri $1,2,3,4,6,12$; $18$'in bölenleri $1,2,3,6,9,18$. Ortak bölenler $1,2,3,6$: $4$ tane.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0092",
+   "konu": "6.1.4",
+   "zorluk": 1,
+   "s": "$6$ ve $8$ sayılarının en küçük ortak katı kaçtır?",
+   "o": [
+    "$24$",
+    "$2$",
+    "$48$",
+    "$12$"
+   ],
+   "c": 0,
+   "a": "$6$'nın katları $6,12,18,24$; $8$'in katları $8,16,24$. İlk ortak kat $24$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0093",
+   "konu": "6.1.4",
+   "zorluk": 1,
+   "s": "Aralarında asal iki doğal sayının en büyük ortak böleni kaçtır?",
+   "o": [
+    "$0$",
+    "Sayıların çarpımı",
+    "$1$",
+    "$2$"
+   ],
+   "c": 2,
+   "a": "Aralarında asal sayıların $1$'den başka ortak böleni yoktur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0094",
+   "konu": "6.1.4",
+   "zorluk": 2,
+   "s": "$24$ ve $36$ sayılarının ortak bölenlerinin toplamı kaçtır?",
+   "o": [
+    "$60$",
+    "$12$",
+    "$24$",
+    "$28$"
+   ],
+   "c": 3,
+   "a": "Ortak bölenler $1,2,3,4,6,12$'dir. Toplamları $28$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0095",
+   "konu": "6.1.4",
+   "zorluk": 2,
+   "s": "Bir otogarda iki otobüs, birincisi $12$ dakikada bir, ikincisi $15$ dakikada bir hareket ediyor. Saat $08{:}00$'de birlikte hareket ettilerse tekrar birlikte hareket edecekleri saat kaçtır?",
+   "o": [
+    "$09{:}00$",
+    "$08{:}27$",
+    "$08{:}30$",
+    "$10{:}00$"
+   ],
+   "c": 0,
+   "a": "$12$ ve $15$'in en küçük ortak katı $60$'tır. Yani $60$ dakika sonra, $09{:}00$'da birlikte hareket ederler.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0096",
+   "konu": "6.1.4",
+   "zorluk": 2,
+   "s": "$84$ m ve $120$ m uzunluğundaki iki şerit, artmayacak biçimde eşit uzunlukta en uzun parçalara ayrılıyor. Toplam kaç parça elde edilir?",
+   "o": [
+    "$24$",
+    "$17$",
+    "$12$",
+    "$10$"
+   ],
+   "c": 1,
+   "a": "Parça uzunluğu için en büyük ortak bölen $12$ m'dir. $84:12=7$ ve $120:12=10$ olduğundan $17$ parça elde edilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0097",
+   "konu": "6.1.4",
+   "zorluk": 2,
+   "s": "Aşağıdaki sayılardan hangisi $16$ ve $24$ sayılarının ortak katı DEĞİLDİR?",
+   "o": [
+    "$48$",
+    "$72$",
+    "$144$",
+    "$96$"
+   ],
+   "c": 1,
+   "a": "$16$ ile $24$'ün en küçük ortak katı $48$'dir; ortak katlar $48$'in katlarıdır. $72$, $48$'in katı olmadığından ortak kat değildir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0098",
+   "konu": "6.1.4",
+   "zorluk": 3,
+   "s": "Hem $8$ hem $12$ ile kalansız bölünebilen en küçük üç basamaklı doğal sayı kaçtır?",
+   "o": [
+    "$120$",
+    "$108$",
+    "$144$",
+    "$112$"
+   ],
+   "c": 0,
+   "a": "$8$ ve $12$'nin en küçük ortak katı $24$'tür. $24\\cdot5=120$ üç basamaklı en küçük katıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0099",
+   "konu": "6.1.4",
+   "zorluk": 3,
+   "s": "Dikdörtgen biçimindeki $36$ m $\\times$ $48$ m'lik bir alan, kenarları alanın kenarlarına paralel, birbirinin aynı kare karolarla boşluk kalmayacak biçimde döşenecektir. Karo kenarı en büyük seçilirse kaç karo gerekir?",
+   "o": [
+    "$7$",
+    "$144$",
+    "$6$",
+    "$12$"
+   ],
+   "c": 3,
+   "a": "Karo kenarı $36$ ve $48$'in en büyük ortak böleni $12$ m olur. $36:12=3$ ve $48:12=4$ karo sığar; $3\\cdot4=12$ karo gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0100",
+   "konu": "6.1.4",
+   "zorluk": 2,
+   "s": "Ayşe $6$ günde bir, Burak $8$ günde bir kütüphaneye gidiyor. İkisi $1$ Aralık günü birlikte gittiğine göre tekrar birlikte gidecekleri tarih nedir?",
+   "o": [
+    "$7$ Aralık",
+    "$9$ Aralık",
+    "$25$ Aralık",
+    "$31$ Aralık"
+   ],
+   "c": 2,
+   "a": "$6$ ve $8$'in en küçük ortak katı $24$'tür. $24$ gün sonra, yani $1+24=25$ Aralık'ta birlikte giderler.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0101",
+   "konu": "6.2.1",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi kategorik veri DEĞİLDİR?",
+   "o": [
+    "Öğrencilerin en sevdiği renk",
+    "Öğrencilerin okula geliş şekli",
+    "Öğrencilerin doğdukları şehir",
+    "Bir sınıftaki öğrenci sayısı"
+   ],
+   "c": 3,
+   "a": "Öğrenci sayısı sayarak elde edilen bir sayıdır, nicel kesikli veridir. Renk, şehir ve ulaşım şekli ise kategorik veridir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0102",
+   "konu": "6.2.1",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi nicel kesikli veriye örnek olarak verilebilir?",
+   "o": [
+    "Bir kutunun rengi",
+    "Bir kalemin markası",
+    "Bir kutudaki kalem sayısı",
+    "Bir kutunun üretildiği şehir"
+   ],
+   "c": 2,
+   "a": "Kalem sayısı sayılarak bulunur ve $0,1,2,\\dots$ gibi değerler alır; nicel kesikli veridir. Diğerleri kategoriktir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0103",
+   "konu": "6.2.1",
+   "zorluk": 2,
+   "s": "Sütun grafiği, bir sınıftaki öğrencilerin en çok sevdiği spor dalını göstermektedir. Futbolu seçen öğrenci sayısı, voleybolu seçen öğrenci sayısından kaç fazladır?",
+   "o": [
+    "$3$",
+    "$5$",
+    "$6$",
+    "$4$"
+   ],
+   "c": 1,
+   "a": "Futbol sütunu $9$, voleybol sütunu $4$ öğrenciyi gösterir. Fark $9-4=5$ öğrencidir.",
+   "sekil": "<svg viewBox=\"0 0 230 130\"><line x1=\"20\" y1=\"105\" x2=\"220\" y2=\"105\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"105\" stroke=\"#141B3F\" stroke-width=\"1\"/><rect x=\"28\" y=\"33.0\" width=\"30\" height=\"72.0\" fill=\"#1E3BD6\"/><text x=\"43\" y=\"30.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">9</text><text x=\"43\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Futbol</text><rect x=\"78\" y=\"57.0\" width=\"30\" height=\"48.0\" fill=\"#1E3BD6\"/><text x=\"93\" y=\"54.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">6</text><text x=\"93\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Basket</text><rect x=\"128\" y=\"73.0\" width=\"30\" height=\"32.0\" fill=\"#1E3BD6\"/><text x=\"143\" y=\"70.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">4</text><text x=\"143\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Voley</text><rect x=\"178\" y=\"49.0\" width=\"30\" height=\"56.0\" fill=\"#1E3BD6\"/><text x=\"193\" y=\"46.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">7</text><text x=\"193\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Yüzme</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0104",
+   "konu": "6.2.1",
+   "zorluk": 2,
+   "s": "Bir sınıftaki $12$ öğrencinin geçen ay okuduğu kitap sayıları şöyledir: $2,0,1,3,2,2,1,0,4,2,1,3$. En az $2$ kitap okuyan kaç öğrenci vardır?",
+   "o": [
+    "$7$",
+    "$5$",
+    "$6$",
+    "$12$"
+   ],
+   "c": 0,
+   "a": "$2$ ve daha fazla kitap okuyanlar: $2,3,2,2,4,2,3$ olmak üzere $7$ öğrencidir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0105",
+   "konu": "6.2.2",
+   "zorluk": 1,
+   "s": "Bir çetele tablosunda yeşil için $2$ beşli demet ve $4$ tek çizgi, sarı için $1$ beşli demet ve $3$ tek çizgi vardır. Yeşilin frekansı sarınınkinden kaç fazladır?",
+   "o": [
+    "$4$",
+    "$6$",
+    "$8$",
+    "$22$"
+   ],
+   "c": 1,
+   "a": "Yeşilin frekansı $2\\cdot5+4=14$, sarınınki $5+3=8$'dir. Fark $14-8=6$'dır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0106",
+   "konu": "6.2.2",
+   "zorluk": 2,
+   "s": "Aşağıdaki sütun grafiği, bir kütüphaneye dört günde gelen ziyaretçi sayısını göstermektedir. En çok ziyaretçinin geldiği gün ile en az ziyaretçinin geldiği gün arasındaki fark kaçtır?",
+   "o": [
+    "$15$",
+    "$3$",
+    "$8$",
+    "$5$"
+   ],
+   "c": 2,
+   "a": "En çok ziyaretçi Çarşamba günü $15$, en az Salı günü $7$'dir. Fark $15-7=8$'dir.",
+   "sekil": "<svg viewBox=\"0 0 230 130\"><line x1=\"20\" y1=\"105\" x2=\"220\" y2=\"105\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"105\" stroke=\"#141B3F\" stroke-width=\"1\"/><rect x=\"28\" y=\"41.0\" width=\"30\" height=\"64.0\" fill=\"#1E3BD6\"/><text x=\"43\" y=\"38.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">12</text><text x=\"43\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Pzt</text><rect x=\"78\" y=\"67.66666666666666\" width=\"30\" height=\"37.333333333333336\" fill=\"#1E3BD6\"/><text x=\"93\" y=\"64.66666666666666\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">7</text><text x=\"93\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Sal</text><rect x=\"128\" y=\"25.0\" width=\"30\" height=\"80.0\" fill=\"#1E3BD6\"/><text x=\"143\" y=\"22.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">15</text><text x=\"143\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Çar</text><rect x=\"178\" y=\"51.666666666666664\" width=\"30\" height=\"53.333333333333336\" fill=\"#1E3BD6\"/><text x=\"193\" y=\"48.666666666666664\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">10</text><text x=\"193\" y=\"118\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Per</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0107",
+   "konu": "6.2.2",
+   "zorluk": 2,
+   "s": "Okuldaki öğrencilerin okula hangi ulaşım aracıyla geldiğini öğrenmek isteyen Elif, aşağıdakilerden hangisini araştırma sorusu olarak seçmelidir?",
+   "o": [
+    "Öğrencilerimiz okula en çok hangi araçla geliyor?",
+    "Okulumuz hangi yıl açılmıştır?",
+    "Müdür yardımcımızın adı nedir?",
+    "Okulumuzun bahçesi kaç metrekaredir?"
+   ],
+   "c": 0,
+   "a": "Araştırma sorusu verilerle ve birden fazla kişiden toplanan yanıtlarla cevaplanabilmelidir. Diğer sorular tek bir bilgiyle yanıtlanır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0108",
+   "konu": "6.2.2",
+   "zorluk": 3,
+   "s": "Bir sınıftaki $40$ öğrencinin sevdiği spor sütun grafiğinde gösterilmiştir: Futbol $14$, basketbol $9$, yüzme $7$, voleybol ise grafikte silinmiştir. Her öğrenci yalnızca bir spor seçtiğine göre voleybolu seçenler sınıfın kaçta kaçıdır?",
+   "o": [
+    "$\\dfrac{1}{10}$",
+    "$\\dfrac{1}{4}$",
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{1}{5}$"
+   ],
+   "c": 1,
+   "a": "Voleybolu seçenler $40-(14+9+7)=10$ öğrencidir. Bu, sınıfın $\\dfrac{10}{40}=\\dfrac{1}{4}$'üdür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0109",
+   "konu": "6.3.1",
+   "zorluk": 1,
+   "s": "Bir zar atıldığında üst yüze gelen sayının çift olması istenen çıktılar kaç tanedir?",
+   "o": [
+    "$6$",
+    "$2$",
+    "$1$",
+    "$3$"
+   ],
+   "c": 3,
+   "a": "Çift sayılar $2,4,6$ olduğundan $3$ çıktı vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0110",
+   "konu": "6.3.1",
+   "zorluk": 1,
+   "s": "Üç madeni para aynı anda atılıyor. Bu deneyin kaç farklı çıktısı vardır?",
+   "o": [
+    "$9$",
+    "$8$",
+    "$3$",
+    "$6$"
+   ],
+   "c": 1,
+   "a": "Her para $2$ farklı durum alır; $2\\cdot2\\cdot2=8$ çıktı vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0111",
+   "konu": "6.3.1",
+   "zorluk": 1,
+   "s": "Bir çark $80$ kez çevrilmiş ve $20$ kez kırmızı bölgede durmuştur. Çarkın kırmızı bölgede durmasının deneysel olasılığı kaçtır?",
+   "o": [
+    "$\\dfrac{1}{20}$",
+    "$\\dfrac{3}{4}$",
+    "$\\dfrac{1}{4}$",
+    "$\\dfrac{1}{3}$"
+   ],
+   "c": 2,
+   "a": "Deneysel olasılık, olayın gerçekleşme sayısının toplam tekrar sayısına oranıdır: $\\dfrac{20}{80}=\\dfrac{1}{4}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0112",
+   "konu": "6.3.1",
+   "zorluk": 2,
+   "s": "$1,2,3$ numaralı üç kart bir torbadadır. Bir kart çekilip numarası yazıldıktan sonra torbaya geri atılıyor ve ikinci kart çekilip numarası yazılıyor. Bu deneyin kaç farklı çıktısı vardır?",
+   "o": [
+    "$9$",
+    "$3$",
+    "$8$",
+    "$6$"
+   ],
+   "c": 0,
+   "a": "İlk çekilişte $3$, ikinci çekilişte yine $3$ durum olur: $3\\cdot3=9$ çıktı.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0113",
+   "konu": "6.3.1",
+   "zorluk": 2,
+   "s": "Bir madeni para $10$ kez atılmış ve $7$ kez yazı gelmiştir. Bu sonuçla ilgili hangisi söylenebilir?",
+   "o": [
+    "Sonraki atışta kesinlikle tura gelir.",
+    "Atış sayısı az olduğu için sonucun $\\dfrac{1}{2}$'den farklı çıkması doğaldır.",
+    "Yazı gelme olasılığı artık $\\dfrac{7}{10}$'dan başka olamaz.",
+    "Para kesinlikle hilelidir."
+   ],
+   "c": 1,
+   "a": "Az sayıda tekrarda deneysel sonuç teorik değerden uzaklaşabilir. Bu yüzden paranın hileli olduğu söylenemez ve sonraki atış hakkında kesin bir şey söylenemez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0114",
+   "konu": "6.3.1",
+   "zorluk": 2,
+   "s": "Bir zar $50$ kez atılmış ve sonuçlar şöyle kaydedilmiştir: $1$ için $6$, $2$ için $9$, $3$ için $8$, $4$ için $11$, $5$ için $7$, $6$ için $9$ kez. Bu deneye göre $4$ veya $5$ gelmesinin deneysel olasılığı kaçtır?",
+   "o": [
+    "$\\dfrac{9}{25}$",
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{11}{50}$",
+    "$\\dfrac{7}{25}$"
+   ],
+   "c": 0,
+   "a": "$4$ veya $5$ gelen atış sayısı $11+7=18$'dir. Deneysel olasılık $\\dfrac{18}{50}=\\dfrac{9}{25}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0115",
+   "konu": "6.3.1",
+   "zorluk": 2,
+   "s": "Bir madeni para ile bir zar birlikte atılıyor. Paranın tura, zarın çift sayı gelmesi isteniyor. İstenen çıktılar kaç tanedir?",
+   "o": [
+    "$6$",
+    "$12$",
+    "$2$",
+    "$3$"
+   ],
+   "c": 3,
+   "a": "Para tura gelirken zar $2,4,6$ gelebilir: $(T,2),(T,4),(T,6)$ olmak üzere $3$ çıktı.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0116",
+   "konu": "6.3.1",
+   "zorluk": 2,
+   "s": "Bir deneyde olayın deneysel olasılığı $0{,}35$ bulunmuştur. Deney $200$ kez tekrarlandığına göre olay kaç kez gerçekleşmiştir?",
+   "o": [
+    "$35$",
+    "$700$",
+    "$70$",
+    "$65$"
+   ],
+   "c": 2,
+   "a": "Gerçekleşme sayısı $200\\cdot0{,}35=70$'tir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0117",
+   "konu": "6.3.1",
+   "zorluk": 3,
+   "s": "Bir torbadan geri koymak şartıyla $60$ çekilişte $12$ kez kırmızı top gelmiştir. Daha sonra $40$ çekiliş daha yapılmış ve bu çekilişlerde $18$ kez kırmızı gelmiştir. Toplam $100$ çekilişte kırmızı topun deneysel olasılığı kaçtır?",
+   "o": [
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{3}{10}$",
+    "$\\dfrac{1}{5}$",
+    "$\\dfrac{9}{20}$"
+   ],
+   "c": 1,
+   "a": "Toplam kırmızı sayısı $12+18=30$'dur. Deneysel olasılık $\\dfrac{30}{100}=\\dfrac{3}{10}$'dur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0118",
+   "konu": "6.3.1",
+   "zorluk": 3,
+   "s": "Üç madeni para aynı anda atılıyor. En az iki tanesinin yazı gelmesi için kaç farklı çıktı vardır?",
+   "o": [
+    "$5$",
+    "$3$",
+    "$4$",
+    "$7$"
+   ],
+   "c": 2,
+   "a": "Üçü de yazı $1$ çıktı; tam iki yazı gelen çıktılar $3$ tanedir ($YYT,YTY,TYY$). Toplam $1+3=4$ çıktı.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0119",
+   "konu": "6.3.2",
+   "zorluk": 1,
+   "s": "Bir madeni para $80$ kez atıldığında $35$ kez yazı gelmiştir. Yazının göreli sıklığı kaçtır?",
+   "o": [
+    "$\\dfrac{3}{16}$",
+    "$\\dfrac{7}{9}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{7}{16}$"
+   ],
+   "c": 3,
+   "a": "Göreli sıklık $\\dfrac{35}{80}=\\dfrac{7}{16}$'dır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0120",
+   "konu": "6.3.2",
+   "zorluk": 1,
+   "s": "Bir torbadan geri koyarak $25$ kez top çekilmiş ve $5$ kez mavi top gelmiştir. Mavi topun göreli sıklığı yüzde olarak kaçtır?",
+   "o": [
+    "$\\%20$",
+    "$\\%50$",
+    "$\\%5$",
+    "$\\%25$"
+   ],
+   "c": 0,
+   "a": "$\\dfrac{5}{25}=\\dfrac{1}{5}=\\dfrac{20}{100}$ olduğundan göreli sıklık $\\%20$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0121",
+   "konu": "6.3.2",
+   "zorluk": 1,
+   "s": "Bir olayın göreli sıklığı $0{,}045$ ise bu değer yüzde olarak nasıl yazılır?",
+   "o": [
+    "$\\%0{,}45$",
+    "$\\%4{,}5$",
+    "$\\%45$",
+    "$\\%0{,}045$"
+   ],
+   "c": 1,
+   "a": "Ondalık sayıyı $100$ ile çarparız: $0{,}045\\cdot100=4{,}5$. Bu da $\\%4{,}5$ demektir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0122",
+   "konu": "6.3.2",
+   "zorluk": 2,
+   "s": "Bir okçu $50$ atışın $38$'inde hedefi vurmuştur. Aynı başarı oranıyla $200$ atışta yaklaşık kaç isabet beklenir?",
+   "o": [
+    "$152$",
+    "$76$",
+    "$190$",
+    "$160$"
+   ],
+   "c": 0,
+   "a": "Göreli sıklık $\\dfrac{38}{50}$'dir. $200$ atış, $50$ atışın $4$ katı olduğundan $38\\cdot4=152$ isabet beklenir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0123",
+   "konu": "6.3.2",
+   "zorluk": 2,
+   "s": "Son $30$ günün $12$'sinde yağmur yağmıştır. Bu oran değişmezse $90$ günlük bir dönemde yaklaşık kaç gün yağmur yağması beklenir?",
+   "o": [
+    "$12$",
+    "$30$",
+    "$36$",
+    "$60$"
+   ],
+   "c": 2,
+   "a": "Göreli sıklık $\\dfrac{12}{30}=\\dfrac{2}{5}$'tir. $90\\cdot\\dfrac{2}{5}=36$ gün.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0124",
+   "konu": "6.3.2",
+   "zorluk": 2,
+   "s": "Bir madeni para $10$ kez atıldığında $6$ yazı, $100$ kez atıldığında $52$ yazı gelmiştir. Bu iki sonuçla ilgili hangisi doğrudur?",
+   "o": [
+    "İkisi de olasılığı kesin olarak verir.",
+    "$10$ atışlık sonuç daha güvenilirdir.",
+    "Göreli sıklıklar hep eşit çıkar.",
+    "$100$ atışlık sonuç, tekrar sayısı fazla olduğu için olasılığı tahmin etmede daha güvenilirdir."
+   ],
+   "c": 3,
+   "a": "Tekrar sayısı arttıkça göreli sıklık olasılığa yaklaşma eğilimindedir; bu nedenle $100$ atış daha güvenilir bir tahmin verir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0125",
+   "konu": "6.3.2",
+   "zorluk": 2,
+   "s": "Bir zar $60$ kez atılmış ve $1$ için $8$, $2$ için $11$, $3$ için $9$, $4$ için $12$, $5$ için $10$, $6$ için $10$ kez gelmiştir. Göreli sıklığı en büyük olan sayı ve değeri hangisidir?",
+   "o": [
+    "$6$ ve $\\dfrac{1}{6}$",
+    "$2$ ve $\\dfrac{11}{60}$",
+    "$1$ ve $\\dfrac{2}{15}$",
+    "$4$ ve $\\dfrac{1}{5}$"
+   ],
+   "c": 3,
+   "a": "En çok gelen sayı $4$'tür ($12$ kez). Göreli sıklığı $\\dfrac{12}{60}=\\dfrac{1}{5}$'tir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0126",
+   "konu": "6.3.2",
+   "zorluk": 2,
+   "s": "Bir torbadan $60$ çekilişte kırmızı topun göreli sıklığı $0{,}45$ bulunmuştur. Her çekilişte yalnızca kırmızı veya sarı top geldiğine göre kaç kez sarı top çekilmiştir?",
+   "o": [
+    "$33$",
+    "$27$",
+    "$45$",
+    "$55$"
+   ],
+   "c": 0,
+   "a": "Kırmızı top $60\\cdot0{,}45=27$ kez gelmiştir. Sarı top $60-27=33$ kez gelmiştir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0127",
+   "konu": "6.3.2",
+   "zorluk": 3,
+   "s": "Bir deneyde dört olayın göreli sıklıkları $A:0{,}2$; $B:0{,}35$; $C:0{,}15$ olarak bulunmuş, $D$'nin göreli sıklığı ise silinmiştir. Deney $120$ kez yapılmıştır ve her seferinde bu dört olaydan yalnızca biri gerçekleşmiştir. D olayı kaç kez gerçekleşmiştir?",
+   "o": [
+    "$12$",
+    "$30$",
+    "$36$",
+    "$42$"
+   ],
+   "c": 2,
+   "a": "Göreli sıklıkların toplamı $1$'dir. $D$'nin göreli sıklığı $1-(0{,}2+0{,}35+0{,}15)=0{,}3$'tür. $D$ olayı $120\\cdot0{,}3=36$ kez gerçekleşmiştir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0128",
+   "konu": "6.3.2",
+   "zorluk": 3,
+   "s": "$20$ atışta $6$ kez tura gelen bir madeni para, yeni atışlarla toplam göreli sıklığı $0{,}4$ yapmak istiyor. Toplam atış sayısı $40$ olacaksa yeni $20$ atışta kaç kez tura gelmelidir?",
+   "o": [
+    "$12$",
+    "$10$",
+    "$16$",
+    "$8$"
+   ],
+   "c": 1,
+   "a": "Toplam $40$ atışta tura sayısı $40\\cdot0{,}4=16$ olmalıdır. Zaten $6$ tura geldiğinden yeni atışlarda $16-6=10$ tura gelmelidir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0129",
+   "konu": "6.3.3",
+   "zorluk": 1,
+   "s": "Olasılığı $0$ olan bir olay için aşağıdakilerden hangisi söylenebilir?",
+   "o": [
+    "İmkânsız olaydır.",
+    "Gerçekleşme şansı yarıdır.",
+    "Mutlaka bir kez gerçekleşir.",
+    "Kesin olaydır."
+   ],
+   "c": 0,
+   "a": "Olasılığı $0$ olan olay hiçbir zaman gerçekleşmez, yani imkânsız olaydır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0130",
+   "konu": "6.3.3",
+   "zorluk": 1,
+   "s": "Aşağıdaki olaylardan hangisi kesin olaydır?",
+   "o": [
+    "Bir zar atıldığında çift sayı gelmesi",
+    "Bir zar atıldığında üst yüze gelen sayının $7$'den küçük olması",
+    "Bir zar atıldığında $6$ gelmesi",
+    "Bir madeni para atıldığında tura gelmesi"
+   ],
+   "c": 1,
+   "a": "Zarda tüm sayılar ($1$ ile $6$) $7$'den küçüktür; olasılığı $1$'dir ve kesindir. Diğerlerinin olasılığı $1$ değildir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0131",
+   "konu": "6.3.3",
+   "zorluk": 1,
+   "s": "Bir torbada $4$ kırmızı ve $6$ mavi top vardır. Rastgele bir top çekilirse hangi renk gelme olasılığı daha büyüktür?",
+   "o": [
+    "İkisinin olasılığı eşittir.",
+    "Kırmızı, çünkü adı önce gelir.",
+    "Hiçbirinin olasılığı belirlenemez.",
+    "Mavi, çünkü mavi top sayısı daha fazladır."
+   ],
+   "c": 3,
+   "a": "Torbada mavi top sayısı ($6$) kırmızı top sayısından ($4$) fazladır. Bu yüzden mavi top gelme ihtimali daha büyüktür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0132",
+   "konu": "6.3.3",
+   "zorluk": 2,
+   "s": "$A,B,C,D$ olaylarının olasılıkları sırasıyla $0{,}2$; $\\dfrac{3}{4}$; $\\dfrac{1}{2}$ ve $0{,}05$'tir. Bu olayların olasılıkları küçükten büyüğe doğru nasıl sıralanır?",
+   "o": [
+    "$D<C<A<B$",
+    "$B<C<A<D$",
+    "$D<A<C<B$",
+    "$A<D<C<B$"
+   ],
+   "c": 2,
+   "a": "Ondalık gösterimle $A=0{,}2$, $B=0{,}75$, $C=0{,}5$, $D=0{,}05$'tir. Sıralama $0{,}05<0{,}2<0{,}5<0{,}75$, yani $D<A<C<B$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0133",
+   "konu": "6.3.3",
+   "zorluk": 2,
+   "s": "Bir zar $60$ kez atılıyor. Gelen sayıların kaç kez geldiği şöyledir: $1$: $9$, $2$: $11$, $3$: $10$, $4$: $8$, $5$: $12$, $6$: $10$. Bu deneyde asal sayı gelmesinin göreli sıklığı kaçtır?",
+   "o": [
+    "$0{,}55$",
+    "$0{,}5$",
+    "$0{,}45$",
+    "$0{,}33$"
+   ],
+   "c": 0,
+   "a": "Asal sayılar $2,3,5$'tir. Bunlar $11+10+12=33$ kez gelmiştir. Göreli sıklık $\\dfrac{33}{60}=0{,}55$'tir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0134",
+   "konu": "6.3.3",
+   "zorluk": 2,
+   "s": "$1$'den $20$'ye kadar numaralı kartlar bulunan bir torbadan, çekilen kart her seferinde geri atılarak $50$ kart çekiliyor. Numarası $5$'in katı olan kart $12$ kez geliyor. Bu olayın göreli sıklığı kaçtır?",
+   "o": [
+    "$0{,}12$",
+    "$0{,}2$",
+    "$0{,}5$",
+    "$0{,}24$"
+   ],
+   "c": 3,
+   "a": "Göreli sıklık, olayın gerçekleşme sayısının deneme sayısına bölümüdür: $\\dfrac{12}{50}=0{,}24$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0135",
+   "konu": "6.3.3",
+   "zorluk": 2,
+   "s": "Bir torbadan top çekilip her seferinde geri atılıyor. $90$ çekişin $30$'unda kırmızı top geliyor. Aynı deney $120$ kez yapılırsa yaklaşık kaç kez kırmızı top gelmesi beklenir?",
+   "o": [
+    "$30$",
+    "$40$",
+    "$60$",
+    "$90$"
+   ],
+   "c": 1,
+   "a": "Kırmızı gelmenin göreli sıklığı $\\dfrac{30}{90}=\\dfrac{1}{3}$'tür. $120$ çekişte yaklaşık $120\\cdot\\dfrac{1}{3}=40$ kez kırmızı beklenir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0136",
+   "konu": "6.3.3",
+   "zorluk": 3,
+   "s": "Bir deneyde beyaz top çekmenin göreli sıklığı $0{,}4$ bulunmuştur. Deney $75$ kez yapıldığına göre kaç kez beyaz top çekilmiştir?",
+   "o": [
+    "$30$",
+    "$40$",
+    "$25$",
+    "$45$"
+   ],
+   "c": 0,
+   "a": "Beyaz top sayısı, deneme sayısı ile göreli sıklığın çarpımıdır: $75\\cdot0{,}4=30$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0137",
+   "konu": "6.3.3",
+   "zorluk": 3,
+   "s": "Bir madeni para $40$ kez atılıyor ve $18$ kez yazı geliyor. Bu deneyde tura gelmesinin göreli sıklığı kaçtır?",
+   "o": [
+    "$0{,}45$",
+    "$0{,}5$",
+    "$0{,}55$",
+    "$0{,}22$"
+   ],
+   "c": 2,
+   "a": "Tura $40-18=22$ kez gelmiştir. Göreli sıklık $\\dfrac{22}{40}=0{,}55$'tir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0138",
+   "konu": "6.4.1",
+   "zorluk": 1,
+   "s": "$12{,}5+7{,}75-3{,}4$ işleminin sonucu kaçtır?",
+   "o": [
+    "$16{,}85$",
+    "$15{,}85$",
+    "$16{,}75$",
+    "$17{,}85$"
+   ],
+   "c": 0,
+   "a": "$12{,}5+7{,}75=20{,}25$ ve $20{,}25-3{,}4=16{,}85$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0139",
+   "konu": "6.4.1",
+   "zorluk": 1,
+   "s": "Fiyatı $240$ TL olan bir ayakkabıya $\\%25$ indirim yapılıyor. İndirimli fiyat kaç TL'dir?",
+   "o": [
+    "$215$",
+    "$190$",
+    "$60$",
+    "$180$"
+   ],
+   "c": 3,
+   "a": "$\\%25$, $\\dfrac{1}{4}$ demektir. İndirim $240:4=60$ TL'dir. İndirimli fiyat $240-60=180$ TL'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0140",
+   "konu": "6.4.1",
+   "zorluk": 2,
+   "s": "Bir bidonda $12{,}6$ litre su vardır. Suyun $\\dfrac{2}{7}$'si kullanılırsa kaç litre su kullanılmış olur?",
+   "o": [
+    "$5{,}4$",
+    "$9{,}0$",
+    "$3{,}6$",
+    "$1{,}8$"
+   ],
+   "c": 2,
+   "a": "$12{,}6$ litrenin $\\dfrac{1}{7}$'si $1{,}8$ litredir. $\\dfrac{2}{7}$'si $2\\cdot1{,}8=3{,}6$ litredir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0141",
+   "konu": "6.4.1",
+   "zorluk": 2,
+   "s": "Bir sınıfta $25$ öğrenci vardır. Öğrencilerin $\\dfrac{3}{5}$'i kızdır ve kızların $\\%40$'ı gözlüklüdür. Gözlüklü kız öğrenci sayısı kaçtır?",
+   "o": [
+    "$9$",
+    "$10$",
+    "$15$",
+    "$6$"
+   ],
+   "c": 3,
+   "a": "Kız sayısı $25\\cdot\\dfrac{3}{5}=15$'tir. $15$'in $\\%40$'ı $15\\cdot\\dfrac{2}{5}=6$'dır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0142",
+   "konu": "6.4.1",
+   "zorluk": 2,
+   "s": "Bir su deposunun $\\dfrac{3}{8}$'i doludur. Depoya $60$ litre su daha eklenince deponun yarısı doluyor. Deponun tamamı kaç litredir?",
+   "o": [
+    "$480$",
+    "$160$",
+    "$240$",
+    "$360$"
+   ],
+   "c": 0,
+   "a": "Yarısı ile $\\dfrac{3}{8}$'i arasındaki fark $\\dfrac{1}{2}-\\dfrac{3}{8}=\\dfrac{1}{8}$'dir. Deponun $\\dfrac{1}{8}$'i $60$ litre ise tamamı $60\\cdot8=480$ litredir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0143",
+   "konu": "6.4.1",
+   "zorluk": 2,
+   "s": "$0{,}75+\\dfrac{3}{5}-0{,}25$ işleminin sonucu kaçtır?",
+   "o": [
+    "$\\dfrac{9}{10}$",
+    "$\\dfrac{11}{10}$",
+    "$\\dfrac{13}{10}$",
+    "$\\dfrac{7}{10}$"
+   ],
+   "c": 1,
+   "a": "$0{,}75=\\dfrac{3}{4}$ ve $0{,}25=\\dfrac{1}{4}$'tür. $\\dfrac{3}{4}-\\dfrac{1}{4}=\\dfrac{1}{2}$ olur; $\\dfrac{1}{2}+\\dfrac{3}{5}=\\dfrac{11}{10}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0144",
+   "konu": "6.4.1",
+   "zorluk": 3,
+   "s": "Bir yolun $\\dfrac{2}{5}$'i birinci gün, kalan kısmının $\\%50$'si ikinci gün yürünüyor. Geriye $36$ km yol kaldığına göre yolun tamamı kaç km'dir?",
+   "o": [
+    "$150$",
+    "$90$",
+    "$120$",
+    "$100$"
+   ],
+   "c": 2,
+   "a": "Birinci günden sonra yolun $\\dfrac{3}{5}$'i kalır. Bunun yarısı, yani $\\dfrac{3}{10}$'u ikinci gün yürünür; geriye $\\dfrac{3}{10}$ kalır. $\\dfrac{3}{10}$ kısım $36$ km ise $\\dfrac{1}{10}$ kısım $12$ km'dir; yol $120$ km'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0145",
+   "konu": "6.4.1",
+   "zorluk": 3,
+   "s": "Fiyatı $200$ TL olan bir ürüne önce $\\%20$ zam yapılıyor, sonra yeni fiyat üzerinden $\\%10$ indirim yapılıyor. Son fiyat kaç TL'dir?",
+   "o": [
+    "$230$",
+    "$220$",
+    "$200$",
+    "$216$"
+   ],
+   "c": 3,
+   "a": "$\\%20$ zamlı fiyat $200+40=240$ TL'dir. $240$'ın $\\%10$'u $24$ olduğundan son fiyat $240-24=216$ TL'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0146",
+   "konu": "6.4.2",
+   "zorluk": 1,
+   "s": "$6{,}072$ sayısının çözümlenmiş hâli aşağıdakilerden hangisidir?",
+   "o": [
+    "$6+\\dfrac{7}{100}+\\dfrac{2}{1000}$",
+    "$6+\\dfrac{7}{10}+\\dfrac{2}{100}$",
+    "$60+\\dfrac{7}{100}+\\dfrac{2}{1000}$",
+    "$6+\\dfrac{72}{10}$"
+   ],
+   "c": 0,
+   "a": "Birler basamağı $6$, onda birler $0$, yüzde birler $7$, binde birler $2$'dir. Bu yüzden $6+\\dfrac{7}{100}+\\dfrac{2}{1000}$ yazılır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0147",
+   "konu": "6.4.2",
+   "zorluk": 1,
+   "s": "Aşağıdaki sayılardan hangisi $0{,}3$ ile $0{,}4$ arasındadır?",
+   "o": [
+    "$0{,}299$",
+    "$0{,}039$",
+    "$0{,}35$",
+    "$0{,}45$"
+   ],
+   "c": 2,
+   "a": "$0{,}3=0{,}300$ ve $0{,}4=0{,}400$ olduğundan $0{,}35=0{,}350$ bu ikisinin arasındadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0148",
+   "konu": "6.4.2",
+   "zorluk": 1,
+   "s": "$25{,}308$ sayısı aşağıdakilerden hangisi gibi okunur?",
+   "o": [
+    "Yirmi beş tam onda üç yüz sekiz",
+    "Yirmi beş tam binde üç yüz sekiz",
+    "Yirmi beş tam yüzde üç yüz sekiz",
+    "Yüz yirmi beş tam binde sekiz"
+   ],
+   "c": 1,
+   "a": "Virgülden sonra üç basamak olduğundan kesir kısmı \"binde\" okunur: $308$ binde, yani \"binde üç yüz sekiz\".",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0149",
+   "konu": "6.4.2",
+   "zorluk": 2,
+   "s": "$5+\\dfrac{3}{100}+\\dfrac{9}{1000}$ çözümlemesi hangi ondalık sayıya aittir?",
+   "o": [
+    "$5{,}039$",
+    "$53{,}9$",
+    "$5{,}0309$",
+    "$5{,}39$"
+   ],
+   "c": 0,
+   "a": "Yüzde birler basamağı $3$, binde birler basamağı $9$, onda birler basamağı $0$ olur: $5{,}039$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0150",
+   "konu": "6.4.2",
+   "zorluk": 2,
+   "s": "$12{,}586$ sayısında $5$ rakamının basamak değeri ile $8$ rakamının basamak değeri arasındaki fark kaçtır?",
+   "o": [
+    "$0{,}13$",
+    "$0{,}42$",
+    "$0{,}58$",
+    "$0{,}38$"
+   ],
+   "c": 1,
+   "a": "$5$ onda birler basamağındadır, değeri $0{,}5$. $8$ yüzde birler basamağındadır, değeri $0{,}08$. Fark $0{,}5-0{,}08=0{,}42$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0151",
+   "konu": "6.4.2",
+   "zorluk": 2,
+   "s": "Birler basamağında $3$, onda birler basamağında $0$, yüzde birler basamağında $7$, binde birler basamağında $4$ bulunan ondalık sayı aşağıdakilerden hangisidir?",
+   "o": [
+    "$3{,}704$",
+    "$3{,}47$",
+    "$30{,}74$",
+    "$3{,}074$"
+   ],
+   "c": 3,
+   "a": "Basamaklar sırasıyla yazılırsa $3{,}074$ elde edilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0152",
+   "konu": "6.4.2",
+   "zorluk": 2,
+   "s": "$0{,}7$ sayısına kaç yüzde bir ($\\dfrac{1}{100}$) eklenirse $0{,}95$ sayısı elde edilir?",
+   "o": [
+    "$5$",
+    "$2{,}5$",
+    "$25$",
+    "$95$"
+   ],
+   "c": 2,
+   "a": "$0{,}7=0{,}70$ olduğundan $0{,}95-0{,}70=0{,}25$ fark vardır. $0{,}25$, $25$ tane $\\dfrac{1}{100}$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0153",
+   "konu": "6.4.2",
+   "zorluk": 3,
+   "s": "$0{,}35$ sayısında $5$ rakamının basamak değeri, $3$ rakamının basamak değerinin kaçta kaçıdır?",
+   "o": [
+    "$\\dfrac{1}{6}$",
+    "$\\dfrac{1}{10}$",
+    "$\\dfrac{1}{5}$",
+    "$\\dfrac{5}{3}$"
+   ],
+   "c": 0,
+   "a": "$5$'in basamak değeri $0{,}05$, $3$'ün basamak değeri $0{,}3$'tür. $\\dfrac{0{,}05}{0{,}3}=\\dfrac{5}{30}=\\dfrac{1}{6}$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0154",
+   "konu": "6.4.2",
+   "zorluk": 3,
+   "s": "$a=3+\\dfrac{4}{10}+\\dfrac{5}{1000}$ ve $b=3{,}45$ sayıları veriliyor. $b-a$ farkı kaçtır?",
+   "o": [
+    "$0{,}4$",
+    "$0{,}05$",
+    "$0{,}045$",
+    "$0{,}405$"
+   ],
+   "c": 2,
+   "a": "$a=3{,}405$'tir ($\\dfrac{4}{10}$ onda birler, $\\dfrac{5}{1000}$ binde birler basamağıdır). $3{,}450-3{,}405=0{,}045$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0155",
+   "konu": "6.4.3",
+   "zorluk": 1,
+   "s": "$\\dfrac{7}{8}$ kesrinin ondalık gösterimi aşağıdakilerden hangisidir?",
+   "o": [
+    "$0{,}78$",
+    "$0{,}87$",
+    "$1{,}143$",
+    "$0{,}875$"
+   ],
+   "c": 3,
+   "a": "$7:8$ bölmesi yapılırsa $0{,}875$ bulunur. Bu bölme sonlanır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0156",
+   "konu": "6.4.3",
+   "zorluk": 1,
+   "s": "Aşağıdaki kesirlerden hangisinin ondalık gösterimi sonludur?",
+   "o": [
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{3}{8}$",
+    "$\\dfrac{2}{7}$",
+    "$\\dfrac{5}{6}$"
+   ],
+   "c": 1,
+   "a": "$3:8=0{,}375$ bulunur ve bölme sonlanır. $\\dfrac{1}{3}=0{,}\\overline{3}$, $\\dfrac{5}{6}=0{,}8\\overline{3}$ ve $\\dfrac{2}{7}=0{,}\\overline{285714}$ devirlidir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0157",
+   "konu": "6.4.3",
+   "zorluk": 1,
+   "s": "$3$ pizza $4$ arkadaş arasında eşit paylaştırılıyor. Her arkadaşa düşen pizza miktarı hangi kesirle gösterilir?",
+   "o": [
+    "$\\dfrac{3}{4}$",
+    "$\\dfrac{4}{3}$",
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{1}{4}$"
+   ],
+   "c": 0,
+   "a": "$3$ pizzanın $4$ kişiye eşit bölüşülmesi $3:4$ işlemidir ve bu işlemin sonucu $\\dfrac{3}{4}$ pizzadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0158",
+   "konu": "6.4.3",
+   "zorluk": 1,
+   "s": "Aşağıdaki sayılardan hangisi $\\dfrac{3}{5}$ kesrine eşit DEĞİLDİR?",
+   "o": [
+    "$\\dfrac{60}{100}$",
+    "$\\dfrac{6}{10}$",
+    "$0{,}06$",
+    "$0{,}6$"
+   ],
+   "c": 2,
+   "a": "$\\dfrac{3}{5}=\\dfrac{6}{10}=0{,}6=\\dfrac{60}{100}$'dür. $0{,}06=\\dfrac{6}{100}$ olduğundan eşit değildir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0159",
+   "konu": "6.4.3",
+   "zorluk": 2,
+   "s": "$\\dfrac{5}{6}$ kesrinin ondalık gösterimi aşağıdakilerden hangisidir?",
+   "o": [
+    "$0{,}83$",
+    "$0{,}\\overline{83}$",
+    "$0{,}\\overline{8}$",
+    "$0{,}8\\overline{3}$"
+   ],
+   "c": 3,
+   "a": "$5:6$ bölmesinde $0{,}8333\\dots$ bulunur; yalnızca $3$ rakamı tekrar eder. Bu $0{,}8\\overline{3}$ biçiminde yazılır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0160",
+   "konu": "6.4.3",
+   "zorluk": 2,
+   "s": "$\\dfrac{3}{8},\\ 0{,}38,\\ \\dfrac{2}{5},\\ \\dfrac{7}{20}$ sayılarından en küçüğü hangisidir?",
+   "o": [
+    "$\\dfrac{3}{8}$",
+    "$\\dfrac{7}{20}$",
+    "$0{,}38$",
+    "$\\dfrac{2}{5}$"
+   ],
+   "c": 1,
+   "a": "Ondalık gösterimleri $0{,}375$; $0{,}38$; $0{,}4$ ve $0{,}35$'tir. En küçüğü $0{,}35=\\dfrac{7}{20}$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0161",
+   "konu": "6.4.3",
+   "zorluk": 2,
+   "s": "Aşağıdaki kesirlerden hangisinin ondalık gösterimi $0{,}\\overline{4}$'tür?",
+   "o": [
+    "$\\dfrac{4}{11}$",
+    "$\\dfrac{2}{5}$",
+    "$\\dfrac{4}{90}$",
+    "$\\dfrac{4}{9}$"
+   ],
+   "c": 3,
+   "a": "$4:9=0{,}444\\dots=0{,}\\overline{4}$'tür. $\\dfrac{2}{5}=0{,}4$ sonludur; $\\dfrac{4}{11}=0{,}\\overline{36}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0162",
+   "konu": "6.4.3",
+   "zorluk": 2,
+   "s": "$17$ litre süt, $4$ eş şişeye boşluk kalmayacak biçimde dolduruluyor. Her şişede kaç litre süt vardır?",
+   "o": [
+    "$4{,}5$",
+    "$4{,}25$",
+    "$4{,}2$",
+    "$13{,}25$"
+   ],
+   "c": 1,
+   "a": "$17:4=4{,}25$ olduğundan her şişede $\\dfrac{17}{4}=4\\dfrac{1}{4}=4{,}25$ litre süt vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0163",
+   "konu": "6.4.3",
+   "zorluk": 2,
+   "s": "Bir kesir çizgisi (örneğin $\\dfrac{a}{b}$ yazılışındaki çizgi) hangi işlemi gösterir?",
+   "o": [
+    "Bölme",
+    "Çıkarma",
+    "Toplama",
+    "Çarpma"
+   ],
+   "c": 0,
+   "a": "$\\dfrac{a}{b}$ kesri, $a$ sayısının $b$'ye bölünmesi anlamına gelir: $a:b$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0164",
+   "konu": "6.4.3",
+   "zorluk": 2,
+   "s": "$\\dfrac{7}{9}$ kesrinin ondalık gösterimi aşağıdakilerden hangisidir?",
+   "o": [
+    "$0{,}\\overline{97}$",
+    "$0{,}\\overline{79}$",
+    "$0{,}\\overline{7}$",
+    "$0{,}7$"
+   ],
+   "c": 2,
+   "a": "$\\dfrac{1}{9}=0{,}\\overline{1}$, $\\dfrac{2}{9}=0{,}\\overline{2}$ örüntüsüne göre $\\dfrac{7}{9}=0{,}\\overline{7}$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0165",
+   "konu": "6.4.3",
+   "zorluk": 3,
+   "s": "$\\dfrac{5}{11}$ kesrinin ondalık gösterimi $0{,}\\overline{45}$'tir. Virgülden sonraki $21.$ basamakta hangi rakam vardır?",
+   "o": [
+    "$5$",
+    "$4$",
+    "$9$",
+    "$0$"
+   ],
+   "c": 1,
+   "a": "Rakamlar $4,5,4,5,\\dots$ biçiminde tekrar eder. Tek sıradaki basamaklarda $4$, çift sıradakilerde $5$ vardır. $21$ tek olduğundan rakam $4$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0166",
+   "konu": "6.4.3",
+   "zorluk": 3,
+   "s": "$\\dfrac{a}{12}$ kesrinin ondalık gösterimi sonlu olacaksa $a$ aşağıdakilerden hangisi olabilir?",
+   "o": [
+    "$11$",
+    "$7$",
+    "$9$",
+    "$5$"
+   ],
+   "c": 2,
+   "a": "$\\dfrac{9}{12}=\\dfrac{3}{4}=0{,}75$ sonludur. $\\dfrac{5}{12},\\dfrac{7}{12},\\dfrac{11}{12}$ sadeleşmez ve paydalarında $3$ çarpanı kaldığı için devirli olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0167",
+   "konu": "6.4.3",
+   "zorluk": 3,
+   "s": "$\\dfrac{4}{15}$ kesrinin ondalık gösterimi $0{,}2\\overline{6}$'dır. Virgülden sonraki $30.$ basamakta hangi rakam vardır?",
+   "o": [
+    "$6$",
+    "$2$",
+    "$4$",
+    "$0$"
+   ],
+   "c": 0,
+   "a": "İlk basamak $2$'dir; sonraki bütün basamaklar $6$'dır. $30.$ basamak $2$'den sonra geldiğinden rakam $6$'dır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0168",
+   "konu": "6.4.3",
+   "zorluk": 2,
+   "s": "Hesap makinesinde $13:6$ işlemi yapıldığında $2{,}1666\\dots$ sonucu görülüyor. $\\dfrac{13}{6}$ kesrinin ondalık gösterimi aşağıdakilerden hangisidir?",
+   "o": [
+    "$2{,}16$",
+    "$2{,}\\overline{16}$",
+    "$2{,}\\overline{6}$",
+    "$2{,}1\\overline{6}$"
+   ],
+   "c": 3,
+   "a": "$\\dfrac{13}{6}=13:6=2{,}1666\\dots$ olur. Yalnızca $6$ rakamı tekrar ettiği için $2{,}1\\overline{6}$ yazılır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0169",
+   "konu": "6.4.4",
+   "zorluk": 1,
+   "s": "$3{,}5$ km kaç metredir?",
+   "o": [
+    "$3500$",
+    "$35$",
+    "$35000$",
+    "$350$"
+   ],
+   "c": 0,
+   "a": "$1$ km $=1000$ m olduğundan $3{,}5\\cdot1000=3500$ m'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0170",
+   "konu": "6.4.4",
+   "zorluk": 1,
+   "s": "Aşağıdaki uzunlukları ölçmek için kullanılacak en uygun birim çiftlerinden hangisi doğrudur?",
+   "o": [
+    "Bir kalemin boyu - km; İki şehir arası - cm",
+    "Bir kalemin boyu - cm; İki şehir arası - km",
+    "Bir kalemin boyu - mm; İki şehir arası - cm",
+    "Bir kalemin boyu - m; İki şehir arası - mm"
+   ],
+   "c": 1,
+   "a": "Kalem gibi küçük nesneler cm ile, şehirler arası mesafe gibi büyük uzunluklar km ile ölçülür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0171",
+   "konu": "6.4.4",
+   "zorluk": 2,
+   "s": "$4$ m $7$ cm uzunluğu kaç milimetredir?",
+   "o": [
+    "$470$",
+    "$4007$",
+    "$4070$",
+    "$407$"
+   ],
+   "c": 2,
+   "a": "$4$ m $=400$ cm olduğundan $4$ m $7$ cm $=407$ cm'dir. $1$ cm $=10$ mm olduğundan $407\\cdot10=4070$ mm.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0172",
+   "konu": "6.4.4",
+   "zorluk": 2,
+   "s": "$0{,}8$ km, $750$ m, $78\\,000$ cm ve $7\\,900$ dm uzunluklarından en uzunu hangisidir?",
+   "o": [
+    "$750$ m",
+    "$78\\,000$ cm",
+    "$7\\,900$ dm",
+    "$0{,}8$ km"
+   ],
+   "c": 3,
+   "a": "Hepsini metreye çevirelim: $800$ m, $750$ m, $780$ m ve $790$ m. En uzunu $800$ m olan $0{,}8$ km'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0173",
+   "konu": "6.4.4",
+   "zorluk": 2,
+   "s": "Uzunluğu $2{,}4$ m olan bir kurdele, her biri $15$ cm olan parçalara ayrılıyor. Kaç parça elde edilir?",
+   "o": [
+    "$36$",
+    "$16$",
+    "$14$",
+    "$18$"
+   ],
+   "c": 1,
+   "a": "$2{,}4$ m $=240$ cm'dir. $240:15=16$ parça elde edilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0174",
+   "konu": "6.4.4",
+   "zorluk": 2,
+   "s": "$400$ m'lik bir koşu pistinde bir sporcu $6$ tur atıyor. Sporcu toplam kaç kilometre koşmuştur?",
+   "o": [
+    "$0{,}24$",
+    "$24$",
+    "$2{,}4$",
+    "$240$"
+   ],
+   "c": 2,
+   "a": "$6\\cdot400=2400$ m'dir. $1000$ m $=1$ km olduğundan $2400$ m $=2{,}4$ km'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0175",
+   "konu": "6.4.4",
+   "zorluk": 3,
+   "s": "Çevresi $2{,}1$ m olan bir bisiklet tekerleği düz yolda tam $500$ tur atıyor. Bisiklet kaç kilometre yol almıştır?",
+   "o": [
+    "$1{,}05$",
+    "$10{,}5$",
+    "$105$",
+    "$0{,}105$"
+   ],
+   "c": 0,
+   "a": "Her turda $2{,}1$ m yol alınır. $500\\cdot2{,}1=1050$ m'dir. $1050$ m $=1{,}05$ km'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "6-0176",
+   "konu": "6.4.4",
+   "zorluk": 3,
+   "s": "Bir cetvelle yapılan ölçümlerde $3{,}2$ dm, $45$ mm ve $0{,}06$ m uzunluğundaki üç doğru parçası uç uca ekleniyor. Toplam uzunluk kaç cm olur?",
+   "o": [
+    "$4{,}25$",
+    "$50{,}7$",
+    "$44{,}5$",
+    "$42{,}5$"
+   ],
+   "c": 3,
+   "a": "$3{,}2$ dm $=32$ cm; $45$ mm $=4{,}5$ cm; $0{,}06$ m $=6$ cm'dir. Toplam $32+4{,}5+6=42{,}5$ cm'dir.",
+   "kaynak": "ozgun"
   }
  ]
 }
