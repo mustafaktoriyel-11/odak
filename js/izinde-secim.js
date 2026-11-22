@@ -9,7 +9,7 @@
   var TAMPON_VARSAYILAN = 2;
   var GECMIS_GUN = 14;      // son 14 gunun setlerinde cikan soru tercih edilmez
   var YENI_KONU_GUN = 21;   // "son 3 hafta" icinde acilan konu
-  var DAYANAK = '2026-09-14'; // gecmis zinciri bu gunden baslar (oncesi bos gecmis)
+  var DAYANAK = '2026-11-23'; // gecmis zinciri bu gunden baslar (oncesi bos gecmis)
   var ZINCIR_EN_FAZLA = 400;
 
   function gunNo(iso) { // 'YYYY-MM-DD' -> 1970'ten beri gun sayisi (UTC)
@@ -75,7 +75,8 @@
   }
 
   // Tek gunun seti (gecmis haric tutma listesi disaridan verilir).
-  function setSec(sorular, mufredat, sinif, tarihISO, n, yasak) {
+  function setSec(sorular, mufredat, sinif, tarihISO, n, yasak, son) {
+    son = son || {};
     var acik = acikKonular(mufredat, sinif, tarihISO);
     var acikId = {}, yeniId = {}, geoId = {}, i;
     var t = gunNo(tarihISO);
@@ -88,11 +89,16 @@
     var havuz = [];
     for (i = 0; i < sorular.length; i++) if (acikId[sorular[i].konu]) havuz.push(sorular[i]);
     var rnd = mulberry32(fnv1a(tarihISO + '|' + sinif));
-    var taze = [], bayat = [];
-    for (i = 0; i < havuz.length; i++) (yasak[havuz[i].id] ? bayat : taze).push(havuz[i]);
-    taze.sort(idSirala); bayat.sort(idSirala);
-    karistir(taze, rnd); karistir(bayat, rnd);
-    var L = taze.concat(bayat); // once taze, sonra (gevsetilirse) son 14 gunde cikanlar
+    var hic = [], eski = [], bayat = [];
+    for (i = 0; i < havuz.length; i++) {
+      var hq = havuz[i];
+      (yasak[hq.id] ? bayat : (son[hq.id] === undefined ? hic : eski)).push(hq);
+    }
+    hic.sort(idSirala); eski.sort(idSirala); bayat.sort(idSirala);
+    karistir(hic, rnd); karistir(eski, rnd); karistir(bayat, rnd);
+    eski.sort(function (a, b) { return son[a.id] - son[b.id]; }); // en uzun suredir cikmayan once
+    // once hic cikmamis, sonra en eski cikmis, en son (gevsetilirse) son 14 gunde cikanlar
+    var L = hic.concat(eski, bayat);
 
     var secilen = [];
     if (L.length <= n) {
@@ -167,12 +173,15 @@
     for (var g = bas; g <= t; g++) {
       var iso = gunISO(g);
       if (!onbellek.gunler[iso]) {
-        var yasak = {};
-        for (var d = 1; d <= GECMIS_GUN; d++) {
+        var yasak = {}, son = {};
+        for (var d = g - bas; d >= 1; d--) {
           var onceki = onbellek.gunler[gunISO(g - d)];
-          if (onceki) for (var k = 0; k < onceki.length; k++) yasak[onceki[k].id] = true;
+          if (onceki) for (var k = 0; k < onceki.length; k++) {
+            son[onceki[k].id] = g - d;
+            if (d <= GECMIS_GUN) yasak[onceki[k].id] = true;
+          }
         }
-        onbellek.gunler[iso] = setSec(sinifSorular, mufredat, sinif, iso, n, yasak);
+        onbellek.gunler[iso] = setSec(sinifSorular, mufredat, sinif, iso, n, yasak, son);
       }
     }
     // dayanaktan once: gecmissiz tek hesap

@@ -14,7 +14,7 @@ M = 0xFFFFFFFF
 TAMPON_VARSAYILAN = 2
 GECMIS_GUN = 14
 YENI_KONU_GUN = 21
-DAYANAK = "2026-09-14"
+DAYANAK = "2026-11-23"
 ZINCIR_EN_FAZLA = 400
 
 
@@ -101,7 +101,8 @@ def acik_konular(mufredat, sinif, tarih):
     return out
 
 
-def _set_sec(sorular, mufredat, sinif, tarih, n, yasak):
+def _set_sec(sorular, mufredat, sinif, tarih, n, yasak, son=None):
+    son = son or {}
     acik = acik_konular(mufredat, sinif, tarih)
     acik_id, yeni_id, geo_id = set(), set(), set()
     t = gun_no(tarih)
@@ -114,11 +115,14 @@ def _set_sec(sorular, mufredat, sinif, tarih, n, yasak):
             yeni_id.add(k["id"])
     havuz = [q for q in sorular if q["konu"] in acik_id]
     rnd = mulberry32(fnv1a(tarih + "|" + str(sinif)))
-    taze = sorted([q for q in havuz if q["id"] not in yasak], key=lambda q: q["id"])
+    hic = sorted([q for q in havuz if q["id"] not in yasak and q["id"] not in son], key=lambda q: q["id"])
+    eski = sorted([q for q in havuz if q["id"] not in yasak and q["id"] in son], key=lambda q: q["id"])
     bayat = sorted([q for q in havuz if q["id"] in yasak], key=lambda q: q["id"])
-    karistir(taze, rnd)
+    karistir(hic, rnd)
+    karistir(eski, rnd)
     karistir(bayat, rnd)
-    L = taze + bayat
+    eski.sort(key=lambda q: son[q["id"]])  # en uzun suredir cikmayan once (kararli)
+    L = hic + eski + bayat
     if len(L) <= n:
         return karistir(list(L), rnd)
     secilen = []
@@ -188,10 +192,13 @@ class Secici(object):
         for g in range(bas, t + 1):
             iso = gun_iso(g)
             if iso not in self.gunler:
-                yasak = set()
-                for d in range(1, GECMIS_GUN + 1):
+                yasak, son = set(), {}
+                for d in range(g - bas, 0, -1):
                     onceki = self.gunler.get(gun_iso(g - d))
                     if onceki:
-                        yasak.update(q["id"] for q in onceki)
-                self.gunler[iso] = _set_sec(self.sorular, self.mufredat, self.sinif, iso, self.n, yasak)
+                        for q in onceki:
+                            son[q["id"]] = g - d
+                            if d <= GECMIS_GUN:
+                                yasak.add(q["id"])
+                self.gunler[iso] = _set_sec(self.sorular, self.mufredat, self.sinif, iso, self.n, yasak, son)
         return list(self.gunler[tarih])

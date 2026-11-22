@@ -97,9 +97,11 @@ def main():
     for c, j in zip(cases, js):
         for i in range(len(j["sets"])):
             havuz = [q for q in pools[c["pool"]] if q["konu"] in set(j["acik"][i])]
-            if len(havuz) < 15 * c["n"] or c["dates"][i] < "2026-10-05":
+            if len(havuz) < 15 * c["n"] or c["dates"][i] < ort.DAYANAK:
                 continue
             for k in range(max(0, i - 14), i):
+                if c["dates"][k] < ort.DAYANAK:
+                    continue
                 ortak = set(j["sets"][i]) & set(j["sets"][k])
                 geo = set(kk["id"] for kk in ort.konular(muf, c["sinif"]) if kk["alan"] == "geometri")
                 for q in pools[c["pool"]]:
