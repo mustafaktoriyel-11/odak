@@ -175,6 +175,7 @@
 
   // ---------- ilerleme ----------
   function tamamMi(r){return !!(r&&r.bit&&r.cev&&r.cev.length&&r.cev.every(function(x){return x!==null&&x!==undefined;}));}
+  function onizle(){try{return localStorage.getItem('mf-iz-onizle')==='1';}catch(e){return false;}}
   function durum(){
     var v=oku(),gunler=Object.keys(v.g).filter(function(k){return tamamMi(v.g[k]);}).sort();
     var toplam=gunler.length,bg=bugun(),cur=0,best=0,maz={},bas=gunler[0];
@@ -189,6 +190,7 @@
       }
     }
     var R=V.rota,kad=1,D=R?R.duraklar:[],konum=0;
+    if(onizle()&&D.length){toplam=Math.max(toplam,D[D.length-1].adim);best=Math.max(best,99);} // yalnız bu cihaz: tüm duraklar açık, kayıt değişmez
     if(R){R.kademe.forEach(function(x){if(toplam>=x.adim&&best>=x.seri)kad=Math.max(kad,x.no);});
       D.forEach(function(d,i){if(toplam>=d.adim)konum=i;});}
     var sonraki=D[konum+1]||null,bekleyen=null;
@@ -319,6 +321,7 @@
     var st=durum(),D=V.rota.duraklar,cur=D[st.konum],dr=V.dur[cur.id]||{},bg=bugun(),r=st.v.g[bg],o='';
     o+='<div class="iz-hero"><div class="iz-ust-satir"><span class="iz-ust">Her gün 5 soru · dünya turu</span><button type="button" class="iz-sinif" id="iz-sinif">'+esc(sinifAd(s))+' ›</button></div>'+
       '<h2><svg class="ic" aria-hidden="true"><use href="#i-pusula"/></svg>Matematiğin İzinde</h2><p class="iz-yer"><svg class="ic" aria-hidden="true"><use href="#i-konum"/></svg>'+esc(cur.yer)+(dr.matematikci?' · '+esc(dr.matematikci.ad):'')+'</p></div>';
+    if(onizle())o+='<p class="iz-gec-not">Önizleme modu: tüm duraklar açık (yalnız bu cihazda). Kapatmak için Ayarlar’da sürüm yazısına 5 kez dokun.</p>';
     o+='<div class="iz-harita-kart"><div class="iz-harita" id="iz-harita"><div class="iz-ic" id="iz-ic">'+(V.taban||'')+
       '<svg id="iz-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none"></svg></div></div>'+
       '<div class="iz-harita-alt"><button type="button" class="iz-yak" id="iz-yak">'+(yakin?'<svg class="ic" aria-hidden="true"><use href="#i-harita"/></svg>Tüm harita':'<svg class="ic" aria-hidden="true"><use href="#i-buyutec"/></svg>Yakınlaş')+'</button><span>'+(st.sonraki?'Sıradaki durak: <b>'+esc(st.sonraki.yer)+'</b> · '+(st.sonraki.adim-st.toplam)+' set':'<svg class="ic" aria-hidden="true"><use href="#i-bayrak"/></svg>Yolculuğu tamamladın!')+'</span></div></div>';
@@ -463,6 +466,7 @@
 
   // ---------- durak kartı ve kademe töreni ----------
   function yeniOlaylar(st){
+    if(onizle())return;
     var v=oku(),kuyruk=[];
     V.rota.duraklar.forEach(function(d){if(st.toplam>=d.adim&&v.gor.dr.indexOf(d.id)<0){kuyruk.push(function(sonra){durakSahne(V.rota.duraklar.indexOf(d),false,sonra);});v.gor.dr.push(d.id);}});
     if(st.kademe>(v.gor.k||1)){var k=st.kademe,eski=v.gor.k||1;kuyruk.push(function(sonra){tore(eski,k,sonra);});v.gor.k=k;}

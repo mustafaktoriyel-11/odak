@@ -18,6 +18,11 @@
   if(typeof ksKapat==='function')ksKapat(p,kapatTikla,p);
   // sürüm numarası (hangi sürümün kurulu olduğunu görmek için): sw.js içindeki mf-odak-vNNN
   fetch('sw.js',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/mf-odak-v(\d+)/);if(m)$('ay-surum').textContent='Sürüm '+m[1];}).catch(function(){});
+  // gizli: sürüm yazısına 5 kez dokununca Yolculuk önizleme modu (tüm duraklar açık, yalnız bu cihaz) aç/kapa
+  (function(){var e=$('ay-surum'),n=0,t=0;if(!e)return;e.addEventListener('click',function(){var s=Date.now();n=s-t<700?n+1:1;t=s;if(n<5)return;n=0;
+    var acik=false;try{acik=localStorage.getItem('mf-iz-onizle')==='1';if(acik)localStorage.removeItem('mf-iz-onizle');else localStorage.setItem('mf-iz-onizle','1');}catch(x){}
+    var eski=e.textContent;e.textContent=acik?'Önizleme kapandı':'Önizleme açık: tüm duraklar';setTimeout(function(){e.textContent=eski;},2500);
+    window.dispatchEvent(new Event('mf-sinif-degisti'));});})();
   $('ay-tamam').addEventListener('click',kapatTikla);
   p.addEventListener('click',function(e){if(e.target===p)kapatTikla();});
   // sınıf: mevcut sınıf seçim sayfasını aç (07-sinif-sinav.js); kapanınca etiketi tazele
