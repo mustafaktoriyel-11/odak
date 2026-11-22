@@ -14,7 +14,8 @@
    "bolge": 1,
    "simge": "kemik",
    "gorsel": true,
-   "video": true
+   "video": true,
+   "muzik": "afrika"
   },
   {
    "id": "d02",
@@ -30,7 +31,8 @@
     742
    ],
    "gorsel": true,
-   "video": true
+   "video": true,
+   "muzik": "misir"
   },
   {
    "id": "d03",
@@ -46,7 +48,8 @@
     676
    ],
    "gorsel": true,
-   "video": true
+   "video": true,
+   "muzik": "misir"
   },
   {
    "id": "d04",
@@ -62,7 +65,8 @@
     668
    ],
    "gorsel": true,
-   "video": true
+   "video": true,
+   "muzik": "mezopotamya"
   },
   {
    "id": "d05",
@@ -78,7 +82,8 @@
     545
    ],
    "gorsel": true,
-   "video": true
+   "video": true,
+   "muzik": "yunan"
   },
   {
    "id": "d06",
@@ -95,7 +100,8 @@
     603
    ],
    "gorsel": true,
-   "video": true
+   "video": true,
+   "muzik": "yunan"
   },
   {
    "id": "d07",
@@ -112,7 +118,8 @@
     612
    ],
    "gorsel": true,
-   "video": true
+   "video": true,
+   "muzik": "yunan"
   },
   {
    "id": "d08",
@@ -124,7 +131,8 @@
    "simge": "sifir",
    "kavis": -0.18,
    "gorsel": true,
-   "video": true
+   "video": true,
+   "muzik": "hint"
   },
   {
    "id": "d09",
@@ -135,7 +143,8 @@
    "bolge": 3,
    "simge": "yorunge",
    "kavis": 0.3,
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "hint"
   },
   {
    "id": "d10",
@@ -146,7 +155,8 @@
    "bolge": 3,
    "simge": "cubuklar",
    "kavis": -0.25,
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "cin"
   },
   {
    "id": "d11",
@@ -161,7 +171,8 @@
     1545,
     553
    ],
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "islam"
   },
   {
    "id": "d12",
@@ -176,7 +187,8 @@
     1632,
     610
    ],
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "islam"
   },
   {
    "id": "d13",
@@ -186,7 +198,8 @@
    "adim": 38,
    "bolge": 4,
    "simge": "rasathane",
-   "kavis": -0.3
+   "kavis": -0.3,
+   "muzik": "islam"
   },
   {
    "id": "d14",
@@ -201,7 +214,8 @@
     1405,
     470
    ],
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "istanbul"
   },
   {
    "id": "d15",
@@ -215,7 +229,8 @@
    "rozet": [
     1296,
     505
-   ]
+   ],
+   "muzik": "ortacag"
   },
   {
    "id": "d16",
@@ -230,7 +245,8 @@
     1186,
     466
    ],
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "avrupa"
   },
   {
    "id": "d17",
@@ -246,7 +262,8 @@
     1180,
     390
    ],
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "avrupa"
   },
   {
    "id": "d18",
@@ -262,7 +279,8 @@
     1236,
     530
    ],
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "avrupa"
   },
   {
    "id": "d19",
@@ -277,7 +295,8 @@
     1286,
     424
    ],
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "avrupa"
   },
   {
    "id": "d20",
@@ -289,7 +308,8 @@
    "simge": "maya",
    "deniz": true,
    "kavis": 0.22,
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "maya"
   },
   {
    "id": "d21",
@@ -300,7 +320,8 @@
    "bolge": 6,
    "simge": "simit",
    "kavis": -0.3,
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "modern"
   },
   {
    "id": "d22",
@@ -316,7 +337,8 @@
     1490,
     482
    ],
-   "gorsel": true
+   "gorsel": true,
+   "muzik": "ankara"
   }
  ],
  "kademe": [

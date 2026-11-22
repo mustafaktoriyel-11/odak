@@ -320,6 +320,24 @@
     if(d.dene&&d.dene.soru)o+='<details class="iz-d-dene"><summary>🤔 Dene: '+esc(d.dene.soru)+'</summary><p>'+esc(d.dene.cevap)+'</p></details>';
     return o+'</div></div></div>';
   }
+  // Durak müziği: özgün bölge temaları (ses/tema/*.m4a), Web Audio ile dikişsiz döngü; varsayılan kapalı, tercih hatırlanır
+  var SES={ctx:null,tampon:{},kaynak:null,kazanc:null,acik:false};
+  try{SES.acik=localStorage.getItem('mf-iz-ses')==='1';}catch(e){}
+  function sesDur(){var k=SES.kaynak,g=SES.kazanc;SES.kaynak=null;if(!k||!SES.ctx)return;var t=SES.ctx.currentTime;
+    try{g.gain.cancelScheduledValues(t);g.gain.setValueAtTime(g.gain.value,t);g.gain.linearRampToValueAtTime(0,t+.8);k.stop(t+.85);}catch(e){}}
+  function sesCal(ad){
+    sesDur();if(!ad||!SES.acik)return;
+    var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
+    if(!SES.ctx){try{SES.ctx=new AC();}catch(e){return;}}
+    var ctx=SES.ctx;if(ctx.state==='suspended')ctx.resume();
+    var bekle=SES.tampon[ad]||(SES.tampon[ad]=fetch('ses/tema/'+ad+'.m4a').then(function(r){if(!r.ok)throw 0;return r.arrayBuffer();}).then(function(b){return new Promise(function(ok,no){ctx.decodeAudioData(b,ok,no);});}));
+    bekle.then(function(buf){
+      if(!SES.acik||SES.istenen!==ad)return;
+      var k=ctx.createBufferSource(),g=ctx.createGain();k.buffer=buf;k.loop=true;k.connect(g);g.connect(ctx.destination);
+      var t=ctx.currentTime;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.55,t+2.2);k.start(t);SES.kaynak=k;SES.kazanc=g;
+    }).catch(function(){delete SES.tampon[ad];});
+  }
+  document.addEventListener('visibilitychange',function(){if(!SES.ctx)return;if(document.hidden)SES.ctx.suspend();else if(SES.kaynak)SES.ctx.resume();});
   function durakSahne(i,zoom,sonra){
     var D=V.rota.duraklar,r=D[i],d=V.dur[r.id]||{},st=kamSt||durum(),ul=st.toplam>=r.adim;
     var kar=document.createElement('div');kar.className='iz-karart';document.body.appendChild(kar);
@@ -346,9 +364,15 @@
         var y0=null;icK.addEventListener('touchstart',function(e){y0=e.touches[0].clientY;},{passive:true});
         icK.addEventListener('touchend',function(e){if(y0===null)return;var dy=e.changedTouches[0].clientY-y0;y0=null;
           if(dy<-40&&sh.classList.contains('kapali'))hikaye(true);else if(dy>60&&icK.scrollTop<=0&&!sh.classList.contains('kapali'))hikaye(false);},{passive:true});}
+      if(ul&&r.muzik){
+        var sb=document.createElement('button');sb.type='button';sb.className='iz-sh-ses';
+        var sesYaz=function(){sb.textContent=SES.acik?'🔊':'🔇';sb.setAttribute('aria-label',SES.acik?'Müziği kapat':'Müziği aç');sb.classList.toggle('acik',SES.acik);};
+        sb.onclick=function(e){e.stopPropagation();SES.acik=!SES.acik;try{localStorage.setItem('mf-iz-ses',SES.acik?'1':'0');}catch(x){}sesYaz();SES.istenen=r.muzik;if(SES.acik)sesCal(r.muzik);else sesDur();};
+        sesYaz();sh.appendChild(sb);SES.istenen=r.muzik;if(SES.acik)sesCal(r.muzik);
+      }
       document.body.appendChild(sh);
       requestAnimationFrame(function(){sh.classList.add('acik');kar.classList.add('git');});
-      function kapat(){sh.classList.remove('acik');kar.classList.remove('git');kar.classList.add('tam');
+      function kapat(){SES.istenen=null;sesDur();sh.classList.remove('acik');kar.classList.remove('git');kar.classList.add('tam');
         setTimeout(function(){sh.remove();if(zoom&&$('iz-harita')){kamGit(geri,650,yumusak);}kar.classList.remove('tam');setTimeout(function(){kar.remove();},350);if(sonra)sonra();},300);}
       sh.querySelector('.iz-sh-kapat').onclick=kapat;
     }
