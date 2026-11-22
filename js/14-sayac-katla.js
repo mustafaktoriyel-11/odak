@@ -42,13 +42,13 @@
   function maskot(){var as=!!($('pm-siki')&&$('pm-siki').checked);
     mk.innerHTML='<div class="om-i"><svg viewBox="0 0 120 120"><use href="#'+(as?'mf-aslan':'mf-kedi')+'"/></svg></div>';}
   function olc(){
-    var B=saat.offsetWidth||230,gen=innerWidth>=760,nav=$('alt-nav');
+    var B=Math.max(saat.offsetWidth,saat.offsetHeight)||230,kdUzun=saat.classList.contains('kd-bc')||saat.classList.contains('kd-ks'),gen=innerWidth>=760,nav=$('alt-nav');
     var nr=nav?nav.getBoundingClientRect():null;
     // alttaki menü şeridi (mobil/dikey tablet) yer kaplar; yatay tablette menü solda dikey, yer kaplamaz
     var navH=(nr&&nr.left<5&&nr.width>=innerWidth*.9)?Math.max(0,innerHeight-nr.top):0;
     var avW=gen?(sy.clientWidth-60):(innerWidth-20);
     var H=innerHeight-navH,EK=OE_EK+(gen?28:0),Wt=Math.min(avW,680),M;
-    if(H-EK-64-10>=Wt){M=Math.round(Math.min(112,H-EK-10-Wt));}else{M=0;}
+    if(!kdUzun&&H-EK-64-10>=Wt){M=Math.round(Math.min(112,H-EK-10-Wt));}else{M=0;}
     maskotsuz=!M;document.body.style.setProperty('--omS',(M||64)+'px');
     var W=Math.max(B,Math.min(Wt,H-EK-(M?M+10:0))),S=W/B;
     var bos=H-(W+EK+(M?M+10:0));document.body.style.setProperty('--oeUst',Math.max(8,Math.round(bos/2))+'px');
