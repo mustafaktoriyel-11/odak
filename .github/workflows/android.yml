@@ -40,6 +40,11 @@ jobs:
           distribution: temurin
           java-version: 21
 
+      # Gradle bağımlılıkları önbellekte: her derlemede Maven'dan yeniden indirilmez (sık derlemede 429 "Too Many Requests" hatasını önler)
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-read-only: false
+
       - name: Web dosyalarını www/ klasörüne topla
         run: |
           mkdir www
@@ -149,7 +154,7 @@ jobs:
           # sabit test imzası: yeni sürüm eskisinin üzerine kurulabilsin (yalnız test içindir, Play imzası değildir)
           mkdir -p ~/.android && cp ../android-ayar/test-imza.keystore ~/.android/debug.keystore
           chmod +x gradlew
-          ./gradlew assembleDebug --no-daemon
+          ./gradlew assembleDebug --no-daemon || { echo 'Bağımlılık indirme hatası, 60 sn sonra yeniden deneniyor'; sleep 60; ./gradlew assembleDebug --no-daemon; }
           cp app/build/outputs/apk/debug/app-debug.apk ../mf-odak-test.apk
 
       - name: Yayın paketi (AAB, Play için)
