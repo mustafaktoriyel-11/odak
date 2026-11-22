@@ -12,7 +12,8 @@
    "y": 890,
    "adim": 0,
    "bolge": 1,
-   "simge": "kemik"
+   "simge": "kemik",
+   "gorsel": true
   },
   {
    "id": "d02",
@@ -26,7 +27,8 @@
    "rozet": [
     1398,
     742
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d03",
@@ -40,7 +42,8 @@
    "rozet": [
     1385,
     676
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d04",
@@ -54,7 +57,8 @@
    "rozet": [
     1562,
     668
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d05",
@@ -68,7 +72,8 @@
    "rozet": [
     1368,
     545
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d06",
@@ -83,7 +88,8 @@
    "rozet": [
     1440,
     603
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d07",
@@ -98,7 +104,8 @@
    "rozet": [
     1290,
     612
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d08",
@@ -108,7 +115,8 @@
    "adim": 18,
    "bolge": 3,
    "simge": "sifir",
-   "kavis": -0.18
+   "kavis": -0.18,
+   "gorsel": true
   },
   {
    "id": "d09",
@@ -118,7 +126,8 @@
    "adim": 22,
    "bolge": 3,
    "simge": "yorunge",
-   "kavis": 0.3
+   "kavis": 0.3,
+   "gorsel": true
   },
   {
    "id": "d10",
@@ -128,7 +137,8 @@
    "adim": 26,
    "bolge": 3,
    "simge": "cubuklar",
-   "kavis": -0.25
+   "kavis": -0.25,
+   "gorsel": true
   },
   {
    "id": "d11",
@@ -142,7 +152,8 @@
    "rozet": [
     1545,
     553
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d12",
@@ -156,7 +167,8 @@
    "rozet": [
     1632,
     610
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d13",
@@ -180,7 +192,8 @@
    "rozet": [
     1405,
     470
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d15",
@@ -208,7 +221,8 @@
    "rozet": [
     1186,
     466
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d17",
@@ -223,7 +237,8 @@
    "rozet": [
     1180,
     390
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d18",
@@ -238,7 +253,8 @@
    "rozet": [
     1236,
     530
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d19",
@@ -252,7 +268,8 @@
    "rozet": [
     1286,
     424
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "d20",
@@ -263,7 +280,8 @@
    "bolge": 6,
    "simge": "maya",
    "deniz": true,
-   "kavis": 0.22
+   "kavis": 0.22,
+   "gorsel": true
   },
   {
    "id": "d21",
@@ -273,7 +291,8 @@
    "adim": 72,
    "bolge": 6,
    "simge": "simit",
-   "kavis": -0.3
+   "kavis": -0.3,
+   "gorsel": true
   },
   {
    "id": "d22",
@@ -288,7 +307,8 @@
    "rozet": [
     1490,
     482
-   ]
+   ],
+   "gorsel": true
   }
  ],
  "kademe": [
