@@ -122,12 +122,12 @@
       var gf = function (q) { return geoId[q.konu]; };
       if (!sec(gf, 2, true)) sec(gf, 2, false);
     }
-    // 2) n>=6 ise her zorluktan en az bir
-    if (n >= 6) {
+    // 2) n>=5 ise her zorluktan en az bir
+    if (n >= 5) {
       for (var z = 1; z <= 3; z++) {
         if (zorSay[z] === 0) {
           var zf = function (q) { return q.zorluk === z; };
-          if (!sec(zf, 2, true)) sec(zf, 2, false);
+          sec(zf, 2, true); // zorluk dengesi icin son 14 gunun sorusu secilmez
         }
       }
     }

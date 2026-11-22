@@ -153,12 +153,11 @@ def _set_sec(sorular, mufredat, sinif, tarih, n, yasak):
         gf = lambda q: q["konu"] in geo_id  # noqa: E731
         if not sec(gf, 2, True):
             sec(gf, 2, False)
-    if n >= 6:
+    if n >= 5:
         for z in (1, 2, 3):
             if zor_say[z] == 0:
                 zf = lambda q, z=z: q["zorluk"] == z  # noqa: E731
-                if not sec(zf, 2, True):
-                    sec(zf, 2, False)
+                sec(zf, 2, True)  # zorluk dengesi icin son 14 gunun sorusu secilmez
     hedef = (2 * n + 4) // 5
     while len(secilen) < n and st["yeni"] < hedef:
         if not sec(lambda q: q["konu"] in yeni_id, 2, True):

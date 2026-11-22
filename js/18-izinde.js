@@ -1,9 +1,9 @@
-// ================= MATEMATİĞİN İZİNDE (günlük 8 soru + dünya turu) =================
+// ================= MATEMATİĞİN İZİNDE (günlük 5 soru + dünya turu) =================
 // Veri: veri/izinde/{mufredat,rota,duraklar}.json, sorular-<sınıf>.json · Seçici: js/izinde-secim.js · Görseller: js/17-izinde-gorsel.js
 // Kayıt: localStorage 'mf-izinde' = {g:{'YYYY-MM-DD':{s:sınıf, ids:[...], cev:[...], d:doğru, bit:zaman, gec:sonradan mı}}, gor:{dr:[görülen duraklar], k:görülen kademe}}
 (function(){
   var $=function(id){return document.getElementById(id);};
-  var K='mf-izinde',NS=8,W=2576,H=1438;
+  var K='mf-izinde',NS=5,W=2576,H=1438;
   var KADEME=['Yavru kedi','Genç kedi','Yelesi belirmiş kedi','Aslan','Genç aslan','Bilge aslan'];
   var AY=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
   var V={muf:null,rota:null,dur:null,soru:{}},yukleniyor=null,aktif=null,yakin=true,ilkKaydir=true;
@@ -196,7 +196,7 @@
   function giris(){
     var s=sinif(),el=$('mt-giris');if(!el)return;
     if(!s){
-      el.innerHTML='<div class="iz-hero"><span class="iz-ust">Her gün 8 soru · dünya turu</span><h2><svg class="ic" aria-hidden="true"><use href="#i-pusula"/></svg>Matematiğin İzinde</h2>'+
+      el.innerHTML='<div class="iz-hero"><span class="iz-ust">Her gün 5 soru · dünya turu</span><h2><svg class="ic" aria-hidden="true"><use href="#i-pusula"/></svg>Matematiğin İzinde</h2>'+
         '<p>Sorular sınıfına ve okulda işlediğin konulara göre gelir. Önce sınıfını seç.</p><button type="button" class="mt-btn" id="iz-sinif-sec">Sınıfımı seç</button></div>';
       goster('mt-giris');var b=$('iz-sinif-sec');if(b)b.onclick=sinifSec;rozet();return;
     }
@@ -208,7 +208,7 @@
   }
   function cizGiris(s){
     var st=durum(),D=V.rota.duraklar,cur=D[st.konum],dr=V.dur[cur.id]||{},bg=bugun(),r=st.v.g[bg],o='';
-    o+='<div class="iz-hero"><div class="iz-ust-satir"><span class="iz-ust">Her gün 8 soru · dünya turu</span><button type="button" class="iz-sinif" id="iz-sinif">'+esc(sinifAd(s))+' ›</button></div>'+
+    o+='<div class="iz-hero"><div class="iz-ust-satir"><span class="iz-ust">Her gün 5 soru · dünya turu</span><button type="button" class="iz-sinif" id="iz-sinif">'+esc(sinifAd(s))+' ›</button></div>'+
       '<h2><svg class="ic" aria-hidden="true"><use href="#i-pusula"/></svg>Matematiğin İzinde</h2><p class="iz-yer"><svg class="ic" aria-hidden="true"><use href="#i-konum"/></svg>'+esc(cur.yer)+(dr.matematikci?' · '+esc(dr.matematikci.ad):'')+'</p></div>';
     o+='<div class="iz-harita-kart"><div class="iz-harita" id="iz-harita"><div class="iz-ic" id="iz-ic">'+(V.taban||'')+
       '<svg id="iz-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none"></svg></div></div>'+
@@ -217,7 +217,7 @@
     o+='<div class="mt-kart iz-gun">';
     if(tamamMi(r)){o+='<div class="iz-gun-ust"><b><svg class="ic" aria-hidden="true"><use href="#i-tamam"/></svg>Bugünün seti tamam</b><span>'+r.d+'/'+r.cev.length+' doğru</span></div><button type="button" class="mt-btn2" id="iz-gor">Çözümleri gör</button>';}
     else{var cevli=r&&r.cev?r.cev.filter(function(x){return x!==null&&x!==undefined;}).length:0;
-      o+='<div class="iz-gun-ust"><b>Bugünün seti</b><span>'+NS+' soru · yaklaşık 15 dk</span></div>'+
+      o+='<div class="iz-gun-ust"><b>Bugünün seti</b><span>'+NS+' soru · yaklaşık 10 dk</span></div>'+
         '<button type="button" class="mt-btn" id="iz-basla">'+(cevli?'Devam et ('+cevli+'/'+NS+')':'Başla')+'</button>';}
     o+='</div>';
     // durum
