@@ -1592,3 +1592,6 @@ html.mf-gece .pm-saat .pm-etiket{color:#C3CBEA}
 #pm-odak-c button[data-v="ozel"]:not(.on)::before{color:inherit}
 html.mf-gece #pm-odak-c button[data-v="ozel"]:not(.on){background:#232B52;border:1px solid #3A4BA0}
 #pm-odak-c button[data-v="ozel"]{margin-left:0;border-radius:12px;font-weight:600}
+.pm-saat.kd-dj{width:min(340px,88vw)}
+.pm-saat.kd-bc .pm-muzik,.pm-saat.kd-ks .pm-muzik,.pm-saat.kd-dj .pm-muzik{right:-2px}
+.pm-saat.kd-bc .ay-btn,.pm-saat.kd-ks .ay-btn,.pm-saat.kd-dj .ay-btn{left:-2px}
