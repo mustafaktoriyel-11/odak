@@ -2410,6 +2410,395 @@
    "c": 4,
    "a": "Taban yarıçapı ve yükseklikten ana doğru $\\sqrt{3^{2}+4^{2}}=5$ cm bulunur. Yanal alan $\\pi rl=\\pi\\cdot3\\cdot5=15\\pi$ cm$^{2}$'dir.",
    "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0151",
+   "konu": "M.1.14",
+   "zorluk": 2,
+   "s": "Bir babanın ve oğlunun bugünkü yaşları toplamı $48$'dir. $4$ yıl önce babanın yaşı oğlunun yaşının $7$ katı olduğuna göre babanın bugünkü yaşı kaçtır?",
+   "o": [
+    "$9$",
+    "$35$",
+    "$41$",
+    "$39$",
+    "$43$"
+   ],
+   "c": 3,
+   "a": "Oğlunun yaşı $x$ ise babanın yaşı $48-x$ olur. $(48-x)-4=7(x-4)$ denkleminden $x=9$ bulunur; baba $48-9=39$ yaşındadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0152",
+   "konu": "M.1.14",
+   "zorluk": 1,
+   "s": "Ayşe, Burak'tan $3$ yaş büyük, Burak da Cem'den $2$ yaş büyüktür. $4$ yıl sonra üçünün yaşları toplamı $52$ olacağına göre Ayşe'nin bugünkü yaşı kaçtır?",
+   "o": [
+    "$11$",
+    "$13$",
+    "$15$",
+    "$17$",
+    "$16$"
+   ],
+   "c": 4,
+   "a": "Bugünkü yaşlar toplamı $52-3\\cdot4=40$'tır. Cem $c$ yaşındaysa $c+(c+2)+(c+5)=40$ olur, $c=11$ ve Ayşe $c+5=16$ yaşındadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0153",
+   "konu": "M.1.16",
+   "zorluk": 1,
+   "s": "Kilogramı $40$ TL olan çay ile kilogramı $55$ TL olan çay karıştırılarak kilogramı $49$ TL olan $25$ kg çay elde ediliyor. Karışımda kaç kg $55$ TL'lik çay vardır?",
+   "o": [
+    "$15$",
+    "$8$",
+    "$10$",
+    "$12$",
+    "$20$"
+   ],
+   "c": 0,
+   "a": "$55$ TL'lik çay $b$ kg ise $40(25-b)+55b=49\\cdot25$ olur. $1000+15b=1225$ denkleminden $b=15$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0154",
+   "konu": "M.1.16",
+   "zorluk": 3,
+   "s": "$50$ litrelik $\\%40$'lık bir tuz çözeltisinden önce $10$ litre alınıp yerine $10$ litre saf su ekleniyor. Karışım iyice karıştırıldıktan sonra yine $10$ litre alınıp yerine $10$ litre saf su ekleniyor. Son durumda çözeltinin tuz oranı yüzde kaçtır?",
+   "o": [
+    "$\\%20$",
+    "$\\%24$",
+    "$\\%25$",
+    "$\\%25{,}6$",
+    "$\\%32$"
+   ],
+   "c": 3,
+   "a": "Her işlemde tuz miktarı $\\dfrac{4}{5}$ katına iner. Tuz $20\\cdot\\dfrac45\\cdot\\dfrac45=12{,}8$ litre olur ve oran $\\dfrac{12{,}8}{50}=\\%25{,}6$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0155",
+   "konu": "M.1.19",
+   "zorluk": 2,
+   "s": "Bir okuldaki öğrencilerin tercih ettiği kulüpler daire grafiğinde gösterilmiştir. Müzik kulübünü seçen öğrenci sayısı $40$ olduğuna göre Spor kulübünü seçenlerle Tiyatro kulübünü seçenlerin sayıları arasındaki fark kaçtır?",
+   "o": [
+    "$8$",
+    "$12$",
+    "$16$",
+    "$20$",
+    "$24$"
+   ],
+   "c": 2,
+   "a": "$100^\\circ$ açılı dilim $40$ öğrenciyi gösterdiğinden $1^\\circ$ için $0{,}4$ öğrenci düşer. Spor $120\\cdot0{,}4=48$, Tiyatro $80\\cdot0{,}4=32$ olup fark $16$'dır.",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><circle cx=\"120\" cy=\"65\" r=\"52\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"120.0\" y1=\"65.0\" x2=\"120.0\" y2=\"13.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"148.6\" y=\"46.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Spor</text><text x=\"148.6\" y=\"57.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">120°</text><line x1=\"120.0\" y1=\"65.0\" x2=\"165.0\" y2=\"91.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"125.7\" y=\"95.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Müzik</text><text x=\"125.7\" y=\"106.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">100°</text><line x1=\"120.0\" y1=\"65.0\" x2=\"86.6\" y2=\"104.8\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"87.5\" y=\"68.7\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Tiyatro</text><text x=\"87.5\" y=\"79.7\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">80°</text><line x1=\"120.0\" y1=\"65.0\" x2=\"75.0\" y2=\"39.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"103.5\" y=\"34.4\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">Diğer</text><text x=\"103.5\" y=\"45.4\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">60°</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0156",
+   "konu": "M.1.19",
+   "zorluk": 2,
+   "s": "Bir elektrik tarifesinde ilk $100$ kWh için kWh başına $2$ TL, sonraki $100$ kWh için kWh başına $3$ TL, $200$ kWh'den sonraki her kWh için $5$ TL ödenmektedir. Faturası $650$ TL olan bir abone kaç kWh elektrik tüketmiştir?",
+   "o": [
+    "$200$",
+    "$220$",
+    "$250$",
+    "$230$",
+    "$260$"
+   ],
+   "c": 3,
+   "a": "İlk $200$ kWh için $200+300=500$ TL ödenir. Kalan $150$ TL, kWh'si $5$ TL olan dilimden $30$ kWh eder; toplam $230$ kWh'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0157",
+   "konu": "M.1.21",
+   "zorluk": 2,
+   "s": "Aşağıdaki önermelerden hangisi YANLIŞTIR?",
+   "o": [
+    "$\\forall x\\in\\mathbb{R},\\ x^{2}\\ge x$",
+    "$\\forall x\\in\\mathbb{Z},\\ x^{2}\\ge x$",
+    "$\\exists x\\in\\mathbb{N},\\ x^{2}=2x$",
+    "$\\exists x\\in\\mathbb{R},\\ x^{2}-2x-3=0$",
+    "$\\forall x\\in\\mathbb{R},\\ x^{2}+x+1>0$"
+   ],
+   "c": 0,
+   "a": "$x=\\dfrac12$ için $x^{2}=\\dfrac14<x$ olduğundan \"her gerçel sayı için $x^{2}\\ge x$\" önermesi yanlıştır. Diğerleri doğrudur: tam sayılarda $x(x-1)\\ge0$, $x=0$ veya $2$, kökler $-1$ ve $3$, ayrıca $x^{2}+x+1$'in diskriminantı negatiftir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0158",
+   "konu": "M.1.21",
+   "zorluk": 3,
+   "s": "$p\\Rightarrow q$ önermesi yanlış, $q\\vee r$ önermesi doğrudur. Buna göre aşağıdaki bileşik önermelerden hangisi doğrudur?",
+   "o": [
+    "$(p\\wedge q)\\Leftrightarrow r$",
+    "$(p\\Leftrightarrow r)\\wedge q'$",
+    "$(p\\Rightarrow r)\\wedge q$",
+    "$(q\\Rightarrow p)\\Rightarrow r'$",
+    "$(p\\wedge r)\\Rightarrow q$"
+   ],
+   "c": 1,
+   "a": "$p\\Rightarrow q$ yanlış ise $p=1,\\ q=0$ olur; $q\\vee r=1$ olduğundan $r=1$'dir. Bu değerlerle yalnızca $(p\\Leftrightarrow r)\\wedge q'$ önermesi $1\\wedge1=1$ olur; diğerleri $0$'dır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0159",
+   "konu": "M.1.22",
+   "zorluk": 2,
+   "s": "$f(x)=\\dfrac{2x+1}{x-3}$ olduğuna göre $f^{-1}(3)$ kaçtır?",
+   "o": [
+    "$4$",
+    "$7$",
+    "$8$",
+    "$12$",
+    "$10$"
+   ],
+   "c": 4,
+   "a": "$f^{-1}(3)=a$ ise $f(a)=3$ olur. $\\dfrac{2a+1}{a-3}=3$ denkleminden $2a+1=3a-9$ ve $a=10$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0160",
+   "konu": "M.1.22",
+   "zorluk": 2,
+   "s": "$f:\\mathbb{R}\\to\\mathbb{R}$ doğrusal bir fonksiyondur. $f(f(x))=4x+9$ ve $f(0)>0$ olduğuna göre $f(2)$ kaçtır?",
+   "o": [
+    "$-13$",
+    "$3$",
+    "$7$",
+    "$5$",
+    "$9$"
+   ],
+   "c": 2,
+   "a": "$f(x)=ax+b$ için $f(f(x))=a^{2}x+ab+b$ olur. $a^{2}=4$ ve $b(a+1)=9$ koşullarından $f(0)=b>0$ olması için $a=2,\\ b=3$ bulunur; $f(2)=7$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0161",
+   "konu": "M.1.23",
+   "zorluk": 3,
+   "s": "$P(x)$ polinomunun $x-2$ ile bölümünden kalan $5$, $x+1$ ile bölümünden kalan $-1$'dir. $P(x)$'in $x^{2}-x-2$ ile bölümünden kalan aşağıdakilerden hangisidir?",
+   "o": [
+    "$2x-1$",
+    "$2x+1$",
+    "$x+3$",
+    "$3x-1$",
+    "$-x+7$"
+   ],
+   "c": 1,
+   "a": "Kalan $ax+b$ olsun. $P(2)=2a+b=5$ ve $P(-1)=-a+b=-1$ denklemlerinden $a=2,\\ b=1$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0162",
+   "konu": "M.1.23",
+   "zorluk": 1,
+   "s": "$P(x+3)=x^{3}-2x^{2}+x+4$ olduğuna göre $P(x)$ polinomunun katsayıları toplamı ile sabit teriminin toplamı kaçtır?",
+   "o": [
+    "$-44$",
+    "$-30$",
+    "$-58$",
+    "$-14$",
+    "$8$"
+   ],
+   "c": 2,
+   "a": "Katsayılar toplamı $P(1)$ olup $x=-2$ için $-8-8-2+4=-14$'tür. Sabit terim $P(0)$ olup $x=-3$ için $-27-18-3+4=-44$'tür; toplam $-58$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0163",
+   "konu": "M.1.24",
+   "zorluk": 2,
+   "s": "$x^{2}-5x+3=0$ denkleminin kökleri $x_1$ ve $x_2$ olduğuna göre $x_1^{3}+x_2^{3}$ toplamı kaçtır?",
+   "o": [
+    "$35$",
+    "$65$",
+    "$80$",
+    "$116$",
+    "$125$"
+   ],
+   "c": 2,
+   "a": "$x_1+x_2=5,\\ x_1x_2=3$ olur. $x_1^{3}+x_2^{3}=(x_1+x_2)^{3}-3x_1x_2(x_1+x_2)=125-45=80$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0164",
+   "konu": "M.1.24",
+   "zorluk": 3,
+   "s": "$x^{2}-2mx+m+6=0$ denkleminin kökleri $x_1$ ve $x_2$'dir. $x_1^{2}+x_2^{2}=18$ ve $m$ bir tam sayı olduğuna göre $x_1\\cdot x_2$ kaçtır?",
+   "o": [
+    "$3$",
+    "$6$",
+    "$\\dfrac{7}{2}$",
+    "$18$",
+    "$9$"
+   ],
+   "c": 4,
+   "a": "$x_1^{2}+x_2^{2}=4m^{2}-2(m+6)=18$ olduğundan $2m^{2}-m-15=0$ bulunur; $m=3$ veya $m=-\\dfrac52$. $m$ tam sayı olduğundan $m=3$ ve $x_1x_2=m+6=9$'dur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0165",
+   "konu": "M.1.25",
+   "zorluk": 2,
+   "s": "Altı kişilik bir arkadaş grubu fotoğraf çektirmek için yan yana sıralanacaktır. Ali ile Veli yan yana durmayacağına göre kaç farklı sıralama yapılabilir?",
+   "o": [
+    "$480$",
+    "$240$",
+    "$360$",
+    "$600$",
+    "$720$"
+   ],
+   "c": 0,
+   "a": "Tüm sıralamalar $6!=720$'dir. Ali ile Veli yan yana ise $2\\cdot5!=240$ sıralama vardır; istenen $720-240=480$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0166",
+   "konu": "M.1.25",
+   "zorluk": 2,
+   "s": "$0,1,2,3,4,5$ rakamları birer kez kullanılarak yazılabilen üç basamaklı ve $5$ ile tam bölünebilen kaç farklı doğal sayı vardır?",
+   "o": [
+    "$36$",
+    "$20$",
+    "$30$",
+    "$40$",
+    "$48$"
+   ],
+   "c": 0,
+   "a": "Birler basamağı $0$ ise $5\\cdot4=20$ sayı vardır. Birler basamağı $5$ ise yüzler basamağı $0$ ve $5$ dışında $4$, onlar basamağı $4$ seçenekle $16$ sayı oluşur; toplam $36$'dır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0167",
+   "konu": "M.1.26",
+   "zorluk": 1,
+   "s": "Birinci torbada $3$ kırmızı, $2$ mavi; ikinci torbada $1$ kırmızı, $2$ mavi top vardır. Torbalardan biri rastgele seçilip bu torbadan rastgele bir top çekiliyor. Çekilen topun kırmızı olma olasılığı kaçtır?",
+   "o": [
+    "$\\dfrac{7}{15}$",
+    "$\\dfrac{1}{5}$",
+    "$\\dfrac{4}{15}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{14}{15}$"
+   ],
+   "c": 0,
+   "a": "Her torba $\\dfrac12$ olasılıkla seçilir: $\\dfrac12\\cdot\\dfrac35+\\dfrac12\\cdot\\dfrac13=\\dfrac{9}{30}+\\dfrac{5}{30}=\\dfrac{7}{15}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0168",
+   "konu": "M.1.26",
+   "zorluk": 2,
+   "s": "$5$ kız ve $4$ erkek öğrenciden oluşan bir gruptan rastgele $3$ kişilik bir ekip seçiliyor. Ekipte en az bir kız öğrenci bulunma olasılığı kaçtır?",
+   "o": [
+    "$\\dfrac{1}{21}$",
+    "$\\dfrac{20}{21}$",
+    "$\\dfrac{4}{21}$",
+    "$\\dfrac{5}{9}$",
+    "$\\dfrac{19}{21}$"
+   ],
+   "c": 1,
+   "a": "Hiç kız olmaması için üç kişi erkeklerden seçilir: $\\dfrac{C(4,3)}{C(9,3)}=\\dfrac{4}{84}=\\dfrac1{21}$. İstenen olasılık $1-\\dfrac1{21}=\\dfrac{20}{21}$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0169",
+   "konu": "M.1.27",
+   "zorluk": 1,
+   "s": "$5$ sayıdan oluşan bir veri grubunun aritmetik ortalaması $14$'tür. Bu gruptan bir sayı çıkarılınca kalan $4$ sayının aritmetik ortalaması $12$ oluyor. Çıkarılan sayı kaçtır?",
+   "o": [
+    "$2$",
+    "$12$",
+    "$18$",
+    "$22$",
+    "$26$"
+   ],
+   "c": 3,
+   "a": "Beş sayının toplamı $5\\cdot14=70$, kalan dört sayının toplamı $4\\cdot12=48$'dir. Çıkarılan sayı $70-48=22$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0170",
+   "konu": "M.1.27",
+   "zorluk": 1,
+   "s": "Bir sınıfta $30$ öğrenci vardır ve sınıfın sınav ortalaması $60$'tır. Kız öğrencilerin sayısı $18$, kız öğrencilerin ortalaması $65$ olduğuna göre erkek öğrencilerin ortalaması kaçtır?",
+   "o": [
+    "$50$",
+    "$52{,}5$",
+    "$55$",
+    "$57{,}5$",
+    "$52$"
+   ],
+   "c": 1,
+   "a": "Tüm puanlar toplamı $30\\cdot60=1800$, kızların toplamı $18\\cdot65=1170$'tir. Erkeklerin toplamı $630$ ve $12$ erkek olduğundan ortalama $52{,}5$'tir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0171",
+   "konu": "M.2.1",
+   "zorluk": 2,
+   "s": "Şekilde $d_1\\parallel d_2$, $A\\in d_1$, $B\\in d_2$ olup $m(\\widehat{A})=2x+15$, $m(\\widehat{B})=3x-10$ ve $m(\\widehat{APB})=105^\\circ$'dir. Buna göre $x$ kaçtır?",
+   "o": [
+    "$18$",
+    "$20$",
+    "$22$",
+    "$25$",
+    "$35$"
+   ],
+   "c": 1,
+   "a": "$P$'den $d_1$'e paralel çizilirse iç ters açılar nedeniyle $m(\\widehat{APB})=m(\\widehat{A})+m(\\widehat{B})$ olur. $5x+5=105$ ve $x=20$ bulunur.",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"15.0\" y1=\"25.0\" x2=\"225.0\" y2=\"25.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"15.0\" y1=\"105.0\" x2=\"225.0\" y2=\"105.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"92.0\" y1=\"25.0\" x2=\"120.0\" y2=\"65.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"86.4\" y1=\"105.0\" x2=\"120.0\" y2=\"65.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><path d=\"M 106.0 25.0 A 14 14 0 0 1 100.0 36.5\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><path d=\"M 95.4 94.3 A 14 14 0 0 1 100.4 105.0\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><text x=\"128.0\" y=\"39.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">2x+15</text><text x=\"122.4\" y=\"97.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">3x-10</text><text x=\"104.0\" y=\"68.0\" font-size=\"9\" text-anchor=\"end\" fill=\"#FF8A1F\">105°</text><text x=\"86.0\" y=\"20.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"80.4\" y=\"117.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"129.0\" y=\"69.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">P</text><text x=\"222.0\" y=\"20.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">d1</text><text x=\"222.0\" y=\"117.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">d2</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0172",
+   "konu": "M.2.1",
+   "zorluk": 1,
+   "s": "Şekilde $B$, $C$, $E$ doğrusal noktalardır. $m(\\widehat{B})=2x$, $m(\\widehat{A})=x+10$ ve $m(\\widehat{ACE})=5x-20$ olduğuna göre $m(\\widehat{ACB})$ kaç derecedir?",
+   "o": [
+    "$55$",
+    "$65$",
+    "$115$",
+    "$125$",
+    "$135$"
+   ],
+   "c": 3,
+   "a": "Dış açı, kendisine komşu olmayan iç açıların toplamına eşittir: $5x-20=2x+x+10$ denkleminden $x=15$ bulunur. $m(\\widehat{ACE})=55^\\circ$ olduğundan $m(\\widehat{ACB})=180^\\circ-55^\\circ=125^\\circ$'dir.",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"137.5,42.2 20.0,110.0 90.0,110.0\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"90.0\" y1=\"110.0\" x2=\"150.0\" y2=\"110.0\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><path d=\"M 39.1 99.0 A 22 22 0 0 1 42.0 110.0\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><path d=\"M 123.9 61.9 A 24 24 0 0 1 116.7 54.2\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><path d=\"M 99.2 96.9 A 16 16 0 0 1 106.0 110.0\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><text x=\"50.0\" y=\"104.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">2x</text><text x=\"99.5\" y=\"80.2\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">x+10</text><text x=\"128.0\" y=\"100.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#FF8A1F\">5x-20</text><text x=\"14.0\" y=\"122.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"90.0\" y=\"122.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"154.0\" y=\"122.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">E</text><text x=\"137.5\" y=\"36.2\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0173",
+   "konu": "M.2.4",
+   "zorluk": 1,
+   "s": "Şekilde $m(\\widehat{A})=90^\\circ$ ve $[AD]$ kenarortaydır. $|AB|=6$ cm ve $|AD|=5$ cm olduğuna göre ABC üçgeninin çevresi kaç cm'dir?",
+   "o": [
+    "$21$",
+    "$22$",
+    "$24$",
+    "$26$",
+    "$28$"
+   ],
+   "c": 2,
+   "a": "Dik üçgende hipotenüse ait kenarortay hipotenüsün yarısıdır; $|BC|=10$ cm olur. Pisagor'dan $|AC|=8$ cm bulunur ve çevre $6+8+10=24$ cm'dir.",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"30.0,20.0 30.0,92.0 126.0,20.0\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"30.0\" y1=\"20.0\" x2=\"78.0\" y2=\"56.0\" stroke=\"#141B3F\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/><polyline points=\"30,30 40,30 40,20\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"22.0\" y=\"16.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"22.0\" y=\"104.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"134.0\" y=\"16.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"86.0\" y=\"66.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"22.0\" y=\"60.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">6</text><text x=\"72.0\" y=\"40.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">5</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "Mezun-0174",
+   "konu": "M.2.4",
+   "zorluk": 3,
+   "s": "Şekilde $[AD]$ açıortay, $[AE]$ kenarortaydır. $|AB|=10$ cm, $|AC|=15$ cm ve $|BC|=20$ cm olduğuna göre $|DE|$ kaç cm'dir?",
+   "o": [
+    "$1$",
+    "$3$",
+    "$4$",
+    "$5$",
+    "$2$"
+   ],
+   "c": 4,
+   "a": "Açıortay teoreminden $\\dfrac{|BD|}{|DC|}=\\dfrac{10}{15}$ olur, $|BD|=8$ cm'dir. $|BE|=10$ cm olduğundan $|DE|=10-8=2$ cm'dir.",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"75.0,51.9 20.0,110.0 180.0,110.0\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"75.0\" y1=\"51.9\" x2=\"84.0\" y2=\"110.0\" stroke=\"#141B3F\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/><line x1=\"75.0\" y1=\"51.9\" x2=\"100.0\" y2=\"110.0\" stroke=\"#141B3F\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/><text x=\"75.0\" y=\"45.9\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"14.0\" y=\"122.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"186.0\" y=\"122.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"80.0\" y=\"122.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"106.0\" y=\"122.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">E</text><text x=\"36.0\" y=\"76.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">10</text><text x=\"142.0\" y=\"70.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">15</text><text x=\"150.0\" y=\"129.0\" font-size=\"8\" text-anchor=\"middle\" fill=\"#141B3F\">|BC|=20</text></svg>",
+   "kaynak": "ozgun"
   }
  ]
 }
