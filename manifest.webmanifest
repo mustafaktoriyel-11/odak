@@ -1,7 +1,7 @@
 {
   "name": "MustaFaktoriyel Odak",
   "short_name": "MF Odak",
-  "description": "Pomodoro odak sayacı, arka plan sesleri ve ders ders çalışma kayıtları. YKS ve lise öğrencileri için.",
+  "description": "Odak sayacı, arka plan sesleri ve ders ders çalışma kayıtları. YKS ve lise öğrencileri için.",
   "lang": "tr",
   "start_url": "./",
   "scope": "./",

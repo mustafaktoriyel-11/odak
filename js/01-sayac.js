@@ -2,7 +2,7 @@
 
 (function(){
   var kok=document.getElementById('pm');if(!kok)return;
-  var T={"odak": "Odaklanma zamanı", "odakCalis": "Odaklan", "kisa": "☕ Kısa mola", "uzun": "🛋️ Uzun mola", "duraklat": "Duraklat", "baslat": "Başlat", "devam": "Devam et", "bos": "Henüz kayıt yok. Sayacı başlattığında burada görünecek.", "gunler": ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"], "silSor": "Tüm çalışma kayıtları silinsin mi?", "ort": "{n} gün çalıştın, günlük ortalama {d} dk", "bugunK": "Bugün", "son7": "Son 7 gün", "son30": "Son 30 gün", "aylar": ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"], "rBaslik": "📊 Günlük çalışma raporum", "rToplam": "Toplam", "rGun": "gün çalıştım", "rBos": "Bugün sayacı henüz kullanmadım, bir plan yapabilir miyiz?", "curuB": "Odaktan çıktın! 🍅 çürüdü", "curuP": "Sıkı moddayken uygulamadan çıktığın için bu tur sayılmadı. {dk} dakikalık çalışman yine de kaydedildi. Hadi yeniden başla!", "rCikis": "Sıkı modda odaktan çıkış", "ozetK": "Bugün {dk} dk · {p} 🍅", "bitOdak": "Odak süresi bitti! 🍅", "bitOdakM": "Harika iş. Şimdi kısa bir mola zamanı.", "bitOdakU": "4 tur tamam! Şimdi uzun mola zamanı.", "bitMola": "Mola bitti", "bitMolaM": "Hazırsan yeni bir odak turuna başla.", "atla": "Molayı atla", "son3": "Son 3 ay", "son6": "Son 6 ay", "buHafta": "Bu hafta", "aylarK": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"]};
+  var T={"odak": "Odaklanma zamanı", "odakCalis": "Odaklan", "kisa": "☕ Kısa mola", "uzun": "🛋️ Uzun mola", "duraklat": "Duraklat", "baslat": "Başlat", "devam": "Devam et", "bos": "Henüz kayıt yok. Sayacı başlattığında burada görünecek.", "gunler": ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"], "silSor": "Tüm çalışma kayıtları silinsin mi?", "ort": "{n} gün çalıştın, günlük ortalama {d} dk", "bugunK": "Bugün", "son7": "Son 7 gün", "son30": "Son 30 gün", "aylar": ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"], "rBaslik": "📊 Günlük çalışma raporum", "rToplam": "Toplam", "rGun": "gün çalıştım", "rBos": "Bugün sayacı henüz kullanmadım, bir plan yapabilir miyiz?", "curuB": "Odaktan çıktın! Bu tur bozuldu", "curuP": "Sıkı moddayken uygulamadan çıktığın için bu tur sayılmadı. {dk} dakikalık çalışman yine de kaydedildi. Hadi yeniden başla!", "rCikis": "Sıkı modda odaktan çıkış", "ozetK": "Bugün {dk} dk · {p} tur", "bitOdak": "Odak süresi bitti! 🎯", "bitOdakM": "Harika iş. Şimdi kısa bir mola zamanı.", "bitOdakU": "4 tur tamam! Şimdi uzun mola zamanı.", "bitMola": "Mola bitti", "bitMolaM": "Hazırsan yeni bir odak turuna başla.", "atla": "Molayı atla", "son3": "Son 3 ay", "son6": "Son 6 ay", "buHafta": "Bu hafta", "aylarK": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"]};
   var $=function(id){return document.getElementById(id);};
   // eski kayitlardaki TYT/AYT Matematik tek 'Matematik' olarak gosterilir
   function dersAd(x){return /^(TYT|AYT) Matematik$/.test(x)?'Matematik':x;}
@@ -10,7 +10,7 @@
   function oku(k,v){try{var x=localStorage.getItem(k);return x?JSON.parse(x):v;}catch(e){return v;}}
   function yaz(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
   var ayar=oku(AYAR_K,{odak:'40',ses:'',seviye:40,ders:''});
-  if(ayar.odak==='25'||ayar.odak==='50'){ayar.ozel=+ayar.odak;ayar.odak='ozel';} // 25/50 seçenekleri kalktı: eski seçim özel süre olur
+  if(ayar.odak==='50'){ayar.ozel=50;ayar.odak='ozel';} // 50 seçeneği kalktı: eski seçim özel süre olur
   if(ayar.sinav)$('pm-sinav').value=ayar.sinav;$('pm-odak').value=ayar.odak;if(ayar.ozel)$('pm-ozel').value=ayar.ozel;$('pm-ses').value=ayar.ses;$('pm-seviye').value=ayar.seviye;if(ayar.ders)$('pm-ders').value=dersAd(ayar.ders);if(!$('pm-ders').value)$('pm-ders').selectedIndex=0;
   if(!$('pm-odak').value)$('pm-odak').value='40';
   function ayarKaydet(){ayar={odak:$('pm-odak').value,ses:$('pm-ses').value,seviye:+$('pm-seviye').value,ders:$('pm-ders').value,siki:$('pm-siki').checked,sinav:$('pm-sinav').value,ozel:odakDk()};yaz(AYAR_K,ayar);}
@@ -48,7 +48,7 @@
     $('pm-etiket').textContent=d.mod==='deneme'?denemeEtiket():d.mod==='odak'?((d.calisiyor||k!==d.toplam)?(d.ders||$('pm-ders').value):T.odak):(d.mod==='kisa'?T.kisa:T.uzun);
     $('pm-basla').textContent=d.calisiyor?T.duraklat:(k===d.toplam?T.baslat:T.devam);
     $('pm-muzik').classList.toggle('cal',d.calisiyor&&!!$('pm-ses').value);seansGizle(d.mod==='odak'&&k!==d.toplam);
-    var dm='';for(var i=0;i<4;i++)dm+=i<(d.tur%4)?'🍅':'○';
+    var dm='';for(var i=0;i<4;i++)dm+=i<(d.tur%4)?'●':'○';
     $('pm-domates').textContent=dm;
     var bs=kok.querySelectorAll('.pm-mod button');for(var j=0;j<bs.length;j++){var dn=bs[j].getAttribute('data-m')==='deneme';bs[j].classList.toggle('aktif',dn===(d.mod==='deneme'));bs[j].classList.toggle('molada',!dn&&mola);}
     document.title=(d.calisiyor?bicim(k)+' – ':'')+BASLIK;
@@ -57,7 +57,7 @@
       var gt=gh?gh+':'+(gm%60<10?'0':'')+(gm%60)+':'+(gs<10?'0':'')+gs:(gm<10?'0':'')+gm+':'+(gs<10?'0':'')+gs;
       $('pm-sure').textContent=gt;$('pm-sure').style.fontSize=gh?'36px':'';
       $('pm-halka').style.strokeDashoffset=CEVRE*(1-(gec%3600000)/3600000);
-      $('pm-etiket').textContent=d.calisiyor?'Serbest · '+(d.ders||$('pm-ders').value):(k===d.toplam?'Serbest çalışma':'Duraklatıldı');
+      $('pm-etiket').textContent=d.calisiyor?(d.ders||$('pm-ders').value):(k===d.toplam?'Serbest çalışma':'Duraklatıldı');
       document.title=(d.calisiyor?gt+' – ':'')+BASLIK;$('pm-saat').classList.add('serbest');
     }else $('pm-saat').classList.remove('serbest');
     if(window.MF_KADRAN)try{window.MF_KADRAN({k:k,toplam:d.toplam,calisiyor:d.calisiyor,bitis:d.bitis,mod:d.mod,mola:mola,
@@ -80,7 +80,7 @@
       var kEt=$('pm-etiket').textContent,kCal=calismaMi(d.mod)&&!araMi(),kSb=!!d.serbest&&d.mod==='odak';
       if(!d.calisiyor&&k===d.toplam)window.MF_KILIT({gizle:true});
       else if(!d.calisiyor)window.MF_KILIT({calisiyor:false,baslik:'⏸ '+(kSb?bicim(d.toplam-k)+' geçti':bicim(k)+' kaldı')+' · duraklatıldı',metin:kEt,calis:kCal});
-      else window.MF_KILIT({calisiyor:true,serbest:kSb,zaman:kSb?d.bitis-d.toplam:d.bitis,baslik:kEt,metin:kSb?'Serbest çalışma · süre ileri sayıyor':(kCal?'Odak zamanı':'Mola zamanı'),calis:kCal});
+      else window.MF_KILIT({calisiyor:true,serbest:kSb,zaman:kSb?d.bitis-d.toplam:d.bitis,baslik:kEt,metin:kSb?'Süre ileri sayıyor':(kCal?'Odak zamanı':'Mola zamanı'),calis:kCal});
     }catch(e){}
     if(!MS)return;
     try{
@@ -284,7 +284,7 @@
   // erken bitirince: sessiz bilgi penceresi (zil ve titresim yok)
   function erkenBitti(dk,ders,sb){
     $('alarm-b').textContent='Çalışman kaydedildi ✓';
-    $('alarm-p').textContent=ders+' · '+(dk>=60?Math.floor(dk/60)+' sa '+Math.round(dk%60):Math.round(dk))+' dk\n'+(sb?'Serbest çalışma olarak kaydedildi.':'Tam tur olmadığı için 🍅 sayılmadı.');
+    $('alarm-p').textContent=ders+' · '+(dk>=60?Math.floor(dk/60)+' sa '+Math.round(dk%60):Math.round(dk))+' dk\n'+(sb?'Serbest çalışma olarak kaydedildi.':'Tam tur olmadığı için tur sayılmadı.');
     prKutu(window.MF_PR_OZET?window.MF_PR_OZET(ders):null);
     var a=$('alarm');a.classList.add('acik','sakin');
   }
@@ -333,9 +333,9 @@
   function kutlama(){
     var k=oku(KAYIT_K,{}),b=(k[gun(Date.now())]||{}).p||0,t=0,m='';
     for(var g in k)t+=k[g].p||0;
-    if(TOP_S[t])m='🎉 Toplam '+t+'. pomodoro: '+TOP_S[t];
-    else if(GUN_S[b])m='🍅 Bugünün '+b+'. pomodorosu: '+GUN_S[b];
-    else{var r=Math.round(Math.sqrt(b));if(r*r===b)m='🍅 Bugünün '+b+'. pomodorosu: '+r+'² = '+b;}
+    if(TOP_S[t])m='🎉 Toplam '+t+'. odak turu: '+TOP_S[t];
+    else if(GUN_S[b])m='🎯 Bugünün '+b+'. odak turu: '+GUN_S[b];
+    else{var r=Math.round(Math.sqrt(b));if(r*r===b)m='🎯 Bugünün '+b+'. odak turu: '+r+'² = '+b;}
     if(m)$('alarm-p').textContent=$('alarm-p').textContent+'\n'+m;
   }
   function bitti(){
@@ -392,7 +392,7 @@
   $('pm-ozel').addEventListener('change',function(){$('pm-ozel').value=odakDk();sureDegisti();});
   ozelNot();
   // --- cip secicileri (gizli select'leri yonetir; mantik ayni kalir) ---
-  var CIP_AD={'40':'40 dk','ozel':'Özel','serbest':'∞'};
+  var CIP_AD={'25':'25 dk','40':'40 dk','ozel':'Özel','serbest':'∞'};
   function cipKur(sid,kid){
     var sel=$(sid),kap=$(kid);
     [].forEach.call(sel.options,function(o){var b=document.createElement('button');b.type='button';b.setAttribute('role','radio');b.dataset.v=o.value;b.textContent=CIP_AD[o.value]||o.text;
@@ -470,7 +470,7 @@
     var m=T.rBaslik+' ('+bu.getDate()+' '+T.aylar[bu.getMonth()]+')\n';
     if(!x.dk){m+=T.rBos;}
     else{
-      m+=T.rToplam+': '+sureYaz(x.dk)+' · '+x.p+' 🍅\n';
+      m+=T.rToplam+': '+sureYaz(x.dk)+' · '+x.p+' tur\n';
       var lt={},l=[];for(var z in x.d)lt[dersAd(z)]=(lt[dersAd(z)]||0)+x.d[z];for(var z2 in lt)l.push([z2,lt[z2]]);l.sort(function(a,b){return b[1]-a[1];});
       for(var n=0;n<l.length;n++)m+='• '+l[n][0]+': '+sureYaz(l[n][1])+'\n';
       if(x.c)m+='⚠️ '+T.rCikis+': '+x.c+'\n';

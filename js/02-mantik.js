@@ -298,8 +298,8 @@
     var once_ad={bugun:'düne',hafta:'önceki 7 güne',ay:'önceki 30 güne',ay3:'önceki 3 aya',yil:'önceki yıla'}[ARALIK];
     var fark=top0?Math.round((top-top0)*100/top0):null;
     var kpi='<div><span>Toplam çalışma</span><b>'+kpiS(top)+'</b><small class="'+(fark===null?'':fark>0?'art':fark<0?'azal':'')+'">'+(fark===null?(top?'İlk kayıtlar':'Henüz kayıt yok'):(fark>0?'▲ %'+fark:fark<0?'▼ %'+(-fark):'= aynı')+' '+once_ad+' göre')+'</small></div>';
-    kpi+=GUN>1?'<div><span>Günlük ortalama</span><b>'+sk(aktif?top/aktif:0)+'</b><small>'+aktif+' / '+GUN+' gün çalıştın</small></div>':'<div><span>Bugünkü oturum</span><b>'+(g[0].p)+' 🍅</b><small>tamamlanan pomodoro</small></div>';
-    kpi+='<div><span>Pomodoro</span><b>'+pom+' 🍅</b><small>'+(GUN>1?'bu aralıkta':'bugün')+'</small></div>';
+    kpi+=GUN>1?'<div><span>Günlük ortalama</span><b>'+sk(aktif?top/aktif:0)+'</b><small>'+aktif+' / '+GUN+' gün çalıştın</small></div>':'<div><span>Bugünkü oturum</span><b>'+(g[0].p)+' tur</b><small>tamamlanan odak turu</small></div>';
+    kpi+='<div><span>Odak turu</span><b>'+pom+'</b><small>'+(GUN>1?'bu aralıkta':'bugün')+'</small></div>';
     kpi+='<div><span>Seri</span><b>'+seri+' gün 🔥</b><small>'+(seri?'aralıksız çalıştığın gün':'bugün başla, seri başlasın')+'</small></div>';
     kpi+='<div class="genis"><span>Çözülen soru</span><b>'+sq+' ✏️</b><small>'+(sq?(sd+sy?'%'+Math.round(sd*100/(sd+sy))+' doğru · '+sd+' D, '+sy+' Y':'doğru/yanlış girilmedi'):'Seans sonunda soru sayını girersen burada görünür')+'</small></div>';
     $('st-kpi').innerHTML=kpi;

@@ -29,7 +29,7 @@
   }
   window.LV_KATLA=katla;
   function hedefler(){
-    // MF: ilk kart içinde mod sekmeleri, domates sırası, bildirim satırı ve ayar bloğu (sınav/ders/süre/sıkı mod) katlanır
+    // MF: ilk kart içinde mod sekmeleri, tur sırası, bildirim satırı ve ayar bloğu (sınav/ders/süre/sıkı mod) katlanır
     var l=[document.querySelector('header.ust'),sy.querySelector('.pm-mod'),$('pm-domates'),sy.querySelector('.bl-satir'),sy.querySelector('.pm-ayar')];
     var ilk=sy.querySelector('section.kart');
     [].forEach.call(sy.children,function(c){if(c!==ilk&&c!==mk)l.push(c);});

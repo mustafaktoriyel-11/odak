@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>MustaFaktoriyel Odak</title>
-<meta name="description" content="Pomodoro odak sayacı, arka plan sesleri ve ders ders çalışma kayıtları.">
+<meta name="description" content="Odak sayacı, arka plan sesleri ve ders ders çalışma kayıtları.">
 <meta name="theme-color" content="#1E3BD6">
 <meta name="color-scheme" content="light dark">
 <link rel="manifest" href="manifest.webmanifest">
@@ -109,7 +109,7 @@
     <circle cx="50" cy="52" r="27" fill="none" stroke="#2B3570" stroke-width="7"/>
     <circle class="ma-rp" cx="50" cy="52" r="27" pathLength="100" transform="rotate(-90 50 52)"/>
     <text x="50" y="57.5" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-size="15" font-weight="800" fill="#fff">25:00</text>
-    <path d="M50 10C40 0 28 4 26 12C36 15 44 14 50 10Z" fill="#1FA463"/><path d="M50 10C60 0 72 4 74 12C64 15 56 14 50 10Z" fill="#17884F"/><rect x="48" y="1" width="4" height="12" rx="2" fill="#17884F"/></svg></div>
+    <rect x="46.5" y="4" width="7" height="6" fill="#1C2E8A"/><rect x="41" y="0" width="18" height="6" rx="3" fill="#1E3BD6"/><g transform="rotate(42 50 52)"><rect x="47.5" y="2.5" width="5" height="5" fill="#1C2E8A"/><rect x="44.5" y="-1" width="11" height="4.5" rx="2.2" fill="#1E3BD6"/></g></svg></div>
   </div>
   <div class="ma-cp">
    <div class="ma-glow"></div>
@@ -257,7 +257,7 @@ a.addEventListener('animationend',function(e){if(e.target===a&&(e.animationName=
 
 <div class="pm-kutu">
 <div class="pm-mod">
-<button type="button" class="aktif" data-m="odak">🍅 Odak</button>
+<button type="button" class="aktif" data-m="odak">🎯 Odak</button>
 <button type="button" data-m="deneme">📝 Deneme</button>
 </div>
 
@@ -283,7 +283,7 @@ a.addEventListener('animationend',function(e){if(e.target===a&&(e.animationName=
 <option>Fen Bilimleri</option><option>Sosyal Bilgiler</option><option>İnkılap Tarihi</option><option>Felsefe</option><option>Din Kültürü</option><option>Diğer</option>
 </select><div class="pm-chips kaydir" id="pm-ders-c" role="radiogroup" aria-label="Ders"></div></div>
 <div class="tam pm-alan seans-ogesi" id="pm-odak-k"><span>Odak süresi</span>
-<select id="pm-odak" hidden><option value="40">40 dakika (mola 10 / uzun 30)</option><option value="ozel">Kendim ayarlayayım</option><option value="serbest">Sınırsız (kronometre)</option></select><div class="pm-chips" id="pm-odak-c" role="radiogroup" aria-label="Odak süresi"></div><small class="pm-ozel-not" id="pm-sure-not"></small></div>
+<select id="pm-odak" hidden><option value="25">25 dakika (mola 5 / uzun 15)</option><option value="40">40 dakika (mola 10 / uzun 30)</option><option value="ozel">Kendim ayarlayayım</option><option value="serbest">Sınırsız (kronometre)</option></select><div class="pm-chips" id="pm-odak-c" role="radiogroup" aria-label="Odak süresi"></div><small class="pm-ozel-not" id="pm-sure-not"></small></div>
 <label class="tam seans-ogesi" id="pm-ozel-k" style="display:none">Kaç dakika odaklanacaksın?
 <span class="pm-ozel-s"><input type="number" id="pm-ozel" inputmode="numeric" min="5" max="720" step="5" value="90"><b>dk</b></span></label>
 <div class="tam pm-sik-k" id="pm-sik-k">
@@ -342,38 +342,38 @@ a.addEventListener('animationend',function(e){if(e.target===a&&(e.animationName=
 <a href="https://mustafaktoriyel.blogspot.com/p/yks.html" target="_blank" rel="noopener">🎯 YKS Konuları<span>Özetler ve testler</span></a>
 </div>
 
-<details class="kart"><summary>🍅 Pomodoro nedir, nasıl çalışmalıyım?</summary>
-<h3>🍅 Pomodoro Tekniği nedir?</h3>
-<p>1980'lerde Francesco Cirillo'nun geliştirdiği bu yöntemde çalışma, kısa molalarla bölünmüş odak bloklarına ayrılır. Adını, Cirillo'nun kullandığı domates şeklindeki mutfak sayacından alır.</p>
+<details class="kart"><summary>🎯 Odak turu nedir, nasıl çalışmalıyım?</summary>
+<h3>🎯 Odak turu nedir?</h3>
+<p>Çalışmayı, aralarında kısa molalar olan süreli odak turlarına bölmek; uzun bir oturumu yönetilebilir parçalara ayırmanın en basit yoludur.</p>
 <ol>
 <li><b>Çalışacağın dersi seç</b> ve sayacı başlat (25 dakika).</li>
 <li>Süre boyunca <b>yalnızca o işe odaklan.</b> Aklına başka bir şey gelirse not al, sonra dön.</li>
 <li>Zil çalınca <b>mola kendiliğinden başlar</b> (25 dk odakta 5, 40–50 dk odakta 10 dakika): kalk, su iç, gözlerini dinlendir.</li>
-<li><b>4 pomodoroda bir</b> 15–30 dakikalık <b>uzun mola</b> otomatik gelir. Mola istemezsen <b>Molayı atla</b>'ya dokun.</li>
+<li><b>4 odak turunda bir</b> 15–30 dakikalık <b>uzun mola</b> otomatik gelir. Mola istemezsen <b>Molayı atla</b>'ya dokun.</li>
 </ol>
 
 <h3>💡 Neden işe yarar?</h3>
 <ul>
 <li><b>Başlamayı kolaylaştırır:</b> "3 saat çalışacağım" yerine "sadece 25 dakika" demek erteleme isteğini azaltır.</li>
 <li><b>Dikkati tazeler:</b> Düzenli molalar, uzun oturuşlarda düşen konsantrasyonu geri getirir.</li>
-<li><b>Ölçülebilir hale getirir:</b> Günde kaç pomodoro yaptığını görmek, ilerlemeni somutlaştırır.</li>
+<li><b>Ölçülebilir hale getirir:</b> Günde kaç odak turu yaptığını görmek, ilerlemeni somutlaştırır.</li>
 </ul>
 
 <h3>📌 Verimli çalışma için ipuçları</h3>
 <ul>
 <li><b>Telefonu başka odaya koy</b> ya da en azından bildirimleri kapat. Sayacı bilgisayarda açabilirsin.</li>
-<li><b>Bir pomodoroda tek konu:</b> Matematik çalışırken araya Türkçe sıkıştırma.</li>
+<li><b>Bir turda tek konu:</b> Matematik çalışırken araya Türkçe sıkıştırma.</li>
 <li><b>Molada ekrana bakma:</b> Sosyal medya molası seni yeniden odaklanmaktan uzaklaştırır.</li>
 <li><b>Zor dersi güne erken başla:</b> Zihnin en dinç olduğu saatleri en zorlandığın derse ayır.</li>
 <li><b>Soru çözümünü sürelendir:</b> Deneme ve test çözümünde gerçek sınav temposunu yakalamaya çalış.</li>
-<li><b>Yavaş yavaş artır:</b> Günde 4 pomodoro ile başla, alıştıkça 8–10'a çıkar.</li>
+<li><b>Yavaş yavaş artır:</b> Günde 4 odak turu ile başla, alıştıkça 8–10'a çıkar.</li>
 </ul>
 
 <h3>🎯 Örnek bir YKS çalışma günü</h3>
 <ul>
-<li><b>Sabah:</b> 4 pomodoro Matematik (konu + soru), uzun mola</li>
-<li><b>Öğleden sonra:</b> 3 pomodoro Fen / Sosyal, 1 pomodoro Türkçe paragraf</li>
-<li><b>Akşam:</b> 2 pomodoro günün tekrarı ve yanlış soru analizi</li>
+<li><b>Sabah:</b> 4 tur Matematik (konu + soru), uzun mola</li>
+<li><b>Öğleden sonra:</b> 3 tur Fen / Sosyal, 1 tur Türkçe paragraf</li>
+<li><b>Akşam:</b> 2 tur günün tekrarı ve yanlış soru analizi</li>
 </ul>
 <p>Takıldığın konular için <a href="https://mustafaktoriyel.blogspot.com/p/yks.html" target="_blank" rel="noopener">YKS konu dizinine</a> göz atabilir, birebir çalışma planı için Instagram'dan <a href="https://instagram.com/mustafaktoriyel" target="_blank" rel="noopener">@mustafaktoriyel</a> hesabına yazabilirsin.</p>
 
@@ -532,11 +532,11 @@ a.addEventListener('animationend',function(e){if(e.target===a&&(e.animationName=
 <div class="onay-b"><button type="button" id="sil-vazgec">Vazgeç</button><button type="button" id="sil-tamam">Kayıtları sil</button></div>
 </div></div>
 <div class="mf-toast" id="mf-toast" role="status" aria-live="polite"><span id="mf-toast-m"></span><button type="button" id="mf-toast-b">Geri al</button></div>
-<div id="alarm" role="alertdialog"><div><b id="alarm-b">Süre bitti! 🍅</b><p id="alarm-p">Harika iş.</p><div class="alarm-pr" id="alarm-pr" hidden><div class="alarm-pr-u"><span>📅 Bugünkü program</span><b id="alarm-pr-y"></b></div><div class="alarm-pr-bar"><i id="alarm-pr-bar"></i></div><small id="alarm-pr-t"></small></div><button type="button" id="alarm-tamam">Tamam</button></div></div>
+<div id="alarm" role="alertdialog"><div><b id="alarm-b">Süre bitti! 🎯</b><p id="alarm-p">Harika iş.</p><div class="alarm-pr" id="alarm-pr" hidden><div class="alarm-pr-u"><span>📅 Bugünkü program</span><b id="alarm-pr-y"></b></div><div class="alarm-pr-bar"><i id="alarm-pr-bar"></i></div><small id="alarm-pr-t"></small></div><button type="button" id="alarm-tamam">Tamam</button></div></div>
 <div id="sik-izn" role="dialog" aria-modal="true" aria-labelledby="sik-izn-b"><div>
 <svg class="sik-sor-ik" viewBox="0 0 120 120" aria-hidden="true"><use href="#mf-aslan"/></svg>
 <b id="sik-izn-b">Aslan nöbette!</b>
-<p>Telefonu kilitlediğinde pomodoron çürümesin diye küçük bir izin isteyeceğiz.</p>
+<p>Telefonu kilitlediğinde odak turun bozulmasın diye küçük bir izin isteyeceğiz.</p>
 <ul><li>🔒 Sadece ekranın kilitli olup olmadığını öğreniriz.</li><li>🙈 Ne yaptığını, hangi uygulamayı açtığını görmeyiz.</li><li>📵 Bu bilgi hiçbir yere kaydedilmez, gönderilmez.</li></ul>
 <p style="font-size:13px;margin-bottom:14px">Birazdan çıkacak pencerede <b style="display:inline;font-size:inherit;color:inherit">İzin ver</b>'e dokun.</p>
 <div class="sik-sor-b"><button type="button" id="sik-izn-devam">Devam</button><button type="button" id="sik-izn-sonra">Şimdi değil</button></div></div></div>
@@ -545,7 +545,7 @@ a.addEventListener('animationend',function(e){if(e.target===a&&(e.animationName=
 <b id="sik-sor-b">Neredeydin?</b><p id="sik-sor-p"></p>
 <div class="sik-sor-b"><button type="button" id="sik-sor-kilit">🔒 Telefonu kilitledim</button><button type="button" id="sik-sor-baktim">📱 Başka bir şeye baktım</button></div>
 <small>Dürüst cevap, en iyi çalışma alışkanlığıdır. 🦁</small></div></div>
-<div id="pm-curu" role="alertdialog"><div><div class="ikon">🍅</div><b id="pm-curu-b"></b><p id="pm-curu-p"></p><button type="button" id="pm-curu-tamam">Yeniden başla</button></div></div>
+<div id="pm-curu" role="alertdialog"><div><div class="ikon">⏸️</div><b id="pm-curu-b"></b><p id="pm-curu-p"></p><button type="button" id="pm-curu-tamam">Yeniden başla</button></div></div>
 <div id="ders-sec" role="dialog" aria-modal="true" aria-labelledby="ders-sec-t"><div class="onay-k ds-k"><b class="onay-t" id="ders-sec-t">🎥 Online ders</b><p style="margin:0 0 14px">Matematik ve geometri için birebir online ders.</p><a class="ds-b ds-z" href="https://us05web.zoom.us/j/89891516986?pwd=aBY861uah7KeDQrNKkA0Aohp0oJxfN.1" target="_blank" rel="noopener"><b>Dersim var, katıl</b><small>Zoom açılır, hocan seni içeri alır</small></a><a class="ds-b ds-w" href="https://wa.me/905435819240?text=Merhaba%2C%20MF%20Odak%20uygulamas%C4%B1ndan%20yaz%C4%B1yorum.%20Online%20%C3%B6zel%20ders%20ve%20ko%C3%A7luk%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><b>Ders almak istiyorum</b><small>WhatsApp'tan bilgi al</small></a><button type="button" class="ds-v" id="ders-sec-k">Vazgeç</button></div></div>
 <div id="koc-onay" role="dialog" aria-modal="true"><div class="onay-k">
 <b class="onay-t">Koç takibine katılım</b>

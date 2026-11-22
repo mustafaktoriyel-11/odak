@@ -1,5 +1,5 @@
 // MustaFaktoriyel Odak - service worker
-var SURUM = 'mf-odak-v138';
+var SURUM = 'mf-odak-v139';
 var DOSYALAR = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png', './css/uygulama.css', './js/00-android.js', './js/01-sayac.js', './js/02-mantik.js', './js/03-geri-tusu.js', './js/04-yedek.js', './js/05-kutuphane.js', './js/06-program-sablon.js', './js/07-sinif-sinav.js', './js/08-tablet.js', './js/09-kisayol.js', './js/10-mola-hatirlat.js', './js/11-elle-ekle.js', './js/12-bildirim.js', './js/13-koc-mesaj.js', './js/14-sayac-katla.js', './js/15-asagi-kapat.js', './js/izinde-secim.js', './js/17-izinde-gorsel.js', './js/18-izinde.js', './js/19-kadranlar.js', './js/20-ayarlar.js', './veri/izinde/harita.svg', './img/eser/d01.svg', './img/eser/d01.webp', './lib/katex/katex.min.js', './lib/katex/katex.min.css', './veri/izinde/duraklar.json', './veri/izinde/mufredat.json', './veri/izinde/rota.json', './veri/izinde/sorular-10.json', './veri/izinde/sorular-11.json', './veri/izinde/sorular-12.json', './veri/izinde/sorular-6.json', './veri/izinde/sorular-7.json', './veri/izinde/sorular-8.json', './veri/izinde/sorular-9.json', './veri/izinde/sorular-Mezun.json', './lib/katex/fonts/KaTeX_AMS-Regular.woff2', './lib/katex/fonts/KaTeX_Caligraphic-Bold.woff2', './lib/katex/fonts/KaTeX_Caligraphic-Regular.woff2', './lib/katex/fonts/KaTeX_Fraktur-Bold.woff2', './lib/katex/fonts/KaTeX_Fraktur-Regular.woff2', './lib/katex/fonts/KaTeX_Main-Bold.woff2', './lib/katex/fonts/KaTeX_Main-BoldItalic.woff2', './lib/katex/fonts/KaTeX_Main-Italic.woff2', './lib/katex/fonts/KaTeX_Main-Regular.woff2', './lib/katex/fonts/KaTeX_Math-BoldItalic.woff2', './lib/katex/fonts/KaTeX_Math-Italic.woff2', './lib/katex/fonts/KaTeX_SansSerif-Bold.woff2', './lib/katex/fonts/KaTeX_SansSerif-Italic.woff2', './lib/katex/fonts/KaTeX_SansSerif-Regular.woff2', './lib/katex/fonts/KaTeX_Script-Regular.woff2', './lib/katex/fonts/KaTeX_Size1-Regular.woff2', './lib/katex/fonts/KaTeX_Size2-Regular.woff2', './lib/katex/fonts/KaTeX_Size3-Regular.woff2', './lib/katex/fonts/KaTeX_Size4-Regular.woff2', './lib/katex/fonts/KaTeX_Typewriter-Regular.woff2'];
 
 self.addEventListener('install', function (e) {
@@ -64,8 +64,8 @@ function mfMesaj(tur, oz, simdi) {
   var R;
   if (eski && (tur === 'gun' || tur === 'aksam')) {
     R = { title: 'Seni özledik', body: sec(koc ?
-      ['Koçun seni bekliyor. Bugün tek bir pomodoro ile geri dön, 25 dk yeter.', 'Bir süredir görüşemedik. Koçun için küçük bir kayıt düşelim mi?'] :
-      ['Uzun zamandır uğramadın. Tek bir pomodoro ile geri dön, 25 dk yeter.', 'Bir süredir görüşemedik. Küçük bir başlangıç yapalım mı?']) };
+      ['Koçun seni bekliyor. Bugün tek bir odak turu ile geri dön, 25 dk yeter.', 'Bir süredir görüşemedik. Koçun için küçük bir kayıt düşelim mi?'] :
+      ['Uzun zamandır uğramadın. Tek bir odak turu ile geri dön, 25 dk yeter.', 'Bir süredir görüşemedik. Küçük bir başlangıç yapalım mı?']) };
     return { title: R.title, body: kes(R.body) };
   }
   var fark = bugun - dun, farkS = (fark >= 0 ? '+' : '-') + Math.abs(Math.round(fark)) + ' dk';
@@ -73,8 +73,8 @@ function mfMesaj(tur, oz, simdi) {
   if (tur === 'hafta') {
     if (!h7) {
       R = { title: 'Yeni hafta, yeni başlangıç', body: sec(koc ?
-        ['Bu hafta kayıt yok. Yeni hafta yeni başlangıç; koçun ilk kaydını bekliyor.', 'Geçen hafta sessizdi. Pazartesi bir pomodoro ile başlayalım.'] :
-        ['Bu hafta kayıt yok. Yeni hafta yeni başlangıç, pazartesi bir pomodoro?', 'Geçen hafta sessizdi. Yeni haftada 25 dk ile başlayalım.']) };
+        ['Bu hafta kayıt yok. Yeni hafta yeni başlangıç; koçun ilk kaydını bekliyor.', 'Geçen hafta sessizdi. Pazartesi bir odak turu ile başlayalım.'] :
+        ['Bu hafta kayıt yok. Yeni hafta yeni başlangıç, pazartesi bir odak turu?', 'Geçen hafta sessizdi. Yeni haftada 25 dk ile başlayalım.']) };
     } else {
       var yuz = '';
       if (h7o > 0) { var y = Math.round((h7 - h7o) * 100 / h7o); yuz = y === 0 ? ' Geçen haftayla aynı.' : ' Geçen haftaya göre %' + Math.abs(y) + (y > 0 ? ' artış.' : ' düşüş.'); }
@@ -90,12 +90,12 @@ function mfMesaj(tur, oz, simdi) {
     if (bugun === 0) {
       if (seri >= 2) {
         R = { title: 'Serin bozulmak üzere', body: sec(koc ?
-          [seri + ' günlük serin bozulmak üzere. Koçun bugünü görecek; 25 dk yeter.', seri + ' günlük serin bozulmak üzere. Uyumadan bir pomodoro?'] :
-          [seri + ' günlük serin bozulmak üzere. Uyumadan bir pomodoro yeter.', seri + ' günlük serin bozulmak üzere. 25 dk ile kurtar.']) };
+          [seri + ' günlük serin bozulmak üzere. Koçun bugünü görecek; 25 dk yeter.', seri + ' günlük serin bozulmak üzere. Uyumadan bir odak turu?'] :
+          [seri + ' günlük serin bozulmak üzere. Uyumadan bir odak turu yeter.', seri + ' günlük serin bozulmak üzere. 25 dk ile kurtar.']) };
       } else {
         R = { title: 'Bugün kayıt yok', body: sec(koc ?
-          ['Koçun bugünkü kaydını görecek. Uyumadan 25 dk yeter.', 'Bugün boş kaldı. Koçun için tek pomodoro yeter.'] :
-          ['Uyumadan 25 dk yeter. Bir pomodoro, gün boş kalmasın.', 'Bugün henüz kayıt yok. 25 dk ile günü kurtarabilirsin.']) };
+          ['Koçun bugünkü kaydını görecek. Uyumadan 25 dk yeter.', 'Bugün boş kaldı. Koçun için tek odak turu yeter.'] :
+          ['Uyumadan 25 dk yeter. Bir odak turu, gün boş kalmasın.', 'Bugün henüz kayıt yok. 25 dk ile günü kurtarabilirsin.']) };
       }
     } else if (hedef > 0 && bugun < hedef / 2) {
       R = { title: 'Bugün hedefin yarısı', body: sec(koc ?
@@ -108,8 +108,8 @@ function mfMesaj(tur, oz, simdi) {
         ['Güzel gün, bravo.' + fs, 'Günü sağlam kapattın.' + fs]) };
     } else {
       R = { title: dkS(bugun) + ' yaptın bugün', body: sec(koc ?
-        ['Koçun kaydı görecek. Uyumadan bir pomodoro daha olur mu?', 'Fena değil. Koçun için bir tur daha?'] :
-        ['Fena değil. Uyumadan bir pomodoro daha olur mu?', 'İyi gidiyorsun. Gece kapanmadan bir tur daha?']) };
+        ['Koçun kaydı görecek. Uyumadan bir odak turu daha olur mu?', 'Fena değil. Koçun için bir tur daha?'] :
+        ['Fena değil. Uyumadan bir odak turu daha olur mu?', 'İyi gidiyorsun. Gece kapanmadan bir tur daha?']) };
     }
     return { title: R.title, body: kes(R.body) };
   }
@@ -132,7 +132,7 @@ function mfMesaj(tur, oz, simdi) {
   } else {
     R = { title: dkS(bugun) + ', akşama biraz daha', body: sec(koc ?
       [dkS(bugun) + ' yaptın. Koçun akşam kaydına bakacak, biraz daha?', dkS(bugun) + ' tamam. Akşama kadar bir tur daha olur.'] :
-      [dkS(bugun) + ' yaptın. Akşama kadar biraz daha olur mu?', dkS(bugun) + ' tamam. Bir pomodoro daha eklemek ister misin?']) };
+      [dkS(bugun) + ' yaptın. Akşama kadar biraz daha olur mu?', dkS(bugun) + ' tamam. Bir odak turu daha eklemek ister misin?']) };
   }
   return { title: R.title, body: kes(R.body) };
 }
