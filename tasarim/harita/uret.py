@@ -103,14 +103,14 @@ D_DALGA=''.join(dal)
 cx,cy=2470,1330
 pus='<g class="hs-pusula" transform="translate(%d %d)"><circle r="34"/><path d="M0-52L8-8L52 0L8 8L0 52L-8 8L-52 0L-8-8Z"/><path class="ic" d="M0-52L8-8L0 0ZM52 0L8 8L0 0ZM0 52L-8 8L0 0ZM-52 0L-8-8L0 0Z"/><text y="-58" font-size="16" text-anchor="middle">K</text></g>'%(cx,cy)
 svg=('<svg class="iz-taban" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'%(W,H)+
- '<defs><radialGradient id="hsVin" cx="50%%" cy="50%%" r="75%%"><stop offset="70%%" stop-opacity="0" class="hs-vs"/><stop offset="100%%" stop-opacity=".9" class="hs-vs"/></radialGradient><path id="hsKara" d="%s"/></defs>'%D_KARA+
- '<rect class="hs-deniz" width="%d" height="%d"/>'%(W,H)+
- '<path class="hs-dalga" d="%s"/>'%D_DALGA+
- '<use href="#hsKara" class="hs-golge"/><use href="#hsKara" class="hs-kara"/>'+
- '<path class="hs-nehir" d="%s"/>'%D_NEHIR+
+ '<style>'+open('stil.css').read().replace('\n','')+'</style><defs><radialGradient id="hsVin" cx="50%%" cy="50%%" r="75%%"><stop offset="70%%" stop-opacity="0" class="hs-vs"/><stop offset="100%%" stop-opacity=".9" class="hs-vs"/></radialGradient><path id="hsKara" d="%s"/></defs>'%D_KARA+
+ '<rect class="hs-deniz" fill="#BCD3E4" width="%d" height="%d"/>'%(W,H)+
+ '<path class="hs-dalga" fill="none" d="%s"/>'%D_DALGA+
+ '<use href="#hsKara" class="hs-golge" fill="none"/><use href="#hsKara" class="hs-kara" fill="#F5E6C6"/>'+
+ '<path class="hs-nehir" fill="none" d="%s"/>'%D_NEHIR+
  '<path class="hs-gol" d="%s"/>'%D_GOL+
- '<path class="hs-dag" d="%s"/>'%D_DAG+
- '<use href="#hsKara" class="hs-kiyi"/>'+
+ '<path class="hs-dag" fill="none" d="%s"/>'%D_DAG+
+ '<use href="#hsKara" class="hs-kiyi" fill="none" stroke="#23395F"/>'+
  '<g class="hs-adlar">'+''.join(ETK)+'</g>'+pus+
  '<rect class="hs-vin" width="%d" height="%d" fill="url(#hsVin)"/></svg>'%(W,H))
 open('/home/claude/odak/veri/izinde/harita.svg','w').write(svg)
