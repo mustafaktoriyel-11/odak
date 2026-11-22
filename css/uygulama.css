@@ -982,7 +982,7 @@ html.mf-gece .sq-alt{background:#0B0E1F}
 @keyframes ma-wb{0%,100%{transform:rotate(-2deg) translateY(0)}50%{transform:rotate(2deg) translateY(-4px)}}
 #mf-acilis .ma-ch{position:absolute;left:0;top:0;width:200px;height:200px}
 #mf-acilis .ma-kart{position:absolute;left:150px;top:120px;width:128px;height:86px;border-radius:7px;background:#fff;box-shadow:0 4px 10px rgba(0,0,0,.35);transform-origin:20px 0;overflow:hidden;animation:ma-pp .4s 4.15s cubic-bezier(.2,.9,.3,1.3) both}
-#mf-acilis .ma-kart>b{display:block;height:21px;line-height:21px;background:#141B3F;color:#fff;font-size:13px;font-weight:800;letter-spacing:.4px;text-align:center}
+#mf-acilis .ma-kart>b{display:block;height:21px;line-height:21px;background:#1C2E8A;color:#fff;font-size:13px;font-weight:800;letter-spacing:.4px;text-align:center}
 #mf-acilis .ma-kf{position:absolute;left:7px;top:27px;width:36px;height:42px;border-radius:4px;background:#DDE4FF;border:1.5px solid #9AA6DB;overflow:hidden}
 #mf-acilis .ma-kf svg{width:100%;height:100%}
 #mf-acilis .ma-ky{position:absolute;left:49px;top:26px;width:75px;font-size:14px;line-height:16px;font-weight:800;color:#1C2E8A}
