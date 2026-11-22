@@ -142,6 +142,8 @@
   function setAl(gun,s,dondur){
     return Promise.all([sorular(s),mantikHavuz()]).then(function(a){var havuz=a[0];
       var v=oku(),r=v.g[gun],ids;
+      // eski sürümden kalan (ör. 8 soruluk) ve hiç cevaplanmamış set: güncel soru sayısıyla yeniden kurulur
+      if(r&&r.ids&&r.ids.length!==NS&&!r.bit&&r.cev&&r.cev.every(function(x){return x===null||x===undefined;})){delete v.g[gun];yaz(v);r=null;}
       if(r&&r.s===s&&r.ids&&r.ids.length)ids=r.ids;
       else{var S=window.IZINDE_SECIM;ids=(S?S.gununSeti(havuz,V.muf,s,gun,NS):[]).map(function(q){return q.id;});
         // havuz boşluğu: daha önce çıkmış soru yerine (en çok 2) mantık sorusu
