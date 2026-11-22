@@ -12,6 +12,7 @@
     function kapat(){if(!acik)return;acik=false;p.classList.remove('gor');setTimeout(function(){if(!acik)p.classList.remove('acik');},280);}
     function kapatT(){if(window.LEX_GERI&&LEX_GERI.dus)LEX_GERI.dus(id);kapat();}
     p.addEventListener('click',function(e){if(e.target===p)kapatT();});p.querySelector('.sc-tamam').addEventListener('click',kapatT);
+    if(typeof ksKapat==='function')ksKapat(p,kapatT,p); // çizgiden aşağı kaydırınca kapanır
     return {el:p,ic:p.querySelector('.sc-ic'),ac:ac,kapat:kapatT};}
   var D=sayfa('sc-dp','Hangi dersi çalışıyorsun?'),S=sayfa('sc-sp','Odak süresi');
   D.ic.appendChild(dk);S.ic.appendChild(ok);if(oz)S.ic.appendChild(oz);
@@ -21,7 +22,11 @@
   sat.innerHTML='<button type="button" class="sc-btn" id="sc-ders" aria-haspopup="dialog"><span class="sc-i">📘</span><b id="sc-ders-et"></b><i aria-hidden="true">▾</i></button>'+
     '<button type="button" class="sc-btn" id="sc-sure" aria-haspopup="dialog"><span class="sc-i">⏱</span><b id="sc-sure-et"></b><i aria-hidden="true">▾</i></button>';
   dg.parentNode.insertBefore(sat,dg.nextSibling);
-  $('sc-ders').addEventListener('click',D.ac);$('sc-sure').addEventListener('click',S.ac);
+  // seans bitince satır Bitir düğmesinin hemen altında belirir; Bitir'e basılı tutup bırakınca gelen tıklama buraya düşmesin
+  // dokunuş bu düğmede başlamadıysa (ör. Bitir'e basılı tutan parmak kalkınca) tıklama sayılmaz
+  var basilan=null;sat.addEventListener('pointerdown',function(e){basilan=e.target.closest('button');},true);
+  function izinli(b){var ok=basilan===b;basilan=null;return ok;}
+  $('sc-ders').addEventListener('click',function(){if(izinli(this))D.ac();});$('sc-sure').addEventListener('click',function(){if(izinli(this))S.ac();});
   function yaz(){
     var d=$('pm-ders');$('sc-ders-et').textContent=d?d.value:'';
     var v=$('pm-odak').value,t=v==='serbest'?'∞ Sınırsız':v==='ozel'?('Özel · '+(+$('pm-ozel').value||0)+' dk'):(v+' dk');
