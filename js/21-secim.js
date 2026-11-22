@@ -38,8 +38,8 @@
   ['pm-ders','pm-odak','pm-ozel'].forEach(function(i){var e=$(i);if(e){e.addEventListener('change',yaz);e.addEventListener('input',yaz);}});
   new MutationObserver(yaz).observe($('pm-basla'),{childList:true,characterData:true,subtree:true});
   new MutationObserver(yaz).observe(dk,{attributes:true,attributeFilter:['style']});
-  // seçim yapılınca pencere kendiliğinden kapanır (özel süre hariç: sayı girilecek)
-  if(dc)dc.addEventListener('click',function(e){if(e.target.closest('button'))setTimeout(function(){yaz();D.kapat();},160);});
-  var oc=$('pm-odak-c');if(oc)oc.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;setTimeout(function(){yaz();if(b.dataset.v!=='ozel')S.kapat();},160);});
+  // seçim yapılınca pencere açık kalır; Tamam, dışarı dokunma veya aşağı kaydırma ile kapanır
+  if(dc)dc.addEventListener('click',function(e){if(e.target.closest('button'))setTimeout(yaz,160);});
+  var oc=$('pm-odak-c');if(oc)oc.addEventListener('click',function(e){if(e.target.closest('button'))setTimeout(yaz,160);});
   yaz();setTimeout(yaz,600);
 })();
