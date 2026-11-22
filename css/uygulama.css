@@ -1705,3 +1705,8 @@ html.mf-gece #onay-tamam:disabled,html.mf-gece #not-gonder:disabled,html.mf-gece
 #sq-tekrar-et.sq-tekrar{background:#FF8A1F;color:#fff}
 .sn-izgara{grid-template-columns:repeat(3,1fr)}
 .iz-gun-btn{display:flex;gap:10px}.iz-gun-btn .mt-btn2{flex:1}.iz-tek-alt{margin-bottom:10px}
+/* Hazır programlardan seç: mavi zeminli, dikkat çeken ama ana düğmeden (turuncu) bir kademe sakin */
+.sb-ince{display:flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 14px;border-radius:14px;background:linear-gradient(135deg,#1E3BD6,#3A54E0);color:#fff;box-shadow:0 4px 12px rgba(30,59,214,.28);font-size:15px}
+.sb-ince .ic{width:18px;height:18px;margin:0}
+.sb-ince:active{transform:scale(.98)}
+html.mf-gece .sb-ince{background:#3D5AFE;color:#fff}
