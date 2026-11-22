@@ -206,7 +206,7 @@
         try{r=await coz(f);}
         catch(e){mesaj(e&&e.yedekDegil?e.message:('Yedek okunamadı: '+(e&&e.message?e.message:'dosya geçersiz')));return;}
         var tr=r.veri.tarih?tarihYaz(r.veri.tarih):'';
-        if(!confirm('Bu telefondaki veriler yedektekilerle değiştirilecek (yedek tarihi: '+(tr||'bilinmiyor')+'). Devam edilsin mi?')){mesaj('Geri yükleme iptal edildi.');return;}
+        if(!confirm('Bu cihazdaki veriler yedektekilerle değiştirilecek (yedek tarihi: '+(tr||'bilinmiyor')+'). Devam edilsin mi?')){mesaj('Geri yükleme iptal edildi.');return;}
         try{
           var eski=anahtarlar(), i, ks=Object.keys(r.veri.ls);
           for(i=0;i<eski.length;i++)localStorage.removeItem(eski[i]);

@@ -120,7 +120,7 @@
     if(st.filtre&&!sy[st.filtre])st.filtre='';
     if(!dosyalar().length){
       arac.hidden=true;
-      listeEl.innerHTML='<div class="kt-bos"><div class="kt-bs"><svg class="ic" aria-hidden="true"><use href="#i-klasor"/></svg></div><p>Konu özetlerini, PDF\'lerini ve deneme cevap anahtarlarını buraya ekle. Hepsi yalnız bu telefonda saklanır.</p></div>';
+      listeEl.innerHTML='<div class="kt-bos"><div class="kt-bs"><svg class="ic" aria-hidden="true"><use href="#i-klasor"/></svg></div><p>Konu özetlerini, PDF\'lerini ve deneme cevap anahtarlarını buraya ekle. Hepsi yalnız bu cihazda saklanır.</p></div>';
       depoYaz();
       return;
     }
@@ -682,7 +682,7 @@
     if(!tumu.length){
       ust.hidden=oz.hidden=arac.hidden=true;izg.innerHTML='';
       bos.hidden=false;
-      bos.innerHTML='<div class="kt-bs"><svg class="ic" aria-hidden="true"><use href="#i-kamera"/></svg></div><p>Çözemediğin ya da yanlış yaptığın soruların fotoğrafını çek, konusunu yaz. Sonra burada tekrar et, öğrendiklerini işaretle. Hepsi yalnız bu telefonda saklanır.</p><div class="sq-bos-dugme"><button type="button" class="mt-btn sq-ekle" data-ac="cek"><svg class="ic" aria-hidden="true"><use href="#i-kamera"/></svg>Fotoğraf çek</button><button type="button" class="mt-btn2 sq-ekle" data-ac="galeri"><svg class="ic" aria-hidden="true"><use href="#i-resim"/></svg>Galeriden</button></div>';
+      bos.innerHTML='<div class="kt-bs"><svg class="ic" aria-hidden="true"><use href="#i-kamera"/></svg></div><p>Çözemediğin ya da yanlış yaptığın soruların fotoğrafını çek, konusunu yaz. Sonra burada tekrar et, öğrendiklerini işaretle. Hepsi yalnız bu cihazda saklanır.</p><div class="sq-bos-dugme"><button type="button" class="mt-btn sq-ekle" data-ac="cek"><svg class="ic" aria-hidden="true"><use href="#i-kamera"/></svg>Fotoğraf çek</button><button type="button" class="mt-btn2 sq-ekle" data-ac="galeri"><svg class="ic" aria-hidden="true"><use href="#i-resim"/></svg>Galeriden</button></div>';
       return;
     }
     bos.hidden=true;bos.innerHTML='';
