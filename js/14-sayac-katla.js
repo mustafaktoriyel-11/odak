@@ -51,13 +51,12 @@
     if(!kdUzun&&H-EK-64-10>=Wt){M=Math.round(Math.min(112,H-EK-10-Wt));}else{M=0;}
     maskotsuz=!M;document.body.style.setProperty('--omS',(M||64)+'px');
     var kd=window.MF_KD_ORAN&&window.MF_KD_ORAN();
-    if(kd){ // yeni kadranlar kare değil: genişliği, yüksekliği (en-boy oranı + etiket) ekrana sığacak şekilde hesapla, ölçek kullanma
-      var Wm=Math.min((saat.parentNode&&saat.parentNode.clientWidth)||avW,560),hh=function(w){return w*kd.ra+kd.e;};
-      M=(kd.maskot&&H-EK-hh(Wm)-10>=64)?Math.round(Math.min(112,H-EK-10-hh(Wm))):0;
-      maskotsuz=!M;document.body.style.setProperty('--omS',(M||64)+'px');
-      var Wk=Math.max(160,Math.min(Wm,(H-EK-(M?M+10:0)-kd.e-12)/kd.ra));
-      saat.style.setProperty('--kdW',Wk.toFixed(1)+'px');saat.style.setProperty('--lvS','1');saat.style.setProperty('--lvI','1');saat.style.setProperty('--lvM','0px');
-      document.body.style.setProperty('--oeUst',Math.max(8,Math.round((H-(hh(Wk)+EK+(M?M+10:0)))/2))+'px');return;}
+    if(kd){ // yeni kadranlar kare değil: ölçek, en-boy oranına (+ etiket) göre ekrana sığacak şekilde; animasyon yine transform (scale) ile akıcı
+      var Wm=Math.min((saat.parentNode&&saat.parentNode.clientWidth)||avW,560),Bw=saat.offsetWidth||300,Bh=Bw*kd.ra+kd.e;
+      maskotsuz=true;M=0;document.body.style.setProperty('--omS','64px');
+      var Sk=Math.max(1,Math.min(Wm/Bw,(H-EK-12)/Bh));
+      saat.style.setProperty('--lvS',Sk.toFixed(4));saat.style.setProperty('--lvI',(1/Sk).toFixed(4));saat.style.setProperty('--lvM',(Bh*(Sk-1)/2).toFixed(1)+'px');
+      document.body.style.setProperty('--oeUst',Math.max(8,Math.round((H-(Bh*Sk+EK))/2))+'px');return;}
     var W=Math.max(B,Math.min(Wt,H-EK-(M?M+10:0))),S=W/B;
     var bos=H-(W+EK+(M?M+10:0));document.body.style.setProperty('--oeUst',Math.max(8,Math.round(bos/2))+'px');
     saat.style.setProperty('--lvS',S.toFixed(4));saat.style.setProperty('--lvI',(1/S).toFixed(4));saat.style.setProperty('--lvM',((W-B)/2).toFixed(1)+'px');
