@@ -16,7 +16,7 @@ EK=[('Grönland',-41,74,'hs-ad2 hs-dag-ad',16,1),('Sibirya',100,64,'hs-ad2 hs-da
     ('Cusco',-72,-13.5,'hs-ad3 hs-dag-ad',10,0.4),('Angel Şelalesi',-62.5,6.5,'hs-ad3 hs-dag-ad',10,0.4),
     ('Atacama Çölü',-69.5,-24.5,'hs-ad3 hs-dag-ad',10,0.4),('Hawaii',-156,20.5,'hs-ad3 hs-dag-ad',10,0.4),
     ('Kilimanjaro',37.3,-3.5,'hs-ad3 hs-dag-ad',10,0.4),('Rift Vadisi',36.5,3.5,'hs-ad3 hs-dag-ad',10,0.4),
-    ('Büyük Set Resifi',153.5,-16,'hs-ad3 hs-deniz-ad',10,0.4)]
+    ('Büyük Set Resifi',153.5,-16,'hs-ad3 hs-deniz-ad',10,0.4),('Lebombo',34.5,-23.2,'hs-ad3 hs-dag-ad',10,0.4)]
 p='../../veri/izinde/harita.svg';s=open(p).read()
 i=s.index('<g class="hs-adlar">')+len('<g class="hs-adlar">');ek=''
 for ad,lo,la,cl,boy,ara in EK:

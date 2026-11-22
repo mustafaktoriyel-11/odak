@@ -529,6 +529,631 @@
     "h": "207.000 ÷ 1.200 = 172,5 km."
    },
    "kaynak": "Britannica (Alps); Wikipedia (Mont Blanc: 2021'de 4.807,81 m, 2023'te 4.805,59 m), destek"
+  },
+  {
+   "id": "sahra",
+   "etiket": "Sahra",
+   "ikon": "dag",
+   "tur": "Çöl · Afrika",
+   "ad": "Sahra Çölü",
+   "yer": "Kuzey Afrika, Atlas Okyanusu'ndan Kızıldeniz'e",
+   "sayilar": [
+    {
+     "d": "8,6–9,2 mn km²",
+     "e": "alan (kaynağa göre)"
+    },
+    {
+     "d": "≈ %30",
+     "e": "Afrika'nın payı"
+    }
+   ],
+   "mat": "Dünyanın en büyük sıcak çölü; alanı ABD'nin yüzölçümüne (≈ 9,8 mn km²) **yakın**. Afrika'nın (≈ 30,4 mn km²) yaklaşık **%30'unu** kaplar: 9 ÷ 30,4 ≈ 0,30.",
+   "dene": {
+    "s": "Sahra yaklaşık 9 mn km², Afrika yaklaşık 30,4 mn km². Sahra, Afrika'nın yüzde kaçıdır?",
+    "c": "≈ %30",
+    "h": "9 ÷ 30,4 ≈ 0,296 → yaklaşık %30."
+   },
+   "kaynak": "Britannica (≈ 8,6 mn km²), Wikipedia (≈ 9,2 mn km²), ABD ve Afrika alanları; alan, çölün sınırının nasıl çizildiğine göre değişir"
+  },
+  {
+   "id": "nijer",
+   "etiket": "Nijer",
+   "ikon": "nehir",
+   "tur": "Nehir · Batı Afrika",
+   "ad": "Nijer · Timbuktu",
+   "yer": "Gine'den Gine Körfezi'ne; Timbuktu yakınında kuzey dirsek",
+   "sayilar": [
+    {
+     "d": "≈ 4.180 km",
+     "e": "uzunluk"
+    },
+    {
+     "d": "3.900–20.000",
+     "e": "iç delta alanı (km²)"
+    }
+   ],
+   "mat": "Nehir bumeranga benzeyen bir yay çizer: denizden uzaklaşıp Sahra'ya girer, sonra keskin dönerek güneydoğuya akar. Timbuktu'nun el yazmalarında (12.–20. yy) **miras payları ve kesir hesapları** gibi matematik konuları da vardır.",
+   "dene": {
+    "s": "Bir miras 1/2 ve 1/3 oranında iki kişiye bölünürse mirasın kaçta kaçı geriye kalır?",
+    "c": "1/6",
+    "h": "1 − 1/2 − 1/3 = 6/6 − 3/6 − 2/6 = 1/6."
+   },
+   "kaynak": "Wikipedia (Niger River), Hamburg Üniv. CSMC Timbuktu el yazmaları, Google Arts & Culture; UNESCO Dünya Mirası listesinde Timbuktu (whc.unesco.org/en/list/119); uzunluk kaynağa göre 4.180–4.200 km"
+  },
+  {
+   "id": "kilimanjaro",
+   "etiket": "Kilimanjaro",
+   "ikon": "dag",
+   "tur": "Dağ · Afrika",
+   "ad": "Kilimanjaro",
+   "yer": "Tanzanya, Kenya sınırına yakın",
+   "sayilar": [
+    {
+     "d": "5.895 m",
+     "e": "yükseklik (1952 ölçümü)"
+    },
+    {
+     "d": "≈ 6,5 °C/km",
+     "e": "yükseldikçe sıcaklık düşüşü"
+    }
+   ],
+   "mat": "Eteğindeki çalılıktan zirvedeki buzul kuşağına kadar **5 iklim kuşağı** sıralanır. Sıcaklık ortalama her 1 km yükselişte yaklaşık **6,5 °C** düşer; 5 km'lik tırmanışta fark ≈ 32,5 °C.",
+   "dene": {
+    "s": "1.000 m'de sıcaklık 25 °C ise, kilometrede 6,5 °C düşüşle 5.895 m'de yaklaşık kaç °C olur?",
+    "c": "≈ −6,8 °C",
+    "h": "Yükseklik farkı 4,895 km; 4,895 × 6,5 ≈ 31,8; 25 − 31,8 ≈ −6,8 °C."
+   },
+   "kaynak": "Britannica (Kibo 5.895 m), Wikipedia (sonraki ölçümler 5.892–5.902 m), Britannica (lapse rate ≈ 6,5 °C/km); gerçek değer hava durumuna göre değişir"
+  },
+  {
+   "id": "victoria",
+   "etiket": "Victoria Gölü",
+   "ikon": "gol",
+   "tur": "Göl · Afrika",
+   "ad": "Victoria Gölü",
+   "yer": "Tanzanya, Uganda ve Kenya arasında",
+   "sayilar": [
+    {
+     "d": "60.000–69.500",
+     "e": "alan (km², kaynağa göre)"
+    },
+    {
+     "d": "≈ %8–9",
+     "e": "Türkiye yüzölçümüne oranı"
+    }
+   ],
+   "mat": "Afrika'nın en büyük gölü ve Nil'in başlıca su deposu. Alanı yaklaşık 69.000 km² alınırsa Türkiye'nin (783.562 km²) **yaklaşık 11,4'te biri** eder: 783.562 ÷ 69.000 ≈ 11,4.",
+   "dene": {
+    "s": "Victoria Gölü ≈ 69.000 km², Türkiye 783.562 km². Türkiye'nin alanı kaç Victoria Gölü eder?",
+    "c": "≈ 11,4",
+    "h": "783.562 ÷ 69.000 ≈ 11,36 → yaklaşık 11,4."
+   },
+   "kaynak": "Britannica (69.484 km²), Wikipedia (≈ 59.947 km²; kendi içinde tutarsız, ≈ 68.800 km² da geçer), Türkiye alanı: Wikipedia"
+  },
+  {
+   "id": "rift",
+   "etiket": "Rift Vadisi",
+   "ikon": "dag",
+   "tur": "Yarık vadi · Doğu Afrika",
+   "ad": "Doğu Afrika Rift Vadisi",
+   "yer": "Etiyopya'dan Mozambik'e uzanan yarık sistemi",
+   "sayilar": [
+    {
+     "d": "8–9 mm/yıl",
+     "e": "levha ayrılma hızı (≈)"
+    },
+    {
+     "d": "≈ 6.400 km",
+     "e": "toplam uzunluk"
+    }
+   ],
+   "mat": "Afrika levhası Nubia ve Somali olarak ikiye ayrılıyor. Hız-zaman: yılda 8 mm = milyon yılda **8 km** (1 milyon × 8 mm = 8.000.000 mm = 8 km).",
+   "dene": {
+    "s": "Levhalar yılda 8 mm ayrılırsa 5 milyon yılda kaç km açılırlar?",
+    "c": "40 km",
+    "h": "5.000.000 × 8 mm = 40.000.000 mm = 40.000 m = 40 km."
+   },
+   "kaynak": "Wikipedia (8–9 mm/yıl); NBC News (≈ 5–13 mm/yıl); Britannica (≈ 6.400 km); hız bölgeye ve ölçüme göre değişir"
+  },
+  {
+   "id": "kongo",
+   "etiket": "Kongo",
+   "ikon": "nehir",
+   "tur": "Nehir · Orta Afrika",
+   "ad": "Kongo Nehri",
+   "yer": "Orta Afrika'dan Atlas Okyanusu'na",
+   "sayilar": [
+    {
+     "d": "≈ 220 m",
+     "e": "en derin yeri"
+    },
+    {
+     "d": "≈ 41.000 m³/sn",
+     "e": "ağzındaki debi"
+    }
+   ],
+   "mat": "Dünyanın bilinen en derin nehri ve ekvatoru **iki kez** kesen tek büyük nehir. Debisi Amazon'un yaklaşık **dörtte biri–beşte biri**: 41.000 ÷ 175.000 ≈ 0,23 ve 41.000 ÷ 219.530 ≈ 0,19.",
+   "dene": {
+    "s": "Olimpik havuz yaklaşık 2.500 m³. Kongo saniyede ≈ 41.000 m³ taşırsa saniyede kaç havuz dolar?",
+    "c": "≈ 16,4 havuz",
+    "h": "41.000 ÷ 2.500 = 16,4."
+   },
+   "kaynak": "Britannica (debi ≈ 41.000 m³/sn), Wikipedia (derinlik ≈ 220 m, ekvator, Amazon ≈ 219.530 m³/sn); Britannica'nın Amazon değeri (≈ 175.000 m³/sn) farklı; debi yıl içinde 23.000–75.000 m³/sn arası değişir"
+  },
+  {
+   "id": "lebombo",
+   "etiket": "Lebombo",
+   "ikon": "dag",
+   "tur": "Dağ · Afrika",
+   "ad": "Güney Afrika · Lebombo kemiği",
+   "yer": "Border Cave, Lebombo Dağları (Güney Afrika–Esvatini sınırı)",
+   "sayilar": [
+    {
+     "d": "≈ 43.000 yıl",
+     "e": "Lebombo kemiği yaşı"
+    },
+    {
+     "d": "29 çentik",
+     "e": "babun kemiği üzerinde"
+    }
+   ],
+   "mat": "Bilinen en eski sayma araçlarından; **29 çentik** taşıyan bir babun kemiği. Kongo'daki Ishango kemiğinden (≈ 20.000 yıl, tarihi tartışmalı) yaklaşık **23.000 yıl** eski.",
+   "dene": {
+    "s": "Lebombo kemiği ≈ 43.000, Ishango kemiği ≈ 20.000 yıllık. Lebombo kaç yıl daha eskidir?",
+    "c": "≈ 23.000 yıl",
+    "h": "43.000 − 20.000 = 23.000 yıl."
+   },
+   "kaynak": "Wikipedia (Lebombo bone: 42.000–43.000 yıl, 24 radyokarbon tarihlemesi), MathWorld (d'Errico vd. 2018: ≈ 42.300–42.600), Wikipedia (Ishango: ≈ 20.000, tartışmalı); tarihler yöntem ve tabakaya göre değişir"
+  },
+  {
+   "id": "baykal",
+   "etiket": "Baykal Gölü",
+   "ikon": "gol",
+   "tur": "Göl · Asya",
+   "ad": "Baykal Gölü",
+   "yer": "Sibirya, Rusya (İrkutsk ve Buryatya)",
+   "sayilar": [
+    {
+     "d": "≈ 1.642 m",
+     "e": "en derin yer"
+    },
+    {
+     "d": "≈ %20",
+     "e": "dünya yüzey tatlı suyu"
+    }
+   ],
+   "mat": "Baykal **dünyanın en derin gölü**; hacmi yaklaşık 23.600 km³ ile her gölden büyük. Hacim ÷ alan işlemi **ortalama derinliği** verir.",
+   "dene": {
+    "s": "Baykal'ın hacmi ≈ 23.615 km³, alanı ≈ 31.722 km². Ortalama derinliği yaklaşık kaç metredir?",
+    "c": "≈ 744 m",
+    "h": "23.615 ÷ 31.722 ≈ 0,744 km ≈ 744 m."
+   },
+   "kaynak": "Britannica (Lake Baikal: ≈1.620 m, tatlı suyun yaklaşık beşte biri), Wikipedia (1.642 m, 23.615 km³, 31.722 km²), UNESCO; en derin nokta ve pay kaynağa göre değişir"
+  },
+  {
+   "id": "ural",
+   "etiket": "Ural Dağları",
+   "ikon": "dag",
+   "tur": "Dağ · Avrupa–Asya sınırı",
+   "ad": "Ural Dağları",
+   "yer": "Rusya ve Kazakistan, kuzey-güney doğrultusunda",
+   "sayilar": [
+    {
+     "d": "≈ 2.500 km",
+     "e": "silsile uzunluğu"
+    },
+    {
+     "d": "≈ %75",
+     "e": "Rusya'nın Asya payı"
+    }
+   ],
+   "mat": "Urallar Avrupa ile Asya'yı ayıran geleneksel sınırın **büyük bölümüdür**. Rusya topraklarının **yaklaşık dörtte üçü (≈ %75) Asya'dadır**.",
+   "dene": {
+    "s": "Rusya'nın yüzölçümü ≈ 17,1 milyon km² ve yaklaşık dörtte üçü Asya'daysa Asya'daki kısmı yaklaşık kaç milyon km²'dir?",
+    "c": "≈ 12,8 milyon km²",
+    "h": "17,1 × 3/4 ≈ 12,8 milyon km²."
+   },
+   "kaynak": "Britannica (Ural Mountains, Russia); Wikipedia (Russia: 17.098.246 km²); sınırın tam çizgisi tanıma göre değişir"
+  },
+  {
+   "id": "gobi",
+   "etiket": "Gobi",
+   "ikon": "dag",
+   "tur": "Çöl · Asya",
+   "ad": "Gobi Çölü",
+   "yer": "Moğolistan ve Çin'in kuzeyi",
+   "sayilar": [
+    {
+     "d": "≈ 1,3 mn km²",
+     "e": "alan"
+    },
+    {
+     "d": "−40 °C / 45 °C",
+     "e": "Ocak en düşük / Temmuz en yüksek (ort.)"
+    }
+   ],
+   "mat": "Gobi bir **soğuk çöldür**: ortalama en düşük (−40 °C) ile en yüksek (45 °C) arasındaki fark **85 °C**'dir. 1923'te burada bulunan dinozor yumurtalarından biri yaklaşık **14 cm** uzunluğundaydı.",
+   "dene": {
+    "s": "Gobi'de ortalama Ocak en düşüğü −40 °C, Temmuz en yükseği 45 °C ise aradaki sıcaklık farkı kaç °C'dir?",
+    "c": "85 °C",
+    "h": "45 − (−40) = 45 + 40 = 85 °C."
+   },
+   "kaynak": "Britannica (Gobi); Wikipedia (Oviraptor: 1923 Flaming Cliffs yumurtası ≈ 14 cm), AMNH; sıcaklıklar uzun yıllık ortalamadır, uç değerler daha da geniştir"
+  },
+  {
+   "id": "tibet",
+   "etiket": "Kunlun Dağları",
+   "ikon": "dag",
+   "tur": "Plato · Asya",
+   "ad": "Tibet Platosu",
+   "yer": "Çin'in güneybatısı; Himalayalar ile Kunlun arasında",
+   "sayilar": [
+    {
+     "d": "> 4.500 m",
+     "e": "ortalama yükseklik"
+    },
+    {
+     "d": "≈ 2,5 mn km²",
+     "e": "alan"
+    }
+   ],
+   "mat": "\"Dünyanın çatısı\" denen plato, yeryüzünün **en yüksek ve en geniş platosudur**. Alanı Türkiye'nin (783.562 km²) yaklaşık **3,2 katıdır**.",
+   "dene": {
+    "s": "Tibet Platosu ≈ 2.500.000 km², Türkiye 783.562 km² ise plato yaklaşık kaç Türkiye'ye sığar?",
+    "c": "≈ 3,2 Türkiye",
+    "h": "2.500.000 ÷ 783.562 ≈ 3,19 ≈ 3,2."
+   },
+   "kaynak": "Wikipedia (Tibetan Plateau: ortalama > 4.500 m, 2.500.000 km²), Britannica (Plateau of Tibet: 4.000–5.000 m, 2,5 mn km²); Türkiye alanı Wikipedia"
+  },
+  {
+   "id": "japonya",
+   "etiket": "Japonya",
+   "ikon": "dag",
+   "tur": "Ülke · Asya",
+   "ad": "Japonya · Sangaku",
+   "yer": "Honshu; Fuji Dağı ve Edo dönemi tapınakları",
+   "sayilar": [
+    {
+     "d": "3.776 m",
+     "e": "Fuji Dağı"
+    },
+    {
+     "d": "1603–1868",
+     "e": "Edo dönemi"
+    }
+   ],
+   "mat": "Edo döneminde Japonlar çözdükleri geometri problemlerini tahta tablolara çizip tapınaklara astı; bunlara **sangaku** (\"hesap tableti\") denir. Her kesimden insan bu tablolara katkı verdi.",
+   "dene": {
+    "s": "Everest 8.848,86 m, Fuji 3.776 m ise Everest, Fuji'nin yaklaşık kaç katıdır?",
+    "c": "≈ 2,3 kat",
+    "h": "8.848,86 ÷ 3.776 ≈ 2,34 ≈ 2,3."
+   },
+   "kaynak": "Wikipedia (Sangaku, Edo period: 1600/1603–1868), UNESCO (Fuji 3.776 m); Edo başlangıcı kaynağa göre 1600 veya 1603"
+  },
+  {
+   "id": "sibirya",
+   "etiket": "Sibirya",
+   "ikon": "dag",
+   "tur": "Bölge · Asya",
+   "ad": "Sibirya",
+   "yer": "Rusya'nın kuzey Asya'sı; Urallardan Pasifik'e",
+   "sayilar": [
+    {
+     "d": "11",
+     "e": "Rusya'nın saat dilimi"
+    },
+    {
+     "d": "UTC+2 → +12",
+     "e": "Kaliningrad'dan Kamçatka'ya"
+    }
+   ],
+   "mat": "Dünya 24 saatte 360° döner: **360° ÷ 24 = 15°**, yani her 15° boylam **1 saat** eder. Rusya'nın doğu ucu ile batı ucu arasında 10 saat fark vardır; saat dilimleri siyasi sınırlara göre çizildiği için tam 15°'lik dilimler değildir.",
+   "dene": {
+    "s": "Moskova (UTC+3) saat 12:00 iken Kamçatka'da (UTC+12) saat kaçtır?",
+    "c": "21:00",
+    "h": "Fark 12 − 3 = 9 saat → 12:00 + 9 saat = 21:00."
+   },
+   "kaynak": "Britannica (Russia: 11 saat dilimi), Wikipedia (Time in Russia: UTC+2 ile UTC+12); saat dilimleri zamanla değişebilir"
+  },
+  {
+   "id": "avustralya",
+   "etiket": "AVUSTRALYA",
+   "ikon": "dag",
+   "tur": "Kıta ve ülke · Okyanusya",
+   "ad": "Avustralya · Uluru",
+   "yer": "Güney Yarımküre; ortasında Uluru",
+   "sayilar": [
+    {
+     "d": "≈ 7,69 mn km²",
+     "e": "alan"
+    },
+    {
+     "d": "≈ 3,6 kişi/km²",
+     "e": "nüfus yoğunluğu"
+    }
+   ],
+   "mat": "Hem kıta hem ülke olan Avustralya'da yoğunluk **nüfus ÷ alan** ile bulunur: ≈ 3,6 kişi/km². Türkiye'de bu değer ≈ 110'dur, yani **yaklaşık 30 kat** fazla. Uluru çevre düzlükten 348 m yüksektir (deniz seviyesinden 863 m).",
+   "dene": {
+    "s": "Avustralya ≈ 27,8 milyon kişi, ≈ 7,69 milyon km²; Türkiye ≈ 86,1 milyon kişi, 783.562 km². Türkiye'nin yoğunluğu Avustralya'nın yaklaşık kaç katıdır?",
+    "c": "≈ 30 kat",
+    "h": "Türkiye: 86,1 ÷ 0,7836 ≈ 109,9 kişi/km²; Avustralya: 27,8 ÷ 7,69 ≈ 3,62 kişi/km²; 109,9 ÷ 3,62 ≈ 30,4 → yaklaşık 30."
+   },
+   "kaynak": "Wikipedia (Australia: 7.688.287 km², ≈27,8 mn kişi, Aralık 2025; Turkey: 86,09 mn, 2025 tahmini; Uluru), Britannica; nüfus yıla göre değişir"
+  },
+  {
+   "id": "bsr",
+   "etiket": "Büyük Set Resifi",
+   "ikon": "deniz",
+   "tur": "Mercan resifi · Pasifik",
+   "ad": "Büyük Set Resifi",
+   "yer": "Avustralya'nın kuzeydoğu kıyısı, Queensland",
+   "sayilar": [
+    {
+     "d": "≈ 2.300 km",
+     "e": "uzunluk"
+    },
+    {
+     "d": "≈ 344.400 km²",
+     "e": "alan"
+    }
+   ],
+   "mat": "Canlıların inşa ettiği **en büyük yapı** sayılır. Türkiye'nin doğu-batı uzunluğu yaklaşık 1.600 km ise **2.300 ÷ 1.600 ≈ 1,4**: resif Türkiye'nin boyundan yaklaşık 1,4 kat uzundur.",
+   "dene": {
+    "s": "Resif ≈ 2.300 km, Türkiye'nin doğu-batı uzunluğu ≈ 1.600 km ise resif kaç kat uzundur?",
+    "c": "≈ 1,4 kat",
+    "h": "2.300 ÷ 1.600 = 1,4375 ≈ 1,4."
+   },
+   "kaynak": "GBRMPA (≈2.300 km, 344.400 km²), Wikipedia; Britannica (Türkiye ≈ 1.000 mil ≈ 1.600 km, resif > 2.000 km diyor); uzunluk tanıma göre değişir"
+  },
+  {
+   "id": "gronland",
+   "etiket": "Grönland",
+   "ikon": "dag",
+   "tur": "Ada · Kuzey Amerika",
+   "ad": "Grönland",
+   "yer": "Kuzey Atlantik ile Arktik Okyanusu arasında, Danimarka Krallığı'na bağlı",
+   "sayilar": [
+    {
+     "d": "≈ 2,17 mn km²",
+     "e": "alan, dünyanın en büyük adası"
+    },
+    {
+     "d": "3 km'den fazla",
+     "e": "buz tabakasının en kalın yeri"
+    }
+   ],
+   "mat": "Mercator haritalarda kutuplara yaklaştıkça alanlar şişer; Grönland Afrika kadar görünür. Oysa Afrika (≈ 30,4 mn km²) Grönland'ın **yaklaşık 14 katı**: 30.365.000 ÷ 2.166.086 ≈ 14. Adanın yaklaşık %81'i buzla kaplı.",
+   "dene": {
+    "s": "Grönland'ın alanı ≈ 2,17 mn km², Afrika'nınki ≈ 30,4 mn km². Afrika kaç Grönland eder?",
+    "c": "≈ 14 kat",
+    "h": "30,365 ÷ 2,166 ≈ 14,02."
+   },
+   "kaynak": "Britannica (Africa), Wikipedia (Greenland, Mercator projection), NSIDC; buz kalınlığı 3 km üzeri, alan küçük adalar dahil"
+  },
+  {
+   "id": "hudson",
+   "etiket": "Hudson Körfezi",
+   "ikon": "deniz",
+   "tur": "Körfez · Kuzey Amerika",
+   "ad": "Hudson Körfezi",
+   "yer": "Kanada'nın kuzeyinde, Hudson Boğazı ile Atlantik'e açılır",
+   "sayilar": [
+    {
+     "d": "≈ 202.080 km",
+     "e": "Kanada'nın kıyı şeridi (1. sıra)"
+    },
+    {
+     "d": "≈ 1,23 mn km²",
+     "e": "Hudson Körfezi'nin alanı"
+    }
+   ],
+   "mat": "Kanada'nın kıyısı dünyanın en uzunu, ama değer **cetvelin boyuna göre değişir**: Britanya kıyısı 100 km'lik cetvelle ≈ 2.800 km, 50 km'lik cetvelle ≈ 3.400 km çıkar. Buna kıyı paradoksu denir; Mandelbrot (1967) bu girintili şekilleri **fraktal** ile anlattı.",
+   "dene": {
+    "s": "Britanya kıyısı 100 km'lik cetvelle 2.800 km, 50 km'lik cetvelle 3.400 km ölçülüyor. Cetvel yarıya inince uzunluk yaklaşık yüzde kaç artar?",
+    "c": "≈ %21",
+    "h": "(3.400 − 2.800) ÷ 2.800 ≈ 0,214 → %21."
+   },
+   "kaynak": "Wikipedia (List of countries by length of coastline, kaynağı CIA World Factbook; Coastline paradox; Hudson Bay); kıyı uzunluğu ölçüm yöntemine bağlı"
+  },
+  {
+   "id": "buyukgoller",
+   "etiket": "Büyük Göller",
+   "ikon": "gol",
+   "tur": "Göller · Kuzey Amerika",
+   "ad": "Büyük Göller",
+   "yer": "ABD–Kanada sınırında: Superior, Michigan, Huron, Erie, Ontario",
+   "sayilar": [
+    {
+     "d": "≈ %21",
+     "e": "dünya yüzey tatlı suyu"
+    },
+    {
+     "d": "≈ 244.000 km²",
+     "e": "5 gölün toplam alanı"
+    }
+   ],
+   "mat": "Beş gölün hacmi ≈ 22.671 km³, alanı ≈ 244.106 km². **Ortalama derinlik = hacim ÷ alan** ≈ 0,093 km, yani yaklaşık 93 m. Superior (≈ 146 m) çok daha derin, Erie (≈ 19 m) sığ.",
+   "dene": {
+    "s": "Erie Gölü'nün hacmi ≈ 480 km³, alanı ≈ 25.667 km². Ortalama derinliği kaç metredir?",
+    "c": "≈ 19 m",
+    "h": "480 ÷ 25.667 ≈ 0,0187 km ≈ 18,7 m ≈ 19 m."
+   },
+   "kaynak": "Wikipedia (Great Lakes), EPA (PolitiFact alıntısı: %21); kaynağa göre pay %20–23 arası, hacimler küçük farklarla verilir"
+  },
+  {
+   "id": "kanyon",
+   "etiket": "Büyük Kanyon",
+   "ikon": "dag",
+   "tur": "Kanyon · Kuzey Amerika",
+   "ad": "Büyük Kanyon",
+   "yer": "Arizona, ABD; Colorado Nehri boyunca",
+   "sayilar": [
+    {
+     "d": "≈ 446 km",
+     "e": "uzunluk"
+    },
+    {
+     "d": "≈ 1.857 m",
+     "e": "en büyük derinlik"
+    }
+   ],
+   "mat": "Duvarlardaki kaya katmanları yaklaşık **270 milyon ile 2 milyar yıl** arası yaşları gösterir: fark ≈ 1,73 milyar yıl. Harita ölçeğiyle de çalışılır: 1 cm = 50 km ölçekte 446 km'lik kanyon ≈ 8,9 cm olur.",
+   "dene": {
+    "s": "1 cm = 50 km ölçekli bir haritada 446 km'lik kanyon kaç cm uzunlukta çizilir?",
+    "c": "≈ 8,9 cm",
+    "h": "446 ÷ 50 = 8,92 cm."
+   },
+   "kaynak": "Wikipedia (Grand Canyon), NPS (278 nehir mili ≈ 447 km, ort. derinlik 1,6 km); Colorado Nehri'nin yaşı (5–6 mn yıl) tartışmalı"
+  },
+  {
+   "id": "yukatan",
+   "etiket": "Yukatan",
+   "ikon": "dag",
+   "tur": "Yarımada · Orta Amerika",
+   "ad": "Yukatan · Maya",
+   "yer": "Güneydoğu Meksika, Maya uygarlığının bölgesi",
+   "sayilar": [
+    {
+     "d": "20 tabanlı",
+     "e": "Maya sayı sistemi"
+    },
+    {
+     "d": "3 simge",
+     "e": "kabuk (0), nokta (1), çubuk (5)"
+    }
+   ],
+   "mat": "Mayalar **20 tabanlı** yazdı ve sıfır için bir kabuk simgesi kullandı. Takvimde 260 ve 365 günlük iki döngü **18.980 günde** (≈ 52 yıl) aynı başlangıca döner: EKOK(260, 365) = 18.980.",
+   "dene": {
+    "s": "Üst satırda 2 nokta, alt satırda 1 çubuk ile 3 nokta olan Maya sayısı kaçtır? (üst satır × 20)",
+    "c": "48",
+    "h": "2 × 20 + (5 + 3) = 40 + 8 = 48."
+   },
+   "kaynak": "Wikipedia (Maya numerals, Mesoamerican Long Count calendar); ilk sıfır kullanımının kökeni tartışmalı"
+  },
+  {
+   "id": "cusco",
+   "etiket": "Cusco",
+   "ikon": "dag",
+   "tur": "Tarihi şehir · Güney Amerika",
+   "ad": "Cusco · İnka",
+   "yer": "Peru, And Dağları",
+   "sayilar": [
+    {
+     "d": "≈ 3.400 m",
+     "e": "şehrin ortalama rakımı"
+    },
+    {
+     "d": "10 tabanlı",
+     "e": "kipu düğüm sistemi"
+    }
+   ],
+   "mat": "İnkalar yazı yerine **kipu**: düğümlü iplerle onluk sistemde kayıt tuttu. Düğümün ip üzerindeki yeri birler, onlar, yüzler basamağını verir; **boş yer sıfırdır**. Örnek: 201 = iki düğüm, boşluk, bir 8 şekilli düğüm.",
+   "dene": {
+    "s": "Bir kipu ipinde yüzler yerinde 3 düğüm, onlar yerinde boşluk, birler yerinde 4 kez sarılmış uzun düğüm var. Sayı kaçtır?",
+    "c": "304",
+    "h": "3 × 100 + 0 × 10 + 4 = 304."
+   },
+   "kaynak": "Britannica (quipu, Cuzco); kipu kullanım başlangıcı Britannica'da yaklaşık MÖ 2500 olarak geçer"
+  },
+  {
+   "id": "titicaca",
+   "etiket": "Titicaca Gölü",
+   "ikon": "gol",
+   "tur": "Göl · Güney Amerika",
+   "ad": "Titicaca Gölü",
+   "yer": "Peru–Bolivya sınırında, And Dağları",
+   "sayilar": [
+    {
+     "d": "≈ 3.810 m",
+     "e": "rakım (deniz seviyesinden)"
+    },
+    {
+     "d": "≈ 8.372 km²",
+     "e": "alan"
+    }
+   ],
+   "mat": "Ticari gemilerle gezilen **en yüksek göl** olarak bilinir. Rakımı Everest'in yaklaşık **%43'ü** kadardır; bu yükseklikte hava belirgin biçimde seyrektir.",
+   "dene": {
+    "s": "Titicaca'nın alanı ≈ 8.372 km². Bu alan kenar uzunluğu kaç km olan bir kareye yaklaşık eşittir?",
+    "c": "≈ 91,5 km",
+    "h": "√8.372 ≈ 91,5 km."
+   },
+   "kaynak": "Wikipedia (Lake Titicaca: 3.812 m, 8.372 km²); 'en yüksek' iddiası yalnızca ticari gemiler için"
+  },
+  {
+   "id": "angel",
+   "etiket": "Angel Şelalesi",
+   "ikon": "dag",
+   "tur": "Şelale · Güney Amerika",
+   "ad": "Angel Şelalesi",
+   "yer": "Venezuela, Canaima Ulusal Parkı",
+   "sayilar": [
+    {
+     "d": "≈ 979 m",
+     "e": "toplam yükseklik"
+    },
+    {
+     "d": "807 m",
+     "e": "kesintisiz düşüş"
+    }
+   ],
+   "mat": "Hava direnci yok sayılırsa serbest düşme **h = ½·g·t²** ile bulunur: t = √(2h ÷ g). 807 m için t ≈ √(2 × 807 ÷ 9,81) ≈ **12,8 sn**. Gerçekte su havada dağılıp sise dönüşür.",
+   "dene": {
+    "s": "Hava direnci yok sayılsın, g ≈ 10 m/s² alınsın. Bir cisim 4 saniyede kaç metre düşer? (h = ½·g·t²)",
+    "c": "80 m",
+    "h": "½ × 10 × 4² = 5 × 16 = 80 m."
+   },
+   "kaynak": "Wikipedia (Angel Falls); en yüksek şelale unvanı ölçümlere göre tartışmalı (Tugela ile birlikte anılır), 12,8 sn kaba hesap"
+  },
+  {
+   "id": "atacama",
+   "etiket": "Atacama Çölü",
+   "ikon": "dag",
+   "tur": "Çöl · Güney Amerika",
+   "ad": "Atacama Çölü",
+   "yer": "Kuzey Şili; Chajnantor platosunda ALMA gözlemevi",
+   "sayilar": [
+    {
+     "d": "1–15 mm/yıl",
+     "e": "yıllık yağış, bölgeye göre"
+    },
+    {
+     "d": "66 anten",
+     "e": "ALMA, rakım ≈ 5.059 m"
+    }
+   ],
+   "mat": "Kutup dışı çöllerin **en kurağı** sayılır; temiz ve kuru gökyüzü teleskoplar için ideal. Gökbilimde mesafe **ışık yılı** ile verilir: 1 ışık yılı ≈ 9,46 trilyon km; en yakın yıldız Proxima ≈ 4,24 ışık yılı, yani ≈ 40 trilyon km.",
+   "dene": {
+    "s": "Işık saniyede ≈ 300.000 km gider. Bir günde (86.400 sn) kaç km yol alır?",
+    "c": "≈ 25,9 milyar km",
+    "h": "300.000 × 86.400 = 25.920.000.000 km."
+   },
+   "kaynak": "Wikipedia (Atacama Desert, ALMA, Light-year); yağış bölgeye göre 1–15 mm arası değişir"
+  },
+  {
+   "id": "hawaii",
+   "etiket": "Hawaii",
+   "ikon": "dag",
+   "tur": "Yanardağ · Büyük Okyanus",
+   "ad": "Mauna Kea · Hawaii",
+   "yer": "Hawaii Adası, ABD; okyanus tabanından yükselir",
+   "sayilar": [
+    {
+     "d": "≈ 4.205 m",
+     "e": "deniz seviyesinden"
+    },
+    {
+     "d": "≈ 10.211 m",
+     "e": "okyanus tabanından"
+    }
+   ],
+   "mat": "Everest'in 8.848,86 m'si **deniz seviyesinden** ölçülür. Mauna Kea'yı tabanından ölçersek ≈ 10.000 m'yi aşar ve Everest'ten **yaklaşık 1.100–1.400 m** yüksek çıkar. Yani yükseklik, **başlangıç noktasının** seçimine bağlıdır.",
+   "dene": {
+    "s": "Mauna Kea tabandan ≈ 10.211 m, deniz seviyesinden ≈ 4.205 m yüksekse kaç metresi suyun altındadır?",
+    "c": "≈ 6.000 m",
+    "h": "10.211 − 4.205 = 6.006 m ≈ 6.000 m."
+   },
+   "kaynak": "USGS (deniz seviyesinden 4.205 m, tabandan ≈ 10.211 m); taban tanımına göre değer değişir"
   }
  ]
 }
