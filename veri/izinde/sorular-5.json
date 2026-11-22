@@ -1110,7 +1110,7 @@
    "zorluk": 1,
    "s": "Dört kenarı eşit olan ve dört açısı da dik olan dörtgenin özel adı nedir?",
    "o": [
-    "Yamuk",
+    "Beşgen",
     "Üçgen",
     "Altıgen",
     "Kare"
@@ -1126,7 +1126,7 @@
    "s": "Dört açısı da dik olan ve komşu kenarları farklı uzunlukta olan dörtgen aşağıdakilerden hangisidir?",
    "o": [
     "Kare",
-    "Eşkenar dörtgen",
+    "Üçgen",
     "Beşgen",
     "Dikdörtgen"
    ],
@@ -1185,15 +1185,15 @@
    "id": "5-0078",
    "konu": "5.3.6",
    "zorluk": 2,
-   "s": "Dört kenarı eşit olan ancak açıları dik olmayan dörtgen aşağıdakilerden hangisidir?",
+   "s": "Aşağıdakilerden hangisi karenin özelliği değildir?",
    "o": [
-    "Kare",
-    "Dikdörtgen",
-    "Yamuk",
-    "Eşkenar dörtgen"
+    "Dört kenarı eşittir.",
+    "Dört açısı da dik açıdır.",
+    "Karşılıklı kenarları paralel değildir.",
+    "Dört köşesi vardır."
    ],
-   "c": 3,
-   "a": "Dört kenarı eşit olan, açıları dik olmayan dörtgen eşkenar dörtgendir. Açıları dik olsaydı kare olurdu.",
+   "c": 2,
+   "a": "Karenin dört kenarı eşit, dört açısı dik açıdır ve karşılıklı kenarları paraleldir. Bu yüzden \"karşılıklı kenarları paralel değildir\" ifadesi yanlıştır.",
    "kaynak": "ozgun"
   },
   {
@@ -1261,7 +1261,7 @@
    "id": "5-0083",
    "konu": "5.3.6",
    "zorluk": 2,
-   "s": "Çevresi $28$ cm olan bir eşkenar dörtgenin bir kenarı kaç cm'dir?",
+   "s": "Çevresi $28$ cm olan bir karenin bir kenarı kaç cm'dir?",
    "o": [
     "$14$",
     "$56$",
@@ -1269,7 +1269,7 @@
     "$7$"
    ],
    "c": 3,
-   "a": "Eşkenar dörtgenin dört kenarı eşittir. Bir kenar $28\\div4=7$ cm'dir.",
+   "a": "Karenin dört kenarı eşittir. Bir kenar $28\\div4=7$ cm'dir.",
    "kaynak": "ozgun"
   },
   {
