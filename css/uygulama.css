@@ -1556,3 +1556,4 @@ html.mf-gece .kd .ks-kapak{fill:#2A3470}html.mf-gece .kd .ks-direk{stroke:#2A347
 .kd .dj-birim{fill:var(--kd-ince);font-size:10.5px;font-weight:700;font-family:Roboto,system-ui,sans-serif}
 .kd .dj-yazi{fill:var(--kd-ince);font-size:12px;font-weight:700;text-anchor:end;font-family:Roboto,system-ui,sans-serif}.kd .dj-tamam{fill:var(--kd-v)}
 body.lv-odak .kd .dj-panel{display:none}
+.iz-eser{margin:4px 0 12px;padding:10px 8px 8px;border-radius:14px;background:rgba(255,248,234,.92)}.iz-eser img{display:block;width:100%;height:auto}.iz-eser figcaption{margin-top:4px;text-align:center;font-size:12.5px;color:#5A3A10}
