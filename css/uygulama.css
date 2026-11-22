@@ -1668,3 +1668,33 @@ html.mf-gece #pm-sinav{background-color:#232B52;border-color:#3A4BA0;color:#E6EA
 .iz-coz.d summary .ic{color:#1FA463}.iz-coz.y summary .ic{color:#E5484D}
 html.mf-gece .kt-bs .ic,html.mf-gece #pm-ses-p em .ic{color:#9FB2FF}
 details.pm-rehber>summary{display:flex;align-items:center;gap:8px}details.pm-rehber>summary::after{content:"";display:inline-block;width:7px;height:7px;margin-left:auto;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s;opacity:.7;flex:none}details[open].pm-rehber>summary::after{transform:rotate(-135deg) translate(-2px,0)}
+/* ===== 22 Kasım: tutarlılık 2. tur ===== */
+/* 1) analiz: ana düğme turuncu (koyu içerik kutusu bilerek kaldı); başlık ikonu turuncu */
+.sheet-tamam{background:#FF8A1F;box-shadow:0 3px 10px rgba(255,138,31,.28)}
+.sheet-ust b .ic{color:#FF8A1F}
+/* 2) tek tip ikincil düğme: çerçeveli, beyaz zemin, mavi yazı */
+.sn-gec,.an-vazgec,.mt-btn2,#sb-vazgec{display:block;width:100%;min-height:46px;margin:10px 0 0;padding:11px;border:1.5px solid #C9D2F5;border-radius:14px;background:#fff;color:#1E3BD6;font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+html.mf-gece .sn-gec,html.mf-gece .an-vazgec,html.mf-gece .mt-btn2,html.mf-gece #sb-vazgec{background:#232B52;border-color:#3A4BA0;color:#B7C5FF}
+.iz-yak,.iz-gec-btn,.iz-onceki button{border:1.5px solid #C9D2F5!important;background:#fff!important;color:#1E3BD6!important;border-radius:12px!important;font-weight:700}
+html.mf-gece .iz-yak,html.mf-gece .iz-gec-btn,html.mf-gece .iz-onceki button{background:#232B52!important;border-color:#3A4BA0!important;color:#B7C5FF!important}
+/* 3) bildirim saatleri: diğer seçimlerle aynı görünüm */
+#bl-s1,#bl-s2{-webkit-appearance:none;appearance:none;width:100%;min-height:46px;border:1px solid #C9D2F5;border-radius:14px;padding:8px 34px 8px 14px;font:inherit;font-size:15px;font-weight:700;color:#1C2E8A;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%237A8099' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 12px center}
+html.mf-gece #bl-s1,html.mf-gece #bl-s2{background-color:#232B52;border-color:#3A4BA0;color:#E6EAFA}
+/* 4) soru ekranı gece: ilerleme ve şık harfleri görünür */
+html.mf-gece .iz-noktalar i{background:#4A5590}
+html.mf-gece .iz-noktalar i.su{outline-color:#9FB2FF}
+html.mf-gece .iz-sec b{background:#2C3670;color:#DCE3FF}
+/* 5) soru metni satır yüksekliği (KaTeX ile uyumlu) */
+.iz-s{line-height:1.65}.iz-s .katex{line-height:1.2}
+/* 6) sıkı mod kedi kutusu: kahverengi yerine marka renkleri */
+.pm-sik-k .sik-sahne{background:radial-gradient(circle at 50% 62%,#FFE2C2,#FFF4E8 72%)}
+html.mf-gece .pm-sik-k .sik-sahne{background:radial-gradient(circle at 50% 62%,#3A4590,#1F2752 72%)}
+/* ayarlardan açılan sınıf/bildirim pencereleri ayarların üstünde */
+#sn-p,#bl-p,#bl-q{z-index:9995}
+/* onay pencereleri: ana düğme turuncu, ikincil çerçeveli (sil kırmızı kalır: geri alınamaz işlem) */
+#onay-tamam,#not-gonder,#dnm-kaydet{background:#FF8A1F;color:#fff;box-shadow:0 3px 10px rgba(255,138,31,.28)}
+#onay-tamam:disabled,#not-gonder:disabled,#dnm-kaydet:disabled{opacity:.45;box-shadow:none}
+#onay-vazgec,#not-gec,#dnm-gec,#sil-vazgec{background:#fff;color:#1E3BD6;border:1.5px solid #C9D2F5}
+html.mf-gece #onay-vazgec,html.mf-gece #not-gec,html.mf-gece #dnm-gec,html.mf-gece #sil-vazgec{background:#232B52;color:#B7C5FF;border-color:#3A4BA0}
+html.mf-gece #alarm-b,html.mf-gece .onay-t{color:#9FB2FF}
+html.mf-gece #onay-tamam:disabled,html.mf-gece #not-gonder:disabled,html.mf-gece #dnm-kaydet:disabled{background:#2C3670;color:#8E98C4;opacity:1}

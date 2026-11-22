@@ -57,6 +57,11 @@ function ksKapat(sayfa, kapatFn, perde){
   // Arka plan sesi sayfası: kapatma yolu = Tamam düğmesi (sesKapat)
   var sp=document.getElementById('pm-ses-p');
   if(sp)ksKapat(sp,function(){var t=document.getElementById('ses-tamam');if(t)t.click();},sp);
+  // Sınıf ve bildirim pencereleri: kapatma yolu = kendi Vazgeç/geri yolu
+  var sn=document.getElementById('sn-p');
+  if(sn)ksKapat(sn,function(){var g=document.getElementById('sn-gec');if(g)g.click();},sn);
+  ['bl-p','bl-q'].forEach(function(id){var e=document.getElementById(id);if(!e)return;
+    ksKapat(e,function(){e.dispatchEvent(new MouseEvent('click',{bubbles:true}));},e);}); // perdeye dokunma = kendi kapatma yolu
   // Sayaçsız çalışma ekleme: kapatma yolu = Vazgeç düğmesi (kapat)
   var el=document.getElementById('mf-elle');
   if(el){var pn=el.querySelector('.el-panel'),pe=el.querySelector('.el-perde');
