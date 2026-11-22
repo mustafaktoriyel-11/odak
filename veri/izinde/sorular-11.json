@@ -1703,6 +1703,399 @@
    "c": 2,
    "a": "Dışbükey çokgende tüm köşegenler çokgenin içinde kalır. Bir köşegen dışarıda kalıyorsa çokgen içbükeydir.",
    "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0110",
+   "konu": "11.2.2",
+   "zorluk": 1,
+   "s": "Tam olarak $2$ simetri ekseni olan ve köşegenleri eş olmayan dörtgen aşağıdakilerden hangisidir?",
+   "o": [
+    "Eşkenar dörtgen",
+    "Kare",
+    "Dikdörtgen",
+    "İkizkenar yamuk",
+    "Paralelkenar"
+   ],
+   "c": 0,
+   "a": "Karenin $4$, dikdörtgenin ve eşkenar dörtgenin $2$ simetri ekseni vardır. Dikdörtgenin köşegenleri eş, eşkenar dörtgeninki eş değildir; yanıt eşkenar dörtgendir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0111",
+   "konu": "11.2.2",
+   "zorluk": 1,
+   "s": "Şekildeki $ABCD$ dörtgeninde köşegenler $O$ noktasında kesişmektedir ve $|AO|=|BO|=|CO|=|DO|=5$ cm'dir. Dörtgen hakkında başka bilgi verilmediğine göre bu dörtgen en genel hâliyle aşağıdakilerden hangisidir?",
+   "o": [
+    "Paralelkenar",
+    "Dikdörtgen",
+    "Eşkenar dörtgen",
+    "Kare",
+    "Deltoid"
+   ],
+   "c": 1,
+   "a": "$|AO|=|CO|$ ve $|BO|=|DO|$ olduğundan köşegenler birbirini ortalar; dörtgen paralelkenardır. $|AC|=|BD|=10$ cm ile köşegenler eş olduğundan dörtgen dikdörtgendir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"40,105 200,105 200,35 40,35\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><line x1=\"40.0\" y1=\"105.0\" x2=\"200.0\" y2=\"35.0\" stroke=\"#FF8A1F\" stroke-width=\"2\"/><line x1=\"200.0\" y1=\"105.0\" x2=\"40.0\" y2=\"35.0\" stroke=\"#FF8A1F\" stroke-width=\"2\"/><text x=\"30\" y=\"118\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"210\" y=\"118\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"210\" y=\"31\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"30\" y=\"31\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"126\" y=\"86\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">O</text><text x=\"80\" y=\"82\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">5</text><text x=\"160\" y=\"82\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">5</text><text x=\"160\" y=\"60\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">5</text><text x=\"80\" y=\"60\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">5</text></svg>"
+  },
+  {
+   "id": "11-0112",
+   "konu": "11.2.2",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi bir paralelkenarın dikdörtgen olması için yeterli DEĞİLDİR?",
+   "o": [
+    "Bir iç açısının $90^\\circ$ olması",
+    "Köşegenlerinin eş olması",
+    "Köşegenlerinin birbirine dik olması",
+    "Komşu iki iç açısının eşit olması",
+    "Bütün iç açılarının eşit olması"
+   ],
+   "c": 2,
+   "a": "Paralelkenarda bir açı $90^\\circ$ ise, köşegenler eşse ya da komşu açılar eşitse (bütünler oldukları için $90^\\circ$ olur) dikdörtgen elde edilir. Köşegenlerin dik olması ise paralelkenarı eşkenar dörtgen yapar.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0113",
+   "konu": "11.2.2",
+   "zorluk": 2,
+   "s": "Karşılıklı kenarları eşit uzunlukta $30$ cm ve $40$ cm olan dört çubuk, köşelerinden menteşelenerek dikdörtgen biçimli bir çerçeve oluşturuyor. Çerçeve, köşelerindeki menteşeler oynatılarak eğiliyor ve çubuklar aynı kalarak bir paralelkenar hâline geliyor. Eğilme sırasında aşağıdakilerden hangisi her zaman korunur?",
+   "o": [
+    "Köşegenlerin eş olması",
+    "Karşılıklı kenarların paralel olması",
+    "Çerçevenin alanı",
+    "Köşegenlerin birbirine dik olması",
+    "Komşu açıların eşit olması"
+   ],
+   "c": 1,
+   "a": "Karşılıklı kenar çiftleri eşit kaldıkça şekil bir paralelkenardır ve karşılıklı kenarlar paralel kalır. Eğilince açılar $90^\\circ$'den ayrılır; köşegenler eş olmaz, komşu açılar eşit olmaz ve alan küçülür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0114",
+   "konu": "11.2.2",
+   "zorluk": 2,
+   "s": "Ali, \"Köşegenleri birbirine dik olan her dörtgen eşkenar dörtgendir.\" diyor. Aşağıdakilerden hangisi Ali'nin iddiasına karşı örnek olur?",
+   "o": [
+    "Kenarı $4$ cm olan bir kare",
+    "Kenarı $5$ cm olan bir eşkenar dörtgen",
+    "Kenar uzunlukları $3$ cm ve $5$ cm olan bir dikdörtgen",
+    "Kenar uzunlukları $4$ cm ve $6$ cm olan bir paralelkenar",
+    "Kenar uzunlukları $3,3,5,5$ cm olan ve köşegenleri dik olan bir deltoid"
+   ],
+   "c": 4,
+   "a": "Karşı örnek, köşegenleri dik olduğu hâlde eşkenar dörtgen olmayan bir dörtgen olmalıdır; $3,3,5,5$ kenarlı deltoid böyledir. Kare ve eşkenar dörtgen iddiayı destekler; dikdörtgen ve genel paralelkenarın köşegenleri dik değildir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0115",
+   "konu": "11.2.2",
+   "zorluk": 2,
+   "s": "Şekildeki $ABCD$ dikdörtgeninin köşegenleri $O$ noktasında kesişmekte, $m(\\widehat{AOB})=60^\\circ$ ve $|AC|=12$ cm'dir. Bu dikdörtgenin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$36\\sqrt{3}$",
+    "$72$",
+    "$36$",
+    "$72\\sqrt{3}$",
+    "$18\\sqrt{3}$"
+   ],
+   "c": 0,
+   "a": "$|OA|=|OB|=6$ ve $m(\\widehat{AOB})=60^\\circ$ olduğundan $AOB$ eşkenar üçgendir; $|AB|=6$ cm. $|BC|=\\sqrt{12^2-6^2}=6\\sqrt{3}$ cm olduğundan alan $6\\cdot6\\sqrt{3}=36\\sqrt{3}$ olur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"63,105 63,39 177,39 177,105\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><line x1=\"63.0\" y1=\"105.0\" x2=\"177.0\" y2=\"39.0\" stroke=\"#FF8A1F\" stroke-width=\"2\"/><line x1=\"63.0\" y1=\"39.0\" x2=\"177.0\" y2=\"105.0\" stroke=\"#FF8A1F\" stroke-width=\"2\"/><text x=\"53\" y=\"115\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"53\" y=\"38\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"187\" y=\"38\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"187\" y=\"115\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"124\" y=\"66\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">O</text><text x=\"98\" y=\"73\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">60°</text><text x=\"120\" y=\"126\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">|AC| = 12 cm</text></svg>"
+  },
+  {
+   "id": "11-0116",
+   "konu": "11.2.2",
+   "zorluk": 3,
+   "s": "Yamuk, ikizkenar yamuk, paralelkenar, dikdörtgen, eşkenar dörtgen, deltoid ve kare şeklindeki genel durumdaki yedi dörtgenden kaç tanesinde köşegenler birbirini ortalar ve köşegenlerden en az biri bir simetri eksenidir?",
+   "o": [
+    "$1$",
+    "$2$",
+    "$3$",
+    "$4$",
+    "$5$"
+   ],
+   "c": 1,
+   "a": "Köşegenleri birbirini ortalayanlar paralelkenar, dikdörtgen, eşkenar dörtgen ve karedir. Bunlardan yalnız eşkenar dörtgen ve karede köşegen simetri eksenidir; deltoidde köşegenler birbirini ortalamaz.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0117",
+   "konu": "11.2.2",
+   "zorluk": 3,
+   "s": "Şekildeki $ABCD$ paralelkenarında $|AB|=(3x-2)$ cm, $|BC|=(x+10)$ cm, $|AC|=16$ cm'dir ve köşegenler birbirine diktir. $|BD|$ kaç cm'dir?",
+   "o": [
+    "$16$",
+    "$8\\sqrt{3}$",
+    "$16\\sqrt{3}$",
+    "$12\\sqrt{3}$",
+    "$32$"
+   ],
+   "c": 2,
+   "a": "Köşegenleri dik olan paralelkenar eşkenar dörtgendir: $3x-2=x+10$ ise $x=6$ ve kenar $16$ cm olur. Yarım köşegenler $8$ ile $\\sqrt{16^2-8^2}=8\\sqrt{3}$ olduğundan $|BD|=16\\sqrt{3}$ cm'dir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"120,19 200,65 120,111 40,65\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><line x1=\"120.0\" y1=\"19.0\" x2=\"120.0\" y2=\"111.0\" stroke=\"#FF8A1F\" stroke-width=\"2\"/><line x1=\"200.0\" y1=\"65.0\" x2=\"40.0\" y2=\"65.0\" stroke=\"#FF8A1F\" stroke-width=\"2\"/><text x=\"120\" y=\"12\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"212\" y=\"69\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"120\" y=\"125\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"28\" y=\"69\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"175\" y=\"34\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">3x − 2</text><text x=\"175\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">x + 10</text><text x=\"131\" y=\"50\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">16</text></svg>"
+  },
+  {
+   "id": "11-0118",
+   "konu": "11.2.3",
+   "zorluk": 1,
+   "s": "Şekilde numaralanmış üç çokgen verilmiştir. Bunlardan hangileri dışbükeydir?",
+   "o": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "c": 2,
+   "a": "Dışbükey çokgende hiçbir iç açı $180^\\circ$'den büyük değildir. II numaralı çokgenin üstündeki çentik köşesinde içe dönük bir açı vardır; I ve III dışbükeydir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"12,60 30,25 62,25 80,60 62,95 30,95\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><polygon points=\"90,100 92,28 118,64 146,28 152,100\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><polygon points=\"165,100 178,32 232,48 228,100\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><text x=\"46\" y=\"118\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">I</text><text x=\"121\" y=\"118\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">II</text><text x=\"197\" y=\"118\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">III</text></svg>"
+  },
+  {
+   "id": "11-0119",
+   "konu": "11.2.3",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi içbükey bir çokgenin özelliği DEĞİLDİR?",
+   "o": [
+    "En az bir iç açısı $180^\\circ$'den büyüktür.",
+    "En az bir köşegeni çokgenin dışında kalır.",
+    "İçindeki iki noktayı birleştiren doğru parçası çokgenin dışına çıkabilir.",
+    "Bütün köşegenleri çokgenin içinde kalır.",
+    "En az $4$ kenarı vardır."
+   ],
+   "c": 3,
+   "a": "İçbükey çokgende içe dönük bir köşe bulunur; bu yüzden bir iç açı $180^\\circ$'den büyüktür ve en az bir köşegen dışarıda kalır. Bütün köşegenlerin içte kalması dışbükey çokgenlerin özelliğidir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0120",
+   "konu": "11.2.3",
+   "zorluk": 1,
+   "s": "Aşağıdaki çokgenlerden hangisinin içbükey olan bir örneği yoktur?",
+   "o": [
+    "Dörtgen",
+    "Beşgen",
+    "Altıgen",
+    "Sekizgen",
+    "Üçgen"
+   ],
+   "c": 4,
+   "a": "Üçgenin iç açıları toplamı $180^\\circ$'dir; bir açı $180^\\circ$'den büyük olsaydı toplam aşılırdı. Bu yüzden her üçgen dışbükeydir; dörtgenden itibaren içbükey örnekler çizilebilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0121",
+   "konu": "11.2.3",
+   "zorluk": 2,
+   "s": "Şekildeki $ABCDE$ beşgeninin köşegenlerinden kaç tanesi çokgenin dışında kalır?",
+   "o": [
+    "$0$",
+    "$1$",
+    "$2$",
+    "$3$",
+    "$4$"
+   ],
+   "c": 3,
+   "a": "Beşgenin $5$ köşegeni vardır: $AC$ ve $CE$ çokgenin içinde kalır. İçe dönük $C$ köşesinin üstünden geçen $AD$, $BD$ ve $BE$ köşegenleri ise çokgenin dışına taşar.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"20,110 60,30 120,70 180,30 220,110\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><text x=\"12\" y=\"118\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"60\" y=\"22\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"120\" y=\"88\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"180\" y=\"22\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"230\" y=\"118\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">E</text></svg>"
+  },
+  {
+   "id": "11-0122",
+   "konu": "11.2.3",
+   "zorluk": 2,
+   "s": "Bir içbükey beşgenin iç açılarının ölçüleri $40^\\circ$, $70^\\circ$, $x$, $2x$ ve $220^\\circ$'dir. $x$ kaçtır?",
+   "o": [
+    "$70^\\circ$",
+    "$10^\\circ$",
+    "$35^\\circ$",
+    "$60^\\circ$",
+    "$190^\\circ$"
+   ],
+   "c": 0,
+   "a": "Beşgenin iç açıları toplamı $3\\cdot180^\\circ=540^\\circ$'dir. $40+70+220+3x=540$ ise $3x=210$ ve $x=70^\\circ$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0123",
+   "konu": "11.2.3",
+   "zorluk": 2,
+   "s": "Köşeleri $A(0,0)$, $B(10,0)$, $C(10,8)$, $D(5,k)$ ve $E(0,8)$ olan $ABCDE$ beşgeni dışbükey olacağına göre $k$'nın alabileceği en küçük tam sayı değeri kaçtır?",
+   "o": [
+    "$6$",
+    "$7$",
+    "$8$",
+    "$9$",
+    "$10$"
+   ],
+   "c": 3,
+   "a": "$D$ noktası $[CE]$ doğru parçasının (yani $y=8$ doğrusunun) üstünde kalırsa köşe dışa dönük olur: $k>8$. $k=8$ için $C,D,E$ doğrusal olup çokgen dörtgene dönüşür; bu yüzden en küçük tam sayı $9$'dur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0124",
+   "konu": "11.2.3",
+   "zorluk": 3,
+   "s": "Şekildeki $ABCDEF$ çokgeninin köşegenlerinden kaç tanesi (uç noktaları dışında) tamamen çokgenin içinde kalır?",
+   "o": [
+    "$3$",
+    "$4$",
+    "$5$",
+    "$6$",
+    "$7$"
+   ],
+   "c": 2,
+   "a": "Altıgenin $9$ köşegeni vardır: $AC$, $AD$, $AE$, $BD$ ve $DF$ çokgenin içindedir. $BE$, $BF$, $CE$ ve $CF$ ise içbükey $D$ köşesinin çevresinden dışarı taşar.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"60,118 180,118 180,78 100,78 100,18 60,18\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><text x=\"52\" y=\"127\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"188\" y=\"127\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"190\" y=\"82\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"108\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"108\" y=\"16\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">E</text><text x=\"52\" y=\"16\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">F</text><text x=\"120\" y=\"112\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">6</text><text x=\"190\" y=\"100\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">2</text><text x=\"140\" y=\"72\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">4</text><text x=\"112\" y=\"50\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">3</text><text x=\"80\" y=\"12\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">2</text><text x=\"50\" y=\"70\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\">5</text></svg>"
+  },
+  {
+   "id": "11-0125",
+   "konu": "11.2.3",
+   "zorluk": 3,
+   "s": "I. Dışbükey bir çokgenin bütün iç açıları $180^\\circ$'den küçüktür.\nII. İki iç açısı $180^\\circ$'den büyük olan bir dörtgen çizilebilir.\nIII. Üç iç açısı $180^\\circ$'den büyük olan bir beşgen çizilebilir.\nIV. İki iç açısı $180^\\circ$'den büyük olan bir çokgenin en az $5$ kenarı vardır.\n\nYukarıdaki ifadelerden hangileri doğrudur?",
+   "o": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "I ve IV",
+    "II, III ve IV"
+   ],
+   "c": 3,
+   "a": "Dışbükey çokgende her iç açı $180^\\circ$'den küçüktür. $k$ tane içe dönük açısı olan çokgenin en az $k+3$ kenarı vardır; bu yüzden iki içe dönük açı için en az $5$ kenar gerekir (II ve III yanlış, IV doğru).",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0126",
+   "konu": "11.2.4",
+   "zorluk": 1,
+   "s": "Şekildeki dışbükey $ABCDEF$ altıgeninde beş iç açının ölçüsü verilmiştir. $x$ kaç derecedir?",
+   "o": [
+    "$125$",
+    "$130$",
+    "$140$",
+    "$145$",
+    "$135$"
+   ],
+   "c": 4,
+   "a": "Altıgenin iç açıları toplamı $(6-2)\\cdot180^\\circ=720^\\circ$'dir. $110+120+130+100+125=585$ olduğundan $x=720-585=135^\\circ$ bulunur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"87.5809,116 141.517,116 159.964,65.3171 125.294,24 71.3588,24 60,88.4191\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><text x=\"96\" y=\"101\" font-size=\"9\" text-anchor=\"middle\" fill=\"#FF8A1F\">110°</text><text x=\"84\" y=\"128\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"129\" y=\"103\" font-size=\"9\" text-anchor=\"middle\" fill=\"#FF8A1F\">120°</text><text x=\"147\" y=\"127\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"140\" y=\"71\" font-size=\"9\" text-anchor=\"middle\" fill=\"#FF8A1F\">130°</text><text x=\"169\" y=\"68\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"118\" y=\"46\" font-size=\"9\" text-anchor=\"middle\" fill=\"#FF8A1F\">100°</text><text x=\"128\" y=\"20\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"83\" y=\"43\" font-size=\"9\" text-anchor=\"middle\" fill=\"#FF8A1F\">125°</text><text x=\"66\" y=\"21\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">E</text><text x=\"79\" y=\"85\" font-size=\"9\" text-anchor=\"middle\" fill=\"#FF8A1F\">x°</text><text x=\"51\" y=\"95\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">F</text></svg>"
+  },
+  {
+   "id": "11-0127",
+   "konu": "11.2.4",
+   "zorluk": 1,
+   "s": "Dışbükey bir üçgenin ve dışbükey bir yirmigenin dış açılarının (her köşede bir dış açı alınarak) toplamları arasındaki fark kaç derecedir?",
+   "o": [
+    "$0^\\circ$",
+    "$360^\\circ$",
+    "$180^\\circ$",
+    "$3060^\\circ$",
+    "$3240^\\circ$"
+   ],
+   "c": 0,
+   "a": "Dışbükey her çokgenin dış açıları toplamı kenar sayısından bağımsız olarak $360^\\circ$'dir. Bu yüzden iki toplamın farkı $0^\\circ$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0128",
+   "konu": "11.2.4",
+   "zorluk": 1,
+   "s": "Düzgün sekizgenin kaç simetri ekseni vardır?",
+   "o": [
+    "$1$",
+    "$8$",
+    "$2$",
+    "$4$",
+    "$16$"
+   ],
+   "c": 1,
+   "a": "Kenar sayısı $n$ olan düzgün çokgenin tam $n$ simetri ekseni vardır. Düzgün sekizgende $4$ eksen karşılıklı köşelerden, $4$ eksen karşılıklı kenarların orta noktalarından geçer.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0129",
+   "konu": "11.2.4",
+   "zorluk": 2,
+   "s": "Bir robot başladığı noktadan $2$ m ilerleyip sola $24^\\circ$ dönüyor ve bu işlemi tekrar tekrar yapıyor. Robot başladığı noktaya ve başladığı yöne ilk kez döndüğünde toplam kaç metre yol almış olur?",
+   "o": [
+    "$15$",
+    "$24$",
+    "$30$",
+    "$36$",
+    "$48$"
+   ],
+   "c": 2,
+   "a": "Robotun izlediği yol düzgün bir çokgendir ve dış açısı $24^\\circ$'dir. Kenar sayısı $360\\div24=15$ olduğundan toplam yol $15\\cdot2=30$ m'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0130",
+   "konu": "11.2.4",
+   "zorluk": 2,
+   "s": "Bir dışbükey çokgenin köşegen sayısı $35$'tir. Bu çokgenin iç açıları toplamı kaç derecedir?",
+   "o": [
+    "$1080^\\circ$",
+    "$1260^\\circ$",
+    "$1620^\\circ$",
+    "$1440^\\circ$",
+    "$1800^\\circ$"
+   ],
+   "c": 3,
+   "a": "$\\dfrac{n(n-3)}{2}=35$ ise $n(n-3)=70$ ve $n=10$ olur. İç açılar toplamı $(10-2)\\cdot180^\\circ=1440^\\circ$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0131",
+   "konu": "11.2.4",
+   "zorluk": 2,
+   "s": "Dışbükey bir beşgenin dış açılarının ölçüleri $1:2:3:4:5$ oranındadır. Bu beşgenin en büyük iç açısı kaç derecedir?",
+   "o": [
+    "$60^\\circ$",
+    "$108^\\circ$",
+    "$120^\\circ$",
+    "$132^\\circ$",
+    "$156^\\circ$"
+   ],
+   "c": 4,
+   "a": "Dış açılar toplamı $360^\\circ$ olduğundan $15k=360$ ve $k=24^\\circ$'dir. En büyük iç açı, en küçük dış açıya komşudur: $180^\\circ-24^\\circ=156^\\circ$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "11-0132",
+   "konu": "11.2.4",
+   "zorluk": 3,
+   "s": "Şekildeki $ABCDEF$ düzgün altıgeninin bir kenarı $4$ cm'dir. $A$, $C$ ve $E$ köşeleri birleştirilerek $ACE$ üçgeni elde ediliyor. Bu üçgenin alanı kaç $\\text{cm}^2$'dir?",
+   "o": [
+    "$12\\sqrt{3}$",
+    "$8\\sqrt{3}$",
+    "$16\\sqrt{3}$",
+    "$24\\sqrt{3}$",
+    "$12$"
+   ],
+   "c": 0,
+   "a": "Düzgün altıgenin iç açısı $120^\\circ$ olduğundan $|AC|=4\\sqrt{3}$ cm'dir ve $ACE$ eşkenar üçgendir. Alan $\\dfrac{\\sqrt{3}}{4}\\cdot(4\\sqrt{3})^2=12\\sqrt{3}$ $\\text{cm}^2$ olur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"80.1628,43 120,20 159.837,43 159.837,89 120,112 80.1628,89\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><line x1=\"80.2\" y1=\"43.0\" x2=\"159.8\" y2=\"43.0\" stroke=\"#FF8A1F\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><line x1=\"159.8\" y1=\"43.0\" x2=\"120.0\" y2=\"112.0\" stroke=\"#FF8A1F\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><line x1=\"120.0\" y1=\"112.0\" x2=\"80.2\" y2=\"43.0\" stroke=\"#FF8A1F\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><text x=\"70\" y=\"41\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"118\" y=\"12\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"170\" y=\"41\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"170\" y=\"99\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"122\" y=\"126\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">E</text><text x=\"70\" y=\"99\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">F</text></svg>"
+  },
+  {
+   "id": "11-0133",
+   "konu": "11.2.4",
+   "zorluk": 3,
+   "s": "$ABCDE$ düzgün beşgeninde $[AC]$ ile $[BE]$ köşegenleri $P$ noktasında kesişiyor. $m(\\widehat{APB})$ kaç derecedir?",
+   "o": [
+    "$72^\\circ$",
+    "$108^\\circ$",
+    "$96^\\circ$",
+    "$120^\\circ$",
+    "$144^\\circ$"
+   ],
+   "c": 1,
+   "a": "Düzgün beşgende $m(\\widehat{ABE})=m(\\widehat{BAC})=36^\\circ$ olduğundan $APB$ üçgeni ikizkenardır. Üçüncü açı $180^\\circ-2\\cdot36^\\circ=108^\\circ$ bulunur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"120,12 175.161,52.077 154.092,116.923 85.9085,116.923 64.8387,52.077\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><line x1=\"120.0\" y1=\"12.0\" x2=\"154.1\" y2=\"116.9\" stroke=\"#FF8A1F\" stroke-width=\"2\"/><line x1=\"175.2\" y1=\"52.1\" x2=\"64.8\" y2=\"52.1\" stroke=\"#FF8A1F\" stroke-width=\"2\"/><text x=\"120\" y=\"10\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"188\" y=\"36\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"172\" y=\"125\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"66\" y=\"125\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"52\" y=\"36\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">E</text><text x=\"143\" y=\"56\" font-size=\"11\" text-anchor=\"middle\" fill=\"#141B3F\">P</text></svg>"
   }
  ]
 }

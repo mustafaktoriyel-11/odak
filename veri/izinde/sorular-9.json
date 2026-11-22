@@ -1948,6 +1948,401 @@
    "c": 1,
    "a": "Üçgen eşitsizliğinden $12-7<|BC|<12+7$, yani $5<|BC|<19$ olur. Değerler $6,7,\\dots,18$ olup $13$ terimdir; ortalama $12$ olduğundan toplam $13\\cdot 12=156$.",
    "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0122",
+   "konu": "9.2.2",
+   "zorluk": 1,
+   "s": "$f(x)=-|x-3|+2$ fonksiyonunun görüntü kümesi aşağıdakilerden hangisidir?",
+   "o": [
+    "$(-\\infty,2]$",
+    "$[2,\\infty)$",
+    "$(-\\infty,3]$",
+    "$[3,\\infty)$",
+    "$\\mathbb{R}$"
+   ],
+   "c": 0,
+   "a": "$|x-3|\\ge 0$ olduğundan $-|x-3|\\le 0$ ve $f(x)\\le 2$ olur. Tepe noktası $(3,2)$ olup kollar aşağı bakar; görüntü kümesi $(-\\infty,2]$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0123",
+   "konu": "9.2.2",
+   "zorluk": 1,
+   "s": "Şekilde grafiği verilen mutlak değer fonksiyonu aşağıdakilerden hangisidir?",
+   "o": [
+    "$f(x)=|x-2|-3$",
+    "$f(x)=|x+2|-3$",
+    "$f(x)=|x+3|-2$",
+    "$f(x)=|x-3|+2$",
+    "$f(x)=-|x+2|+3$"
+   ],
+   "c": 1,
+   "a": "Tepe noktası $(-2,-3)$ olduğundan $f(x)=|x+2|-3$ biçimindedir. Kontrol: $f(0)=2-3=-1$ olup grafikteki $(0,-1)$ noktasıyla uyuşur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"30\" y1=\"40\" x2=\"232\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"140\" y1=\"126\" x2=\"140\" y2=\"6\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"226\" y=\"54\" font-size=\"11\" fill=\"#141B3F\">x</text><text x=\"126\" y=\"12\" font-size=\"11\" fill=\"#141B3F\">y</text><text x=\"128\" y=\"53\" font-size=\"10\" fill=\"#141B3F\">O</text><polyline points=\"50,40 104,94 194,4\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><circle cx=\"104\" cy=\"94\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"140\" cy=\"58\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"82\" y=\"109\" font-size=\"11\" fill=\"#141B3F\">(−2, −3)</text><text x=\"146\" y=\"72\" font-size=\"11\" fill=\"#141B3F\">(0, −1)</text></svg>"
+  },
+  {
+   "id": "9-0124",
+   "konu": "9.2.2",
+   "zorluk": 1,
+   "s": "$f(x)=|2x-10|$ fonksiyonunun $x<5$ için alacağı cebirsel biçim aşağıdakilerden hangisidir?",
+   "o": [
+    "$2x-10$",
+    "$-2x-10$",
+    "$-2x+10$",
+    "$2x+10$",
+    "$-x+5$"
+   ],
+   "c": 2,
+   "a": "$x<5$ iken $2x-10<0$ olur. Negatif ifadenin mutlak değeri ters işaretlisidir: $f(x)=-(2x-10)=-2x+10$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0125",
+   "konu": "9.2.2",
+   "zorluk": 2,
+   "s": "$f(x)=|2x+6|-4$ fonksiyonunun parçalı gösterimi aşağıdakilerden hangisidir?",
+   "o": [
+    "$x\\ge 3$ iken $2x-10$; $x<3$ iken $-2x+2$",
+    "$x\\ge -3$ iken $2x+10$; $x<-3$ iken $-2x-2$",
+    "$x\\ge -3$ iken $x-1$; $x<-3$ iken $-x-7$",
+    "$x\\ge -3$ iken $2x+2$; $x<-3$ iken $-2x-10$",
+    "$x\\ge -3$ iken $-2x-10$; $x<-3$ iken $2x+2$"
+   ],
+   "c": 3,
+   "a": "$2x+6\\ge 0$ yani $x\\ge -3$ için $f(x)=2x+6-4=2x+2$; $x<-3$ için $f(x)=-(2x+6)-4=-2x-10$ olur. $x=-3$ noktasında iki parça da $-4$ değerini verir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0126",
+   "konu": "9.2.2",
+   "zorluk": 2,
+   "s": "Şekilde grafiği verilen $f(x)=|ax+b|+c$ fonksiyonunun tepe noktası $(3,-2)$ ve $y$ eksenini kestiği nokta $(0,4)$\\'tür. $a>0$ ise $a\\cdot b$ kaçtır?",
+   "o": [
+    "$12$",
+    "$-6$",
+    "$6$",
+    "$-3$",
+    "$-12$"
+   ],
+   "c": 4,
+   "a": "Tepe noktasında $ax+b=0$ ve $c=-2$ olur; $3a+b=0$ ise $b=-3a$. $f(0)=|b|+c=3a-2=4$ ise $a=2$ ve $b=-6$. Buradan $a\\cdot b=-12$.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"20\" y1=\"75\" x2=\"232\" y2=\"75\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"126\" x2=\"50\" y2=\"6\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"226\" y=\"89\" font-size=\"11\" fill=\"#141B3F\">x</text><text x=\"36\" y=\"12\" font-size=\"11\" fill=\"#141B3F\">y</text><text x=\"38\" y=\"88\" font-size=\"10\" fill=\"#141B3F\">O</text><polyline points=\"42.5,0 95,105 147.5,0\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><circle cx=\"95\" cy=\"105\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"50\" cy=\"15\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"71\" y=\"121\" font-size=\"11\" fill=\"#141B3F\">(3, −2)</text><text x=\"58\" y=\"19\" font-size=\"11\" fill=\"#141B3F\">(0, 4)</text></svg>"
+  },
+  {
+   "id": "9-0127",
+   "konu": "9.2.2",
+   "zorluk": 2,
+   "s": "$f(x)=|4-2x|-3$ fonksiyonu aşağıdaki aralıkların hangisinde azalandır?",
+   "o": [
+    "$(-\\infty,2)$",
+    "$(2,\\infty)$",
+    "$(-\\infty,4)$",
+    "$(-\\infty,-2)$",
+    "$(-2,\\infty)$"
+   ],
+   "c": 0,
+   "a": "$|4-2x|=2|x-2|$ olduğundan tepe noktası $x=2$ noktasındadır. Tepe noktasının solunda fonksiyon azalan, sağında artandır; azalan aralık $(-\\infty,2)$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0128",
+   "konu": "9.2.2",
+   "zorluk": 3,
+   "s": "Şekilde $f(x)=2|x-3|-4$ (mavi) ve $g(x)=-|x-3|+2$ (turuncu) fonksiyonlarının grafikleri verilmiştir. Grafiklerin kesiştiği $A$ ve $B$ noktaları arasındaki uzaklık kaç birimdir?",
+   "o": [
+    "$2$",
+    "$4$",
+    "$3$",
+    "$6$",
+    "$8$"
+   ],
+   "c": 1,
+   "a": "Kesişim için $2|x-3|-4=-|x-3|+2$ ise $|x-3|=2$ olur. $x=1$ ve $x=5$ bulunur; her ikisinde de $y=0$ olduğundan $A(1,0)$ ve $B(5,0)$ ve $|AB|=4$.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"10\" y1=\"65\" x2=\"232\" y2=\"65\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"126\" x2=\"40\" y2=\"4\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"226\" y=\"79\" font-size=\"11\" fill=\"#141B3F\">x</text><text x=\"26\" y=\"10\" font-size=\"11\" fill=\"#141B3F\">y</text><text x=\"28\" y=\"78\" font-size=\"10\" fill=\"#141B3F\">O</text><polyline points=\"32.5,20 85,125 145,5\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><polyline points=\"32.5,87.5 85,35 145,95\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"2.5\"/><circle cx=\"55\" cy=\"65\" r=\"3.5\" fill=\"#1FA463\"/><circle cx=\"115\" cy=\"65\" r=\"3.5\" fill=\"#1FA463\"/><text x=\"51\" y=\"57\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"111\" y=\"57\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"127\" y=\"19\" font-size=\"12\" font-weight=\"bold\" fill=\"#1E3BD6\">f</text><text x=\"137\" y=\"109\" font-size=\"12\" font-weight=\"bold\" fill=\"#FF8A1F\">g</text></svg>"
+  },
+  {
+   "id": "9-0129",
+   "konu": "9.2.2",
+   "zorluk": 3,
+   "s": "$g(x)=-2|x+1|+6$ fonksiyonunun grafiği ile $x$ ekseni arasında kalan üçgensel bölgenin alanı kaç birimkaredir?",
+   "o": [
+    "$36$",
+    "$12$",
+    "$18$",
+    "$9$",
+    "$24$"
+   ],
+   "c": 2,
+   "a": "Tepe noktası $(-1,6)$\\'dır. $g(x)=0$ ise $|x+1|=3$ ve $x=-4$ ya da $x=2$ olur. Taban $6$, yükseklik $6$ olduğundan alan $\\dfrac{6\\cdot 6}{2}=18$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0130",
+   "konu": "9.2.3",
+   "zorluk": 1,
+   "s": "Fahrenheit ($F$) ile Celsius ($C$) arasındaki ilişki $F=1{,}8\\,C+32$ ile verilmiştir. Bir şehirde sıcaklık $86^\\circ$F ise kaç $^\\circ$C\\'dir?",
+   "o": [
+    "$54$",
+    "$48$",
+    "$36$",
+    "$30$",
+    "$66$"
+   ],
+   "c": 3,
+   "a": "$86=1{,}8C+32$ ise $1{,}8C=54$ ve $C=30$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0131",
+   "konu": "9.2.3",
+   "zorluk": 1,
+   "s": "$f$ doğrusal bir fonksiyondur. $x=1,2,3$ için $f(x)$ değerleri sırasıyla $17,\\ 23,\\ 29$ olarak ölçülmüştür. $f(10)$ kaçtır?",
+   "o": [
+    "$65$",
+    "$77$",
+    "$59$",
+    "$69$",
+    "$71$"
+   ],
+   "c": 4,
+   "a": "Değerler her adımda $6$ artıyor; eğim $6$\\'dır. $f(x)=6x+11$ olur ($f(1)=17$). $f(10)=60+11=71$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0132",
+   "konu": "9.2.3",
+   "zorluk": 1,
+   "s": "Şekilde bir kargo firmasının ücreti ($y$, TL) ile gönderi ağırlığı ($x$, kg) arasındaki doğrusal ilişki gösterilmiştir. Ücreti $95$ TL olan gönderi kaç kg\\'dır?",
+   "o": [
+    "$15$",
+    "$16$",
+    "$19$",
+    "$12$",
+    "$13$"
+   ],
+   "c": 0,
+   "a": "Doğru $(0,20)$ ve $(5,45)$ noktalarından geçer; eğim $\\dfrac{45-20}{5}=5$. $y=5x+20$ olduğundan $5x+20=95$ ise $x=15$ kg.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"20\" y1=\"110\" x2=\"236\" y2=\"110\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"45\" y1=\"126\" x2=\"45\" y2=\"6\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"192\" y=\"124\" font-size=\"11\" fill=\"#141B3F\">x (kg)</text><text x=\"51\" y=\"12\" font-size=\"11\" fill=\"#141B3F\">y (TL)</text><text x=\"33\" y=\"123\" font-size=\"10\" fill=\"#141B3F\">O</text><line x1=\"45\" y1=\"70\" x2=\"177\" y2=\"10\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><circle cx=\"45\" cy=\"70\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"155\" cy=\"20\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"53\" y=\"73\" font-size=\"11\" fill=\"#141B3F\">(0, 20)</text><text x=\"125\" y=\"12\" font-size=\"11\" fill=\"#141B3F\">(5, 45)</text></svg>"
+  },
+  {
+   "id": "9-0133",
+   "konu": "9.2.3",
+   "zorluk": 2,
+   "s": "Şekilde iki spor salonunun üyelik ücretleri ($y$, TL) ile üyelik süresi ($x$, ay) arasındaki doğrusal ilişkiler gösterilmiştir. $A$ salonunun toplam ücreti $B$ salonunun ücretinden daha az olacaksa en az kaç ay üye olunmalıdır?",
+   "o": [
+    "$3$",
+    "$5$",
+    "$4$",
+    "$6$",
+    "$7$"
+   ],
+   "c": 1,
+   "a": "Grafikler $x=4$ ayda kesişir ve bu noktada ücretler eşittir ($200$ TL). $x>4$ için $A$ doğrusu $B$\\'nin altında kaldığından en az $5$ ay gerekir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"15\" y1=\"115\" x2=\"236\" y2=\"115\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"126\" x2=\"40\" y2=\"6\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"192\" y=\"129\" font-size=\"11\" fill=\"#141B3F\">x (ay)</text><text x=\"46\" y=\"12\" font-size=\"11\" fill=\"#141B3F\">y (TL)</text><text x=\"28\" y=\"128\" font-size=\"10\" fill=\"#141B3F\">O</text><line x1=\"40\" y1=\"85\" x2=\"215\" y2=\"32.5\" stroke=\"#1E3BD6\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"103\" x2=\"215\" y2=\"19\" stroke=\"#FF8A1F\" stroke-width=\"2.5\"/><circle cx=\"140\" cy=\"55\" r=\"3.5\" fill=\"#1FA463\"/><text x=\"126\" y=\"47\" font-size=\"11\" fill=\"#141B3F\">(4, 200)</text><text x=\"18\" y=\"89\" font-size=\"11\" fill=\"#141B3F\">100</text><text x=\"24\" y=\"107\" font-size=\"11\" fill=\"#141B3F\">40</text><text x=\"209\" y=\"46.5\" font-size=\"13\" font-weight=\"bold\" fill=\"#1E3BD6\">A</text><text x=\"197\" y=\"23\" font-size=\"13\" font-weight=\"bold\" fill=\"#FF8A1F\">B</text></svg>"
+  },
+  {
+   "id": "9-0134",
+   "konu": "9.2.3",
+   "zorluk": 2,
+   "s": "Bir otobüs, bir şehrin merkezinden $40$ km uzaktaki bir noktadan hareket edip merkezden uzaklaşarak sabit $60$ km/sa hızla gitmektedir. Otobüs merkeze $250$ km uzaklıkta olduğunda kaç saat yol gitmiş olur?",
+   "o": [
+    "$3$",
+    "$4$",
+    "$3{,}5$",
+    "$4{,}2$",
+    "$5{,}5$"
+   ],
+   "c": 2,
+   "a": "Merkeze uzaklık $d(t)=40+60t$ olur. $40+60t=250$ ise $60t=210$ ve $t=3{,}5$ saattir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0135",
+   "konu": "9.2.3",
+   "zorluk": 2,
+   "s": "$f(x)=3x-5$ ve $g(x)=-x+11$ doğrusal fonksiyonlarının grafikleri $K$ noktasında kesişiyor. $K$ noktasının koordinatları toplamı kaçtır?",
+   "o": [
+    "$4$",
+    "$7$",
+    "$9$",
+    "$11$",
+    "$15$"
+   ],
+   "c": 3,
+   "a": "$3x-5=-x+11$ ise $4x=16$ ve $x=4$ olur. $y=f(4)=7$ olup $K(4,7)$; koordinatlar toplamı $11$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0136",
+   "konu": "9.2.3",
+   "zorluk": 3,
+   "s": "$f(x)=mx+n$ doğrusal fonksiyonu için $f(1)+f(3)=18$ ve $f(5)-f(2)=9$ olduğuna göre $f(10)$ kaçtır?",
+   "o": [
+    "$30$",
+    "$36$",
+    "$27$",
+    "$39$",
+    "$33$"
+   ],
+   "c": 4,
+   "a": "$f(5)-f(2)=3m=9$ ise $m=3$. $f(1)+f(3)=4m+2n=18$ ise $12+2n=18$ ve $n=3$. $f(10)=30+3=33$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0137",
+   "konu": "9.2.3",
+   "zorluk": 3,
+   "s": "Boyları $36$ cm olan $A$ mumu saatte $3$ cm, $28$ cm olan $B$ mumu saatte $2$ cm kısalmaktadır. İki mum aynı anda yakılıyor. $A$ mumunun boyu hem $B$ mumundan kısa hem de hâlâ sıfırdan büyük olacak kaç farklı tam saat değeri vardır?",
+   "o": [
+    "$3$",
+    "$4$",
+    "$2$",
+    "$5$",
+    "$6$"
+   ],
+   "c": 0,
+   "a": "$A(t)=36-3t$, $B(t)=28-2t$. $36-3t<28-2t$ ise $t>8$. $A(t)>0$ için $t<12$. Bu aralıktaki tam saatler $9,10,11$ olup $3$ tanedir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0138",
+   "konu": "9.3.1",
+   "zorluk": 1,
+   "s": "Şekildeki $ABC$ üçgeninde iç açıların ölçüleri $m(\\widehat{A})=3x+10$, $m(\\widehat{B})=2x$ ve $m(\\widehat{C})=x+20$ derecedir. Bu üçgenin en küçük açısının ölçüsü kaç derecedir?",
+   "o": [
+    "$50^\\circ$",
+    "$45^\\circ$",
+    "$25^\\circ$",
+    "$85^\\circ$",
+    "$40^\\circ$"
+   ],
+   "c": 1,
+   "a": "$3x+10+2x+x+20=180^\\circ$ ise $6x=150^\\circ$ ve $x=25^\\circ$ olur. Açılar $85^\\circ,50^\\circ,45^\\circ$ olup en küçüğü $m(\\widehat{C})=45^\\circ$.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"102.1,17.1 20,115 200,115\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><text x=\"98.1\" y=\"9.1\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"6\" y=\"123\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"204\" y=\"123\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"88.1\" y=\"43.1\" font-size=\"11\" fill=\"#FF8A1F\">3x+10</text><text x=\"28\" y=\"111\" font-size=\"11\" fill=\"#FF8A1F\">2x</text><text x=\"156\" y=\"111\" font-size=\"11\" fill=\"#FF8A1F\">x+20</text></svg>"
+  },
+  {
+   "id": "9-0139",
+   "konu": "9.3.1",
+   "zorluk": 1,
+   "s": "Şekildeki $ABC$ üçgeninde $|AB|=7$ cm, $|BC|=10$ cm ve $|AC|=8$ cm\\'dir. Bu üçgenin en küçük açısı hangi köşededir?",
+   "o": [
+    "$A$",
+    "$B$",
+    "$C$",
+    "$A \\text{ ile } C \\text{ eşit}$",
+    "$B \\text{ ile } C \\text{ eşit}$"
+   ],
+   "c": 2,
+   "a": "En küçük açı, en kısa kenarın karşısındadır. En kısa kenar $|AB|=7$ cm olup karşısında $C$ köşesi bulunur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"107.2,20.4 35,115 205,115\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><text x=\"103.2\" y=\"12.4\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"21\" y=\"123\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"209\" y=\"123\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"51.1\" y=\"65.7\" font-size=\"12\" fill=\"#FF8A1F\">7</text><text x=\"164.1\" y=\"65.7\" font-size=\"12\" fill=\"#FF8A1F\">8</text><text x=\"120\" y=\"127\" font-size=\"12\" fill=\"#FF8A1F\">10</text></svg>"
+  },
+  {
+   "id": "9-0140",
+   "konu": "9.3.1",
+   "zorluk": 1,
+   "s": "Aşağıda verilen cm cinsinden uzunluk üçlülerinden hangisi bir üçgenin kenar uzunlukları OLAMAZ?",
+   "o": [
+    "$4,\\ 5,\\ 8$",
+    "$6,\\ 6,\\ 11$",
+    "$5,\\ 7,\\ 9$",
+    "$3,\\ 4,\\ 7$",
+    "$2,\\ 9,\\ 10$"
+   ],
+   "c": 3,
+   "a": "Bir üçgende iki kenarın toplamı üçüncü kenardan büyük olmalıdır. $3+4=7$ olduğundan $3,4,7$ üçgen oluşturmaz; diğer üçlülerin hepsinde en uzun kenar diğer ikisinin toplamından küçüktür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0141",
+   "konu": "9.3.1",
+   "zorluk": 2,
+   "s": "Şekilde $B$, $C$, $D$ noktaları doğrusaldır. $m(\\widehat{A})=2x+10$, $m(\\widehat{B})=x+20$ ve $m(\\widehat{ACD})=4x-10$ derece ise $m(\\widehat{ACB})$ kaç derecedir?",
+   "o": [
+    "$60^\\circ$",
+    "$150^\\circ$",
+    "$40^\\circ$",
+    "$90^\\circ$",
+    "$30^\\circ$"
+   ],
+   "c": 4,
+   "a": "Dış açı, komşu olmayan iki iç açının toplamına eşittir: $4x-10=2x+10+x+20$ ise $x=40$. $m(\\widehat{ACD})=150^\\circ$ olduğundan $m(\\widehat{ACB})=180^\\circ-150^\\circ=30^\\circ$.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 140\"><polygon points=\"62.5,41.4 20,115 190,115\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"190\" y1=\"115\" x2=\"228\" y2=\"115\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><text x=\"58.5\" y=\"33.4\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"6\" y=\"123\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"188\" y=\"131\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"222\" y=\"131\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">D</text><text x=\"56.5\" y=\"63.4\" font-size=\"11\" fill=\"#FF8A1F\">2x+10</text><text x=\"40\" y=\"111\" font-size=\"11\" fill=\"#FF8A1F\">x+20</text><text x=\"198\" y=\"111\" font-size=\"11\" fill=\"#FF8A1F\">4x−10</text></svg>"
+  },
+  {
+   "id": "9-0142",
+   "konu": "9.3.1",
+   "zorluk": 2,
+   "s": "Bir öğrenci, $ABC$ üçgeninde iç açıların toplamının $180^\\circ$ olduğunu göstermek için $C$ köşesinden $[AB]$\\'ye paralel $DE$ doğrusunu çizmiştir (şekil). Bu ispatın temel dayanağı aşağıdakilerden hangisidir?",
+   "o": [
+    "Paralel doğrularda iç ters açıların eşit olması",
+    "İkizkenar üçgende taban açılarının eşit olması",
+    "Dik üçgende dik kenarların kareleri toplamının hipotenüsün karesine eşit olması",
+    "Üçgende iki kenarın toplamının üçüncü kenardan büyük olması",
+    "Büyük açının karşısındaki kenarın daha uzun olması"
+   ],
+   "c": 0,
+   "a": "$C$ noktasında $m(\\widehat{DCA})+m(\\widehat{ACB})+m(\\widehat{BCE})=180^\\circ$ olur. $DE\\parallel AB$ olduğundan $m(\\widehat{DCA})=m(\\widehat{A})$ ve $m(\\widehat{BCE})=m(\\widehat{B})$ (iç ters açılar); böylece $A+C+B=180^\\circ$ bulunur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"30,112 170,112 120,38\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"15\" y1=\"38\" x2=\"232\" y2=\"38\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><text x=\"16\" y=\"120\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"174\" y=\"120\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"116\" y=\"30\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"8\" y=\"32\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">D</text><text x=\"226\" y=\"32\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">E</text></svg>"
+  },
+  {
+   "id": "9-0143",
+   "konu": "9.3.1",
+   "zorluk": 2,
+   "s": "Bir üçgen biçimli bahçenin iki kenarı $9$ m ve $14$ m\\'dir. Üçüncü kenarın uzunluğu tam sayı metre ve bahçenin çevresi en çok $40$ m olduğuna göre üçüncü kenar kaç farklı değer alabilir?",
+   "o": [
+    "$11$",
+    "$12$",
+    "$13$",
+    "$17$",
+    "$18$"
+   ],
+   "c": 1,
+   "a": "Üçgen eşitsizliğinden $5<x<23$ olur. Çevre $23+x\\le 40$ ise $x\\le 17$. Bu durumda $x\\in\\{6,7,\\dots,17\\}$ olup $12$ değer vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "9-0144",
+   "konu": "9.3.1",
+   "zorluk": 3,
+   "s": "Şekilde $D\\in[BC]$, $|AB|=|BD|$, $|AD|=|DC|$ ve $m(\\widehat{B})=40^\\circ$ ise $m(\\widehat{BAC})$ kaç derecedir?",
+   "o": [
+    "$75^\\circ$",
+    "$100^\\circ$",
+    "$105^\\circ$",
+    "$110^\\circ$",
+    "$70^\\circ$"
+   ],
+   "c": 2,
+   "a": "$m(\\widehat{C})=m(\\widehat{DAC})=x$ olsun; $m(\\widehat{ADB})=2x$ (dış açı). $ABD$ ikizkenar olduğundan $m(\\widehat{BAD})=2x$ ve $40^\\circ+4x=180^\\circ$ ise $x=35^\\circ$. $m(\\widehat{BAC})=2x+x=105^\\circ$.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 140\"><polygon points=\"106.4,42.5 20,115 210,115\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"106.4\" y1=\"42.5\" x2=\"132.8\" y2=\"115\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><line x1=\"60.6\" y1=\"75.7\" x2=\"65.8\" y2=\"81.8\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><line x1=\"76.4\" y1=\"111\" x2=\"76.4\" y2=\"119\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><line x1=\"116.6\" y1=\"82\" x2=\"124.1\" y2=\"79.3\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><line x1=\"115.2\" y1=\"78.2\" x2=\"122.7\" y2=\"75.5\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><line x1=\"169.4\" y1=\"111\" x2=\"169.4\" y2=\"119\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><line x1=\"173.4\" y1=\"111\" x2=\"173.4\" y2=\"119\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><text x=\"102.4\" y=\"34.5\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"6\" y=\"123\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"214\" y=\"123\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"126.8\" y=\"132\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">D</text><text x=\"40\" y=\"111\" font-size=\"11\" fill=\"#FF8A1F\">40°</text></svg>"
+  },
+  {
+   "id": "9-0145",
+   "konu": "9.3.1",
+   "zorluk": 3,
+   "s": "Şekilde $[AC]$ ile $[BD]$ doğru parçaları $E$ noktasında kesişmektedir. $m(\\widehat{BAE})=32^\\circ$, $m(\\widehat{ABE})=58^\\circ$, $m(\\widehat{ECD})=(x+15)^\\circ$ ve $m(\\widehat{EDC})=2x^\\circ$ ise $x$ kaçtır?",
+   "o": [
+    "$20$",
+    "$30$",
+    "$35$",
+    "$25$",
+    "$15$"
+   ],
+   "c": 3,
+   "a": "$ABE$ üçgeninde $m(\\widehat{AEB})=180^\\circ-90^\\circ=90^\\circ$ olur. Ters açılar eşit olduğundan $m(\\widehat{CED})=90^\\circ$; $CDE$ üçgeninde $x+15+2x=90$ ise $x=25$.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 150\"><line x1=\"14\" y1=\"16\" x2=\"124\" y2=\"16\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"14\" y1=\"16\" x2=\"173.7\" y2=\"115.8\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"124\" y1=\"16\" x2=\"50.9\" y2=\"133.0\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"173.7\" y1=\"115.8\" x2=\"50.9\" y2=\"133.0\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><text x=\"10\" y=\"12\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">A</text><text x=\"126\" y=\"12\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">B</text><text x=\"177.7\" y=\"120.8\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">C</text><text x=\"36.9\" y=\"139.0\" font-size=\"13\" font-weight=\"bold\" fill=\"#141B3F\">D</text><text x=\"100.1\" y=\"67.4\" font-size=\"12\" font-weight=\"bold\" fill=\"#141B3F\">E</text><text x=\"29.7\" y=\"27.2\" font-size=\"11\" font-weight=\"bold\" fill=\"#FF8A1F\">32°</text><text x=\"93.7\" y=\"31.6\" font-size=\"11\" font-weight=\"bold\" fill=\"#FF8A1F\">58°</text><text x=\"128.0\" y=\"112.7\" font-size=\"11\" font-weight=\"bold\" fill=\"#FF8A1F\">x+15</text><text x=\"64.8\" y=\"124.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#FF8A1F\">2x</text></svg>"
   }
  ]
 }
