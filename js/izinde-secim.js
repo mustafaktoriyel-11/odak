@@ -189,7 +189,17 @@
     return onbellek.gunler[tarihISO].slice();
   }
 
-  var API = { acikKonular: acikKonular, gununSeti: gununSeti };
+  // tarihISO'dan ONCEKI gunlerin setlerinde cikmis soru kimlikleri (gununSeti ayni argumanlarla once cagrilmis olmali)
+  function gorulmus(tarihISO) {
+    var g = {}, t = gunNo(tarihISO);
+    for (var iso in onbellek.gunler) if (gunNo(iso) < t) {
+      var l = onbellek.gunler[iso];
+      for (var i = 0; i < l.length; i++) g[l[i].id] = true;
+    }
+    return g;
+  }
+
+  var API = { acikKonular: acikKonular, gununSeti: gununSeti, gorulmus: gorulmus };
   root.IZINDE_SECIM = API;
   if (typeof module !== 'undefined' && module.exports) module.exports = API;
 })(typeof window !== 'undefined' ? window : this);

@@ -1710,3 +1710,13 @@ html.mf-gece #onay-tamam:disabled,html.mf-gece #not-gonder:disabled,html.mf-gece
 .sb-ince .ic{width:18px;height:18px;margin:0}
 .sb-ince:active{transform:scale(.98)}
 html.mf-gece .sb-ince{background:#3D5AFE;color:#fff}
+/* Mantık molası */
+.iz-mola .iz-gun-ust b .ic{color:#FF8A1F}
+.iz-mn-et{display:inline-block;font-size:12px;font-weight:700;color:#FF8A1F;background:#FFF1E3;border-radius:999px;padding:3px 10px;margin-bottom:8px}
+.iz-mn-sekil{background:#fff;border-radius:12px;padding:8px;overflow-x:auto}
+.iz-sec span svg{max-width:96px;height:auto;vertical-align:middle}
+html.mf-gece .iz-mn-et{background:#3A2A1A}
+.iz-gec-not{display:inline-block;background:#FFF1E3;color:#C2560A;border-radius:999px;padding:4px 12px;margin:0 0 10px}
+html.mf-gece .iz-gec-not{background:#3A2A1A;color:#FFB877}
+.iz-sec span svg{width:64px!important;max-width:64px!important;height:auto!important;display:block}
+.iz-mn .iz-sec{min-height:0}
