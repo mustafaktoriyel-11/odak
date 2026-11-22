@@ -1614,3 +1614,6 @@ html.mf-gece .sc-p .sc-ic #pm-ozel-k{color:#C3CBEA}
 #pm-sure-not{display:none!important}
 .sc-p .tb-tumu{display:none!important}
 .sc-p .sc-ic #pm-odak-c{flex-wrap:nowrap}.sc-p .sc-ic #pm-odak-c button{flex:1 1 0;min-width:0;padding-left:6px;padding-right:6px}
+/* Dokunmatik: düğme ve çiplerde uzun basınca yazı seçilmesin, kopyala menüsü açılmasın (giriş kutuları hariç) */
+button,[role="button"],[role="radio"],[role="switch"],[role="tab"],summary,label,.pm-chips,.pm-saat,.pm-saat *,.sc-btn,.sc-btn *,#alt-nav,#alt-nav *,.pm-mod,.pm-domates,.bl-deg,.ay-sec,.kd,.kd *,.iz-harita,.iz-harita *{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+input,textarea,select,[contenteditable]{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
