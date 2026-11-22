@@ -1,0 +1,38 @@
+.iz-taban{position:absolute;inset:0;width:100%;height:100%}
+.iz-taban .hs-deniz{fill:#BCD3E4}
+.iz-taban .hs-dalga{fill:none;stroke:#7F9EBE;stroke-width:2;stroke-linecap:round;opacity:.6}
+.iz-taban .hs-golge{fill:none;stroke:#93B2CE;stroke-width:16;stroke-linejoin:round;opacity:.55}
+.iz-taban .hs-kara{fill:#F5E6C6}
+.iz-taban .hs-kiyi{fill:none;stroke:#23395F;stroke-width:2.2;stroke-linejoin:round}
+.iz-taban .hs-gol{fill:#BCD3E4;stroke:#23395F;stroke-width:1.4}
+.iz-taban .hs-nehir{fill:none;stroke:#6F92B9;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
+.iz-taban .hs-dag{fill:none;stroke:#B27A45;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;opacity:.85}
+.iz-taban text{font-family:Georgia,"Noto Serif",serif;font-style:italic;text-anchor:middle;paint-order:stroke;stroke-linejoin:round}
+.iz-taban .hs-okyanus{fill:#5D7EA6;font-weight:700;opacity:.75}
+.iz-taban .hs-kita{fill:#9C7B52;font-weight:700;opacity:.55;font-style:normal}
+.iz-taban .hs-deniz-ad{fill:#3F628C;stroke:#BCD3E4;stroke-width:3}
+.iz-taban .hs-dag-ad{fill:#7A4E23;stroke:#F5E6C6;stroke-width:3;font-weight:600}
+.iz-taban .hs-nehir-ad{fill:#3F628C;stroke:#F5E6C6;stroke-width:2.5}
+.iz-taban .hs-pusula circle{fill:none;stroke:#7A6A55;stroke-width:1.5}
+.iz-taban .hs-pusula path{fill:#E9D7B0;stroke:#7A6A55;stroke-width:1.2}.iz-taban .hs-pusula .ic{fill:#7A6A55}
+.iz-taban .hs-pusula text{fill:#7A6A55;font-style:normal;font-weight:700}
+.iz-taban .hs-vs{stop-color:#E8D6B0}
+.iz-taban .hs-vin{pointer-events:none}
+.iz-taban .hs-ad2,.iz-taban .hs-ad3{opacity:0;transition:opacity .35s}
+.iz-ic[data-z="2"] .hs-ad2,.iz-ic[data-z="3"] .hs-ad2,.iz-ic[data-z="3"] .hs-ad3{opacity:1}
+.iz-ic[data-z="2"] .hs-kita{opacity:.35}.iz-ic[data-z="3"] .hs-kita,.iz-ic[data-z="3"] .hs-okyanus{opacity:0}
+html.mf-gece .iz-taban .hs-deniz{fill:#0C1533}
+html.mf-gece .iz-taban .hs-dalga{stroke:#2C3F78}
+html.mf-gece .iz-taban .hs-golge{stroke:#1A2A5C}
+html.mf-gece .iz-taban .hs-kara{fill:#1E2748}
+html.mf-gece .iz-taban .hs-kiyi{stroke:#8EA4EE}
+html.mf-gece .iz-taban .hs-gol{fill:#0C1533;stroke:#8EA4EE}
+html.mf-gece .iz-taban .hs-nehir{stroke:#4A67AE}
+html.mf-gece .iz-taban .hs-dag{stroke:#8C7BC0}
+html.mf-gece .iz-taban .hs-okyanus{fill:#4B63A8}
+html.mf-gece .iz-taban .hs-kita{fill:#7C88B8}
+html.mf-gece .iz-taban .hs-deniz-ad{fill:#7F98DA;stroke:#0C1533}
+html.mf-gece .iz-taban .hs-dag-ad{fill:#C4B6EE;stroke:#1E2748}
+html.mf-gece .iz-taban .hs-nehir-ad{fill:#8FA8E8;stroke:#1E2748}
+html.mf-gece .iz-taban .hs-pusula circle,html.mf-gece .iz-taban .hs-pusula path{stroke:#8EA4EE}html.mf-gece .iz-taban .hs-pusula path{fill:#1E2748}html.mf-gece .iz-taban .hs-pusula .ic{fill:#8EA4EE}html.mf-gece .iz-taban .hs-pusula text{fill:#8EA4EE}
+html.mf-gece .iz-taban .hs-vs{stop-color:#070C22}

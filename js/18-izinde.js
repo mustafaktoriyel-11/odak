@@ -24,8 +24,8 @@
   function json(u){return fetch(u,{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(u);return r.json();});}
   function temelVeri(){
     if(V.muf&&V.rota&&V.dur)return Promise.resolve();
-    if(!yukleniyor)yukleniyor=Promise.all([json('veri/izinde/mufredat.json'),json('veri/izinde/rota.json'),json('veri/izinde/duraklar.json')]).then(function(a){
-      V.muf=a[0];V.rota=a[1];V.dur={};(Array.isArray(a[2])?a[2]:a[2].duraklar).forEach(function(d){V.dur[d.id]=d;});
+    if(!yukleniyor)yukleniyor=Promise.all([json('veri/izinde/mufredat.json'),json('veri/izinde/rota.json'),json('veri/izinde/duraklar.json'),fetch('veri/izinde/harita.svg').then(function(r){return r.ok?r.text():'';})['catch'](function(){return '';})]).then(function(a){
+      V.taban=a[3]||'';V.muf=a[0];V.rota=a[1];V.dur={};(Array.isArray(a[2])?a[2]:a[2].duraklar).forEach(function(d){V.dur[d.id]=d;});
     })['catch'](function(e){yukleniyor=null;throw e;});
     return yukleniyor;
   }
@@ -128,7 +128,11 @@
   function kamUygula(){
     var b=kamSinir();kam.s=Math.min(b.max,Math.max(b.min,kam.s));
     kam.x=Math.min(0,Math.max(b.w-W*kam.s,kam.x));kam.y=Math.min(0,Math.max(b.h-H*kam.s,kam.y));
-    var ic=$('iz-ic');if(ic)ic.style.transform='translate3d('+kam.x.toFixed(1)+'px,'+kam.y.toFixed(1)+'px,0) scale('+kam.s.toFixed(4)+')';
+    var ic=$('iz-ic');if(!ic)return;ic.style.transform='translate3d('+kam.x.toFixed(1)+'px,'+kam.y.toFixed(1)+'px,0) scale('+kam.s.toFixed(4)+')';
+    // Yakınlık kademesi: deniz/dağ/nehir adları yakınlaştıkça belirir
+    var z=kam.s/b.min,zk=z<1.9?'1':(z<3.4?'2':'3');if(ic.getAttribute('data-z')!==zk)ic.setAttribute('data-z',zk);
+    // Hareket sırasında katman GPU'da ölçeklenir; durunca will-change kalkar ve harita o ölçekte keskin yeniden çizilir
+    if(!ic.classList.contains('hareket'))ic.classList.add('hareket');clearTimeout(kamUygula.t);kamUygula.t=setTimeout(function(){ic.classList.remove('hareket');},220);
   }
   function kamMerkez(px,py,s){var b=kamSinir();return {s:s,x:b.w/2-px*s,y:b.h*.55-py*s};}
   function kamGit(h,sure,ease,bitti){
@@ -196,7 +200,7 @@
     var st=durum(),D=V.rota.duraklar,cur=D[st.konum],dr=V.dur[cur.id]||{},bg=bugun(),r=st.v.g[bg],o='';
     o+='<div class="iz-hero"><div class="iz-ust-satir"><span class="iz-ust">Her gün 8 soru · dünya turu</span><button type="button" class="iz-sinif" id="iz-sinif">'+esc(sinifAd(s))+' ›</button></div>'+
       '<h2>🧭 Matematiğin İzinde</h2><p class="iz-yer">📍 '+esc(cur.yer)+(dr.matematikci?' · '+esc(dr.matematikci.ad):'')+'</p></div>';
-    o+='<div class="iz-harita-kart"><div class="iz-harita" id="iz-harita"><div class="iz-ic" id="iz-ic"><img class="iz-g" src="img/harita-gunduz.webp" alt="" draggable="false"><img class="iz-n" src="img/harita-gece.webp" alt="" draggable="false">'+
+    o+='<div class="iz-harita-kart"><div class="iz-harita" id="iz-harita"><div class="iz-ic" id="iz-ic">'+(V.taban||'')+
       '<svg id="iz-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none"></svg></div></div>'+
       '<div class="iz-harita-alt"><button type="button" class="iz-yak" id="iz-yak">'+(yakin?'🗺️ Tüm harita':'🔍 Yakınlaş')+'</button><span>'+(st.sonraki?'Sıradaki durak: <b>'+esc(st.sonraki.yer)+'</b> · '+(st.sonraki.adim-st.toplam)+' set':'🏁 Yolculuğu tamamladın!')+'</span></div></div>';
     // günün seti
