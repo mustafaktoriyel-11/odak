@@ -142,7 +142,7 @@
     var sc=sonCalisma(k,ad),ar={bugun:'son 7 gün',hafta:'son 7 gün',ay:'son 30 gün',ay3:'son 3 ay',yil:'son 1 yıl'}[SON.ARALIK];
     $('ders-p-b').textContent=ad;$('ders-p-a').textContent=ar;
     var o='<div class="st-kpi"><div><span>Toplam süre</span><b>'+kpiS(top)+'</b><small>'+gun+' / '+GUN+' gün çalıştın</small></div><div><span>Son çalışma</span><b>'+(sc===null?'–':onceYaz(sc))+'</b><small>'+(top&&gun?'çalıştığın günlerde ort. '+sk(top/gun):'')+'</small></div>'+
-      '<div class="genis"><span>Çözülen soru</span><b>'+sq+' ✏️</b><small>'+(sq?(sd+sy?'%'+Math.round(sd*100/(sd+sy))+' doğru · '+sd+' D, '+sy+' Y':'doğru/yanlış girilmedi'):'Bu derste soru kaydı yok')+'</small></div></div>';
+      '<div class="genis"><span>Çözülen soru</span><b>'+sq+'</b><small>'+(sq?(sd+sy?'%'+Math.round(sd*100/(sd+sy))+' doğru · '+sd+' D, '+sy+' Y':'doğru/yanlış girilmedi'):'Bu derste soru kaydı yok')+'</small></div></div>';
     o+='<div class="st-blok"><div class="st-bas"><b>Günlük çalışma</b><span>'+ar+'</span></div><div class="st-cizim" id="dp-graf"></div></div>';
     var kn=nt.filter(function(x){return x.konu||x.soru;}).slice(-6).reverse();
     if(kn.length)o+='<div class="st-blok"><div class="st-bas"><b>Son notların</b><span></span></div><ul class="dp-konu">'+kn.map(function(x){var d=new Date(x.t);return '<li><span>'+esc(x.konu||x.yapti)+'</span><small>'+(x.soru?x.soru+' soru'+(x.d!=null?' · '+x.d+'D '+(x.y||0)+'Y':'')+' · ':'')+d.getDate()+' '+AYK2[d.getMonth()]+'</small></li>';}).join('')+'</ul></div>';
@@ -219,7 +219,7 @@
     if(!AN_ONER&&az.length)AN_ONER=[az[0][0],40];
     var o='<div class="an-one">'+(krit?'<p class="an-krit">'+krit+'</p>':'')+'<p class="an-iyi">'+iyi+'</p></div>';
     o+='<div class="an-k an-liste">'+H.map(function(h){return '<div class="an-s"><span>'+h[0]+'</span><p>'+h[1]+'</p></div>';}).join('')+'</div>';
-    o+='<div class="an-k oneri"><h4>💡 Bugün için</h4><ul>'+ON.slice(0,2).map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>';
+    o+='<div class="an-k oneri"><h4><svg class="ic" aria-hidden="true"><use href="#i-ampul"/></svg>Bugün için</h4><ul>'+ON.slice(0,2).map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>';
     $('an-ic').innerHTML=o;anButon();
   }
   var AN_ONER=null;
@@ -300,8 +300,8 @@
     var kpi='<div><span>Toplam çalışma</span><b>'+kpiS(top)+'</b><small class="'+(fark===null?'':fark>0?'art':fark<0?'azal':'')+'">'+(fark===null?(top?'İlk kayıtlar':'Henüz kayıt yok'):(fark>0?'▲ %'+fark:fark<0?'▼ %'+(-fark):'= aynı')+' '+once_ad+' göre')+'</small></div>';
     kpi+=GUN>1?'<div><span>Günlük ortalama</span><b>'+sk(aktif?top/aktif:0)+'</b><small>'+aktif+' / '+GUN+' gün çalıştın</small></div>':'<div><span>Bugünkü oturum</span><b>'+(g[0].p)+' tur</b><small>tamamlanan odak turu</small></div>';
     kpi+='<div><span>Odak turu</span><b>'+pom+'</b><small>'+(GUN>1?'bu aralıkta':'bugün')+'</small></div>';
-    kpi+='<div><span>Seri</span><b>'+seri+' gün 🔥</b><small>'+(seri?'aralıksız çalıştığın gün':'bugün başla, seri başlasın')+'</small></div>';
-    kpi+='<div class="genis"><span>Çözülen soru</span><b>'+sq+' ✏️</b><small>'+(sq?(sd+sy?'%'+Math.round(sd*100/(sd+sy))+' doğru · '+sd+' D, '+sy+' Y':'doğru/yanlış girilmedi'):'Seans sonunda soru sayını girersen burada görünür')+'</small></div>';
+    kpi+='<div><span>Seri</span><b>'+seri+' gün <svg class="ic" aria-hidden="true"><use href="#i-alev"/></svg></b><small>'+(seri?'aralıksız çalıştığın gün':'bugün başla, seri başlasın')+'</small></div>';
+    kpi+='<div class="genis"><span>Çözülen soru</span><b>'+sq+'</b><small>'+(sq?(sd+sy?'%'+Math.round(sd*100/(sd+sy))+' doğru · '+sd+' D, '+sy+' Y':'doğru/yanlış girilmedi'):'Seans sonunda soru sayını girersen burada görünür')+'</small></div>';
     $('st-kpi').innerHTML=kpi;
     SON={k:k,g:g,GUN:GUN,renk:renk,NOT:NOT,ARALIK:ARALIK};
     // --- calisma suresi (sutun) ---
@@ -350,7 +350,7 @@
 (function(){
   // gece modu
   var h=document.documentElement,b=document.getElementById('tema');
-  function boya(){var g=h.classList.contains('mf-gece');b.textContent=g?'☀️':'🌙';var m=document.querySelector('meta[name=color-scheme]');if(m)m.setAttribute('content',g?'dark':'light');}
+  function boya(){var g=h.classList.contains('mf-gece');b.innerHTML=g?'<svg class="ic" aria-hidden="true"><use href="#i-gunes"/></svg>':'<svg class="ic" aria-hidden="true"><use href="#i-ay"/></svg>';var m=document.querySelector('meta[name=color-scheme]');if(m)m.setAttribute('content',g?'dark':'light');}
   boya();b.addEventListener('click',function(){h.classList.toggle('mf-gece');try{localStorage.setItem('mf-tema',h.classList.contains('mf-gece')?'gece':'gunduz');}catch(e){}boya();if(window.MF_IST_YENILE)window.MF_IST_YENILE();if(window.MF_DNM_YENILE)window.MF_DNM_YENILE();});
   // service worker
   // Android uygulamasında (Capacitor) dosyalar zaten telefonda: service worker gerekmez
@@ -379,7 +379,7 @@
     function gonder(){
       if(gMesgul){gTekrar=true;return;}
       var q=kuyruk();if(!q.length)return;
-      if(!navigator.onLine){durum('⏳ '+q.length+' kayıt internet bekliyor','');return;}
+      if(!navigator.onLine){durum(q.length+' kayıt internet bekliyor','');return;}
       var gruplar={};q.forEach(function(r){var k=r.kod||'';if(!k)return;var o={};for(var a in r){if(a!=='kod'&&a!=='notsuz')o[a]=r[a];}(gruplar[k]=gruplar[k]||[]).push(o);});
       var isler=Object.keys(gruplar).map(function(k){
         return fetch(KOC_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify({kod:k,kayitlar:gruplar[k]})});

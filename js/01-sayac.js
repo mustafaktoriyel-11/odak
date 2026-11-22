@@ -2,7 +2,7 @@
 
 (function(){
   var kok=document.getElementById('pm');if(!kok)return;
-  var T={"odak": "Odaklanma zamanı", "odakCalis": "Odaklan", "kisa": "☕ Kısa mola", "uzun": "🛋️ Uzun mola", "duraklat": "Duraklat", "baslat": "Başlat", "devam": "Devam et", "bos": "Henüz kayıt yok. Sayacı başlattığında burada görünecek.", "gunler": ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"], "silSor": "Tüm çalışma kayıtları silinsin mi?", "ort": "{n} gün çalıştın, günlük ortalama {d} dk", "bugunK": "Bugün", "son7": "Son 7 gün", "son30": "Son 30 gün", "aylar": ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"], "rBaslik": "📊 Günlük çalışma raporum", "rToplam": "Toplam", "rGun": "gün çalıştım", "rBos": "Bugün sayacı henüz kullanmadım, bir plan yapabilir miyiz?", "curuB": "Odaktan çıktın! Bu tur bozuldu", "curuP": "Sıkı moddayken uygulamadan çıktığın için bu tur sayılmadı. {dk} dakikalık çalışman yine de kaydedildi. Hadi yeniden başla!", "rCikis": "Sıkı modda odaktan çıkış", "ozetK": "Bugün {dk} dk · {p} tur", "bitOdak": "Odak süresi bitti! 🎯", "bitOdakM": "Harika iş. Şimdi kısa bir mola zamanı.", "bitOdakU": "4 tur tamam! Şimdi uzun mola zamanı.", "bitMola": "Mola bitti", "bitMolaM": "Hazırsan yeni bir odak turuna başla.", "atla": "Molayı atla", "son3": "Son 3 ay", "son6": "Son 6 ay", "buHafta": "Bu hafta", "aylarK": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"]};
+  var T={"odak": "Odaklanma zamanı", "odakCalis": "Odaklan", "kisa": "Kısa mola", "uzun": "Uzun mola", "duraklat": "Duraklat", "baslat": "Başlat", "devam": "Devam et", "bos": "Henüz kayıt yok. Sayacı başlattığında burada görünecek.", "gunler": ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"], "silSor": "Tüm çalışma kayıtları silinsin mi?", "ort": "{n} gün çalıştın, günlük ortalama {d} dk", "bugunK": "Bugün", "son7": "Son 7 gün", "son30": "Son 30 gün", "aylar": ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"], "rBaslik": "Günlük çalışma raporum", "rToplam": "Toplam", "rGun": "gün çalıştım", "rBos": "Bugün sayacı henüz kullanmadım, bir plan yapabilir miyiz?", "curuB": "Odaktan çıktın! Bu tur bozuldu", "curuP": "Sıkı moddayken uygulamadan çıktığın için bu tur sayılmadı. {dk} dakikalık çalışman yine de kaydedildi. Hadi yeniden başla!", "rCikis": "Sıkı modda odaktan çıkış", "ozetK": "Bugün {dk} dk · {p} tur", "bitOdak": "Odak süresi bitti!", "bitOdakM": "Harika iş. Şimdi kısa bir mola zamanı.", "bitOdakU": "4 tur tamam! Şimdi uzun mola zamanı.", "bitMola": "Mola bitti", "bitMolaM": "Hazırsan yeni bir odak turuna başla.", "atla": "Molayı atla", "son3": "Son 3 ay", "son6": "Son 6 ay", "buHafta": "Bu hafta", "aylarK": ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"]};
   var $=function(id){return document.getElementById(id);};
   // eski kayitlardaki TYT/AYT Matematik tek 'Matematik' olarak gosterilir
   function dersAd(x){return /^(TYT|AYT) Matematik$/.test(x)?'Matematik':x;}
@@ -71,7 +71,7 @@
   function araMi(){return d.mod==='deneme'&&d.faz==='ara';}
   function denemeEtiket(){
     var sv=SINAV[sinavKod()];if(!sv.oturum)return sv.ad+' denemesi';
-    var f=d.faz||1;return f==='ara'?'☕ LGS · oturum arası':(f===1?'LGS · 1. oturum (Sözel)':'LGS · 2. oturum (Sayısal)');
+    var f=d.faz||1;return f==='ara'?'LGS · oturum arası':(f===1?'LGS · 1. oturum (Sözel)':'LGS · 2. oturum (Sayısal)');
   }
   // kilit ekranindaki medya karti: buyuk satirda kalan sure, altinda ne yapildigi, ilerleme cubugu
   var MS='mediaSession' in navigator,msBaslik='';
@@ -212,7 +212,7 @@
   }
   var DEB_D='';function sesKunye(dr){if(dr!==undefined)DEB_D=dr;dr=DEB_D;var k=$('ses-kunye');if(!k)return;
     if($('pm-ses').value!=='debussy'){k.hidden=true;return;}k.hidden=false;
-    k.innerHTML=(dr==='yukleniyor'?'⏳ Parça indiriliyor (ilk seferde, ~3 MB)…':dr==='hata'?'⚠️ Parça indirilemedi. İnternete bağlanıp tekrar seç.':'▶ <b>'+DEB[DEB_I][1]+'</b>')+'<br><small>Claude Debussy · '+(DEB[DEB_I][2]==='gh'?'Piyano: Laurens Goedhart (2011) · <a href="https://creativecommons.org/licenses/by/3.0/deed.tr" target="_blank" rel="noopener">CC BY 3.0</a>':'Piyano: Patrizia Prati (canlı kayıt, Madrid 2016) · <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.tr" target="_blank" rel="noopener">CC BY-SA 4.0</a>')+' · Wikimedia Commons · sıkıştırılarak kullanıldı</small>';}
+    k.innerHTML=(dr==='yukleniyor'?'<svg class="ic" aria-hidden="true"><use href="#i-kum"/></svg>Parça indiriliyor (ilk seferde, ~3 MB)…':dr==='hata'?'<svg class="ic" aria-hidden="true"><use href="#i-uyari"/></svg>Parça indirilemedi. İnternete bağlanıp tekrar seç.':'▶ <b>'+DEB[DEB_I][1]+'</b>')+'<br><small>Claude Debussy · '+(DEB[DEB_I][2]==='gh'?'Piyano: Laurens Goedhart (2011) · <a href="https://creativecommons.org/licenses/by/3.0/deed.tr" target="_blank" rel="noopener">CC BY 3.0</a>':'Piyano: Patrizia Prati (canlı kayıt, Madrid 2016) · <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.tr" target="_blank" rel="noopener">CC BY-SA 4.0</a>')+' · Wikimedia Commons · sıkıştırılarak kullanıldı</small>';}
   function sesDur(){if(sesA)sesA.pause();}
   // --- ekran kilitliyken uyanik kalma ---
   // Telefon kilitlenince tarayici sessiz sayfalari uyutur ve sayac durur.
@@ -281,7 +281,7 @@
     tur();alarmT=setInterval(tur,3000);tutGuncelle();
     bildir(B,M);alarmN=setInterval(function(){if(document.hidden)bildir(B,M);},2000);
   }
-  function prKutu(o){var k=$('alarm-pr');if(!o){k.hidden=true;return;}k.hidden=false;k.classList.toggle('tamam',o.yz>=100);$('alarm-pr-y').textContent=o.yz>=100?'✓ Tamam 🎉':'%'+o.yz;$('alarm-pr-bar').style.width=o.yz+'%';$('alarm-pr-t').textContent=o.ayr;}
+  function prKutu(o){var k=$('alarm-pr');if(!o){k.hidden=true;return;}k.hidden=false;k.classList.toggle('tamam',o.yz>=100);$('alarm-pr-y').textContent=o.yz>=100?'✓ Tamam':'%'+o.yz;$('alarm-pr-bar').style.width=o.yz+'%';$('alarm-pr-t').textContent=o.ayr;}
   // erken bitirince: sessiz bilgi penceresi (zil ve titresim yok)
   function erkenBitti(dk,ders,sb){
     $('alarm-b').textContent='Çalışman kaydedildi ✓';
@@ -334,9 +334,9 @@
   function kutlama(){
     var k=oku(KAYIT_K,{}),b=(k[gun(Date.now())]||{}).p||0,t=0,m='';
     for(var g in k)t+=k[g].p||0;
-    if(TOP_S[t])m='🎉 Toplam '+t+'. odak turu: '+TOP_S[t];
-    else if(GUN_S[b])m='🎯 Bugünün '+b+'. odak turu: '+GUN_S[b];
-    else{var r=Math.round(Math.sqrt(b));if(r*r===b)m='🎯 Bugünün '+b+'. odak turu: '+r+'² = '+b;}
+    if(TOP_S[t])m='Toplam '+t+'. odak turu: '+TOP_S[t];
+    else if(GUN_S[b])m='Bugünün '+b+'. odak turu: '+GUN_S[b];
+    else{var r=Math.round(Math.sqrt(b));if(r*r===b)m='Bugünün '+b+'. odak turu: '+r+'² = '+b;}
     if(m)$('alarm-p').textContent=$('alarm-p').textContent+'\n'+m;
   }
   function bitti(){
@@ -344,11 +344,11 @@
     if(eski==='deneme'){
       var sv=SINAV[sinavKod()];
       if(sv.oturum&&d.faz!==2){
-        if(d.faz==='ara'){d.faz=2;alarmBaslat(true,false,'2. oturum başladı! ✏️','Sayısal oturum: '+sv.oturum[1]+' dakika. Başarılar!');}
-        else{kayitEkle(sv.oturum[0],sv.ad+' Deneme',false,true);d.lgsDk=sv.oturum[0];d.faz='ara';alarmBaslat(true,false,'1. oturum bitti! ☕',sv.ara+' dakika ara. Ara bitince 2. oturum kendiliğinden başlayacak.');}
+        if(d.faz==='ara'){d.faz=2;alarmBaslat(true,false,'2. oturum başladı!','Sayısal oturum: '+sv.oturum[1]+' dakika. Başarılar!');}
+        else{kayitEkle(sv.oturum[0],sv.ad+' Deneme',false,true);d.lgsDk=sv.oturum[0];d.faz='ara';alarmBaslat(true,false,'1. oturum bitti!',sv.ara+' dakika ara. Ara bitince 2. oturum kendiliğinden başlayacak.');}
         d.toplam=d.kalan=sure('deneme');d.calisiyor=false;d.bitis=null;basla();return;
       }
-      alarmBaslat(true,false,'Deneme bitti! 📝','Kalemleri bırak. Sonuçlarını girelim.');denemeBitti(true);return;}
+      alarmBaslat(true,false,'Deneme bitti!','Kalemleri bırak. Sonuçlarını girelim.');denemeBitti(true);return;}
     if(eski==='odak'){odakKaydet(true);d.tur+=1;}
     var yeni=eski==='odak'?((d.tur%4===0)?'uzun':'kisa'):'odak';
     d.mod=yeni;d.toplam=sure(yeni);d.kalan=d.toplam;d.bitis=null;d.calisiyor=false;kaydet();
@@ -413,7 +413,7 @@
   $('pm-sinav').addEventListener('change',function(){ayarKaydet();if(d.mod==='deneme'&&!d.calisiyor){d.toplam=d.kalan=sure('deneme');kaydet();}ciz();});
   $('pm-ses').addEventListener('change',function(){ayarKaydet();sesGuncelle();sesArayuz();});
   // --- muzik butonu ve alt pencere ---
-  var SES_K=[['','🔇','Kapalı','Sessiz çalış'],['yagmur','🌧️','Yağmur','Gök gürültüsü ve şömine'],['kozmik','🌌','Kozmik','Uzay ambiyansı'],['kahve','🟤','Kahverengi gürültü','Derin ve yumuşak'],['beyaz','⚪','Beyaz gürültü','Dış sesleri bastırır'],['debussy','🎹','Debussy','Sakin piyano · 5 parça']];
+  var SES_K=[['','<svg class="ic" aria-hidden="true"><use href="#i-ses-kapali"/></svg>','Kapalı','Sessiz çalış'],['yagmur','<svg class="ic" aria-hidden="true"><use href="#i-yagmur"/></svg>','Yağmur','Gök gürültüsü ve şömine'],['kozmik','<svg class="ic" aria-hidden="true"><use href="#i-yildizlar"/></svg>','Kozmik','Uzay ambiyansı'],['kahve','<svg class="ic" aria-hidden="true"><use href="#i-dalga"/></svg>','Kahverengi gürültü','Derin ve yumuşak'],['beyaz','<svg class="ic" aria-hidden="true"><use href="#i-daire"/></svg>','Beyaz gürültü','Dış sesleri bastırır'],['debussy','<svg class="ic" aria-hidden="true"><use href="#i-nota"/></svg>','Debussy','Sakin piyano · 5 parça']];
   SES_K.forEach(function(x){var b=document.createElement('button');b.type='button';b.setAttribute('role','radio');b.dataset.v=x[0];if(!x[0])b.className='kapali';
     b.innerHTML='<em>'+x[1]+'</em><span><b>'+x[2]+'</b><br><small>'+x[3]+'</small></span>';
     b.addEventListener('click',function(){var sel=$('pm-ses');if(sel.value===x[0])return;sel.value=x[0];sel.dispatchEvent(new Event('change'));});
@@ -474,7 +474,7 @@
       m+=T.rToplam+': '+sureYaz(x.dk)+' · '+x.p+' tur\n';
       var lt={},l=[];for(var z in x.d)lt[dersAd(z)]=(lt[dersAd(z)]||0)+x.d[z];for(var z2 in lt)l.push([z2,lt[z2]]);l.sort(function(a,b){return b[1]-a[1];});
       for(var n=0;n<l.length;n++)m+='• '+l[n][0]+': '+sureYaz(l[n][1])+'\n';
-      if(x.c)m+='⚠️ '+T.rCikis+': '+x.c+'\n';
+      if(x.c)m+='! '+T.rCikis+': '+x.c+'\n';
     }
     return m;
   }
@@ -656,7 +656,7 @@
     window.MF_DNM_YENILE();
     var l=oku(DNM_K,[]),el=$('pm-dnm-liste');if(!el)return;
     $('pm-dnm-o').textContent=l.length?(l.length+' deneme'):'';
-    if(!l.length){el.innerHTML='<p class="pm-kucuk" style="margin:0">Henüz deneme yok. Çalışma ekranında <b>📝 Deneme</b> sekmesiyle çöz ya da dışarıda çözdüğün denemeyi yukarıdaki butonla ekle.</p>';return;}
+    if(!l.length){el.innerHTML='<p class="pm-kucuk" style="margin:0">Henüz deneme yok. Çalışma ekranında <b><svg class="ic" aria-hidden="true"><use href="#i-deneme"/></svg>Deneme</b> sekmesiyle çöz ya da dışarıda çözdüğün denemeyi yukarıdaki butonla ekle.</p>';return;}
     var son={},satir=[];
     l.forEach(function(x){var g=grup(x),o=son[g];x._f=(o===undefined)?null:x.net-o;son[g]=x.net;});
     l.slice().reverse().slice(0,20).forEach(function(x){
@@ -696,7 +696,7 @@
         if(!hed)return;var yz=Math.round(yap*100/hed),son=new Date(e[1]);son.setDate(son.getDate()+6);
         var ad=e[1].getMonth()===son.getMonth()?(e[1].getDate()+'–'+son.getDate()+' '+T.aylar[son.getMonth()]):(e[1].getDate()+' '+AYK[e[1].getMonth()]+' – '+son.getDate()+' '+AYK[son.getMonth()]);
         var buMu=e[0]===bu;if(!buMu)tops.push(yz);
-        satir.push('<div class="prg-s'+(yz>=100?' tam':'')+'"><div class="prg-u"><span>'+ad+(buMu?'<small>Bu hafta</small>':'')+'</span><b>%'+yz+'</b></div><div class="prg-bar"><i style="width:'+Math.min(100,yz)+'%"></i></div><small>'+sk(yap)+' / '+sk(hed)+(yz>=100?' · tamamlandı 🎉':'')+'</small></div>');});
+        satir.push('<div class="prg-s'+(yz>=100?' tam':'')+'"><div class="prg-u"><span>'+ad+(buMu?'<small>Bu hafta</small>':'')+'</span><b>%'+yz+'</b></div><div class="prg-bar"><i style="width:'+Math.min(100,yz)+'%"></i></div><small>'+sk(yap)+' / '+sk(hed)+(yz>=100?' · tamamlandı':'')+'</small></div>');});
       $('pm-prg-liste').innerHTML=satir.length?satir.join(''):'<p class="pm-kucuk" style="margin:0">Henüz geçmiş yok. Program sekmesinde planını kurduğun haftadan itibaren her haftanın tamamlanma oranı burada birikir.</p>';
       $('pm-prg-o').textContent=tops.length?('Ortalama %'+Math.round(tops.reduce(function(a,b){return a+b;},0)/tops.length)):'';
     }
@@ -705,7 +705,7 @@
       var hk=$('st-halka');if(hk){hk.hidden=!hh;if(hh){var bg=gunOzet(bi),kal=6-bi;
         hk.classList.toggle('tam',yz>=100);$('hlk-y').textContent='%'+yz;$('hlk-d').style.strokeDashoffset=100-Math.min(100,yz);
         $('hlk-a').textContent=sk(hy)+' / '+sk(hh);
-        $('hlk-b').textContent=yz>=100?'Haftayı tamamladın 🎉':((bg.hed?'Bugün %'+Math.round(bg.yap*100/bg.hed)+' · ':'')+(kal?kal+' gün kaldı':'Son gün'));}}
+        $('hlk-b').textContent=yz>=100?'Haftayı tamamladın!':((bg.hed?'Bugün %'+Math.round(bg.yap*100/bg.hed)+' · ':'')+(kal?kal+' gün kaldı':'Son gün'));}}
     }
     function ciz2(){setTimeout(function(){if(window.MF_SB_GUNCELLE)window.MF_SB_GUNCELLE();},0);
       anlik();
@@ -796,12 +796,12 @@
     window.MF_PR_OZET=function(ders){
       var bi=bugunI(),g=pr.g[bi];if(!g.length)return null;
       var oz=gunOzet(bi),yz=Math.min(100,Math.round(oz.yap*100/oz.hed)),ayr=[];
-      if(yz>=100)return {yz:100,ayr:'Bugünün planını bitirdin. Harika gün!',kisa:'📅 Bugünkü programın tamamlandı! 🎉'};
+      if(yz>=100)return {yz:100,ayr:'Bugünün planını bitirdin. Harika gün!',kisa:'Bugünkü programın tamamlandı!'};
       var bu=null;g.forEach(function(o){if(o.ders===dersAd(ders))bu=o;});
       if(bu){var y=yapilan(bi,bu.ders);ayr.push(bu.ders+': '+(y>=bu.dk?'✓ tamamlandı':sk(y)+' / '+sk(bu.dk)));}
       var kalan=g.filter(function(o){return o!==bu&&yapilan(bi,o.ders)<o.dk;}).slice(0,2).map(function(o){return o.ders+' '+sk(o.dk-yapilan(bi,o.ders));});
       if(kalan.length)ayr.push('Sırada: '+kalan.join(', '));
-      return {yz:yz,ayr:ayr.join('\n'),kisa:'📅 Bugünkü program: %'+yz+' tamamlandı'};
+      return {yz:yz,ayr:ayr.join('\n'),kisa:'Bugünkü program: %'+yz+' tamamlandı'};
     };
     window.MF_PR=ciz2;window.MF_PR_BOS=function(){return !pr.g.some(function(x){return x.length;});};window.MF_PR_UYGULA=function(g){if(!g||g.length!==7)return false;pr.g=g.map(function(x){return x.map(function(o){return {ders:String(o.ders),dk:+o.dk};});});prYaz();anlik();secGun=bugunI();ciz2();return true;};window.MF_SAYFA=sayfa;ciz2();
     window.MF_PR_SEC=function(ders){sayfa('sayac');window.scrollTo(0,0);if(d.calisiyor)return;if(d.mod==='deneme')modSec('odak');if(d.mod!=='odak')molaAtla(false);var sel=$('pm-ders');sel.value=ders;sel.dispatchEvent(new Event('change'));cipGuncelle();};

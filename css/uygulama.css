@@ -1617,3 +1617,54 @@ html.mf-gece .sc-p .sc-ic #pm-ozel-k{color:#C3CBEA}
 /* Dokunmatik: düğme ve çiplerde uzun basınca yazı seçilmesin, kopyala menüsü açılmasın (giriş kutuları hariç) */
 button,[role="button"],[role="radio"],[role="switch"],[role="tab"],summary,label,.pm-chips,.pm-saat,.pm-saat *,.sc-btn,.sc-btn *,#alt-nav,#alt-nav *,.pm-mod,.pm-domates,.bl-deg,.ay-sec,.kd,.kd *,.iz-harita,.iz-harita *{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
 input,textarea,select,[contenteditable]{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
+/* ===== 22 Kasım: tutarlılık düzeltmeleri ===== */
+/* 2) Tüm sekme grupları aynı: açık zemin üzerinde seçili olan düz mavi */
+.pm-mod,.tk-sek,#kt-kart .kt-bolumler{display:flex;gap:4px;padding:4px;background:#EEF1FB;border-radius:14px}
+.pm-mod button,.tk-sek button,#kt-kart .kt-bol{flex:1;border:0;border-radius:11px;background:transparent;color:#4A5590;font-weight:700;box-shadow:none}
+.pm-mod button.aktif,.tk-sek button.on,#kt-kart .kt-bol.on{background:#1E3BD6;color:#fff;box-shadow:0 2px 8px rgba(30,59,214,.25)}
+html.mf-gece .pm-mod,html.mf-gece .tk-sek,html.mf-gece #kt-kart .kt-bolumler{background:#1A2142}
+html.mf-gece .pm-mod button,html.mf-gece .tk-sek button,html.mf-gece #kt-kart .kt-bol{background:transparent;color:#AEB6D3}
+html.mf-gece .pm-mod button.aktif,html.mf-gece .tk-sek button.on,html.mf-gece #kt-kart .kt-bol.on{background:#3D5AFE;color:#fff}
+/* 3) Deneme sekmesi de mavi; deneme kadranı turuncu (kırmızı yok) */
+.pm-mod button.aktif[data-m="deneme"],html.mf-gece .pm-mod button.aktif[data-m="deneme"]{background:#1E3BD6}
+html.mf-gece .pm-mod button.aktif[data-m="deneme"]{background:#3D5AFE}
+.pm-saat.kd-deneme{--kd-v:#FF8A1F;--kd-v2:#FF6A00}
+/* 4) Tek tip ana düğme: düz turuncu, hafif gölge (Başlat ile aynı) */
+.mt-btn,#ses-tamam,.mt-alt .bitir,#pm-koc #pm-koc-katil{background:#FF8A1F;color:#fff;box-shadow:0 3px 10px rgba(255,138,31,.28)}
+.mt-btn:active,#ses-tamam:active{transform:scale(.98)}
+#pm-ses-p #ses-tamam{padding:15px;font-size:17px;font-weight:800;border-radius:14px}
+/* 5) Tüm aç-kapa işaretleri aynı ok (⌄, açılınca ⌃) */
+details>summary{list-style:none}details>summary::-webkit-details-marker{display:none}
+details.kart>summary,details.ses-pl>summary{display:flex;align-items:center;gap:8px}
+details.kart>summary::after,details.ses-pl>summary::after,.pm-acc-b::after{content:"";display:inline-block;width:7px;height:7px;margin-left:auto;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s;opacity:.7;flex:none}
+.pm-acc-b::after{margin-left:10px;vertical-align:middle;font-size:0}
+details[open].kart>summary::after,details[open].ses-pl>summary::after,.pm-acc[open] .pm-acc-b::after{transform:rotate(-135deg) translate(-2px,0);content:""}
+/* 6) Tek mavi: kraliyet mavisi #1E3BD6 (gece #3D5AFE) */
+.koc-zoom{background:#1E3BD6}
+.an-btn,.sb-buyuk{background:#1E3BD6}
+html.mf-gece .an-btn,html.mf-gece .sb-buyuk{background:#3D5AFE}
+#pm-koc{border-color:rgba(30,59,214,.35)}
+html.mf-gece #pm-koc{border-color:rgba(159,178,255,.25)}
+/* 7) Deneme: sınav seçimi diğer seçim düğmeleriyle aynı görünüm */
+#pm-sinav{-webkit-appearance:none;appearance:none;width:100%;min-height:46px;border:1px solid #C9D2F5;border-radius:14px;padding:8px 38px 8px 14px;font:inherit;font-size:15px;font-weight:700;color:#1C2E8A;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%237A8099' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 14px center}
+html.mf-gece #pm-sinav{background-color:#232B52;border-color:#3A4BA0;color:#E6EAFA}
+/* 8) Küçükler */
+.ust h1 small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11.5px}
+.kd .dj-link{text-decoration:none;font-weight:800}
+.imza a{text-decoration:none;font-weight:600;color:inherit;border-bottom:1px dotted currentColor}
+.ses-pl summary small{color:#7A8099}
+.pm-acc-b{font-size:17px}
+/* Tek renk çizgi ikonlar (index.html #mf-ikonlar) — emojilerin yerine */
+.ic{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.22em;margin-right:.38em;flex:none;overflow:visible}
+.kt-bs .ic,.sil-ikon .ic,#pm-curu .ikon .ic,#tema .ic,.an-ik .ic,.sb-b-ik .ic,.sb-s-ik .ic,.sc-i .ic,.kt-sim .ic,#pm-ses-p em .ic,.iz-sh-ses .ic,.iz-coz summary .ic{margin-right:0}
+.kt-bs .ic{width:44px;height:44px;color:#1E3BD6}
+.sil-ikon .ic,#pm-curu .ikon .ic{width:44px;height:44px;color:#FF8A1F}
+.an-ik .ic,.sb-b-ik .ic{width:28px;height:28px}
+#pm-ses-p em .ic{width:24px;height:24px;color:#1E3BD6}
+#tema .ic{width:22px;height:22px}
+.iz-sh-ses .ic{width:22px;height:22px;color:#fff}
+/* başlıklardaki ikonlar turuncu vurgu */
+.pm-acc-b .ic,.pr-bas .ic,.yd-baslik .ic,.mt-bas .ic,details.kart>summary .ic,.iz-hero h2 .ic,.an-k h4 .ic,.iz-d-bilgi b .ic{color:#FF8A1F}
+.iz-coz.d summary .ic{color:#1FA463}.iz-coz.y summary .ic{color:#E5484D}
+html.mf-gece .kt-bs .ic,html.mf-gece #pm-ses-p em .ic{color:#9FB2FF}
+details.pm-rehber>summary{display:flex;align-items:center;gap:8px}details.pm-rehber>summary::after{content:"";display:inline-block;width:7px;height:7px;margin-left:auto;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s;opacity:.7;flex:none}details[open].pm-rehber>summary::after{transform:rotate(-135deg) translate(-2px,0)}

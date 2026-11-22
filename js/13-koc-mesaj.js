@@ -10,7 +10,7 @@ function zaman(iso){var d=new Date(iso),b=new Date();var g=d.toDateString()===b.
 function ciz(L){
  var sayfa=document.getElementById('pg-sayac');if(!sayfa)return;
  if(!kutu){kutu=document.createElement('div');kutu.id='km-kutu';sayfa.insertBefore(kutu,sayfa.firstChild);}
- kutu.innerHTML=L.map(function(m){return '<div class="km-kart" role="status"><div class="km-ust"><b>💬 Koçundan mesaj</b><small>'+zaman(m.t)+'</small></div><p>'+esc(m.metin)+'</p><button type="button" class="km-tamam" data-id="'+esc(m.id)+'">Tamam</button></div>';}).join('');
+ kutu.innerHTML=L.map(function(m){return '<div class="km-kart" role="status"><div class="km-ust"><b><svg class="ic" aria-hidden="true"><use href="#i-mesaj"/></svg>Koçundan mesaj</b><small>'+zaman(m.t)+'</small></div><p>'+esc(m.metin)+'</p><button type="button" class="km-tamam" data-id="'+esc(m.id)+'">Tamam</button></div>';}).join('');
  [].forEach.call(kutu.querySelectorAll('.km-tamam'),function(b){b.addEventListener('click',function(){
   var id=b.dataset.id;gorEkle(id);var k=b.closest('.km-kart');if(k)k.remove();
   try{fetch(URL_,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify({tip:'mesajgor',kod:kod(),id:id})});}catch(e){}

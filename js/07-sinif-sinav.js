@@ -28,8 +28,8 @@ function bugunIst(){
 function gunKaldi(tarih){var q=tarih.split('-');return Math.round((Date.UTC(+q[0],+q[1]-1,+q[2])-bugunIst())/86400000);}
 function etiket(f){
  var a=f.alan;
- if(f.sinif==='Mezun')return '🎓 Mezun'+(a?' · '+ALAN_KISA[a]:'');
- return '🎓 '+f.sinif+'. sınıf'+((f.sinif==='11'||f.sinif==='12')&&a?' · '+ALAN_AD[a]:'');
+ if(f.sinif==='Mezun')return 'Mezun'+(a?' · '+ALAN_KISA[a]:'');
+ return f.sinif+'. sınıf'+((f.sinif==='11'||f.sinif==='12')&&a?' · '+ALAN_AD[a]:'');
 }
 function kartGuncelle(){
  var f=window.MF_SINIF(),k=$('sn-kart'),i=$('sn-ince'),say=$('sn-say');
@@ -40,7 +40,7 @@ function kartGuncelle(){
  var t=null;
  if(f.sinif==='12'||f.sinif==='Mezun')t=SN_TAKVIM.YKS;else if(f.sinif==='8')t=SN_TAKVIM.LGS;
  var m='';
- if(t){var n=gunKaldi(t.tarih);if(n>0)m='<small>'+t.ad+'</small><b>'+n+' gün</b>';else if(n===0)m='<small>'+t.ad+'</small><b>bugün 🍀</b>';}
+ if(t){var n=gunKaldi(t.tarih);if(n>0)m='<small>'+t.ad+'</small><b>'+n+' gün</b>';else if(n===0)m='<small>'+t.ad+'</small><b>bugün</b>';}
  say.innerHTML=m;say.hidden=!m;say.dataset.kisa=m;
  if(t){var q=t.tarih.split('-'),AYL=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
   var hedef=new Date(+q[0],+q[1]-1,+q[2],+t.saat.split(':')[0],+t.saat.split(':')[1]),fark=hedef-Date.now();

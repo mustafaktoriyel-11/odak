@@ -124,7 +124,7 @@ function satirGuncelle(){
  else if(izin()==='denied')t='Telefon ayarlarından izin ver';
  else if(a.acik&&izin()==='granted')t='Açık '+(a.s1||'17:00')+' / '+(a.s2||'21:30');
  else t='Kapalı';
- et.textContent=kutu&&kutu.classList.contains('bl-uyar')?(izin()==='denied'?'🔔 Bildirimlere izin ver: telefon ayarları':'🔔 Bildirimleri aç, günlük hatırlatma al'):'🔔 Bildirimler · '+t;
+ et.innerHTML='<svg class="ic" aria-hidden="true"><use href="#i-zil"/></svg>'+(kutu&&kutu.classList.contains('bl-uyar')?(izin()==='denied'?'Bildirimlere izin ver: telefon ayarları':'Bildirimleri aç, günlük hatırlatma al'):'Bildirimler · '+t);
 }
 
 // ---------- ayar sayfası ----------
@@ -209,8 +209,8 @@ function seritGuncelle(){
   });}
  serit.hidden=false;serit.classList.toggle('acik',izin()==='denied');
  serit.innerHTML=izin()==='denied'
-  ?'<b>🔕 Koçunun mesajları sana ulaşmıyor</b><span>Bildirim izni telefon ayarlarından kapatılmış.</span><small>Aç: Telefon Ayarları → Uygulamalar → MF Odak (ya da Chrome) → Bildirimler → İzin ver</small>'
-  :'<b>🔕 Koçunun mesajları sana ulaşmıyor</b><span>Bildirimleri aç ›</span>';
+  ?'<b><svg class="ic" aria-hidden="true"><use href="#i-zil-yok"/></svg>Koçunun mesajları sana ulaşmıyor</b><span>Bildirim izni telefon ayarlarından kapatılmış.</span><small>Aç: Telefon Ayarları → Uygulamalar → MF Odak (ya da Chrome) → Bildirimler → İzin ver</small>'
+  :'<b><svg class="ic" aria-hidden="true"><use href="#i-zil-yok"/></svg>Koçunun mesajları sana ulaşmıyor</b><span>Bildirimleri aç ›</span>';
 }
 var _sg=satirGuncelle;satirGuncelle=function(){_sg();seritGuncelle();};
 document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')seritGuncelle();});

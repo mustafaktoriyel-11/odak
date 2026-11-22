@@ -31,7 +31,7 @@
       if(g<3600000)return [iki(Math.floor(g/60000))+':'+iki(Math.floor(g%60000/1000)),iki(Math.floor(g%1000/10))];
       return [iki(Math.floor(g/3600000))+':'+iki(Math.floor(g%3600000/60000)),iki(Math.floor(g%60000/1000))];}
     var x=djGecen&&secim==='dj'?S.toplam-k:k,s=djGecen&&secim==='dj'?Math.floor(x/1000):Math.ceil(x/1000);
-    if(s>=3600)return [iki(Math.floor(s/3600))+':'+iki(Math.floor(s%3600/60)),iki(s%60)];
+    if(s>=3600)return [iki(Math.floor(s/3600))+':'+iki(Math.floor(s%3600/60))+':'+iki(s%60),null];
     return [iki(Math.floor(s/60))+':'+iki(s%60),null];}
   function saliseVar(){return S&&S.serbest&&S.calisiyor&&(S.toplam-kNow())<3600000;}
   // maxW: yazının sığması gereken en büyük genişlik (viewBox birimi); sığmazsa boy küçülür
@@ -136,12 +136,13 @@
     $('kd-z').style.opacity=dur?.42:1;
     var u=S.serbest?'':(S.mod==='deneme'?'DENEME':(S.mola?'MOLA':'ODAK'))+' · '+(djGecen?'GEÇEN ⇄':'KALAN ⇄');if(dur)u='DURAKLATILDI';
     var basladi=S.calisiyor||k!==S.toplam;if(!basladi)u='';
-    baAdim(basladi?1:0);var by=30*(1-ba);svg.setAttribute('viewBox','0 '+by.toFixed(1)+' 300 '+(222-50*(1-ba)).toFixed(1));$('dj-pnl').setAttribute('transform','translate(0 '+(-20*(1-ba)).toFixed(1)+')');
+    baAdim(basladi?1:0);var by=30*(1-ba);svg.setAttribute('viewBox','0 '+by.toFixed(1)+' 300 '+(222-50*(1-ba)-(S.mod==='deneme'?66:0)).toFixed(1));$('dj-pnl').setAttribute('transform','translate(0 '+(-20*(1-ba)).toFixed(1)+')');
     var t=$('dj-ust');t.textContent=u;t.classList.toggle('dur',dur);$('dj-ust-g').style.display=u?'':'none';
     var w=Math.max(70,u.length*7.6+22);$('dj-ust-r').setAttribute('x',f(150-w/2));$('dj-ust-r').setAttribute('width',f(w));
     $('dj-bitis').innerHTML=!basladi?'':S.serbest?(k!==S.toplam?'Başlangıç <tspan class="dj-bs">'+saatYaz(Date.now()-(S.toplam-k))+'</tspan>':''):(k>0?'Bitiş <tspan class="dj-bs">'+saatYaz(Date.now()+k)+'</tspan>':'Süre doldu');
     var pl=window.MF_PR_GUN?window.MF_PR_GUN():null,canli=(S.mod==='odak'&&!S.mola)?(S.toplam-k)/60000:0;
     // BUGÜN: bugün çalışılan (süren oturum dahil) · KALAN: programa göre kalan
+    $('dj-pnl').style.display=S.mod==='deneme'?'none':'';
     var bg=bugunDk()+canli;$('dj-e1').textContent='BUGÜN';$('dj-e2').textContent='KALAN';mini('dj-v1',bg,'var(--kd-yazi)');
     if(pl&&pl.hed){var kl=Math.max(0,pl.hed-bg);if(kl>0.5)mini('dj-v2',kl,'var(--kd-v)');else yaziYaz('dj-v2','tamam ✓','dj-tamam');}
     else{yaziYaz('dj-v2','Program yap ›','dj-link');}

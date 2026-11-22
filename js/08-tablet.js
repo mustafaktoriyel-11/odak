@@ -56,7 +56,7 @@
     if(hedef>0){var y=Math.min(100,Math.round(top/hedef*100));o+='<div class="tb-hedef" title="Bugünkü hedef"><i style="width:'+y+'%"></i></div><small class="tb-hy">Bugünkü hedef '+sure(hedef)+' · %'+y+' tamam</small>';}
     if(plan.length){
       var kalan=plan.filter(function(x){return !d[x.ders]||d[x.ders]<(+x.dk||0);});
-      o+='<div class="tb-prg">📅 <b>Bugünkü program</b>'+(hedef?' · '+(kalan.length?sure(Math.max(0,hedef-(b.dk||0)))+' kaldı':'tamamlandı 🎯'):'')+'<ul>'+plan.map(function(x){var ok=(d[x.ders]||0)>=(+x.dk||0);return '<li'+(ok?' class="ok"':'')+'>'+(ok?'✓ ':'')+esc(x.ders)+' · '+sure(+x.dk||0)+'</li>';}).join('')+'</ul></div>';
+      o+='<div class="tb-prg"><svg class="ic" aria-hidden="true"><use href="#i-takvim"/></svg><b>Bugünkü program</b>'+(hedef?' · '+(kalan.length?sure(Math.max(0,hedef-(b.dk||0)))+' kaldı':'tamamlandı'):'')+'<ul>'+plan.map(function(x){var ok=(d[x.ders]||0)>=(+x.dk||0);return '<li'+(ok?' class="ok"':'')+'>'+(ok?'✓ ':'')+esc(x.ders)+' · '+sure(+x.dk||0)+'</li>';}).join('')+'</ul></div>';
     }
     var G7=[],mx=1,KG=['Paz','Pzt','Sal','Çar','Per','Cum','Cmt'];
     for(var j=6;j>=0;j--){var t=Date.now()-j*864e5,v=(kay[gun(t)]||{}).dk||0;mx=Math.max(mx,v);G7.push({v:v,a:KG[new Date(t).getDay()],bu:j===0});}

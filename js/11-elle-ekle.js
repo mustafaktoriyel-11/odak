@@ -15,7 +15,7 @@
     $('el-ders').innerHTML=L.map(function(d){return '<button type="button" role="radio" data-v="'+esc(d)+'"'+(d===S.ders?' class="on" aria-checked="true"':' aria-checked="false"')+'>'+esc(d)+'</button>';}).join('');
     secTek($('el-gun'),$('el-gun').querySelector('[data-g="0"]'));secTek($('el-hazir'),null);$('el-dk').value='';
     var kod='';try{kod=localStorage.getItem('mf-koc-kod')||'';}catch(e){}
-    $('el-ac').textContent=kod?'Sayacı açmayı unuttuysan çalışmanı buradan ekle. Koçun bu kaydı “✍️ elle eklendi” olarak görür.':'Sayacı açmayı unuttuysan çalışmanı buradan ekle.';
+    $('el-ac').textContent=kod?'Sayacı açmayı unuttuysan çalışmanı buradan ekle. Koçun bu kaydı “elle eklendi” olarak görür.':'Sayacı açmayı unuttuysan çalışmanı buradan ekle.';
     kontrol();ort.hidden=false;
     if(window.LEX_GERI)window.LEX_GERI.ekle('mf-elle',function(){kapat(true);});
   }

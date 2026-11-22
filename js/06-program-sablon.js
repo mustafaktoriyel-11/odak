@@ -11,10 +11,10 @@ var ALAN={
 };
 var ALAN_SIRA=['TYT','SAY','EA','SOZ'];
 var SEV={
- caylak:{e:'🐣',ad:'Çaylak',acik:'Yeni başlayanlar ve okulu yoğun olanlar için. Pazar dinlenme.',h:[75,100,0],b:25,m:2},
- duzenli:{e:'🚶',ad:'Düzenli',acik:'Her gün düzenli tempo.',h:[160,200,120],b:40,m:2},
- azimli:{e:'🔥',ad:'Azimli',acik:'Hedefi yüksek olanlar için ciddi tempo.',h:[300,350,250],b:50,m:2},
- nerd:{e:'🤓',ad:'Nerd',acik:'Mezunlar ve son aylar için tam gaz.',h:[450,500,400],b:50,m:3}
+ caylak:{e:'<svg class="ic" aria-hidden="true"><use href="#i-filiz"/></svg>',ad:'Çaylak',acik:'Yeni başlayanlar ve okulu yoğun olanlar için. Pazar dinlenme.',h:[75,100,0],b:25,m:2},
+ duzenli:{e:'<svg class="ic" aria-hidden="true"><use href="#i-adim"/></svg>',ad:'Düzenli',acik:'Her gün düzenli tempo.',h:[160,200,120],b:40,m:2},
+ azimli:{e:'<svg class="ic" aria-hidden="true"><use href="#i-alev"/></svg>',ad:'Azimli',acik:'Hedefi yüksek olanlar için ciddi tempo.',h:[300,350,250],b:50,m:2},
+ nerd:{e:'<svg class="ic" aria-hidden="true"><use href="#i-kitap"/></svg>',ad:'Nerd',acik:'Mezunlar ve son aylar için tam gaz.',h:[450,500,400],b:50,m:3}
 };
 var SEV_SIRA=['caylak','duzenli','azimli','nerd'];
 
@@ -88,7 +88,7 @@ function oner(){
  if(f.sinif==='12')sv='azimli';else if(f.sinif==='Mezun')sv='nerd';
  if(f.sinif==='9'||f.sinif==='10')al='';
  var ad=(f.sinif==='Mezun'?'Mezun':f.sinif+'. sınıf')+(al?' '+ALAN[al].ad:'');
- return {alan:al||'TYT',sev:sv,etiket:ad+' için önerilen: '+(al?'':'TYT · ')+SEV[sv].e+' '+SEV[sv].ad};
+ return {alan:al||'TYT',sev:sv,etiket:ad+' için önerilen: '+(al?'':'TYT · ')+SEV[sv].ad};
 }
 function onerAyni(){var o=oku();return !(o&&ALAN[o.alan]&&SEV[o.seviye]);}
 function guncelle(){
@@ -131,7 +131,7 @@ function cizSev(){
   var S=SEV[v],g=uret(st.alan,v),saat=Math.round(topla(g)/60);
   var b=document.createElement('button');b.type='button';b.dataset.v=v;
   b.className=st.sev===v?'on':'';b.setAttribute('aria-pressed',st.sev===v);
-  var e=document.createElement('span');e.className='sb-s-ik';e.textContent=S.e;
+  var e=document.createElement('span');e.className='sb-s-ik';e.innerHTML=S.e;
   var m=document.createElement('span');m.className='sb-s-m';
   var t=document.createElement('b');t.textContent=S.ad;
   var a=document.createElement('small');a.textContent=S.acik;

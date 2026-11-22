@@ -111,7 +111,7 @@
     var arac=$('kt-arac'), ekle=$('kt-ekle'), serit=$('kt-serit');
     if(st.hata||!window.indexedDB){
       ekle.hidden=true;arac.hidden=true;serit.hidden=true;$('kt-depo').textContent='';
-      listeEl.innerHTML='<div class="kt-bos"><div class="kt-bs">⚠️</div><p>Bu tarayıcı dosya saklamayı desteklemiyor.</p></div>';
+      listeEl.innerHTML='<div class="kt-bos"><div class="kt-bs"><svg class="ic" aria-hidden="true"><use href="#i-uyari"/></svg></div><p>Bu tarayıcı dosya saklamayı desteklemiyor.</p></div>';
       return;
     }
     ekle.hidden=false;
@@ -120,7 +120,7 @@
     if(st.filtre&&!sy[st.filtre])st.filtre='';
     if(!dosyalar().length){
       arac.hidden=true;
-      listeEl.innerHTML='<div class="kt-bos"><div class="kt-bs">📂</div><p>Konu özetlerini, PDF\'lerini ve deneme cevap anahtarlarını buraya ekle. Hepsi yalnız bu telefonda saklanır.</p></div>';
+      listeEl.innerHTML='<div class="kt-bos"><div class="kt-bs"><svg class="ic" aria-hidden="true"><use href="#i-klasor"/></svg></div><p>Konu özetlerini, PDF\'lerini ve deneme cevap anahtarlarını buraya ekle. Hepsi yalnız bu telefonda saklanır.</p></div>';
       depoYaz();
       return;
     }
@@ -149,7 +149,7 @@
       l.sort(function(a,b){return b.eklendi-a.eklendi;});
       h+='<div class="kt-grup">'+esc(d)+'</div>';
       l.forEach(function(m){
-        h+='<div class="kt-satir"><button type="button" class="kt-ac" data-id="'+m.id+'"><span class="kt-sim">'+(m.tur==='pdf'?'📄':'🖼️')+'</span><span class="kt-metin"><span class="kt-ad">'+esc(m.ad)+'</span><span class="kt-alt">'+boyutYaz(m.boyut)+' · '+tarihYaz(m.eklendi)+'</span></span></button><button type="button" class="kt-dd" data-id="'+m.id+'" aria-label="Seçenekler">⋯</button></div>';
+        h+='<div class="kt-satir"><button type="button" class="kt-ac" data-id="'+m.id+'"><span class="kt-sim">'+(m.tur==='pdf'?'<svg class="ic" aria-hidden="true"><use href="#i-belge"/></svg>':'<svg class="ic" aria-hidden="true"><use href="#i-resim"/></svg>')+'</span><span class="kt-metin"><span class="kt-ad">'+esc(m.ad)+'</span><span class="kt-alt">'+boyutYaz(m.boyut)+' · '+tarihYaz(m.eklendi)+'</span></span></button><button type="button" class="kt-dd" data-id="'+m.id+'" aria-label="Seçenekler">⋯</button></div>';
       });
     });
     listeEl.innerHTML=h||'<p class="pm-kucuk kt-yok">Eşleşen dosya yok.</p>';
@@ -202,7 +202,7 @@
     var u=$('kt-sh-uyari');
     u.hidden=!reddedilen.length;u.textContent=reddedilen.join(' ');
     $('kt-sh-satirlar').innerHTML=dosyalar.map(function(f,i){
-      return '<div class="kt-sh-satir"><span class="kt-sim">'+(f.tur==='pdf'?'📄':'🖼️')+'</span><input type="text" class="lex-in kt-ad-in" data-i="'+i+'" value="'+esc(f.ad)+'" maxlength="150" aria-label="Dosya adı"><span class="kt-boy">'+boyutYaz(f.file.size)+'</span></div>';
+      return '<div class="kt-sh-satir"><span class="kt-sim">'+(f.tur==='pdf'?'<svg class="ic" aria-hidden="true"><use href="#i-belge"/></svg>':'<svg class="ic" aria-hidden="true"><use href="#i-resim"/></svg>')+'</span><input type="text" class="lex-in kt-ad-in" data-i="'+i+'" value="'+esc(f.ad)+'" maxlength="150" aria-label="Dosya adı"><span class="kt-boy">'+boyutYaz(f.file.size)+'</span></div>';
     }).join('');
     dersSecenekleri(onerilenDers());
     $('kt-sh-kaydet').textContent='Kaydet';
@@ -212,7 +212,7 @@
     sh.kip='duzenle';sh.duz=m;sh.dosyalar=[];
     $('kt-sh-baslik').textContent='Dersi değiştir';
     $('kt-sh-uyari').hidden=true;
-    $('kt-sh-satirlar').innerHTML='<div class="kt-sh-satir"><span class="kt-sim">'+(m.tur==='pdf'?'📄':'🖼️')+'</span><input type="text" class="lex-in kt-ad-in" data-i="0" value="'+esc(m.ad)+'" maxlength="150" aria-label="Dosya adı"></div>';
+    $('kt-sh-satirlar').innerHTML='<div class="kt-sh-satir"><span class="kt-sim">'+(m.tur==='pdf'?'<svg class="ic" aria-hidden="true"><use href="#i-belge"/></svg>':'<svg class="ic" aria-hidden="true"><use href="#i-resim"/></svg>')+'</span><input type="text" class="lex-in kt-ad-in" data-i="0" value="'+esc(m.ad)+'" maxlength="150" aria-label="Dosya adı"></div>';
     dersSecenekleri(m.ders);
     $('kt-sh-kaydet').textContent='Kaydet';
     shAc();
@@ -676,13 +676,13 @@
     var gen=++sqGen;
     if(hata){
       ust.hidden=oz.hidden=arac.hidden=true;izg.innerHTML='';
-      bos.hidden=false;bos.innerHTML='<div class="kt-bs">⚠️</div><p>Bu tarayıcı soru saklamayı desteklemiyor.</p>';
+      bos.hidden=false;bos.innerHTML='<div class="kt-bs"><svg class="ic" aria-hidden="true"><use href="#i-uyari"/></svg></div><p>Bu tarayıcı soru saklamayı desteklemiyor.</p>';
       return;
     }
     if(!tumu.length){
       ust.hidden=oz.hidden=arac.hidden=true;izg.innerHTML='';
       bos.hidden=false;
-      bos.innerHTML='<div class="kt-bs">📸</div><p>Çözemediğin ya da yanlış yaptığın soruların fotoğrafını çek, konusunu yaz. Sonra burada tekrar et, öğrendiklerini işaretle. Hepsi yalnız bu telefonda saklanır.</p><div class="sq-bos-dugme"><button type="button" class="mt-btn sq-ekle" data-ac="cek">📷 Fotoğraf çek</button><button type="button" class="mt-btn2 sq-ekle" data-ac="galeri">🖼️ Galeriden</button></div>';
+      bos.innerHTML='<div class="kt-bs"><svg class="ic" aria-hidden="true"><use href="#i-kamera"/></svg></div><p>Çözemediğin ya da yanlış yaptığın soruların fotoğrafını çek, konusunu yaz. Sonra burada tekrar et, öğrendiklerini işaretle. Hepsi yalnız bu telefonda saklanır.</p><div class="sq-bos-dugme"><button type="button" class="mt-btn sq-ekle" data-ac="cek"><svg class="ic" aria-hidden="true"><use href="#i-kamera"/></svg>Fotoğraf çek</button><button type="button" class="mt-btn2 sq-ekle" data-ac="galeri"><svg class="ic" aria-hidden="true"><use href="#i-resim"/></svg>Galeriden</button></div>';
       return;
     }
     bos.hidden=true;bos.innerHTML='';
@@ -926,7 +926,7 @@
   }
   function altGuncelle(m){
     var ogr=durumu(m)==='ogrendim';
-    sqIslemBtn.textContent=ogr?'↩ Tekrar listesine al':'✅ Öğrendim';
+    sqIslemBtn.innerHTML=ogr?'<svg class="ic" aria-hidden="true"><use href="#i-tekrar"/></svg>Tekrar listesine al':'<svg class="ic" aria-hidden="true"><use href="#i-tamam"/></svg>Öğrendim';
     sqIslemBtn.setAttribute('data-islem',ogr?'geri':'ogren');
     sqIslemBtn.className='sq-alt-b'+(ogr?'':' sq-yesil');
   }
@@ -943,9 +943,9 @@
     $('sq-gor-sayac').textContent=s.tekrar?(s.sira+1)+' / '+s.kuyruk.length:'';
     var h='';
     if(m.not)h+='<p>'+esc(m.not)+'</p>';
-    if(m.kaynak)h+='<p class="sq-kaynak">📖 '+esc(m.kaynak)+'</p>';
+    if(m.kaynak)h+='<p class="sq-kaynak"><svg class="ic" aria-hidden="true"><use href="#i-kitap"/></svg>'+esc(m.kaynak)+'</p>';
     sqBilgi.innerHTML=h;sqBilgi.hidden=!h;
-    sqCozumBtn.hidden=!m.cozum;sqCozumBtn.textContent='💡 Çözümü göster';
+    sqCozumBtn.hidden=!m.cozum;sqCozumBtn.innerHTML='<svg class="ic" aria-hidden="true"><use href="#i-ampul"/></svg>Çözümü göster';
     altGuncelle(m);
     zoomUygula();
     sqFotoKap.scrollLeft=0;sqFotoKap.scrollTop=0;
@@ -980,7 +980,7 @@
     var s=SG;if(!s)return;
     sqGovde.hidden=true;sqAlt.hidden=true;sqOzet.hidden=false;
     $('sq-gor-sayac').textContent='';
-    $('sq-ozet-metin').textContent=s.islenen+' soru tekrar ettin, '+s.ogrenilen+"'ünü öğrendin 🎉";
+    $('sq-ozet-metin').textContent=s.islenen+' soru tekrar ettin, '+s.ogrenilen+"'ünü öğrendin!";
   }
   function sqSonraki(){
     var s=SG;if(!s)return;
@@ -1015,14 +1015,14 @@
   $('sq-eksi').addEventListener('click',function(){if(!SG)return;SG.zoom=Math.max(1,Math.round((SG.zoom-.25)*100)/100);zoomUygula();});
   sqCozumBtn.addEventListener('click',async function(){
     var s=SG;if(!s)return;
-    if(s.cozumAcik){s.cozumAcik=false;sqCozumKap.hidden=true;sqCozumBtn.textContent='💡 Çözümü göster';return;}
+    if(s.cozumAcik){s.cozumAcik=false;sqCozumKap.hidden=true;sqCozumBtn.innerHTML='<svg class="ic" aria-hidden="true"><use href="#i-ampul"/></svg>Çözümü göster';return;}
     var m=soruBul(s.id);if(!m||!m.cozum)return;
     var b=await blobOku(m.cozum);
     if(SG!==s)return;
     if(!b){bildir('Çözüm fotoğrafı bulunamadı.',true);return;}
     if(s.cozumUrl)URL.revokeObjectURL(s.cozumUrl);
     s.cozumUrl=URL.createObjectURL(b);sqCozumImg.src=s.cozumUrl;
-    s.cozumAcik=true;sqCozumKap.hidden=false;sqCozumBtn.textContent='🙈 Çözümü gizle';
+    s.cozumAcik=true;sqCozumKap.hidden=false;sqCozumBtn.innerHTML='<svg class="ic" aria-hidden="true"><use href="#i-goz-yok"/></svg>Çözümü gizle';
   });
 
   // soru menüsü: düzenle, paylaş, sil

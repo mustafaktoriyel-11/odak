@@ -1,4 +1,4 @@
-// Ders ve süre seçimi: Başlat'ın altında iki küçük düğme ("📘 Fizik ▾", "⏱ 40 dk ▾"); dokununca alttan pencere.
+// Ders ve süre seçimi: Başlat'ın altında iki küçük düğme (kitap ve saat ikonlu); dokununca alttan pencere.
 // Var olan seçim öğeleri (#pm-ders-k, #pm-odak-k, #pm-ozel-k) pencerelere taşınır; sayaç mantığı aynı kalır.
 (function(){
   'use strict';
@@ -19,8 +19,8 @@
   var dc=$('pm-ders-c');if(dc)dc.classList.remove('kaydir');
   // ana ekrandaki satır
   var sat=document.createElement('div');sat.className='sc-satir';sat.id='sc-satir';
-  sat.innerHTML='<button type="button" class="sc-btn" id="sc-ders" aria-haspopup="dialog"><span class="sc-i">📘</span><b id="sc-ders-et"></b><i aria-hidden="true">▾</i></button>'+
-    '<button type="button" class="sc-btn" id="sc-sure" aria-haspopup="dialog"><span class="sc-i">⏱</span><b id="sc-sure-et"></b><i aria-hidden="true">▾</i></button>';
+  sat.innerHTML='<button type="button" class="sc-btn" id="sc-ders" aria-haspopup="dialog"><span class="sc-i"><svg class="ic" aria-hidden="true"><use href="#i-kitap"/></svg></span><b id="sc-ders-et"></b><i aria-hidden="true">▾</i></button>'+
+    '<button type="button" class="sc-btn" id="sc-sure" aria-haspopup="dialog"><span class="sc-i"><svg class="ic" aria-hidden="true"><use href="#i-saat"/></svg></span><b id="sc-sure-et"></b><i aria-hidden="true">▾</i></button>';
   dg.parentNode.insertBefore(sat,dg.nextSibling);
   // seans bitince satır Bitir düğmesinin hemen altında belirir; Bitir'e basılı tutup bırakınca gelen tıklama buraya düşmesin
   // dokunuş bu düğmede başlamadıysa (ör. Bitir'e basılı tutan parmak kalkınca) tıklama sayılmaz

@@ -196,26 +196,26 @@
   function giris(){
     var s=sinif(),el=$('mt-giris');if(!el)return;
     if(!s){
-      el.innerHTML='<div class="iz-hero"><span class="iz-ust">Her gün 8 soru · dünya turu</span><h2>🧭 Matematiğin İzinde</h2>'+
+      el.innerHTML='<div class="iz-hero"><span class="iz-ust">Her gün 8 soru · dünya turu</span><h2><svg class="ic" aria-hidden="true"><use href="#i-pusula"/></svg>Matematiğin İzinde</h2>'+
         '<p>Sorular sınıfına ve okulda işlediğin konulara göre gelir. Önce sınıfını seç.</p><button type="button" class="mt-btn" id="iz-sinif-sec">Sınıfımı seç</button></div>';
       goster('mt-giris');var b=$('iz-sinif-sec');if(b)b.onclick=sinifSec;rozet();return;
     }
-    if(!V.rota)el.innerHTML='<div class="iz-hero"><h2>🧭 Matematiğin İzinde</h2><p>Yükleniyor…</p></div>';
+    if(!V.rota)el.innerHTML='<div class="iz-hero"><h2><svg class="ic" aria-hidden="true"><use href="#i-pusula"/></svg>Matematiğin İzinde</h2><p>Yükleniyor…</p></div>';
     goster('mt-giris');
     temelVeri().then(function(){return katex();}).then(function(){cizGiris(s);})['catch'](function(){
-      el.innerHTML='<div class="iz-hero"><h2>🧭 Matematiğin İzinde</h2><p>Veriler yüklenemedi. İnternet bağlantını kontrol edip tekrar dene.</p><button type="button" class="mt-btn" id="iz-yeniden">Tekrar dene</button></div>';
+      el.innerHTML='<div class="iz-hero"><h2><svg class="ic" aria-hidden="true"><use href="#i-pusula"/></svg>Matematiğin İzinde</h2><p>Veriler yüklenemedi. İnternet bağlantını kontrol edip tekrar dene.</p><button type="button" class="mt-btn" id="iz-yeniden">Tekrar dene</button></div>';
       var b=$('iz-yeniden');if(b)b.onclick=giris;});
   }
   function cizGiris(s){
     var st=durum(),D=V.rota.duraklar,cur=D[st.konum],dr=V.dur[cur.id]||{},bg=bugun(),r=st.v.g[bg],o='';
     o+='<div class="iz-hero"><div class="iz-ust-satir"><span class="iz-ust">Her gün 8 soru · dünya turu</span><button type="button" class="iz-sinif" id="iz-sinif">'+esc(sinifAd(s))+' ›</button></div>'+
-      '<h2>🧭 Matematiğin İzinde</h2><p class="iz-yer">📍 '+esc(cur.yer)+(dr.matematikci?' · '+esc(dr.matematikci.ad):'')+'</p></div>';
+      '<h2><svg class="ic" aria-hidden="true"><use href="#i-pusula"/></svg>Matematiğin İzinde</h2><p class="iz-yer"><svg class="ic" aria-hidden="true"><use href="#i-konum"/></svg>'+esc(cur.yer)+(dr.matematikci?' · '+esc(dr.matematikci.ad):'')+'</p></div>';
     o+='<div class="iz-harita-kart"><div class="iz-harita" id="iz-harita"><div class="iz-ic" id="iz-ic">'+(V.taban||'')+
       '<svg id="iz-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none"></svg></div></div>'+
-      '<div class="iz-harita-alt"><button type="button" class="iz-yak" id="iz-yak">'+(yakin?'🗺️ Tüm harita':'🔍 Yakınlaş')+'</button><span>'+(st.sonraki?'Sıradaki durak: <b>'+esc(st.sonraki.yer)+'</b> · '+(st.sonraki.adim-st.toplam)+' set':'🏁 Yolculuğu tamamladın!')+'</span></div></div>';
+      '<div class="iz-harita-alt"><button type="button" class="iz-yak" id="iz-yak">'+(yakin?'<svg class="ic" aria-hidden="true"><use href="#i-harita"/></svg>Tüm harita':'<svg class="ic" aria-hidden="true"><use href="#i-buyutec"/></svg>Yakınlaş')+'</button><span>'+(st.sonraki?'Sıradaki durak: <b>'+esc(st.sonraki.yer)+'</b> · '+(st.sonraki.adim-st.toplam)+' set':'<svg class="ic" aria-hidden="true"><use href="#i-bayrak"/></svg>Yolculuğu tamamladın!')+'</span></div></div>';
     // günün seti
     o+='<div class="mt-kart iz-gun">';
-    if(tamamMi(r)){o+='<div class="iz-gun-ust"><b>Bugünün seti tamam ✅</b><span>'+r.d+'/'+r.cev.length+' doğru</span></div><button type="button" class="mt-btn2" id="iz-gor">Çözümleri gör</button>';}
+    if(tamamMi(r)){o+='<div class="iz-gun-ust"><b><svg class="ic" aria-hidden="true"><use href="#i-tamam"/></svg>Bugünün seti tamam</b><span>'+r.d+'/'+r.cev.length+' doğru</span></div><button type="button" class="mt-btn2" id="iz-gor">Çözümleri gör</button>';}
     else{var cevli=r&&r.cev?r.cev.filter(function(x){return x!==null&&x!==undefined;}).length:0;
       o+='<div class="iz-gun-ust"><b>Bugünün seti</b><span>'+NS+' soru · yaklaşık 15 dk</span></div>'+
         '<button type="button" class="mt-btn" id="iz-basla">'+(cevli?'Devam et ('+cevli+'/'+NS+')':'Başla')+'</button>';}
@@ -225,7 +225,7 @@
     o+='<div class="mt-kart iz-durum"><div class="iz-kademe"><svg viewBox="0 0 120 124" aria-hidden="true"><use href="#iz-m'+kad+'"/></svg><div><small>'+kad+'. kademe</small><b>'+esc(KADEME[kad-1])+'</b>';
     if(st.bekleyen){var b=st.bekleyen,eks=[];if(st.toplam<b.adim)eks.push((b.adim-st.toplam)+' set');if(st.enUzun<b.seri)eks.push(b.seri+' günlük seri (en uzun serin '+st.enUzun+')');
       o+='<span>'+(b.no===4?'Aslana dönüşmek':'Sonraki kademe')+' için: '+eks.join(' + ')+'</span>';}
-    o+='</div></div><div class="iz-sayilar"><div><b>🔥 '+st.seri+'</b><small>günlük seri</small></div><div><b>'+st.enUzun+'</b><small>en uzun seri</small></div><div><b>'+st.toplam+'</b><small>çözülen set</small></div></div>'+
+    o+='</div></div><div class="iz-sayilar"><div><b><svg class="ic" aria-hidden="true"><use href="#i-alev"/></svg>'+st.seri+'</b><small>günlük seri</small></div><div><b>'+st.enUzun+'</b><small>en uzun seri</small></div><div><b>'+st.toplam+'</b><small>çözülen set</small></div></div>'+
       '<p class="iz-not">Haftada 1 gün kaçırırsan serin bozulmaz. Önceki günlerin setlerini sonradan çözebilirsin ama seriye sayılmaz.</p></div>';
     // önceki günler
     var gec='',bosSay=0;for(var i=1;i<=7;i++){var k=gunEkle(bg,-i),x=st.v.g[k],t=gunT(k),ad=t.getDate()+' '+AY[t.getMonth()];
@@ -234,7 +234,7 @@
     o+='<div class="mt-kart"><p class="mt-bas">Önceki günler</p><div class="iz-gecmis">'+gec+'</div></div>';
     $('mt-giris').innerHTML=o;goster('mt-giris');
     haritaKur(st);
-    $('iz-yak').onclick=function(){yakin=!yakin;this.textContent=yakin?'🗺️ Tüm harita':'🔍 Yakınlaş';var b=kamSinir(),mp=maskotYer(st);
+    $('iz-yak').onclick=function(){yakin=!yakin;this.innerHTML=yakin?'<svg class="ic" aria-hidden="true"><use href="#i-harita"/></svg>Tüm harita':'<svg class="ic" aria-hidden="true"><use href="#i-buyutec"/></svg>Yakınlaş';var b=kamSinir(),mp=maskotYer(st);
       kamGit(yakin?kamMerkez(mp.x,mp.y,Math.max(b.min,b.w/900)):{s:b.min,x:0,y:0},700,yumusak);};
     $('iz-sinif').onclick=sinifSec;
     var bb=$('iz-basla');if(bb)bb.onclick=function(){basla(bg,s);};
@@ -264,7 +264,7 @@
     q.o.forEach(function(x,k){var cls='';if(cozuldu){if(k===q.c)cls=' dogru';else if(k===sec)cls=' yanlis';}
       o+='<button type="button" class="iz-sec'+cls+'" data-k="'+k+'"'+(cozuldu?' disabled':'')+'><b>'+harf[k]+'</b><span>'+tex(x)+'</span></button>';});
     o+='</div>';
-    if(cozuldu)o+='<div class="iz-cozum '+(sec===q.c?'d':'y')+'"><b>'+(sec===q.c?'Doğru! 🎉':'Doğru cevap '+harf[q.c]+'.')+'</b><p>'+tex(q.a)+'</p></div>'+
+    if(cozuldu)o+='<div class="iz-cozum '+(sec===q.c?'d':'y')+'"><b>'+(sec===q.c?'Doğru!':'Doğru cevap '+harf[q.c]+'.')+'</b><p>'+tex(q.a)+'</p></div>'+
       '<button type="button" class="mt-btn" id="iz-sonraki">'+(a.i<a.liste.length-1?'Sonraki soru':'Seti bitir')+'</button>';
     o+='</div>';
     $('mt-test').innerHTML=o;goster('mt-test');
@@ -290,12 +290,12 @@
   function sonucGoster(gun,s,fark){
     setAl(gun,s,false).then(function(liste){
       var r=oku().g[gun];if(!r)return giris();
-      var d=r.d||0,n=r.cev.length,harf='ABCDE',msg=d===n?'Kusursuz! 🌟':d>=n*.75?'Harika iş! 💪':d>=n/2?'İyi gidiyorsun 👍':'Her set bir adım. Çözümlere göz at 📖',o='';
+      var d=r.d||0,n=r.cev.length,harf='ABCDE',msg=d===n?'Kusursuz!':d>=n*.75?'Harika iş!':d>=n/2?'İyi gidiyorsun.':'Her set bir adım. Çözümlere göz at.',o='';
       o+='<div class="iz-hero iz-sonuc-hero"><span class="iz-ust">'+(gun===bugun()?'Bugünün seti':gunT(gun).getDate()+' '+AY[gunT(gun).getMonth()]+' seti')+'</span><h2>'+d+'/'+n+'</h2><p>'+msg+'</p>';
-      if(fark)o+='<p class="iz-adim">🐾 Haritada bir adım ilerledin'+(fark.sonra.seri>fark.once.seri?' · seri 🔥 '+fark.sonra.seri:'')+'</p>';
+      if(fark)o+='<p class="iz-adim"><svg class="ic" aria-hidden="true"><use href="#i-konum"/></svg>Haritada bir adım ilerledin'+(fark.sonra.seri>fark.once.seri?' · seri '+fark.sonra.seri:'')+'</p>';
       o+='</div><div class="mt-kart"><p class="mt-bas">Çözümler</p>';
       liste.forEach(function(q,j){var c=r.cev[j],ok=c===q.c;
-        o+='<details class="iz-coz '+(ok?'d':'y')+'"><summary><b>'+(j+1)+'.</b> '+(ok?'✅':'❌')+' <span>'+tex(q.s.length>90?q.s.slice(0,q.s.lastIndexOf(' ',90))+'…':q.s)+'</span></summary>'+
+        o+='<details class="iz-coz '+(ok?'d':'y')+'"><summary><b>'+(j+1)+'.</b> '+(ok?'<svg class="ic" aria-hidden="true"><use href="#i-tamam"/></svg>':'<svg class="ic" aria-hidden="true"><use href="#i-yanlis"/></svg>')+' <span>'+tex(q.s.length>90?q.s.slice(0,q.s.lastIndexOf(' ',90))+'…':q.s)+'</span></summary>'+
           '<div><p>'+tex(q.s)+'</p>'+(q.sekil?'<div class="iz-sekil">'+q.sekil+'</div>':'')+'<p>Senin cevabın: <b>'+harf[c]+'</b> · Doğru: <b>'+harf[q.c]+') '+tex(q.o[q.c])+'</b></p><p>'+tex(q.a)+'</p></div></details>';});
       o+='</div><button type="button" class="mt-btn" id="iz-haritaya">Haritaya dön</button>';
       $('mt-sonuc').innerHTML=o;goster('mt-sonuc');window.scrollTo(0,0);
@@ -325,13 +325,13 @@
   function durakIcerik(d,r,ul,st){
     var m=d.matematikci||{},o='<div class="iz-sh-ust"><small>'+esc(d.yaklasik_tarih||'')+'</small><h2>'+esc(r.yer)+'</h2></div>';
     if(!ul){
-      o+='<div class="iz-sh-kart kilit"><b>🔒 Henüz ulaşmadın</b><p>Burada seni <b>'+esc(m.ad||'bir matematikçi')+'</b> bekliyor.'+(m.yasam?' ('+esc(m.yasam)+')':'')+'</p>'+
+      o+='<div class="iz-sh-kart kilit"><b><svg class="ic" aria-hidden="true"><use href="#i-kilit"/></svg>Henüz ulaşmadın</b><p>Burada seni <b>'+esc(m.ad||'bir matematikçi')+'</b> bekliyor.'+(m.yasam?' ('+esc(m.yasam)+')':'')+'</p>'+
         '<p class="iz-sh-kalan">'+(r.adim-st.toplam)+' set daha çözünce kapılar açılacak.</p></div>';
       return o;}
     o+='<div class="iz-sh-kart"><div class="iz-sh-kim"><svg viewBox="0 0 64 64" style="--m:#141B3F;--v:#FF8A1F"><use href="#iz-s-'+r.simge+'"/></svg><div><b>'+esc(m.ad)+'</b>'+(m.yasam?'<span>'+esc(m.yasam)+'</span>':'')+'</div><button type="button" class="iz-sh-ac" aria-expanded="false">Hikâyeyi oku</button></div><div class="iz-sh-detay"><div>'+
-      '<p class="iz-d-sahne">'+esc(d.karsilasma)+'</p>'+(d.eser?'<figure class="iz-eser">'+(d.eser.foto?'<img class="iz-eser-f" src="img/eser/'+r.id+'.webp" alt="'+esc(d.eser.alt||'')+'" loading="lazy"><small class="iz-eser-k">'+esc(d.eser.foto)+'</small>':'')+'<img src="img/eser/'+r.id+'.svg" alt="" loading="lazy"><figcaption>'+esc(d.eser.not||'')+'</figcaption></figure>':'')+'<div class="iz-d-bilgi"><b>💡 Bunu biliyor muydun?</b><p>'+esc(d.ilginc)+'</p></div>';
+      '<p class="iz-d-sahne">'+esc(d.karsilasma)+'</p>'+(d.eser?'<figure class="iz-eser">'+(d.eser.foto?'<img class="iz-eser-f" src="img/eser/'+r.id+'.webp" alt="'+esc(d.eser.alt||'')+'" loading="lazy"><small class="iz-eser-k">'+esc(d.eser.foto)+'</small>':'')+'<img src="img/eser/'+r.id+'.svg" alt="" loading="lazy"><figcaption>'+esc(d.eser.not||'')+'</figcaption></figure>':'')+'<div class="iz-d-bilgi"><b><svg class="ic" aria-hidden="true"><use href="#i-ampul"/></svg>Bunu biliyor muydun?</b><p>'+esc(d.ilginc)+'</p></div>';
     if(d.yan_kisi)o+='<p class="iz-d-yan">Bu durakta ayrıca: <b>'+esc(d.yan_kisi.ad||'')+'</b>'+(d.yan_kisi.yasam?' ('+esc(d.yan_kisi.yasam)+')':'')+'</p>';
-    if(d.dene&&d.dene.soru)o+='<details class="iz-d-dene"><summary>🤔 Dene: '+esc(d.dene.soru)+'</summary><p>'+esc(d.dene.cevap)+'</p></details>';
+    if(d.dene&&d.dene.soru)o+='<details class="iz-d-dene"><summary><svg class="ic" aria-hidden="true"><use href="#i-soru"/></svg>Dene: '+esc(d.dene.soru)+'</summary><p>'+esc(d.dene.cevap)+'</p></details>';
     return o+'</div></div></div>';
   }
   // Durak müziği: özgün bölge temaları (ses/tema/*.m4a), Web Audio ile dikişsiz döngü; varsayılan kapalı, tercih hatırlanır
@@ -380,7 +380,7 @@
           if(dy<-40&&sh.classList.contains('kapali'))hikaye(true);else if(dy>60&&icK.scrollTop<=0&&!sh.classList.contains('kapali'))hikaye(false);},{passive:true});}
       if(ul&&r.muzik){
         var sb=document.createElement('button');sb.type='button';sb.className='iz-sh-ses';
-        var sesYaz=function(){sb.textContent=SES.acik?'🔊':'🔇';sb.setAttribute('aria-label',SES.acik?'Müziği kapat':'Müziği aç');sb.classList.toggle('acik',SES.acik);};
+        var sesYaz=function(){sb.innerHTML=SES.acik?'<svg class="ic" aria-hidden="true"><use href="#i-ses-ac"/></svg>':'<svg class="ic" aria-hidden="true"><use href="#i-ses-kapali"/></svg>';sb.setAttribute('aria-label',SES.acik?'Müziği kapat':'Müziği aç');sb.classList.toggle('acik',SES.acik);};
         sb.onclick=function(e){e.stopPropagation();SES.acik=!SES.acik;try{localStorage.setItem('mf-iz-ses',SES.acik?'1':'0');}catch(x){}sesYaz();SES.istenen=r.muzik;if(SES.acik)sesCal(r.muzik);else sesDur();};
         sesYaz();sh.appendChild(sb);SES.istenen=r.muzik;if(SES.acik)sesCal(r.muzik);
       }
@@ -399,14 +399,14 @@
   function durakAc(id,yeni,sonra){
     var d=V.dur[id],r=null;V.rota.duraklar.forEach(function(x){if(x.id===id)r=x;});if(!d||!r)return sonra&&sonra();
     var m=d.matematikci||{},o='<div class="iz-d-ust"><svg viewBox="0 0 64 64" style="--m:#141B3F;--v:#FF8A1F"><use href="#iz-s-'+r.simge+'"/></svg><div><small>'+(yeni?'Yeni durak · ':'')+esc(d.yer||r.yer)+(d.yaklasik_tarih?' · '+esc(d.yaklasik_tarih):'')+'</small><b>'+esc(m.ad)+'</b>'+(m.yasam?'<span>'+esc(m.yasam)+'</span>':'')+'</div></div>';
-    o+='<p class="iz-d-sahne">'+esc(d.karsilasma)+'</p><div class="iz-d-bilgi"><b>💡 Bunu biliyor muydun?</b><p>'+esc(d.ilginc)+'</p></div>';
+    o+='<p class="iz-d-sahne">'+esc(d.karsilasma)+'</p><div class="iz-d-bilgi"><b><svg class="ic" aria-hidden="true"><use href="#i-ampul"/></svg>Bunu biliyor muydun?</b><p>'+esc(d.ilginc)+'</p></div>';
     if(d.yan_kisi){var y=d.yan_kisi;o+='<p class="iz-d-yan">Bu durakta ayrıca: <b>'+esc(y.ad||'')+'</b>'+(y.yasam?' ('+esc(y.yasam)+')':'')+'</p>';}
-    if(d.dene&&d.dene.soru)o+='<details class="iz-d-dene"><summary>🤔 Dene: '+esc(d.dene.soru)+'</summary><p>'+esc(d.dene.cevap)+'</p></details>';
+    if(d.dene&&d.dene.soru)o+='<details class="iz-d-dene"><summary><svg class="ic" aria-hidden="true"><use href="#i-soru"/></svg>Dene: '+esc(d.dene.soru)+'</summary><p>'+esc(d.dene.cevap)+'</p></details>';
     pencere(o,sonra);
   }
   function tore(eski,yeni,sonra){
     var o='<div class="iz-tore'+(yeni===4?' donusum':'')+'"><div class="iz-tore-sahne"><svg class="iz-t-eski" viewBox="0 0 120 124"><use href="#iz-m'+eski+'"/></svg><svg class="iz-t-yeni" viewBox="0 0 120 124"><use href="#iz-m'+yeni+'"/></svg></div>'+
-      '<small>'+yeni+'. kademe</small><h3>'+(yeni===4?'Dönüşüm! Artık bir aslansın 🦁':esc(KADEME[yeni-1]))+'</h3><p>'+
+      '<small>'+yeni+'. kademe</small><h3>'+(yeni===4?'Dönüşüm! Artık bir aslansın':esc(KADEME[yeni-1]))+'</h3><p>'+
       ['','','Yolculuğun ilk durakları geride kaldı.','Yelen belirmeye başladı; bilgin büyüyor.','Bağdat’ın kapısındasın. Emeğin ve serin seni aslana dönüştürdü.','Avrupa’nın akademileri seni bekliyor.','Bilge aslan oldun. Son durak Ankara’da bir kara tahta seni bekliyor.'][yeni]+'</p></div>';
     pencere(o,sonra);
   }

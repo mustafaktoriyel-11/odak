@@ -4,7 +4,7 @@
   function oku(){try{return JSON.parse(localStorage.getItem('pm-durum')||'null');}catch(e){return null;}}
   // serbest çalışmada 90 dakikada bir mola hatırlatması
   var hat=document.createElement('div');hat.className='tb-hat';hat.hidden=true;hat.setAttribute('role','alert');
-  hat.innerHTML='<b>☕ Kısa bir mola?</b><span class="th-m"></span><button type="button">Tamam</button>';document.body.appendChild(hat);
+  hat.innerHTML='<b><svg class="ic" aria-hidden="true"><use href="#i-kahve"/></svg>Kısa bir mola?</b><span class="th-m"></span><button type="button">Tamam</button>';document.body.appendChild(hat);
   hat.querySelector('button').addEventListener('click',function(){hat.hidden=true;});
   setInterval(function(){
     var d=oku();if(!d||!d.serbest||!d.calisiyor||d.mod!=='odak')return;
