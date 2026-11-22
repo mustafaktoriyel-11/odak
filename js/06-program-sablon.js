@@ -5,10 +5,10 @@ var K='mf-sablon';
 var GUN=['Pazartesi','Salı','Çarşamba','Perşembe','Cuma','Cumartesi','Pazar'];
 var ALAN={
  TYT:{ad:'TYT',alt:'11. sınıf ve TYT odaklı',w:[['Matematik',28],['Türkçe',22],['Geometri',8],['Fizik',8],['Kimya',7],['Biyoloji',7],['Tarih',7],['Coğrafya',6],['Felsefe',4],['Din Kültürü',3]]},
- SAY:{ad:'Sayısal',alt:'Mat-Fen',w:[['Matematik',32],['Fizik',15],['Kimya',13],['Türkçe',12],['Biyoloji',11],['Geometri',11],['Sosyal Bilimler',6]]},
- EA:{ad:'Eşit Ağırlık',alt:'Mat-Edebiyat-Sosyal',w:[['Matematik',30],['Edebiyat',18],['Türkçe',14],['Tarih',12],['Coğrafya',10],['Geometri',10],['Felsefe',3],['Fen Bilimleri',3]]},
- SOZ:{ad:'Sözel',alt:'Edebiyat-Sosyal',w:[['Edebiyat',22],['Tarih',20],['Coğrafya',16],['Türkçe',14],['Matematik',10],['Felsefe',10],['Din Kültürü',4],['Fen Bilimleri',4]]},
- DIL:{ad:'Dil',alt:'YDT-Yabancı dil',w:[['İngilizce',45],['Türkçe',18],['Matematik',15],['Sosyal Bilimler',10],['Fen Bilimleri',6],['Geometri',6]]}
+ SAY:{ad:'Sayısal',alt:'Mat-Fen',w:[['Matematik',32],['Fizik',15],['Kimya',13],['Türkçe',12],['Biyoloji',11],['Geometri',11],['TYT Sosyal',6]]},
+ EA:{ad:'Eşit Ağırlık',alt:'Mat-Edebiyat-Sosyal',w:[['Matematik',30],['Edebiyat',18],['Türkçe',14],['Tarih',12],['Coğrafya',10],['Geometri',10],['Felsefe',3],['TYT Fen',3]]},
+ SOZ:{ad:'Sözel',alt:'Edebiyat-Sosyal',w:[['Edebiyat',22],['Tarih',20],['Coğrafya',16],['Türkçe',14],['Matematik',10],['Felsefe',10],['Din Kültürü',4],['TYT Fen',4]]},
+ DIL:{ad:'Dil',alt:'YDT-Yabancı dil',w:[['İngilizce',45],['Türkçe',18],['Matematik',15],['TYT Sosyal',10],['TYT Fen',6],['Geometri',6]]}
 };
 var ALAN_SIRA=['TYT','SAY','EA','SOZ','DIL'];
 var SEV={

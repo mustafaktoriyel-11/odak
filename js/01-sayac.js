@@ -634,7 +634,7 @@
     var kayit={tarih:tarih,sinav:dnmS.kod,ad:$('dnm-ad').value.trim().slice(0,50),dk:dnmS.dk||0,net:Math.round(top*100)/100,dersler:dersler},kocK=kayit;
     if(dnmS.kod==='OZEL'){var oa=ozelAyar();kayit.ozel=oa;yaz('mf-dnm-ozel',oa);var dy=dersler.ozel||{d:0,y:0};
       // koc tablosu icin: tablodaki hazir sutunlara uygun bicim (net tabloda dogru hesaplansin)
-      var KK={'Matematik':'tmat','Geometri':'tmat','Türkçe':'tur','Fen Bilimleri':'fen','Fizik':'fiz','Kimya':'kim','Biyoloji':'bio','Sosyal Bilgiler':'sos','Sosyal Bilimler':'sos','T.C. İnkılap Tarihi':'sos','Tarih':'tar1','Coğrafya':'cog1','Edebiyat':'edb','Felsefe':'fel','Din Kültürü':'din','İngilizce':'ydl'};
+      var KK={'Matematik':'tmat','Geometri':'tmat','Türkçe':'tur','Fen Bilimleri':'fen','Fizik':'fiz','Kimya':'kim','Biyoloji':'bio','Sosyal Bilgiler':'sos','TYT Fen':'fen','TYT Sosyal':'sos','T.C. İnkılap Tarihi':'sos','Tarih':'tar1','Coğrafya':'cog1','Edebiyat':'edb','Felsefe':'fel','Din Kültürü':'din','İngilizce':'ydl'};
       var kd={};kd[KK[oa.ders]||'tmat']={d:dy.d,y:oa.ceza?dy.y:0};
       kocK={tarih:tarih,sinav:((oa.ceza===3?'LGS Branş: ':'Branş: ')+oa.ders).slice(0,20),ad:((kayit.ad?kayit.ad+' · ':'')+oa.n+' soru · '+dy.d+'D '+dy.y+'Y'+(oa.ceza?'':' (yanlış götürmez)')).slice(0,50),dk:0,net:kayit.net,dersler:kd};}
     var l=oku(DNM_K,[]);l.push(kayit);l.sort(function(a,b){return new Date(a.tarih)-new Date(b.tarih);});yaz(DNM_K,l.slice(-100));

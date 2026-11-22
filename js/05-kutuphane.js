@@ -2,7 +2,7 @@
 // ================= DERS DOSYALARI KÜTÜPHANESİ =================
 (function(){
   var DB_AD='mf-kutuphane', MAX=100*1024*1024,BUYUK=50*1024*1024;
-  var DERSLER=['Matematik','Geometri','Türkçe','Fizik','Kimya','Biyoloji','Edebiyat','Coğrafya','Tarih','İngilizce','Almanca','Fen Bilimleri','Sosyal Bilgiler','Sosyal Bilimler','Felsefe','Din Kültürü','Diğer'];
+  var DERSLER=['Matematik','Geometri','Türkçe','Fizik','Kimya','Biyoloji','Edebiyat','Coğrafya','Tarih','İngilizce','Almanca','Fen Bilimleri','Sosyal Bilgiler','TYT Fen','TYT Sosyal','Felsefe','Din Kültürü','Diğer'];
   var AY=['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'];
   var $=function(i){return document.getElementById(i);};
   var kart=$('kt-kart');

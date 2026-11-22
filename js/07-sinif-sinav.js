@@ -8,12 +8,12 @@ var SINIFLAR=[['5','Ortaokul'],['6','Ortaokul'],['7','Ortaokul'],['8','LGS'],['9
 var ALANLAR=[['SAY','Sayısal'],['EA','Eşit Ağırlık'],['SOZ','Sözel'],['DIL','Dil'],['','Henüz karar vermedim']];
 var ALAN_AD={SAY:'Sayısal',EA:'Eşit Ağırlık',SOZ:'Sözel',DIL:'Dil'},ALAN_KISA={SAY:'SAY',EA:'EA',SOZ:'SÖZ',DIL:'DİL'};
 // YKS 2027: herkes TYT (Türkçe, Sosyal Bilimler, Temel Matematik, Fen Bilimleri); AYT alan testi SAY/EA/SÖZ; Dil = YDT.
-// Alan seçilince yalnız o alanın AYT/YDT dersleri + TYT'de alan dışında kalan bölüm tek çip (Fen Bilimleri / Sosyal Bilimler).
+// Alan seçilince yalnız o alanın AYT/YDT dersleri + TYT'de alan dışında kalan bölüm tek çip (TYT Fen / TYT Sosyal).
 var DERS_SIRA={
- SAY:['Matematik','Geometri','Fizik','Kimya','Biyoloji','Türkçe','Sosyal Bilimler'],
- EA:['Matematik','Geometri','Edebiyat','Tarih','Coğrafya','Türkçe','Felsefe','Din Kültürü','Fen Bilimleri'],
- SOZ:['Edebiyat','Tarih','Coğrafya','Felsefe','Din Kültürü','Türkçe','Matematik','Geometri','Fen Bilimleri'],
- DIL:['İngilizce','Almanca','Türkçe','Matematik','Geometri','Fen Bilimleri','Sosyal Bilimler'],
+ SAY:['Matematik','Geometri','Fizik','Kimya','Biyoloji','Türkçe','TYT Sosyal'],
+ EA:['Matematik','Geometri','Edebiyat','Tarih','Coğrafya','Türkçe','Felsefe','Din Kültürü','TYT Fen'],
+ SOZ:['Edebiyat','Tarih','Coğrafya','Felsefe','Din Kültürü','Türkçe','Matematik','Geometri','TYT Fen'],
+ DIL:['İngilizce','Almanca','Türkçe','Matematik','Geometri','TYT Fen','TYT Sosyal'],
  '8':['Matematik','Türkçe','Fen Bilimleri','İnkılap Tarihi','İngilizce','Din Kültürü']
 };
 function ORTA(s){return s==='5'||s==='6'||s==='7'||s==='8';}
