@@ -50,7 +50,7 @@
       '<line class="bc-yaricap" id="bc-r"/><path class="bc-teta" id="bc-teta"/><text class="bc-etk" id="bc-tt">θ</text><text class="bc-etk bc-ec" id="bc-ec">cos θ</text><text class="bc-etk bc-es" id="bc-es">sin θ</text>'+
       '<circle class="bc-hale" id="bc-hale" r="13"/><circle class="bc-n" id="bc-n" r="7"/><circle cx="150" cy="150" r="3.5" class="kd-y"/><g id="kd-z"></g>';
     svg.innerHTML=o;}
-  function cizBc(k){var p=oran(k),th=p*2*Math.PI,c=Math.cos(th),s=Math.sin(th),x=C+R*c,y=C-R*s;
+  function cizBc(k){var p=((S.toplam-k)%60000)/60000,th=p*2*Math.PI,c=Math.cos(th),s=Math.sin(th),x=C+R*c,y=C-R*s;
     if(p<=0.0005){$('bc-il').setAttribute('d','');$('bc-dilim').setAttribute('d','');}
     else{var d='M'+(C+R)+' '+C+'A'+R+' '+R+' 0 '+(th>Math.PI?1:0)+' 0 '+f(x)+' '+f(y);$('bc-il').setAttribute('d',d);$('bc-dilim').setAttribute('d','M150 150L'+d.slice(1)+'Z');}
     L('bc-r',C,C,x,y);L('bc-k1',x,y,x,C);L('bc-k2',x,y,C,y);L('bc-cos',C,C,x,C);L('bc-sin',x,C,x,y);
@@ -128,7 +128,7 @@
     if(secim==='bc')cizBc(k);else if(secim==='ks')cizKs(k,dt||0);else cizDj(k);}
   function dongu(t){raf=0;if(!S||document.hidden)return;var dt=Math.min(.1,(t-son)/1000);son=t;
     // kum saati her karede, diğerleri saniyede bir yeter (pil)
-    if(secim==='ks'||t-sonCiz>250){sonCiz=t;ciz(dt);}
+    if(secim!=='dj'||t-sonCiz>250){sonCiz=t;ciz(dt);}
     if(S.calisiyor||donT)raf=requestAnimationFrame(dongu);}
   function uyan(){if(!raf){son=performance.now();raf=requestAnimationFrame(dongu);}}
   window.MF_KADRAN=function(s){S=s;h.classList.toggle('kd-mola',!!s.mola);h.classList.toggle('kd-deneme',s.mod==='deneme'&&!s.mola);ciz(0);uyan();};
