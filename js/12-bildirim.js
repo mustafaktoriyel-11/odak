@@ -112,10 +112,11 @@ function satirGuncelle(){
  var acikMi=!desteksiz&&a.acik&&izin()==='granted',koclu=true;
  if(kutu){
   if(!kutu._yer){kutu._yer=document.createComment('bl');kutu.parentNode.insertBefore(kutu._yer,kutu);}
-  var hedef=$('sn-kart')||$('pm-koc');
-  if(koclu&&hedef&&hedef.nextSibling!==kutu){hedef.parentNode.insertBefore(kutu,hedef.nextSibling);kutu.classList.add('bl-alt');}
-  else if(!koclu&&kutu._yer.nextSibling!==kutu){kutu._yer.parentNode.insertBefore(kutu,kutu._yer.nextSibling);kutu.classList.remove('bl-alt');}
-  kutu.hidden=acikMi&&!koclu;
+  // Bildirim açılana kadar sıkı modun üstünde uyarı olarak durur (öncelik öğrenciye açtırmak); açılınca Ayarlar'a taşınır
+  var ayBl=$('ay-bl'),sik=$('pm-sik-k'),ayara=(acikMi||desteksiz)&&ayBl;
+  if(ayara){if(kutu.parentNode!==ayBl)ayBl.appendChild(kutu);ayBl.hidden=false;kutu.classList.remove('bl-uyar','bl-alt');}
+  else if(sik){if(kutu.nextSibling!==sik)sik.parentNode.insertBefore(kutu,sik);if(ayBl)ayBl.hidden=true;kutu.classList.add('bl-uyar');kutu.classList.remove('bl-alt');}
+  kutu.hidden=false;
  }
  if(zil)zil.hidden=true;
  var t;
@@ -123,7 +124,7 @@ function satirGuncelle(){
  else if(izin()==='denied')t='Telefon ayarlarından izin ver';
  else if(a.acik&&izin()==='granted')t='Açık '+(a.s1||'17:00')+' / '+(a.s2||'21:30');
  else t='Kapalı';
- et.textContent='🔔 Bildirimler · '+t;
+ et.textContent=kutu&&kutu.classList.contains('bl-uyar')?(izin()==='denied'?'🔔 Bildirimlere izin ver: telefon ayarları':'🔔 Bildirimleri aç, günlük hatırlatma al'):'🔔 Bildirimler · '+t;
 }
 
 // ---------- ayar sayfası ----------

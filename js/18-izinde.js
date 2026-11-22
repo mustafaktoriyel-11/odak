@@ -327,7 +327,7 @@
         '<p class="iz-sh-kalan">'+(r.adim-st.toplam)+' set daha çözünce kapılar açılacak.</p></div>';
       return o;}
     o+='<div class="iz-sh-kart"><div class="iz-sh-kim"><svg viewBox="0 0 64 64" style="--m:#141B3F;--v:#FF8A1F"><use href="#iz-s-'+r.simge+'"/></svg><div><b>'+esc(m.ad)+'</b>'+(m.yasam?'<span>'+esc(m.yasam)+'</span>':'')+'</div><button type="button" class="iz-sh-ac" aria-expanded="false">Hikâyeyi oku</button></div><div class="iz-sh-detay"><div>'+
-      '<p class="iz-d-sahne">'+esc(d.karsilasma)+'</p>'+(d.eser?'<figure class="iz-eser"><img src="img/eser/'+r.id+'.svg" alt="'+esc(d.eser.alt||'')+'" loading="lazy"><figcaption>'+esc(d.eser.not||'')+'</figcaption></figure>':'')+'<div class="iz-d-bilgi"><b>💡 Bunu biliyor muydun?</b><p>'+esc(d.ilginc)+'</p></div>';
+      '<p class="iz-d-sahne">'+esc(d.karsilasma)+'</p>'+(d.eser?'<figure class="iz-eser">'+(d.eser.foto?'<img class="iz-eser-f" src="img/eser/'+r.id+'.webp" alt="'+esc(d.eser.alt||'')+'" loading="lazy"><small class="iz-eser-k">'+esc(d.eser.foto)+'</small>':'')+'<img src="img/eser/'+r.id+'.svg" alt="" loading="lazy"><figcaption>'+esc(d.eser.not||'')+'</figcaption></figure>':'')+'<div class="iz-d-bilgi"><b>💡 Bunu biliyor muydun?</b><p>'+esc(d.ilginc)+'</p></div>';
     if(d.yan_kisi)o+='<p class="iz-d-yan">Bu durakta ayrıca: <b>'+esc(d.yan_kisi.ad||'')+'</b>'+(d.yan_kisi.yasam?' ('+esc(d.yan_kisi.yasam)+')':'')+'</p>';
     if(d.dene&&d.dene.soru)o+='<details class="iz-d-dene"><summary>🤔 Dene: '+esc(d.dene.soru)+'</summary><p>'+esc(d.dene.cevap)+'</p></details>';
     return o+'</div></div></div>';

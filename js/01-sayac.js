@@ -400,7 +400,7 @@
   }
   var seansDurum=false,seansT=null;
   function seansGizle(g){if(g===seansDurum)return;seansDurum=g;clearTimeout(seansT);
-    var el=['pm-ders-k','pm-odak-k','pm-ozel-k','pm-kadran-k'].map($).filter(Boolean);
+    var el=['pm-ders-k','pm-odak-k','pm-ozel-k'].map($).filter(Boolean);
     if(window.LV_KATLA){el.forEach(function(e){LV_KATLA(e,g);});return;}
     el.forEach(function(e){e.classList.toggle('seans-gizli',g);});}
   function cipGuncelle(){
