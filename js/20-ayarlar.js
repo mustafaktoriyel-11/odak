@@ -15,6 +15,8 @@
   function kapat(){if(!acik)return;acik=false;p.classList.remove('gor');setTimeout(function(){if(!acik)p.classList.remove('acik');},280);}
   function kapatTikla(){if(window.LEX_GERI&&LEX_GERI.dus)LEX_GERI.dus('ay');kapat();}
   btn.addEventListener('click',ac);
+  // sürüm numarası (hangi sürümün kurulu olduğunu görmek için): sw.js içindeki mf-odak-vNNN
+  fetch('sw.js',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/mf-odak-v(\d+)/);if(m)$('ay-surum').textContent='Sürüm '+m[1];}).catch(function(){});
   $('ay-tamam').addEventListener('click',kapatTikla);
   p.addEventListener('click',function(e){if(e.target===p)kapatTikla();});
   // sınıf: mevcut sınıf seçim sayfasını aç (07-sinif-sinav.js); kapanınca etiketi tazele
