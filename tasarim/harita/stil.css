@@ -18,9 +18,9 @@
 .iz-taban .hs-pusula text{fill:#7A6A55;font-style:normal;font-weight:700}
 .iz-taban .hs-vs{stop-color:#E8D6B0}
 .iz-taban .hs-vin{pointer-events:none}
-.iz-taban .hs-ad2,.iz-taban .hs-ad3{opacity:0;transition:opacity .35s}
+.iz-taban .hs-ad2,.iz-taban .hs-ad3{opacity:0}
 .iz-ic[data-z="2"] .hs-ad2,.iz-ic[data-z="3"] .hs-ad2,.iz-ic[data-z="3"] .hs-ad3{opacity:1}
-.iz-taban .hs-kita,.iz-taban .hs-okyanus{transition:opacity .35s}.iz-ic[data-z="2"] .hs-kita,.iz-ic[data-z="3"] .hs-kita{opacity:0}.iz-ic[data-z="2"] .hs-okyanus{opacity:.4}.iz-ic[data-z="3"] .hs-okyanus{opacity:0}
+.iz-ic[data-z="2"] .hs-kita,.iz-ic[data-z="3"] .hs-kita{opacity:0}.iz-ic[data-z="2"] .hs-okyanus{opacity:.4}.iz-ic[data-z="3"] .hs-okyanus{opacity:0}
 html.mf-gece .iz-taban .hs-deniz{fill:#0C1533}
 html.mf-gece .iz-taban .hs-dalga{stroke:#2C3F78}
 html.mf-gece .iz-taban .hs-golge{stroke:#1A2A5C}

@@ -15,6 +15,12 @@ def sar(g):  # pencereye sar: [-180,LONMAX-360] parçasını sağa taşı
 def proj_geom(g):
     from shapely.ops import transform
     return transform(lambda x,y,z=None:(AX*np.asarray(x)+BX, AY*(1+math.sqrt(2)/2)*np.tan(np.radians(np.asarray(y))/2)+BY),g)
+HUC=(8,4)
+def hucre(x,y): return (min(HUC[0]-1,max(0,int(x/W*HUC[0]))),min(HUC[1]-1,max(0,int(y/H*HUC[1]))))
+def kova(parcalar):
+    k={}
+    for (x,y),d in parcalar: k.setdefault(hucre(x,y),[]).append(d)
+    return [''.join(v) for v in k.values()]
 def d_poly(g,tol):
     g=g.simplify(tol,preserve_topology=True);out=[]
     polys=[g] if isinstance(g,Polygon) else list(getattr(g,'geoms',[]))
@@ -23,16 +29,16 @@ def d_poly(g,tol):
         for ring in [p.exterior]+list(p.interiors):
             c=list(ring.coords)[:-1]
             if len(c)<3: continue
-            out.append('M'+' '.join('%.1f %.1f'%xy for xy in c[:1])+'L'+' '.join('%.1f %.1f'%xy for xy in c[1:])+'Z')
-    return ''.join(out)
+            out.append(((p.centroid.x,p.centroid.y),'M'+' '.join('%.1f %.1f'%xy for xy in c[:1])+'L'+' '.join('%.1f %.1f'%xy for xy in c[1:])+'Z'))
+    return kova(out)
 def d_line(g,tol):
     g=g.simplify(tol);out=[]
     ls=[g] if isinstance(g,LineString) else [x for x in getattr(g,'geoms',[]) if isinstance(x,LineString)]
     for l in ls:
         c=list(l.coords)
         if len(c)<2: continue
-        out.append('M'+'%.1f %.1f'%c[0]+'L'+' '.join('%.1f %.1f'%xy for xy in c[1:]))
-    return ''.join(out)
+        out.append(((l.centroid.x,l.centroid.y),'M'+'%.1f %.1f'%c[0]+'L'+' '.join('%.1f %.1f'%xy for xy in c[1:])))
+    return kova(out)
 def yukle(f): return json.load(open(f))['features']
 # kara
 kara=unary_union([shape(f['geometry']) for f in yukle('ne_50m_land.geojson')])
@@ -58,8 +64,8 @@ for p,g in daglar:
             jx,jy=xx+rng.uniform(-3,3),yy+rng.uniform(-2,2)
             if gp.contains(Point(jx,jy)):
                 k=rng.uniform(0.75,1.2);w=5*k;h=4.2*k
-                chev.append('M%.1f %.1fL%.1f %.1fL%.1f %.1f'%(jx-w,jy+h/2,jx,jy-h/2,jx+w,jy+h/2))
-D_DAG=''.join(chev)
+                chev.append(((jx,jy),'M%.1f %.1fL%.1f %.1fL%.1f %.1f'%(jx-w,jy+h/2,jx,jy-h/2,jx+w,jy+h/2)))
+D_DAG=kova(chev)
 # etiketler
 def ad_tr(p): 
     t=p.get('NAME_TR') or p['NAME'].title()
@@ -107,11 +113,11 @@ svg=('<svg class="iz-taban" viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/sv
  '<rect class="hs-deniz" fill="#BCD3E4" width="%d" height="%d"/>'%(W,H)+
  '<path class="hs-dalga" fill="none" d="%s"/>'%D_DALGA+
  '<use href="#hsKara" class="hs-golge" fill="none"/><use href="#hsKara" class="hs-kara" fill="#F5E6C6"/>'+
- '<path class="hs-nehir" fill="none" d="%s"/>'%D_NEHIR+
- '<path class="hs-gol" d="%s"/>'%D_GOL+
- '<path class="hs-dag" fill="none" d="%s"/>'%D_DAG+
+ '<g class="hs-nehir" fill="none">'+''.join('<path d="%s"/>'%d for d in D_NEHIR)+'</g>'+
+ '<g class="hs-gol">'+''.join('<path d="%s"/>'%d for d in D_GOL)+'</g>'+
+ '<g class="hs-dag" fill="none">'+''.join('<path d="%s"/>'%d for d in D_DAG)+'</g>'+
  '<use href="#hsKara" class="hs-kiyi" fill="none" stroke="#23395F"/>'+
  '<g class="hs-adlar">'+''.join(ETK)+'</g>'+pus+
  '<rect class="hs-vin" width="%d" height="%d" fill="url(#hsVin)"/></svg>'%(W,H))
 open('/home/claude/odak/veri/izinde/harita.svg','w').write(svg)
-print(len(svg)//1024,'KB','kara',len(D_KARA)//1024,'nehir',len(D_NEHIR)//1024,'dag',len(D_DAG)//1024,'gol',len(D_GOL)//1024)
+print(len(svg)//1024,'KB',[len(x) for x in (D_KARA,D_NEHIR,D_DAG,D_GOL)])
