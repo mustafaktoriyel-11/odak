@@ -314,18 +314,18 @@
       o+='<div class="iz-sh-kart kilit"><b>🔒 Henüz ulaşmadın</b><p>Burada seni <b>'+esc(m.ad||'bir matematikçi')+'</b> bekliyor.'+(m.yasam?' ('+esc(m.yasam)+')':'')+'</p>'+
         '<p class="iz-sh-kalan">'+(r.adim-st.toplam)+' set daha çözünce kapılar açılacak.</p></div>';
       return o;}
-    o+='<div class="iz-sh-kart"><div class="iz-sh-kim"><svg viewBox="0 0 64 64" style="--m:#141B3F;--v:#FF8A1F"><use href="#iz-s-'+r.simge+'"/></svg><div><b>'+esc(m.ad)+'</b>'+(m.yasam?'<span>'+esc(m.yasam)+'</span>':'')+'</div></div>'+
+    o+='<div class="iz-sh-kart"><div class="iz-sh-kim"><svg viewBox="0 0 64 64" style="--m:#141B3F;--v:#FF8A1F"><use href="#iz-s-'+r.simge+'"/></svg><div><b>'+esc(m.ad)+'</b>'+(m.yasam?'<span>'+esc(m.yasam)+'</span>':'')+'</div><button type="button" class="iz-sh-ac" aria-expanded="false">Hikâyeyi oku</button></div><div class="iz-sh-detay"><div>'+
       '<p class="iz-d-sahne">'+esc(d.karsilasma)+'</p><div class="iz-d-bilgi"><b>💡 Bunu biliyor muydun?</b><p>'+esc(d.ilginc)+'</p></div>';
     if(d.yan_kisi)o+='<p class="iz-d-yan">Bu durakta ayrıca: <b>'+esc(d.yan_kisi.ad||'')+'</b>'+(d.yan_kisi.yasam?' ('+esc(d.yan_kisi.yasam)+')':'')+'</p>';
     if(d.dene&&d.dene.soru)o+='<details class="iz-d-dene"><summary>🤔 Dene: '+esc(d.dene.soru)+'</summary><p>'+esc(d.dene.cevap)+'</p></details>';
-    return o+'</div>';
+    return o+'</div></div></div>';
   }
   function durakSahne(i,zoom,sonra){
     var D=V.rota.duraklar,r=D[i],d=V.dur[r.id]||{},st=kamSt||durum(),ul=st.toplam>=r.adim;
     var kar=document.createElement('div');kar.className='iz-karart';document.body.appendChild(kar);
     var geri={s:kam.s,x:kam.x,y:kam.y};
     function ac(){
-      var sh=document.createElement('div');sh.className='iz-sahne'+(ul?'':' kilitli');sh.setAttribute('role','dialog');sh.setAttribute('aria-modal','true');
+      var sh=document.createElement('div');sh.className='iz-sahne'+(ul?' kapali':' kilitli');sh.setAttribute('role','dialog');sh.setAttribute('aria-modal','true');
       sh.style.setProperty('--bolge',BOLGE_RENK[r.bolge]||'#141B3F');
       sh.innerHTML='<div class="iz-sh-arka">'+(r.gorsel?'<div class="iz-sh-gorsel"><img alt="" src="img/durak/'+r.id+'.webp"></div>':'')+'<svg class="iz-sh-yedek" viewBox="0 0 64 64" style="--m:rgba(255,255,255,.85);--v:#FFB35C"><use href="#iz-s-'+r.simge+'"/></svg></div>'+
         '<div class="iz-sh-ic">'+durakIcerik(d,r,ul,st)+'<button type="button" class="mt-btn iz-sh-kapat">'+(sonra?'Devam':'Haritaya dön')+'</button></div>';
@@ -338,6 +338,14 @@
         vd.onerror=function(){vd.remove();};vd.src='vid/durak/'+r.id+'.mp4';
         img.parentNode.appendChild(vd);var pp=vd.play();if(pp&&pp.catch)pp.catch(function(){});
       }
+      // Sinema düzeni: önce sahne izlenir, hikâye isteyince aşağıdan cam panelde açılır; görsele dokununca ya da aşağı kaydırınca geri iner
+      var acB=sh.querySelector('.iz-sh-ac'),icK=sh.querySelector('.iz-sh-ic');
+      function hikaye(ac){sh.classList.toggle('kapali',!ac);if(acB){acB.setAttribute('aria-expanded',ac?'true':'false');acB.textContent=ac?'Sahneye dön':'Hikâyeyi oku';}if(!ac)icK.scrollTop=0;}
+      if(acB){acB.onclick=function(){hikaye(sh.classList.contains('kapali'));};
+        sh.querySelector('.iz-sh-arka').onclick=function(){hikaye(false);};
+        var y0=null;icK.addEventListener('touchstart',function(e){y0=e.touches[0].clientY;},{passive:true});
+        icK.addEventListener('touchend',function(e){if(y0===null)return;var dy=e.changedTouches[0].clientY-y0;y0=null;
+          if(dy<-40&&sh.classList.contains('kapali'))hikaye(true);else if(dy>60&&icK.scrollTop<=0&&!sh.classList.contains('kapali'))hikaye(false);},{passive:true});}
       document.body.appendChild(sh);
       requestAnimationFrame(function(){sh.classList.add('acik');kar.classList.add('git');});
       function kapat(){sh.classList.remove('acik');kar.classList.remove('git');kar.classList.add('tam');
