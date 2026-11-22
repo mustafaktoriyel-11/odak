@@ -1704,3 +1704,4 @@ html.mf-gece #onay-tamam:disabled,html.mf-gece #not-gonder:disabled,html.mf-gece
 .sq-tekrar{background:#FF8A1F;color:#fff;box-shadow:0 3px 10px rgba(255,138,31,.28)}
 #sq-tekrar-et.sq-tekrar{background:#FF8A1F;color:#fff}
 .sn-izgara{grid-template-columns:repeat(3,1fr)}
+.iz-gun-btn{display:flex;gap:10px}.iz-gun-btn .mt-btn2{flex:1}.iz-tek-alt{margin-bottom:10px}
