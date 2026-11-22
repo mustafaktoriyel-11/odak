@@ -28,7 +28,7 @@ process.stdout.write(JSON.stringify(out));
 
 def sentetik(muf, sinif, adet, rng):
     ks = ort.konular(muf, sinif)
-    sik = 4 if sinif in ("6", "7", "8") else 5
+    sik = 4 if sinif in ("5", "6", "7", "8") else 5
     return [{"id": "%s-%04d" % (sinif, i + 1), "konu": rng.choice(ks)["id"], "zorluk": rng.choice([1, 2, 3]),
              "s": "x%d" % i, "o": list("abcde")[:sik], "c": 0, "a": "", "kaynak": "ozgun"} for i in range(adet)]
 

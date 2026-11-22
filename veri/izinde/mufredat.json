@@ -23,6 +23,236 @@
   "ikinci_donem_baslangic": "2027-02-08"
  },
  "siniflar": {
+  "5": {
+   "uniteler": [
+    {
+     "no": 1,
+     "ad": "Geometrik Şekiller",
+     "konular": [
+      {
+       "id": "5.3.1",
+       "ad": "Nokta, doğru, doğru parçası, ışın ve temel çizimler",
+       "alan": "geometri",
+       "hafta": "2026-09-14",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.3.2",
+       "ad": "Paralel ve dik doğrular, temel inşalar",
+       "alan": "geometri",
+       "hafta": "2026-09-21",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.3.3",
+       "ad": "Açıları ölçme (iletki, derece)",
+       "alan": "geometri",
+       "hafta": "2026-09-28",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.3.4",
+       "ad": "İki ve üç doğrunun oluşturduğu açılar",
+       "alan": "geometri",
+       "hafta": "2026-10-05",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.3.5",
+       "ad": "Çokgenler: kenar, köşe, açı",
+       "alan": "geometri",
+       "hafta": "2026-10-12",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.3.6",
+       "ad": "Çokgenlerin özellikleri (üçgen ve dörtgen türleri)",
+       "alan": "geometri",
+       "hafta": "2026-10-19",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.3.7",
+       "ad": "Çember, merkez, yarıçap ve çemberlerle üçgen inşası",
+       "alan": "geometri",
+       "hafta": "2026-10-26",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "ad": "Sayılar ve Nicelikler (1)",
+     "konular": [
+      {
+       "id": "5.1.1",
+       "ad": "Çok basamaklı sayılar: okuma, yazma, basamak değeri",
+       "alan": "matematik",
+       "hafta": "2026-11-09",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.1.2",
+       "ad": "Doğal sayılarla dört işlem problemleri",
+       "alan": "matematik",
+       "hafta": "2026-11-30",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "ad": "Geometrik Nicelikler",
+     "konular": [
+      {
+       "id": "5.4.1",
+       "ad": "Dikdörtgenin çevresi ve kenar uzunlukları",
+       "alan": "geometri",
+       "hafta": "2026-12-28",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.4.2",
+       "ad": "Birim karelerle dikdörtgenin alanı",
+       "alan": "geometri",
+       "hafta": "2026-12-28",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.4.3",
+       "ad": "Alan verilince çevre, çevre verilince alan",
+       "alan": "geometri",
+       "hafta": "2027-01-04",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.4.4",
+       "ad": "Çevre ve alan problemleri",
+       "alan": "geometri",
+       "hafta": "2027-01-11",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "ad": "Sayılar ve Nicelikler (2)",
+     "konular": [
+      {
+       "id": "5.1.3",
+       "ad": "Kesirlerin farklı gösterimleri (model, sayı doğrusu)",
+       "alan": "matematik",
+       "hafta": "2027-02-08",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.1.4",
+       "ad": "Kesirleri karşılaştırma ve sıralama",
+       "alan": "matematik",
+       "hafta": "2027-03-01",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "ad": "İstatistiksel Araştırma Süreci",
+     "konular": [
+      {
+       "id": "5.5.1",
+       "ad": "Kategorik veri, tablo ve sütun grafiği",
+       "alan": "matematik",
+       "hafta": "2027-04-05",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.5.2",
+       "ad": "Veriye dayalı sonuçları değerlendirme",
+       "alan": "matematik",
+       "hafta": "2027-05-03",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "ad": "İşlemlerle Cebirsel Düşünme",
+     "konular": [
+      {
+       "id": "5.2.1",
+       "ad": "Eşitliğin korunumu; değişme, birleşme, dağılma",
+       "alan": "matematik",
+       "hafta": "2027-05-03",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.2.2",
+       "ad": "İşlem önceliği",
+       "alan": "matematik",
+       "hafta": "2027-05-17",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.2.3",
+       "ad": "Sayı ve şekil örüntüleri",
+       "alan": "matematik",
+       "hafta": "2027-05-17",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.2.4",
+       "ad": "Aritmetik işlemlerde algoritmalar",
+       "alan": "matematik",
+       "hafta": "2027-05-31",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "ad": "Veriden Olasılığa",
+     "konular": [
+      {
+       "id": "5.6.1",
+       "ad": "Olasılık spektrumu: imkânsız, kesin, eşit olasılıklı",
+       "alan": "matematik",
+       "hafta": "2027-06-07",
+       "sinav": [],
+       "dogrulandi": true
+      },
+      {
+       "id": "5.6.2",
+       "ad": "Az ya da çok olasılıklı olaylar",
+       "alan": "matematik",
+       "hafta": "2027-06-14",
+       "sinav": [],
+       "dogrulandi": true
+      }
+     ]
+    }
+   ]
+  },
   "6": {
    "uniteler": [
     {

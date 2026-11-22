@@ -1703,3 +1703,4 @@ html.mf-gece #onay-tamam:disabled,html.mf-gece #not-gonder:disabled,html.mf-gece
 .sq-cip,#kt-kart .kt-cip{border-color:#C9D2F5;color:#1C2E8A}
 .sq-tekrar{background:#FF8A1F;color:#fff;box-shadow:0 3px 10px rgba(255,138,31,.28)}
 #sq-tekrar-et.sq-tekrar{background:#FF8A1F;color:#fff}
+.sn-izgara{grid-template-columns:repeat(3,1fr)}

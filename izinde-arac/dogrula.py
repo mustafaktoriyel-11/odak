@@ -145,7 +145,7 @@ def dosya_denetle(yol, muf):
         hatalar.append("sorular liste olmali")
         return hatalar, uyarilar, {}
     onek = "M" if sinif == "Mezun" else sinif
-    sik = 4 if sinif in ("6", "7", "8") else 5
+    sik = 4 if sinif in ("5", "6", "7", "8") else 5
     konu_idleri = {k["id"] for k in ort.konular(muf, sinif)}
     tum_konu = {k["id"] for s in muf["siniflar"].values() for u in s["uniteler"] for k in u["konular"]}
     ids, koklar, say, harf, ornek = set(), {}, {}, [0] * sik, 0

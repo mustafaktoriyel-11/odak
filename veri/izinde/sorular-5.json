@@ -1,0 +1,2231 @@
+{
+ "sinif": "5",
+ "surum": 1,
+ "sorular": [
+  {
+   "id": "5-0001",
+   "konu": "5.3.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki araç - ölçülen büyüklük eşleştirmelerinden hangisi doğrudur?",
+   "o": [
+    "İletki - uzunluk",
+    "Pergel - açı ölçüsü",
+    "Cetvel - uzunluk",
+    "Cetvel - açı ölçüsü"
+   ],
+   "c": 2,
+   "a": "Cetvel ile doğru parçasının uzunluğu, iletki ile açının ölçüsü bulunur. Pergel ise çember çizmeye yarar.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0002",
+   "konu": "5.3.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki araçlardan hangisi ile çember çizilir?",
+   "o": [
+    "Cetvel",
+    "İletki",
+    "Pergel",
+    "Gönye"
+   ],
+   "c": 2,
+   "a": "Çember çizmek için pergel kullanılır; iğneli ucu merkeze konur, kalemli ucu çemberi çizer.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0003",
+   "konu": "5.3.1",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi bir ışının özelliğidir?",
+   "o": [
+    "Bir başlangıç noktası vardır ve bir yönde sınırsız uzanır.",
+    "Her iki yönde sonsuza uzanır.",
+    "İki uç noktası vardır, uzunluğu ölçülebilir.",
+    "Bir noktadır; uzunluğu yoktur."
+   ],
+   "c": 0,
+   "a": "Işının bir ucu (başlangıç noktası) vardır, diğer yönde sınırsız uzanır. İki yönde sınırsız uzanan şekle ise doğru denir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0004",
+   "konu": "5.3.1",
+   "zorluk": 1,
+   "s": "Düzlemde verilen iki farklı noktadan geçen kaç farklı doğru çizilebilir?",
+   "o": [
+    "$1$",
+    "$2$",
+    "$3$",
+    "Sonsuz tane"
+   ],
+   "c": 0,
+   "a": "İki farklı noktadan geçen doğru yalnızca bir tanedir; cetveli iki noktaya yaslayınca tek doğru çizilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0005",
+   "konu": "5.3.1",
+   "zorluk": 2,
+   "s": "Düzlemde verilen tek bir $A$ noktasından geçen kaç farklı doğru çizilebilir?",
+   "o": [
+    "$1$",
+    "$2$",
+    "Sonsuz tane",
+    "$4$"
+   ],
+   "c": 2,
+   "a": "$A$ noktasından cetveli istediğimiz kadar döndürerek çizebiliriz. Bu yüzden sonsuz tane doğru geçer.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0006",
+   "konu": "5.3.1",
+   "zorluk": 3,
+   "s": "Şekilde $A$, $B$, $C$ ve $D$ noktaları aynı doğru üzerindedir. Uç noktaları bu noktalardan ikisi olan kaç farklı doğru parçası vardır?",
+   "o": [
+    "$3$",
+    "$6$",
+    "$4$",
+    "$12$"
+   ],
+   "c": 1,
+   "a": "Parçalar: $[AB],[AC],[AD],[BC],[BD],[CD]$. Toplam $6$ doğru parçası vardır.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"10\" y1=\"70\" x2=\"230\" y2=\"70\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><circle cx=\"30\" cy=\"70\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"90\" cy=\"70\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"150\" cy=\"70\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"210\" cy=\"70\" r=\"2.2\" fill=\"#141B3F\"/><text x=\"30\" y=\"90\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"90\" y=\"90\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"150\" y=\"90\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"210\" y=\"90\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">D</text></svg>"
+  },
+  {
+   "id": "5-0007",
+   "konu": "5.3.1",
+   "zorluk": 2,
+   "s": "$d$ doğrusu üzerinde bir $A$ noktası işaretlenmiştir. Başlangıç noktası $A$ olan ve $d$ doğrusu üzerinde kalan kaç farklı ışın vardır?",
+   "o": [
+    "$1$",
+    "$3$",
+    "$2$",
+    "Sonsuz tane"
+   ],
+   "c": 2,
+   "a": "$A$ noktasından doğrunun bir yönüne ve diğer yönüne giden iki ışın vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0008",
+   "konu": "5.3.1",
+   "zorluk": 2,
+   "s": "Ece, cetvelle uzunluğu $5$ cm olan bir $[AB]$ doğru parçası çizecektir. $A$ noktasını cetvelin $1$ cm işaretine koyduğuna göre $B$ noktasını cetvelin kaç cm işaretine koymalıdır?",
+   "o": [
+    "$5$",
+    "$4$",
+    "$10$",
+    "$6$"
+   ],
+   "c": 3,
+   "a": "Başlangıç $1$ cm'de olduğundan $1+5=6$ cm işaretine gelinmelidir. Cetvelin sıfırından başlamayan ölçümde uzunluk iki işaretin farkıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0009",
+   "konu": "5.3.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki işlerden hangisinde iletki kullanılır?",
+   "o": [
+    "Bir açının ölçüsünü bulmak",
+    "Bir doğru parçasının uzunluğunu ölçmek",
+    "Bir çember çizmek",
+    "Bir kenarın ortasını bulmak"
+   ],
+   "c": 0,
+   "a": "İletki, açıların derece cinsinden ölçüsünü bulmaya ve verilen ölçüde açı çizmeye yarar.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0010",
+   "konu": "5.3.1",
+   "zorluk": 2,
+   "s": "$A$ noktası, $d$ doğrusunun dışında bulunmaktadır. $A$ noktasından $d$ doğrusuna kaç farklı dikme çizilebilir?",
+   "o": [
+    "$2$",
+    "Sonsuz tane",
+    "Hiç çizilemez",
+    "$1$"
+   ],
+   "c": 3,
+   "a": "Bir noktadan bir doğruya yalnız bir dikme çizilebilir; gönyenin dik kenarını doğruya yaslayıp çizince tek doğru elde edilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0011",
+   "konu": "5.3.1",
+   "zorluk": 1,
+   "s": "Yarıçapı $3$ cm olan bir çember çizmek için pergelin iğneli ucu ile kalemli ucu arası kaç cm açılmalıdır?",
+   "o": [
+    "$6$",
+    "$3$",
+    "$9$",
+    "$2$"
+   ],
+   "c": 1,
+   "a": "Pergelin uçları arası yarıçapa eşit olmalıdır. Çember yarıçapı $3$ cm ise açıklık $3$ cm olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0012",
+   "konu": "5.3.1",
+   "zorluk": 2,
+   "s": "Aşağıdakilerden hangisi bir açıyı oluşturur?",
+   "o": [
+    "Başlangıç noktaları farklı iki ışın",
+    "Başlangıç noktası ortak olan iki ışın",
+    "Birbirine paralel iki doğru",
+    "Uç noktaları ayrı iki doğru parçası"
+   ],
+   "c": 1,
+   "a": "Açı, başlangıç noktaları aynı olan iki ışından oluşur. Bu ortak noktaya açının köşesi denir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0013",
+   "konu": "5.3.1",
+   "zorluk": 3,
+   "s": "Şekilde $A$, $B$, $C$ ve $D$ noktaları aynı doğru üzerinde ve bu sırayla dizilmiştir. $|AC|=9$ cm, $|BD|=8$ cm ve $|BC|=4$ cm olduğuna göre $|AD|$ kaç cm'dir?",
+   "o": [
+    "$17$",
+    "$12$",
+    "$13$",
+    "$21$"
+   ],
+   "c": 2,
+   "a": "$|AC|+|BD|=9+8=17$ toplamında $[BC]$ iki kez sayılmıştır. Bir kez çıkarırsak $|AD|=17-4=13$ cm bulunur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"10\" y1=\"72\" x2=\"230\" y2=\"72\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><circle cx=\"25\" cy=\"72\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"95\" cy=\"72\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"151\" cy=\"72\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"207\" cy=\"72\" r=\"2.2\" fill=\"#141B3F\"/><text x=\"25\" y=\"88\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"95\" y=\"88\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"151\" y=\"88\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"207\" y=\"88\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><polyline points=\"25,42 25,36 151,36 151,42\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.4\"/><text x=\"88\" y=\"32\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">9</text><polyline points=\"95,58 95,52 151,52 151,58\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.4\"/><text x=\"123\" y=\"48\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">4</text><polyline points=\"95,98 95,104 207,104 207,98\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.4\"/><text x=\"151\" y=\"116\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">8</text></svg>"
+  },
+  {
+   "id": "5-0014",
+   "konu": "5.3.1",
+   "zorluk": 3,
+   "s": "Hiçbir üçü aynı doğru üzerinde olmayan $4$ noktadan ikişer ikişer geçen kaç farklı doğru çizilebilir?",
+   "o": [
+    "$6$",
+    "$4$",
+    "$8$",
+    "$12$"
+   ],
+   "c": 0,
+   "a": "Her nokta çiftinden bir doğru geçer. Çiftler: $AB, AC, AD, BC, BD, CD$ olup toplam $6$ doğru çizilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0015",
+   "konu": "5.3.2",
+   "zorluk": 1,
+   "s": "Birbirine dik iki doğrunun kesiştiği noktada oluşan açı kaç derecedir?",
+   "o": [
+    "$90^\\circ$",
+    "$45^\\circ$",
+    "$180^\\circ$",
+    "$60^\\circ$"
+   ],
+   "c": 0,
+   "a": "Dik doğrular kesişince dik açı oluşturur. Dik açının ölçüsü $90^\\circ$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0016",
+   "konu": "5.3.2",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi paralel iki doğru için doğrudur?",
+   "o": [
+    "Bir noktada kesişirler.",
+    "Hiçbir noktada kesişmezler; aralarındaki uzaklık her yerde aynıdır.",
+    "Kesiştikleri yerde dik açı oluştururlar.",
+    "Uzadıkça birbirine yaklaşırlar."
+   ],
+   "c": 1,
+   "a": "Paralel doğrular ne kadar uzatılırsa uzatılsın kesişmez ve aralarındaki uzaklık değişmez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0017",
+   "konu": "5.3.2",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi birbirine paralel doğru örneği olarak verilebilir?",
+   "o": [
+    "Makasın iki bıçağı",
+    "Kavşakta kesişen iki cadde",
+    "Tren yolunun iki rayı",
+    "Saat 3.00'te akrep ile yelkovan"
+   ],
+   "c": 2,
+   "a": "Tren yolunun rayları hiç kesişmez ve aralarındaki uzaklık hep aynıdır. Diğerleri bir noktada kesişir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0018",
+   "konu": "5.3.2",
+   "zorluk": 2,
+   "s": "Şekilde $m$ ve $n$ doğrularının her biri $d$ doğrusuna diktir. $m$ ve $n$ doğruları için aşağıdakilerden hangisi söylenebilir?",
+   "o": [
+    "Birbirine diktir.",
+    "Bir noktada kesişir.",
+    "Birbirine paraleldir.",
+    "Hakkında bir şey söylenemez."
+   ],
+   "c": 2,
+   "a": "Aynı doğruya dik olan iki doğru birbirine paraleldir. Şekilde de $m$ ve $n$ hiç kesişmemektedir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"20\" y1=\"70\" x2=\"220\" y2=\"70\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"115\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"115\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><polyline points=\"88,70 88,62 80,62\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.4\"/><polyline points=\"168,70 168,62 160,62\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.4\"/><text x=\"228\" y=\"64\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">d</text><text x=\"72\" y=\"24\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">m</text><text x=\"168\" y=\"24\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">n</text></svg>"
+  },
+  {
+   "id": "5-0019",
+   "konu": "5.3.2",
+   "zorluk": 2,
+   "s": "Şekilde $a$ ve $b$ doğruları paraleldir. $c$ doğrusu $a$ doğrusuna diktir. $c$ ile $b$ doğrusunun oluşturduğu açı kaç derecedir?",
+   "o": [
+    "$45^\\circ$",
+    "$90^\\circ$",
+    "$180^\\circ$",
+    "$60^\\circ$"
+   ],
+   "c": 1,
+   "a": "Paralel doğrulardan birine dik olan doğru diğerine de diktir. Bu yüzden $c$ ile $b$ arasındaki açı $90^\\circ$'dir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"20\" y1=\"40\" x2=\"220\" y2=\"40\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"20\" y1=\"95\" x2=\"220\" y2=\"95\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"120\" y1=\"12\" x2=\"120\" y2=\"118\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><polyline points=\"128,40 128,32 120,32\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.4\"/><text x=\"228\" y=\"35\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">a</text><text x=\"228\" y=\"90\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">b</text><text x=\"112\" y=\"20\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">c</text><text x=\"130\" y=\"87\" font-size=\"10\" text-anchor=\"start\" fill=\"#FF8A1F\" font-weight=\"bold\">?</text></svg>"
+  },
+  {
+   "id": "5-0020",
+   "konu": "5.3.2",
+   "zorluk": 2,
+   "s": "Düzlemde bir $d$ doğrusu ve $d$ üzerinde olmayan bir $A$ noktası verilmiştir. $A$ noktasından $d$ doğrusuna paralel kaç farklı doğru çizilebilir?",
+   "o": [
+    "$2$",
+    "Hiç çizilemez",
+    "Sonsuz tane",
+    "$1$"
+   ],
+   "c": 3,
+   "a": "Bir noktadan bir doğruya paralel yalnızca bir doğru çizilebilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0021",
+   "konu": "5.3.2",
+   "zorluk": 1,
+   "s": "Kareli bir defterdeki iki yatay çizgi ve bir dikey çizgi için aşağıdakilerden hangisi doğrudur?",
+   "o": [
+    "Üç çizgi de birbirine paraleldir.",
+    "Üç çizgi de birbirine diktir.",
+    "Yatay çizgiler paraleldir, dikey çizgi her birine diktir.",
+    "Yatay çizgiler birbirini keser."
+   ],
+   "c": 2,
+   "a": "Yatay çizgiler hiç kesişmez, yani paraleldir. Dikey çizgi yatay çizgilerin her birini dik keser.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0022",
+   "konu": "5.3.2",
+   "zorluk": 2,
+   "s": "Şekildeki $ABCD$ dikdörtgeninde komşu kenarlar birbirine diktir. Birbirine dik olan komşu kenar çiftlerinin sayısı kaçtır?",
+   "o": [
+    "$2$",
+    "$6$",
+    "$4$",
+    "$8$"
+   ],
+   "c": 2,
+   "a": "Her köşede birbirine dik iki kenar buluşur: $[AB]\\perp[BC]$, $[BC]\\perp[CD]$, $[CD]\\perp[DA]$, $[DA]\\perp[AB]$. Toplam $4$ çift vardır.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"60,30 180,30 180,100 60,100\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><polyline points=\"60,38 68,38 68,30\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.4\"/><polyline points=\"172,30 172,38 180,38\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.4\"/><polyline points=\"180,92 172,92 172,100\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.4\"/><polyline points=\"68,100 68,92 60,92\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.4\"/><text x=\"50\" y=\"26\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">A</text><text x=\"190\" y=\"26\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">B</text><text x=\"190\" y=\"116\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">C</text><text x=\"50\" y=\"116\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">D</text></svg>"
+  },
+  {
+   "id": "5-0023",
+   "konu": "5.3.2",
+   "zorluk": 2,
+   "s": "Kemal, \"Hiçbir noktada kesişmeyen iki doğru birbirine diktir.\" diyor. Kemal'in hatası aşağıdakilerden hangisidir?",
+   "o": [
+    "Paralel doğrular bir noktada kesişir.",
+    "Dik doğrular $45^\\circ$'lik açı oluşturur.",
+    "Dik doğrular kesişir; kesişmeyen doğrular paraleldir.",
+    "Hiçbir hatası yoktur."
+   ],
+   "c": 2,
+   "a": "Dik doğrular kesişerek $90^\\circ$ açı oluşturur. Hiç kesişmeyen doğrular ise paralel doğrulardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0024",
+   "konu": "5.3.2",
+   "zorluk": 2,
+   "s": "Şekilde yatay üç doğru birbirine paralel, dikey iki doğru da birbirine paraleldir. Yatay doğrular dikey doğrulara diktir. Dik kesişme noktalarının sayısı kaçtır? (Noktalar işaretlenmiştir.)",
+   "o": [
+    "$5$",
+    "$6$",
+    "$8$",
+    "$12$"
+   ],
+   "c": 1,
+   "a": "Her yatay doğru her dikey doğruyu bir noktada keser: $3\\cdot 2=6$ kesişme noktası olur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"25\" y1=\"30\" x2=\"215\" y2=\"30\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"25\" y1=\"65\" x2=\"215\" y2=\"65\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"25\" y1=\"100\" x2=\"215\" y2=\"100\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"95\" y1=\"12\" x2=\"95\" y2=\"118\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"155\" y1=\"12\" x2=\"155\" y2=\"118\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><circle cx=\"95\" cy=\"30\" r=\"2.4\" fill=\"#FF8A1F\"/><circle cx=\"155\" cy=\"30\" r=\"2.4\" fill=\"#FF8A1F\"/><circle cx=\"95\" cy=\"65\" r=\"2.4\" fill=\"#FF8A1F\"/><circle cx=\"155\" cy=\"65\" r=\"2.4\" fill=\"#FF8A1F\"/><circle cx=\"95\" cy=\"100\" r=\"2.4\" fill=\"#FF8A1F\"/><circle cx=\"155\" cy=\"100\" r=\"2.4\" fill=\"#FF8A1F\"/></svg>"
+  },
+  {
+   "id": "5-0025",
+   "konu": "5.3.2",
+   "zorluk": 3,
+   "s": "Şekilde yatay üç doğru birbirine paralel, dikey iki doğru da birbirine paraleldir. Şekilde birbirine paralel olan kaç farklı doğru çifti vardır?",
+   "o": [
+    "$3$",
+    "$5$",
+    "$6$",
+    "$4$"
+   ],
+   "c": 3,
+   "a": "Yatay doğrulardan $3$ çift ($1$-$2$, $1$-$3$, $2$-$3$) ve dikey doğrulardan $1$ çift oluşur. Toplam $3+1=4$ çift vardır.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"25\" y1=\"30\" x2=\"215\" y2=\"30\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"25\" y1=\"65\" x2=\"215\" y2=\"65\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"25\" y1=\"100\" x2=\"215\" y2=\"100\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"95\" y1=\"12\" x2=\"95\" y2=\"118\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"155\" y1=\"12\" x2=\"155\" y2=\"118\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><circle cx=\"95\" cy=\"30\" r=\"2.4\" fill=\"#FF8A1F\"/><circle cx=\"155\" cy=\"30\" r=\"2.4\" fill=\"#FF8A1F\"/><circle cx=\"95\" cy=\"65\" r=\"2.4\" fill=\"#FF8A1F\"/><circle cx=\"155\" cy=\"65\" r=\"2.4\" fill=\"#FF8A1F\"/><circle cx=\"95\" cy=\"100\" r=\"2.4\" fill=\"#FF8A1F\"/><circle cx=\"155\" cy=\"100\" r=\"2.4\" fill=\"#FF8A1F\"/></svg>"
+  },
+  {
+   "id": "5-0026",
+   "konu": "5.3.2",
+   "zorluk": 2,
+   "s": "Bir şehirde $A$ Caddesi ile $B$ Caddesi birbirine paraleldir. $C$ Caddesi, $A$ Caddesi'ne diktir. Caddeleri doğru kabul edersek $C$ Caddesi ile $B$ Caddesi için ne söylenebilir?",
+   "o": [
+    "Birbirine paraleldir.",
+    "Hiçbir zaman kesişmez.",
+    "Birbirine diktir.",
+    "Aynı caddedir."
+   ],
+   "c": 2,
+   "a": "$C$, paralel iki caddeden birine dikse diğerine de diktir. Bu yüzden $C$ ile $B$ diktir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0027",
+   "konu": "5.3.2",
+   "zorluk": 3,
+   "s": "Bir doğru üzerindeki $A$ noktasının iki yanında $|AB|=|AC|$ olacak biçimde $B$ ve $C$ noktaları işaretlenmiştir. $B$ ve $C$ merkezli, aynı yarıçaplı ($|BC|$'nin yarısından büyük) yaylar $D$ noktasında kesişiyor. $AD$ doğrusu ile $BC$ doğrusunun oluşturduğu açı kaç derecedir?",
+   "o": [
+    "$45^\\circ$",
+    "$60^\\circ$",
+    "$90^\\circ$",
+    "$180^\\circ$"
+   ],
+   "c": 2,
+   "a": "Yaylar eşit yarıçaplı olduğundan $D$ noktası $B$ ve $C$'ye eşit uzaklıktadır. $AD$ doğrusu doğruya $A$ noktasında dik olur; bu bir dikme çizme yöntemidir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"15\" y1=\"100\" x2=\"225\" y2=\"100\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><circle cx=\"120\" cy=\"100\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"75\" cy=\"100\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"165\" cy=\"100\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"120\" cy=\"60.3\" r=\"2.2\" fill=\"#141B3F\"/><path d=\"M131.6 80.1 A60 60 0 0 0 101.9 46.3\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.3\"/><path d=\"M138.1 46.3 A60 60 0 0 0 108.4 80.1\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.3\"/><line x1=\"120\" y1=\"100\" x2=\"120\" y2=\"60.3\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><text x=\"120\" y=\"116\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"75\" y=\"116\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"165\" y=\"116\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"128\" y=\"56.3\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">D</text></svg>"
+  },
+  {
+   "id": "5-0028",
+   "konu": "5.3.2",
+   "zorluk": 3,
+   "s": "Düzlemde $a\\parallel b$ olan $a$ ve $b$ doğruları verilmiştir. $c$ doğrusu $a$'ya, farklı bir $d$ doğrusu ise $b$'ye diktir. $c$ ile $d$ doğruları için aşağıdakilerden hangisi doğrudur?",
+   "o": [
+    "Birbirine paraleldir.",
+    "Birbirine diktir.",
+    "Bir noktada $45^\\circ$ ile kesişir.",
+    "Aynı doğrudur."
+   ],
+   "c": 0,
+   "a": "$c$ paralel doğruların ikisine de dik olur. $d$ de $b$'ye dik olduğundan aynı doğruya dik iki farklı doğru olan $c$ ve $d$ paraleldir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0029",
+   "konu": "5.3.3",
+   "zorluk": 1,
+   "s": "Ölçüsü $90^\\circ$ olan açıya ne ad verilir?",
+   "o": [
+    "Dik açı",
+    "Dar açı",
+    "Geniş açı",
+    "Doğru açı"
+   ],
+   "c": 0,
+   "a": "Ölçüsü tam $90^\\circ$ olan açı dik açıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0030",
+   "konu": "5.3.3",
+   "zorluk": 1,
+   "s": "Ölçüsü $65^\\circ$ olan açı hangi açı türündendir?",
+   "o": [
+    "Dik açı",
+    "Geniş açı",
+    "Doğru açı",
+    "Dar açı"
+   ],
+   "c": 3,
+   "a": "$90^\\circ$'den küçük açılara dar açı denir. $65^\\circ<90^\\circ$ olduğundan dar açıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0031",
+   "konu": "5.3.3",
+   "zorluk": 1,
+   "s": "Ölçüsü $135^\\circ$ olan açı hangi açı türündendir?",
+   "o": [
+    "Dar açı",
+    "Geniş açı",
+    "Dik açı",
+    "Doğru açı"
+   ],
+   "c": 1,
+   "a": "$90^\\circ$'den büyük, $180^\\circ$'den küçük açılara geniş açı denir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0032",
+   "konu": "5.3.3",
+   "zorluk": 1,
+   "s": "Doğru açının ölçüsü kaç derecedir?",
+   "o": [
+    "$90^\\circ$",
+    "$180^\\circ$",
+    "$360^\\circ$",
+    "$120^\\circ$"
+   ],
+   "c": 1,
+   "a": "Kenarları bir doğru oluşturan açıya doğru açı denir; ölçüsü $180^\\circ$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0033",
+   "konu": "5.3.3",
+   "zorluk": 2,
+   "s": "Şekilde iletkinin merkezi $O$ köşesine, $[OA$ ışını iletkinin sağdaki $0$ çizgisine yerleştirilmiştir. $\\angle AOB$ kaç derecedir?",
+   "o": [
+    "$140^\\circ$",
+    "$50^\\circ$",
+    "$130^\\circ$",
+    "$40^\\circ$"
+   ],
+   "c": 3,
+   "a": "$[OA$ sağdaki $0$ çizgisinde olduğundan sağdan $0$ ile başlayan sıra okunur. $[OB$ ışını $40$ değerini gösterir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"24\" y1=\"112\" x2=\"216\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><path d=\"M210 112 A90 90 0 0 0 30 112\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.2\"/><line x1=\"210\" y1=\"112\" x2=\"202\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"208.6\" y1=\"96.4\" x2=\"203.7\" y2=\"97.2\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"204.6\" y1=\"81.2\" x2=\"199.9\" y2=\"82.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"197.9\" y1=\"67\" x2=\"191\" y2=\"71\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"188.9\" y1=\"54.1\" x2=\"185.1\" y2=\"57.4\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"177.9\" y1=\"43.1\" x2=\"174.6\" y2=\"46.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"165\" y1=\"34.1\" x2=\"161\" y2=\"41\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"150.8\" y1=\"27.4\" x2=\"149.1\" y2=\"32.1\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"135.6\" y1=\"23.4\" x2=\"134.8\" y2=\"28.3\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"120\" y1=\"22\" x2=\"120\" y2=\"30\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"104.4\" y1=\"23.4\" x2=\"105.2\" y2=\"28.3\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"89.2\" y1=\"27.4\" x2=\"90.9\" y2=\"32.1\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"75\" y1=\"34.1\" x2=\"79\" y2=\"41\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"62.1\" y1=\"43.1\" x2=\"65.4\" y2=\"46.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"51.1\" y1=\"54.1\" x2=\"54.9\" y2=\"57.4\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"42.1\" y1=\"67\" x2=\"49\" y2=\"71\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"35.4\" y1=\"81.2\" x2=\"40.1\" y2=\"82.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"31.4\" y1=\"96.4\" x2=\"36.3\" y2=\"97.2\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"30\" y1=\"112\" x2=\"38\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"193\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">0</text><text x=\"179\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">180</text><text x=\"183.2\" y=\"78.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">30</text><text x=\"171.1\" y=\"85.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">150</text><text x=\"156.5\" y=\"51.8\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">60</text><text x=\"149.5\" y=\"63.9\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">120</text><text x=\"120\" y=\"42\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">90</text><text x=\"120\" y=\"56\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">90</text><text x=\"83.5\" y=\"51.8\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">120</text><text x=\"90.5\" y=\"63.9\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">60</text><text x=\"56.8\" y=\"78.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">150</text><text x=\"68.9\" y=\"85.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">30</text><text x=\"47\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">180</text><text x=\"61\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">0</text><line x1=\"120\" y1=\"112\" x2=\"220\" y2=\"112\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><line x1=\"120\" y1=\"112\" x2=\"196.6\" y2=\"47.7\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><text x=\"227\" y=\"115\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\" font-weight=\"bold\">A</text><text x=\"202\" y=\"46.2\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\" font-weight=\"bold\">B</text><circle cx=\"120\" cy=\"112\" r=\"2.4\" fill=\"#141B3F\"/><text x=\"120\" y=\"126\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">O</text></svg>"
+  },
+  {
+   "id": "5-0034",
+   "konu": "5.3.3",
+   "zorluk": 2,
+   "s": "Şekilde iletkinin merkezi $O$ köşesine, $[OA$ ışını iletkinin sol taraftaki $0$ çizgisine yerleştirilmiştir. $\\angle AOB$ kaç derecedir?",
+   "o": [
+    "$110^\\circ$",
+    "$70^\\circ$",
+    "$80^\\circ$",
+    "$20^\\circ$"
+   ],
+   "c": 1,
+   "a": "$[OA$ sol taraftaki $0$ çizgisinde olduğundan soldan başlayan sıra okunur. $[OB$ ışını $70$ değerini gösterir; $110$ ise sağdan başlayan sıradır.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"24\" y1=\"112\" x2=\"216\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><path d=\"M210 112 A90 90 0 0 0 30 112\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.2\"/><line x1=\"210\" y1=\"112\" x2=\"202\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"208.6\" y1=\"96.4\" x2=\"203.7\" y2=\"97.2\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"204.6\" y1=\"81.2\" x2=\"199.9\" y2=\"82.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"197.9\" y1=\"67\" x2=\"191\" y2=\"71\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"188.9\" y1=\"54.1\" x2=\"185.1\" y2=\"57.4\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"177.9\" y1=\"43.1\" x2=\"174.6\" y2=\"46.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"165\" y1=\"34.1\" x2=\"161\" y2=\"41\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"150.8\" y1=\"27.4\" x2=\"149.1\" y2=\"32.1\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"135.6\" y1=\"23.4\" x2=\"134.8\" y2=\"28.3\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"120\" y1=\"22\" x2=\"120\" y2=\"30\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"104.4\" y1=\"23.4\" x2=\"105.2\" y2=\"28.3\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"89.2\" y1=\"27.4\" x2=\"90.9\" y2=\"32.1\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"75\" y1=\"34.1\" x2=\"79\" y2=\"41\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"62.1\" y1=\"43.1\" x2=\"65.4\" y2=\"46.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"51.1\" y1=\"54.1\" x2=\"54.9\" y2=\"57.4\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"42.1\" y1=\"67\" x2=\"49\" y2=\"71\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"35.4\" y1=\"81.2\" x2=\"40.1\" y2=\"82.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"31.4\" y1=\"96.4\" x2=\"36.3\" y2=\"97.2\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"30\" y1=\"112\" x2=\"38\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"193\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">0</text><text x=\"179\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">180</text><text x=\"183.2\" y=\"78.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">30</text><text x=\"171.1\" y=\"85.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">150</text><text x=\"156.5\" y=\"51.8\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">60</text><text x=\"149.5\" y=\"63.9\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">120</text><text x=\"120\" y=\"42\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">90</text><text x=\"120\" y=\"56\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">90</text><text x=\"83.5\" y=\"51.8\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">120</text><text x=\"90.5\" y=\"63.9\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">60</text><text x=\"56.8\" y=\"78.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">150</text><text x=\"68.9\" y=\"85.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">30</text><text x=\"47\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">180</text><text x=\"61\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">0</text><line x1=\"120\" y1=\"112\" x2=\"20\" y2=\"112\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><line x1=\"120\" y1=\"112\" x2=\"85.8\" y2=\"18\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><text x=\"13\" y=\"115\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\" font-weight=\"bold\">A</text><text x=\"83.4\" y=\"14.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\" font-weight=\"bold\">B</text><circle cx=\"120\" cy=\"112\" r=\"2.4\" fill=\"#141B3F\"/><text x=\"120\" y=\"126\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">O</text></svg>"
+  },
+  {
+   "id": "5-0035",
+   "konu": "5.3.3",
+   "zorluk": 1,
+   "s": "Aşağıdaki açı ölçülerinden hangisi bir dar açıya aittir?",
+   "o": [
+    "$90^\\circ$",
+    "$91^\\circ$",
+    "$180^\\circ$",
+    "$89^\\circ$"
+   ],
+   "c": 3,
+   "a": "Dar açı $90^\\circ$'den küçüktür. Seçenekler içinde yalnızca $89^\\circ$ bu koşulu sağlar.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0036",
+   "konu": "5.3.3",
+   "zorluk": 2,
+   "s": "Aşağıdakilerden hangisi doğrudur?",
+   "o": [
+    "Dar açının ölçüsü $90^\\circ$'den büyüktür.",
+    "Dik açının ölçüsü $180^\\circ$'dir.",
+    "Geniş açının ölçüsü $90^\\circ$'den büyük, $180^\\circ$'den küçüktür.",
+    "Doğru açı, geniş açıdan küçüktür."
+   ],
+   "c": 2,
+   "a": "Geniş açı $90^\\circ$ ile $180^\\circ$ arasındadır. Dar açı $90^\\circ$'den küçük, dik açı $90^\\circ$, doğru açı ise $180^\\circ$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0037",
+   "konu": "5.3.3",
+   "zorluk": 1,
+   "s": "İletki ile bir açıyı ölçerken iletkinin merkezi açının neresine getirilmelidir?",
+   "o": [
+    "Açının köşesine",
+    "Açının kenarlarından birinin ortasına",
+    "Açının iç bölgesinde herhangi bir noktaya",
+    "Açının kenarlarından birinin uç noktasına"
+   ],
+   "c": 0,
+   "a": "İletkinin merkez işareti açının köşesine, $0$ çizgisi de kenarlardan birinin üzerine yerleştirilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0038",
+   "konu": "5.3.3",
+   "zorluk": 3,
+   "s": "Burak, dar açı olduğu gözle açıkça görülen bir açıyı iletkiyle ölçüp $120^\\circ$ bulmuştur. Burak'ın hatası ne olabilir?",
+   "o": [
+    "Hata yapmamıştır; dar açı $120^\\circ$ olabilir.",
+    "İletki dar açıları ölçemez.",
+    "Açının köşesi iletkine yerleştirilmemelidir.",
+    "İletkinin $0$ ile başlamayan sırasından okumuş olabilir."
+   ],
+   "c": 3,
+   "a": "Dar açı $90^\\circ$'den küçüktür, bu yüzden $120^\\circ$ olamaz. Büyük olasılıkla iletkinin diğer sırasından okumuştur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0039",
+   "konu": "5.3.3",
+   "zorluk": 3,
+   "s": "Şekilde $\\angle AOB=110^\\circ$ ve $\\angle AOC=35^\\circ$'dir. $\\angle COB$ kaç derecedir?",
+   "o": [
+    "$145^\\circ$",
+    "$75^\\circ$",
+    "$85^\\circ$",
+    "$70^\\circ$"
+   ],
+   "c": 1,
+   "a": "$[OC$ ışını $\\angle AOB$'nin içinde olduğundan $\\angle COB=110^\\circ-35^\\circ=75^\\circ$ olur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"70\" y1=\"100\" x2=\"210\" y2=\"100\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"70\" y1=\"100\" x2=\"184.7\" y2=\"19.7\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"70\" y1=\"100\" x2=\"38.5\" y2=\"13.5\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><circle cx=\"70\" cy=\"100\" r=\"2.2\" fill=\"#141B3F\"/><path d=\"M118 100 A48 48 0 0 0 109.3 72.5\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.6\"/><path d=\"M94 100 A24 24 0 0 0 61.8 77.4\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.6\"/><path d=\"M120.8 64.4 A62 62 0 0 0 48.8 41.7\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.6\"/><text x=\"72\" y=\"118\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">O</text><text x=\"218\" y=\"104\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">A</text><text x=\"190.7\" y=\"21.7\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">C</text><text x=\"30.5\" y=\"11.5\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">B</text><text x=\"130\" y=\"92\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\" font-weight=\"bold\">35°</text><text x=\"94\" y=\"76\" font-size=\"10\" text-anchor=\"middle\" fill=\"#1E3BD6\" font-weight=\"bold\">110°</text><text x=\"90\" y=\"25\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\" font-weight=\"bold\">?</text></svg>"
+  },
+  {
+   "id": "5-0040",
+   "konu": "5.3.3",
+   "zorluk": 2,
+   "s": "Saat tam 6.00'yı gösterirken akrep ile yelkovanın oluşturduğu açı hangi açı türüdür?",
+   "o": [
+    "Dik açı",
+    "Dar açı",
+    "Doğru açı",
+    "Geniş açı"
+   ],
+   "c": 2,
+   "a": "6.00'da akrep ve yelkovan zıt yönleri gösterir; ibreler bir doğru oluşturur. Bu açı $180^\\circ$'dir, yani doğru açıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0041",
+   "konu": "5.3.3",
+   "zorluk": 2,
+   "s": "Bir pencere kanadı kapalı konumdan başlayarak $75^\\circ$ açılmıştır. Kanat ile kapalı konumdaki yeri arasındaki açının dik açı olması için kanat kaç derece daha açılmalıdır?",
+   "o": [
+    "$15^\\circ$",
+    "$25^\\circ$",
+    "$105^\\circ$",
+    "$165^\\circ$"
+   ],
+   "c": 0,
+   "a": "Dik açı $90^\\circ$'dir. Geriye $90^\\circ-75^\\circ=15^\\circ$ kalır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0042",
+   "konu": "5.3.3",
+   "zorluk": 3,
+   "s": "Şekilde iletkinin merkezi $O$ noktasındadır ve $[OA$ ışını $0$ çizgisi üzerindedir. $[OB$, $[OC$ ve $[OD$ ışınları iletki üzerinde sırasıyla $30$, $80$ ve $140$ değerlerini gösterir. $\\angle BOD$ kaç derecedir?",
+   "o": [
+    "$110^\\circ$",
+    "$140^\\circ$",
+    "$60^\\circ$",
+    "$170^\\circ$"
+   ],
+   "c": 0,
+   "a": "$[OB$ ışını $30$, $[OD$ ışını $140$ değerini gösterir. Aradaki açı $140^\\circ-30^\\circ=110^\\circ$ olur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"24\" y1=\"112\" x2=\"216\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><path d=\"M210 112 A90 90 0 0 0 30 112\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.2\"/><line x1=\"210\" y1=\"112\" x2=\"202\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"208.6\" y1=\"96.4\" x2=\"203.7\" y2=\"97.2\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"204.6\" y1=\"81.2\" x2=\"199.9\" y2=\"82.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"197.9\" y1=\"67\" x2=\"191\" y2=\"71\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"188.9\" y1=\"54.1\" x2=\"185.1\" y2=\"57.4\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"177.9\" y1=\"43.1\" x2=\"174.6\" y2=\"46.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"165\" y1=\"34.1\" x2=\"161\" y2=\"41\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"150.8\" y1=\"27.4\" x2=\"149.1\" y2=\"32.1\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"135.6\" y1=\"23.4\" x2=\"134.8\" y2=\"28.3\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"120\" y1=\"22\" x2=\"120\" y2=\"30\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"104.4\" y1=\"23.4\" x2=\"105.2\" y2=\"28.3\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"89.2\" y1=\"27.4\" x2=\"90.9\" y2=\"32.1\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"75\" y1=\"34.1\" x2=\"79\" y2=\"41\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"62.1\" y1=\"43.1\" x2=\"65.4\" y2=\"46.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"51.1\" y1=\"54.1\" x2=\"54.9\" y2=\"57.4\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"42.1\" y1=\"67\" x2=\"49\" y2=\"71\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"35.4\" y1=\"81.2\" x2=\"40.1\" y2=\"82.9\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"31.4\" y1=\"96.4\" x2=\"36.3\" y2=\"97.2\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"30\" y1=\"112\" x2=\"38\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"193\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">0</text><text x=\"179\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">180</text><text x=\"183.2\" y=\"78.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">30</text><text x=\"171.1\" y=\"85.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">150</text><text x=\"156.5\" y=\"51.8\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">60</text><text x=\"149.5\" y=\"63.9\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">120</text><text x=\"120\" y=\"42\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">90</text><text x=\"120\" y=\"56\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">90</text><text x=\"83.5\" y=\"51.8\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">120</text><text x=\"90.5\" y=\"63.9\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">60</text><text x=\"56.8\" y=\"78.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">150</text><text x=\"68.9\" y=\"85.5\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">30</text><text x=\"47\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">180</text><text x=\"61\" y=\"115\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">0</text><line x1=\"120\" y1=\"112\" x2=\"220\" y2=\"112\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"120\" y1=\"112\" x2=\"206.6\" y2=\"62\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"120\" y1=\"112\" x2=\"137.4\" y2=\"13.5\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"120\" y1=\"112\" x2=\"43.4\" y2=\"47.7\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><text x=\"227\" y=\"115\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\" font-weight=\"bold\">A</text><text x=\"212.7\" y=\"61.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\" font-weight=\"bold\">B</text><text x=\"138.6\" y=\"9.6\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\" font-weight=\"bold\">C</text><text x=\"38\" y=\"46.2\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\" font-weight=\"bold\">D</text><circle cx=\"120\" cy=\"112\" r=\"2.4\" fill=\"#141B3F\"/><text x=\"120\" y=\"126\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">O</text></svg>"
+  },
+  {
+   "id": "5-0043",
+   "konu": "5.3.4",
+   "zorluk": 1,
+   "s": "İki doğru bir noktada kesişince kaç tane açı oluşur?",
+   "o": [
+    "$2$",
+    "$3$",
+    "$6$",
+    "$4$"
+   ],
+   "c": 3,
+   "a": "İki doğru kesişince dört açı oluşur; karşılıklı olanlar eşittir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0044",
+   "konu": "5.3.4",
+   "zorluk": 1,
+   "s": "Şekilde kesişen iki doğrunun oluşturduğu açılardan biri $50^\\circ$'dir. Soru işaretiyle gösterilen açı kaç derecedir?",
+   "o": [
+    "$50^\\circ$",
+    "$130^\\circ$",
+    "$40^\\circ$",
+    "$90^\\circ$"
+   ],
+   "c": 0,
+   "a": "Soru işaretli açı, $50^\\circ$'lik açının karşısındadır. Karşılıklı açıların ölçüleri eşit olduğundan $50^\\circ$'dir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"32\" y1=\"65\" x2=\"208\" y2=\"65\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"71.3\" y1=\"123\" x2=\"168.7\" y2=\"7\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><path d=\"M134 65 A14 14 0 0 0 129 54.3\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><text x=\"147.2\" y=\"55.8\" font-size=\"10\" text-anchor=\"middle\" fill=\"#1E3BD6\" font-weight=\"bold\">50°</text><path d=\"M106 65 A14 14 0 0 0 111 75.7\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><text x=\"92.8\" y=\"81.2\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\" font-weight=\"bold\">?</text><circle cx=\"120\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/></svg>"
+  },
+  {
+   "id": "5-0045",
+   "konu": "5.3.4",
+   "zorluk": 2,
+   "s": "Şekilde kesişen iki doğrunun oluşturduğu açılardan biri $65^\\circ$'dir. Bu açıya komşu olan ve soru işaretiyle gösterilen açı kaç derecedir?",
+   "o": [
+    "$65^\\circ$",
+    "$25^\\circ$",
+    "$125^\\circ$",
+    "$115^\\circ$"
+   ],
+   "c": 3,
+   "a": "Komşu açıların ölçüleri toplamı $180^\\circ$'dir. $180^\\circ-65^\\circ=115^\\circ$ bulunur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"32\" y1=\"65\" x2=\"208\" y2=\"65\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"93\" y1=\"123\" x2=\"147\" y2=\"7\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><path d=\"M134 65 A14 14 0 0 0 125.9 52.3\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><text x=\"145.3\" y=\"52.4\" font-size=\"10\" text-anchor=\"middle\" fill=\"#1E3BD6\" font-weight=\"bold\">65°</text><path d=\"M125.9 52.3 A14 14 0 0 0 106 65\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><text x=\"103.9\" y=\"43.2\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\" font-weight=\"bold\">?</text><circle cx=\"120\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/></svg>"
+  },
+  {
+   "id": "5-0046",
+   "konu": "5.3.4",
+   "zorluk": 1,
+   "s": "Bir doğru üzerinde yan yana duran iki açıdan biri $72^\\circ$'dir. Diğer açı kaç derecedir?",
+   "o": [
+    "$18^\\circ$",
+    "$108^\\circ$",
+    "$118^\\circ$",
+    "$72^\\circ$"
+   ],
+   "c": 1,
+   "a": "Doğru üzerindeki komşu iki açının toplamı $180^\\circ$'dir. $180^\\circ-72^\\circ=108^\\circ$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0047",
+   "konu": "5.3.4",
+   "zorluk": 2,
+   "s": "Şekilde kesişen iki doğrunun oluşturduğu açılardan biri $110^\\circ$'dir. Oluşan dört açının en küçüğü kaç derecedir?",
+   "o": [
+    "$110^\\circ$",
+    "$70^\\circ$",
+    "$20^\\circ$",
+    "$90^\\circ$"
+   ],
+   "c": 1,
+   "a": "$110^\\circ$'lik açıya komşu açılar $180^\\circ-110^\\circ=70^\\circ$'dir. Dört açı $110^\\circ,70^\\circ,110^\\circ,70^\\circ$ olup en küçüğü $70^\\circ$'dir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"32\" y1=\"65\" x2=\"208\" y2=\"65\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"98.9\" y1=\"123\" x2=\"141.1\" y2=\"7\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><path d=\"M124.8 51.8 A14 14 0 0 0 106 65\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><text x=\"102.8\" y=\"43.9\" font-size=\"10\" text-anchor=\"middle\" fill=\"#1E3BD6\" font-weight=\"bold\">110°</text><circle cx=\"120\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/></svg>"
+  },
+  {
+   "id": "5-0048",
+   "konu": "5.3.4",
+   "zorluk": 2,
+   "s": "Kesişen iki doğrunun oluşturduğu açılardan biri $90^\\circ$ ise diğer üç açı için ne söylenebilir?",
+   "o": [
+    "İkisi $90^\\circ$, biri $45^\\circ$'dir.",
+    "İkisi $90^\\circ$, biri $180^\\circ$'dir.",
+    "İkisi $90^\\circ$, biri $270^\\circ$'dir.",
+    "Üçü de $90^\\circ$'dir."
+   ],
+   "c": 3,
+   "a": "Karşılıklı açı $90^\\circ$, komşu açılar $180^\\circ-90^\\circ=90^\\circ$ olur. Dört açının hepsi dik açıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0049",
+   "konu": "5.3.4",
+   "zorluk": 3,
+   "s": "Şekilde üç doğru aynı noktada kesişmektedir. Bu noktada, içinde başka ışın bulunmayan (yan yana duran iki ışının oluşturduğu) kaç tane açı vardır?",
+   "o": [
+    "$6$",
+    "$3$",
+    "$4$",
+    "$9$"
+   ],
+   "c": 0,
+   "a": "Üç doğru altı ışın oluşturur. Altı ışın yan yana dizildiğinden aralarında $6$ açı oluşur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"32\" y1=\"65\" x2=\"208\" y2=\"65\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"52.6\" y1=\"121.6\" x2=\"187.4\" y2=\"8.4\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"130.2\" y1=\"123\" x2=\"109.8\" y2=\"7\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><circle cx=\"120\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/></svg>"
+  },
+  {
+   "id": "5-0050",
+   "konu": "5.3.4",
+   "zorluk": 2,
+   "s": "Şekilde üç doğru aynı noktada kesişmektedir. Yatay doğrunun üst tarafında kalan açılardan ikisi $35^\\circ$ ve $80^\\circ$'dir. Soru işaretli açı kaç derecedir?",
+   "o": [
+    "$65^\\circ$",
+    "$55^\\circ$",
+    "$75^\\circ$",
+    "$115^\\circ$"
+   ],
+   "c": 0,
+   "a": "Bir doğrunun bir tarafındaki açıların toplamı $180^\\circ$'dir. $180^\\circ-35^\\circ-80^\\circ=65^\\circ$ olur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"32\" y1=\"65\" x2=\"208\" y2=\"65\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"47.9\" y1=\"115.5\" x2=\"192.1\" y2=\"14.5\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"147\" y1=\"123\" x2=\"93\" y2=\"7\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><path d=\"M134 65 A14 14 0 0 0 131.5 57\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><text x=\"158.1\" y=\"56.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#1E3BD6\" font-weight=\"bold\">35°</text><path d=\"M131.5 57 A14 14 0 0 0 114.1 52.3\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><text x=\"127.8\" y=\"39.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#1E3BD6\" font-weight=\"bold\">80°</text><path d=\"M114.1 52.3 A14 14 0 0 0 106 65\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><text x=\"94.7\" y=\"52.4\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\" font-weight=\"bold\">?</text><circle cx=\"120\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/></svg>"
+  },
+  {
+   "id": "5-0051",
+   "konu": "5.3.4",
+   "zorluk": 3,
+   "s": "Şekilde üç doğru aynı noktada kesişmektedir. İki açının ölçüsü $40^\\circ$ ve $80^\\circ$ olarak verilmiştir. Soru işaretiyle gösterilen açı kaç derecedir?",
+   "o": [
+    "$100^\\circ$",
+    "$80^\\circ$",
+    "$60^\\circ$",
+    "$120^\\circ$"
+   ],
+   "c": 2,
+   "a": "Üst tarafta kalan ortadaki açı $180^\\circ-40^\\circ-80^\\circ=60^\\circ$'dir. Soru işaretli açı bu açının karşısında olduğundan o da $60^\\circ$'dir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"32\" y1=\"65\" x2=\"208\" y2=\"65\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"52.6\" y1=\"121.6\" x2=\"187.4\" y2=\"8.4\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"130.2\" y1=\"123\" x2=\"109.8\" y2=\"7\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><path d=\"M134 65 A14 14 0 0 0 130.7 56\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><text x=\"157.6\" y=\"54.8\" font-size=\"10\" text-anchor=\"middle\" fill=\"#1E3BD6\" font-weight=\"bold\">40°</text><path d=\"M117.6 51.2 A14 14 0 0 0 106 65\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><text x=\"97\" y=\"49.2\" font-size=\"10\" text-anchor=\"middle\" fill=\"#1E3BD6\" font-weight=\"bold\">80°</text><path d=\"M109.3 74 A14 14 0 0 0 122.4 78.8\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.5\"/><text x=\"109.7\" y=\"96.7\" font-size=\"10\" text-anchor=\"middle\" fill=\"#FF8A1F\" font-weight=\"bold\">?</text><circle cx=\"120\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/></svg>"
+  },
+  {
+   "id": "5-0052",
+   "konu": "5.3.4",
+   "zorluk": 2,
+   "s": "Selin, kesişen iki doğrunun oluşturduğu karşılıklı iki açıdan birine $70^\\circ$, diğerine $110^\\circ$ demiştir. Selin'in hatası nedir?",
+   "o": [
+    "Karşılıklı açıların toplamı $90^\\circ$ olmalıdır.",
+    "Hata yoktur; karşılıklı açılar farklı olur.",
+    "Karşılıklı açıların toplamı $360^\\circ$ olmalıdır.",
+    "Karşılıklı açılar eşit olmalıdır."
+   ],
+   "c": 3,
+   "a": "Kesişen iki doğruda karşılıklı açıların ölçüleri eşittir. Bu yüzden ikisi de $70^\\circ$ ya da ikisi de $110^\\circ$ olmalıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0053",
+   "konu": "5.3.4",
+   "zorluk": 3,
+   "s": "Kesişen iki doğrunun oluşturduğu karşılıklı iki açının ölçüleri toplamı $120^\\circ$'dir. Bu açılardan birine komşu olan açı kaç derecedir?",
+   "o": [
+    "$60^\\circ$",
+    "$120^\\circ$",
+    "$240^\\circ$",
+    "$90^\\circ$"
+   ],
+   "c": 1,
+   "a": "Karşılıklı açılar eşit olduğundan her biri $120^\\circ\\div2=60^\\circ$'dir. Komşu açı $180^\\circ-60^\\circ=120^\\circ$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0054",
+   "konu": "5.3.4",
+   "zorluk": 2,
+   "s": "Bir doğru üzerinde yan yana duran üç açıdan ikisi $48^\\circ$ ve $77^\\circ$'dir. Üçüncü açı kaç derecedir?",
+   "o": [
+    "$125^\\circ$",
+    "$65^\\circ$",
+    "$45^\\circ$",
+    "$55^\\circ$"
+   ],
+   "c": 3,
+   "a": "Üç açının toplamı $180^\\circ$'dir. $48^\\circ+77^\\circ=125^\\circ$ olduğundan üçüncü açı $180^\\circ-125^\\circ=55^\\circ$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0055",
+   "konu": "5.3.4",
+   "zorluk": 1,
+   "s": "Bir makasın iki bıçağı kesişim noktasında dört açı oluşturur. Bu açılardan biri $40^\\circ$ ise karşısındaki açı kaç derecedir?",
+   "o": [
+    "$140^\\circ$",
+    "$40^\\circ$",
+    "$50^\\circ$",
+    "$80^\\circ$"
+   ],
+   "c": 1,
+   "a": "Kesişen doğruların karşılıklı açıları eşittir. Karşıdaki açı da $40^\\circ$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0056",
+   "konu": "5.3.4",
+   "zorluk": 2,
+   "s": "Kesişen iki doğrunun oluşturduğu dört açının ölçüleri toplamı kaç derecedir?",
+   "o": [
+    "$180^\\circ$",
+    "$360^\\circ$",
+    "$270^\\circ$",
+    "$90^\\circ$"
+   ],
+   "c": 1,
+   "a": "Komşu iki açının toplamı $180^\\circ$'dir. İki çift komşu açı olduğundan toplam $180^\\circ+180^\\circ=360^\\circ$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0057",
+   "konu": "5.3.5",
+   "zorluk": 1,
+   "s": "Bir üçgenin kaç kenarı, kaç köşesi ve kaç açısı vardır?",
+   "o": [
+    "$3$ kenar, $4$ köşe, $3$ açı",
+    "$4$ kenar, $3$ köşe, $4$ açı",
+    "$3$ kenar, $3$ köşe, $3$ açı",
+    "$3$ kenar, $3$ köşe, $4$ açı"
+   ],
+   "c": 2,
+   "a": "Üçgende kenar, köşe ve açı sayıları birbirine eşittir; üçü de $3$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0058",
+   "konu": "5.3.5",
+   "zorluk": 1,
+   "s": "Bir altıgenin kaç köşesi vardır?",
+   "o": [
+    "$6$",
+    "$5$",
+    "$7$",
+    "$12$"
+   ],
+   "c": 0,
+   "a": "Çokgenin adı kenar sayısını gösterir. Altıgenin $6$ kenarı ve $6$ köşesi vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0059",
+   "konu": "5.3.5",
+   "zorluk": 1,
+   "s": "Aşağıdakilerden hangisi her çokgen için doğrudur?",
+   "o": [
+    "Kenar sayısı köşe sayısına eşittir.",
+    "Kenar sayısı köşe sayısından fazladır.",
+    "Açı sayısı köşe sayısından azdır.",
+    "Kenarlardan biri eğri olabilir."
+   ],
+   "c": 0,
+   "a": "Çokgenin her köşesinde iki kenar buluşur; bu yüzden kenar, köşe ve açı sayıları eşittir. Kenarlar doğru parçalarıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0060",
+   "konu": "5.3.5",
+   "zorluk": 1,
+   "s": "Aşağıdaki şekillerden hangisi çokgen DEĞİLDİR?",
+   "o": [
+    "Çember",
+    "Üçgen",
+    "Beşgen",
+    "Dikdörtgen"
+   ],
+   "c": 0,
+   "a": "Çokgenin kenarları doğru parçalarıdır. Çemberin kenarı yoktur, eğri bir çizgidir; çokgen değildir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0061",
+   "konu": "5.3.5",
+   "zorluk": 2,
+   "s": "Yandaki şekil dört doğru parçasından oluşmaktadır. Bu şekil neden çokgen sayılmaz?",
+   "o": [
+    "Kenarlarının sayısı az olduğu için.",
+    "Doğru parçalarıyla çizilmediği için.",
+    "Köşesi bulunmadığı için.",
+    "Başlangıç ve bitiş noktaları birleşmediği için kapalı değildir."
+   ],
+   "c": 3,
+   "a": "Çokgen, kapalı bir şekildir. Burada $A$ ile $E$ noktaları birleşmediğinden şekil açıktır.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polyline points=\"30,95 60,30 130,85 180,30 205,95\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><circle cx=\"30\" cy=\"95\" r=\"3\" fill=\"#FF8A1F\"/><circle cx=\"205\" cy=\"95\" r=\"3\" fill=\"#FF8A1F\"/><text x=\"30\" y=\"114\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"205\" y=\"114\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">E</text></svg>"
+  },
+  {
+   "id": "5-0062",
+   "konu": "5.3.5",
+   "zorluk": 2,
+   "s": "Düzlemde doğrular, son doğru ilk doğruyla kesişecek biçimde ardışık olarak kesişerek kapalı bir şekil oluşturacaktır. Bunun için en az kaç doğru gerekir?",
+   "o": [
+    "$2$",
+    "$4$",
+    "$3$",
+    "$6$"
+   ],
+   "c": 2,
+   "a": "İki doğru kapalı bir şekil oluşturamaz. Üç doğru ardışık kesişince üçgen oluşur; bu en az sayıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0063",
+   "konu": "5.3.5",
+   "zorluk": 1,
+   "s": "Köşe sayısı $7$ olan çokgenin adı aşağıdakilerden hangisidir?",
+   "o": [
+    "Altıgen",
+    "Sekizgen",
+    "Beşgen",
+    "Yedigen"
+   ],
+   "c": 3,
+   "a": "Çokgenler köşe (kenar) sayısına göre adlanır. $7$ köşeli çokgen yedigendir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0064",
+   "konu": "5.3.5",
+   "zorluk": 2,
+   "s": "Şekildeki çokgenin kaç kenarı vardır?",
+   "o": [
+    "$6$",
+    "$8$",
+    "$7$",
+    "$14$"
+   ],
+   "c": 2,
+   "a": "Şekilde $A,B,C,D,E,F,G$ olmak üzere $7$ köşe vardır. Çokgende kenar sayısı köşe sayısına eşit olduğundan $7$ kenar vardır.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"120,13 73.1,27.6 73.2,75.7 94.8,117.3 141.7,110 180.4,78.8 162.2,31.3\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><circle cx=\"120\" cy=\"13\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"73.1\" cy=\"27.6\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"73.2\" cy=\"75.7\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"94.8\" cy=\"117.3\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"141.7\" cy=\"110\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"180.4\" cy=\"78.8\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"162.2\" cy=\"31.3\" r=\"2.2\" fill=\"#141B3F\"/><text x=\"120\" y=\"6.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">A</text><text x=\"65.3\" y=\"24.9\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text><text x=\"63.5\" y=\"81.4\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"90.5\" y=\"129.8\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"146\" y=\"122.6\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">E</text><text x=\"190.2\" y=\"84.5\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">F</text><text x=\"170\" y=\"28.6\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">G</text></svg>"
+  },
+  {
+   "id": "5-0065",
+   "konu": "5.3.5",
+   "zorluk": 1,
+   "s": "Üçgen, dörtgen ve beşgenin kenar sayıları toplamı kaçtır?",
+   "o": [
+    "$9$",
+    "$15$",
+    "$60$",
+    "$12$"
+   ],
+   "c": 3,
+   "a": "$3+4+5=12$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0066",
+   "konu": "5.3.5",
+   "zorluk": 2,
+   "s": "Hiçbir kibrit çöpü ortak kullanılmadan ayrı ayrı $4$ üçgen oluşturulacaktır. Toplam kaç kibrit çöpü gerekir?",
+   "o": [
+    "$12$",
+    "$9$",
+    "$16$",
+    "$7$"
+   ],
+   "c": 0,
+   "a": "Her üçgenin $3$ kenarı vardır. $4\\cdot3=12$ çöp gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0067",
+   "konu": "5.3.5",
+   "zorluk": 2,
+   "s": "Dört doğru, son doğru ilk doğruyla kesişecek biçimde ardışık kesişerek kapalı bir şekil oluşturuyor. Oluşan şeklin adı nedir?",
+   "o": [
+    "Dörtgen",
+    "Üçgen",
+    "Beşgen",
+    "Altıgen"
+   ],
+   "c": 0,
+   "a": "Dört doğru ardışık kesiştiğinde $4$ kesişim noktası, yani $4$ köşe ve $4$ kenar oluşur. Bu şekil dörtgendir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0068",
+   "konu": "5.3.5",
+   "zorluk": 3,
+   "s": "Şekilde bir kare ile bir üçgen, bir kenarları üst üste gelecek biçimde birleştirilmiştir. Kesikli çizgi silinirse oluşan çokgenin kaç kenarı olur?",
+   "o": [
+    "$5$",
+    "$7$",
+    "$6$",
+    "$3$"
+   ],
+   "c": 0,
+   "a": "Kare ve üçgenin toplam kenarı $4+3=7$'dir. Ortak kenar iki şekilden de çıkınca $7-2=5$ kenar kalır; oluşan çokgen beşgendir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"90,52 150,52 150,112 90,112\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><polyline points=\"90,52 120,14 150,52\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"90\" y1=\"52\" x2=\"150\" y2=\"52\" stroke=\"#FF8A1F\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/></svg>"
+  },
+  {
+   "id": "5-0069",
+   "konu": "5.3.5",
+   "zorluk": 2,
+   "s": "Bir bahçenin köşelerine $8$ direk dikilmiştir. Komşu her iki direk bir telle birleştirilerek bahçe çevrilmiştir. Kullanılan tel parçalarının sayısı kaçtır?",
+   "o": [
+    "$7$",
+    "$9$",
+    "$8$",
+    "$16$"
+   ],
+   "c": 2,
+   "a": "Bahçe $8$ köşeli bir çokgendir. Çokgende kenar sayısı köşe sayısına eşit olduğundan $8$ tel parçası gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0070",
+   "konu": "5.3.5",
+   "zorluk": 3,
+   "s": "Şekilde bir karenin iki köşegeni çizilmiştir. Şekilde toplam kaç tane üçgen vardır?",
+   "o": [
+    "$4$",
+    "$6$",
+    "$8$",
+    "$12$"
+   ],
+   "c": 2,
+   "a": "Küçük üçgenler $4$ tanedir. Yan yana iki küçük üçgenin birleşmesiyle oluşan büyük üçgenler de $4$ tanedir. Toplam $4+4=8$ üçgen vardır.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"70,15 170,15 170,115 70,115\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"70\" y1=\"15\" x2=\"170\" y2=\"115\" stroke=\"#1E3BD6\" stroke-width=\"1.6\"/><line x1=\"170\" y1=\"15\" x2=\"70\" y2=\"115\" stroke=\"#1E3BD6\" stroke-width=\"1.6\"/></svg>"
+  },
+  {
+   "id": "5-0071",
+   "konu": "5.3.6",
+   "zorluk": 1,
+   "s": "Üç kenarı da eşit uzunlukta olan üçgene ne ad verilir?",
+   "o": [
+    "Eşkenar üçgen",
+    "Çeşitkenar üçgen",
+    "Dik üçgen",
+    "Geniş açılı üçgen"
+   ],
+   "c": 0,
+   "a": "Üç kenarı eşit olan üçgen eşkenar üçgendir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0072",
+   "konu": "5.3.6",
+   "zorluk": 1,
+   "s": "Bir açısı $90^\\circ$ olan üçgene ne ad verilir?",
+   "o": [
+    "Eşkenar üçgen",
+    "Geniş açılı üçgen",
+    "Dik üçgen",
+    "Dar açılı üçgen"
+   ],
+   "c": 2,
+   "a": "Açılarından biri dik açı olan üçgene dik üçgen denir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0073",
+   "konu": "5.3.6",
+   "zorluk": 1,
+   "s": "Dört kenarı eşit olan ve dört açısı da dik olan dörtgenin özel adı nedir?",
+   "o": [
+    "Yamuk",
+    "Üçgen",
+    "Altıgen",
+    "Kare"
+   ],
+   "c": 3,
+   "a": "Karenin dört kenarı eşit, dört açısı dik açıdır. Dikdörtgende yalnızca karşılıklı kenarlar eşittir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0074",
+   "konu": "5.3.6",
+   "zorluk": 1,
+   "s": "Dört açısı da dik olan ve komşu kenarları farklı uzunlukta olan dörtgen aşağıdakilerden hangisidir?",
+   "o": [
+    "Kare",
+    "Eşkenar dörtgen",
+    "Beşgen",
+    "Dikdörtgen"
+   ],
+   "c": 3,
+   "a": "Dikdörtgenin açıları diktir, karşılıklı kenarları eşittir ama komşu kenarları farklı olabilir. Karenin komşu kenarları eşittir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0075",
+   "konu": "5.3.6",
+   "zorluk": 2,
+   "s": "Şekildeki üçgenin kenar uzunlukları cm cinsinden verilmiştir. Bu üçgen kenar uzunluklarına göre hangi türdendir?",
+   "o": [
+    "Eşkenar üçgen",
+    "İkizkenar üçgen",
+    "Çeşitkenar üçgen",
+    "Dik üçgen"
+   ],
+   "c": 1,
+   "a": "İki kenarı $5$ cm olduğundan üçgen ikizkenardır. Üçüncü kenar $6$ cm olduğu için eşkenar değildir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"60,105 180,105 120,25\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><text x=\"84\" y=\"62\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">5 cm</text><text x=\"156\" y=\"62\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">5 cm</text><text x=\"120\" y=\"121\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">6 cm</text></svg>"
+  },
+  {
+   "id": "5-0076",
+   "konu": "5.3.6",
+   "zorluk": 2,
+   "s": "Aşağıdaki şekilde kenar uzunlukları cm cinsinden verilen üçgenin kenarlarına göre adı nedir?",
+   "o": [
+    "Eşkenar üçgen",
+    "İkizkenar üçgen",
+    "Dik üçgen",
+    "Çeşitkenar üçgen"
+   ],
+   "c": 3,
+   "a": "Üç kenarın uzunluğu $4$, $5$ ve $6$ cm olup hepsi farklıdır. Böyle üçgene çeşitkenar üçgen denir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"48,105 192,105 102,25.6\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><text x=\"63\" y=\"65.3\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">4 cm</text><text x=\"159\" y=\"65.3\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">5 cm</text><text x=\"120\" y=\"121\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">6 cm</text></svg>"
+  },
+  {
+   "id": "5-0077",
+   "konu": "5.3.6",
+   "zorluk": 1,
+   "s": "Bir açısı $110^\\circ$ olan üçgen, açılarına göre hangi türdendir?",
+   "o": [
+    "Dar açılı üçgen",
+    "Geniş açılı üçgen",
+    "Dik üçgen",
+    "Doğru açılı üçgen"
+   ],
+   "c": 1,
+   "a": "$110^\\circ$ geniş açıdır. Geniş açısı olan üçgene geniş açılı üçgen denir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0078",
+   "konu": "5.3.6",
+   "zorluk": 2,
+   "s": "Dört kenarı eşit olan ancak açıları dik olmayan dörtgen aşağıdakilerden hangisidir?",
+   "o": [
+    "Kare",
+    "Dikdörtgen",
+    "Yamuk",
+    "Eşkenar dörtgen"
+   ],
+   "c": 3,
+   "a": "Dört kenarı eşit olan, açıları dik olmayan dörtgen eşkenar dörtgendir. Açıları dik olsaydı kare olurdu.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0079",
+   "konu": "5.3.6",
+   "zorluk": 3,
+   "s": "Aşağıdaki ifadelerden hangisi doğrudur?",
+   "o": [
+    "Her kare, aynı zamanda bir dikdörtgendir.",
+    "Her dikdörtgen bir karedir.",
+    "Dikdörtgenin dört kenarı da eşittir.",
+    "Karenin açıları dik açı değildir."
+   ],
+   "c": 0,
+   "a": "Karenin dört açısı diktir ve karşılıklı kenarları eşittir; dikdörtgenin özelliklerini taşır. Ama dikdörtgenin komşu kenarları farklı olabileceğinden her dikdörtgen kare değildir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0080",
+   "konu": "5.3.6",
+   "zorluk": 3,
+   "s": "Şekildeki üçgenin bir açısı dik açıdır ve dik açıyı oluşturan kenarlar $4$ cm uzunluğundadır. Bu üçgen hem açılarına hem de kenarlarına göre nasıl adlandırılır?",
+   "o": [
+    "Dar açılı ve eşkenar üçgen",
+    "Dik ve çeşitkenar üçgen",
+    "Geniş açılı ve ikizkenar üçgen",
+    "Dik ve ikizkenar üçgen"
+   ],
+   "c": 3,
+   "a": "Bir açısı $90^\\circ$ olduğundan dik üçgendir. İki kenarı $4$ cm olduğundan ikizkenardır.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"70,110 182,110 70,-2\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><polyline points=\"79,110 79,101 70,101\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.4\"/><text x=\"60\" y=\"57\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">4 cm</text><text x=\"126\" y=\"126\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">4 cm</text></svg>"
+  },
+  {
+   "id": "5-0081",
+   "konu": "5.3.6",
+   "zorluk": 1,
+   "s": "Bir kenarı $6$ cm olan eşkenar üçgenin çevresi kaç cm'dir?",
+   "o": [
+    "$18$",
+    "$12$",
+    "$24$",
+    "$36$"
+   ],
+   "c": 0,
+   "a": "Eşkenar üçgenin üç kenarı eşittir. Çevre $6+6+6=18$ cm olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0082",
+   "konu": "5.3.6",
+   "zorluk": 2,
+   "s": "Çevresi $20$ cm olan bir ikizkenar üçgenin eşit kenarlarından her biri $7$ cm'dir. Üçüncü kenar kaç cm'dir?",
+   "o": [
+    "$13$",
+    "$7$",
+    "$6$",
+    "$14$"
+   ],
+   "c": 2,
+   "a": "Eşit kenarların toplamı $7+7=14$ cm'dir. Üçüncü kenar $20-14=6$ cm olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0083",
+   "konu": "5.3.6",
+   "zorluk": 2,
+   "s": "Çevresi $28$ cm olan bir eşkenar dörtgenin bir kenarı kaç cm'dir?",
+   "o": [
+    "$14$",
+    "$56$",
+    "$24$",
+    "$7$"
+   ],
+   "c": 3,
+   "a": "Eşkenar dörtgenin dört kenarı eşittir. Bir kenar $28\\div4=7$ cm'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0084",
+   "konu": "5.3.6",
+   "zorluk": 3,
+   "s": "Deniz, \"Kenar uzunlukları $5$ cm, $5$ cm ve $8$ cm olan üçgen eşkenar üçgendir.\" diyor. Deniz'in hatası nedir?",
+   "o": [
+    "Eşkenar üçgenin kenarları farklı uzunlukta olur.",
+    "Eşkenar üçgenin üç kenarı da eşit olmalıdır; bu üçgen ikizkenardır.",
+    "Üçgenin kenarları cm ile ölçülemez.",
+    "Hata yoktur; bu üçgen eşkenardır."
+   ],
+   "c": 1,
+   "a": "Eşkenar üçgenin üç kenarı eşittir. Bu üçgende yalnızca iki kenar eşit olduğundan ikizkenar üçgendir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0085",
+   "konu": "5.3.7",
+   "zorluk": 1,
+   "s": "Çemberin merkezini, çember üzerindeki bir noktaya birleştiren doğru parçasına ne denir?",
+   "o": [
+    "Çap",
+    "Yarıçap",
+    "Merkez",
+    "Çevre"
+   ],
+   "c": 1,
+   "a": "Merkezle çember üzerindeki herhangi bir noktayı birleştiren doğru parçası yarıçaptır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0086",
+   "konu": "5.3.7",
+   "zorluk": 1,
+   "s": "Yarıçapı $6$ cm olan bir çemberin çapı kaç cm'dir?",
+   "o": [
+    "$3$",
+    "$6$",
+    "$12$",
+    "$36$"
+   ],
+   "c": 2,
+   "a": "Çap, yarıçapın iki katıdır. $2\\cdot6=12$ cm olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0087",
+   "konu": "5.3.7",
+   "zorluk": 1,
+   "s": "Çapı $30$ cm olan yuvarlak bir pizzanın yarıçapı kaç cm'dir?",
+   "o": [
+    "$15$",
+    "$60$",
+    "$30$",
+    "$10$"
+   ],
+   "c": 0,
+   "a": "Yarıçap, çapın yarısıdır. $30\\div2=15$ cm bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0088",
+   "konu": "5.3.7",
+   "zorluk": 1,
+   "s": "Şekilde $O$ merkezli çemberin üzerinde $A$ ve $B$ noktaları vardır. $|OA|=6$ cm ise $|OB|$ kaç cm'dir?",
+   "o": [
+    "$3$",
+    "$6$",
+    "$12$",
+    "Hesaplanamaz"
+   ],
+   "c": 1,
+   "a": "$[OA]$ ve $[OB]$ aynı çemberin yarıçaplarıdır. Aynı çemberin yarıçapları eşit olduğundan $|OB|=6$ cm'dir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><circle cx=\"120\" cy=\"65\" r=\"50\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.8\"/><line x1=\"120\" y1=\"65\" x2=\"165.3\" y2=\"43.9\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><line x1=\"120\" y1=\"65\" x2=\"81.7\" y2=\"32.9\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><circle cx=\"120\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"165.3\" cy=\"43.9\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"81.7\" cy=\"32.9\" r=\"2.2\" fill=\"#141B3F\"/><text x=\"122\" y=\"81\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">O</text><text x=\"173.3\" y=\"39.9\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">A</text><text x=\"73.7\" y=\"28.9\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">B</text><text x=\"144.7\" y=\"70.4\" font-size=\"10\" text-anchor=\"start\" fill=\"#FF8A1F\" font-weight=\"bold\">6 cm</text></svg>"
+  },
+  {
+   "id": "5-0089",
+   "konu": "5.3.7",
+   "zorluk": 2,
+   "s": "Şekilde yarıçapları $5$ cm olan iki çemberin merkezleri $A$ ve $B$'dir. $|AB|=5$ cm'dir ve çemberler $C$ noktasında kesişmektedir. $ABC$ üçgeni kenar uzunluklarına göre hangi türdendir?",
+   "o": [
+    "İkizkenar üçgen",
+    "Çeşitkenar üçgen",
+    "Eşkenar üçgen",
+    "Dik üçgen"
+   ],
+   "c": 2,
+   "a": "$|AC|$ ve $|BC|$ birer yarıçaptır, yani $5$ cm'dir. $|AB|=5$ cm olduğundan üç kenar da eşittir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><circle cx=\"95\" cy=\"65\" r=\"50\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><circle cx=\"145\" cy=\"65\" r=\"50\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><polygon points=\"95,65 145,65 120,21.7\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><circle cx=\"95\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"145\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"120\" cy=\"21.7\" r=\"2.2\" fill=\"#141B3F\"/><text x=\"89\" y=\"79\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">A</text><text x=\"151\" y=\"79\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">B</text><text x=\"120\" y=\"15.7\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text></svg>"
+  },
+  {
+   "id": "5-0090",
+   "konu": "5.3.7",
+   "zorluk": 2,
+   "s": "Şekilde yarıçapları $5$ cm olan iki çemberin merkezleri $A$ ve $B$'dir. $|AB|=8$ cm'dir ve çemberler $C$ noktasında kesişmektedir. $ABC$ üçgeni kenar uzunluklarına göre hangi türdendir?",
+   "o": [
+    "Eşkenar üçgen",
+    "İkizkenar üçgen",
+    "Çeşitkenar üçgen",
+    "Dik üçgen"
+   ],
+   "c": 1,
+   "a": "$|AC|=|BC|=5$ cm'dir, $|AB|=8$ cm'dir. İki kenar eşit, biri farklı olduğundan üçgen ikizkenardır.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><circle cx=\"80\" cy=\"65\" r=\"50\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><circle cx=\"160\" cy=\"65\" r=\"50\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><polygon points=\"80,65 160,65 120,35\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><circle cx=\"80\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"160\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"120\" cy=\"35\" r=\"2.2\" fill=\"#141B3F\"/><text x=\"74\" y=\"79\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">A</text><text x=\"166\" y=\"79\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">B</text><text x=\"120\" y=\"29\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text></svg>"
+  },
+  {
+   "id": "5-0091",
+   "konu": "5.3.7",
+   "zorluk": 2,
+   "s": "Şekilde merkezleri $A$ ve $B$ olan çemberlerin yarıçapları $4$ cm ve $6$ cm'dir. $|AB|=7$ cm'dir ve çemberler $C$ noktasında kesişmektedir. $ABC$ üçgeni kenar uzunluklarına göre hangi türdendir?",
+   "o": [
+    "Eşkenar üçgen",
+    "Çeşitkenar üçgen",
+    "İkizkenar üçgen",
+    "Dik üçgen"
+   ],
+   "c": 1,
+   "a": "Kenarlar $|AC|=4$ cm, $|BC|=6$ cm ve $|AB|=7$ cm'dir. Üçü de farklı olduğundan çeşitkenar üçgendir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><circle cx=\"70\" cy=\"65\" r=\"40\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><circle cx=\"140\" cy=\"65\" r=\"60\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><polygon points=\"70,65 140,65 90.7,30.8\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><circle cx=\"70\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"140\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"90.7\" cy=\"30.8\" r=\"2.2\" fill=\"#141B3F\"/><text x=\"64\" y=\"79\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">A</text><text x=\"146\" y=\"79\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">B</text><text x=\"90.7\" y=\"24.8\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text></svg>"
+  },
+  {
+   "id": "5-0092",
+   "konu": "5.3.7",
+   "zorluk": 2,
+   "s": "Merkezleri $A$ ve $B$ olan iki çember $C$ noktasında kesişiyor. $|AC|=|BC|$ olduğuna göre bu çemberler için ne söylenebilir?",
+   "o": [
+    "$A$ merkezli çemberin yarıçapı daha büyüktür.",
+    "$B$ merkezli çemberin yarıçapı daha büyüktür.",
+    "Yarıçapları eşittir.",
+    "Yarıçaplarının toplamı $|AB|$'ye eşittir."
+   ],
+   "c": 2,
+   "a": "$[AC]$ ve $[BC]$ birer yarıçaptır. Uzunlukları eşit olduğundan iki çemberin yarıçapları eşittir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0093",
+   "konu": "5.3.7",
+   "zorluk": 2,
+   "s": "Kenarları $7$ cm olan bir eşkenar üçgen çizilecektir. $[AB]$ doğru parçası $7$ cm çizildikten sonra $A$ ve $B$ merkezli iki çember çizilerek kesişim noktası $C$ bulunacaktır. Pergel açıklığı kaç cm olmalıdır?",
+   "o": [
+    "$14$",
+    "$5$",
+    "$7$",
+    "$6$"
+   ],
+   "c": 2,
+   "a": "$|AC|=|BC|=|AB|=7$ cm olmalıdır. $|AC|$ ve $|BC|$ yarıçap olduğundan pergel $7$ cm açılır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0094",
+   "konu": "5.3.7",
+   "zorluk": 3,
+   "s": "$O$ merkezli, yarıçapı $6$ cm olan çemberin üzerinde $A$ ve $B$ noktaları $|AB|=6$ cm olacak biçimde alınmıştır. $OAB$ üçgeni kenar uzunluklarına göre hangi türdendir?",
+   "o": [
+    "Çeşitkenar üçgen",
+    "Dik üçgen",
+    "Eşkenar üçgen",
+    "Geniş açılı üçgen"
+   ],
+   "c": 2,
+   "a": "$|OA|$ ve $|OB|$ yarıçap olduğundan $6$ cm'dir. $|AB|=6$ cm de verildiğinden üç kenar eşittir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><circle cx=\"120\" cy=\"65\" r=\"50\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.6\"/><polygon points=\"120,65 165.3,43.9 124.4,15.2\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><circle cx=\"120\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"165.3\" cy=\"43.9\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"124.4\" cy=\"15.2\" r=\"2.2\" fill=\"#141B3F\"/><text x=\"120\" y=\"81\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">O</text><text x=\"173.3\" y=\"47.9\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">A</text><text x=\"124.4\" y=\"8.2\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">B</text></svg>"
+  },
+  {
+   "id": "5-0095",
+   "konu": "5.3.7",
+   "zorluk": 2,
+   "s": "Bir çemberin merkezinden çember üzerindeki noktalara kaç farklı yarıçap çizilebilir?",
+   "o": [
+    "$1$",
+    "$2$",
+    "Sonsuz tane",
+    "$4$"
+   ],
+   "c": 2,
+   "a": "Çemberin merkezini çember üzerindeki her noktaya birleştirebiliriz. Çember üzerinde sonsuz nokta olduğundan sonsuz yarıçap vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0096",
+   "konu": "5.3.7",
+   "zorluk": 3,
+   "s": "Şekilde yarıçapları $5$ cm olan iki çemberin merkezleri $A$ ve $B$'dir. Çemberler $C$ ve $D$ noktalarında kesişmektedir. $ACBD$ dörtgeninin çevresi kaç cm'dir?",
+   "o": [
+    "$10$",
+    "$20$",
+    "$16$",
+    "$26$"
+   ],
+   "c": 1,
+   "a": "$[AC],[CB],[BD],[DA]$ birer yarıçaptır ve hepsi $5$ cm'dir. Çevre $4\\cdot5=20$ cm olur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><circle cx=\"90\" cy=\"65\" r=\"50\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"65\" r=\"50\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><polygon points=\"90,65 120,25 150,65 120,105\" fill=\"none\" stroke=\"#FF8A1F\" stroke-width=\"1.8\"/><circle cx=\"90\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"150\" cy=\"65\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"120\" cy=\"25\" r=\"2.2\" fill=\"#141B3F\"/><circle cx=\"120\" cy=\"105\" r=\"2.2\" fill=\"#141B3F\"/><text x=\"84\" y=\"69\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">A</text><text x=\"156\" y=\"69\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">B</text><text x=\"120\" y=\"19\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">C</text><text x=\"120\" y=\"119\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">D</text></svg>"
+  },
+  {
+   "id": "5-0097",
+   "konu": "5.3.7",
+   "zorluk": 3,
+   "s": "Merkezleri $A$ ve $B$ olan çemberlerin yarıçapları $4$ cm ve $9$ cm'dir. $|AB|=9$ cm'dir ve çemberler $C$ noktasında kesişmektedir. $ABC$ üçgeni kenar uzunluklarına göre hangi türdendir?",
+   "o": [
+    "İkizkenar üçgen",
+    "Eşkenar üçgen",
+    "Çeşitkenar üçgen",
+    "Dik üçgen"
+   ],
+   "c": 0,
+   "a": "$|AC|=4$ cm, $|BC|=9$ cm ve $|AB|=9$ cm'dir. İki kenarı eşit ($|BC|=|AB|$) olduğundan üçgen ikizkenardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0098",
+   "konu": "5.3.7",
+   "zorluk": 2,
+   "s": "Yarıçapı $4$ cm olan çemberin çapı, yarıçapı $3$ cm olan çemberin çapından kaç cm fazladır?",
+   "o": [
+    "$1$",
+    "$4$",
+    "$2$",
+    "$7$"
+   ],
+   "c": 2,
+   "a": "Çaplar $2\\cdot4=8$ cm ve $2\\cdot3=6$ cm'dir. Fark $8-6=2$ cm'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0099",
+   "konu": "5.1.1",
+   "zorluk": 1,
+   "s": "$4\\,502\\,030$ sayısının okunuşu aşağıdakilerden hangisidir?",
+   "o": [
+    "Dört milyon beş yüz yirmi bin otuz",
+    "Dört milyon beş yüz iki bin otuz",
+    "Dört milyon elli iki bin otuz",
+    "Dört yüz elli milyon iki bin otuz"
+   ],
+   "c": 1,
+   "a": "Sayı bölüklerine ayrılır: $4$ milyon, $502$ bin, $030$. Okunuşu: dört milyon beş yüz iki bin otuz.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0100",
+   "konu": "5.1.1",
+   "zorluk": 1,
+   "s": "Yedi milyon üç yüz bin kırk beş sayısının rakamlarla yazılışı aşağıdakilerden hangisidir?",
+   "o": [
+    "$7\\,300\\,045$",
+    "$7\\,300\\,450$",
+    "$7\\,030\\,045$",
+    "$7\\,003\\,045$"
+   ],
+   "c": 0,
+   "a": "Milyonlar bölüğü $7$, binler bölüğü $300$, birler bölüğü $045$'tir. Sayı $7\\,300\\,045$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0101",
+   "konu": "5.1.1",
+   "zorluk": 1,
+   "s": "$5\\,364\\,218$ sayısında $3$ rakamının basamak değeri kaçtır?",
+   "o": [
+    "$30\\,000$",
+    "$3\\,000\\,000$",
+    "$300\\,000$",
+    "$3\\,000$"
+   ],
+   "c": 2,
+   "a": "Sayı $5$ milyon, $3$ yüz bin, $6$ on bin, $4$ bin, $2$ yüz, $1$ on ve $8$ birden oluşur. $3$ rakamı yüz binler basamağında olduğundan basamak değeri $300\\,000$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0102",
+   "konu": "5.1.1",
+   "zorluk": 3,
+   "s": "Bir milyardan bir eksik olan doğal sayı kaç basamaklıdır?",
+   "o": [
+    "$10$",
+    "$9$",
+    "$8$",
+    "$11$"
+   ],
+   "c": 1,
+   "a": "Bir milyar $1\\,000\\,000\\,000$ olup $10$ basamaklıdır. Bir eksiği $999\\,999\\,999$ sayısıdır ve $9$ basamaklıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0103",
+   "konu": "5.1.1",
+   "zorluk": 2,
+   "s": "$3\\,450\\,200,\\ 3\\,405\\,999,\\ 3\\,450\\,020,\\ 3\\,445\\,999$ sayılarından en büyüğü hangisidir?",
+   "o": [
+    "$3\\,405\\,999$",
+    "$3\\,450\\,200$",
+    "$3\\,450\\,020$",
+    "$3\\,445\\,999$"
+   ],
+   "c": 1,
+   "a": "Hepsinde milyonlar $3$'tür. Binler bölüğüne bakınca $450$ olanlar en büyüktür; onlar arasında $200>020$ olduğundan $3\\,450\\,200$ en büyüktür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0104",
+   "konu": "5.1.1",
+   "zorluk": 2,
+   "s": "$3\\,000\\,000+40\\,000+700+6$ işleminin sonucu aşağıdakilerden hangisidir?",
+   "o": [
+    "$3\\,400\\,706$",
+    "$3\\,004\\,706$",
+    "$3\\,040\\,706$",
+    "$30\\,040\\,706$"
+   ],
+   "c": 2,
+   "a": "Basamak değerleri yerine yazılır: $3$ milyon, $4$ on bin, $7$ yüz, $6$ birdir. Sayı $3\\,040\\,706$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0105",
+   "konu": "5.1.1",
+   "zorluk": 2,
+   "s": "$23\\,408\\,516$ sayısının milyonlar bölüğünde hangi sayı yazılıdır?",
+   "o": [
+    "$408$",
+    "$23$",
+    "$516$",
+    "$234$"
+   ],
+   "c": 1,
+   "a": "Sağdan üçer üçer ayırırsak birler bölüğü $516$, binler bölüğü $408$, milyonlar bölüğü $23$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0106",
+   "konu": "5.1.1",
+   "zorluk": 2,
+   "s": "Rakamları birbirinden farklı olan yedi basamaklı en büyük doğal sayı kaçtır?",
+   "o": [
+    "$9\\,999\\,999$",
+    "$9\\,876\\,540$",
+    "$9\\,876\\,543$",
+    "$9\\,876\\,534$"
+   ],
+   "c": 2,
+   "a": "Her basamağa kalan rakamların en büyüğü yazılır: $9,8,7,6,5,4,3$. Sayı $9\\,876\\,543$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0107",
+   "konu": "5.1.1",
+   "zorluk": 2,
+   "s": "On milyon, kaç tane bin eder?",
+   "o": [
+    "$1\\,000$",
+    "$10\\,000$",
+    "$100\\,000$",
+    "$100$"
+   ],
+   "c": 1,
+   "a": "$10\\,000\\,000\\div1000=10\\,000$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0108",
+   "konu": "5.1.1",
+   "zorluk": 3,
+   "s": "$3,\\ 0,\\ 5,\\ 7,\\ 9$ rakamlarının her biri bir kez kullanılarak yazılabilen en küçük beş basamaklı doğal sayı kaçtır?",
+   "o": [
+    "$03\\,579$",
+    "$30\\,597$",
+    "$35\\,079$",
+    "$30\\,579$"
+   ],
+   "c": 3,
+   "a": "En küçük rakam $0$ en başa yazılamaz (beş basamaklı olmaz). En başa $3$ yazılır, sonra rakamlar küçükten büyüğe dizilir: $30\\,579$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0109",
+   "konu": "5.1.1",
+   "zorluk": 2,
+   "s": "Altı basamaklı bir sayıda yüz binler basamağında $4$, on binler basamağında $0$, binler basamağında $7$, yüzler basamağında $3$, onlar basamağında $0$ ve birler basamağında $8$ vardır. Bu sayı aşağıdakilerden hangisidir?",
+   "o": [
+    "$470\\,308$",
+    "$407\\,038$",
+    "$407\\,380$",
+    "$407\\,308$"
+   ],
+   "c": 3,
+   "a": "Rakamlar basamak sırasına göre yazılır: $4,0,7,3,0,8$. Sayı $407\\,308$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0110",
+   "konu": "5.1.1",
+   "zorluk": 2,
+   "s": "Ali, \"yedi yüz bin otuz\" sayısını $7\\,030$ biçiminde yazmıştır. Bu sayının doğru yazılışı aşağıdakilerden hangisidir?",
+   "o": [
+    "$700\\,030$",
+    "$7\\,030$",
+    "$700\\,300$",
+    "$70\\,030$"
+   ],
+   "c": 0,
+   "a": "Yedi yüz bin $=700\\,000$, otuz $=30$'dur. Birleşince $700\\,030$ olur; sayı altı basamaklıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0111",
+   "konu": "5.1.1",
+   "zorluk": 3,
+   "s": "$7\\,246\\,305$ sayısında $7$ rakamının basamak değeri ile $4$ rakamının basamak değeri arasındaki fark kaçtır?",
+   "o": [
+    "$6\\,960\\,000$",
+    "$6\\,996\\,000$",
+    "$6\\,600\\,000$",
+    "$3$"
+   ],
+   "c": 0,
+   "a": "$7$ milyonluk basamaktadır: $7\\,000\\,000$. $4$ on binler basamağındadır: $40\\,000$. Fark $7\\,000\\,000-40\\,000=6\\,960\\,000$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0112",
+   "konu": "5.1.1",
+   "zorluk": 3,
+   "s": "$3\\,070\\,000\\,000$ sayısının okunuşu aşağıdakilerden hangisidir?",
+   "o": [
+    "Üç milyar yetmiş milyon",
+    "Üç milyar yedi milyon",
+    "Otuz yedi milyar",
+    "Üç milyon yetmiş bin"
+   ],
+   "c": 0,
+   "a": "Sayı $3$ milyar ve $070$ milyondan oluşur. Okunuşu: üç milyar yetmiş milyon.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0113",
+   "konu": "5.1.2",
+   "zorluk": 1,
+   "s": "Bir kitapçı günde $148$ kitap satmaktadır. Aynı hızla $6$ günde kaç kitap satar?",
+   "o": [
+    "$154$",
+    "$888$",
+    "$868$",
+    "$988$"
+   ],
+   "c": 1,
+   "a": "Her gün $148$ kitap satıldığından $6$ günde $148\\cdot6=888$ kitap satılır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0114",
+   "konu": "5.1.2",
+   "zorluk": 1,
+   "s": "Mert $2\\,450$ TL biriktirmiştir. $1\\,280$ TL harcarsa kaç TL'si kalır?",
+   "o": [
+    "$1\\,170$ TL",
+    "$3\\,730$ TL",
+    "$1\\,270$ TL",
+    "$1\\,180$ TL"
+   ],
+   "c": 0,
+   "a": "Kalan para çıkarma ile bulunur: $2\\,450-1\\,280=1\\,170$ TL.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0115",
+   "konu": "5.1.2",
+   "zorluk": 2,
+   "s": "Bir otobüste $46$ yolcu vardır. Durakta $18$ yolcu inip $25$ yolcu biniyor. Otobüste kaç yolcu olur?",
+   "o": [
+    "$53$",
+    "$39$",
+    "$89$",
+    "$7$"
+   ],
+   "c": 0,
+   "a": "İnenler çıkarılır, binenler eklenir: $46-18+25=53$ yolcu olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0116",
+   "konu": "5.1.2",
+   "zorluk": 2,
+   "s": "Her birinde $24$ kalem bulunan $15$ kutu vardır. Bu kalemlerden $40$ tanesi satılırsa kaç kalem kalır?",
+   "o": [
+    "$320$",
+    "$360$",
+    "$400$",
+    "$335$"
+   ],
+   "c": 0,
+   "a": "Toplam kalem $15\\cdot24=360$'tır. Satılanlar çıkarılınca $360-40=320$ kalem kalır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0117",
+   "konu": "5.1.2",
+   "zorluk": 3,
+   "s": "$275$ öğrenci geziye gidecektir. Her otobüste en çok $40$ öğrenci yer alabildiğine göre en az kaç otobüs gerekir?",
+   "o": [
+    "$6$",
+    "$8$",
+    "$11$",
+    "$7$"
+   ],
+   "c": 3,
+   "a": "$275\\div40$ işleminde bölüm $6$, kalan $35$'tir. Kalan $35$ öğrenci için bir otobüs daha gerekir; $6+1=7$ otobüs olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0118",
+   "konu": "5.1.2",
+   "zorluk": 2,
+   "s": "Bir manav, her biri $18$ kg olan $3$ kasa elma ile her biri $25$ kg olan $2$ kasa armut almıştır. Toplam kaç kg meyve almıştır?",
+   "o": [
+    "$43$ kg",
+    "$104$ kg",
+    "$94$ kg",
+    "$114$ kg"
+   ],
+   "c": 1,
+   "a": "Elma $3\\cdot18=54$ kg, armut $2\\cdot25=50$ kg'dır. Toplam $54+50=104$ kg olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0119",
+   "konu": "5.1.2",
+   "zorluk": 2,
+   "s": "Bir defter $8$ TL, bir kalem $3$ TL'dir. $5$ defter ve $4$ kalem için toplam kaç TL ödenir?",
+   "o": [
+    "$40$ TL",
+    "$52$ TL",
+    "$44$ TL",
+    "$60$ TL"
+   ],
+   "c": 1,
+   "a": "Defterler $5\\cdot8=40$ TL, kalemler $4\\cdot3=12$ TL'dir. Toplam $40+12=52$ TL'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0120",
+   "konu": "5.1.2",
+   "zorluk": 3,
+   "s": "Ayşe $250$ sayfalık bir kitabı okuyor. İlk gün $48$ sayfa, ikinci gün ilk günden $12$ sayfa fazla, üçüncü gün $36$ sayfa okuyor. Kitabın kaç sayfası okunmadan kalmıştır?",
+   "o": [
+    "$144$",
+    "$94$",
+    "$106$",
+    "$118$"
+   ],
+   "c": 2,
+   "a": "İkinci gün $48+12=60$ sayfa okunmuştur. Üç günde $48+60+36=144$ sayfa okunmuştur. Kalan $250-144=106$ sayfadır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0121",
+   "konu": "5.1.2",
+   "zorluk": 3,
+   "s": "Bir fabrikada günde $2\\,400$ ürün üretilmektedir. $5$ günde üretilen ürünler $30$'arlı kolilere yerleştirilirse kaç koli gerekir?",
+   "o": [
+    "$80$",
+    "$400$",
+    "$4\\,000$",
+    "$12\\,000$"
+   ],
+   "c": 1,
+   "a": "$5$ günde $2\\,400\\cdot5=12\\,000$ ürün üretilir. $12\\,000\\div30=400$ koli gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0122",
+   "konu": "5.1.2",
+   "zorluk": 2,
+   "s": "Zeynep ve $5$ arkadaşı, aldıkları $1\\,200$ TL'lik hediyenin parasını eşit olarak paylaşıyor. Kişi başına kaç TL düşer?",
+   "o": [
+    "$200$ TL",
+    "$240$ TL",
+    "$1\\,206$ TL",
+    "$1\\,194$ TL"
+   ],
+   "c": 0,
+   "a": "Zeynep ile arkadaşı birlikte $1+5=6$ kişidir. $1\\,200\\div6=200$ TL düşer.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0123",
+   "konu": "5.4.1",
+   "zorluk": 1,
+   "s": "Şekildeki dikdörtgenin kenar uzunlukları verilmiştir. Bu dikdörtgenin çevresi kaç cm'dir?",
+   "o": [
+    "$24$",
+    "$22$",
+    "$11$",
+    "$16$"
+   ],
+   "c": 1,
+   "a": "Çevre, dört kenarın toplamıdır: $8+3+8+3=22$ cm. Kısaca $2\\cdot(8+3)=22$ cm.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"48,38 192,38 192,92 48,92\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><text x=\"120\" y=\"106\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">8 cm</text><text x=\"42\" y=\"68.5\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">3 cm</text></svg>"
+  },
+  {
+   "id": "5-0124",
+   "konu": "5.4.1",
+   "zorluk": 1,
+   "s": "Çevresi $30$ cm olan bir dikdörtgenin bir kenarı $9$ cm'dir. Bu kenara komşu olan kenar kaç cm'dir?",
+   "o": [
+    "$21$",
+    "$12$",
+    "$6$",
+    "$15$"
+   ],
+   "c": 2,
+   "a": "İki komşu kenarın toplamı çevrenin yarısıdır: $30\\div2=15$. Diğer kenar $15-9=6$ cm'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0125",
+   "konu": "5.4.1",
+   "zorluk": 3,
+   "s": "Çevresi $20$ cm olan ve kenar uzunlukları doğal sayı olan kaç farklı dikdörtgen çizilebilir? (Kare de bir dikdörtgen sayılır.) (Kenarların yeri değişince aynı dikdörtgen sayılır.)",
+   "o": [
+    "$4$",
+    "$9$",
+    "$10$",
+    "$5$"
+   ],
+   "c": 3,
+   "a": "Komşu kenarların toplamı $10$ olmalıdır: $(1,9),(2,8),(3,7),(4,6),(5,5)$. Toplam $5$ dikdörtgen çizilebilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0126",
+   "konu": "5.4.1",
+   "zorluk": 2,
+   "s": "Aşağıdakilerden hangisi çevresi $24$ cm olan bir dikdörtgenin kenar uzunluklarıdır?",
+   "o": [
+    "$6$ cm ve $4$ cm",
+    "$8$ cm ve $4$ cm",
+    "$12$ cm ve $12$ cm",
+    "$10$ cm ve $4$ cm"
+   ],
+   "c": 1,
+   "a": "Komşu kenarların toplamı $24\\div2=12$ cm olmalıdır. Yalnızca $8+4=12$ toplamı doğrudur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0127",
+   "konu": "5.4.1",
+   "zorluk": 2,
+   "s": "Kenar uzunlukları $15$ m ve $9$ m olan dikdörtgen biçimindeki bir bahçenin çevresine $3$ sıra tel çekilecektir. Toplam kaç m tel gerekir?",
+   "o": [
+    "$48$ m",
+    "$24$ m",
+    "$135$ m",
+    "$144$ m"
+   ],
+   "c": 3,
+   "a": "Bahçenin çevresi $2\\cdot(15+9)=48$ m'dir. $3$ sıra için $3\\cdot48=144$ m tel gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0128",
+   "konu": "5.4.1",
+   "zorluk": 3,
+   "s": "Çevresi $36$ cm olan bir dikdörtgenin uzun kenarı, kısa kenarının $2$ katıdır. Kısa kenar kaç cm'dir?",
+   "o": [
+    "$12$",
+    "$9$",
+    "$18$",
+    "$6$"
+   ],
+   "c": 3,
+   "a": "Komşu kenarların toplamı $36\\div2=18$ cm'dir. Uzun kenar kısanın $2$ katı olduğundan toplam $3$ eş parçadır; bir parça $18\\div3=6$ cm'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0129",
+   "konu": "5.4.2",
+   "zorluk": 1,
+   "s": "Şekilde dikdörtgen, eş birim karelerle kaplanmıştır. Dikdörtgen kaç birim karedir?",
+   "o": [
+    "$24$ birim kare",
+    "$20$ birim kare",
+    "$10$ birim kare",
+    "$12$ birim kare"
+   ],
+   "c": 0,
+   "a": "Her sırada $6$ birim kare, toplam $4$ sıra vardır. $6\\cdot4=24$ birim kare olur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"54,18 186,18 186,106 54,106\" fill=\"#9AA3C7\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"54\" y1=\"18\" x2=\"54\" y2=\"106\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"76\" y1=\"18\" x2=\"76\" y2=\"106\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"98\" y1=\"18\" x2=\"98\" y2=\"106\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"120\" y1=\"18\" x2=\"120\" y2=\"106\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"142\" y1=\"18\" x2=\"142\" y2=\"106\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"164\" y1=\"18\" x2=\"164\" y2=\"106\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"186\" y1=\"18\" x2=\"186\" y2=\"106\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"54\" y1=\"18\" x2=\"186\" y2=\"18\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"54\" y1=\"40\" x2=\"186\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"54\" y1=\"62\" x2=\"186\" y2=\"62\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"54\" y1=\"84\" x2=\"186\" y2=\"84\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"54\" y1=\"106\" x2=\"186\" y2=\"106\" stroke=\"#141B3F\" stroke-width=\"1\"/></svg>"
+  },
+  {
+   "id": "5-0130",
+   "konu": "5.4.2",
+   "zorluk": 1,
+   "s": "Kenar uzunlukları $7$ birim ve $5$ birim olan dikdörtgenin alanı kaç birim karedir?",
+   "o": [
+    "$24$ birim kare",
+    "$12$ birim kare",
+    "$75$ birim kare",
+    "$35$ birim kare"
+   ],
+   "c": 3,
+   "a": "Alan, birim kare sayısıdır: bir sırada $7$ kare, $5$ sıra vardır. $7\\cdot5=35$ birim kare olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0131",
+   "konu": "5.4.2",
+   "zorluk": 2,
+   "s": "Şekildeki dikdörtgen eş birim karelerle kaplıdır. Alanı kaç birim karedir?",
+   "o": [
+    "$10$ birim kare",
+    "$20$ birim kare",
+    "$14$ birim kare",
+    "$21$ birim kare"
+   ],
+   "c": 3,
+   "a": "Bir sırada $7$ birim kare vardır ve $3$ sıra bulunur. $7\\cdot3=21$ birim kare olur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"60,24 228,24 228,96 60,96\" fill=\"#9AA3C7\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"60\" y1=\"24\" x2=\"60\" y2=\"96\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"84\" y1=\"24\" x2=\"84\" y2=\"96\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"108\" y1=\"24\" x2=\"108\" y2=\"96\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"132\" y1=\"24\" x2=\"132\" y2=\"96\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"156\" y1=\"24\" x2=\"156\" y2=\"96\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"180\" y1=\"24\" x2=\"180\" y2=\"96\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"204\" y1=\"24\" x2=\"204\" y2=\"96\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"228\" y1=\"24\" x2=\"228\" y2=\"96\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"24\" x2=\"228\" y2=\"24\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"48\" x2=\"228\" y2=\"48\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"96\" x2=\"228\" y2=\"96\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"144\" y=\"112\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">7 birim</text><text x=\"54\" y=\"63\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">3 birim</text></svg>"
+  },
+  {
+   "id": "5-0132",
+   "konu": "5.4.2",
+   "zorluk": 2,
+   "s": "Kenar uzunlukları $9$ cm ve $4$ cm olan bir dikdörtgenin alanı kaç cm$^{2}$'dir?",
+   "o": [
+    "$26$ cm$^{2}$",
+    "$13$ cm$^{2}$",
+    "$36$ cm$^{2}$",
+    "$18$ cm$^{2}$"
+   ],
+   "c": 2,
+   "a": "Alan, iki komşu kenarın çarpımıdır: $9\\cdot4=36$ cm$^{2}$. ($26$ ise çevredir.)",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0133",
+   "konu": "5.4.2",
+   "zorluk": 2,
+   "s": "Bir dikdörtgen, kenarı $1$ cm olan birim karelerle kaplanıyor. Alanı $18$ cm$^{2}$ olan bu dikdörtgenin bir sırasında $6$ birim kare varsa kaç sıra vardır?",
+   "o": [
+    "$12$",
+    "$6$",
+    "$3$",
+    "$108$"
+   ],
+   "c": 2,
+   "a": "Toplam $18$ birim kare, her sırada $6$ kare vardır. Sıra sayısı $18\\div6=3$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0134",
+   "konu": "5.4.2",
+   "zorluk": 3,
+   "s": "Alanı $24$ birim kare olan ve kenar uzunlukları doğal sayı olan kaç farklı dikdörtgen çizilebilir? (Kenarların yeri değişince aynı dikdörtgen sayılır.)",
+   "o": [
+    "$3$",
+    "$4$",
+    "$6$",
+    "$8$"
+   ],
+   "c": 1,
+   "a": "Çarpımı $24$ olan kenar çiftleri: $(1,24),(2,12),(3,8),(4,6)$. $4$ farklı dikdörtgen çizilebilir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0135",
+   "konu": "5.4.3",
+   "zorluk": 1,
+   "s": "Alanı $24$ cm$^{2}$ olan bir dikdörtgenin bir kenarı $6$ cm'dir. Bu dikdörtgenin çevresi kaç cm'dir?",
+   "o": [
+    "$20$",
+    "$10$",
+    "$24$",
+    "$48$"
+   ],
+   "c": 0,
+   "a": "Diğer kenar $24\\div6=4$ cm'dir. Çevre $2\\cdot(6+4)=20$ cm olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0136",
+   "konu": "5.4.3",
+   "zorluk": 1,
+   "s": "Çevresi $18$ cm olan bir dikdörtgenin bir kenarı $5$ cm'dir. Bu dikdörtgenin alanı kaç cm$^{2}$'dir?",
+   "o": [
+    "$20$ cm$^{2}$",
+    "$18$ cm$^{2}$",
+    "$9$ cm$^{2}$",
+    "$45$ cm$^{2}$"
+   ],
+   "c": 0,
+   "a": "Komşu kenarların toplamı $18\\div2=9$ cm'dir; diğer kenar $9-5=4$ cm'dir. Alan $5\\cdot4=20$ cm$^{2}$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0137",
+   "konu": "5.4.3",
+   "zorluk": 2,
+   "s": "Alanı $36$ cm$^{2}$ olan bir karenin çevresi kaç cm'dir?",
+   "o": [
+    "$12$",
+    "$18$",
+    "$144$",
+    "$24$"
+   ],
+   "c": 3,
+   "a": "Kare için kenar $\\cdot$ kenar $=36$ olmalıdır; $6\\cdot6=36$ olduğundan kenar $6$ cm'dir. Çevre $4\\cdot6=24$ cm'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0138",
+   "konu": "5.4.3",
+   "zorluk": 2,
+   "s": "Çevresi $24$ cm olan ve kenar uzunlukları doğal sayı olan dikdörtgenlerin alanı en çok kaç cm$^{2}$ olabilir?",
+   "o": [
+    "$36$ cm$^{2}$",
+    "$35$ cm$^{2}$",
+    "$32$ cm$^{2}$",
+    "$24$ cm$^{2}$"
+   ],
+   "c": 0,
+   "a": "Komşu kenarların toplamı $12$ cm'dir. Kenarlar birbirine yaklaştıkça alan büyür: $6\\cdot6=36$ cm$^{2}$ ile alan en büyük olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0139",
+   "konu": "5.4.3",
+   "zorluk": 3,
+   "s": "Alanı $30$ cm$^{2}$ olan ve kenar uzunlukları doğal sayı olan bir dikdörtgenin çevresi aşağıdakilerden hangisi OLAMAZ?",
+   "o": [
+    "$24$ cm",
+    "$22$ cm",
+    "$26$ cm",
+    "$34$ cm"
+   ],
+   "c": 0,
+   "a": "Kenar çiftleri: $(1,30),(2,15),(3,10),(5,6)$. Çevreler $62,34,26,22$ cm'dir. $24$ cm bunların arasında yoktur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0140",
+   "konu": "5.4.3",
+   "zorluk": 2,
+   "s": "Şekilde birim karelerle kaplı bir dikdörtgen gösterilmiştir. Bu dikdörtgenin çevresi ve alanı için hangisi doğrudur?",
+   "o": [
+    "Çevre $20$ birim, alan $18$ birim kare",
+    "Çevre $18$ birim, alan $20$ birim kare",
+    "Çevre $9$ birim, alan $20$ birim kare",
+    "Çevre $18$ birim, alan $9$ birim kare"
+   ],
+   "c": 1,
+   "a": "Kenarlar $5$ ve $4$ birimdir. Çevre $2\\cdot(5+4)=18$ birim, alan $5\\cdot4=20$ birim karedir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"60,16 180,16 180,112 60,112\" fill=\"#9AA3C7\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><line x1=\"60\" y1=\"16\" x2=\"60\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"84\" y1=\"16\" x2=\"84\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"108\" y1=\"16\" x2=\"108\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"132\" y1=\"16\" x2=\"132\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"156\" y1=\"16\" x2=\"156\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"180\" y1=\"16\" x2=\"180\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"16\" x2=\"180\" y2=\"16\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"40\" x2=\"180\" y2=\"40\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"64\" x2=\"180\" y2=\"64\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"88\" x2=\"180\" y2=\"88\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"60\" y1=\"112\" x2=\"180\" y2=\"112\" stroke=\"#141B3F\" stroke-width=\"1\"/></svg>"
+  },
+  {
+   "id": "5-0141",
+   "konu": "5.4.4",
+   "zorluk": 2,
+   "s": "Kenar uzunlukları $12$ m ve $8$ m olan dikdörtgen biçimindeki bir bahçenin çevresine tel çekilecektir. Telin metresi $15$ TL ise toplam kaç TL ödenir?",
+   "o": [
+    "$1\\,440$ TL",
+    "$300$ TL",
+    "$480$ TL",
+    "$600$ TL"
+   ],
+   "c": 3,
+   "a": "Çevre $2\\cdot(12+8)=40$ m'dir. Tel parası $40\\cdot15=600$ TL olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0142",
+   "konu": "5.4.4",
+   "zorluk": 2,
+   "s": "Zemini $9$ m ve $6$ m kenarlı dikdörtgen biçiminde olan bir salona, $1$ m$^{2}$'si $20$ TL olan halı döşenecektir. Halı için kaç TL ödenir?",
+   "o": [
+    "$600$ TL",
+    "$540$ TL",
+    "$1\\,800$ TL",
+    "$1\\,080$ TL"
+   ],
+   "c": 3,
+   "a": "Salonun alanı $9\\cdot6=54$ m$^{2}$'dir. Halı parası $54\\cdot20=1\\,080$ TL olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0143",
+   "konu": "5.4.4",
+   "zorluk": 3,
+   "s": "Kenar uzunlukları $12$ m ve $8$ m olan dikdörtgen biçimli bir bahçenin çevresine, köşelerde de direk bulunacak biçimde $2$ m arayla direk dikilecektir. Kaç direk gerekir?",
+   "o": [
+    "$21$",
+    "$10$",
+    "$40$",
+    "$20$"
+   ],
+   "c": 3,
+   "a": "Çevre $2\\cdot(12+8)=40$ m'dir. Çevre kapalı bir şekil olduğundan direk sayısı aralık sayısına eşittir: $40\\div2=20$ direk.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0144",
+   "konu": "5.4.4",
+   "zorluk": 2,
+   "s": "Alanı $48$ m$^{2}$ olan dikdörtgen biçimli bir arsanın kısa kenarı $6$ m'dir. Bu arsanın çevresi kaç m'dir?",
+   "o": [
+    "$14$ m",
+    "$48$ m",
+    "$56$ m",
+    "$28$ m"
+   ],
+   "c": 3,
+   "a": "Uzun kenar $48\\div6=8$ m'dir. Çevre $2\\cdot(6+8)=28$ m olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0145",
+   "konu": "5.4.4",
+   "zorluk": 3,
+   "s": "Uzun kenarı $14$ cm, çevresi $40$ cm olan dikdörtgen biçimli bir kartonun alanı kaç cm$^{2}$'dir?",
+   "o": [
+    "$56$ cm$^{2}$",
+    "$140$ cm$^{2}$",
+    "$280$ cm$^{2}$",
+    "$84$ cm$^{2}$"
+   ],
+   "c": 3,
+   "a": "Komşu kenarların toplamı $40\\div2=20$ cm'dir; kısa kenar $20-14=6$ cm'dir. Alan $14\\cdot6=84$ cm$^{2}$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "5-0146",
+   "konu": "5.4.4",
+   "zorluk": 2,
+   "s": "Kenar uzunlukları $20$ cm ve $10$ cm olan dikdörtgen biçimli bir kartondan, kenarı $5$ cm olan kare parçalar kesiliyor. Artıksız en çok kaç kare parça elde edilir?",
+   "o": [
+    "$4$",
+    "$8$",
+    "$10$",
+    "$40$"
+   ],
+   "c": 1,
+   "a": "Uzun kenara $20\\div5=4$, kısa kenara $10\\div5=2$ kare sığar. $4\\cdot2=8$ parça elde edilir.",
+   "kaynak": "ozgun"
+  }
+ ]
+}

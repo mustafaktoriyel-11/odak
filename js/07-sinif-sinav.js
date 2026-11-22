@@ -4,7 +4,7 @@
 // her yıl ÖSYM/MEB takvimine göre güncelle (YKS: TYT günü 10:15, LGS: 09:30; İstanbul saati)
 var SN_TAKVIM={YKS:{ad:'YKS',tarih:'2027-06-19',saat:'10:15'},LGS:{ad:'LGS',tarih:'2027-06-13',saat:'09:30'}};
 var KEY='mf-sinif',GEC='mf-sinif-gec';
-var SINIFLAR=[['6','Ortaokul'],['7','Ortaokul'],['8','LGS'],['9',''],['10',''],['11',''],['12',''],['Mezun','YKS']];
+var SINIFLAR=[['5','Ortaokul'],['6','Ortaokul'],['7','Ortaokul'],['8','LGS'],['9',''],['10',''],['11',''],['12',''],['Mezun','YKS']];
 var ALANLAR=[['SAY','Sayısal'],['EA','Eşit Ağırlık'],['SOZ','Sözel'],['','Henüz karar vermedim']];
 var ALAN_AD={SAY:'Sayısal',EA:'Eşit Ağırlık',SOZ:'Sözel'},ALAN_KISA={SAY:'SAY',EA:'EA',SOZ:'SÖZ'};
 var DERS_SIRA={
@@ -13,7 +13,7 @@ var DERS_SIRA={
  SOZ:['Edebiyat','Tarih','Coğrafya','Felsefe','Türkçe','Din Kültürü'],
  '8':['Matematik','Türkçe','Fen Bilimleri','İnkılap Tarihi','İngilizce','Din Kültürü']
 };
-function ORTA(s){return s==='6'||s==='7'||s==='8';}
+function ORTA(s){return s==='5'||s==='6'||s==='7'||s==='8';}
 function $(id){return document.getElementById(id);}
 function oku(){try{var x=JSON.parse(localStorage.getItem(KEY)||'null');return x&&x.sinif?x:null;}catch(e){return null;}}
 function var_(k){try{return localStorage.getItem(k);}catch(e){return null;}}
