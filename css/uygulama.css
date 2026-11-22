@@ -1766,3 +1766,12 @@ html.mf-gece .bk-kara{fill:#4A4030}html.mf-gece .bk-kara2{fill:#55492F}html.mf-g
 @keyframes ma-pr-g{to{opacity:1}}
 @keyframes ma-pr{from{left:-80%}to{left:130%}}
 @media (prefers-reduced-motion:reduce){#mf-acilis .ma-pr{display:none}}
+/* Yolculuk maskotu canlı: kuyruk salınır, baş hafifçe sallanır, arada göz kırpar */
+.izm-kuyruk{animation:izm-k 3.4s ease-in-out infinite}
+.izm-kk{transform-origin:82px 100px}.izm-ak{transform-origin:84px 104px}
+.izm-bas{transform-origin:60px 74px;animation:izm-b 7s ease-in-out infinite}
+.izm-goz{transform-box:fill-box;transform-origin:center;animation:izm-g 5.2s infinite}
+@keyframes izm-k{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(6deg)}}
+@keyframes izm-b{0%,20%,60%,100%{transform:rotate(0)}32%{transform:rotate(4deg)}46%{transform:rotate(-3deg)}}
+@keyframes izm-g{0%,90%,96%,100%{transform:scaleY(1)}93%{transform:scaleY(.08)}}
+@media (prefers-reduced-motion:reduce){.izm-kuyruk,.izm-bas,.izm-goz{animation:none}}
