@@ -4,7 +4,7 @@
 (function(){
   var $=function(id){return document.getElementById(id);};
   var K='mf-izinde',NS=5,W=2576,H=1438;
-  var KADEME=['Yavru kedi','Genç kedi','Yelesi belirmiş kedi','Aslan','Genç aslan','Bilge aslan'];
+  var KADEME=['Pati','Pençe','Yele','Aslan','Lider','Efsane'];
   var AY=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
   var V={muf:null,rota:null,dur:null,soru:{}},yukleniyor=null,aktif=null,yakin=true,ilkKaydir=true;
 
@@ -564,7 +564,7 @@
   function tore(eski,yeni,sonra){
     var o='<div class="iz-tore'+(yeni===4?' donusum':'')+'"><div class="iz-tore-sahne"><svg class="iz-t-eski" viewBox="0 0 120 124"><use href="#iz-m'+eski+'"/></svg><svg class="iz-t-yeni" viewBox="0 0 120 124"><use href="#iz-m'+yeni+'"/></svg></div>'+
       '<small>'+yeni+'. kademe</small><h3>'+(yeni===4?'Dönüşüm! Artık bir aslansın':esc(KADEME[yeni-1]))+'</h3><p>'+
-      ['','','Yolculuğun ilk durakları geride kaldı.','Yelen belirmeye başladı; bilgin büyüyor.','Bağdat’ın kapısındasın. Emeğin ve serin seni aslana dönüştürdü.','Avrupa’nın akademileri seni bekliyor.','Bilge aslan oldun. Son durak Ankara’da bir kara tahta seni bekliyor.'][yeni]+'</p></div>';
+      ['','','Yolculuğun ilk durakları geride kaldı.','Yelen belirmeye başladı; bilgin büyüyor.','Bağdat’ın kapısındasın. Emeğin ve serin seni aslana dönüştürdü.','Avrupa’nın akademileri seni bekliyor.','Efsane oldun. Son durak Ankara’da bir kara tahta seni bekliyor.'][yeni]+'</p></div>';
     pencere(o,sonra);
   }
 
