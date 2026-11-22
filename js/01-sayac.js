@@ -42,7 +42,7 @@
     $('pm-halka').style.strokeDashoffset=CEVRE*(1-k/d.toplam);
     $('pm-saat').classList.toggle('mola',mola);$('pm-saat').classList.toggle('deneme',d.mod==='deneme'&&!ara);$('pm-sinav-k').classList.toggle('acik',d.mod==='deneme');$('pm-sinav').disabled=d.mod==='deneme'&&(k!==d.toplam||!!d.faz);
     var sfB=ara?'Arayı atla':mola?T.atla:((k!==d.toplam||d.faz)?'Bitir':'Sıfırla');$('pm-sifir').textContent=sfB;$('pm-sifir').classList.toggle('tut',sfB==='Bitir');$('pm-sifir').setAttribute('aria-label',sfB==='Bitir'?'Bitir, basılı tut':sfB);
-    $('pm-domates').style.visibility=d.mod==='deneme'?'hidden':'';
+    $('pm-domates').style.display=d.mod==='deneme'?'none':'';
     $('pm-ders-k').style.display=$('pm-odak-k').style.display=d.mod==='deneme'?'none':'';
     $('pm-ozel-k').style.display=(d.mod!=='deneme'&&$('pm-odak').value==='ozel')?'':'none';$('pm-ozel').disabled=$('pm-odak').disabled=d.calisiyor&&d.mod==='odak';cipGuncelle();
     $('pm-etiket').textContent=d.mod==='deneme'?denemeEtiket():d.mod==='odak'?((d.calisiyor||k!==d.toplam)?(d.ders||$('pm-ders').value):T.odak+' · '+$('pm-ders').value):(d.mod==='kisa'?T.kisa:T.uzun);

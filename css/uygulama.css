@@ -1698,3 +1698,4 @@ html.mf-gece .pm-sik-k .sik-sahne{background:radial-gradient(circle at 50% 62%,#
 html.mf-gece #onay-vazgec,html.mf-gece #not-gec,html.mf-gece #dnm-gec,html.mf-gece #sil-vazgec{background:#232B52;color:#B7C5FF;border-color:#3A4BA0}
 html.mf-gece #alarm-b,html.mf-gece .onay-t{color:#9FB2FF}
 html.mf-gece #onay-tamam:disabled,html.mf-gece #not-gonder:disabled,html.mf-gece #dnm-kaydet:disabled{background:#2C3670;color:#8E98C4;opacity:1}
+.ekran-oku{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
