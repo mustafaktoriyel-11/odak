@@ -1,12 +1,13 @@
-// Kadranlar: İletki (16-kadran.js, varsayılan) + Birim çember, Kum saati, Dijital.
+// Kadranlar: Dijital (varsayılan), Birim çember, Kum saati. (Eski İletki kadranı 22 Kasım'da kaldırıldı.)
 // Seçim: Odak ayarlarında "Kadran" çipleri, localStorage 'mf-kadran'. Sayaç durumu 01-sayac.js ciz() → window.MF_KADRAN(s).
 // Rakamlar: MF rakamları — yalnız doğru parçası ve çember yayıyla (cetvel + pergel) çizilmiş özel glifler; yalnız sayaçta kullanılır.
 (function(){
   'use strict';
   var h=document.getElementById('pm-saat'),kap=document.getElementById('pm-kadran-c');if(!h||!kap)return;
-  var NS='http://www.w3.org/2000/svg',K='mf-kadran',SECIM=[['iletki','İletki'],['dj','Dijital'],['bc','Birim çember'],['ks','Kum saati']];
-  var secim='iletki';try{secim=localStorage.getItem(K)||'iletki';}catch(e){}
-  if(!SECIM.some(function(x){return x[0]===secim;}))secim='iletki';
+  var NS='http://www.w3.org/2000/svg',K='mf-kadran',SECIM=[['dj','Dijital'],['bc','Birim çember'],['ks','Kum saati']];
+  var secim='dj';try{secim=localStorage.getItem(K)||'dj';}catch(e){}
+  if(!SECIM.some(function(x){return x[0]===secim;}))secim='dj';
+  var satir=document.getElementById('pm-kadran-k');if(satir&&satir.parentNode)satir.parentNode.appendChild(satir); // ayarların en altı
   function f(n){return n.toFixed(2);}
   function iki(n){return (n<10?'0':'')+n;}
   // ---------- MF rakamları (60x100 kutu) ----------
@@ -108,7 +109,7 @@
   function yaziYaz(id,t,cls){$(id).innerHTML='<text x="224" y="'+(+$(id).getAttribute('data-y')-1)+'" class="dj-yazi '+(cls||'')+'">'+t+'</text>';}
   function cizDj(k){
     var dur=!S.calisiyor&&k!==S.toplam&&(S.serbest||k>0),son5=!S.serbest&&S.mod!=='kisa'&&S.mod!=='uzun'&&k>0&&k<=300000,od=odakMi();
-    svg.setAttribute('viewBox',od?'0 0 300 150':'0 0 300 222');
+    svg.setAttribute('viewBox',od?(S.serbest?'30 4 240 146':'48 4 204 146'):'0 0 300 222'); // odak ekranında rakamlara yakınlaş
     $('kd-z').innerHTML=zamanSvg(k,S.serbest?60:78,(S.serbest?82:100)+8,son5?'var(--kd-v)':null);
     $('kd-z').style.opacity=dur?.42:1;
     var u=S.serbest?'SINIRSIZ':(S.mod==='deneme'?'DENEME':(S.mola?'MOLA':'ODAK'));if(!S.serbest)u+=' · '+(djGecen?'GEÇEN ⇄':'KALAN ⇄');if(dur)u='DURAKLATILDI';
@@ -122,10 +123,10 @@
   }
   // ---------- yönetim ----------
   var son=0,raf=0,sonCiz=0;
-  function ciz(dt){if(!S||secim==='iletki')return;var k=kNow();
+  function ciz(dt){if(!S)return;var k=kNow();
     if(kurulan!==secim){kurulan=secim;if(secim==='bc')kurBc();else if(secim==='ks')kurKs();else kurDj();}
     if(secim==='bc')cizBc(k);else if(secim==='ks')cizKs(k,dt||0);else cizDj(k);}
-  function dongu(t){raf=0;if(!S||secim==='iletki'||document.hidden)return;var dt=Math.min(.1,(t-son)/1000);son=t;
+  function dongu(t){raf=0;if(!S||document.hidden)return;var dt=Math.min(.1,(t-son)/1000);son=t;
     // kum saati her karede, diğerleri saniyede bir yeter (pil)
     if(secim==='ks'||t-sonCiz>250){sonCiz=t;ciz(dt);}
     if(S.calisiyor||donT)raf=requestAnimationFrame(dongu);}
@@ -133,7 +134,7 @@
   window.MF_KADRAN=function(s){S=s;h.classList.toggle('kd-mola',!!s.mola);h.classList.toggle('kd-deneme',s.mod==='deneme'&&!s.mola);ciz(0);uyan();};
   document.addEventListener('visibilitychange',function(){if(!document.hidden)uyan();});
   new MutationObserver(function(){if(S)ciz(0);}).observe(document.body,{attributes:true,attributeFilter:['class']});
-  function uygula(){['kd-bc','kd-ks','kd-dj'].forEach(function(c){h.classList.remove(c);});if(secim!=='iletki')h.classList.add('kd-'+secim);
+  function uygula(){['kd-bc','kd-ks','kd-dj'].forEach(function(c){h.classList.remove(c);});h.classList.add('kd-'+secim);
     kurulan='';svg.innerHTML='';ciz(0);uyan();
     [].forEach.call(kap.children,function(b){var on=b.dataset.v===secim;b.classList.toggle('on',on);b.setAttribute('aria-checked',on);});}
   SECIM.forEach(function(x){var b=document.createElement('button');b.type='button';b.setAttribute('role','radio');b.dataset.v=x[0];b.textContent=x[1];

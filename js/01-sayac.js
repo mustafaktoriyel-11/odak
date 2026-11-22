@@ -392,7 +392,7 @@
   $('pm-ozel').addEventListener('change',function(){$('pm-ozel').value=odakDk();sureDegisti();});
   ozelNot();
   // --- cip secicileri (gizli select'leri yonetir; mantik ayni kalir) ---
-  var CIP_AD={'40':'40 dk','ozel':'Özel','serbest':'∞ Sınırsız'};
+  var CIP_AD={'40':'40 dk','ozel':'Özel','serbest':'∞'};
   function cipKur(sid,kid){
     var sel=$(sid),kap=$(kid);
     [].forEach.call(sel.options,function(o){var b=document.createElement('button');b.type='button';b.setAttribute('role','radio');b.dataset.v=o.value;b.textContent=CIP_AD[o.value]||o.text;
