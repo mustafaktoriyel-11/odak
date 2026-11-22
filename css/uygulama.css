@@ -1521,3 +1521,38 @@ html.mf-gece .iz-sahne .iz-sh-kart:not(.kilit){background:rgba(12,16,44,.5);colo
 .iz-sh-ses.acik{opacity:1;border-color:rgba(255,190,120,.6)}
 /* Vektör taban harita: stiller veri/izinde/harita.svg içinde (<style>) */
 .iz-ic{background:#BCD3E4}html.mf-gece .iz-ic{background:#0C1533}
+/* ---- Kadranlar (js/19-kadranlar.js): Birim çember, Kum saati, Dijital ---- */
+.pm-chips button[hidden]{display:none}
+.pm-saat{--kd-yazi:#1C2E8A;--kd-ince:#5A6390;--kd-sn:#5A6390;--kd-cizgi:#DCE2FF;--kd-mavi:#1E3BD6;--kd-v:#FF8A1F;--kd-v2:#FF6A00;--kd-zem:#F4F6FF;--kd-kart:#fff}
+html.mf-gece .pm-saat{--kd-yazi:#E6EAFA;--kd-ince:#AEB6D3;--kd-sn:#C9D2F2;--kd-cizgi:#2F3970;--kd-mavi:#9FB2FF;--kd-zem:#141A40;--kd-kart:#0F1330}
+.pm-saat.kd-mola{--kd-v:#1FA463;--kd-v2:#12804B}.pm-saat.kd-deneme{--kd-v:#C2410C;--kd-v2:#9A3412}
+.pm-saat>svg.kd{display:none;transform:none;width:100%;height:auto;overflow:visible}
+.pm-saat.kd-bc,.pm-saat.kd-ks,.pm-saat.kd-dj{height:auto;width:min(300px,86vw);container-type:normal}
+.pm-saat.kd-dj{width:min(340px,92vw)}
+.pm-saat.kd-bc>svg:not(.kd),.pm-saat.kd-ks>svg:not(.kd),.pm-saat.kd-dj>svg:not(.kd),.pm-saat.kd-bc .pm-sure,.pm-saat.kd-ks .pm-sure,.pm-saat.kd-dj .pm-sure{display:none}
+.pm-saat.kd-bc>svg.kd,.pm-saat.kd-ks>svg.kd,.pm-saat.kd-dj>svg.kd{display:block}
+.pm-saat.kd-bc .pm-yazi,.pm-saat.kd-ks .pm-yazi,.pm-saat.kd-dj .pm-yazi{position:static;margin-top:2px}
+.pm-saat.kd-bc .pm-etiket,.pm-saat.kd-ks .pm-etiket,.pm-saat.kd-dj .pm-etiket{margin-top:0;max-width:90%}
+.kd .kd-v{fill:var(--kd-v)}.kd .kd-y{fill:var(--kd-yazi)}.kd .kd-st1{stop-color:var(--kd-v)}.kd .kd-st2{stop-color:var(--kd-v2)}
+.kd .bc-cember{fill:none;stroke:var(--kd-cizgi);stroke-width:2.5}.kd .bc-eksen{stroke:var(--kd-ince);stroke-width:1.2;opacity:.55}
+.kd .bc-tik{stroke:var(--kd-ince);stroke-width:1.4;opacity:.7}.kd .bc-yazi{fill:var(--kd-ince);font-size:13px;text-anchor:middle;font-style:italic;font-family:Georgia,serif}
+.kd .bc-ilerleme{fill:none;stroke:var(--kd-v);stroke-width:7;stroke-linecap:round}.kd .bc-dilim{fill:var(--kd-v);opacity:.1}
+.kd .bc-yaricap{stroke:var(--kd-mavi);stroke-width:3;stroke-linecap:round}.kd .bc-kesik{stroke:var(--kd-ince);stroke-width:1.3;stroke-dasharray:4 4;opacity:.8}
+.kd .bc-cos{stroke:var(--kd-mavi);stroke-width:5;stroke-linecap:round}.kd .bc-sin{stroke:var(--kd-v);stroke-width:5;stroke-linecap:round}
+.kd .bc-teta{fill:none;stroke:var(--kd-yazi);stroke-width:1.6}.kd .bc-n{fill:var(--kd-v);stroke:var(--kd-kart);stroke-width:3}.kd .bc-hale{fill:var(--kd-v);opacity:.22}
+.kd .bc-etk{font-size:12px;font-weight:700;font-family:Georgia,serif;font-style:italic;fill:var(--kd-yazi)}.kd .bc-ec{fill:var(--kd-mavi)}.kd .bc-es{fill:var(--kd-v)}
+.kd .ks-kapak{fill:var(--kd-yazi)}.kd .ks-direk{stroke:var(--kd-yazi);stroke-width:5;stroke-linecap:round}
+html.mf-gece .kd .ks-kapak{fill:#2A3470}html.mf-gece .kd .ks-direk{stroke:#2A3470}
+.kd .ks-cam{fill:var(--kd-mavi);fill-opacity:.06;stroke:var(--kd-mavi);stroke-width:2.6;stroke-linejoin:round}
+.kd .ks-parlak{fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;opacity:.55}html.mf-gece .kd .ks-parlak{opacity:.18}
+.kd .ks-akis{stroke:url(#kdKum);stroke-width:2.4;stroke-linecap:round}
+.kd .ks-don{transform-origin:150px 150px;transform-box:view-box}.kd .ks-don.don{transition:transform .9s cubic-bezier(.6,0,.3,1)}
+.kd .dj-ust-r{fill:var(--kd-zem);stroke:var(--kd-cizgi)}.kd .dj-ust-g{cursor:pointer}
+.kd .dj-ust{fill:var(--kd-ince);font-size:10.5px;font-weight:700;letter-spacing:1.8px;text-anchor:middle;font-family:Roboto,system-ui,sans-serif}.kd .dj-ust.dur{fill:var(--kd-v)}
+.kd #kd-z{transition:opacity .3s}.kd #kd-z path{transition:stroke .8s}
+.kd .dj-bitis{fill:var(--kd-ince);font-size:12.5px;text-anchor:middle;font-family:Roboto,system-ui,sans-serif}.kd .dj-bs{fill:var(--kd-yazi);font-weight:800}
+.kd .dj-pn{fill:var(--kd-zem);stroke:var(--kd-cizgi);stroke-width:1.3}.kd .dj-ara{stroke:var(--kd-cizgi)}
+.kd .dj-e{fill:var(--kd-ince);font-size:10px;font-weight:700;letter-spacing:1.2px;font-family:Roboto,system-ui,sans-serif}
+.kd .dj-birim{fill:var(--kd-ince);font-size:10.5px;font-weight:700;font-family:Roboto,system-ui,sans-serif}
+.kd .dj-yazi{fill:var(--kd-ince);font-size:12px;font-weight:700;text-anchor:end;font-family:Roboto,system-ui,sans-serif}.kd .dj-tamam{fill:var(--kd-v)}
+body.lv-odak .kd .dj-panel{display:none}

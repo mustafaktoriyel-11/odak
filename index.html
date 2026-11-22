@@ -280,12 +280,13 @@ a.addEventListener('animationend',function(e){if(e.target===a&&(e.animationName=
 <select id="pm-ders" hidden>
 <option>Matematik</option><option>Geometri</option><option>Türkçe</option><option>Fizik</option><option>Kimya</option>
 <option>Biyoloji</option><option>Edebiyat</option><option>Coğrafya</option><option>Tarih</option><option>İngilizce</option><option>Almanca</option>
-<option>Fen Bilimleri</option><option>Sosyal Bilgiler</option><option>Felsefe</option><option>Din Kültürü</option><option>Diğer</option>
+<option>Fen Bilimleri</option><option>Sosyal Bilgiler</option><option>İnkılap Tarihi</option><option>Felsefe</option><option>Din Kültürü</option><option>Diğer</option>
 </select><div class="pm-chips kaydir" id="pm-ders-c" role="radiogroup" aria-label="Ders"></div></div>
 <div class="tam pm-alan seans-ogesi" id="pm-odak-k"><span>Odak süresi</span>
-<select id="pm-odak" hidden><option value="25">25 dakika (mola 5 / uzun 15)</option><option value="40">40 dakika (mola 10 / uzun 30)</option><option value="50">50 dakika (mola 10 / uzun 30)</option><option value="ozel">Kendim ayarlayayım</option><option value="serbest">Serbest (kronometre)</option></select><div class="pm-chips" id="pm-odak-c" role="radiogroup" aria-label="Odak süresi"></div><small class="pm-ozel-not" id="pm-sure-not"></small></div>
+<select id="pm-odak" hidden><option value="40">40 dakika (mola 10 / uzun 30)</option><option value="ozel">Kendim ayarlayayım</option><option value="serbest">Sınırsız (kronometre)</option></select><div class="pm-chips" id="pm-odak-c" role="radiogroup" aria-label="Odak süresi"></div><small class="pm-ozel-not" id="pm-sure-not"></small></div>
 <label class="tam seans-ogesi" id="pm-ozel-k" style="display:none">Kaç dakika odaklanacaksın?
 <span class="pm-ozel-s"><input type="number" id="pm-ozel" inputmode="numeric" min="5" max="720" step="5" value="90"><b>dk</b></span></label>
+<div class="tam pm-alan seans-ogesi" id="pm-kadran-k"><span>Kadran</span><div class="pm-chips" id="pm-kadran-c" role="radiogroup" aria-label="Kadran"></div></div>
 <div class="tam pm-sik-k" id="pm-sik-k">
 <button type="button" class="pm-sik-bas" id="pm-sik-bas" aria-expanded="false" aria-controls="pm-sik-ic"><span class="sik-ad"><i class="sik-hayvan" id="sik-hayvan" aria-hidden="true"><svg class="kedi" viewBox="0 0 120 120"><use href="#mf-kedi"/></svg><svg class="aslan" viewBox="0 0 120 120"><use href="#mf-aslan"/></svg></i>Sıkı mod</span><em id="pm-sik-durum">Kapalı</em><i aria-hidden="true"></i></button>
 <label class="pm-anahtar sik-bas-an"><input type="checkbox" id="pm-siki" role="switch"><span class="ray" aria-hidden="true"></span><b>Sıkı modu kullan</b></label>
@@ -805,5 +806,6 @@ h.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.ta
 <script src="js/izinde-secim.js"></script>
 <script src="js/17-izinde-gorsel.js"></script>
 <script src="js/18-izinde.js"></script>
+<script src="js/19-kadranlar.js"></script>
 </body>
 </html>

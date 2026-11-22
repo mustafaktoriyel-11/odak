@@ -11,7 +11,7 @@ var DERS_SIRA={
  SAY:['Matematik','Geometri','Fizik','Kimya','Biyoloji','Türkçe'],
  EA:['Matematik','Geometri','Edebiyat','Tarih','Coğrafya','Türkçe'],
  SOZ:['Edebiyat','Tarih','Coğrafya','Felsefe','Türkçe','Din Kültürü'],
- '8':['Matematik','Türkçe','Fen Bilimleri','Sosyal Bilgiler','İngilizce','Din Kültürü']
+ '8':['Matematik','Türkçe','Fen Bilimleri','İnkılap Tarihi','İngilizce','Din Kültürü']
 };
 function ORTA(s){return s==='6'||s==='7'||s==='8';}
 function $(id){return document.getElementById(id);}
@@ -68,17 +68,30 @@ document.addEventListener('change',function(e){
  if(e.target&&e.target.id==='pm-sinav'&&!window.__snOto){try{localStorage.setItem('mf-sinav-elle','1');}catch(x){}}
 },true);
 var ORJ=null;
+function dersIzin(f){
+ if(!f||!f.sinif)return null;
+ if(f.sinif==='8')return ['Matematik','Türkçe','Fen Bilimleri','İnkılap Tarihi','İngilizce','Din Kültürü','Diğer'];
+ if(ORTA(f.sinif))return ['Matematik','Türkçe','Fen Bilimleri','Sosyal Bilgiler','İngilizce','Din Kültürü','Diğer'];
+ var L=['Matematik','Geometri','Türkçe','Edebiyat','Fizik','Kimya','Biyoloji','Tarih','Coğrafya','Felsefe','Din Kültürü','İngilizce','Diğer'];
+ if(f.alan==='SAY')L=L.filter(function(x){return x!=='Edebiyat';});
+ return L;
+}
 function dersSirala(){
  var f=window.MF_SINIF(),sel=$('pm-ders'),kap=$('pm-ders-c');if(!sel||!kap)return;
  if(!ORJ)ORJ=[].map.call(sel.options,function(o){return o.value||o.text;});
  var anah=f&&(ORTA(f.sinif)?'8':((f.sinif==='11'||f.sinif==='12'||f.sinif==='Mezun')&&f.alan?f.alan:''));
  var on=(anah&&DERS_SIRA[anah])||[];
  var yeni=on.filter(function(x){return ORJ.indexOf(x)>=0;}).concat(ORJ.filter(function(x){return on.indexOf(x)<0;}));
+ // sınıfa göre süzme: yalnız o sınıfın dersleri görünür (sınıf seçilmediyse hepsi)
+ var izin=dersIzin(f);
+ if(izin)yeni=yeni.filter(function(x){return izin.indexOf(x)>=0;}).concat(yeni.filter(function(x){return izin.indexOf(x)<0;}));
  var v=sel.value;
  yeni.forEach(function(ad){
   var o=[].filter.call(sel.options,function(x){return (x.value||x.text)===ad;})[0];if(o)sel.appendChild(o);
   var b=[].filter.call(kap.children,function(x){return x.dataset.v===ad;})[0];if(b)kap.appendChild(b);
  });
+ [].forEach.call(kap.children,function(x){x.hidden=!!izin&&izin.indexOf(x.dataset.v)<0;});
+ if(izin&&izin.indexOf(v)<0){v=izin[0];sel.value=v;sel.dispatchEvent(new Event('change'));}
  sel.value=v;kap.scrollLeft=0;
  var sec=kap.querySelector('.on');if(sec&&sec.offsetLeft>kap.clientWidth-60)kap.scrollLeft=Math.max(0,sec.offsetLeft-kap.offsetLeft-16);
 }

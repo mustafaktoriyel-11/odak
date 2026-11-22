@@ -9,9 +9,10 @@
   var DURUM_K='pm-durum',KAYIT_K='pm-kayit',AYAR_K='pm-ayar';
   function oku(k,v){try{var x=localStorage.getItem(k);return x?JSON.parse(x):v;}catch(e){return v;}}
   function yaz(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
-  var ayar=oku(AYAR_K,{odak:'25',ses:'',seviye:40,ders:''});
+  var ayar=oku(AYAR_K,{odak:'40',ses:'',seviye:40,ders:''});
+  if(ayar.odak==='25'||ayar.odak==='50'){ayar.ozel=+ayar.odak;ayar.odak='ozel';} // 25/50 seçenekleri kalktı: eski seçim özel süre olur
   if(ayar.sinav)$('pm-sinav').value=ayar.sinav;$('pm-odak').value=ayar.odak;if(ayar.ozel)$('pm-ozel').value=ayar.ozel;$('pm-ses').value=ayar.ses;$('pm-seviye').value=ayar.seviye;if(ayar.ders)$('pm-ders').value=dersAd(ayar.ders);if(!$('pm-ders').value)$('pm-ders').selectedIndex=0;
-  if(!$('pm-odak').value)$('pm-odak').value='25';
+  if(!$('pm-odak').value)$('pm-odak').value='40';
   function ayarKaydet(){ayar={odak:$('pm-odak').value,ses:$('pm-ses').value,seviye:+$('pm-seviye').value,ders:$('pm-ders').value,siki:$('pm-siki').checked,sinav:$('pm-sinav').value,ozel:odakDk()};yaz(AYAR_K,ayar);}
   // durum: mod, toplam(ms), bitis(ms|null), kalan(ms), calisiyor, tur, ders, basla
   var d=oku(DURUM_K,null);
@@ -59,6 +60,8 @@
       $('pm-etiket').textContent=d.calisiyor?'Serbest · '+(d.ders||$('pm-ders').value):(k===d.toplam?'Serbest çalışma':'Duraklatıldı');
       document.title=(d.calisiyor?gt+' – ':'')+BASLIK;$('pm-saat').classList.add('serbest');
     }else $('pm-saat').classList.remove('serbest');
+    if(window.MF_KADRAN)try{window.MF_KADRAN({k:k,toplam:d.toplam,calisiyor:d.calisiyor,bitis:d.bitis,mod:d.mod,mola:mola,
+      serbest:d.mod==='odak'&&(d.serbest||(!d.calisiyor&&k===d.toplam&&$('pm-odak').value==='serbest'))});}catch(e){}
     kilitEkrani(k);
     tutGuncelle();
   }
@@ -389,7 +392,7 @@
   $('pm-ozel').addEventListener('change',function(){$('pm-ozel').value=odakDk();sureDegisti();});
   ozelNot();
   // --- cip secicileri (gizli select'leri yonetir; mantik ayni kalir) ---
-  var CIP_AD={'25':'25 dk','40':'40 dk','50':'50 dk','ozel':'Özel','serbest':'∞'};
+  var CIP_AD={'40':'40 dk','ozel':'Özel','serbest':'∞ Sınırsız'};
   function cipKur(sid,kid){
     var sel=$(sid),kap=$(kid);
     [].forEach.call(sel.options,function(o){var b=document.createElement('button');b.type='button';b.setAttribute('role','radio');b.dataset.v=o.value;b.textContent=CIP_AD[o.value]||o.text;
@@ -397,7 +400,7 @@
   }
   var seansDurum=false,seansT=null;
   function seansGizle(g){if(g===seansDurum)return;seansDurum=g;clearTimeout(seansT);
-    var el=['pm-ders-k','pm-odak-k','pm-ozel-k'].map($);
+    var el=['pm-ders-k','pm-odak-k','pm-ozel-k','pm-kadran-k'].map($).filter(Boolean);
     if(window.LV_KATLA){el.forEach(function(e){LV_KATLA(e,g);});return;}
     el.forEach(function(e){e.classList.toggle('seans-gizli',g);});}
   function cipGuncelle(){
@@ -788,6 +791,7 @@
       if(s==='program'){secGun=bugunI();ciz2();}window.scrollTo(0,0);}
     [].forEach.call(document.querySelectorAll('#alt-nav button'),function(b){b.addEventListener('click',function(){sayfa(b.dataset.s);});});
     // seans sonunda: bugunku programin ne kadari bitti
+    window.MF_PR_GUN=function(){var bi=bugunI();if(!pr.g[bi].length)return null;return gunOzet(bi);};
     window.MF_PR_OZET=function(ders){
       var bi=bugunI(),g=pr.g[bi];if(!g.length)return null;
       var oz=gunOzet(bi),yz=Math.min(100,Math.round(oz.yap*100/oz.hed)),ayr=[];
