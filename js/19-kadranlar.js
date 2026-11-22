@@ -125,7 +125,10 @@
     for(var i=par.length-1;i>=0;i--){x-=13;o+='<text x="'+f(x)+'" y="'+y+'" class="dj-birim">'+par[i][1]+'</text>';x-=3.5;
       var g=rakamlar(par[i][0],16,renk);x-=g[1];o+='<g transform="translate('+f(x)+' '+y+')">'+g[0]+'</g>';x-=9;}
     $(id).innerHTML=o;}
-  function programAc(e){e.stopPropagation();var b=document.querySelector('#alt-nav [data-s="program"],[data-s="program"]');if(b)b.click();}
+  // Takip sekmesinin düğmesi son açılana göre 'program' ya da 'istat' olur; bu yüzden düğmeye değil doğrudan sayfa geçişine git
+  function programAc(e){e.stopPropagation();if(e.preventDefault)e.preventDefault();
+    if(window.MF_SAYFA){window.MF_SAYFA('program');try{window.scrollTo(0,0);}catch(x){}}
+    else{var b=document.querySelector('#alt-nav [data-takip]');if(b){b.dataset.s='program';b.click();}}}
   function yaziYaz(id,t,cls){$(id).innerHTML='<text x="224" y="'+(+$(id).getAttribute('data-y')-1)+'" class="dj-yazi '+(cls||'')+'">'+t+'</text>';}
   function cizDj(k){
     var dur=!S.calisiyor&&k!==S.toplam&&(S.serbest||k>0),son5=!S.serbest&&S.mod!=='kisa'&&S.mod!=='uzun'&&k>0&&k<=300000,od=odakMi();
