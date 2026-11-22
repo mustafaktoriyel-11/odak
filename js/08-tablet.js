@@ -36,7 +36,7 @@
   // başlıkta sayfa adı ve tarih
   var ui=document.querySelector('.ust-ic'),sy=document.createElement('span');sy.className='tb-sayfa';
   var ay=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
-  function sayfaAd(){var c=document.body.classList,n=c.contains('s-mantik')?'Mantık':c.contains('s-kutuphane')?'Kütüphane':c.contains('s-program')||c.contains('s-istat')?'Takip':'Çalışma',d=new Date();sy.textContent=n+' · '+d.getDate()+' '+ay[d.getMonth()]+' '+GN[d.getDay()];}
+  function sayfaAd(){var c=document.body.classList,n=c.contains('s-mantik')?'Yolculuk':c.contains('s-kutuphane')?'Kütüphane':c.contains('s-program')||c.contains('s-istat')?'Takip':'Çalışma',d=new Date();sy.textContent=n+' · '+d.getDate()+' '+ay[d.getMonth()]+' '+GN[d.getDay()];}
   if(ui){var tm=document.getElementById('sn-say')||document.getElementById('tema');if(tm&&tm.parentNode===ui)ui.insertBefore(sy,tm);else ui.appendChild(sy);new MutationObserver(sayfaAd).observe(document.body,{attributes:true,attributeFilter:['class']});sayfaAd();}
   function oku(a,v){try{var x=JSON.parse(localStorage.getItem(a)||'null');return x==null?v:x;}catch(e){return v;}}
   function gun(t){var x=new Date(t);return x.getFullYear()+'-'+(x.getMonth()+1)+'-'+x.getDate();}

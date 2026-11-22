@@ -52,7 +52,7 @@
     maskotsuz=!M;document.body.style.setProperty('--omS',(M||64)+'px');
     var kd=window.MF_KD_ORAN&&window.MF_KD_ORAN();
     if(kd){ // yeni kadranlar kare değil: ölçek, en-boy oranına (+ etiket) göre ekrana sığacak şekilde; animasyon yine transform (scale) ile akıcı
-      var Wm=Math.min((saat.parentNode&&saat.parentNode.clientWidth)||avW,560),Bw=saat.offsetWidth||300,Bh=Bw*kd.ra+kd.e;
+      var Wm=Math.min((saat.parentNode&&saat.parentNode.clientWidth)||avW,gen?760:560),Bw=saat.offsetWidth||300,Bh=Bw*kd.ra+kd.e;
       maskotsuz=true;M=0;document.body.style.setProperty('--omS','64px');
       var Sk=Math.max(1,Math.min(Wm/Bw,(H-EK-12)/Bh));
       saat.style.setProperty('--lvS',Sk.toFixed(4));saat.style.setProperty('--lvI',(1/Sk).toFixed(4));saat.style.setProperty('--lvM',(Bh*(Sk-1)/2).toFixed(1)+'px');
@@ -66,10 +66,10 @@
   function guncelle(aninda){
     var on=/Duraklat/.test(bb.textContent)&&sayacSayfasi();
     if(on===acik)return;var ilk=acik===null;acik=on;
+    document.body.classList.toggle('lv-odak',on); // önce tek sütun düzenine geç, sonra ölç
     if(on)olc();
     hedefler().forEach(function(e){katla(e,on,aninda||ilk);});
     if(on)maskot();katla(mk,!on||maskotsuz,aninda||ilk);
-    document.body.classList.toggle('lv-odak',on);
     if(on&&!ilk&&!aninda)window.scrollTo({top:0,behavior:az.matches?'auto':'smooth'});
   }
   new MutationObserver(function(){guncelle(false);}).observe(bb,{childList:true,characterData:true,subtree:true});

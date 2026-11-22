@@ -1775,3 +1775,18 @@ html.mf-gece .bk-kara{fill:#4A4030}html.mf-gece .bk-kara2{fill:#55492F}html.mf-g
 @keyframes izm-b{0%,20%,60%,100%{transform:rotate(0)}32%{transform:rotate(4deg)}46%{transform:rotate(-3deg)}}
 @keyframes izm-g{0%,90%,96%,100%{transform:scaleY(1)}93%{transform:scaleY(.08)}}
 @media (prefers-reduced-motion:reduce){.izm-kuyruk,.izm-bas,.izm-goz{animation:none}}
+/* geniş ekran: kadran yazıları ekran genişliğiyle büyümesin (cqw kapsayıcısız → görüntü alanına göre hesaplanıyordu) */
+.pm-saat.kd-bc .pm-etiket,.pm-saat.kd-ks .pm-etiket,.pm-saat.kd-dj .pm-etiket{font-size:min(4.6cqw,16px);margin-top:min(2.4cqw,10px)}
+.pm-saat.kd-bc .tb-ders-ad,.pm-saat.kd-ks .tb-ders-ad,.pm-saat.kd-dj .tb-ders-ad{font-size:min(4.8cqw,20px);margin-top:min(1cqw,4px)}
+@media (min-width:760px){
+  /* sağ sütun kendi içeriği kadar: "Bu hafta" kartı boş uzamasın */
+  #pg-sayac>.tb-yan{align-self:start}
+  .tb-yan>#tb-hafta,.tb-yan>#tb-hafta .tb-hf{flex:none}
+  .tb-yan>#tb-hafta .tb-cubuk{flex:none;height:170px;min-height:0;margin-top:6px}
+}
+@media (min-width:760px){body:not(.tb-calisiyor) .pm-saat .tb-ders-ad{display:none}}
+@media (min-width:760px){
+  /* odak ekranı: tek sütun, sayaç ortada */
+  body.lv-odak #pg-sayac{grid-template-columns:minmax(0,1fr)!important}
+  body.lv-odak #pg-sayac>*{grid-column:1!important}
+}
