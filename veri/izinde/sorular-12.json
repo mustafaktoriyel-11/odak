@@ -1906,6 +1906,393 @@
    "c": 2,
    "a": "$2x\\in[0,2\\pi]$ için $2x=\\dfrac{\\pi}{3}$ veya $2x=\\dfrac{5\\pi}{3}$ olur. Buradan $x=\\dfrac{\\pi}{6}$ ve $x=\\dfrac{5\\pi}{6}$ bulunur; toplam $\\pi$ olur.",
    "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0120",
+   "konu": "12.3.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki eşitliklerden hangisi her $a$ ve $b$ gerçek sayısı için doğrudur?",
+   "o": [
+    "$\\sin(a+b)=\\sin a+\\sin b$",
+    "$\\cos(a+b)=\\cos a\\cos b+\\sin a\\sin b$",
+    "$\\sin(a-b)=\\sin a\\cos b+\\cos a\\sin b$",
+    "$\\cos(a-b)=\\cos a\\cos b+\\sin a\\sin b$",
+    "$\\sin 2a=2\\sin a$"
+   ],
+   "c": 3,
+   "a": "Kosinüsün fark formülü $\\cos(a-b)=\\cos a\\cos b+\\sin a\\sin b$'dir. Toplam için işaret $-$, sinüs farkında ise ikinci terimin işareti $-$ olmalıdır; $\\sin(a+b)$ ve $\\sin 2a$ ifadeleri de toplam şeklinde açılmaz.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0121",
+   "konu": "12.3.1",
+   "zorluk": 1,
+   "s": "$\\cos 105^\\circ$ değeri aşağıdakilerden hangisidir?",
+   "o": [
+    "$\\dfrac{\\sqrt{6}-\\sqrt{2}}{4}$",
+    "$\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$",
+    "$-\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$",
+    "$\\dfrac{\\sqrt{3}-1}{2}$",
+    "$\\dfrac{\\sqrt{2}-\\sqrt{6}}{4}$"
+   ],
+   "c": 4,
+   "a": "$\\cos105^\\circ=\\cos(60^\\circ+45^\\circ)=\\cos60^\\circ\\cos45^\\circ-\\sin60^\\circ\\sin45^\\circ=\\dfrac{\\sqrt{2}}{4}-\\dfrac{\\sqrt{6}}{4}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0122",
+   "konu": "12.3.1",
+   "zorluk": 1,
+   "s": "$\\dfrac{2\\tan15^\\circ}{1-\\tan^{2}15^\\circ}$ işleminin sonucu kaçtır?",
+   "o": [
+    "$\\dfrac{\\sqrt{3}}{3}$",
+    "$\\sqrt{3}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{2\\sqrt{3}}{3}$",
+    "$1$"
+   ],
+   "c": 0,
+   "a": "İfade iki kat açı formülüne göre $\\tan(2\\cdot15^\\circ)=\\tan30^\\circ=\\dfrac{\\sqrt{3}}{3}$ değerine eşittir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0123",
+   "konu": "12.3.1",
+   "zorluk": 1,
+   "s": "Şekildeki birim çemberde $P\\left(-\\dfrac{4}{5},\\dfrac{3}{5}\\right)$ noktası verilmiştir. $\\theta$, $Ox$ ekseninin pozitif yönü ile $OP$ ışını arasındaki yönlü açı olduğuna göre $\\sin2\\theta$ kaçtır?",
+   "o": [
+    "$\\dfrac{24}{25}$",
+    "$-\\dfrac{12}{25}$",
+    "$\\dfrac{7}{25}$",
+    "$-\\dfrac{24}{25}$",
+    "$-\\dfrac{7}{25}$"
+   ],
+   "c": 3,
+   "a": "Birim çemberde $\\cos\\theta=-\\dfrac{4}{5}$ ve $\\sin\\theta=\\dfrac{3}{5}$'tir. $\\sin2\\theta=2\\sin\\theta\\cos\\theta=2\\cdot\\dfrac{3}{5}\\cdot\\left(-\\dfrac{4}{5}\\right)=-\\dfrac{24}{25}$ bulunur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"40\" y1=\"66\" x2=\"215\" y2=\"66\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"120\" y1=\"8\" x2=\"120\" y2=\"124\" stroke=\"#141B3F\" stroke-width=\"1\"/><circle cx=\"120\" cy=\"66\" r=\"52\" fill=\"none\" stroke=\"#9AA3C7\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"66\" x2=\"78.4\" y2=\"34.8\" stroke=\"#1E3BD6\" stroke-width=\"1.6\"/><line x1=\"78.4\" y1=\"34.8\" x2=\"78.4\" y2=\"66\" stroke=\"#FF8A1F\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><circle cx=\"78.4\" cy=\"34.8\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><path d=\"M 134 66 A 14 14 0 0 0 108.8 57.6\" fill=\"none\" stroke=\"#1FA463\" stroke-width=\"1.4\"/><text x=\"136\" y=\"52\" font-size=\"10\" fill=\"#1FA463\">θ</text><text x=\"72.4\" y=\"29.8\" font-size=\"9\" text-anchor=\"end\" fill=\"#141B3F\">P(-4/5, 3/5)</text><text x=\"124\" y=\"77\" font-size=\"8\" fill=\"#141B3F\">O</text><text x=\"213\" y=\"77\" font-size=\"8\" fill=\"#141B3F\">x</text><text x=\"125\" y=\"14\" font-size=\"8\" fill=\"#141B3F\">y</text></svg>"
+  },
+  {
+   "id": "12-0124",
+   "konu": "12.3.1",
+   "zorluk": 2,
+   "s": "Şekildeki ABC dik üçgeninde $m(\\widehat{ABC})=90^\\circ$, $D\\in[BC]$, $|AB|=6$ birim, $|BD|=2$ birim ve $|DC|=7$ birimdir. $\\tan(\\widehat{DAC})$ değeri kaçtır?",
+   "o": [
+    "$\\dfrac{7}{6}$",
+    "$\\dfrac{7}{3}$",
+    "$\\dfrac{7}{9}$",
+    "$\\dfrac{9}{7}$",
+    "$\\dfrac{1}{2}$"
+   ],
+   "c": 2,
+   "a": "$\\tan(\\widehat{BAC})=\\dfrac{9}{6}=\\dfrac{3}{2}$ ve $\\tan(\\widehat{BAD})=\\dfrac{2}{6}=\\dfrac{1}{3}$ olur. $\\tan(\\widehat{DAC})=\\tan(\\widehat{BAC}-\\widehat{BAD})=\\dfrac{\\frac{3}{2}-\\frac{1}{3}}{1+\\frac{3}{2}\\cdot\\frac{1}{3}}=\\dfrac{7}{9}$ bulunur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"50.0,30.0 50.0,108.0 167.0,108.0\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.4\"/><line x1=\"50.0\" y1=\"30.0\" x2=\"76.0\" y2=\"108.0\" stroke=\"#FF8A1F\" stroke-width=\"1.6\"/><polyline points=\"50.0,100.0 58.0,100.0 58.0,108.0\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1\"/><text x=\"44.0\" y=\"34.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">A</text><text x=\"44.0\" y=\"112.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">B</text><text x=\"172.0\" y=\"112.0\" font-size=\"10\" fill=\"#141B3F\">C</text><text x=\"76.0\" y=\"121.0\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">D</text><text x=\"44.0\" y=\"69.0\" font-size=\"9\" text-anchor=\"end\" fill=\"#1E3BD6\">6</text><text x=\"63.0\" y=\"121.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">2</text><text x=\"121.5\" y=\"121.0\" font-size=\"9\" text-anchor=\"middle\" fill=\"#1E3BD6\">7</text></svg>"
+  },
+  {
+   "id": "12-0125",
+   "konu": "12.3.1",
+   "zorluk": 2,
+   "s": "$\\tan(45^\\circ+x)=3$ olduğuna göre $\\tan x$ kaçtır?",
+   "o": [
+    "$2$",
+    "$\\dfrac{1}{3}$",
+    "$\\dfrac{1}{4}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{2}{3}$"
+   ],
+   "c": 3,
+   "a": "$\\tan(45^\\circ+x)=\\dfrac{1+\\tan x}{1-\\tan x}=3$ olduğundan $1+\\tan x=3-3\\tan x$ ve $\\tan x=\\dfrac{1}{2}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0126",
+   "konu": "12.3.1",
+   "zorluk": 2,
+   "s": "$\\dfrac{\\pi}{2}<x<\\pi$ ve $\\sin x=\\dfrac{3}{5}$ olduğuna göre $\\cos\\left(x+60^\\circ\\right)$ kaçtır?",
+   "o": [
+    "$-\\dfrac{4+3\\sqrt{3}}{10}$",
+    "$\\dfrac{4+3\\sqrt{3}}{10}$",
+    "$\\dfrac{3\\sqrt{3}-4}{10}$",
+    "$\\dfrac{4-3\\sqrt{3}}{10}$",
+    "$\\dfrac{3-4\\sqrt{3}}{10}$"
+   ],
+   "c": 0,
+   "a": "$x$ ikinci bölgede olduğundan $\\cos x=-\\dfrac{4}{5}$'tir. $\\cos(x+60^\\circ)=\\cos x\\cos60^\\circ-\\sin x\\sin60^\\circ=-\\dfrac{4}{10}-\\dfrac{3\\sqrt{3}}{10}=-\\dfrac{4+3\\sqrt{3}}{10}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0127",
+   "konu": "12.3.1",
+   "zorluk": 2,
+   "s": "Yerden $v=20$ m/sn hızla ve yatayla $\\theta$ dar açısı yapacak şekilde atılan bir topun menzili $R=\\dfrac{v^{2}\\sin2\\theta}{g}$ bağıntısıyla bulunur. $g=10$ m/sn$^{2}$ ve $\\tan\\theta=\\dfrac{3}{4}$ olduğuna göre top kaç metre uzağa düşer?",
+   "o": [
+    "$24$",
+    "$38{,}4$",
+    "$30$",
+    "$32$",
+    "$60$"
+   ],
+   "c": 1,
+   "a": "$\\tan\\theta=\\dfrac{3}{4}$ ise $\\sin\\theta=\\dfrac{3}{5}$ ve $\\cos\\theta=\\dfrac{4}{5}$ olur; $\\sin2\\theta=\\dfrac{24}{25}$'tir. $R=\\dfrac{400\\cdot\\frac{24}{25}}{10}=38{,}4$ metre bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0128",
+   "konu": "12.3.1",
+   "zorluk": 2,
+   "s": "$x$ dar açı ve $\\cos2x=\\dfrac{7}{25}$ olduğuna göre $\\tan x$ kaçtır?",
+   "o": [
+    "$\\dfrac{4}{3}$",
+    "$\\dfrac{24}{7}$",
+    "$\\dfrac{3}{5}$",
+    "$\\dfrac{4}{5}$",
+    "$\\dfrac{3}{4}$"
+   ],
+   "c": 4,
+   "a": "$2\\cos^{2}x-1=\\dfrac{7}{25}$ ise $\\cos^{2}x=\\dfrac{16}{25}$ ve $x$ dar açı olduğundan $\\cos x=\\dfrac{4}{5}$, $\\sin x=\\dfrac{3}{5}$'tir. Buradan $\\tan x=\\dfrac{3}{4}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0129",
+   "konu": "12.3.1",
+   "zorluk": 3,
+   "s": "$\\tan20^\\circ+\\tan25^\\circ+\\tan20^\\circ\\cdot\\tan25^\\circ$ işleminin sonucu kaçtır?",
+   "o": [
+    "$0$",
+    "$2$",
+    "$1$",
+    "$\\dfrac{\\sqrt{3}}{3}$",
+    "$\\sqrt{3}$"
+   ],
+   "c": 2,
+   "a": "$\\tan45^\\circ=\\dfrac{\\tan20^\\circ+\\tan25^\\circ}{1-\\tan20^\\circ\\tan25^\\circ}=1$ olduğundan $\\tan20^\\circ+\\tan25^\\circ=1-\\tan20^\\circ\\tan25^\\circ$ olur. Verilen ifade $1$'e eşittir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0130",
+   "konu": "12.3.1",
+   "zorluk": 3,
+   "s": "$\\cos36^\\circ\\cdot\\cos72^\\circ$ çarpımı kaçtır?",
+   "o": [
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{1}{4}$",
+    "$\\dfrac{1}{8}$",
+    "$\\dfrac{\\sqrt{5}}{8}$",
+    "$\\dfrac{\\sqrt{3}}{4}$"
+   ],
+   "c": 1,
+   "a": "Çarpımı $\\sin36^\\circ$ ile çarpıp bölelim: $\\sin36^\\circ\\cos36^\\circ\\cos72^\\circ=\\dfrac{1}{2}\\sin72^\\circ\\cos72^\\circ=\\dfrac{1}{4}\\sin144^\\circ=\\dfrac{1}{4}\\sin36^\\circ$ olur. Buradan çarpım $\\dfrac{1}{4}$ bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0131",
+   "konu": "12.3.1",
+   "zorluk": 3,
+   "s": "ABC üçgeninde $\\tan A=2$ ve $\\tan B=3$ olduğuna göre $m(\\widehat{C})$ kaç derecedir?",
+   "o": [
+    "$135^\\circ$",
+    "$30^\\circ$",
+    "$45^\\circ$",
+    "$60^\\circ$",
+    "$75^\\circ$"
+   ],
+   "c": 2,
+   "a": "$A+B+C=180^\\circ$ olduğundan $\\tan C=-\\tan(A+B)=-\\dfrac{2+3}{1-6}=1$ bulunur. $0^\\circ<C<180^\\circ$ olduğundan $C=45^\\circ$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0132",
+   "konu": "12.3.2",
+   "zorluk": 1,
+   "s": "$2\\sin x+\\sqrt{3}=0$ denkleminin $[0^\\circ,360^\\circ)$ aralığındaki köklerinin toplamı kaç derecedir?",
+   "o": [
+    "$180^\\circ$",
+    "$360^\\circ$",
+    "$540^\\circ$",
+    "$480^\\circ$",
+    "$600^\\circ$"
+   ],
+   "c": 2,
+   "a": "$\\sin x=-\\dfrac{\\sqrt{3}}{2}$ olur; sinüs negatif olduğundan kökler 3. ve 4. bölgededir: $x=240^\\circ$ ve $x=300^\\circ$. Toplam $540^\\circ$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0133",
+   "konu": "12.3.2",
+   "zorluk": 1,
+   "s": "$2\\cos x+1=0$ denkleminin $[-\\pi,\\pi]$ aralığındaki en büyük kökü kaçtır?",
+   "o": [
+    "$\\dfrac{4\\pi}{3}$",
+    "$\\dfrac{\\pi}{3}$",
+    "$\\dfrac{5\\pi}{6}$",
+    "$\\pi$",
+    "$\\dfrac{2\\pi}{3}$"
+   ],
+   "c": 4,
+   "a": "$\\cos x=-\\dfrac{1}{2}$ olur. $[-\\pi,\\pi]$ aralığında kökler $x=-\\dfrac{2\\pi}{3}$ ve $x=\\dfrac{2\\pi}{3}$'tür; $\\dfrac{4\\pi}{3}$ aralığın dışındadır. En büyük kök $\\dfrac{2\\pi}{3}$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0134",
+   "konu": "12.3.2",
+   "zorluk": 1,
+   "s": "Şekildeki birim çemberde $y=-\\dfrac{1}{2}$ doğrusu çemberi A ve B noktalarında kesmektedir. $OA$ ve $OB$ ışınlarının $Ox$ ekseninin pozitif yönü ile yaptığı yönlü açıların ölçüleri $[0,2\\pi)$ aralığında alınırsa bu iki ölçünün toplamı kaçtır?",
+   "o": [
+    "$3\\pi$",
+    "$\\pi$",
+    "$2\\pi$",
+    "$4\\pi$",
+    "$\\dfrac{7\\pi}{3}$"
+   ],
+   "c": 0,
+   "a": "Noktaların ordinatı $-\\dfrac{1}{2}$ olduğundan $\\sin x=-\\dfrac{1}{2}$ denklemi çözülür: $x=\\dfrac{7\\pi}{6}$ ve $x=\\dfrac{11\\pi}{6}$. Toplam $\\dfrac{18\\pi}{6}=3\\pi$ bulunur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"40\" y1=\"62\" x2=\"215\" y2=\"62\" stroke=\"#141B3F\" stroke-width=\"1\"/><line x1=\"120\" y1=\"4\" x2=\"120\" y2=\"120\" stroke=\"#141B3F\" stroke-width=\"1\"/><circle cx=\"120\" cy=\"62\" r=\"52\" fill=\"none\" stroke=\"#9AA3C7\" stroke-width=\"1.2\"/><line x1=\"45.0\" y1=\"88.0\" x2=\"195.0\" y2=\"88.0\" stroke=\"#FF8A1F\" stroke-width=\"1.4\"/><line x1=\"120\" y1=\"62\" x2=\"75.0\" y2=\"88.0\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"62\" x2=\"165.0\" y2=\"88.0\" stroke=\"#1E3BD6\" stroke-width=\"1.5\"/><circle cx=\"75.0\" cy=\"88.0\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><circle cx=\"165.0\" cy=\"88.0\" r=\"3\" fill=\"#1E3BD6\" stroke=\"#1E3BD6\" stroke-width=\"1\"/><text x=\"69.0\" y=\"84.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">A</text><text x=\"171.0\" y=\"84.0\" font-size=\"10\" fill=\"#141B3F\">B</text><text x=\"199.0\" y=\"99.0\" font-size=\"9\" fill=\"#FF8A1F\">y = -1/2</text><text x=\"124\" y=\"58\" font-size=\"8\" fill=\"#141B3F\">O</text><text x=\"213\" y=\"73\" font-size=\"8\" fill=\"#141B3F\">x</text><text x=\"125\" y=\"12\" font-size=\"8\" fill=\"#141B3F\">y</text></svg>"
+  },
+  {
+   "id": "12-0135",
+   "konu": "12.3.2",
+   "zorluk": 1,
+   "s": "$\\sin x=0$ denkleminin $[-2\\pi,2\\pi]$ aralığında kaç farklı kökü vardır?",
+   "o": [
+    "$5$",
+    "$4$",
+    "$3$",
+    "$6$",
+    "$2$"
+   ],
+   "c": 0,
+   "a": "Kökler $x=k\\pi$ biçimindedir. $[-2\\pi,2\\pi]$ aralığında $-2\\pi,-\\pi,0,\\pi,2\\pi$ olmak üzere $5$ kök vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0136",
+   "konu": "12.3.2",
+   "zorluk": 2,
+   "s": "$2\\sin^{2}x=1+\\cos x$ denkleminin $[0,2\\pi)$ aralığındaki köklerinin toplamı kaçtır?",
+   "o": [
+    "$3\\pi$",
+    "$2\\pi$",
+    "$4\\pi$",
+    "$\\pi$",
+    "$\\dfrac{5\\pi}{3}$"
+   ],
+   "c": 0,
+   "a": "$\\sin^{2}x=1-\\cos^{2}x$ yazılırsa $2\\cos^{2}x+\\cos x-1=0$ ve $(2\\cos x-1)(\\cos x+1)=0$ olur. $\\cos x=\\dfrac{1}{2}$ için $x=\\dfrac{\\pi}{3},\\dfrac{5\\pi}{3}$; $\\cos x=-1$ için $x=\\pi$ bulunur. Toplam $3\\pi$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0137",
+   "konu": "12.3.2",
+   "zorluk": 2,
+   "s": "$\\sqrt{3}\\sin x+\\cos x=\\sqrt{3}$ denkleminin $[0,2\\pi)$ aralığındaki köklerinin toplamı kaçtır?",
+   "o": [
+    "$\\dfrac{\\pi}{6}$",
+    "$\\dfrac{2\\pi}{3}$",
+    "$\\dfrac{\\pi}{2}$",
+    "$\\dfrac{4\\pi}{3}$",
+    "$\\pi$"
+   ],
+   "c": 1,
+   "a": "$\\sqrt{3}\\sin x+\\cos x=2\\sin\\left(x+\\dfrac{\\pi}{6}\\right)$ olduğundan $\\sin\\left(x+\\dfrac{\\pi}{6}\\right)=\\dfrac{\\sqrt{3}}{2}$ olur. $x+\\dfrac{\\pi}{6}=\\dfrac{\\pi}{3}$ veya $\\dfrac{2\\pi}{3}$ ise $x=\\dfrac{\\pi}{6}$ veya $x=\\dfrac{\\pi}{2}$ bulunur; toplam $\\dfrac{2\\pi}{3}$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0138",
+   "konu": "12.3.2",
+   "zorluk": 2,
+   "s": "Bir dönme dolabın kabininin yerden yüksekliği $h(t)=10-8\\cos\\dfrac{\\pi t}{30}$ metredir ($t$ saniye, $0\\le t\\le60$). Kabin hareketin başlangıcından sonra ilk kez $14$ metre yüksekliğe kaçıncı saniyede ulaşır?",
+   "o": [
+    "$10$",
+    "$40$",
+    "$30$",
+    "$20$",
+    "$15$"
+   ],
+   "c": 3,
+   "a": "$10-8\\cos\\dfrac{\\pi t}{30}=14$ ise $\\cos\\dfrac{\\pi t}{30}=-\\dfrac{1}{2}$ olur. İlk çözüm $\\dfrac{\\pi t}{30}=\\dfrac{2\\pi}{3}$, yani $t=20$ saniyedir; $t=40$ ise ikinci geçiştir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0139",
+   "konu": "12.3.2",
+   "zorluk": 2,
+   "s": "$\\sin x-\\cos x=1$ denkleminin $[0^\\circ,360^\\circ)$ aralığındaki köklerinin toplamı kaç derecedir?",
+   "o": [
+    "$540^\\circ$",
+    "$270^\\circ$",
+    "$180^\\circ$",
+    "$90^\\circ$",
+    "$360^\\circ$"
+   ],
+   "c": 1,
+   "a": "$\\sin x-\\cos x=\\sqrt{2}\\sin(x-45^\\circ)=1$ ise $x-45^\\circ=45^\\circ$ veya $135^\\circ$ olur; $x=90^\\circ$ ve $x=180^\\circ$ bulunur. Toplam $270^\\circ$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0140",
+   "konu": "12.3.2",
+   "zorluk": 2,
+   "s": "$\\sin\\left(x+\\dfrac{\\pi}{6}\\right)=\\cos x$ denkleminin $[0,2\\pi)$ aralığındaki köklerinin toplamı kaçtır?",
+   "o": [
+    "$\\dfrac{5\\pi}{3}$",
+    "$\\dfrac{4\\pi}{3}$",
+    "$2\\pi$",
+    "$\\pi$",
+    "$\\dfrac{7\\pi}{6}$"
+   ],
+   "c": 1,
+   "a": "Toplam formülüyle $\\dfrac{\\sqrt{3}}{2}\\sin x+\\dfrac{1}{2}\\cos x=\\cos x$ ve $\\sqrt{3}\\sin x=\\cos x$ olur, yani $\\tan x=\\dfrac{\\sqrt{3}}{3}$. Kökler $\\dfrac{\\pi}{6}$ ve $\\dfrac{7\\pi}{6}$ olup toplamları $\\dfrac{4\\pi}{3}$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0141",
+   "konu": "12.3.2",
+   "zorluk": 3,
+   "s": "$\\sin2x=\\cos3x$ denkleminin $[0,2\\pi)$ aralığında kaç farklı kökü vardır?",
+   "o": [
+    "$5$",
+    "$4$",
+    "$3$",
+    "$6$",
+    "$10$"
+   ],
+   "c": 3,
+   "a": "$\\cos3x=\\sin\\left(\\dfrac{\\pi}{2}-3x\\right)$ yazılırsa $2x=\\dfrac{\\pi}{2}-3x+2k\\pi$ veya $2x=\\pi-\\dfrac{\\pi}{2}+3x+2k\\pi$ olur. İlk durumda $x=\\dfrac{\\pi}{10}+\\dfrac{2k\\pi}{5}$ ile $5$ kök ($\\dfrac{\\pi}{10},\\dfrac{\\pi}{2},\\dfrac{9\\pi}{10},\\dfrac{13\\pi}{10},\\dfrac{17\\pi}{10}$), ikinci durumda $x=-\\dfrac{\\pi}{2}+2k\\pi$ ile $\\dfrac{3\\pi}{2}$ bulunur. Toplam $6$ kök vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0142",
+   "konu": "12.3.2",
+   "zorluk": 3,
+   "s": "$3\\sin x+4\\cos x=k$ denkleminin $[0,2\\pi)$ aralığında tam iki farklı kökü olması için $k$ kaç farklı tam sayı değeri alabilir?",
+   "o": [
+    "$11$",
+    "$10$",
+    "$9$",
+    "$8$",
+    "$7$"
+   ],
+   "c": 2,
+   "a": "$3\\sin x+4\\cos x=5\\sin(x+\\varphi)$ olduğundan ifade $[-5,5]$ değerlerini alır. $|k|<5$ iken bir tam turda iki kök vardır; $k=\\pm5$ için yalnız birer kök bulunur. Buna göre $k\\in\\{-4,-3,\\dots,4\\}$ olup $9$ değer vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "12-0143",
+   "konu": "12.3.2",
+   "zorluk": 3,
+   "s": "Bir limanda su yüksekliği $h(t)=3+2\\sin\\dfrac{\\pi t}{6}$ metredir ($t$: gece yarısından sonra geçen saat). $[0,24)$ aralığında su yüksekliğinin tam $4$ metre olduğu anların ($t$ değerlerinin) toplamı kaçtır?",
+   "o": [
+    "$18$",
+    "$24$",
+    "$30$",
+    "$48$",
+    "$36$"
+   ],
+   "c": 4,
+   "a": "$3+2\\sin\\dfrac{\\pi t}{6}=4$ ise $\\sin\\dfrac{\\pi t}{6}=\\dfrac{1}{2}$ olur. $\\dfrac{\\pi t}{6}\\in[0,4\\pi)$ için $\\dfrac{\\pi}{6},\\dfrac{5\\pi}{6},\\dfrac{13\\pi}{6},\\dfrac{17\\pi}{6}$ bulunur; $t=1,5,13,17$ ve toplam $36$'dır.",
+   "kaynak": "ozgun"
   }
  ]
 }
