@@ -1,0 +1,534 @@
+{
+ "surum": 1,
+ "kartlar": [
+  {
+   "id": "everest",
+   "etiket": "Himalayalar",
+   "ikon": "dag",
+   "tur": "Dağ · Asya",
+   "ad": "Everest",
+   "yer": "Nepal–Çin sınırı, Himalayalar",
+   "sayilar": [
+    {
+     "d": "8.848,86 m",
+     "e": "yükseklik (2020)"
+    },
+    {
+     "d": "+86 cm",
+     "e": "1954 ölçümüne göre"
+    }
+   ],
+   "mat": "Yüksekliği 1856'da Hindistan'da **trigonometriyle**, yani dağa hiç çıkmadan, yerden ölçülen açılarla hesaplandı. Bulunan değer bugünkünden yalnızca yaklaşık 9 m farklıydı.",
+   "dene": {
+    "s": "1 cm = 1 km ölçekli bir çizimde Everest kaç cm yüksekliğinde olur?",
+    "c": "≈ 8,8 cm",
+    "h": "8.848,86 m ≈ 8,849 km → 8,849 cm ≈ 8,8 cm."
+   },
+   "kaynak": "Nepal–Çin ortak ölçümü (Aralık 2020), Britannica"
+  },
+  {
+   "id": "mariana",
+   "etiket": "BÜYÜK OKYANUS",
+   "ikon": "cukur",
+   "tur": "Okyanus çukuru · Büyük Okyanus",
+   "ad": "Mariana Çukuru",
+   "yer": "En derin nokta: Challenger Derinliği",
+   "sayilar": [
+    {
+     "d": "≈ 10.935 m",
+     "e": "derinlik"
+    },
+    {
+     "d": "10.900–11.000",
+     "e": "ölçümler arası fark (m)"
+    }
+   ],
+   "mat": "Everest buraya konsaydı zirvesi yüzeyin **yaklaşık 2.086 m** altında kalırdı: 10.935 − 8.849 = 2.086.",
+   "dene": {
+    "s": "Ses suda saniyede yaklaşık 1.500 m gider. Yüzeyden gönderilen ses dibe çarpıp kaç saniyede geri döner?",
+    "c": "≈ 14,6 sn",
+    "h": "Gidiş-dönüş 2 × 10.935 = 21.870 m; 21.870 ÷ 1.500 ≈ 14,6 sn."
+   },
+   "kaynak": "NOAA (2021) ve National Geographic; derinlik ölçüme göre değişir",
+   "yakin": [
+    2400,
+    700
+   ]
+  },
+  {
+   "id": "nil",
+   "etiket": "Nil",
+   "ikon": "nehir",
+   "tur": "Nehir · Afrika",
+   "ad": "Nil",
+   "yer": "Victoria Gölü havzasından Akdeniz'e",
+   "sayilar": [
+    {
+     "d": "≈ 6.650 km",
+     "e": "uzunluk"
+    },
+    {
+     "d": "11 ülke",
+     "e": "havzasında"
+    }
+   ],
+   "mat": "Mısırlılar her yıl taşkından sonra silinen tarla sınırlarını yeniden çizmek için **alan ve geometri** hesapları geliştirdi. \"Geometri\" kelimesi de Yunanca \"yer ölçümü\" demek.",
+   "dene": {
+    "s": "Günde 30 km yürüyen biri Nil'in kaynağından denize yaklaşık kaç günde ulaşır?",
+    "c": "≈ 222 gün",
+    "h": "6.650 ÷ 30 ≈ 221,7 → yaklaşık 222 gün."
+   },
+   "kaynak": "Britannica; uzunluk kaynağın tanımına göre değişir"
+  },
+  {
+   "id": "atlas",
+   "etiket": "ATLAS OKYANUSU",
+   "ikon": "okyanus",
+   "tur": "Okyanus · Amerika ile Avrupa–Afrika arası",
+   "ad": "Atlas Okyanusu",
+   "yer": "Amerika kıtaları ile Avrupa ve Afrika arasında",
+   "sayilar": [
+    {
+     "d": "≈ 82,4 mn km²",
+     "e": "alan (komşu denizler hariç)"
+    },
+    {
+     "d": "8.380 m",
+     "e": "en derin nokta: Porto Riko Çukuru"
+    }
+   ],
+   "mat": "Everest (8.848,86 m) Atlas'ın en derin yerine konsaydı zirvesi yüzeyin **yaklaşık 469 m yukarısında** kalırdı: 8.848,86 − 8.380 ≈ 469. Okyanus tabanı ise her yıl **1–10 cm** genişliyor.",
+   "dene": {
+    "s": "Newfoundland ile İrlanda arası yaklaşık 3.320 km. Saatte 800 km giden uçak bu mesafeyi kaç saatte alır?",
+    "c": "≈ 4,15 saat",
+    "h": "3.320 ÷ 800 = 4,15 saat (yaklaşık 4 saat 9 dakika)."
+   },
+   "kaynak": "Britannica (Atlantic Ocean); alan ve derinlik, komşu denizlerin dahil edilip edilmemesine göre değişir"
+  },
+  {
+   "id": "hint",
+   "etiket": "HİNT OKYANUSU",
+   "ikon": "okyanus",
+   "tur": "Okyanus · Afrika, Asya ve Avustralya arası",
+   "ad": "Hint Okyanusu",
+   "yer": "Afrika, Asya ve Avustralya arasında",
+   "sayilar": [
+    {
+     "d": "≈ 73,4 mn km²",
+     "e": "alan (kenar denizler hariç)"
+    },
+    {
+     "d": "7.450 m",
+     "e": "en derin nokta: Java Çukuru"
+    }
+   ],
+   "mat": "Alanı dünya okyanus alanının yaklaşık **beşte biri (%20)**. Kuzeyindeki muson rüzgârları yılda iki kez yön değiştirir: kabaca **6 ay bir yönden, 6 ay ters yönden** eser.",
+   "dene": {
+    "s": "Hint Okyanusu'nun ortalama derinliği yaklaşık 3.960 m, en derin yeri 7.450 m. Ortalama derinlik en derin noktanın yaklaşık yüzde kaçıdır?",
+    "c": "≈ %53",
+    "h": "3.960 ÷ 7.450 ≈ 0,53 → yaklaşık %53, yani yarısından biraz fazla."
+   },
+   "kaynak": "Britannica (Indian Ocean); alan kenar denizler hariç verilmiştir"
+  },
+  {
+   "id": "akdeniz",
+   "etiket": "Akdeniz",
+   "ikon": "deniz",
+   "tur": "Deniz · Avrupa, Asya, Afrika arası",
+   "ad": "Akdeniz",
+   "yer": "Cebelitarık Boğazı'ndan İskenderun Körfezi'ne",
+   "sayilar": [
+    {
+     "d": "≈ 2,51 mn km²",
+     "e": "alan (Marmara dahil)"
+    },
+    {
+     "d": "≈ 4.000 km",
+     "e": "batı-doğu uzunluğu"
+    }
+   ],
+   "mat": "MÖ 3. yüzyılda İskenderiye Kütüphanesi'nin başı Eratosthenes, Akdeniz kıyısındaki İskenderiye'de gölge açısını ölçüp **Dünya'nın çevresini** hesapladı. Açı 7,2° idi; bu, tam dairenin **1/50'si** eder.",
+   "dene": {
+    "s": "Eratosthenes'in ölçtüğü açı 7,2°, İskenderiye–Siene arası yaklaşık 5.000 stadyon ise Dünya'nın çevresi kaç stadyondur?",
+    "c": "≈ 250.000 stadyon",
+    "h": "360 ÷ 7,2 = 50; 5.000 × 50 = 250.000 stadyon. Stadyonun uzunluğu tartışmalıdır."
+   },
+   "kaynak": "Britannica (Mediterranean Sea); Wikipedia (Eratosthenes), yalnızca destek olarak"
+  },
+  {
+   "id": "karadeniz",
+   "etiket": "Karadeniz",
+   "ikon": "deniz",
+   "tur": "Deniz · Türkiye, Avrupa ve Kafkasya arası",
+   "ad": "Karadeniz",
+   "yer": "Boğaz yoluyla Marmara'ya ve Akdeniz'e bağlanır",
+   "sayilar": [
+    {
+     "d": "≈ 422.000 km²",
+     "e": "alan (Azak hariç)"
+    },
+    {
+     "d": "> 2.200 m",
+     "e": "en derin yer"
+    }
+   ],
+   "mat": "Derin sularında oksijen yok, yerine hidrojen sülfür var. Bu oksijensiz tabaka **yaklaşık %90** hacmi kaplıyor; oksijenli üst kısım yalnızca **yaklaşık %10**.",
+   "dene": {
+    "s": "Akdeniz yaklaşık 2.510.000 km², Karadeniz yaklaşık 422.000 km². Akdeniz Karadeniz'in yaklaşık kaç katıdır?",
+    "c": "≈ 6 kat",
+    "h": "2.510.000 ÷ 422.000 ≈ 5,95 → yaklaşık 6 kat."
+   },
+   "kaynak": "Britannica (Black Sea); BM Bölgesel Denizler raporu (Karadeniz bölümü); oksijensiz tabaka sınırı yaklaşık 100–200 m, kaynağa göre değişir"
+  },
+  {
+   "id": "hazar",
+   "etiket": "Hazar Denizi",
+   "ikon": "gol",
+   "tur": "Göl · Avrupa ile Asya arası",
+   "ad": "Hazar Denizi",
+   "yer": "Kazakistan, Türkmenistan, İran, Azerbaycan ve Rusya kıyıları",
+   "sayilar": [
+    {
+     "d": "≈ 386.400 km²",
+     "e": "alan"
+    },
+    {
+     "d": "≈ 1.025 m",
+     "e": "en derin yer"
+    }
+   ],
+   "mat": "Adı deniz ama okyanuslarla bağı yaklaşık 11 milyon yıl önce kopmuş; bu yüzden Britannica'ya göre **dünyanın en büyük tuzlu gölü**. Hacmi (≈ 78.200 km³) karasal yüzey sularının kabaca **üçte biri**.",
+   "dene": {
+    "s": "Hacim ≈ 78.200 km³, alan ≈ 386.400 km². Hazar'ın ortalama derinliği yaklaşık kaç metredir?",
+    "c": "≈ 202 m",
+    "h": "Derinlik = hacim ÷ alan = 78.200 ÷ 386.400 ≈ 0,202 km ≈ 202 m."
+   },
+   "kaynak": "Britannica (Caspian Sea); deniz mi göl mü sorusu hukuki ve bilimsel tanıma göre değişir"
+  },
+  {
+   "id": "aral",
+   "etiket": "Aral",
+   "ikon": "gol",
+   "tur": "Göl · Orta Asya",
+   "ad": "Aral Denizi",
+   "yer": "Amu Derya ve Siri Derya havzası, Orta Asya",
+   "sayilar": [
+    {
+     "d": "≈ −%50",
+     "e": "alan, 1960'tan 1992'ye"
+    },
+    {
+     "d": "≈ 15 m",
+     "e": "su seviyesi düşüşü"
+    }
+   ],
+   "mat": "Alan 1960'ta 68.000 km²'den 1992'de 33.800 km²'ye düştü: **yaklaşık %50 küçülme**. Su seviyesi de yaklaşık 15 m düştüğü için hacim, alandan çok daha hızlı azaldı; çünkü **hacim ≈ alan × derinlik**.",
+   "dene": {
+    "s": "Aral'ın alanı 1960'ta 68.000 km², 1992'de 33.800 km² idi. Alan yüzde kaç azalmıştır?",
+    "c": "≈ %50",
+    "h": "(68.000 − 33.800) ÷ 68.000 = 34.200 ÷ 68.000 ≈ 0,503 → yaklaşık %50."
+   },
+   "kaynak": "Britannica (Aral Sea); 2010 sonrası doğu havzası kurudu, güncel alan kaynağa göre değişir"
+  },
+  {
+   "id": "ege",
+   "etiket": "Ege",
+   "ikon": "deniz",
+   "tur": "Deniz · Türkiye ile Yunanistan arası",
+   "ad": "Ege Denizi",
+   "yer": "Akdeniz'in kuzeydoğu kolu; Türkiye ve Yunanistan arasında",
+   "sayilar": [
+    {
+     "d": "≈ 215.000 km²",
+     "e": "alan"
+    },
+    {
+     "d": "3.544 m",
+     "e": "en derin yer (Girit doğusu)"
+    }
+   ],
+   "mat": "Pythagoras MÖ ≈570'te Ege'deki Sisam Adası'nda doğdu. **a² + b² = c²** teoremi ona atfedilir; ama Britannica'ya göre büyük olasılıkla okulunda geliştirildi.",
+   "dene": {
+    "s": "Ege'yi 612 km uzunluğunda, 299 km genişliğinde bir dikdörtgen sayalım. Köşegeni yaklaşık kaç km'dir?",
+    "c": "≈ 681 km",
+    "h": "√(612² + 299²) = √463.945 ≈ 681 km (Pisagor)."
+   },
+   "kaynak": "Britannica (Aegean Sea, Pythagoras); dikdörtgen yalnızca yaklaşık bir modeldir"
+  },
+  {
+   "id": "amazon",
+   "etiket": "Amazon",
+   "ikon": "nehir",
+   "tur": "Nehir · Güney Amerika",
+   "ad": "Amazon Nehri",
+   "yer": "Peru And Dağları'ndan Atlas Okyanusu'na",
+   "sayilar": [
+    {
+     "d": "≈ 6.400 km",
+     "e": "uzunluk (tartışmalı)"
+    },
+    {
+     "d": "≈ 7 mn km²",
+     "e": "havza alanı"
+    }
+   ],
+   "mat": "Yeryüzünden denize akan suyun yaklaşık **beşte birini (%20)** taşır. Uzunluk ölçümü kaynağa göre değiştiği için Nil ile **hangisinin daha uzun olduğu** hâlâ tartışılır.",
+   "dene": {
+    "s": "Amazon ≈ 6.400 km, Nil ≈ 6.650 km ise Amazon, Nil'in yaklaşık yüzde kaçı uzunluğundadır?",
+    "c": "≈ %96",
+    "h": "6.400 ÷ 6.650 ≈ 0,962 → yaklaşık %96."
+   },
+   "kaynak": "Britannica (Amazon River); uzunluk kaynak noktası ve ölçüme göre değişir"
+  },
+  {
+   "id": "firat",
+   "etiket": "Fırat",
+   "ikon": "nehir",
+   "tur": "Nehir · Asya",
+   "ad": "Fırat",
+   "yer": "Doğu Anadolu'dan Basra Körfezi'ne",
+   "sayilar": [
+    {
+     "d": "≈ 2.800 km",
+     "e": "uzunluk"
+    },
+    {
+     "d": "3 ülke",
+     "e": "Türkiye, Suriye, Irak"
+    }
+   ],
+   "mat": "Fırat ve Dicle arasındaki topraklarda (Mezopotamya, \"ırmaklar arası\") Babilliler kil tabletlere yazdı ve **60 tabanlı, basamak değerli** bir sayı sistemi kullandı. 60, 1'den 6'ya kadar tüm sayılara tam bölünür; bu yüzden kesirler kolaydı.",
+   "dene": {
+    "s": "Babil yazımında \"2, 15\" sayısı 2 × 60 + 15 demektir. Onluk sistemde kaçtır?",
+    "c": "135",
+    "h": "İlk basamak 60'lıktır: 2 × 60 = 120; 120 + 15 = 135."
+   },
+   "kaynak": "Britannica (Euphrates; Mesopotamia); MacTutor (Babylonian numerals); uzunluk kaynağa göre değişir"
+  },
+  {
+   "id": "dicle",
+   "etiket": "Dicle",
+   "ikon": "nehir",
+   "tur": "Nehir · Asya",
+   "ad": "Dicle",
+   "yer": "Türkiye'den Irak'a, Fırat'la birleşir",
+   "sayilar": [
+    {
+     "d": "≈ 1.900 km",
+     "e": "uzunluk"
+    },
+    {
+     "d": "≈ 530 km",
+     "e": "Türkiye'deki kısmı"
+    }
+   ],
+   "mat": "Babilliler Dicle-Fırat arasında karekökü bile hesapladı: M.Ö. 1800–1600 dolaylarına ait bir kil tablet √2'yi 60 tabanında **1;24,51,10** yazar, bu da ≈ 1,41421296 eder. Gerçek değerden **2 milyonda birden az** sapar.",
+   "dene": {
+    "s": "Dicle'nin yaklaşık 530 km'si Türkiye'de. Bu, toplam uzunluğun (1.900 km) yüzde kaçıdır?",
+    "c": "≈ %28",
+    "h": "530 ÷ 1.900 ≈ 0,279 → yaklaşık %28."
+   },
+   "kaynak": "Britannica (Tigris River); Wikipedia (YBC 7289), destek amaçlı"
+  },
+  {
+   "id": "sariirmak",
+   "etiket": "Sarı Irmak",
+   "ikon": "nehir",
+   "tur": "Nehir · Asya",
+   "ad": "Sarı Irmak (Huang He)",
+   "yer": "Qinghai'deki Bayan Har Dağları'ndan Bohai Körfezi'ne",
+   "sayilar": [
+    {
+     "d": "≈ 5.464 km",
+     "e": "uzunluk"
+    },
+    {
+     "d": "34 kg/m³",
+     "e": "silt yükü, dünyada en yüksek"
+    }
+   ],
+   "mat": "Çin'de en geç M.Ö. 4. yüzyıldan beri hesaplar **sayma tahtasında, onluk basamak değeriyle** yapıldı. Liu Hui (M.S. 263) 3.072 kenarlı çokgenle π'yi 3,14159 buldu; Zu Chongzhi ise **355/113** yaklaşımını önerdi.",
+   "dene": {
+    "s": "355/113 yaklaşımıyla yarıçapı 10 cm olan çemberin çevresi yaklaşık kaç cm'dir?",
+    "c": "≈ 62,83 cm",
+    "h": "Çevre = 2 × 10 × 355/113 = 7.100/113 ≈ 62,83 cm."
+   },
+   "kaynak": "Britannica (Huang He); MacTutor (Chinese mathematics overview)"
+  },
+  {
+   "id": "ganj",
+   "etiket": "Ganj",
+   "ikon": "nehir",
+   "tur": "Nehir · Asya",
+   "ad": "Ganj",
+   "yer": "Gangotri buzulundan Bengal Körfezi'ne",
+   "sayilar": [
+    {
+     "d": "≈ 2.510 km",
+     "e": "uzunluk"
+    },
+    {
+     "d": "≈ 1/4",
+     "e": "Hindistan'ın toprağı havzasında"
+    }
+   ],
+   "mat": "Ganj'ın aktığı Hindistan'da **onluk basamak sistemi ve sıfır** gelişti. Gwalior'daki 876 tarihli taş yazıt, sıfırın tarihi belli en eski sağlam yazılı örneğidir; sıfır 650 dolaylarında sayı olarak da kullanılıyordu.",
+   "dene": {
+    "s": "Sıfırın sayı olarak kullanılmaya başlaması (≈650) ile Gwalior yazıtı (876) arasında yaklaşık kaç yıl vardır?",
+    "c": "≈ 226 yıl",
+    "h": "876 − 650 = 226."
+   },
+   "kaynak": "Britannica (Ganges River); MacTutor (A history of Zero)"
+  },
+  {
+   "id": "indus",
+   "etiket": "İndus",
+   "ikon": "nehir",
+   "tur": "Nehir · Asya",
+   "ad": "İndus",
+   "yer": "Tibet'ten Arap Denizi'ne",
+   "sayilar": [
+    {
+     "d": "2.880–3.200 km",
+     "e": "uzunluk (kaynağa göre)"
+    },
+    {
+     "d": "≈ 1,12 mn km²",
+     "e": "havza alanı"
+    }
+   ],
+   "mat": "İndus vadisindeki Harappa kentlerinde taş ağırlıklar **1 : 2 : 4 : 8 : 16 : 32 : 64** oranında, yani ikiye katlanarak standartlaşmıştı. En küçük birim yaklaşık 0,856 g'dı.",
+   "dene": {
+    "s": "En küçük Harappa ağırlığı ≈ 0,856 g ise, onun 16 katı olan ağırlık kaç gramdır?",
+    "c": "≈ 13,7 g",
+    "h": "0,856 × 16 = 13,696 ≈ 13,7 g."
+   },
+   "kaynak": "Britannica (Indus River; Indus civilization); Harappa.com (ağırlıklar); Wikipedia (Indus River), destek"
+  },
+  {
+   "id": "ceyhun",
+   "etiket": "Ceyhun",
+   "ikon": "nehir",
+   "tur": "Nehir · Orta Asya",
+   "ad": "Ceyhun (Amu Derya)",
+   "yer": "Pandj ve Vahş kollarından Aral Gölü'ne",
+   "sayilar": [
+    {
+     "d": "≈ 2.540 km",
+     "e": "uzunluk"
+    },
+    {
+     "d": "2 kol",
+     "e": "Pandj ve Vahş"
+    }
+   ],
+   "mat": "Matematikçi El-Harezmi'nin adı büyük olasılıkla Ceyhun'un çevresindeki **Harezm** bölgesine işaret eder. Eserinin Latince çevirisindeki \"Algoritmi\" adından **\"algoritma\"** kelimesi doğdu.",
+   "dene": {
+    "s": "El-Harezmi yaklaşık 780'de doğdu, 850 dolaylarında öldü. Yaklaşık kaç yıl yaşadı?",
+    "c": "≈ 70 yıl",
+    "h": "850 − 780 = 70."
+   },
+   "kaynak": "Britannica (Amu Darya; al-Khwarizmi); MacTutor (Al-Khwarizmi); ada dair köken tartışmalıdır"
+  },
+  {
+   "id": "andlar",
+   "etiket": "And Dağları",
+   "ikon": "dag",
+   "tur": "Dağ · Güney Amerika",
+   "ad": "And Dağları · Aconcagua",
+   "yer": "Arjantin–Şili sınırı, Güney Amerika boyunca",
+   "sayilar": [
+    {
+     "d": "≈ 8.900 km",
+     "e": "silsile uzunluğu"
+    },
+    {
+     "d": "6.959 m",
+     "e": "Aconcagua (Arjantin ölçümü)"
+    }
+   ],
+   "mat": "Silsile 8.900 km uzun, en yüksek zirvesi ise yalnızca 6.959 m (6,959 km): yani uzunluğun **binde 0,8'i kadar**. Haritada 1 m'lik şerit gibi çizsen Aconcagua yaklaşık 0,8 mm kalırdı.",
+   "dene": {
+    "s": "And Dağları haritada 1 cm = 100 km ölçekle çizilirse Aconcagua kaç mm yüksekliğinde olur?",
+    "c": "≈ 0,7 mm",
+    "h": "6.959 m = 6,959 km; 6,959 ÷ 100 = 0,06959 cm ≈ 0,7 mm."
+   },
+   "kaynak": "Britannica (Andes; Aconcagua); GPS ölçümü 6.962 m, resmî değer 6.959 m"
+  },
+  {
+   "id": "toros",
+   "etiket": "Toros Dağları",
+   "ikon": "dag",
+   "tur": "Dağ · Asya",
+   "ad": "Toros Dağları · Aladağlar",
+   "yer": "Güney Türkiye, Akdeniz kıyısına paralel",
+   "sayilar": [
+    {
+     "d": "≈ 1.000 km",
+     "e": "silsile uzunluğu"
+    },
+    {
+     "d": "≈ 3.767 m",
+     "e": "Kızılkaya, en yüksek zirve"
+    }
+   ],
+   "mat": "Aladağlar'da iki komşu zirve yarışır: Demirkazık 3.756 m, Kızılkaya 3.767 m. Fark yalnızca **11 m**, yani **yaklaşık %0,3**; bu küçük fark en yüksek zirvenin hangisi olduğunu ölçüme bağlı kılar.",
+   "dene": {
+    "s": "Kızılkaya (3.767 m), Demirkazık'tan (3.756 m) yüzde kaç daha yüksektir?",
+    "c": "≈ %0,3",
+    "h": "(3.767 − 3.756) ÷ 3.756 ≈ 0,0029 → ≈ %0,3."
+   },
+   "kaynak": "Küre Ansiklopedi (Toros Dağları); Wikipedia (Demirkazık, Kızılkaya); en yüksek zirve kaynağa göre değişir"
+  },
+  {
+   "id": "kafkas",
+   "etiket": "Kafkas Dağları",
+   "ikon": "dag",
+   "tur": "Dağ · Asya–Avrupa",
+   "ad": "Kafkas Dağları · Elbruz",
+   "yer": "Karadeniz ile Hazar arasında, Rusya",
+   "sayilar": [
+    {
+     "d": "5.642 m",
+     "e": "Elbruz"
+    },
+    {
+     "d": "≈ 1.200 km",
+     "e": "silsile uzunluğu"
+    }
+   ],
+   "mat": "Yükseldikçe hava soğur: troposferde ortalama **her 1.000 m'de yaklaşık 6,5 °C**. Elbruz'un zirvesi bu yüzden deniz kıyısından yaklaşık 37 °C daha soğuktur.",
+   "dene": {
+    "s": "Deniz kıyısında 20 °C iken Elbruz zirvesinde (5.642 m) ortalama sıcaklık yaklaşık kaç °C olur?",
+    "c": "≈ −16,7 °C",
+    "h": "5,642 × 6,5 ≈ 36,7 düşüş; 20 − 36,7 = −16,7 °C."
+   },
+   "kaynak": "Britannica (Caucasus; Mount Elbrus; Lapse rate); Wikipedia (Caucasus Mountains), destek; Elbruz'un diğer zirvesi 5.595 m"
+  },
+  {
+   "id": "alpler",
+   "etiket": "Alpler",
+   "ikon": "dag",
+   "tur": "Dağ · Avrupa",
+   "ad": "Alpler · Mont Blanc",
+   "yer": "Fransa, İtalya, İsviçre, Avusturya ve komşu ülkeler",
+   "sayilar": [
+    {
+     "d": "≈ 4.806 m",
+     "e": "Mont Blanc (2023)"
+    },
+    {
+     "d": "≈ 207.000 km²",
+     "e": "silsile alanı"
+    }
+   ],
+   "mat": "Alpler yaklaşık 1.200 km uzun ve 207.000 km² geniştir. **Alan ÷ uzunluk** işlemi ortalama genişliği verir: yaklaşık 172,5 km. Mont Blanc'ın yüksekliği kar örtüsüne göre yıldan yıla birkaç metre oynar.",
+   "dene": {
+    "s": "Alpler 207.000 km² alanlı ve 1.200 km uzunsa ortalama genişliği yaklaşık kaç km'dir?",
+    "c": "≈ 172,5 km",
+    "h": "207.000 ÷ 1.200 = 172,5 km."
+   },
+   "kaynak": "Britannica (Alps); Wikipedia (Mont Blanc: 2021'de 4.807,81 m, 2023'te 4.805,59 m), destek"
+  }
+ ]
+}
