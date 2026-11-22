@@ -131,7 +131,7 @@
     else{var b=document.querySelector('#alt-nav [data-takip]');if(b){b.dataset.s='program';b.click();}}}
   function yaziYaz(id,t,cls){$(id).innerHTML='<text x="224" y="'+(+$(id).getAttribute('data-y')-1)+'" class="dj-yazi '+(cls||'')+'">'+t+'</text>';}
   function cizDj(k){
-    var dur=!S.calisiyor&&k!==S.toplam&&(S.serbest||k>0),son5=!S.serbest&&S.mod!=='kisa'&&S.mod!=='uzun'&&k>0&&k<=300000,od=odakMi();
+    var dur=!S.calisiyor&&k!==S.toplam&&(S.serbest||k>0),son5=!S.serbest&&S.mod!=='kisa'&&S.mod!=='uzun'&&S.toplam>=900000&&k>0&&k<=300000,od=odakMi();
     $('kd-z').innerHTML=zamanSvg(k,80,110,son5?'var(--kd-v)':null,lr(206,282));
     $('kd-z').style.opacity=dur?.42:1;
     var u=S.serbest?'':(S.mod==='deneme'?'DENEME':(S.mola?'MOLA':'ODAK'))+' · '+(djGecen?'GEÇEN ⇄':'KALAN ⇄');if(dur)u='DURAKLATILDI';
