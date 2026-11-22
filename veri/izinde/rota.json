@@ -13,7 +13,8 @@
    "adim": 0,
    "bolge": 1,
    "simge": "kemik",
-   "gorsel": true
+   "gorsel": true,
+   "video": true
   },
   {
    "id": "d02",
@@ -28,7 +29,8 @@
     1398,
     742
    ],
-   "gorsel": true
+   "gorsel": true,
+   "video": true
   },
   {
    "id": "d03",
@@ -43,7 +45,8 @@
     1385,
     676
    ],
-   "gorsel": true
+   "gorsel": true,
+   "video": true
   },
   {
    "id": "d04",
@@ -58,7 +61,8 @@
     1562,
     668
    ],
-   "gorsel": true
+   "gorsel": true,
+   "video": true
   },
   {
    "id": "d05",
@@ -73,7 +77,8 @@
     1368,
     545
    ],
-   "gorsel": true
+   "gorsel": true,
+   "video": true
   },
   {
    "id": "d06",
@@ -89,7 +94,8 @@
     1440,
     603
    ],
-   "gorsel": true
+   "gorsel": true,
+   "video": true
   },
   {
    "id": "d07",
@@ -105,7 +111,8 @@
     1290,
     612
    ],
-   "gorsel": true
+   "gorsel": true,
+   "video": true
   },
   {
    "id": "d08",
@@ -116,7 +123,8 @@
    "bolge": 3,
    "simge": "sifir",
    "kavis": -0.18,
-   "gorsel": true
+   "gorsel": true,
+   "video": true
   },
   {
    "id": "d09",

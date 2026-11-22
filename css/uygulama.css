@@ -1472,12 +1472,15 @@ html.mf-gece .iz-noktalar i{background:#2F3970}
 .iz-sahne{position:fixed;inset:0;z-index:9300;color:#fff;opacity:0;transition:opacity .5s;overflow:hidden;background:#05081C}
 .iz-sahne.acik{opacity:1}
 .iz-sh-arka{position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 30%,color-mix(in srgb,var(--bolge) 70%,#fff 10%),#05081C 75%)}
-.iz-sh-arka img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:izKen 18s ease-out forwards}
+.iz-sh-gorsel{position:absolute;inset:0;animation:izKen 18s ease-out forwards}
+.iz-sh-gorsel img,.iz-sh-gorsel video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.iz-sh-gorsel video{opacity:0;transition:opacity 1.2s ease}
+.iz-sh-gorsel video.on{opacity:1}
 @keyframes izKen{from{transform:scale(1.18)}to{transform:scale(1)}}
 .iz-sh-arka::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,28,.55) 0%,rgba(5,8,28,0) 30%,rgba(5,8,28,.2) 55%,rgba(5,8,28,.92) 100%)}
 .iz-sh-yedek{display:none;position:absolute;left:0;right:0;margin:0 auto;top:10%;width:46vmin;height:46vmin;opacity:.9;filter:drop-shadow(0 0 30px rgba(255,170,80,.45));animation:izKen 18s ease-out forwards}
 .iz-sahne.gorselsiz .iz-sh-yedek{display:block}
-.iz-sahne.kilitli .iz-sh-arka img{filter:grayscale(1) blur(3px) brightness(.55)}
+.iz-sahne.kilitli .iz-sh-gorsel img{filter:grayscale(1) blur(3px) brightness(.55)}
 .iz-sahne.kilitli .iz-sh-yedek{opacity:.35;filter:grayscale(1)}
 .iz-sh-ic{position:absolute;left:0;right:0;bottom:0;max-height:78vh;overflow:auto;padding:18px 18px calc(18px + env(safe-area-inset-bottom));transform:translateY(40px);opacity:0;transition:transform .6s .25s,opacity .6s .25s}
 .iz-sahne.acik .iz-sh-ic{transform:none;opacity:1}

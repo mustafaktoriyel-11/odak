@@ -327,9 +327,17 @@
     function ac(){
       var sh=document.createElement('div');sh.className='iz-sahne'+(ul?'':' kilitli');sh.setAttribute('role','dialog');sh.setAttribute('aria-modal','true');
       sh.style.setProperty('--bolge',BOLGE_RENK[r.bolge]||'#141B3F');
-      sh.innerHTML='<div class="iz-sh-arka">'+(r.gorsel?'<img alt="" src="img/durak/'+r.id+'.webp">':'')+'<svg class="iz-sh-yedek" viewBox="0 0 64 64" style="--m:rgba(255,255,255,.85);--v:#FFB35C"><use href="#iz-s-'+r.simge+'"/></svg></div>'+
+      sh.innerHTML='<div class="iz-sh-arka">'+(r.gorsel?'<div class="iz-sh-gorsel"><img alt="" src="img/durak/'+r.id+'.webp"></div>':'')+'<svg class="iz-sh-yedek" viewBox="0 0 64 64" style="--m:rgba(255,255,255,.85);--v:#FFB35C"><use href="#iz-s-'+r.simge+'"/></svg></div>'+
         '<div class="iz-sh-ic">'+durakIcerik(d,r,ul,st)+'<button type="button" class="mt-btn iz-sh-kapat">'+(sonra?'Devam':'Haritaya dön')+'</button></div>';
       var img=sh.querySelector('.iz-sh-arka img');if(!img)sh.classList.add('gorselsiz');else img.onerror=function(){img.remove();sh.classList.add('gorselsiz');};
+      // Hareketli sahne: açılmış duraklarda, görselin üstüne yumuşakça biner; döngü dikişi videoda çapraz geçişle gizli
+      var azHareket=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(img&&r.video&&ul&&!azHareket){
+        var vd=document.createElement('video');vd.muted=true;vd.loop=true;vd.autoplay=true;vd.playsInline=true;vd.setAttribute('playsinline','');vd.setAttribute('muted','');vd.preload='auto';
+        vd.addEventListener('playing',function(){vd.classList.add('on');},{once:true});
+        vd.onerror=function(){vd.remove();};vd.src='vid/durak/'+r.id+'.mp4';
+        img.parentNode.appendChild(vd);var pp=vd.play();if(pp&&pp.catch)pp.catch(function(){});
+      }
       document.body.appendChild(sh);
       requestAnimationFrame(function(){sh.classList.add('acik');kar.classList.add('git');});
       function kapat(){sh.classList.remove('acik');kar.classList.remove('git');kar.classList.add('tam');
