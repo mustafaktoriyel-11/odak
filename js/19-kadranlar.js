@@ -40,7 +40,7 @@
   var C=150,R=104,kurulan='';
   function $(i){return svg.querySelector('#'+i);}
   function L(id,a,b,c,d){var e=$(id);if(!e)return;e.setAttribute('x1',f(a));e.setAttribute('y1',f(b));e.setAttribute('x2',f(c));e.setAttribute('y2',f(d));}
-  function kurBc(){svg.setAttribute('viewBox','0 0 300 372');
+  function kurBc(){
     var o='<line class="bc-eksen" x1="34" y1="150" x2="266" y2="150"/><line class="bc-eksen" x1="150" y1="266" x2="150" y2="34"/><path class="bc-dilim" id="bc-dilim"/><circle class="bc-cember" cx="150" cy="150" r="'+R+'"/>';
     var et=['0','π/2','π','3π/2'];
     for(var i=0;i<12;i++){var a=i*Math.PI/6,c=Math.cos(a),s=Math.sin(a);
@@ -59,7 +59,7 @@
     var tm=th/2;$('bc-tt').setAttribute('x',f(C+38*Math.cos(tm)-4));$('bc-tt').setAttribute('y',f(C-38*Math.sin(tm)+4));
     $('bc-ec').setAttribute('x',f((C+x)/2-16));$('bc-ec').setAttribute('y',f(C+(s>=0?17:-9)));
     $('bc-es').setAttribute('x',f(x+(c>=0?8:-40)));$('bc-es').setAttribute('y',f((C+y)/2+4));
-    $('kd-z').innerHTML=zamanSvg(k,52,352);
+    var od=odakMi();svg.setAttribute('viewBox',od?'0 0 300 398':'0 0 300 372');$('kd-z').innerHTML=zamanSvg(k,od?72:52,od?380:352);
     $('bc-tt').style.opacity=th>0.25&&th<6.1?1:0;$('bc-es').style.opacity=Math.abs(s)>0.18?1:0;$('bc-ec').style.opacity=Math.abs(c)>0.18?1:0;}
   // kum saati
   var UST=46,BOGAZ=150,ALT=254,KUM=0,taneler=[],sonSaat=-1,sonP=0,donT=0;
@@ -67,7 +67,7 @@
   function alan(a,b){var t=0;for(var y=Math.ceil(a);y<=b;y++)t+=2*yan(y);return t;}
   function sev(fn,hedef,a,b){var lo=a,hi=b;for(var i=0;i<26;i++){var m=(lo+hi)/2;if(fn(m)>hedef)lo=m;else hi=m;}return (lo+hi)/2;}
   function camYol(){var s='M'+f(150-yan(UST))+' '+UST;for(var y=UST;y<=ALT;y+=2)s+='L'+f(150-yan(y))+' '+y;for(y=ALT;y>=UST;y-=2)s+='L'+f(150+yan(y))+' '+y;return s+'Z';}
-  function kurKs(){svg.setAttribute('viewBox','0 0 300 372');KUM=0.82*alan(UST,BOGAZ);
+  function kurKs(){KUM=0.82*alan(UST,BOGAZ);
     var o='<defs><linearGradient id="kdKum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="kd-st1"/><stop offset="1" class="kd-st2"/></linearGradient><clipPath id="kdKap"><path d="'+camYol()+'"/></clipPath></defs>';
     o+='<g id="ks-don" class="ks-don"><line class="ks-direk" x1="74" y1="40" x2="74" y2="260"/><line class="ks-direk" x1="226" y1="40" x2="226" y2="260"/>'+
       '<g clip-path="url(#kdKap)"><path id="ks-ust" fill="url(#kdKum)"/><path id="ks-alt" fill="url(#kdKum)"/><line class="ks-akis" id="ks-akis" x1="150" x2="150"/><g id="ks-tane"></g></g>'+
@@ -89,7 +89,7 @@
     $('ks-tane').innerHTML=o;
     var bo='';if(S.serbest){var n=Math.min(8,Math.floor((S.toplam-k)/3600000));for(var i=0;i<n;i++)bo+='<circle class="kd-v" cx="'+(150-(n-1)*7+i*14)+'" cy="286" r="4.5"/>';}
     $('ks-bon').innerHTML=bo;
-    $('kd-z').innerHTML=zamanSvg(k,52,356);}
+    var od=odakMi();svg.setAttribute('viewBox',od?'0 0 300 398':'0 0 300 372');$('kd-z').innerHTML=zamanSvg(k,od?72:52,od?382:356);}
   function cevir(){var g=$('ks-don');if(!g||donT)return;donT=1;g.classList.add('don');g.style.transform='rotate(180deg)';
     setTimeout(function(){g.classList.remove('don');g.style.transform='';donT=0;},900);}
   // dijital
@@ -131,6 +131,9 @@
     if(secim!=='dj'||t-sonCiz>250){sonCiz=t;ciz(dt);}
     if(S.calisiyor||donT)raf=requestAnimationFrame(dongu);}
   function uyan(){if(!raf){son=performance.now();raf=requestAnimationFrame(dongu);}}
+  // odak ekranı yerleşimi için (14-sayac-katla.js): odak hâlindeki en-boy oranı, etiket yüksekliği, maskot olur mu
+  window.MF_KD_ORAN=function(){var y=h.querySelector('.pm-yazi'),e=(y?y.offsetHeight:20)+6;
+    if(secim==='dj')return {ra:146/(S&&S.serbest?240:204),e:e,maskot:true};return {ra:398/300,e:e,maskot:false};};
   window.MF_KADRAN=function(s){S=s;h.classList.toggle('kd-mola',!!s.mola);h.classList.toggle('kd-deneme',s.mod==='deneme'&&!s.mola);ciz(0);uyan();};
   document.addEventListener('visibilitychange',function(){if(!document.hidden)uyan();});
   new MutationObserver(function(){if(S)ciz(0);}).observe(document.body,{attributes:true,attributeFilter:['class']});
