@@ -1596,3 +1596,21 @@ html.mf-gece #pm-odak-c button[data-v="ozel"]:not(.on){background:#232B52;border
 .pm-saat.kd-bc .pm-muzik,.pm-saat.kd-ks .pm-muzik,.pm-saat.kd-dj .pm-muzik{right:-2px}
 .pm-saat.kd-bc .ay-btn,.pm-saat.kd-ks .ay-btn,.pm-saat.kd-dj .ay-btn{left:-2px}
 .ay-surum{text-align:center;font-size:11.5px;color:#7A8099;margin:10px 0 0}
+/* Ders/süre seçim düğmeleri (js/21-secim.js) */
+.sc-satir{display:flex;gap:10px;justify-content:center;margin:0 0 14px}
+.sc-satir[hidden]{display:none}
+.sc-btn{flex:1 1 0;max-width:170px;min-width:0;display:flex;align-items:center;gap:7px;min-height:44px;padding:8px 12px;border:1px solid #C9D2F5;border-radius:14px;background:#fff;color:#1C2E8A;font:inherit;font-size:15px;cursor:pointer}
+.sc-btn b{flex:1;min-width:0;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:700}
+.sc-btn i{font-style:normal;color:#7A8099;font-size:12px}
+.sc-btn .sc-i{font-size:16px}
+html.mf-gece .sc-btn{background:#232B52;border-color:#3A4BA0;color:#E6EAFA}
+.sc-p .sheet-k{max-height:88vh;overflow-y:auto}
+.sc-p .sc-ic>.pm-alan>span{display:none}
+.sc-p .sc-ic .pm-chips{flex-wrap:wrap;gap:8px}
+.sc-p .sc-ic #pm-ders-c button{flex:1 1 calc(33% - 8px);min-width:96px}
+.sc-p .sc-ic #pm-ozel-k{margin-top:14px;display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#555}
+html.mf-gece .sc-p .sc-ic #pm-ozel-k{color:#C3CBEA}
+.sc-p .sc-tamam{margin-top:16px}
+#pm-sure-not{display:none!important}
+.sc-p .tb-tumu{display:none!important}
+.sc-p .sc-ic #pm-odak-c{flex-wrap:nowrap}.sc-p .sc-ic #pm-odak-c button{flex:1 1 0;min-width:0;padding-left:6px;padding-right:6px}
