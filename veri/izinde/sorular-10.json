@@ -2087,6 +2087,393 @@
    "c": 1,
    "a": "$3^{2}=9$ ve $9$'un $8$ ile bölümünden kalan $1$'dir. $3^{50}=(3^{2})^{25}$ olduğundan kalan $1^{25}=1$ olur.",
    "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0131",
+   "konu": "10.3.1",
+   "zorluk": 1,
+   "s": "Şekildeki çarpan ağacında $252$ sayısı iki çarpana, ardından çarpanlardan biri yeniden iki çarpana ayrılmıştır. $a+b+c$ toplamı kaçtır?",
+   "o": [
+    "$189$",
+    "$231$",
+    "$210$",
+    "$126$",
+    "$252$"
+   ],
+   "c": 2,
+   "a": "$252=2\\cdot a$ olduğundan $a=126$; $126=2\\cdot b$ olduğundan $b=63$; $63=3\\cdot c$ olduğundan $c=21$. Toplam $126+63+21=210$.",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"120\" y1=\"22\" x2=\"85\" y2=\"46\" stroke=\"#9AA3C7\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"22\" x2=\"160\" y2=\"46\" stroke=\"#9AA3C7\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"56\" x2=\"132\" y2=\"78\" stroke=\"#9AA3C7\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"56\" x2=\"195\" y2=\"78\" stroke=\"#9AA3C7\" stroke-width=\"1.5\"/><line x1=\"195\" y1=\"88\" x2=\"172\" y2=\"110\" stroke=\"#9AA3C7\" stroke-width=\"1.5\"/><line x1=\"195\" y1=\"88\" x2=\"224\" y2=\"110\" stroke=\"#9AA3C7\" stroke-width=\"1.5\"/><text x=\"120\" y=\"18\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#141B3F\">252</text><text x=\"80\" y=\"54\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#141B3F\">2</text><text x=\"160\" y=\"54\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#FF8A1F\">a</text><text x=\"128\" y=\"90\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#141B3F\">2</text><text x=\"195\" y=\"88\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#FF8A1F\">b</text><text x=\"168\" y=\"124\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#141B3F\">3</text><text x=\"226\" y=\"124\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#FF8A1F\">c</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0132",
+   "konu": "10.3.1",
+   "zorluk": 1,
+   "s": "$36$ öğrencilik bir sınıf, her grupta eşit sayıda öğrenci olacak, her grupta en az $2$ öğrenci bulunacak ve en az $2$ grup oluşacak biçimde gruplara ayrılacaktır. Bir gruptaki öğrenci sayısı kaç farklı değer alabilir?",
+   "o": [
+    "$7$",
+    "$9$",
+    "$8$",
+    "$6$",
+    "$5$"
+   ],
+   "c": 0,
+   "a": "Grup büyüklüğü $36$'nın bölenidir. $36$'nın $9$ böleninden $1$ (grup başına tek öğrenci) ve $36$ (tek grup) koşulları sağlamaz; kalan $2,3,4,6,9,12,18$ olmak üzere $7$ değer bulunur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0133",
+   "konu": "10.3.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki sayılardan hangisinin tam olarak $6$ tane pozitif böleni vardır?",
+   "o": [
+    "$16$",
+    "$24$",
+    "$30$",
+    "$36$",
+    "$18$"
+   ],
+   "c": 4,
+   "a": "$18=2\\cdot 3^{2}$ için bölen sayısı $(1+1)(2+1)=6$. Diğerleri: $16$ için $5$, $24$ için $8$, $30$ için $8$, $36$ için $9$ bölen vardır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0134",
+   "konu": "10.3.1",
+   "zorluk": 2,
+   "s": "Aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+   "o": [
+    "Her asal sayının tam olarak iki pozitif böleni vardır.",
+    "Pozitif bölen sayısı tek olan her doğal sayı asaldır.",
+    "$2$ dışındaki her asal sayı tek sayıdır.",
+    "Bir doğal sayının her asal çarpanı o sayıyı böler.",
+    "Ardışık iki pozitif tam sayının ortak asal böleni yoktur."
+   ],
+   "c": 1,
+   "a": "$9$ sayısının $1,3,9$ olmak üzere $3$ (tek sayıda) böleni vardır ama $9$ asal değildir. Diğer dört ifade doğrudur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0135",
+   "konu": "10.3.1",
+   "zorluk": 2,
+   "s": "$2^{4}\\cdot 3^{2}$ sayısının pozitif bölenlerinden kaç tanesi $6$'nın katıdır?",
+   "o": [
+    "$10$",
+    "$12$",
+    "$15$",
+    "$8$",
+    "$6$"
+   ],
+   "c": 3,
+   "a": "$6$'nın katı olan bölenler $2^{x}\\cdot 3^{y}$ biçimindedir ve $x\\ge 1$, $y\\ge 1$ olmalıdır. $x$ için $4$, $y$ için $2$ seçenek vardır: $4\\cdot 2=8$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0136",
+   "konu": "10.3.1",
+   "zorluk": 2,
+   "s": "Pozitif bölenlerinin sayısı tek olan iki basamaklı kaç doğal sayı vardır?",
+   "o": [
+    "$6$",
+    "$3$",
+    "$5$",
+    "$7$",
+    "$9$"
+   ],
+   "c": 0,
+   "a": "Bölenler $d$ ve $n/d$ diye eş gelir; yalnızca $d=n/d$ olan tam karelerde bu eşleşme bozulur. İki basamaklı tam kareler $16,25,36,49,64,81$ olup $6$ tanedir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0137",
+   "konu": "10.3.1",
+   "zorluk": 3,
+   "s": "$a$ ve $b$ pozitif tam sayılar ve $a>b$ olmak üzere $n=2^{a}\\cdot 3^{b}$ sayısının tam $20$ tane pozitif böleni vardır. $n<1000$ olduğuna göre $n$ kaçtır?",
+   "o": [
+    "$648$",
+    "$1536$",
+    "$432$",
+    "$576$",
+    "$864$"
+   ],
+   "c": 2,
+   "a": "$(a+1)(b+1)=20$ ve $a>b\\ge 1$ olduğundan $(a,b)=(4,3)$ veya $(9,1)$. $2^{9}\\cdot 3=1536>1000$ olduğundan $n=2^{4}\\cdot 3^{3}=432$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0138",
+   "konu": "10.3.1",
+   "zorluk": 3,
+   "s": "$15$'in katı olan ve tam olarak $16$ tane pozitif böleni bulunan en küçük doğal sayı kaçtır?",
+   "o": [
+    "$60$",
+    "$150$",
+    "$180$",
+    "$210$",
+    "$120$"
+   ],
+   "c": 4,
+   "a": "$16=2\\cdot2\\cdot2\\cdot2=4\\cdot2\\cdot2$ ve sayı $3\\cdot5$'e bölünmelidir. $2\\cdot3\\cdot5\\cdot7=210$ ve $2^{3}\\cdot3\\cdot5=120$ olur ($(3+1)\\cdot2\\cdot2=16$); en küçüğü $120$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0139",
+   "konu": "10.3.2",
+   "zorluk": 1,
+   "s": "Aşağıdaki sayı ikililerinden hangisi aralarında asaldır?",
+   "o": [
+    "$18$ ve $27$",
+    "$12$ ve $35$",
+    "$21$ ve $49$",
+    "$24$ ve $40$",
+    "$15$ ve $45$"
+   ],
+   "c": 1,
+   "a": "Aralarında asal sayıların EBOB'u $1$ olur. $\\text{EBOB}(12,35)=1$; diğer ikililerin EBOB'u sırasıyla $9$, $7$, $8$ ve $15$ olduğundan aralarında asal değildir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0140",
+   "konu": "10.3.2",
+   "zorluk": 1,
+   "s": "$24$ sayısının pozitif bölenleri $1,2,3,4,6,8,12,24$; $36$ sayısının pozitif bölenleri $1,2,3,4,6,9,12,18,36$'dır. Bu iki sayının ortak pozitif bölenlerinin sayısı kaçtır?",
+   "o": [
+    "$4$",
+    "$5$",
+    "$8$",
+    "$6$",
+    "$12$"
+   ],
+   "c": 3,
+   "a": "Her iki listede de bulunanlar $1,2,3,4,6,12$ olup $6$ tanedir. En büyüğü $12$ olduğundan $\\text{EBOB}(24,36)=12$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0141",
+   "konu": "10.3.2",
+   "zorluk": 1,
+   "s": "Bir fener $6$ saniyede, diğer bir fener $10$ saniyede bir yanıp sönmektedir. İkisi aynı anda yanıp söndükten sonraki ilk $2$ dakika içinde, başlangıç anı sayılmadan ($120$. saniye dahil), kaç kez birlikte yanıp sönerler?",
+   "o": [
+    "$4$",
+    "$2$",
+    "$3$",
+    "$5$",
+    "$6$"
+   ],
+   "c": 0,
+   "a": "Birlikte yanıp sönme aralığı $\\text{EKOK}(6,10)=30$ saniyedir. $120$ saniyede $30,60,90,120$. saniyelerde olmak üzere $4$ kez birlikte yanıp söner.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0142",
+   "konu": "10.3.2",
+   "zorluk": 2,
+   "s": "Boyutları $72$ m ve $90$ m olan dikdörtgen biçimli bir bahçenin çevresine, köşelerde de birer fidan olacak ve komşu iki fidan arasındaki uzaklık birbirine eşit olacak biçimde fidan dikilecektir. En az kaç fidan gerekir?",
+   "o": [
+    "$9$",
+    "$27$",
+    "$36$",
+    "$54$",
+    "$18$"
+   ],
+   "c": 4,
+   "a": "Aralık her iki kenarı da bölmelidir; fidan sayısı en az olsun diye aralık $\\text{EBOB}(72,90)=18$ m alınır. Çevre $2(72+90)=324$ m olduğundan $324:18=18$ fidan gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0143",
+   "konu": "10.3.2",
+   "zorluk": 2,
+   "s": "$a$ ve $b$ pozitif tam sayılar olmak üzere aşağıdaki ifadelerden hangisi her zaman doğrudur?",
+   "o": [
+    "$\\text{EKOK}(a,b)=a\\cdot b$",
+    "$\\text{EBOB}(a,b)<a$",
+    "$\\text{EBOB}(a,b)$, $\\text{EKOK}(a,b)$ sayısını böler.",
+    "$\\text{EKOK}(a,b)>a$",
+    "$\\text{EBOB}(a,b)\\cdot\\text{EKOK}(a,b)<a\\cdot b$"
+   ],
+   "c": 2,
+   "a": "EBOB, $a$'yı böldüğü için $a$'nın bir katı olan EKOK'u da böler. Karşı örnekler: $(2,4)$ için EKOK $\\neq a\\cdot b$; $(3,3)$ için EBOB $<a$ değil; $(4,2)$ için EKOK $>a$ değil. EBOB$\\cdot$EKOK ise her zaman $a\\cdot b$'ye eşittir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0144",
+   "konu": "10.3.2",
+   "zorluk": 2,
+   "s": "Şekilde $0$'dan $36$'ya kadar olan sayı doğrusu üzerinde, $4$'ün katları üstteki doğruda turuncu, $6$'nın katları alttaki doğruda mavi noktalarla gösterilmiştir. Üst ve alt doğrudaki noktalar eşit uzaklıkla çizilmiştir. Aynı sayıya karşılık gelen iki noktanın bulunduğu, $0$ dışındaki sayıların sayısı kaçtır?",
+   "o": [
+    "$2$",
+    "$4$",
+    "$5$",
+    "$3$",
+    "$6$"
+   ],
+   "c": 3,
+   "a": "Hem $4$'ün hem $6$'nın katı olan sayılar $\\text{EKOK}(4,6)=12$'nin katlarıdır. $0$ ile $36$ arasında $12,24,36$ olmak üzere $3$ sayı vardır.",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"10\" y1=\"40\" x2=\"226\" y2=\"40\" stroke=\"#9AA3C7\" stroke-width=\"1\"/><line x1=\"10\" y1=\"75\" x2=\"226\" y2=\"75\" stroke=\"#9AA3C7\" stroke-width=\"1\"/><circle cx=\"10\" cy=\"40\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"34\" cy=\"40\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"58\" cy=\"40\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"82\" cy=\"40\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"106\" cy=\"40\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"130\" cy=\"40\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"154\" cy=\"40\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"178\" cy=\"40\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"202\" cy=\"40\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"226\" cy=\"40\" r=\"3.5\" fill=\"#FF8A1F\"/><circle cx=\"10\" cy=\"75\" r=\"3.5\" fill=\"#1E3BD6\"/><circle cx=\"46\" cy=\"75\" r=\"3.5\" fill=\"#1E3BD6\"/><circle cx=\"82\" cy=\"75\" r=\"3.5\" fill=\"#1E3BD6\"/><circle cx=\"118\" cy=\"75\" r=\"3.5\" fill=\"#1E3BD6\"/><circle cx=\"154\" cy=\"75\" r=\"3.5\" fill=\"#1E3BD6\"/><circle cx=\"190\" cy=\"75\" r=\"3.5\" fill=\"#1E3BD6\"/><circle cx=\"226\" cy=\"75\" r=\"3.5\" fill=\"#1E3BD6\"/><text x=\"10\" y=\"22\" font-size=\"12\" fill=\"#FF8A1F\">4'ün katları</text><text x=\"10\" y=\"102\" font-size=\"12\" fill=\"#1E3BD6\">6'nın katları</text><text x=\"10\" y=\"122\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#141B3F\">0</text><text x=\"226\" y=\"122\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#141B3F\">36</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0145",
+   "konu": "10.3.2",
+   "zorluk": 3,
+   "s": "$a<b$ olmak üzere $a$ ve $b$ pozitif tam sayıları için $\\text{EBOB}(a,b)=4$ ve $\\text{EKOK}(a,b)=240$ ise kaç farklı $(a,b)$ ikilisi vardır?",
+   "o": [
+    "$6$",
+    "$4$",
+    "$3$",
+    "$5$",
+    "$2$"
+   ],
+   "c": 1,
+   "a": "$a=4m$, $b=4n$ ve $\\text{EBOB}(m,n)=1$ yazılır; $a\\cdot b=\\text{EBOB}\\cdot\\text{EKOK}$ olduğundan $m\\cdot n=60$. $m<n$ ve aralarında asal olan çiftler $(1,60),(3,20),(4,15),(5,12)$; $(2,30)$ ve $(6,10)$ ortak çarpan içerdiğinden uygun değildir. Cevap $4$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0146",
+   "konu": "10.3.2",
+   "zorluk": 3,
+   "s": "$a$ ve $b$ pozitif tam sayıları için $\\text{EKOK}(a,b)$, $\\text{EBOB}(a,b)$'nin $20$ katıdır. $a+b=36$ ise $a\\cdot b$ kaçtır?",
+   "o": [
+    "$320$",
+    "$180$",
+    "$405$",
+    "$576$",
+    "$720$"
+   ],
+   "c": 0,
+   "a": "$\\text{EBOB}=g$, $a=gm$, $b=gn$ olsun; $\\text{EKOK}=gmn=20g$ olduğundan $mn=20$, $m,n$ aralarında asaldır: $(1,20)$ veya $(4,5)$. $g(m+n)=36$ yalnızca $(4,5)$ ve $g=4$ için sağlanır; $a,b=16,20$ ve $a\\cdot b=320$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0147",
+   "konu": "10.3.3",
+   "zorluk": 1,
+   "s": "Üç basamaklı $\\overline{37x}$ sayısı $9$ ile tam bölünebildiğine göre $x$ kaçtır?",
+   "o": [
+    "$0$",
+    "$1$",
+    "$2$",
+    "$9$",
+    "$8$"
+   ],
+   "c": 4,
+   "a": "$9$ ile bölünebilmek için rakamlar toplamı $9$'un katı olmalıdır: $3+7+x=10+x$. Rakam olarak yalnızca $x=8$ için toplam $18$ olur ($378=9\\cdot 42$).",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0148",
+   "konu": "10.3.3",
+   "zorluk": 1,
+   "s": "$5\\,183\\,372$ sayısının $8$ ile bölümünden kalan kaçtır?",
+   "o": [
+    "$0$",
+    "$2$",
+    "$4$",
+    "$3$",
+    "$6$"
+   ],
+   "c": 2,
+   "a": "$1000$ sayısı $8$'in katı olduğundan kalan yalnızca son üç basamaktan bulunur: $372=8\\cdot 46+4$. Kalan $4$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0149",
+   "konu": "10.3.3",
+   "zorluk": 1,
+   "s": "$a$ doğal sayısının $8$ ile bölümünden kalan $5$'tir. $a$ sayısının $4$ ile bölümünden kalan kaçtır?",
+   "o": [
+    "$0$",
+    "$1$",
+    "$2$",
+    "$3$",
+    "$5$"
+   ],
+   "c": 1,
+   "a": "$a=8k+5=4(2k+1)+1$ yazılır. $8k+4$ sayısı $4$'ün katı olduğundan kalan $1$'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0150",
+   "konu": "10.3.3",
+   "zorluk": 2,
+   "s": "Tabloda $n$ doğal sayısının $4$ ve $6$ ile bölümünden kalanlar verilmiştir. $n$ sayısının $12$ ile bölümünden kalan kaçtır?",
+   "o": [
+    "$1$",
+    "$3$",
+    "$4$",
+    "$9$",
+    "$7$"
+   ],
+   "c": 3,
+   "a": "$n=4a+1$ ve $n=6b+3$ olduğundan $n$ tek sayıdır. $\\text{EKOK}(4,6)=12$ olduğundan $12$ ile kalan $0$ ile $11$ arasındadır; hem $4$'le bölümünden $1$ hem $6$'yla bölümünden $3$ kalanını veren tek değer $9$'dur ($9=4\\cdot2+1=6\\cdot1+3$).",
+   "sekil": "<svg viewBox=\"0 0 240 100\"><rect x=\"30\" y=\"20\" width=\"60\" height=\"30\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"90\" y=\"20\" width=\"60\" height=\"30\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"150\" y=\"20\" width=\"60\" height=\"30\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"50\" width=\"60\" height=\"30\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"90\" y=\"50\" width=\"60\" height=\"30\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><rect x=\"150\" y=\"50\" width=\"60\" height=\"30\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"60\" y=\"40\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#141B3F\">Bölen</text><text x=\"120\" y=\"40\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1E3BD6\">4</text><text x=\"180\" y=\"40\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1E3BD6\">6</text><text x=\"60\" y=\"70\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#141B3F\">Kalan</text><text x=\"120\" y=\"70\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#FF8A1F\">1</text><text x=\"180\" y=\"70\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#FF8A1F\">3</text></svg>",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0151",
+   "konu": "10.3.3",
+   "zorluk": 2,
+   "s": "Üç basamaklı $\\overline{6a4}$ sayısının $3$ ile bölümünden kalan $2$ ise $a$'nın alabileceği değerlerin toplamı kaçtır?",
+   "o": [
+    "$12$",
+    "$9$",
+    "$15$",
+    "$18$",
+    "$22$"
+   ],
+   "c": 0,
+   "a": "Bir sayının $3$ ile bölümünden kalan, rakamları toplamının kalanına eşittir: $6+a+4=10+a$. $10+a$ sayısının $3$ ile kalanı $2$ ise $a\\in\\{1,4,7\\}$ olur; toplam $12$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0152",
+   "konu": "10.3.3",
+   "zorluk": 2,
+   "s": "$n$, $6$ ile bölündüğünde $4$ kalanını veren bir doğal sayıdır. Aşağıdakilerden hangisi her zaman doğru DEĞİLDİR?",
+   "o": [
+    "$n$ çift sayıdır.",
+    "$n$ sayısının $4$ ile bölümünden kalan $0$'dır.",
+    "$n$ sayısının $3$ ile bölümünden kalan $1$'dir.",
+    "$n+2$, $6$'nın katıdır.",
+    "$n+5$, $3$'ün katıdır."
+   ],
+   "c": 1,
+   "a": "$n=6k+4$ yazılır. Seçeneklerin dördü her $k$ için doğrudur. Ancak $n=10$ için $4$ ile bölümünden kalan $2$'dir; bu ifade her zaman doğru değildir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0153",
+   "konu": "10.3.3",
+   "zorluk": 3,
+   "s": "$n$ sayısı $8$ ile bölündüğünde $3$, $6$ ile bölündüğünde $1$ kalanını vermektedir. $n$ en küçük üç basamaklı sayı ise $n$ kaçtır?",
+   "o": [
+    "$107$",
+    "$109$",
+    "$121$",
+    "$123$",
+    "$115$"
+   ],
+   "c": 4,
+   "a": "$n=8k+3$ sayıları tek ve $6$ ile bölümünden kalan $1$ olacak biçimde aranır: $3,11,19,\\dots$ içinde $19$ ilk uygun sayıdır ve uygun sayılar $24$ aralıkla gelir ($24=\\text{EKOK}(8,6)$). $24t+19$ biçiminde en küçük üç basamaklı değer $t=4$ için $115$'tir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "10-0154",
+   "konu": "10.3.3",
+   "zorluk": 3,
+   "s": "$n$ pozitif bir tam sayı olmak üzere $n^{2}$ sayısının $8$ ile bölümünden kalan olabilecek tüm değerlerin toplamı kaçtır?",
+   "o": [
+    "$8$",
+    "$10$",
+    "$5$",
+    "$14$",
+    "$28$"
+   ],
+   "c": 2,
+   "a": "$n$ sayısının $8$ ile kalanı $0,\\dots,7$ olabilir ve karelerin $8$ ile kalanları $0,1,4,1,0,1,4,1$ olur. Farklı kalanlar $0,1,4$; toplam $5$.",
+   "kaynak": "ozgun"
   }
  ]
 }
