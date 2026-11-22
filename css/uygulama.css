@@ -1576,3 +1576,19 @@ html.mf-gece .ay-sec{background:#141A40;border-color:#2F3970;color:#E6EAFA}
 html.mf-gece .bl-satir.bl-uyar .bl-deg{background:#3A2A1A;border-color:#8A5420;color:#FFD2A6}
 .sn-kart,.sn-ince{display:none!important}
 .pm-ayar>.bl-satir.bl-uyar{grid-column:1/-1}
+/* 22 Kasım tasarım düzeltmeleri */
+.pm-saat .ay-btn{position:absolute;top:-6px;left:-14px;z-index:2;width:44px;height:44px;border:0;background:#E3E8FF;margin:0}
+.pm-saat .ay-btn svg{width:22px;height:22px}
+html.mf-gece .pm-saat .ay-btn{background:#232B52;color:#B7C5FF}
+.pm-saat .ay-btn{transform-origin:top left;transition:opacity .4s ease,visibility 0s linear 0s}
+body.lv-odak .pm-saat .ay-btn{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .4s ease,visibility 0s linear .4s}
+.kd .dj-link{fill:var(--kd-mavi);cursor:pointer;text-decoration:underline}
+.pm-domates{display:flex;align-items:center;justify-content:center;gap:2px}
+.pm-domates small{font-size:11px;letter-spacing:.4px;color:#7A8099;margin-right:6px;font-weight:600}
+html.mf-gece .pm-domates small{color:#AEB6D3}
+html.mf-gece .pm-sifir{background:#2C3670;color:#DCE3FF}
+html.mf-gece .pm-saat .pm-etiket{color:#C3CBEA}
+#pm-odak-c button[data-v="ozel"]:not(.on){background:#fff;border:1px solid #C9D2F5}
+#pm-odak-c button[data-v="ozel"]:not(.on)::before{color:inherit}
+html.mf-gece #pm-odak-c button[data-v="ozel"]:not(.on){background:#232B52;border:1px solid #3A4BA0}
+#pm-odak-c button[data-v="ozel"]{margin-left:0;border-radius:12px;font-weight:600}

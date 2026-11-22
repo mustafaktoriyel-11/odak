@@ -49,7 +49,7 @@
     $('pm-basla').textContent=d.calisiyor?T.duraklat:(k===d.toplam?T.baslat:T.devam);
     $('pm-muzik').classList.toggle('cal',d.calisiyor&&!!$('pm-ses').value);seansGizle(d.mod==='odak'&&k!==d.toplam);
     var dm='';for(var i=0;i<4;i++)dm+=i<(d.tur%4)?'●':'○';
-    $('pm-domates').textContent=dm;
+    $('pm-domates').innerHTML='<small>Odak turu</small>'+dm;$('pm-domates').setAttribute('aria-label','Odak turu '+(d.tur%4)+' / 4');
     var bs=kok.querySelectorAll('.pm-mod button');for(var j=0;j<bs.length;j++){var dn=bs[j].getAttribute('data-m')==='deneme';bs[j].classList.toggle('aktif',dn===(d.mod==='deneme'));bs[j].classList.toggle('molada',!dn&&mola);}
     document.title=(d.calisiyor?bicim(k)+' – ':'')+BASLIK;
     if(d.mod==='odak'&&(d.serbest||(!d.calisiyor&&k===d.toplam&&$('pm-odak').value==='serbest'))){

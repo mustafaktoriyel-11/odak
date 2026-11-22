@@ -3,7 +3,8 @@
   'use strict';
   function $(i){return document.getElementById(i);}
   var btn=$('ay-btn'),p=$('ay-p');if(!btn||!p)return;
-  var acik=false;
+  var acik=false,saat=$('pm-saat'),eski=btn.parentNode;
+  if(saat){saat.appendChild(btn);if(eski&&eski.classList.contains('ay-satir'))eski.remove();}
   function sinifYaz(){var f=window.MF_SINIF&&window.MF_SINIF(),e=$('ay-sinif-et');if(!e)return;
     if(!f){e.textContent='Seçilmedi';return;}
     var AL={SAY:'Sayısal',EA:'Eşit Ağırlık',SOZ:'Sözel',DIL:'Dil'};
