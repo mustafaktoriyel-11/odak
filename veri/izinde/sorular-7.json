@@ -2061,6 +2061,375 @@
    "c": 0,
    "a": "Sıralı veri $9,10,12,15,15,15,18$'dir. Ortanca $15$, tepe değer $15$'tir. Ortalama $94:7\\approx13{,}4$'tür.",
    "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0138",
+   "konu": "7.2.5",
+   "zorluk": 1,
+   "s": "Şekilde iç ölçüleri verilen süt kutusu dikdörtgenler prizması biçimindedir. Kutu ağzına kadar süt dolu ise içindeki süt kaç mL'dir?",
+   "o": [
+    "$960$",
+    "$96$",
+    "$9600$",
+    "$9{,}6$"
+   ],
+   "c": 0,
+   "a": "Hacim $8\\cdot6\\cdot20=960$ cm$^3$'tür. $1$ cm$^3=1$ mL olduğundan kutuda $960$ mL süt vardır.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"70,18 114,18 114,110 70,110\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"70,18 100,2 144,2 114,18\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"114,18 144,2 144,94 114,110\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"92.0\" y=\"124\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">8 cm</text><text x=\"64\" y=\"68.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">20 cm</text><text x=\"148\" y=\"56.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">6 cm</text></svg>"
+  },
+  {
+   "id": "7-0139",
+   "konu": "7.2.5",
+   "zorluk": 1,
+   "s": "Ayrıtı $1$ cm olan küp biçimindeki bir kesme şekerin hacmi kaç mm$^3$'tür?",
+   "o": [
+    "$100$",
+    "$1000$",
+    "$10$",
+    "$10\\,000$"
+   ],
+   "c": 1,
+   "a": "$1$ cm $=10$ mm olduğundan hacim $10\\cdot10\\cdot10=1000$ mm$^3$'tür. Yani $1$ cm$^3=1000$ mm$^3$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0140",
+   "konu": "7.2.5",
+   "zorluk": 1,
+   "s": "Aşağıdaki hacim ifadelerinden hangisi $1$ litreye eşittir?",
+   "o": [
+    "$1$ cm$^3$",
+    "$1$ m$^3$",
+    "$1$ dm$^3$",
+    "$100$ cm$^3$"
+   ],
+   "c": 2,
+   "a": "$1$ litre $=1$ dm$^3=1000$ cm$^3$'tür. $1$ cm$^3$ yalnızca $1$ mL, $1$ m$^3$ ise $1000$ litredir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0141",
+   "konu": "7.2.5",
+   "zorluk": 2,
+   "s": "Bir şişedeki $1{,}5$ litre meyve suyu, her biri $25$ cL olan bardaklara eşit olarak paylaştırılıyor. Kaç bardak gerekir?",
+   "o": [
+    "$60$",
+    "$150$",
+    "$0{,}6$",
+    "$6$"
+   ],
+   "c": 3,
+   "a": "$1$ L $=100$ cL olduğundan $1{,}5$ L $=150$ cL'dir. $150:25=6$ bardak gerekir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0142",
+   "konu": "7.2.5",
+   "zorluk": 2,
+   "s": "Bir şurup şişesinde $150$ mL ilaç vardır. Hasta günde $3$ kez, her seferinde $5$ cm$^3$ şurup içiyor. Şişe kaç gün yeter?",
+   "o": [
+    "$30$",
+    "$10$",
+    "$50$",
+    "$5$"
+   ],
+   "c": 1,
+   "a": "Günlük kullanım $3\\cdot5=15$ cm$^3=15$ mL'dir. $1$ cm$^3=1$ mL olduğundan $150:15=10$ gün yeter.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0143",
+   "konu": "7.2.5",
+   "zorluk": 2,
+   "s": "Aşağıdaki hacimlerden hangisi en büyüktür?",
+   "o": [
+    "$0{,}5$ dm$^3$",
+    "$450$ cm$^3$",
+    "$0{,}0004$ m$^3$",
+    "$480\\,000$ mm$^3$"
+   ],
+   "c": 0,
+   "a": "Hepsi cm$^3$ cinsinden yazılırsa: $0{,}5$ dm$^3=500$, $0{,}0004$ m$^3=400$, $480\\,000$ mm$^3=480$ cm$^3$'tür. En büyük $500$ cm$^3$'tür.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0144",
+   "konu": "7.2.5",
+   "zorluk": 3,
+   "s": "Şekildeki küp biçimindeki depo ağzına kadar su doludur. Depodaki su, $250$ mL'lik bardaklara boşaltılıyor. Kaç bardak su gerekir?",
+   "o": [
+    "$64$",
+    "$25{,}6$",
+    "$2560$",
+    "$256$"
+   ],
+   "c": 3,
+   "a": "Hacim $40^3=64\\,000$ cm$^3=64\\,000$ mL'dir. $64\\,000:250=256$ bardak gerekir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"70,45 130,45 130,105 70,105\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"70,45 102,21 162,21 130,45\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"130,45 162,21 162,81 130,105\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"119\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">40 cm</text><text x=\"64\" y=\"79.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">40 cm</text><text x=\"166\" y=\"63.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">40 cm</text></svg>"
+  },
+  {
+   "id": "7-0145",
+   "konu": "7.2.5",
+   "zorluk": 3,
+   "s": "Deniz, $3{,}2$ litreyi $320$ cm$^3$ olarak yazmıştır. Aşağıdakilerden hangisi onun hatasını doğru açıklar?",
+   "o": [
+    "$1$ L $=10$ cm$^3$ almıştır; doğru sonuç $32$ cm$^3$'tür.",
+    "Hata yoktur; $3{,}2$ L $=320$ cm$^3$'tür.",
+    "$1$ L $=100$ cm$^3$ almıştır; doğru sonuç $3200$ cm$^3$'tür.",
+    "$1$ L $=1000$ cm$^3$ almış ancak virgülü yanlış kaydırmıştır; doğru sonuç $32\\,000$ cm$^3$'tür."
+   ],
+   "c": 2,
+   "a": "$1$ L $=1000$ cm$^3$ olduğundan $3{,}2$ L $=3200$ cm$^3$'tür. Deniz $1$ L'yi $100$ cm$^3$ almıştır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0146",
+   "konu": "7.2.6",
+   "zorluk": 1,
+   "s": "Şekildeki dikdörtgenler prizması biçimindeki hediye kutusunun tüm yüzeyi ambalaj kâğıdıyla kaplanacaktır. En az kaç cm$^2$ kâğıt gerekir?",
+   "o": [
+    "$60$",
+    "$47$",
+    "$94$",
+    "$120$"
+   ],
+   "c": 2,
+   "a": "Yüzey alanı $2(5\\cdot4+5\\cdot3+4\\cdot3)=2(20+15+12)=94$ cm$^2$'dir.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"60,45 160,45 160,105 60,105\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"60,45 100,19 200,19 160,45\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"160,45 200,19 200,79 160,105\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"110.0\" y=\"119\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">5 cm</text><text x=\"54\" y=\"79.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">3 cm</text><text x=\"204\" y=\"62.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">4 cm</text></svg>"
+  },
+  {
+   "id": "7-0147",
+   "konu": "7.2.6",
+   "zorluk": 1,
+   "s": "Ayrıtı $2$ m olan küp biçimindeki bir sandığın dış yüzeyinin tamamı boyanacaktır. $1$ m$^2$ boya $12$ TL ise boya maliyeti kaç TL'dir?",
+   "o": [
+    "$192$",
+    "$144$",
+    "$24$",
+    "$288$"
+   ],
+   "c": 3,
+   "a": "Yüzey alanı $6\\cdot2^2=24$ m$^2$'dir. Maliyet $24\\cdot12=288$ TL'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0148",
+   "konu": "7.2.6",
+   "zorluk": 1,
+   "s": "Hacmi $360$ cm$^3$ olan dikdörtgenler prizması biçimindeki bir kalem kutusunun taban alanı $45$ cm$^2$'dir. Kutunun yüksekliği kaç cm'dir?",
+   "o": [
+    "$8$",
+    "$315$",
+    "$405$",
+    "$16$"
+   ],
+   "c": 0,
+   "a": "$V=$ taban alanı $\\cdot$ yükseklik olduğundan yükseklik $360:45=8$ cm'dir.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0149",
+   "konu": "7.2.6",
+   "zorluk": 2,
+   "s": "Şekildeki akvaryum üstü açık dikdörtgenler prizması biçimindedir. Akvaryumun tabanı ve dört yan yüzü camdan yapılacağına göre kaç cm$^2$ cam gerekir?",
+   "o": [
+    "$10\\,800$",
+    "$9000$",
+    "$7200$",
+    "$3600$"
+   ],
+   "c": 1,
+   "a": "Taban $60\\cdot30=1800$, yan yüzler $2(60\\cdot40)+2(30\\cdot40)=7200$ cm$^2$'dir. Toplam $1800+7200=9000$ cm$^2$.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"48,40 168,40 168,116 48,116\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"48,40 88,14 208,14 168,40\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><polygon points=\"168,40 208,14 208,90 168,116\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"108.0\" y=\"130\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">60 cm</text><text x=\"42\" y=\"82.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">40 cm</text><text x=\"212\" y=\"65.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">30 cm</text></svg>"
+  },
+  {
+   "id": "7-0150",
+   "konu": "7.2.6",
+   "zorluk": 2,
+   "s": "Şekilde açınımı verilen dikdörtgenler prizması biçimindeki kutunun ayrıtları $6$ cm, $4$ cm ve $3$ cm'dir. Bu kutunun yüzey alanı kaç cm$^2$'dir?",
+   "o": [
+    "$72$",
+    "$54$",
+    "$84$",
+    "$108$"
+   ],
+   "c": 3,
+   "a": "Üst ve alt yüzler $2\\cdot24=48$, ön ve arka $2\\cdot18=36$, yanlar $2\\cdot12=24$ cm$^2$'dir. Toplam $108$ cm$^2$.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"30,48 66,48 66,75 30,75\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"66,48 120,48 120,75 66,75\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"120,48 156,48 156,75 120,75\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"156,48 210,48 210,75 156,75\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"66,12 120,12 120,48 66,48\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"66,75 120,75 120,111 66,111\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"93.0\" y=\"9\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">6 cm</text><text x=\"62\" y=\"34\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">4 cm</text><text x=\"26\" y=\"65\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">3 cm</text></svg>"
+  },
+  {
+   "id": "7-0151",
+   "konu": "7.2.6",
+   "zorluk": 2,
+   "s": "İç boyutları $24$ cm, $16$ cm ve $12$ cm olan dikdörtgenler prizması biçimindeki bir koliye, boyutları $6$ cm, $4$ cm ve $3$ cm olan sabun kalıpları boşluk kalmayacak biçimde yerleştirilecektir. Koliye en çok kaç sabun sığar?",
+   "o": [
+    "$32$",
+    "$48$",
+    "$64$",
+    "$96$"
+   ],
+   "c": 2,
+   "a": "Koli hacmi $24\\cdot16\\cdot12=4608$, bir sabunun hacmi $6\\cdot4\\cdot3=72$ cm$^3$'tür. $4608:72=64$ sabun sığar (her boyutta $4$ sıra).",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0152",
+   "konu": "7.2.6",
+   "zorluk": 3,
+   "s": "Bir küpün ayrıtları $2$ katına çıkarılırsa yüzey alanı ve hacmi için aşağıdakilerden hangisi doğrudur?",
+   "o": [
+    "Yüzey alanı $2$ katına, hacmi $4$ katına çıkar.",
+    "Yüzey alanı $4$ katına, hacmi $8$ katına çıkar.",
+    "Yüzey alanı $4$ katına, hacmi $4$ katına çıkar.",
+    "Yüzey alanı $8$ katına, hacmi $4$ katına çıkar."
+   ],
+   "c": 1,
+   "a": "Ayrıt $a$ iken $2a$ olursa yüzey alanı $6(2a)^2=4\\cdot6a^2$, hacim $(2a)^3=8a^3$ olur.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0153",
+   "konu": "7.2.6",
+   "zorluk": 3,
+   "s": "Şekildeki dikdörtgenler prizması biçimindeki kabın iç tabanı $40$ cm $\\times$ $25$ cm, yüksekliği $20$ cm'dir ve $18$ cm yüksekliğe kadar su doludur. Kaba hacmi $4$ litre olan bir taş tamamen batacak biçimde bırakılıyor. Kaptan kaç litre su taşar?",
+   "o": [
+    "$2$",
+    "$4$",
+    "$0{,}2$",
+    "$2000$"
+   ],
+   "c": 0,
+   "a": "Kapta boş kalan hacim $40\\cdot25\\cdot2=2000$ cm$^3=2$ L'dir. Taş $4$ L yer kaplar, bu yüzden $4-2=2$ L su taşar.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><polygon points=\"40,57 150,57 150,116 40,116\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><text x=\"95.0\" y=\"73\" font-size=\"10\" text-anchor=\"middle\" fill=\"#1E3BD6\">18 cm</text><polygon points=\"40,50 150,50 150,116 40,116\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"40,50 80,26 190,26 150,50\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><polygon points=\"150,50 190,26 190,92 150,116\" fill=\"none\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><text x=\"95.0\" y=\"130\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">40 cm</text><text x=\"34\" y=\"87.0\" font-size=\"10\" text-anchor=\"end\" fill=\"#141B3F\">20 cm</text><text x=\"194\" y=\"71.0\" font-size=\"10\" text-anchor=\"start\" fill=\"#141B3F\">25 cm</text></svg>"
+  },
+  {
+   "id": "7-0154",
+   "konu": "7.3.1",
+   "zorluk": 1,
+   "s": "Aşağıdaki nokta grafiği $8$ öğrencinin bir günde kitap okuduğu süreyi (dakika) göstermektedir. Bu verinin tepe değeri kaçtır?",
+   "o": [
+    "$4$",
+    "$30$",
+    "$50$",
+    "$20$"
+   ],
+   "c": 1,
+   "a": "En çok tekrar eden süre $30$ dakikadır ($4$ öğrenci). Tepe değer $30$'dur; $4$ ise tekrar sayısıdır.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"14\" y1=\"100\" x2=\"226\" y2=\"100\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"100\" x2=\"30\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"30\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">20</text><circle cx=\"30\" cy=\"91\" r=\"6\" fill=\"#1E3BD6\"/><circle cx=\"30\" cy=\"77\" r=\"6\" fill=\"#1E3BD6\"/><line x1=\"90\" y1=\"100\" x2=\"90\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"90\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">30</text><circle cx=\"90\" cy=\"91\" r=\"6\" fill=\"#1E3BD6\"/><circle cx=\"90\" cy=\"77\" r=\"6\" fill=\"#1E3BD6\"/><circle cx=\"90\" cy=\"63\" r=\"6\" fill=\"#1E3BD6\"/><circle cx=\"90\" cy=\"49\" r=\"6\" fill=\"#1E3BD6\"/><line x1=\"150\" y1=\"100\" x2=\"150\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"150\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">40</text><circle cx=\"150\" cy=\"91\" r=\"6\" fill=\"#1E3BD6\"/><line x1=\"210\" y1=\"100\" x2=\"210\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"210\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">50</text><circle cx=\"210\" cy=\"91\" r=\"6\" fill=\"#1E3BD6\"/><text x=\"220\" y=\"128\" font-size=\"9\" text-anchor=\"end\" fill=\"#9AA3C7\">dakika</text></svg>"
+  },
+  {
+   "id": "7-0155",
+   "konu": "7.3.1",
+   "zorluk": 1,
+   "s": "Bir kentte beş gece boyunca ölçülen en düşük sıcaklıklar $-3,\\ 2,\\ 5,\\ -1,\\ 4$ derecedir. Bu verinin açıklığı kaç derecedir?",
+   "o": [
+    "$8$",
+    "$2$",
+    "$5$",
+    "$4$"
+   ],
+   "c": 0,
+   "a": "Açıklık, en büyük değerden en küçük değerin çıkarılmasıdır: $5-(-3)=8$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0156",
+   "konu": "7.3.1",
+   "zorluk": 1,
+   "s": "Bir öğrencinin $8$ hafta boyunca girdiği denemelerdeki net sayılarının zamanla nasıl değiştiğini göstermek için aşağıdakilerden hangisi en uygun araçtır?",
+   "o": [
+    "Tepe değer",
+    "Açıklık",
+    "Ortanca",
+    "Çizgi grafiği"
+   ],
+   "c": 3,
+   "a": "Zamana bağlı değişimi göstermek için çizgi grafiği kullanılır. Diğerleri verinin tek bir özetini verir, değişimi göstermez.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0157",
+   "konu": "7.3.1",
+   "zorluk": 2,
+   "s": "Bir otobüs durağında beş gün boyunca beklenen süreler (dakika) $12,\\ 14,\\ 15,\\ 19,\\ 20$'dir. Bu verinin ortalama mutlak sapması kaç dakikadır?",
+   "o": [
+    "$16$",
+    "$14$",
+    "$2{,}8$",
+    "$3{,}5$"
+   ],
+   "c": 2,
+   "a": "Ortalama $80:5=16$'dır. Sapmalar $4,2,1,3,4$ olup toplamları $14$'tür. $14:5=2{,}8$.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0158",
+   "konu": "7.3.1",
+   "zorluk": 2,
+   "s": "Aşağıdaki nokta grafiği $10$ öğrencinin günlük ekran sürelerini (saat) göstermektedir. Bu veri için hangisi doğrudur?",
+   "o": [
+    "Tepe değer $2$'dir.",
+    "Açıklık $9$'dur.",
+    "Aritmetik ortalama ortancadan büyüktür.",
+    "Ortanca $3{,}5$'tir."
+   ],
+   "c": 2,
+   "a": "Ortalama $32:10=3{,}2$, ortanca $3$'tür. Tepe değer $3$, açıklık $9-1=8$'dir. $9$ değeri ortalamayı ortancadan yükseğe çeker.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"14\" y1=\"100\" x2=\"226\" y2=\"100\" stroke=\"#141B3F\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"100\" x2=\"30\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"30\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">1</text><circle cx=\"30\" cy=\"91\" r=\"6\" fill=\"#1E3BD6\"/><line x1=\"52\" y1=\"100\" x2=\"52\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"52\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">2</text><circle cx=\"52\" cy=\"91\" r=\"6\" fill=\"#1E3BD6\"/><circle cx=\"52\" cy=\"77\" r=\"6\" fill=\"#1E3BD6\"/><circle cx=\"52\" cy=\"63\" r=\"6\" fill=\"#1E3BD6\"/><line x1=\"75\" y1=\"100\" x2=\"75\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"75\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">3</text><circle cx=\"75\" cy=\"91\" r=\"6\" fill=\"#1E3BD6\"/><circle cx=\"75\" cy=\"77\" r=\"6\" fill=\"#1E3BD6\"/><circle cx=\"75\" cy=\"63\" r=\"6\" fill=\"#1E3BD6\"/><circle cx=\"75\" cy=\"49\" r=\"6\" fill=\"#1E3BD6\"/><line x1=\"98\" y1=\"100\" x2=\"98\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"98\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">4</text><circle cx=\"98\" cy=\"91\" r=\"6\" fill=\"#1E3BD6\"/><line x1=\"120\" y1=\"100\" x2=\"120\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"120\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">5</text><line x1=\"142\" y1=\"100\" x2=\"142\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"142\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">6</text><line x1=\"165\" y1=\"100\" x2=\"165\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"165\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">7</text><line x1=\"188\" y1=\"100\" x2=\"188\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"188\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">8</text><line x1=\"210\" y1=\"100\" x2=\"210\" y2=\"105\" stroke=\"#141B3F\"/><text x=\"210\" y=\"117\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">9</text><circle cx=\"210\" cy=\"91\" r=\"6\" fill=\"#1E3BD6\"/><text x=\"220\" y=\"128\" font-size=\"9\" text-anchor=\"end\" fill=\"#9AA3C7\">saat</text></svg>"
+  },
+  {
+   "id": "7-0159",
+   "konu": "7.3.1",
+   "zorluk": 2,
+   "s": "Bir basketbol takımındaki iki oyuncunun son $5$ maçtaki sayıları A: $8,10,12,10,10$ ve B: $4,16,10,6,14$'tür. İkisinin de ortalaması $10$'dur. Hangi oyuncunun performansı daha tutarlıdır ve gerekçesi nedir?",
+   "o": [
+    "B oyuncusu; çünkü ortalama mutlak sapması $0{,}8$'dir.",
+    "A oyuncusu; çünkü ortalama mutlak sapması $4$'tür.",
+    "İkisi de eşit tutarlıdır; çünkü ortalamaları eşittir.",
+    "A oyuncusu; çünkü ortalama mutlak sapması $0{,}8$'dir."
+   ],
+   "c": 3,
+   "a": "A'nın sapmaları $2,0,2,0,0$ ve ortalaması $4:5=0{,}8$; B'nin sapmaları $6,6,0,4,4$ ve ortalaması $20:5=4$'tür. Sapma küçük olan A daha tutarlıdır.",
+   "kaynak": "ozgun"
+  },
+  {
+   "id": "7-0160",
+   "konu": "7.3.1",
+   "zorluk": 3,
+   "s": "Aşağıdaki çizgi grafiği bir mağazanın ocak-haziran aylarındaki satışlarını göstermektedir. Bu grafiğe göre aşağıdakilerden hangisi YANLIŞTIR?",
+   "o": [
+    "En büyük aylık artış nisan ayındadır.",
+    "Altı aylık satışların ortalaması $60$ bin TL'dir.",
+    "Ortanca $57{,}5$ bin TL'dir.",
+    "Açıklık $50$ bin TL'dir."
+   ],
+   "c": 0,
+   "a": "Artışlar: şubat $+15$, nisan $+15$, haziran $+30$'dur; en büyüğü haziranda. Ortalama $360:6=60$, ortanca $57{,}5$, açıklık $90-40=50$ doğrudur.",
+   "kaynak": "ozgun",
+   "sekil": "<svg viewBox=\"0 0 240 130\"><line x1=\"34\" y1=\"8\" x2=\"34\" y2=\"100\" stroke=\"#141B3F\"/><line x1=\"34\" y1=\"100\" x2=\"228\" y2=\"100\" stroke=\"#141B3F\"/><text x=\"52\" y=\"114\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Oca</text><line x1=\"52\" y1=\"100\" x2=\"52\" y2=\"103\" stroke=\"#141B3F\"/><text x=\"84\" y=\"114\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Şub</text><line x1=\"84\" y1=\"100\" x2=\"84\" y2=\"103\" stroke=\"#141B3F\"/><text x=\"116\" y=\"114\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Mar</text><line x1=\"116\" y1=\"100\" x2=\"116\" y2=\"103\" stroke=\"#141B3F\"/><text x=\"148\" y=\"114\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Nis</text><line x1=\"148\" y1=\"100\" x2=\"148\" y2=\"103\" stroke=\"#141B3F\"/><text x=\"180\" y=\"114\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">May</text><line x1=\"180\" y1=\"100\" x2=\"180\" y2=\"103\" stroke=\"#141B3F\"/><text x=\"212\" y=\"114\" font-size=\"10\" text-anchor=\"middle\" fill=\"#141B3F\">Haz</text><line x1=\"212\" y1=\"100\" x2=\"212\" y2=\"103\" stroke=\"#141B3F\"/><polyline points=\"52,88 84,70 116,76 148,58 180,64 212,28\" fill=\"none\" stroke=\"#1E3BD6\" stroke-width=\"2\"/><circle cx=\"52\" cy=\"88\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"52\" y=\"81\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">40</text><circle cx=\"84\" cy=\"70\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"84\" y=\"63\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">55</text><circle cx=\"116\" cy=\"76\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"116\" y=\"69\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">50</text><circle cx=\"148\" cy=\"58\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"148\" y=\"51\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">65</text><circle cx=\"180\" cy=\"64\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"180\" y=\"57\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">60</text><circle cx=\"212\" cy=\"28\" r=\"3.5\" fill=\"#FF8A1F\"/><text x=\"212\" y=\"21\" font-size=\"9\" text-anchor=\"middle\" fill=\"#141B3F\">90</text><text x=\"30\" y=\"12\" font-size=\"9\" text-anchor=\"end\" fill=\"#9AA3C7\">bin TL</text></svg>"
+  },
+  {
+   "id": "7-0161",
+   "konu": "7.3.1",
+   "zorluk": 3,
+   "s": "Beş sayının aritmetik ortalaması $10$'dur. Bu sayılardan dördü $6,\\ 8,\\ 10$ ve $12$ olduğuna göre beş sayının ortalama mutlak sapması kaçtır?",
+   "o": [
+    "$2$",
+    "$2{,}4$",
+    "$2{,}8$",
+    "$3$"
+   ],
+   "c": 1,
+   "a": "Toplam $50$ olduğundan beşinci sayı $50-36=14$'tür. Sapmalar $4,2,0,2,4$; toplamı $12$ ve $12:5=2{,}4$.",
+   "kaynak": "ozgun"
   }
  ]
 }
