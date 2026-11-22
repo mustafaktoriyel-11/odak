@@ -73,22 +73,15 @@ jobs:
               sp = Image.new('RGBA', (2732, 2732), (0x14, 0x1B, 0x3F, 255))
               # ikon yok: düz lacivert zemin, ardından web'deki kedili açılış gelir
               sp.convert('RGB').save('assets/' + ad)
-          # PWA ikonu gibi: maskable ikon (mavi zemin + yuvarlatılmış kare + M!)
-          Image.open('icon-maskable-512.png').convert('RGB').save('assets/mf_ikon_tam.png')
           PY
           npx --yes @capacitor/assets generate --android \
             --iconBackgroundColor '#1E3BD6' --iconBackgroundColorDark '#1E3BD6' \
             --splashBackgroundColor '#141B3F' --splashBackgroundColorDark '#141B3F'
-          # Android 8+ uyarlanabilir ikon: web sürümünün maskable ikonu, görünür alana tam oturur (PWA ile aynı görünüm)
+          # Android 8+ uyarlanabilir ikon: zemin (mavi geçiş) + ön katman (M!, 66dp güvenli dairede).
+          # PNG'ler android-ayar/res/drawable-nodpi/ içinde (üretici: tasarim/ikon/uret.py); aşağıda res'e kopyalanır.
           R=android/app/src/main/res
-          mkdir -p $R/drawable-nodpi $R/drawable $R/mipmap-anydpi-v26
-          cp assets/mf_ikon_tam.png $R/drawable-nodpi/mf_ikon_tam.png
-          printf '%s\n' '<?xml version="1.0" encoding="utf-8"?>' \
-            '<inset xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/mf_ikon_tam" android:inset="12dp"/>' \
-            > $R/drawable/mf_ikon_on.xml
-          printf '%s\n' '<?xml version="1.0" encoding="utf-8"?>' \
-            '<shape xmlns:android="http://schemas.android.com/apk/res/android"><solid android:color="#1E3BD6"/></shape>' \
-            > $R/drawable/mf_ikon_zemin.xml
+          mkdir -p $R/mipmap-anydpi-v26
+          rm -f $R/drawable/mf_ikon_on.xml $R/drawable/mf_ikon_zemin.xml
           for f in ic_launcher ic_launcher_round; do
             printf '%s\n' '<?xml version="1.0" encoding="utf-8"?>' \
               '<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">' \
