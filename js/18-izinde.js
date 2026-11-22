@@ -202,7 +202,7 @@
     }
     if(!V.rota)el.innerHTML='<div class="iz-hero"><h2><svg class="ic" aria-hidden="true"><use href="#i-pusula"/></svg>Matematiğin İzinde</h2><p>Yükleniyor…</p></div>';
     goster('mt-giris');
-    temelVeri().then(function(){return katex();}).then(function(){cizGiris(s);})['catch'](function(){
+    temelVeri().then(function(){cizGiris(s);setTimeout(katex,300);})['catch'](function(){
       el.innerHTML='<div class="iz-hero"><h2><svg class="ic" aria-hidden="true"><use href="#i-pusula"/></svg>Matematiğin İzinde</h2><p>Veriler yüklenemedi. İnternet bağlantını kontrol edip tekrar dene.</p><button type="button" class="mt-btn" id="iz-yeniden">Tekrar dene</button></div>';
       var b=$('iz-yeniden');if(b)b.onclick=giris;});
   }
@@ -246,7 +246,7 @@
 
   // ---------- soru çözme ----------
   function basla(gun,s){
-    setAl(gun,s,true).then(function(liste){
+    setAl(gun,s,true).then(function(l){return katex().then(function(){return l;});}).then(function(liste){
       if(!liste.length){tost('Bu sınıf için henüz soru yok.');return;}
       var v=oku(),r=v.g[gun];
       aktif={gun:gun,s:s,liste:liste,i:0};
@@ -288,7 +288,7 @@
     sonucGoster(a.gun,a.s,{once:once,sonra:sonra});
   }
   function sonucGoster(gun,s,fark){
-    setAl(gun,s,false).then(function(liste){
+    setAl(gun,s,false).then(function(l){return katex().then(function(){return l;});}).then(function(liste){
       var r=oku().g[gun];if(!r)return giris();
       var d=r.d||0,n=r.cev.length,harf='ABCDE',msg=d===n?'Kusursuz!':d>=n*.75?'Harika iş!':d>=n/2?'İyi gidiyorsun.':'Her set bir adım. Çözümlere göz at.',o='';
       o+='<div class="iz-hero iz-sonuc-hero"><span class="iz-ust">'+(gun===bugun()?'Bugünün seti':gunT(gun).getDate()+' '+AY[gunT(gun).getMonth()]+' seti')+'</span><h2>'+d+'/'+n+'</h2><p>'+msg+'</p>';
@@ -422,4 +422,7 @@
   window.MF_MT=function(){if(aktif)soruCiz();else giris();};
   rozet();
   if(location.hash==='#mantik'&&window.MF_SAYFA)window.MF_SAYFA('mantik');
+  // uygulama açılınca boşta: Yolculuk verisini önceden yükle (sekme anında açılsın)
+  (function onYukle(){var f=function(){temelVeri().then(function(){var x=sinif();if(x)return sorular(x);})['catch'](function(){});};
+    if(window.requestIdleCallback)requestIdleCallback(f,{timeout:4000});else setTimeout(f,2500);})();
 })();

@@ -1,5 +1,5 @@
 // MustaFaktoriyel Odak - service worker
-var SURUM = 'mf-odak-v158';
+var SURUM = 'mf-odak-v159';
 var DOSYALAR = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png', './css/uygulama.css', './js/00-android.js', './js/01-sayac.js', './js/02-mantik.js', './js/03-geri-tusu.js', './js/04-yedek.js', './js/05-kutuphane.js', './js/06-program-sablon.js', './js/07-sinif-sinav.js', './js/08-tablet.js', './js/09-kisayol.js', './js/10-mola-hatirlat.js', './js/11-elle-ekle.js', './js/12-bildirim.js', './js/13-koc-mesaj.js', './js/14-sayac-katla.js', './js/15-asagi-kapat.js', './js/izinde-secim.js', './js/17-izinde-gorsel.js', './js/18-izinde.js', './js/19-kadranlar.js', './js/20-ayarlar.js', './js/21-secim.js', './veri/izinde/harita.svg', './img/eser/d01.svg', './img/eser/d01.webp', './lib/katex/katex.min.js', './lib/katex/katex.min.css', './veri/izinde/duraklar.json', './veri/izinde/mufredat.json', './veri/izinde/rota.json', './veri/izinde/sorular-10.json', './veri/izinde/sorular-11.json', './veri/izinde/sorular-12.json', './veri/izinde/sorular-5.json', './veri/izinde/sorular-6.json', './veri/izinde/sorular-7.json', './veri/izinde/sorular-8.json', './veri/izinde/sorular-9.json', './veri/izinde/sorular-Mezun.json', './lib/katex/fonts/KaTeX_AMS-Regular.woff2', './lib/katex/fonts/KaTeX_Caligraphic-Bold.woff2', './lib/katex/fonts/KaTeX_Caligraphic-Regular.woff2', './lib/katex/fonts/KaTeX_Fraktur-Bold.woff2', './lib/katex/fonts/KaTeX_Fraktur-Regular.woff2', './lib/katex/fonts/KaTeX_Main-Bold.woff2', './lib/katex/fonts/KaTeX_Main-BoldItalic.woff2', './lib/katex/fonts/KaTeX_Main-Italic.woff2', './lib/katex/fonts/KaTeX_Main-Regular.woff2', './lib/katex/fonts/KaTeX_Math-BoldItalic.woff2', './lib/katex/fonts/KaTeX_Math-Italic.woff2', './lib/katex/fonts/KaTeX_SansSerif-Bold.woff2', './lib/katex/fonts/KaTeX_SansSerif-Italic.woff2', './lib/katex/fonts/KaTeX_SansSerif-Regular.woff2', './lib/katex/fonts/KaTeX_Script-Regular.woff2', './lib/katex/fonts/KaTeX_Size1-Regular.woff2', './lib/katex/fonts/KaTeX_Size2-Regular.woff2', './lib/katex/fonts/KaTeX_Size3-Regular.woff2', './lib/katex/fonts/KaTeX_Size4-Regular.woff2', './lib/katex/fonts/KaTeX_Typewriter-Regular.woff2'];
 
 self.addEventListener('install', function (e) {
@@ -14,19 +14,39 @@ self.addEventListener('activate', function (e) {
   self.clients.claim();
 });
 
-// Uygulama dosyalari: once agdan dene (guncel kalsin), olmazsa onbellekten ver
+// Uygulama dosyalari: once onbellekten ver (aninda acilsin), arkada agdan tazele.
+// Sayfanin kendisi (navigate): agdan dene, 2,5 sn'de gelmezse onbellek.
+function tazele(istek) {
+  return fetch(new Request(istek, { cache: 'no-cache' })).then(function (r) {
+    if (r && r.ok) { var kopya = r.clone(); caches.open(SURUM).then(function (c) { c.put(istek, kopya); }); }
+    return r;
+  });
+}
 self.addEventListener('fetch', function (e) {
   var u = new URL(e.request.url);
   if (e.request.method !== 'GET' || u.origin !== location.origin) return;
-  e.respondWith(
-    fetch(e.request.mode === 'navigate' ? new Request(e.request.url, { cache: 'no-cache', credentials: 'same-origin' }) : new Request(e.request, { cache: 'no-cache' })).then(function (r) {
-      var kopya = r.clone();
-      caches.open(SURUM).then(function (c) { c.put(e.request, kopya); });
-      return r;
-    }).catch(function () {
-      return caches.match(e.request).then(function (r) { return r || caches.match('./index.html'); });
-    })
-  );
+  if (e.request.headers.has('range')) return; // video/ses parcali istekleri tarayiciya birak
+  if (/\/sw\.js$/.test(u.pathname)) return; // surum etiketi hep agdan
+  if (e.request.mode === 'navigate') {
+    e.respondWith(new Promise(function (ok) {
+      var bitti = false;
+      var zaman = setTimeout(function () {
+        caches.match(e.request, { ignoreSearch: true }).then(function (r) { if (r && !bitti) { bitti = true; ok(r); } });
+      }, 2500);
+      fetch(new Request(e.request.url, { cache: 'no-cache', credentials: 'same-origin' })).then(function (r) {
+        var kopya = r.clone(); caches.open(SURUM).then(function (c) { c.put(e.request, kopya); });
+        if (!bitti) { bitti = true; clearTimeout(zaman); ok(r); }
+      }).catch(function () {
+        caches.match(e.request, { ignoreSearch: true }).then(function (r) { if (!bitti) { bitti = true; clearTimeout(zaman); ok(r || caches.match('./index.html')); } });
+      });
+    }));
+    return;
+  }
+  e.respondWith(caches.match(e.request).then(function (r) {
+    var ag = tazele(e.request);
+    if (r) { e.waitUntil(ag.catch(function () {})); return r; }
+    return ag.catch(function () { return caches.match('./index.html'); });
+  }));
 });
 
 self.addEventListener('notificationclick', function (e) {
