@@ -36,3 +36,5 @@ html.mf-gece .iz-taban .hs-dag-ad{fill:#C4B6EE;stroke:#1E2748}
 html.mf-gece .iz-taban .hs-nehir-ad{fill:#8FA8E8;stroke:#1E2748}
 html.mf-gece .iz-taban .hs-pusula circle,html.mf-gece .iz-taban .hs-pusula path{stroke:#8EA4EE}html.mf-gece .iz-taban .hs-pusula path{fill:#1E2748}html.mf-gece .iz-taban .hs-pusula .ic{fill:#8EA4EE}html.mf-gece .iz-taban .hs-pusula text{fill:#8EA4EE}
 html.mf-gece .iz-taban .hs-vs{stop-color:#070C22}
+.iz-taban .hs-ad2{font-size:calc(var(--f) * var(--k2,1) * 1px);stroke-width:calc(3px * var(--k2,1))}
+.iz-taban .hs-ad3{font-size:calc(var(--f) * var(--k3,1) * 1px);stroke-width:calc(2.6px * var(--k3,1))}

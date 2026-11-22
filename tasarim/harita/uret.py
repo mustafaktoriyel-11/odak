@@ -74,7 +74,7 @@ ETK=[]
 def etk(metin,lon,lat,sinif,boy,aci=0,ara=0):
     x,y=pr(lon,lat)
     if lon<LONMIN: x,y=pr(lon+360,lat)
-    ETK.append('<text class="%s" x="%.0f" y="%.0f" font-size="%g"%s%s>%s</text>'%(sinif,x,y,boy,(' letter-spacing="%g"'%ara) if ara else '',(' transform="rotate(%g %.0f %.0f)"'%(aci,x,y)) if aci else '',metin))
+    ETK.append('<text class="%s" x="%.0f" y="%.0f" font-size="%g" style="--f:%g"%s%s>%s</text>'%(sinif,x,y,boy,boy,(' letter-spacing="%g"'%ara) if ara else '',(' transform="rotate(%g %.0f %.0f)"'%(aci,x,y)) if aci else '',metin))
 for t,lo,la in [('ATLAS OKYANUSU',-40,27),('BÜYÜK OKYANUS',-140,8),('BÜYÜK OKYANUS',168,22),('HİNT OKYANUSU',78,-22)]: etk(t,lo,la,'hs-ad1 hs-okyanus',36,0,8)
 for t,lo,la in [('AFRİKA',20,8),('AVRUPA',22,55),('ASYA',95,52),('KUZEY AMERİKA',-102,45),('GÜNEY AMERİKA',-60,-12),('AVUSTRALYA',134,-26)]: etk(t,lo,la,'hs-ad1 hs-kita',40,0,12)
 for t,lo,la,a in [('Akdeniz',18,34.6,0),('Karadeniz',34.5,43.4,0),('Kızıldeniz',38.3,20.5,-58),('Hazar Denizi',50.7,41,-70),('Basra Körfezi',51.2,27.3,-30),('Arap Denizi',63,15,0),('Bengal Körfezi',89,15,0),('Güney Çin Denizi',114,13,0),('Doğu Çin Denizi',126,28,0),('Japon Denizi',135,40.5,0),('Meksika Körfezi',-90,25,0),('Karayip Denizi',-76,15,0),('Kuzey Denizi',3.2,56,0),('Baltık Denizi',19,57,-60),('Ege',25.0,39.2,0),('Aral',59.5,45,0)]: etk(t,lo,la,'hs-ad2 hs-deniz-ad',17 if len(t)>5 else 14,a,1)
@@ -84,7 +84,7 @@ for p,g in daglar:
     t=DTR.get(p['NAME'])
     if not t: continue
     DTR.pop(p['NAME']);c=g.representative_point()
-    etk(t,c.x,c.y-0.6,'hs-ad3 hs-dag-ad',11.5,0,0.5)
+    etk(t,c.x,c.y-0.6,'hs-ad3 hs-dag-ad',10,0,0.4)
 nad={'Nile':'Nil','Euphrates':'Fırat','Tigris':'Dicle','Ganges':'Ganj','Indus':'İndus','Yangtze':'Yangtze','Huang':'Sarı Irmak','Danube':'Tuna','Rhine':'Ren','Volga':'Volga','Congo':'Kongo','Niger':'Nijer','Amazonas':'Amazon','Mississippi':'Mississippi','Amu  Darya':'Ceyhun','Syr Darya':'Seyhun','Seine':'Sen','Thames':'Thames','Rhône':'Ron','Po':'Po'}
 bul=collections.defaultdict(list)
 for f in yukle('ne_50m_rivers_lake_centerlines.geojson'):

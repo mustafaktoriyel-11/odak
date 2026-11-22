@@ -139,6 +139,8 @@
   function kamDur(){
     var ic=$('iz-ic');if(!ic)return;if(kamParmak>0){kamUygula.t=setTimeout(kamDur,260);return;}
     var b=kamSinir(),z=kam.s/b.min,zk=z<1.9?'1':(z<3.4?'2':'3');if(ic.getAttribute('data-z')!==zk)ic.setAttribute('data-z',zk);
+    // yakınlaştıkça adlar büyümesin: belirdikleri boyutta kalsın (deniz adları 2,2×, dağ/nehir adları 3,6× yakınlıktan sonra küçülerek sabitlenir)
+    ic.style.setProperty('--k2',Math.min(1,2.2/z).toFixed(3));ic.style.setProperty('--k3',Math.min(1,3.6/z).toFixed(3));
     ic.classList.remove('hareket');
   }
   function kamMerkez(px,py,s){var b=kamSinir();return {s:s,x:b.w/2-px*s,y:b.h*.55-py*s};}
