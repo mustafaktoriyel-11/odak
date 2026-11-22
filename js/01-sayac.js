@@ -45,7 +45,7 @@
     $('pm-domates').style.visibility=d.mod==='deneme'?'hidden':'';
     $('pm-ders-k').style.display=$('pm-odak-k').style.display=d.mod==='deneme'?'none':'';
     $('pm-ozel-k').style.display=(d.mod!=='deneme'&&$('pm-odak').value==='ozel')?'':'none';$('pm-ozel').disabled=$('pm-odak').disabled=d.calisiyor&&d.mod==='odak';cipGuncelle();
-    $('pm-etiket').textContent=d.mod==='deneme'?denemeEtiket():d.mod==='odak'?((d.calisiyor||k!==d.toplam)?(d.ders||$('pm-ders').value):T.odak):(d.mod==='kisa'?T.kisa:T.uzun);
+    $('pm-etiket').textContent=d.mod==='deneme'?denemeEtiket():d.mod==='odak'?((d.calisiyor||k!==d.toplam)?(d.ders||$('pm-ders').value):T.odak+' · '+$('pm-ders').value):(d.mod==='kisa'?T.kisa:T.uzun);
     $('pm-basla').textContent=d.calisiyor?T.duraklat:(k===d.toplam?T.baslat:T.devam);
     $('pm-muzik').classList.toggle('cal',d.calisiyor&&!!$('pm-ses').value);seansGizle(d.mod==='odak'&&k!==d.toplam);
     var dm='';for(var i=0;i<4;i++)dm+=i<(d.tur%4)?'●':'○';
@@ -57,7 +57,7 @@
       var gt=gh?gh+':'+(gm%60<10?'0':'')+(gm%60)+':'+(gs<10?'0':'')+gs:(gm<10?'0':'')+gm+':'+(gs<10?'0':'')+gs;
       $('pm-sure').textContent=gt;$('pm-sure').style.fontSize=gh?'36px':'';
       $('pm-halka').style.strokeDashoffset=CEVRE*(1-(gec%3600000)/3600000);
-      $('pm-etiket').textContent=d.calisiyor?(d.ders||$('pm-ders').value):(k===d.toplam?'Serbest çalışma':'Duraklatıldı');
+      $('pm-etiket').textContent=d.calisiyor?(d.ders||$('pm-ders').value):(k===d.toplam?'Serbest çalışma · '+$('pm-ders').value:'Duraklatıldı');
       document.title=(d.calisiyor?gt+' – ':'')+BASLIK;$('pm-saat').classList.add('serbest');
     }else $('pm-saat').classList.remove('serbest');
     if(window.MF_KADRAN)try{window.MF_KADRAN({k:k,toplam:d.toplam,calisiyor:d.calisiyor,bitis:d.bitis,mod:d.mod,mola:mola,
@@ -66,6 +66,7 @@
     tutGuncelle();
   }
   var BASLIK=document.title;
+  $('pm-ders').addEventListener('change',function(){ciz();}); // boşta etikette seçili ders anında görünsün
   // LGS Tam: 1. oturum -> 45 dk ara -> 2. oturum, hepsi kendiliginden gecer
   function araMi(){return d.mod==='deneme'&&d.faz==='ara';}
   function denemeEtiket(){
