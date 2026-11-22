@@ -144,7 +144,8 @@
    "simge": "yorunge",
    "kavis": 0.3,
    "gorsel": true,
-   "muzik": "hint"
+   "muzik": "hint",
+   "video": true
   },
   {
    "id": "d10",
@@ -230,7 +231,8 @@
     1296,
     505
    ],
-   "muzik": "ortacag"
+   "muzik": "ortacag",
+   "gorsel": true
   },
   {
    "id": "d16",
