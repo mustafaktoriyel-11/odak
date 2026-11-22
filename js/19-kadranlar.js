@@ -133,7 +133,7 @@
   function uyan(){if(!raf){son=performance.now();raf=requestAnimationFrame(dongu);}}
   // odak ekranı yerleşimi için (14-sayac-katla.js): odak hâlindeki en-boy oranı, etiket yüksekliği, maskot olur mu
   window.MF_KD_ORAN=function(){var y=h.querySelector('.pm-yazi'),e=(y?y.offsetHeight:20)+6;
-    if(secim==='dj')return {ra:146/(S&&S.serbest?240:204),e:e,maskot:true};return {ra:398/300,e:e,maskot:false};};
+    if(secim==='dj')return {ra:146/(S&&S.serbest?240:204),e:e,maskot:false};return {ra:398/300,e:e,maskot:false};};
   window.MF_KADRAN=function(s){S=s;h.classList.toggle('kd-mola',!!s.mola);h.classList.toggle('kd-deneme',s.mod==='deneme'&&!s.mola);ciz(0);uyan();};
   document.addEventListener('visibilitychange',function(){if(!document.hidden)uyan();});
   new MutationObserver(function(){if(S)ciz(0);}).observe(document.body,{attributes:true,attributeFilter:['class']});
