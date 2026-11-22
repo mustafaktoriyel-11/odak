@@ -21,7 +21,34 @@
   function sinifAd(s){return s==='Mezun'?'Mezun (YKS)':s+'. sınıf'+(s==='8'?' (LGS)':'');}
 
   // ---------- veri ----------
-  function json(u){return fetch(u,{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(u);return r.json();});}
+  function yerelJson(u){return fetch(u,{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(u);return r.json();});}
+  // Android uygulaması: soru/müfredat/durak verisi siteden güncellenir (mağaza sürümü gerekmez).
+  // Önce telefondaki son kopya (yoksa uygulamanın içindeki) anında kullanılır; site arkada kontrol edilir, yenisi bir sonraki açılışta gelir.
+  var UZAK='https://odak.mustafaktoriyel.com/',VERI_SURUM=1,UK='mf-veri-uzak',tazelendi={};
+  function yerli(){try{return !!(window.Capacitor&&(window.Capacitor.isNativePlatform?window.Capacitor.isNativePlatform():window.Capacitor.platform!=='web'));}catch(e){return false;}}
+  function gecerli(u,d){
+    if(!d||typeof d!=='object')return false;
+    if(d.min_surum&&d.min_surum>VERI_SURUM)return false; // veri daha yeni uygulama istiyor: yerel kopyada kal
+    if(/sorular-/.test(u))return Array.isArray(d.sorular)&&d.sorular.length>0&&d.sorular.every(function(q){return q&&q.id&&q.s&&Array.isArray(q.o)&&typeof q.c==='number'&&q.c>=0&&q.c<q.o.length;});
+    if(/mufredat/.test(u))return !!d.siniflar;
+    if(/rota/.test(u))return Array.isArray(d.duraklar)&&d.duraklar.length>0;
+    if(/duraklar/.test(u))return Array.isArray(d)||Array.isArray(d.duraklar);
+    return true;
+  }
+  function uzakTazele(u){
+    if(tazelendi[u]||!window.caches||navigator.onLine===false)return;tazelendi[u]=1;
+    var ctl=window.AbortController?new AbortController():null,z=setTimeout(function(){if(ctl)ctl.abort();},8000);
+    fetch(UZAK+u,{cache:'no-cache',signal:ctl?ctl.signal:undefined}).then(function(r){if(!r.ok)throw 0;return r.text();}).then(function(t){
+      clearTimeout(z);var d=JSON.parse(t);if(!gecerli(u,d))throw 0;
+      return caches.open(UK).then(function(c){return c.put(UZAK+u,new Response(t,{headers:{'Content-Type':'application/json'}}));});
+    })['catch'](function(){clearTimeout(z);});
+  }
+  function json(u){
+    if(!yerli()||!window.caches)return yerelJson(u);
+    return caches.open(UK).then(function(c){return c.match(UZAK+u);}).then(function(r){
+      return r?r.json().then(function(d){if(!gecerli(u,d))throw 0;return d;}):Promise.reject(0);
+    })['catch'](function(){return yerelJson(u);}).then(function(d){uzakTazele(u);return d;});
+  }
   function temelVeri(){
     if(V.muf&&V.rota&&V.dur)return Promise.resolve();
     if(!yukleniyor)yukleniyor=Promise.all([json('veri/izinde/mufredat.json'),json('veri/izinde/rota.json'),json('veri/izinde/duraklar.json'),fetch('veri/izinde/harita.svg').then(function(r){return r.ok?r.text():'';})['catch'](function(){return '';})]).then(function(a){
