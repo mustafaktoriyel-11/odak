@@ -1758,3 +1758,11 @@ html.mf-gece .bk-kaynak{color:#7E88B5}
 html.mf-gece .bk-zemin{fill:#232B52}html.mf-gece .ik-cukur .bk-zemin,html.mf-gece .ik-okyanus .bk-zemin,html.mf-gece .ik-deniz .bk-zemin{fill:#22406A}html.mf-gece .ik-nehir .bk-zemin,html.mf-gece .ik-gol .bk-zemin{fill:#3A3324}
 html.mf-gece .bk-on{fill:#6F86FF}html.mf-gece .bk-cizgi{stroke:#AEB6D3}html.mf-gece .bk-dip{fill:#0F1A40}html.mf-gece .bk-nehir{stroke:#7C93FF}
 html.mf-gece .bk-kara{fill:#4A4030}html.mf-gece .bk-kara2{fill:#55492F}html.mf-gece .bk-su{fill:#3D6A9A}html.mf-gece .bk-dalga{stroke:#CFE0FF}
+/* açılış: logo yerine oturunca üzerinden bir kez geçen ışık */
+#mf-acilis .ma-pr{position:absolute;left:131px;top:316px;width:128px;height:128px;border-radius:29px;overflow:hidden;pointer-events:none;opacity:0;animation:ma-pr-g .01s 5.25s both}
+#mf-acilis .ma-pr::before{content:"";position:absolute;top:-30%;left:-80%;width:55%;height:160%;background:linear-gradient(100deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.55) 50%,rgba(255,255,255,0) 100%);transform:rotate(18deg);animation:ma-pr .7s 5.3s cubic-bezier(.4,0,.2,1) both}
+#mf-acilis.kisa .ma-pr{animation:ma-pr-g .01s .42s both}
+#mf-acilis.kisa .ma-pr::before{animation:ma-pr .55s .45s cubic-bezier(.4,0,.2,1) both}
+@keyframes ma-pr-g{to{opacity:1}}
+@keyframes ma-pr{from{left:-80%}to{left:130%}}
+@media (prefers-reduced-motion:reduce){#mf-acilis .ma-pr{display:none}}
