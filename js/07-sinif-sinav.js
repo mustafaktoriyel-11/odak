@@ -5,12 +5,15 @@
 var SN_TAKVIM={YKS:{ad:'YKS',tarih:'2027-06-19',saat:'10:15'},LGS:{ad:'LGS',tarih:'2027-06-13',saat:'09:30'}};
 var KEY='mf-sinif',GEC='mf-sinif-gec';
 var SINIFLAR=[['5','Ortaokul'],['6','Ortaokul'],['7','Ortaokul'],['8','LGS'],['9',''],['10',''],['11',''],['12',''],['Mezun','YKS']];
-var ALANLAR=[['SAY','Sayısal'],['EA','Eşit Ağırlık'],['SOZ','Sözel'],['','Henüz karar vermedim']];
-var ALAN_AD={SAY:'Sayısal',EA:'Eşit Ağırlık',SOZ:'Sözel'},ALAN_KISA={SAY:'SAY',EA:'EA',SOZ:'SÖZ'};
+var ALANLAR=[['SAY','Sayısal'],['EA','Eşit Ağırlık'],['SOZ','Sözel'],['DIL','Dil'],['','Henüz karar vermedim']];
+var ALAN_AD={SAY:'Sayısal',EA:'Eşit Ağırlık',SOZ:'Sözel',DIL:'Dil'},ALAN_KISA={SAY:'SAY',EA:'EA',SOZ:'SÖZ',DIL:'DİL'};
+// YKS 2027: herkes TYT (Türkçe, Sosyal Bilimler, Temel Matematik, Fen Bilimleri); AYT alan testi SAY/EA/SÖZ; Dil = YDT.
+// Alan seçilince yalnız o alanın AYT/YDT dersleri + TYT'de alan dışında kalan bölüm tek çip (Fen Bilimleri / Sosyal Bilimler).
 var DERS_SIRA={
- SAY:['Matematik','Geometri','Fizik','Kimya','Biyoloji','Türkçe'],
- EA:['Matematik','Geometri','Edebiyat','Tarih','Coğrafya','Türkçe'],
- SOZ:['Edebiyat','Tarih','Coğrafya','Felsefe','Türkçe','Din Kültürü'],
+ SAY:['Matematik','Geometri','Fizik','Kimya','Biyoloji','Türkçe','Sosyal Bilimler'],
+ EA:['Matematik','Geometri','Edebiyat','Tarih','Coğrafya','Türkçe','Felsefe','Din Kültürü','Fen Bilimleri'],
+ SOZ:['Edebiyat','Tarih','Coğrafya','Felsefe','Din Kültürü','Türkçe','Matematik','Geometri','Fen Bilimleri'],
+ DIL:['İngilizce','Almanca','Türkçe','Matematik','Geometri','Fen Bilimleri','Sosyal Bilimler'],
  '8':['Matematik','Türkçe','Fen Bilimleri','İnkılap Tarihi','İngilizce','Din Kültürü']
 };
 function ORTA(s){return s==='5'||s==='6'||s==='7'||s==='8';}
@@ -54,7 +57,7 @@ function sinavUygula(){
  var f=window.MF_SINIF(),se=$('pm-sinav');if(!f||!se||se.disabled)return;
  var h;
  if(ORTA(f.sinif))h='LGS';
- else if(f.sinif==='12'||f.sinif==='Mezun')h=f.alan||'TYT';
+ else if(f.sinif==='12'||f.sinif==='Mezun')h=f.alan==='DIL'?'YDT':(f.alan||'TYT');
  else h='TYT';
  if(!se.querySelector('option[value="'+h+'"]'))return;
  var ay=null;try{ay=JSON.parse(localStorage.getItem('pm-ayar')||'null');}catch(e){}
@@ -72,9 +75,8 @@ function dersIzin(f){
  if(!f||!f.sinif)return null;
  if(f.sinif==='8')return ['Matematik','Türkçe','Fen Bilimleri','İnkılap Tarihi','İngilizce','Din Kültürü','Diğer'];
  if(ORTA(f.sinif))return ['Matematik','Türkçe','Fen Bilimleri','Sosyal Bilgiler','İngilizce','Din Kültürü','Diğer'];
- var L=['Matematik','Geometri','Türkçe','Edebiyat','Fizik','Kimya','Biyoloji','Tarih','Coğrafya','Felsefe','Din Kültürü','İngilizce','Diğer'];
- if(f.alan==='SAY')L=L.filter(function(x){return x!=='Edebiyat';});
- return L;
+ if((f.sinif==='11'||f.sinif==='12'||f.sinif==='Mezun')&&f.alan&&DERS_SIRA[f.alan])return DERS_SIRA[f.alan].concat(['Diğer']);
+ return ['Matematik','Geometri','Türkçe','Edebiyat','Fizik','Kimya','Biyoloji','Tarih','Coğrafya','Felsefe','Din Kültürü','İngilizce','Diğer'];
 }
 function dersSirala(){
  var f=window.MF_SINIF(),sel=$('pm-ders'),kap=$('pm-ders-c');if(!sel||!kap)return;

@@ -5,11 +5,12 @@ var K='mf-sablon';
 var GUN=['Pazartesi','Salı','Çarşamba','Perşembe','Cuma','Cumartesi','Pazar'];
 var ALAN={
  TYT:{ad:'TYT',alt:'11. sınıf ve TYT odaklı',w:[['Matematik',28],['Türkçe',22],['Geometri',8],['Fizik',8],['Kimya',7],['Biyoloji',7],['Tarih',7],['Coğrafya',6],['Felsefe',4],['Din Kültürü',3]]},
- SAY:{ad:'Sayısal',alt:'Mat-Fen',w:[['Matematik',32],['Fizik',15],['Kimya',13],['Türkçe',12],['Biyoloji',11],['Geometri',11],['Tarih',2],['Coğrafya',2],['Felsefe',2]]},
- EA:{ad:'Eşit Ağırlık',alt:'Mat-Edebiyat-Sosyal',w:[['Matematik',30],['Edebiyat',18],['Türkçe',14],['Tarih',12],['Coğrafya',10],['Geometri',10],['Felsefe',3],['Fizik',1],['Kimya',1],['Biyoloji',1]]},
- SOZ:{ad:'Sözel',alt:'Edebiyat-Sosyal',w:[['Edebiyat',22],['Tarih',20],['Coğrafya',16],['Türkçe',14],['Matematik',12],['Felsefe',10],['Din Kültürü',6]]}
+ SAY:{ad:'Sayısal',alt:'Mat-Fen',w:[['Matematik',32],['Fizik',15],['Kimya',13],['Türkçe',12],['Biyoloji',11],['Geometri',11],['Sosyal Bilimler',6]]},
+ EA:{ad:'Eşit Ağırlık',alt:'Mat-Edebiyat-Sosyal',w:[['Matematik',30],['Edebiyat',18],['Türkçe',14],['Tarih',12],['Coğrafya',10],['Geometri',10],['Felsefe',3],['Fen Bilimleri',3]]},
+ SOZ:{ad:'Sözel',alt:'Edebiyat-Sosyal',w:[['Edebiyat',22],['Tarih',20],['Coğrafya',16],['Türkçe',14],['Matematik',10],['Felsefe',10],['Din Kültürü',4],['Fen Bilimleri',4]]},
+ DIL:{ad:'Dil',alt:'YDT-Yabancı dil',w:[['İngilizce',45],['Türkçe',18],['Matematik',15],['Sosyal Bilimler',10],['Fen Bilimleri',6],['Geometri',6]]}
 };
-var ALAN_SIRA=['TYT','SAY','EA','SOZ'];
+var ALAN_SIRA=['TYT','SAY','EA','SOZ','DIL'];
 var SEV={
  caylak:{e:'<svg class="ic" aria-hidden="true"><use href="#i-filiz"/></svg>',ad:'Çaylak',acik:'Yeni başlayanlar ve okulu yoğun olanlar için. Pazar dinlenme.',h:[75,100,0],b:25,m:2},
  duzenli:{e:'<svg class="ic" aria-hidden="true"><use href="#i-adim"/></svg>',ad:'Düzenli',acik:'Her gün düzenli tempo.',h:[160,200,120],b:40,m:2},
