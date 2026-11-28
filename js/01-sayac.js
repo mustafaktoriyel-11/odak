@@ -491,7 +491,7 @@
     kayitEkle(dk,ders,false,d.mod==='deneme');
     var k=oku(KAYIT_K,{}),g=gun(Date.now());if(!k[g])k[g]={dk:0,p:0,d:{}};k[g].c=(k[g].c||0)+1;yaz(KAYIT_K,k);
     d.faz=null;d.lgsDk=0;d.kalan=d.toplam=sure(d.mod);d.calisiyor=false;d.bitis=null;d.cikis=0;d.ders='';kaydet();sesGuncelle();ciz();
-    $('pm-curu-b').textContent=T.curuB;$('pm-curu-p').textContent=T.curuP.replace('{dk}',Math.round(dk));
+    $('pm-curu-b').textContent=T.curuB;$('pm-curu-p').textContent=Math.round(dk)>=1?T.curuP.replace('{dk}',Math.round(dk)):'Sıkı moddayken uygulamadan çıktığın için bu tur sayılmadı. Hadi yeniden başla!';
     $('pm-curu').classList.add('acik');
     if(navigator.vibrate)navigator.vibrate([200,100,200]);
   }

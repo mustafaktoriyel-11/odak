@@ -358,8 +358,8 @@ html.mf-gece .sik-sahne{background:radial-gradient(circle at 50% 62%,#4A3524,#2A
 .pm-rehber li b{display:inline;margin:0;color:inherit}
 #pm-curu{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;background:rgba(10,16,48,.75);padding:20px}
 #pm-curu.acik{display:flex}
-#pm-curu div{background:#FAFBFF;border-radius:20px;padding:26px 22px;text-align:center;max-width:340px;width:100%}
-#pm-curu .ikon{font-size:54px;line-height:1;margin-bottom:8px;filter:grayscale(.6) brightness(.8)}
+#pm-curu>div{background:#FAFBFF;border-radius:20px;padding:26px 22px;text-align:center;max-width:340px;width:100%}
+#pm-curu .ikon{line-height:1;margin:-4px 0 6px}
 #pm-curu b{display:block;font-size:22px;color:#C0392B;margin-bottom:6px}
 #pm-curu p{margin:0 0 18px;color:#555;font-size:15px;line-height:1.5}
 #sik-izn{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;background:rgba(10,16,48,.6);padding:20px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
@@ -390,7 +390,7 @@ html.mf-gece .pm-sik-ic p{color:#AEB6D3}html.mf-gece .pm-anahtar .ray{background
 html.mf-gece .pm-rehber{background:#1A2142;border-color:#2F3970}
 html.mf-gece .pm-rehber summary,html.mf-gece .pm-rehber b{color:#9FB2FF}
 html.mf-gece .pm-rehber li b{color:inherit}
-html.mf-gece #pm-curu div{background:#1A2142}
+html.mf-gece #pm-curu>div{background:#1A2142}
 html.mf-gece #pm-curu p{color:#D3D9EE}
 
 .halka-k{display:flex;align-items:center;gap:16px;width:100%;margin:6px 0 4px;padding:14px 16px;border:1px solid #DCE2FF;border-radius:20px;background:#FAFBFF;box-shadow:0 2px 10px rgba(15,30,140,.06);font:inherit;text-align:left;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
@@ -1849,3 +1849,56 @@ html.mf-gece #pm-koc.kapali .koc-ac{color:#9FB2FF}
 
 /* Hafif animasyon (eski/yavaş cihaz, 14-sayac-katla.js ölçer): kısa süre, yerleşim animasyonu yok */
 html.mf-hafif{--oeT:.3s}
+
+/* ===== Tablet Çalışma panosu: ekrana tam oturur (sayaç | bugün · yolculuk · hafta · koç), altta kutucuk satırı ===== */
+@media (min-width:760px){
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;min-height:var(--tbH,auto);align-items:stretch;align-content:stretch}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>section.kart:first-of-type{grid-row:2;grid-column:1;align-self:stretch}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan{grid-row:2;grid-column:2;align-self:stretch;display:flex;flex-direction:column;gap:16px;min-height:0}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#tb-hafta{flex:1 1 auto;display:flex;flex-direction:column;min-height:150px}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#tb-hafta .tb-cubuk{flex:1 1 auto;height:auto;min-height:90px}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-alt{grid-row:3;grid-column:1/-1}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.bl-serit,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>#km-kutu,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-masa,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.sn-kart,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.sn-ince,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.yukle{grid-row:1}
+  .tb-alt{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:start}
+  .tb-alt>.alt-link{display:contents}
+  .tb-alt>*{margin:0!important}
+  .tb-alt>.imza{grid-column:1/-1;text-align:center}
+  .tb-alt>details[open]{grid-column:1/-1}
+  .tb-yol{display:flex;flex-direction:column;gap:8px}
+  .tb-yol-ust{display:flex;align-items:center;gap:8px;color:#1E3BD6;font-size:15px}
+  .tb-yol-ust .ic{width:20px;height:20px;color:#FF8A1F}
+  .tb-yol p{margin:0;font-size:14px;color:#3A4370;line-height:1.45}
+  .tb-yol-git{align-self:flex-start;border:0;border-radius:12px;padding:9px 16px;background:#FF8A1F;color:#fff;font:inherit;font-weight:700;font-size:14px;cursor:pointer}
+  .tb-yol-git.ikincil{background:#EEF1FD;color:#1E3BD6}
+  html.mf-gece .tb-yol-ust{color:#9FB2FF}html.mf-gece .tb-yol p{color:#AEB6D3}html.mf-gece .tb-yol-git.ikincil{background:#232B52;color:#B7C5FF}
+}
+@media (max-width:759px){.tb-yol{display:none}}
+@media (min-width:760px) and (orientation:landscape){
+  /* yatayda yükseklik kısıtlı: kutucuklar sağ sütunun altına (2×2), sayaç kartı tam boy */
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>section.kart:first-of-type{grid-row:2/4}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-alt{grid-row:3;grid-column:2;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+}
+@media (min-width:760px) and (orientation:landscape){
+  /* sağ sütun: Bugün | Yolculuk yan yana, altında haftalık grafik ve koç satırı */
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;gap:16px}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#tb-hafta,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#pm-koc,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#lex-yakin{grid-column:1/-1}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#tb-hafta{min-height:130px}
+}
+@media (min-width:760px){
+  .tb-yol-harita{position:relative;height:96px;border-radius:12px;overflow:hidden;background:#BCD3E4;flex:none}
+  .tb-yol-harita img{position:absolute;max-width:none;pointer-events:none;user-select:none}
+  .tb-yol-iz{position:absolute;inset:0;width:100%;height:100%}
+  .tb-iz-cizgi{stroke:#FF8A1F;stroke-width:2.5;stroke-dasharray:5 5;stroke-linecap:round;fill:none}
+  .tb-iz-sonraki{fill:#fff;stroke:#FF8A1F;stroke-width:2.5}
+  .tb-iz-burada{fill:#FF8A1F;stroke:#fff;stroke-width:2.5}
+  .tb-iz-hale{fill:rgba(255,138,31,.25);animation:tbHale 2.2s ease-out infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes tbHale{0%{transform:scale(.6);opacity:1}100%{transform:scale(1.8);opacity:0}}
+  @media (prefers-reduced-motion:reduce){.tb-iz-hale{animation:none}}
+  html.mf-gece .tb-yol-harita{background:#0C1533}html.mf-gece .tb-yol-harita img{filter:brightness(.55) saturate(.8)}
+}
+@media (min-width:760px) and (orientation:landscape){.tb-yol-harita{height:54px}.tb-yol{gap:6px}}
+
+/* Sıkı moddan çıkınca: üzgün aslan (biraz soluk, başı eğik, hafifçe iç çeker) */
+#pm-curu .curu-aslan{width:112px;height:112px;filter:grayscale(.35) saturate(.8);transform:rotate(-8deg);transform-origin:50% 80%;animation:curuIc 2.6s ease-in-out infinite}
+@keyframes curuIc{0%,100%{transform:rotate(-8deg) translateY(0)}50%{transform:rotate(-10deg) translateY(3px)}}
+@media (prefers-reduced-motion:reduce){#pm-curu .curu-aslan{animation:none}}

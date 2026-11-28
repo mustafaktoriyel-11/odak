@@ -183,7 +183,7 @@
 
   // ---------- ilerleme ----------
   // bildirim planı için kısa özet (12-bildirim.js)
-  window.MF_IZ_OZET=function(){if(!V.rota)return null;var st=durum();return {sinif:!!sinif(),bugunTamam:st.bugunTamam,seri:st.seri,sonraki:st.sonraki&&st.sonraki.yer};};
+  window.MF_IZ_OZET=function(){if(!V.rota)return null;var st=durum(),d=V.rota.duraklar[st.konum]||null,n=st.sonraki;return {sinif:!!sinif(),bugunTamam:st.bugunTamam,seri:st.seri,sonraki:n&&n.yer,x:d&&d.x,y:d&&d.y,nx:n&&n.x,ny:n&&n.y,yer:d&&d.yer};};
   function tamamMi(r){return !!(r&&r.bit&&r.cev&&r.cev.length&&r.cev.every(function(x){return x!==null&&x!==undefined;}));}
   function onizle(){try{return localStorage.getItem('mf-iz-onizle')==='1';}catch(e){return false;}}
   function durum(){

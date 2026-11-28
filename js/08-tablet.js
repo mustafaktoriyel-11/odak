@@ -21,6 +21,41 @@
     var mq2=window.matchMedia('(min-width:760px)');
     var kcYerlestir=function(){if(mq2.matches){if(kc.parentNode!==yan)yan.appendChild(kc);}else if(kcYer.nextSibling!==kc)kcYer.parentNode.insertBefore(kc,kcYer.nextSibling);};
     kcYerlestir();if(mq2.addEventListener)mq2.addEventListener('change',kcYerlestir);else if(mq2.addListener)mq2.addListener(kcYerlestir);}
+  // tablet panosu: Yolculuk kutucuğu + sayfa yüksekliği (ekrana tam otursun, kaydırma gerekmesin)
+  var yol=document.createElement('section');yol.className='kart tb-yol';yol.id='tb-yol';yan.insertBefore(yol,hk);
+  function yolYaz(){var o=null;try{o=window.MF_IZ_OZET&&window.MF_IZ_OZET();}catch(e){}
+    var ust='<div class="tb-yol-ust"><svg class="ic" aria-hidden="true"><use href="#i-pusula"/></svg><b>Matematiğin İzinde</b></div>',alt;
+    if(!o||!o.sinif)alt='<p>Her gün 5 soru, dünya turunda bir adım.</p><button type="button" class="tb-yol-git">Yolculuğa başla ›</button>';
+    else if(o.bugunTamam)alt='<p><b>Bugünün seti tamam</b>'+(o.seri>0?' · Seri '+o.seri+' gün':'')+(o.sonraki?'<br>Sıradaki durak: '+o.sonraki:'')+'</p><button type="button" class="tb-yol-git ikincil">Haritaya git ›</button>';
+    else alt='<p><b>Bugünün 5 sorusu hazır</b>'+(o.sonraki?'<br>Sıradaki durak: '+o.sonraki:'')+'</p><button type="button" class="tb-yol-git">Başla ›</button>';
+    var hr='';if(o&&o.sinif&&o.x!=null)hr='<div class="tb-yol-harita" aria-hidden="true"><img alt="" loading="lazy" src="veri/izinde/harita.svg"><svg class="tb-yol-iz"></svg></div>';
+    yol.innerHTML=ust+hr+alt;if(hr)haritaYerlestir(o);var g=yol.querySelector('.tb-yol-git');if(g)g.onclick=function(){if(window.MF_SAYFA)window.MF_SAYFA('mantik');};}
+  // mini harita: bulunulan durak ortada, sıradaki durağa kesik çizgi
+  function haritaYerlestir(o){var k=yol.querySelector('.tb-yol-harita');if(!k)return;var W=k.clientWidth,H=k.clientHeight;if(!W||!H){setTimeout(function(){haritaYerlestir(o);},300);return;}
+    var MW=2576,MH=1438,sc=Math.max(W/900,H/MH),cx=o.x,cy=o.y;if(o.nx!=null){cx=(o.x+o.nx)/2;cy=(o.y+o.ny)/2;var gx=Math.abs(o.nx-o.x)+160,gy=Math.abs(o.ny-o.y)+120;sc=Math.max(H/MH,Math.min(W/600,Math.min(W/gx,H/gy)));}
+    var L=Math.min(0,Math.max(W-MW*sc,W/2-cx*sc)),T=Math.min(0,Math.max(H-MH*sc,H/2-cy*sc)),im=k.querySelector('img');
+    im.style.width=(MW*sc)+'px';im.style.height=(MH*sc)+'px';im.style.left=L+'px';im.style.top=T+'px';
+    var p=function(x,y){return [(L+x*sc).toFixed(1),(T+y*sc).toFixed(1)];},a=p(o.x,o.y),sv=k.querySelector('svg'),h='';
+    sv.setAttribute('viewBox','0 0 '+W+' '+H);
+    if(o.nx!=null){var b=p(o.nx,o.ny);h+='<line x1="'+a[0]+'" y1="'+a[1]+'" x2="'+b[0]+'" y2="'+b[1]+'" class="tb-iz-cizgi"/><circle cx="'+b[0]+'" cy="'+b[1]+'" r="5" class="tb-iz-sonraki"/>';}
+    h+='<circle cx="'+a[0]+'" cy="'+a[1]+'" r="11" class="tb-iz-hale"/><circle cx="'+a[0]+'" cy="'+a[1]+'" r="6" class="tb-iz-burada"/>';sv.innerHTML=h;}
+  addEventListener('resize',function(){yolYaz();});
+  yolYaz();setTimeout(yolYaz,1500);setTimeout(yolYaz,4000);
+  document.addEventListener('visibilitychange',function(){if(!document.hidden)yolYaz();});
+  new MutationObserver(function(){if(!/(^|\s)s-/.test(document.body.className))yolYaz();}).observe(document.body,{attributes:true,attributeFilter:['class']});
+  function panoH(){var nav=document.getElementById('alt-nav'),nr=nav?nav.getBoundingClientRect():null;
+    var navH=(nr&&nr.left<5&&nr.width>=innerWidth*.9)?Math.max(0,innerHeight-nr.top):0;
+    var ust=sayfa.getBoundingClientRect().top+window.scrollY;
+    sayfa.style.setProperty('--tbH',Math.max(560,Math.round(innerHeight-ust-navH-32))+'px');}
+  panoH();addEventListener('resize',panoH);setTimeout(panoH,600);
+  // alt kutucuklar (odak modu rehberi, simülatör/konular, odak turu nedir, imza) tablette tek satırda
+  var alt=document.createElement('div');alt.className='tb-alt';
+  var altlar=[sayfa.querySelector(':scope>details.pm-rehber'),sayfa.querySelector(':scope>.alt-link'),sayfa.querySelector(':scope>details.kart'),sayfa.querySelector(':scope>.imza')].filter(Boolean);
+  var altYer=altlar.map(function(e){var c=document.createComment('alt');e.parentNode.insertBefore(c,e);return c;});
+  var mq3=window.matchMedia('(min-width:760px)');
+  function altYerlestir(){if(mq3.matches){if(!alt.parentNode)sayfa.appendChild(alt);altlar.forEach(function(e){if(e.parentNode!==alt)alt.appendChild(e);});}
+    else{altlar.forEach(function(e,i){if(e.parentNode!==sayfa)altYer[i].parentNode.insertBefore(e,altYer[i].nextSibling);});if(alt.parentNode)alt.remove();}panoH();}
+  altYerlestir();if(mq3.addEventListener)mq3.addEventListener('change',altYerlestir);else if(mq3.addListener)mq3.addListener(altYerlestir);
   var dcx=document.getElementById('pm-ders-c');
   if(dcx){var tb=document.createElement('button');tb.type='button';tb.className='tb-tumu';
     function tbYaz(){var n=dcx.children.length;tb.hidden=n<7;tb.textContent=dcx.classList.contains('tb-tum')?'Daha az göster ▴':'Tüm dersler ('+n+') ▾';}
