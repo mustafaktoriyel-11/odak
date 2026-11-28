@@ -305,7 +305,7 @@
 
 
   // ---------- ekranlar ----------
-  function goster(ad){['mt-giris','mt-test','mt-sonuc'].forEach(function(x){var e=$(x);if(e)e.hidden=x!==ad;});}
+  function goster(ad){['mt-giris','mt-test','mt-sonuc'].forEach(function(x){var e=$(x);if(e)e.hidden=x!==ad;});if(typeof haritaMuzik==='function')haritaMuzik();}
   function giris(){
     var s=sinif(),el=$('mt-giris');if(!el)return;
     if(!s){
@@ -326,7 +326,7 @@
     if(onizle())o+='<p class="iz-gec-not">Önizleme modu: tüm duraklar açık (yalnız bu cihazda). Kapatmak için Ayarlar’da sürüm yazısına 5 kez dokun.</p>';
     o+='<div class="iz-harita-kart"><div class="iz-harita" id="iz-harita"><div class="iz-ic" id="iz-ic">'+(V.taban||'')+
       '<svg id="iz-svg" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none"></svg></div></div>'+
-      '<div class="iz-harita-alt"><button type="button" class="iz-yak" id="iz-yak">'+(yakin?'<svg class="ic" aria-hidden="true"><use href="#i-harita"/></svg>Tüm harita':'<svg class="ic" aria-hidden="true"><use href="#i-buyutec"/></svg>Yakınlaş')+'</button><span>'+(st.sonraki?'Sıradaki durak: <b>'+esc(st.sonraki.yer)+'</b> · '+(st.sonraki.adim-st.toplam)+' set':'<svg class="ic" aria-hidden="true"><use href="#i-bayrak"/></svg>Yolculuğu tamamladın!')+'</span></div></div>';
+      '<div class="iz-harita-alt"><button type="button" class="iz-yak iz-muz" id="iz-muz" aria-label="Harita müziği"></button><button type="button" class="iz-yak" id="iz-yak">'+(yakin?'<svg class="ic" aria-hidden="true"><use href="#i-harita"/></svg>Tüm harita':'<svg class="ic" aria-hidden="true"><use href="#i-buyutec"/></svg>Yakınlaş')+'</button><span>'+(st.sonraki?'Sıradaki durak: <b>'+esc(st.sonraki.yer)+'</b> · '+(st.sonraki.adim-st.toplam)+' set':'<svg class="ic" aria-hidden="true"><use href="#i-bayrak"/></svg>Yolculuğu tamamladın!')+'</span></div></div>';
     // günün seti
     o+='<div class="mt-kart iz-gun">';
     if(tamamMi(r)){o+='<div class="iz-gun-ust"><b><svg class="ic" aria-hidden="true"><use href="#i-tamam"/></svg>Bugünün seti tamam</b><span>'+r.d+'/'+r.cev.length+' doğru</span></div><div class="iz-gun-btn"><button type="button" class="mt-btn2" id="iz-gor">Çözümleri gör</button><button type="button" class="mt-btn2" id="iz-tekrar">Baştan çöz</button></div>';}
@@ -349,6 +349,8 @@
     o+='<div class="mt-kart"><p class="mt-bas">Önceki günler</p><div class="iz-gecmis">'+gec+'</div></div>';
     $('mt-giris').innerHTML=o;goster('mt-giris');
     haritaKur(st);
+    hmDugme();$('iz-muz').onclick=function(){HM.acik=!HM.acik;try{localStorage.setItem('mf-iz-hm',HM.acik?'1':'0');}catch(x){}hmDugme();haritaMuzik();};
+    haritaMuzik();
     $('iz-yak').onclick=function(){yakin=!yakin;this.innerHTML=yakin?'<svg class="ic" aria-hidden="true"><use href="#i-harita"/></svg>Tüm harita':'<svg class="ic" aria-hidden="true"><use href="#i-buyutec"/></svg>Yakınlaş';var b=kamSinir(),mp=maskotYer(st);
       kamGit(yakin?kamMerkez(mp.x,mp.y,Math.max(b.min,b.w/900)):{s:b.min,x:0,y:0},700,yumusak);};
     $('iz-sinif').onclick=sinifSec;
@@ -502,18 +504,28 @@
   try{SES.acik=localStorage.getItem('mf-iz-ses')==='1';}catch(e){}
   function sesDur(){var k=SES.kaynak,g=SES.kazanc;SES.kaynak=null;if(!k||!SES.ctx)return;var t=SES.ctx.currentTime;
     try{g.gain.cancelScheduledValues(t);g.gain.setValueAtTime(g.gain.value,t);g.gain.linearRampToValueAtTime(0,t+.8);k.stop(t+.85);}catch(e){}}
-  function sesCal(ad){
-    sesDur();if(!ad||!SES.acik)return;
+  function sesCal(ad,duzey,zorla){
+    sesDur();if(!ad||(!SES.acik&&!zorla))return;
     var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
     if(!SES.ctx){try{SES.ctx=new AC();}catch(e){return;}}
     var ctx=SES.ctx;if(ctx.state==='suspended')ctx.resume();
     var bekle=SES.tampon[ad]||(SES.tampon[ad]=fetch('ses/tema/'+ad+'.m4a').then(function(r){if(!r.ok)throw 0;return r.arrayBuffer();}).then(function(b){return new Promise(function(ok,no){ctx.decodeAudioData(b,ok,no);});}));
     bekle.then(function(buf){
-      if(!SES.acik||SES.istenen!==ad)return;
+      if((!SES.acik&&!zorla)||SES.istenen!==ad)return;
       var k=ctx.createBufferSource(),g=ctx.createGain();k.buffer=buf;k.loop=true;k.connect(g);g.connect(ctx.destination);
-      var t=ctx.currentTime;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.55,t+2.2);k.start(t);SES.kaynak=k;SES.kazanc=g;
+      var t=ctx.currentTime;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(duzey||.55,t+(zorla?3.5:2.2));k.start(t);SES.kaynak=k;SES.kazanc=g;
     }).catch(function(){delete SES.tampon[ad];});
   }
+  // Harita müziği "Seyyah" (ses/tema/seyyah.m4a): isteğe bağlı, varsayılan kapalı; yalnız harita ekranındayken, kısık çalar
+  var HM={acik:false};try{HM.acik=localStorage.getItem('mf-iz-hm')==='1';}catch(e){}
+  function haritaEkrani(){var g=$('mt-giris');return document.body.classList.contains('s-mantik')&&g&&!g.hidden&&!document.querySelector('.iz-sahne');}
+  function haritaMuzik(){
+    if(HM.acik&&haritaEkrani()){if(SES.istenen!=='seyyah'||!SES.kaynak){SES.istenen='seyyah';sesCal('seyyah',.3,true);}}
+    else if(SES.istenen==='seyyah'){SES.istenen=null;sesDur();}
+  }
+  function hmDugme(){var b=$('iz-muz');if(!b)return;b.classList.toggle('acik',HM.acik);b.setAttribute('aria-pressed',HM.acik?'true':'false');
+    b.innerHTML='<svg class="ic" aria-hidden="true"><use href="#'+(HM.acik?'i-ses-ac':'i-ses-kapali')+'"/></svg>Müzik';}
+  new MutationObserver(function(){haritaMuzik();}).observe(document.body,{attributes:true,attributeFilter:['class']});
   document.addEventListener('visibilitychange',function(){if(!SES.ctx)return;if(document.hidden)SES.ctx.suspend();else if(SES.kaynak)SES.ctx.resume();});
   function durakSahne(i,zoom,sonra){
     var D=V.rota.duraklar,r=D[i],d=V.dur[r.id]||{},st=kamSt||durum(),ul=st.toplam>=r.adim;
@@ -549,7 +561,7 @@
       }
       document.body.appendChild(sh);
       requestAnimationFrame(function(){sh.classList.add('acik');kar.classList.add('git');});
-      function kapat(){SES.istenen=null;sesDur();sh.classList.remove('acik');kar.classList.remove('git');kar.classList.add('tam');
+      function kapat(){SES.istenen=null;sesDur();setTimeout(haritaMuzik,320);sh.classList.remove('acik');kar.classList.remove('git');kar.classList.add('tam');
         setTimeout(function(){sh.remove();if(zoom&&$('iz-harita')){kamGit(geri,650,yumusak);}kar.classList.remove('tam');setTimeout(function(){kar.remove();},350);if(sonra)sonra();},300);}
       sh.querySelector('.iz-sh-kapat').onclick=kapat;
     }

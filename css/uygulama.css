@@ -1790,3 +1790,5 @@ html.mf-gece .bk-kara{fill:#4A4030}html.mf-gece .bk-kara2{fill:#55492F}html.mf-g
   body.lv-odak #pg-sayac{grid-template-columns:minmax(0,1fr)!important}
   body.lv-odak #pg-sayac>*{grid-column:1!important}
 }
+.iz-yak.iz-muz.acik,html.mf-gece .iz-yak.iz-muz.acik{background:#FF8A1F!important;border-color:#FF8A1F!important;color:#fff!important}
+.iz-muz .ic{width:14px;height:14px;vertical-align:-2px;margin-right:3px}
