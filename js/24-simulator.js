@@ -49,7 +49,7 @@
         '<div class="sim-puan"><h4>Tahmini LGS puanı</h4><p class="sim-alt">3 yanlış 1 doğruyu götürür. Türkçe, Matematik ve Fen netleri 4, diğerleri 1 katsayıyla sayılır.</p>'+
         '<div class="sim-pt sim-pt1"><div><span>LGS (500 üzerinden)</span><b id="sim-l-puan">–</b><small>tahmini</small></div></div></div></div>'+
       '<p class="sim-not sim-yks"><b>Puanlar tahminidir.</b> ÖSYM katsayıları önceden yayımlamaz; bu değerler bir önceki yılın sonuçlarından hesaplanmış yaklaşık katsayılardır ve sınavın zorluğuna göre değişir. Büyük sayı ham puan, altındaki OBP eklenmiş yerleştirme puanıdır.</p>'+
-      '<p class="sim-not sim-lgs" hidden><b>Puan tahminidir.</b> MEB, LGS puanını her dersin o yılki ortalamasına göre standart puanla hesaplar; bu yüzden aynı net her yıl biraz farklı puan eder. Buradaki değer yaklaşık bir dönüşümdür, gelişimini izlemek için kullan.</p>'+
+      '<p class="sim-not sim-lgs" hidden><b>Puan tahminidir.</b> MEB, LGS puanını her dersin o yılki Türkiye ortalamasına göre standart puanla hesaplar. Bu tahmin 2026 LGS raporu ve 2026 yüzdelik dilimleri kullanılarak hesaplandı; yüksek puanlarda daha isabetli, düşük netlerde sapma artabilir.</p>'+
       '<div class="sim-alt-d"><button type="button" class="sim-temizle" id="sim-temizle">Tümünü temizle</button><button type="button" class="mt-btn2 sim-kapat">Kapat</button></div></div>';
     document.body.appendChild(p);
     var kap=function(){kaydet();if(window.LEX_GERI&&LEX_GERI.dus)LEX_GERI.dus('sim-p');p.classList.remove('gor');setTimeout(function(){p.classList.remove('acik');},280);};
@@ -79,7 +79,7 @@
     $('sim-t-say').textContent=top([A(0),A(1),A(2),A(3)]);$('sim-t-ea').textContent=top([A(0),A(4),A(5),A(6)]);$('sim-t-soz').textContent=top([A(4),A(5),A(6),A(7),A(8),A(9),A(10)]);
     var L=N.l,ag=(K&&K.lgs&&K.lgs.agirlik)||[4,4,4,1,1,1],w=0,ln=0;for(var li=0;li<6;li++){w+=(L[li]||0)*ag[li];ln+=(L[li]||0);}
     $('sim-l-net').textContent=yuv(ln);$('sim-l-agr').textContent=yuv(w);
-    var lk=(K&&K.lgs)||{taban:194.75,tam:500},lp=lk.taban+(lk.tam-lk.taban)*w/270,dolu=[].some.call(p.querySelectorAll('.sim-satir[data-g="l"] input'),function(i){return i.value!=='';});
+    var lk=(K&&K.lgs)||{},lp=lk.carpan?lk.sabit+lk.carpan.reduce(function(t,b,i){return t+b*(L[i]||0);},0):194.75+305.25*w/270,dolu=[].some.call(p.querySelectorAll('.sim-satir[data-g="l"] input'),function(i){return i.value!=='';});
     $('sim-l-puan').textContent=dolu?Math.min(500,Math.max(100,lp)).toFixed(2):'–';
     if(!K)return;
     $('sim-kaynak').textContent=K.kaynak?K.kaynak+'.':'';

@@ -1,5 +1,5 @@
 {
- "surum": 2,
+ "surum": 3,
  "kaynak": "2026 YKS sonuçlarından hesaplanan yaklaşık katsayılar",
  "tyt": [
   150.77,
@@ -73,9 +73,16 @@
  },
  "robot": "https://www.mustafaktoriyel.com/p/2027-yks-tercih-robotu.html",
  "lgs": {
-  "not": "Yaklaşık: 0 ağırlıklı net ≈ taban, tam net (270) = 500; aradaki doğrusal. MEB puanı standart puanla hesaplar, sonuç değişebilir.",
-  "taban": 194.75,
-  "tam": 500,
+  "yontem": "2026 MEB Merkezî Sınav Raporu (madde güçlüğü, güvenirlik) ve 2026 yüzdelik dilimlerinden (400 puan ≈ %10, 475 ≈ %1) türetilmiş doğrusal tahmin; tam net = 500. Alt puanlarda sapma daha fazla olabilir.",
+  "sabit": 232.697,
+  "carpan": [
+   3.8068,
+   3.8909,
+   3.3849,
+   1.4904,
+   1.7612,
+   1.3135
+  ],
   "agirlik": [
    4,
    4,
