@@ -14,8 +14,8 @@
    "karsilasma": "Semliki Nehri kıyısında, göl kenarındaki bir kamp yerinde duruyorsun. Birisi elinde küçük bir kemik ve ucuna takılmış keskin bir kuvars parçasıyla çentikler açıyor. Sana bakıp bu çentiklerin yanına bir tane daha ekliyor; sanki saymayı sürdürmeni bekliyor.",
    "ilginc": "1950'de Belçikalı jeolog Jean de Heinzelin, Ishango'da yaklaşık 10 cm uzunluğunda bir kemik buldu; üzerinde üç sütun halinde 168 çentik var. Sütunlardan birinde 11, 13, 17 ve 19 çentikli gruplar görülür, bu yüzden bazı araştırmacılar asal sayılarla ilgisi olduğunu düşündü. Ama kimileri bunu bir sayma çubuğu ya da ay takvimi, kimileri de rastlantı veya süs sayar. Kemiğin ne için kullanıldığı hâlâ kesin olarak bilinmiyor.",
    "dene": {
-    "soru": "11, 13, 17 ve 19 sayılarının ortak özelliği nedir?",
-    "cevap": "Hepsi asal sayıdır; 1 ve kendisinden başka böleni yoktur."
+    "soru": "Bir kemikte 23, 29, 31 ve 33 çentikli dört grup var. Hangi grup asal sayı DEĞİLDİR?",
+    "cevap": "33 = 3 × 11 olduğu için asal değildir; 23, 29 ve 31 asaldır."
    },
    "kaynaklar": [
     "https://arxiv.org/html/2504.06412v3",
@@ -44,8 +44,8 @@
    "karsilasma": "Nil kıyısındaki kâtip odasında, uzun bir papirüs rulosunun başında oturan Ahmes seni fark ediyor. Ruloyu açıyor; sayfalar boyunca bölme ve kesir işlemleri sıralanmış. Eski bir metni özenle kopyaladığını anlıyorsun.",
    "ilginc": "Rhind papirüsü yaklaşık 5 metre uzunluğunda ve 32 cm genişliğinde; Ahmes bunu daha eski bir metinden kopyaladığını yazar. Mısırlılar kesirleri neredeyse hep payı 1 olan kesirlerin toplamı olarak yazardı; papirüsün başında 2/n kesirlerinin bu biçimde bir tablosu var, mesela 2/5 = 1/3 + 1/15. Papirüsteki daire alanı yöntemi, π yerine yaklaşık 256/81 ≈ 3,16 kullanmaya denk gelir.",
    "dene": {
-    "soru": "1/3 + 1/15 toplamı neye eşittir?",
-    "cevap": "5/15 + 1/15 = 6/15 = 2/5."
+    "soru": "Ahmes'in yöntemiyle çapı 27 olan dairenin alanı yaklaşık kaçtır? (Çapın 8/9'u kadar kenarlı kare alınır.)",
+    "cevap": "27 × 8/9 = 24; alan ≈ 24² = 576."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Ahmes/",
@@ -101,8 +101,8 @@
    "karsilasma": "Kil tabletlerle dolu bir yazı okulundasın. Genç bir kâtip, elindeki kama biçimli kalemle yaş kile işaretler basıyor; her satırda sayılar 60'lık basamaklarla ilerliyor. Sana tableti uzatıp sayıları okumayı denemeni istiyor.",
    "ilginc": "Babilliler sayıları 60 tabanında yazardı; saatin 60 dakika, dakikanın 60 saniye olması bu geleneğin izidir. Plimpton 322 adlı tablet, 15 satırda Pisagor üçlülerine karşılık gelen sayılar içerir; ilk satırdaki 119 ve 169, 120 uzunluğunda bir kenara denk gelir. YBC 7289 tabletinde ise kenarı 30 olan bir karenin köşegeni için √2 değeri 1;24,51,10 yazılıdır; bu yaklaşık 1,414213'e karşılık gelir ve yaklaşık 6 ondalık basamağa kadar doğrudur. Plimpton 322'nin amacı hâlâ tartışılıyor.",
    "dene": {
-    "soru": "119, 120 ve 169 bir dik üçgenin kenarları olabilir mi?",
-    "cevap": "Evet: 119² + 120² = 14161 + 14400 = 28561 = 169²."
+    "soru": "Babilliler 60 tabanında yazardı. 2;15 yazımı (2 tam ve 60'ta 15) ondalık olarak kaçtır?",
+    "cevap": "2 + 15/60 = 2 + 0,25 = 2,25."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/HistTopics/Babylonian_mathematics/",
@@ -132,8 +132,8 @@
    "karsilasma": "Ege'nin ışıltılı kıyısında, yuvarlak taşlarla yere üçgenler dizen bir grubun yanına varıyorsun. Aralarındaki orta yaşlı adam sana taşları saydırıyor: bir kenarda 3, bir kenarda 4, uzun kenarda 5. Gülümsüyor; sayıların bir düzeni olduğunu hissediyorsun.",
    "ilginc": "Pisagor teoremini ilk bulan Pisagor değildir: Babilliler yaklaşık 1000 yıl önce biliyordu. Pisagor'un ise teoremi ilk kanıtlayan kişi olabileceği düşünülür, ama kendisinden yazı kalmadığı için işi kendisine mi öğrencilerine mi mal etmek gerektiği belirsizdir. Pisagorcular, bir karenin köşegeninin kenara oranının tam sayı oranı olarak yazılamayacağını da keşfetmiş olabilir; bunu çoğunlukla Pisagorculara atfederler, Pisagor'a değil.",
    "dene": {
-    "soru": "5, 12 ve 13 uzunluklu çubuklarla dik üçgen kurulabilir mi?",
-    "cevap": "Evet: 5² + 12² = 25 + 144 = 169 = 13²."
+    "soru": "Bir merdivenin alt ucu duvardan 5 m uzakta, üst ucu yerden 12 m yükseklikte. Merdiven kaç metredir?",
+    "cevap": "Dik üçgen: 5² + 12² = 25 + 144 = 169; √169 = 13 m."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Pythagoras/",
@@ -165,8 +165,8 @@
    "karsilasma": "İskenderiye'nin ünlü kütüphane ve çalışma salonlarının birinde, sade giyimli bir öğretmen öğrencilerine bir şekil çiziyor. Önce çok basit kabulleri sıralıyor, sonra adım adım bir sonuca varıyor. Yan masada Eratosthenes ise gölge uzunluklarını karşılaştırıyor.",
    "ilginc": "Öklid'in Elemanlar'ı 13 kitaptan oluşur; 1482'den beri bin kadar baskısı yapıldı. IX. kitabın 20. önermesinde, asal sayıların sonsuz olduğunun kanıtı vardır: elindeki sonlu asal listesini çarp, 1 ekle; ortaya listede olmayan yeni bir asal çıkar. Eratosthenes ise Syene ile İskenderiye'deki öğle gölgelerini karşılaştırıp Dünya'nın çevresini yaklaşık 250.000 stadion olarak buldu; ama stadion uzunluğu tartışmalı olduğu için sonucun ne kadar isabetli olduğu da tartışılır.",
    "dene": {
-    "soru": "2, 3 ve 5 asallarını çarpıp 1 eklersek hangi sayıyı buluruz ve bu sayı asal mı?",
-    "cevap": "2×3×5 + 1 = 31; 31 asaldır (ve 2, 3, 5'ten farklıdır)."
+    "soru": "Elimizde yalnız 2, 5 ve 11 asalları olsun. Üçünü çarpıp 1 eklersek hangi sayı çıkar? Asal mı, çarpanları listede var mı?",
+    "cevap": "2×5×11 + 1 = 111 = 3 × 37. Asal değil ama 3 ve 37 listede yok: listede olmayan yeni asal çıktı."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/",
@@ -195,8 +195,8 @@
    "karsilasma": "Sicilya'nın liman kentinde, kumun üzerine çizdiği şekillerin başında düşünceli bir adam oturuyor. Bir küre ve onu saran bir silindir çiziyor; sana sorusunu sormadan kendi kendine gülümsüyor. Çalışırken çevresindeki dünyayı unutmuş gibi.",
    "ilginc": "Arşimet, 96 kenarlı düzgün çokgenleri çemberin içine ve dışına çizerek π'nin 223/71 ile 22/7 arasında olduğunu gösterdi. Kum Hesaplayıcı adlı eserinde, evreni dolduracak kum tanesi sayısını bile yazabilecek bir sayı sistemi önerdi; bu sistem yaklaşık 8×10⁶³ gibi sayılara kadar gider. İstediği mezar taşında, silindir içindeki bir küre figürü vardı; Roma'lı Cicero yıllar sonra çalılar arasında bu şekli görerek mezarı bulduğunu yazar.",
    "dene": {
-    "soru": "22/7 ile 223/71'den hangisi π'den büyüktür?",
-    "cevap": "22/7 ≈ 3,1429 π'den büyük, 223/71 ≈ 3,1408 π'den küçüktür."
+    "soru": "Yarıçapı 3 cm olan kürenin hacmi, onu saran silindirin (yükseklik 6 cm) hacminin 2/3'üdür. Silindirin hacmi 54π cm³ ise kürenin hacmi kaçtır?",
+    "cevap": "54π × 2/3 = 36π cm³ (formülle: 4/3·π·27 = 36π)."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/"
@@ -223,8 +223,8 @@
    "karsilasma": "Ganj kıyısındaki bir gözlem terasında, yıldızlara bakan genç bir bilgin seni karşılıyor. Sayı dizileri ve çemberler çizdiği bir ruloyu gösteriyor. Gökyüzünün dönüşü hakkında bambaşka bir fikri olduğunu söylüyor.",
    "ilginc": "Aryabhata, 23 yaşındayken Aryabhatiya adlı eserini bitirdi (MS 499). Orada π için 62832/20000 değerini verdi; bu yaklaşık 3,1416'dır ve çok isabetlidir. Gökyüzünün batıya doğru dönüyormuş gibi görünmesinin Dünya'nın kendi ekseni etrafında dönmesinden kaynaklandığını da yazdı. Ayrıca 3°45' aralıklarla bir sinüs tablosu hazırladı.",
    "dene": {
-    "soru": "62832 ÷ 20000 kaç eder?",
-    "cevap": "3,1416."
+    "soru": "Çapı 50 m olan yuvarlak bir pistin çevresini Aryabhata'nın π ≈ 3,1416 değeriyle bulun.",
+    "cevap": "Çevre = π × çap = 3,1416 × 50 = 157,08 m."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Aryabhata_I/"
@@ -251,8 +251,8 @@
    "karsilasma": "Ujjain'in ünlü gözlemevi şehrinde, taş masanın başında bir bilgin duruyor. Bir tarafa 'servet', öbür tarafa 'borç' yazılmış çubuklar dizmiş. Sana çubuklarla sıfırın ne yaptığını gösterecek gibi.",
    "ilginc": "Brahmagupta, MS 628'de yazdığı Brahmasphutasiddhanta'da sıfırı bir sayı gibi ele alıp işlem kuralları verdi. Pozitif sayılara 'servet', negatif sayılara 'borç' dedi ve mesela iki borcun çarpımının servet olduğunu yazdı; bugün (−3)×(−4)=12 dememizin tarihî karşılığı budur. Sıfırla bölme konusunda ise kendi kuralı yanlıştı: 0/0 = 0 dedi.",
    "dene": {
-    "soru": "Borç × borç = servet kuralına göre (−3) × (−4) kaçtır?",
-    "cevap": "+12."
+    "soru": "(−5) × (−6) + 3 × (−4) işleminin sonucu kaçtır?",
+    "cevap": "İki borç çarpımı servet: (−5)(−6) = +30; 3·(−4) = −12; 30 − 12 = 18."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Brahmagupta/"
@@ -279,8 +279,8 @@
    "karsilasma": "Bir Çin sarayının çalışma odasında, yan yana iki bilgin çokgenler çizmiş bir levhaya eğilmiş. Biri çemberin içine çizdiği çokgenin kenar sayısını sürekli artırıyor. Diğeri onun yöntemini daha ileri taşımak için hesap çubuklarını diziyor.",
    "ilginc": "Liu Hui, Dokuz Bölüm adlı klasik kitaba yazdığı şerhle yöntemlerin gerekçelerini de açıkladı. Kenar sayısı 3072 olan bir çokgenle π için 3,14159 değerine ulaştı. Yaklaşık iki yüzyıl sonra Zu Chongzhi, 3,1415926 < π < 3,1415927 olduğunu gösterdi ve π için 355/113 kesrini verdi; bu kesir 6 ondalık basamağa kadar doğrudur. Zu Chongzhi matematiği büyük ölçüde Liu Hui'nin şerhinden öğrenmişti.",
    "dene": {
-    "soru": "355 ÷ 113 işleminin ilk ondalık basamakları nelerdir?",
-    "cevap": "3,14159292... (π = 3,14159265...; ilk 6 ondalık basamak aynıdır)."
+    "soru": "Yarıçapı 1 olan çemberin içine çizilmiş karenin kenarı √2 ≈ 1,414'tür. Karenin yarım çevresi kaçtır? Bu π'den küçük mü?",
+    "cevap": "Çevre = 4 × 1,414 = 5,656; yarısı ≈ 2,83. π ≈ 3,14'ten küçük; kenar sayısı artınca π'ye yaklaşır."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Liu_Hui/",
@@ -308,8 +308,8 @@
    "karsilasma": "Bağdat'ın Beytülhikme denen bilgi merkezinde, rafları kitap dolu geniş bir salondasın. Masasında çalışan Harezmi, sana denklemleri kelimelerle anlatıyor; ortada x harfi yok. Çevresinde çevirmenler ve bilginler yorum yapıyor.",
    "ilginc": "Harezmi'nin kitabı el-Cebir ve'l-Mukabele, cebir sözcüğünün kaynağıdır ve cebir üzerine yazılmış ilk kitaplardan sayılır. Birinci ve ikinci dereceden denklemleri altı standart türe ayırdı ve çözümleri tamamen sözcüklerle, sembolsüz anlattı. Hint rakamlarını anlatan kitabı Latinceye çevrildi ve 'algoritma' sözcüğü onun adından türedi.",
    "dene": {
-    "soru": "Harezmi'nin kitabındaki ünlü örnek: \"bir kare ve 10 kök, 39 birime eşittir.\" Bugünkü yazımla x² + 10x = 39. Pozitif çözüm kaçtır?",
-    "cevap": "x = 3, çünkü 9 + 30 = 39."
+    "soru": "Harezmi yöntemiyle: \"bir kare ve 6 kök, 16 birime eşittir\" (x² + 6x = 16). Pozitif çözüm kaçtır?",
+    "cevap": "Kareyi tamamla: 16 + 9 = 25 = (x+3)²; x + 3 = 5, x = 2 (4 + 12 = 16)."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/"
@@ -336,8 +336,8 @@
    "karsilasma": "İsfahan'daki gözlemevinde, gökyüzüne bakan bir bilgin takvim hesabı yapıyor. Sana önce bir koninin kesitinin çizimini gösteriyor, sonra eğri çizgilerin kesiştiği noktayı işaret ediyor. Şiirleri de varmış, diyorlar.",
    "ilginc": "Ömer Hayyam, üçüncü dereceden denklemleri sınıflandırdı ve çözümlerini koni kesitlerinin kesişim noktalarını bularak elde etti. Sultan Melikşah döneminde İsfahan'daki gözlemevini yönetti; 1079'da yapılan takvim düzenlemesiyle ortaya çıkan Celali takviminin yıl uzunluğu çok isabetliydi. Öklid'in paralel postülatını kanıtlama girişimi de sonradan Öklid dışı geometrinin fikirlerine yaklaştı. Bugün onu çoğu kişi Rubaiyat şiirleriyle tanır.",
    "dene": {
-    "soru": "x³ + x = 10 denkleminin pozitif bir çözümü 2 midir?",
-    "cevap": "Evet: 8 + 2 = 10."
+    "soru": "Kenarı x olan bir küpün hacmi ile kenar uzunluğunun toplamı 30'dur (x³ + x = 30). x kaç olabilir?",
+    "cevap": "Deneme: x = 3 için 27 + 3 = 30. Toplam x ile arttığından başka pozitif çözüm yok."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Khayyam/"
@@ -364,8 +364,8 @@
    "karsilasma": "Semerkant'ın medresesinde ve gözlemevinde bir hükümdar öğrencilerle birlikte yıldız tablolarına bakıyor. Yanında, sayılarla boğuşan başka bir bilgin hesap defterini kapatmıyor. İkisi aynı sayfa üzerinde çalışıyor.",
    "ilginc": "Hükümdar-bilgin Uluğ Bey, Semerkant'ta bir medrese ve büyük bir gözlemevi kurdurdu; 1437'de Zic-i Sultani yıldız kataloğu yayımlandı. Cemşid el-Kâşi ise 2π değerini 16 ondalık basamağa kadar hesapladı; bu rekoru yaklaşık 200 yıl sonra Hollandalı van Ceulen geçebildi. Semerkant okulu 1°'nin sinüsünü de çok isabetli hesapladı: yaklaşık 0,0174524.",
    "dene": {
-    "soru": "π/180 yaklaşık kaçtır ve sin 1° ile neden çok yakındır?",
-    "cevap": "π/180 ≈ 0,0174533 ve sin 1° ≈ 0,0174524; küçük açılarda (radyan cinsinden) sin x ≈ x olur."
+    "soru": "Küçük açılarda sin x ≈ x (x radyan). π ≈ 3,14 alarak sin 3° değerini yaklaşık bulun.",
+    "cevap": "3° = 3 × π/180 ≈ 3 × 0,01744 ≈ 0,0523 radyan; sin 3° ≈ 0,0523."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Ulugh_Beg/",
@@ -405,6 +405,10 @@
    "eser": {
     "alt": "Dünya merkezde, gezegen küçük bir çemberde dönerken o çember büyük çemberde dönüyor; Batlamyus'un gezegen modelinin şeması.",
     "not": "Batlamyus'un çember içinde çember modeli (temsilî şema); Ali Kuşçu bazı modelleri eleştirdi"
+   },
+   "dene": {
+    "soru": "Batlamyus modelinde gezegen, yarıçapı 2 olan küçük çemberin üzerinde; bu çemberin merkezi ise yarıçapı 10 olan büyük çember üzerinde dönüyor. Merkezden en uzak ve en yakın mesafe kaçtır?",
+    "cevap": "En uzak 10 + 2 = 12, en yakın 10 − 2 = 8."
    }
   },
   {
@@ -419,8 +423,8 @@
    "karsilasma": "Pisa limanında bir tüccarın oğlu, güney kıyılarından gelen denizcilerle konuşuyor. Elinde, kuzey Afrika'da öğrendiği ilginç sayı işaretleriyle dolu bir defter var. Bunları Avrupa'ya tanıtmak istiyor.",
    "ilginc": "Fibonacci, Cezayir'deki Bejaia'da (Bugia) yetişirken Hint-Arap rakamlarını öğrendi. 1202'de yazdığı Liber Abaci, bu yer değerli onluk sistemini Avrupa'ya tanıttı. Kitaptaki tavşan problemi 1, 1, 2, 3, 5, 8, 13... dizisine yol açar; her terim, önceki iki terimin toplamıdır.",
    "dene": {
-    "soru": "1, 1, 2, 3, 5, 8, 13 dizisinde sonraki terim nedir?",
-    "cevap": "8 + 13 = 21."
+    "soru": "İlk iki terimi 2 ve 3 olan, her terimi önceki ikisinin toplamı olan dizinin 7. terimi kaçtır?",
+    "cevap": "2, 3, 5, 8, 13, 21, 34 → 7. terim 34."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Fibonacci/"
@@ -447,8 +451,8 @@
    "karsilasma": "Hollanda'da sessiz bir evde, bir düşünür sana cebirle geometriyi aynı sayfada birleştirmeyi anlatıyor. Bir eğriyi sadece çizmiyor, aynı zamanda bir denklemle yazıyor. Yazıları kâğıtların üstünde dağınık ama düşünceleri çok düzenli.",
    "ilginc": "Descartes 1628'de Hollanda'ya yerleşti ve orada yaklaşık 20 yıl yaşadı. 1637'de yayımladığı La Géométrie'de cebiri geometriye uyguladı: bilinmeyenler için x, y, z; bilinenler için a, b, c harflerini kullandı ve üslü gösterimi yaygınlaştırdı. Bir eğrinin bir denklemle anlatılabileceği fikri, bugünkü koordinat geometrisinin temelidir; yine de bugünkü dik eksenli 'Kartezyen düzlem' tam bu hâliyle onun çizimleri değildir.",
    "dene": {
-    "soru": "x² + y² = 25 çemberi (3, 4) noktasından geçer mi?",
-    "cevap": "Evet: 9 + 16 = 25."
+    "soru": "y = x² eğrisi ile y = x + 6 doğrusu hangi x değerlerinde kesişir?",
+    "cevap": "x² = x + 6 → x² − x − 6 = (x−3)(x+2) = 0; x = 3 ve x = −2."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Descartes/",
@@ -480,8 +484,8 @@
    "karsilasma": "Cambridge sokaklarında, veba yüzünden kapanmış üniversitenin sessizliğindesin. Genç bir bilgin evine çekilmiş, elinde kalem, hareket eden şeylerin hesabını yapıyor. Aynı koridorlarda yıllar sonra Hindistan'dan gelen bir başka dahi, defterini hocasına gösterecek.",
    "ilginc": "Newton, 1665-66 veba yıllarında Cambridge'den ayrılıp evine döndü ve orada türev ile integralin temellerini attı; yöntemine akı (fluxion) dedi. Leibniz ise kalkülüsü ondan bağımsız olarak geliştirdi ve bugün kullandığımız dx ile ∫ gösterimlerini ortaya koydu. Newton'un 1687'de yayımlanan Principia'sı hareket ve kütle çekim yasalarını verir. Ramanujan ise 1913'te Hardy'ye mektup yazdı, 1914'te Trinity College'a geldi ve 1918'de Royal Society üyeliği ile Trinity bursiyerliğine seçildi.",
    "dene": {
-    "soru": "f(x) = x² fonksiyonunun türevi nedir?",
-    "cevap": "2x (örneğin x = 3 noktasındaki eğim 6'dır)."
+    "soru": "y = x² eğrisinde (3, 9) ile (3,1; 9,61) noktalarını birleştiren kirişin eğimi kaçtır? İkinci nokta (3, 9)'a yaklaşırsa eğim hangi sayıya yaklaşır?",
+    "cevap": "Eğim = (9,61 − 9) ÷ (3,1 − 3) = 0,61 ÷ 0,1 = 6,1. Nokta yaklaştıkça eğim 6'ya yaklaşır."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Newton/",
@@ -510,8 +514,8 @@
    "karsilasma": "Neva kıyısındaki Rus Akademisi'nde, genç bir İsviçreli sayfalarca hesabın başında. Gözleri ileride yorulacak ama şimdilik kalemi durmuyor. Sana pencereden köprüleri gösteriyor: bir kentin köprüleri üzerine bir bilmece var.",
    "ilginc": "1735'te Euler, Königsberg'in yedi köprüsünün her birinden tam bir kez geçen bir yürüyüş yapılamayacağını gösterdi; bu, graf teorisinin ilk teoremi sayılır. Aynı yıl Basel problemini çözüp 1/1² + 1/2² + 1/3² + ... toplamının π²/6 olduğunu buldu. f(x) gösterimini, e sayısının sembolünü ve i harfini de yaygın hâle getirdi. Hayatının sonlarına doğru tamamen kör oldu ama yardımcılarıyla üretmeyi sürdürdü.",
    "dene": {
-    "soru": "Königsberg'de dört kara parçasına gelen köprü sayıları 5, 3, 3, 3 ise, tüm köprülerden bir kez geçmek neden olmaz?",
-    "cevap": "Dört kara parçasında da tek sayıda köprü var; her köprüden tam bir kez geçen bir yürüyüşte en fazla iki yerde tek sayı olabilir."
+    "soru": "Bir kentte 5 kara parçasına gelen köprü sayıları 4, 3, 2, 3, 2'dir. Her köprüden tam bir kez geçen yürüyüş yapılabilir mi?",
+    "cevap": "Evet. Tek sayılı yalnız 2 yer var (3 ve 3): birinde başla, diğerinde bitir."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Euler/",
@@ -544,8 +548,8 @@
    "karsilasma": "Göttingen'de gözlemevinin yakınında, sakin bir bilgin gökyüzündeki küçük bir ışığın izini sürüyor. Başka bir salonda genç bir kadın bilgin, tahtada soyut yapılarla uğraşan öğrencilere yön veriyor. İki farklı çağ, aynı şehir.",
    "ilginc": "Gauss, 1796'da henüz gençken cetvel ve pergelle düzgün 17-genin çizilebileceğini kanıtladı; bu keşif onu matematiğe yönlendirdi. 1801'de Ceres gezegenciğinin yeniden nerede çıkacağını en küçük kareler yöntemiyle önceden hesapladı ve gökbilimciler onu tahmine çok yakın buldu. Emmy Noether ise 1915'te Göttingen'e çağrıldı; bir fizik kuramındaki her simetrinin bir korunum yasasına karşılık geldiğini gösteren Noether Teoremi ile soyut cebirdeki çalışmalarıyla tanınır.",
    "dene": {
-    "soru": "Rivayete göre Gauss'un çocukken çözdüğü 1+2+...+100 toplamı kaçtır?",
-    "cevap": "50 × 101 = 5050 (başı ve sonu eşleştirerek)."
+    "soru": "1 + 2 + 3 + … + 60 toplamını, başı ve sonu eşleştirerek bulun.",
+    "cevap": "(1+60) = (2+59) = … = 61; 30 çift var: 30 × 61 = 1.830."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/",
@@ -575,8 +579,8 @@
    "karsilasma": "Ormanın içinden yükselen taş bir tapınağın gölgesinde, bir kâtip yaprak katlı kitabına nokta ve çizgiler çiziyor. Arada bir küçük bir kabuk işareti koyuyor ve sana bunun 'hiç' demek olduğunu gösteriyor. Takvimde günleri o kadar özenle sayıyor ki, hata payı yok gibi.",
    "ilginc": "Mayalar 20 tabanını kullandı: nokta 1, çizgi 5 ve kabuk işareti sıfırı gösterir. Sayı sistemi yer değerliydi ama üçüncü basamak 400 yerine 360'tı; bunun, takvimdeki yıl uzunluğuna yaklaşmak için olduğu düşünülür. Orta Amerika'da sıfır, Eski Dünya'dakilerden bağımsız olarak ortaya çıktı. Mayalar güneş yılını yaklaşık 365,242 gün, Venüs'ün dönemini 584 gün olarak hesapladı.",
    "dene": {
-    "soru": "Maya yazısında bir nokta ile iki çizgi birlikte hangi sayıyı gösterir?",
-    "cevap": "1 + 5 + 5 = 11."
+    "soru": "Maya yazısında üst basamakta 4 nokta, alt basamakta 2 çizgi ve 3 nokta var. Bu hangi sayıdır? (Alt basamak ×1, üst ×20)",
+    "cevap": "Alt: 5 + 5 + 3 = 13; üst: 4. Sayı = 4 × 20 + 13 = 93."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/HistTopics/Mayan_mathematics/",
@@ -605,8 +609,8 @@
    "karsilasma": "Stanford'ın geniş çimenli kampüsünde, bir matematikçi koridorda büyük kâğıt yaprakları yere yaymış. Kâğıdın üstüne eğri yüzeyler ve yollar çiziyor. Seni fark edip kâğıdın başına çağırıyor, sanki birlikte bir keşfe çıkacakmışsınız gibi.",
    "ilginc": "Maryam Mirzakhani, Tahran doğumludur; Harvard'da 2004'te doktorasını tamamladı ve 2008'de Stanford'da profesör oldu. 2014'te matematiğin en büyük ödüllerinden Fields Madalyası'nı kazanan ilk kadın oldu. Çalışmaları, hiperbolik yüzeylerdeki kapalı geodezikler ve bu yüzeylerin 'modül uzaylarının' hacmi üzerinedir. 2017'de 40 yaşında hayata veda etti.",
    "dene": {
-    "soru": "Düz bir kâğıttaki bir üçgenin iç açıları toplamı kaçtır?",
-    "cevap": "180°. Hiperbolik gibi eğri yüzeylerde bu toplam 180°'den küçük olur."
+    "soru": "Küre üzerinde Kuzey Kutbu'ndan ekvatora inen iki meridyen ekvatorda 90° açı yapıyor. Bu üçgenin üç açısı da 90°'dir. Toplam kaç derecedir, düz kâğıttan farkı nedir?",
+    "cevap": "90 + 90 + 90 = 270°. Düz kâğıtta 180° olurdu; eğri yüzeyde toplam değişir (küre: büyük, hiperbolik: küçük)."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Mirzakhani/"
@@ -632,8 +636,8 @@
    "karsilasma": "Bir üniversite sınıfında, kara tahtanın önünde bilgin bir hoca duruyor. Tahtada az sayıda, ama özenle seçilmiş işaretler var. Sana dönüp bu işaretlerin sadece 0 ya da 1 diyebileceğini söylüyor; mutlu görünüyor.",
    "ilginc": "Cahit Arf, 1941'de yayımladığı makalede, 2 karakteristikli cisimler üzerindeki ikinci dereceden formlar için bugün Arf değişmezi denen kavramı tanımladı; bu değişmez yalnızca 0 veya 1 değerini alır. Hocası Helmut Hasse bu problemi ona önermişti. Arf değişmezi sonradan topolojide, mesela Kervaire'in çalışmalarında önemli rol oynadı. Arf'ın portresi ve bu değişmezle ilgili bir formül, 2009'dan itibaren 10 liralık banknotun arka yüzünde yer alır.",
    "dene": {
-    "soru": "2'li sayı sisteminde (mod 2) 1 + 1 kaçtır?",
-    "cevap": "0. Arf değişmezi de 0 ve 1'den başka değer almaz."
+    "soru": "Mod 2'de (yalnız 0 ve 1) q(x,y) = x² + xy olsun. Dört noktada (0,0), (1,0), (0,1), (1,1) değerleri nedir? Çoğunluk değeri kaç?",
+    "cevap": "Değerler: 0, 1, 0, 1+1 = 0. Üçü 0 olduğundan çoğunluk değeri 0."
    },
    "kaynaklar": [
     "https://mathshistory.st-andrews.ac.uk/Biographies/Arf/",

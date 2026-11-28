@@ -20,9 +20,9 @@
    ],
    "mat": "Yüksekliği 1856'da Hindistan'da **trigonometriyle**, yani dağa hiç çıkmadan, yerden ölçülen açılarla hesaplandı. Bulunan değer bugünkünden yalnızca yaklaşık 9 m farklıydı.",
    "dene": {
-    "s": "1 cm = 1 km ölçekli bir çizimde Everest kaç cm yüksekliğinde olur?",
-    "c": "≈ 8,8 cm",
-    "h": "8.848,86 m ≈ 8,849 km → 8,849 cm ≈ 8,8 cm."
+    "s": "Dağdan 2.000 m uzakta duran biri zirveyi yatayla 45° açıyla görüyor. Göz yüksekliğini sayma; dağ yaklaşık kaç m yüksektir?",
+    "c": "≈ 2.000 m",
+    "h": "45° için tan 45° = 1; yükseklik = 2.000 × 1 = 2.000 m."
    },
    "kaynak": "Nepal–Çin ortak ölçümü (Aralık 2020), Britannica"
   },
@@ -45,9 +45,9 @@
    ],
    "mat": "Everest buraya konsaydı zirvesi yüzeyin **yaklaşık 2.086 m** altında kalırdı: 10.935 − 8.849 = 2.086.",
    "dene": {
-    "s": "Ses suda saniyede yaklaşık 1.500 m gider. Yüzeyden gönderilen ses dibe çarpıp kaç saniyede geri döner?",
-    "c": "≈ 14,6 sn",
-    "h": "Gidiş-dönüş 2 × 10.935 = 21.870 m; 21.870 ÷ 1.500 ≈ 14,6 sn."
+    "s": "Bir denizde yüzeyden gönderilen ses dipten yansıyıp 8 saniyede geri dönüyor. Ses suda 1.500 m/sn gidiyorsa deniz kaç m derindir?",
+    "c": "6.000 m",
+    "h": "Toplam yol 8 × 1.500 = 12.000 m (gidiş-dönüş); derinlik = 12.000 ÷ 2 = 6.000 m."
    },
    "kaynak": "NOAA (2021) ve National Geographic; derinlik ölçüme göre değişir",
    "yakin": [
@@ -149,9 +149,9 @@
    ],
    "mat": "MÖ 3. yüzyılda İskenderiye Kütüphanesi'nin başı Eratosthenes, Akdeniz kıyısındaki İskenderiye'de gölge açısını ölçüp **Dünya'nın çevresini** hesapladı. Açı 7,2° idi; bu, tam dairenin **1/50'si** eder.",
    "dene": {
-    "s": "Eratosthenes'in ölçtüğü açı 7,2°, İskenderiye–Siene arası yaklaşık 5.000 stadyon ise Dünya'nın çevresi kaç stadyondur?",
-    "c": "≈ 250.000 stadyon",
-    "h": "360 ÷ 7,2 = 50; 5.000 × 50 = 250.000 stadyon. Stadyonun uzunluğu tartışmalıdır."
+    "s": "Eratosthenes yöntemiyle: iki şehir arası 800 km ve güneş ışınları arasındaki açı 12° ise Dünya'nın çevresi kaç km çıkar?",
+    "c": "24.000 km",
+    "h": "360 ÷ 12 = 30 → 30 × 800 = 24.000 km."
    },
    "kaynak": "Britannica (Mediterranean Sea); Wikipedia (Eratosthenes), yalnızca destek olarak"
   },
@@ -224,9 +224,9 @@
    ],
    "mat": "Alan 1960'ta 68.000 km²'den 1992'de 33.800 km²'ye düştü: **yaklaşık %50 küçülme**. Su seviyesi de yaklaşık 15 m düştüğü için hacim, alandan çok daha hızlı azaldı; çünkü **hacim ≈ alan × derinlik**.",
    "dene": {
-    "s": "Aral'ın alanı 1960'ta 68.000 km², 1992'de 33.800 km² idi. Alan yüzde kaç azalmıştır?",
-    "c": "≈ %50",
-    "h": "(68.000 − 33.800) ÷ 68.000 = 34.200 ÷ 68.000 ≈ 0,503 → yaklaşık %50."
+    "s": "Bir gölün alanı yarıya, ortalama derinliği de yarıya inerse hacmi başlangıcın kaçta kaçı kalır? (hacim = alan × derinlik)",
+    "c": "1/4",
+    "h": "Hacim = alan × derinlik; 1/2 × 1/2 = 1/4."
    },
    "kaynak": "Britannica (Aral Sea); 2010 sonrası doğu havzası kurudu, güncel alan kaynağa göre değişir"
   },
@@ -374,9 +374,9 @@
    ],
    "mat": "Ganj'ın aktığı Hindistan'da **onluk basamak sistemi ve sıfır** gelişti. Gwalior'daki 876 tarihli taş yazıt, sıfırın tarihi belli en eski sağlam yazılı örneğidir; sıfır 650 dolaylarında sayı olarak da kullanılıyordu.",
    "dene": {
-    "s": "Sıfırın sayı olarak kullanılmaya başlaması (≈650) ile Gwalior yazıtı (876) arasında yaklaşık kaç yıl vardır?",
-    "c": "≈ 226 yıl",
-    "h": "876 − 650 = 226."
+    "s": "Sıfır olmasaydı 305 ile 35 sayıları da \"3 5\" gibi karışırdı. Bu iki sayı arasındaki fark kaçtır?",
+    "c": "270",
+    "h": "305 − 35 = 270; sıfır basamak değerini korur."
    },
    "kaynak": "Britannica (Ganges River); MacTutor (A history of Zero)"
   },
@@ -399,9 +399,9 @@
    ],
    "mat": "İndus vadisindeki Harappa kentlerinde taş ağırlıklar **1 : 2 : 4 : 8 : 16 : 32 : 64** oranında, yani ikiye katlanarak standartlaşmıştı. En küçük birim yaklaşık 0,856 g'dı.",
    "dene": {
-    "s": "En küçük Harappa ağırlığı ≈ 0,856 g ise, onun 16 katı olan ağırlık kaç gramdır?",
-    "c": "≈ 13,7 g",
-    "h": "0,856 × 16 = 13,696 ≈ 13,7 g."
+    "s": "Ağırlıklar her basamakta ikiye katlanıyor ve en küçüğü 0,856 g. 1, 2, 4, 8, 16 birimlik ilk beş ağırlık birlikte kaç gramdır?",
+    "c": "≈ 26,5 g",
+    "h": "1+2+4+8+16 = 31 birim → 31 × 0,856 ≈ 26,5 g."
    },
    "kaynak": "Britannica (Indus River; Indus civilization); Harappa.com (ağırlıklar); Wikipedia (Indus River), destek"
   },
@@ -424,9 +424,9 @@
    ],
    "mat": "Matematikçi El-Harezmi'nin adı büyük olasılıkla Ceyhun'un çevresindeki **Harezm** bölgesine işaret eder. Eserinin Latince çevirisindeki \"Algoritmi\" adından **\"algoritma\"** kelimesi doğdu.",
    "dene": {
-    "s": "El-Harezmi yaklaşık 780'de doğdu, 850 dolaylarında öldü. Yaklaşık kaç yıl yaşadı?",
-    "c": "≈ 70 yıl",
-    "h": "850 − 780 = 70."
+    "s": "Bir algoritma: sayıyı 3 ile çarp, sonra 4 ekle. Çıktı 40 olduysa girdi kaçtır?",
+    "c": "12",
+    "h": "Tersine işlem: 40 − 4 = 36; 36 ÷ 3 = 12."
    },
    "kaynak": "Britannica (Amu Darya; al-Khwarizmi); MacTutor (Al-Khwarizmi); ada dair köken tartışmalıdır"
   },
@@ -449,9 +449,9 @@
    ],
    "mat": "Silsile 8.900 km uzun, en yüksek zirvesi ise yalnızca 6.959 m (6,959 km): yani uzunluğun **binde 0,8'i kadar**. Haritada 1 m'lik şerit gibi çizsen Aconcagua yaklaşık 0,8 mm kalırdı.",
    "dene": {
-    "s": "And Dağları haritada 1 cm = 100 km ölçekle çizilirse Aconcagua kaç mm yüksekliğinde olur?",
-    "c": "≈ 0,7 mm",
-    "h": "6.959 m = 6,959 km; 6,959 ÷ 100 = 0,06959 cm ≈ 0,7 mm."
+    "s": "Yüksekliği 3.000 m olan bir dağ, 1 cm = 20 km ölçekli haritada kaç mm yüksekliğinde çizilir?",
+    "c": "1,5 mm",
+    "h": "3.000 m = 3 km; 3 ÷ 20 = 0,15 cm = 1,5 mm."
    },
    "kaynak": "Britannica (Andes; Aconcagua); GPS ölçümü 6.962 m, resmî değer 6.959 m"
   },
@@ -474,9 +474,9 @@
    ],
    "mat": "Aladağlar'da iki komşu zirve yarışır: Demirkazık 3.756 m, Kızılkaya 3.767 m. Fark yalnızca **11 m**, yani **yaklaşık %0,3**; bu küçük fark en yüksek zirvenin hangisi olduğunu ölçüme bağlı kılar.",
    "dene": {
-    "s": "Kızılkaya (3.767 m), Demirkazık'tan (3.756 m) yüzde kaç daha yüksektir?",
-    "c": "≈ %0,3",
-    "h": "(3.767 − 3.756) ÷ 3.756 ≈ 0,0029 → ≈ %0,3."
+    "s": "İki komşu zirve 2.000 m ve 2.010 m yüksekliğinde. Yüksek olan, alçaktan yüzde kaç daha yüksektir?",
+    "c": "%0,5",
+    "h": "(2.010 − 2.000) ÷ 2.000 = 0,005 → %0,5."
    },
    "kaynak": "Küre Ansiklopedi (Toros Dağları); Wikipedia (Demirkazık, Kızılkaya); en yüksek zirve kaynağa göre değişir"
   },
@@ -499,9 +499,9 @@
    ],
    "mat": "Yükseldikçe hava soğur: troposferde ortalama **her 1.000 m'de yaklaşık 6,5 °C**. Elbruz'un zirvesi bu yüzden deniz kıyısından yaklaşık 37 °C daha soğuktur.",
    "dene": {
-    "s": "Deniz kıyısında 20 °C iken Elbruz zirvesinde (5.642 m) ortalama sıcaklık yaklaşık kaç °C olur?",
-    "c": "≈ −16,7 °C",
-    "h": "5,642 × 6,5 ≈ 36,7 düşüş; 20 − 36,7 = −16,7 °C."
+    "s": "Deniz kıyısında 25 °C iken 3.000 m yükseklikteki bir köyde sıcaklık, her 1.000 m'de 6,5 °C düşüşle yaklaşık kaç °C olur?",
+    "c": "≈ 5,5 °C",
+    "h": "3 × 6,5 = 19,5 düşüş; 25 − 19,5 = 5,5 °C."
    },
    "kaynak": "Britannica (Caucasus; Mount Elbrus; Lapse rate); Wikipedia (Caucasus Mountains), destek; Elbruz'un diğer zirvesi 5.595 m"
   },
@@ -524,9 +524,9 @@
    ],
    "mat": "Alpler yaklaşık 1.200 km uzun ve 207.000 km² geniştir. **Alan ÷ uzunluk** işlemi ortalama genişliği verir: yaklaşık 172,5 km. Mont Blanc'ın yüksekliği kar örtüsüne göre yıldan yıla birkaç metre oynar.",
    "dene": {
-    "s": "Alpler 207.000 km² alanlı ve 1.200 km uzunsa ortalama genişliği yaklaşık kaç km'dir?",
-    "c": "≈ 172,5 km",
-    "h": "207.000 ÷ 1.200 = 172,5 km."
+    "s": "Bir dağ kuşağı 90.000 km² alanlı ve 450 km uzunsa ortalama genişliği kaç km'dir?",
+    "c": "200 km",
+    "h": "Alan ÷ uzunluk = 90.000 ÷ 450 = 200 km."
    },
    "kaynak": "Britannica (Alps); Wikipedia (Mont Blanc: 2021'de 4.807,81 m, 2023'te 4.805,59 m), destek"
   },
@@ -549,9 +549,9 @@
    ],
    "mat": "Dünyanın en büyük sıcak çölü; alanı ABD'nin yüzölçümüne (≈ 9,8 mn km²) **yakın**. Afrika'nın (≈ 30,4 mn km²) yaklaşık **%30'unu** kaplar: 9 ÷ 30,4 ≈ 0,30.",
    "dene": {
-    "s": "Sahra yaklaşık 9 mn km², Afrika yaklaşık 30,4 mn km². Sahra, Afrika'nın yüzde kaçıdır?",
-    "c": "≈ %30",
-    "h": "9 ÷ 30,4 ≈ 0,296 → yaklaşık %30."
+    "s": "Bir çölün alanı 6 mn km², bulunduğu kıtanın alanı 24 mn km² ise çöl kıtanın yüzde kaçıdır?",
+    "c": "%25",
+    "h": "6 ÷ 24 = 0,25 → %25."
    },
    "kaynak": "Britannica (≈ 8,6 mn km²), Wikipedia (≈ 9,2 mn km²), ABD ve Afrika alanları; alan, çölün sınırının nasıl çizildiğine göre değişir"
   },
@@ -599,9 +599,9 @@
    ],
    "mat": "Eteğindeki çalılıktan zirvedeki buzul kuşağına kadar **5 iklim kuşağı** sıralanır. Sıcaklık ortalama her 1 km yükselişte yaklaşık **6,5 °C** düşer; 5 km'lik tırmanışta fark ≈ 32,5 °C.",
    "dene": {
-    "s": "1.000 m'de sıcaklık 25 °C ise, kilometrede 6,5 °C düşüşle 5.895 m'de yaklaşık kaç °C olur?",
-    "c": "≈ −6,8 °C",
-    "h": "Yükseklik farkı 4,895 km; 4,895 × 6,5 ≈ 31,8; 25 − 31,8 ≈ −6,8 °C."
+    "s": "Deniz seviyesinde sıcaklık 28 °C. Kilometrede 6,5 °C düşüşle 3.000 m yükseklikte sıcaklık yaklaşık kaç °C olur?",
+    "c": "≈ 8,5 °C",
+    "h": "3.000 m = 3 km; 3 × 6,5 = 19,5; 28 − 19,5 = 8,5 °C."
    },
    "kaynak": "Britannica (Kibo 5.895 m), Wikipedia (sonraki ölçümler 5.892–5.902 m), Britannica (lapse rate ≈ 6,5 °C/km); gerçek değer hava durumuna göre değişir"
   },
@@ -624,9 +624,9 @@
    ],
    "mat": "Afrika'nın en büyük gölü ve Nil'in başlıca su deposu. Alanı yaklaşık 69.000 km² alınırsa Türkiye'nin (783.562 km²) **yaklaşık 11,4'te biri** eder: 783.562 ÷ 69.000 ≈ 11,4.",
    "dene": {
-    "s": "Victoria Gölü ≈ 69.000 km², Türkiye 783.562 km². Türkiye'nin alanı kaç Victoria Gölü eder?",
-    "c": "≈ 11,4",
-    "h": "783.562 ÷ 69.000 ≈ 11,36 → yaklaşık 11,4."
+    "s": "Alanı 26.000 km² olan bir göl var. Türkiye'nin alanı ≈ 780.000 km² ise Türkiye bu gölün kaç katıdır?",
+    "c": "30 kat",
+    "h": "780.000 ÷ 26.000 = 30."
    },
    "kaynak": "Britannica (69.484 km²), Wikipedia (≈ 59.947 km²; kendi içinde tutarsız, ≈ 68.800 km² da geçer), Türkiye alanı: Wikipedia"
   },
@@ -649,9 +649,9 @@
    ],
    "mat": "Afrika levhası Nubia ve Somali olarak ikiye ayrılıyor. Hız-zaman: yılda 8 mm = milyon yılda **8 km** (1 milyon × 8 mm = 8.000.000 mm = 8 km).",
    "dene": {
-    "s": "Levhalar yılda 8 mm ayrılırsa 5 milyon yılda kaç km açılırlar?",
-    "c": "40 km",
-    "h": "5.000.000 × 8 mm = 40.000.000 mm = 40.000 m = 40 km."
+    "s": "Bir yarık vadide levhalar yılda 12 mm ayrılıyor. 2 milyon yılda kaç km açılırlar?",
+    "c": "24 km",
+    "h": "2.000.000 × 12 mm = 24.000.000 mm = 24.000 m = 24 km."
    },
    "kaynak": "Wikipedia (8–9 mm/yıl); NBC News (≈ 5–13 mm/yıl); Britannica (≈ 6.400 km); hız bölgeye ve ölçüme göre değişir"
   },
@@ -674,9 +674,9 @@
    ],
    "mat": "Dünyanın bilinen en derin nehri ve ekvatoru **iki kez** kesen tek büyük nehir. Debisi Amazon'un yaklaşık **dörtte biri–beşte biri**: 41.000 ÷ 175.000 ≈ 0,23 ve 41.000 ÷ 219.530 ≈ 0,19.",
    "dene": {
-    "s": "Olimpik havuz yaklaşık 2.500 m³. Kongo saniyede ≈ 41.000 m³ taşırsa saniyede kaç havuz dolar?",
-    "c": "≈ 16,4 havuz",
-    "h": "41.000 ÷ 2.500 = 16,4."
+    "s": "Bir nehir saniyede 12.000 m³ su taşıyor. Olimpik havuz ≈ 2.500 m³ ise nehir 1 dakikada kaç havuz doldurur?",
+    "c": "288 havuz",
+    "h": "1 dakikada 12.000 × 60 = 720.000 m³; 720.000 ÷ 2.500 = 288."
    },
    "kaynak": "Britannica (debi ≈ 41.000 m³/sn), Wikipedia (derinlik ≈ 220 m, ekvator, Amazon ≈ 219.530 m³/sn); Britannica'nın Amazon değeri (≈ 175.000 m³/sn) farklı; debi yıl içinde 23.000–75.000 m³/sn arası değişir"
   },
@@ -699,9 +699,9 @@
    ],
    "mat": "Bilinen en eski sayma araçlarından; **29 çentik** taşıyan bir babun kemiği. Kongo'daki Ishango kemiğinden (≈ 20.000 yıl, tarihi tartışmalı) yaklaşık **23.000 yıl** eski.",
    "dene": {
-    "s": "Lebombo kemiği ≈ 43.000, Ishango kemiği ≈ 20.000 yıllık. Lebombo kaç yıl daha eskidir?",
-    "c": "≈ 23.000 yıl",
-    "h": "43.000 − 20.000 = 23.000 yıl."
+    "s": "Bir sayma kemiği ≈ 37.000, bir başkası ≈ 12.500 yıllıktır. Birincisi kaç yıl daha eskidir?",
+    "c": "24.500 yıl",
+    "h": "37.000 − 12.500 = 24.500."
    },
    "kaynak": "Wikipedia (Lebombo bone: 42.000–43.000 yıl, 24 radyokarbon tarihlemesi), MathWorld (d'Errico vd. 2018: ≈ 42.300–42.600), Wikipedia (Ishango: ≈ 20.000, tartışmalı); tarihler yöntem ve tabakaya göre değişir"
   },
@@ -724,9 +724,9 @@
    ],
    "mat": "Baykal **dünyanın en derin gölü**; hacmi yaklaşık 23.600 km³ ile her gölden büyük. Hacim ÷ alan işlemi **ortalama derinliği** verir.",
    "dene": {
-    "s": "Baykal'ın hacmi ≈ 23.615 km³, alanı ≈ 31.722 km². Ortalama derinliği yaklaşık kaç metredir?",
-    "c": "≈ 744 m",
-    "h": "23.615 ÷ 31.722 ≈ 0,744 km ≈ 744 m."
+    "s": "Bir gölün hacmi 1.800 km³, alanı 30.000 km². Ortalama derinliği kaç metredir?",
+    "c": "60 m",
+    "h": "1.800 ÷ 30.000 = 0,06 km = 60 m."
    },
    "kaynak": "Britannica (Lake Baikal: ≈1.620 m, tatlı suyun yaklaşık beşte biri), Wikipedia (1.642 m, 23.615 km³, 31.722 km²), UNESCO; en derin nokta ve pay kaynağa göre değişir"
   },
@@ -749,9 +749,9 @@
    ],
    "mat": "Urallar Avrupa ile Asya'yı ayıran geleneksel sınırın **büyük bölümüdür**. Rusya topraklarının **yaklaşık dörtte üçü (≈ %75) Asya'dadır**.",
    "dene": {
-    "s": "Rusya'nın yüzölçümü ≈ 17,1 milyon km² ve yaklaşık dörtte üçü Asya'daysa Asya'daki kısmı yaklaşık kaç milyon km²'dir?",
-    "c": "≈ 12,8 milyon km²",
-    "h": "17,1 × 3/4 ≈ 12,8 milyon km²."
+    "s": "Bir ülkenin yüzölçümü 8 milyon km² ve %35'i ormandır. Orman alanı kaç milyon km²'dir?",
+    "c": "2,8 milyon km²",
+    "h": "8 × 35/100 = 2,8 milyon km²."
    },
    "kaynak": "Britannica (Ural Mountains, Russia); Wikipedia (Russia: 17.098.246 km²); sınırın tam çizgisi tanıma göre değişir"
   },
@@ -774,9 +774,9 @@
    ],
    "mat": "Gobi bir **soğuk çöldür**: ortalama en düşük (−40 °C) ile en yüksek (45 °C) arasındaki fark **85 °C**'dir. 1923'te burada bulunan dinozor yumurtalarından biri yaklaşık **14 cm** uzunluğundaydı.",
    "dene": {
-    "s": "Gobi'de ortalama Ocak en düşüğü −40 °C, Temmuz en yükseği 45 °C ise aradaki sıcaklık farkı kaç °C'dir?",
-    "c": "85 °C",
-    "h": "45 − (−40) = 45 + 40 = 85 °C."
+    "s": "Bir çölde gece sıcaklığı −12 °C, gündüz 31 °C'ye çıkıyor. Gece ile gündüz arasındaki fark kaç °C'dir?",
+    "c": "43 °C",
+    "h": "31 − (−12) = 31 + 12 = 43 °C."
    },
    "kaynak": "Britannica (Gobi); Wikipedia (Oviraptor: 1923 Flaming Cliffs yumurtası ≈ 14 cm), AMNH; sıcaklıklar uzun yıllık ortalamadır, uç değerler daha da geniştir"
   },
@@ -799,9 +799,9 @@
    ],
    "mat": "\"Dünyanın çatısı\" denen plato, yeryüzünün **en yüksek ve en geniş platosudur**. Alanı Türkiye'nin (783.562 km²) yaklaşık **3,2 katıdır**.",
    "dene": {
-    "s": "Tibet Platosu ≈ 2.500.000 km², Türkiye 783.562 km² ise plato yaklaşık kaç Türkiye'ye sığar?",
-    "c": "≈ 3,2 Türkiye",
-    "h": "2.500.000 ÷ 783.562 ≈ 3,19 ≈ 3,2."
+    "s": "Bir plato Türkiye'nin yaklaşık 3 katı büyüklüktedir. Türkiye ≈ 780.000 km² ise plato kaç km²'dir?",
+    "c": "≈ 2.340.000 km²",
+    "h": "780.000 × 3 = 2.340.000 km²."
    },
    "kaynak": "Wikipedia (Tibetan Plateau: ortalama > 4.500 m, 2.500.000 km²), Britannica (Plateau of Tibet: 4.000–5.000 m, 2,5 mn km²); Türkiye alanı Wikipedia"
   },
@@ -849,9 +849,9 @@
    ],
    "mat": "Dünya 24 saatte 360° döner: **360° ÷ 24 = 15°**, yani her 15° boylam **1 saat** eder. Rusya'nın doğu ucu ile batı ucu arasında 10 saat fark vardır; saat dilimleri siyasi sınırlara göre çizildiği için tam 15°'lik dilimler değildir.",
    "dene": {
-    "s": "Moskova (UTC+3) saat 12:00 iken Kamçatka'da (UTC+12) saat kaçtır?",
-    "c": "21:00",
-    "h": "Fark 12 − 3 = 9 saat → 12:00 + 9 saat = 21:00."
+    "s": "İki şehir arasındaki boylam farkı 105°. Dünya 24 saatte 360° döndüğüne göre güneş saati farkı kaç saattir?",
+    "c": "7 saat",
+    "h": "360° ÷ 24 = 15° → 1 saat; 105 ÷ 15 = 7 saat."
    },
    "kaynak": "Britannica (Russia: 11 saat dilimi), Wikipedia (Time in Russia: UTC+2 ile UTC+12); saat dilimleri zamanla değişebilir"
   },
@@ -874,9 +874,9 @@
    ],
    "mat": "Hem kıta hem ülke olan Avustralya'da yoğunluk **nüfus ÷ alan** ile bulunur: ≈ 3,6 kişi/km². Türkiye'de bu değer ≈ 110'dur, yani **yaklaşık 30 kat** fazla. Uluru çevre düzlükten 348 m yüksektir (deniz seviyesinden 863 m).",
    "dene": {
-    "s": "Avustralya ≈ 27,8 milyon kişi, ≈ 7,69 milyon km²; Türkiye ≈ 86,1 milyon kişi, 783.562 km². Türkiye'nin yoğunluğu Avustralya'nın yaklaşık kaç katıdır?",
-    "c": "≈ 30 kat",
-    "h": "Türkiye: 86,1 ÷ 0,7836 ≈ 109,9 kişi/km²; Avustralya: 27,8 ÷ 7,69 ≈ 3,62 kişi/km²; 109,9 ÷ 3,62 ≈ 30,4 → yaklaşık 30."
+    "s": "Bir ülkede 14 milyon kişi, 400.000 km² alanda yaşıyor. Nüfus yoğunluğu kaç kişi/km²'dir?",
+    "c": "35 kişi/km²",
+    "h": "14.000.000 ÷ 400.000 = 35."
    },
    "kaynak": "Wikipedia (Australia: 7.688.287 km², ≈27,8 mn kişi, Aralık 2025; Turkey: 86,09 mn, 2025 tahmini; Uluru), Britannica; nüfus yıla göre değişir"
   },
@@ -899,9 +899,9 @@
    ],
    "mat": "Canlıların inşa ettiği **en büyük yapı** sayılır. Türkiye'nin doğu-batı uzunluğu yaklaşık 1.600 km ise **2.300 ÷ 1.600 ≈ 1,4**: resif Türkiye'nin boyundan yaklaşık 1,4 kat uzundur.",
    "dene": {
-    "s": "Resif ≈ 2.300 km, Türkiye'nin doğu-batı uzunluğu ≈ 1.600 km ise resif kaç kat uzundur?",
-    "c": "≈ 1,4 kat",
-    "h": "2.300 ÷ 1.600 = 1,4375 ≈ 1,4."
+    "s": "Resifin ≈ 2.300 km'lik uzunluğu, 1 cm = 100 km ölçekli bir haritada kaç cm olur?",
+    "c": "≈ 23 cm",
+    "h": "2.300 ÷ 100 = 23 cm."
    },
    "kaynak": "GBRMPA (≈2.300 km, 344.400 km²), Wikipedia; Britannica (Türkiye ≈ 1.000 mil ≈ 1.600 km, resif > 2.000 km diyor); uzunluk tanıma göre değişir"
   },
@@ -924,9 +924,9 @@
    ],
    "mat": "Mercator haritalarda kutuplara yaklaştıkça alanlar şişer; Grönland Afrika kadar görünür. Oysa Afrika (≈ 30,4 mn km²) Grönland'ın **yaklaşık 14 katı**: 30.365.000 ÷ 2.166.086 ≈ 14. Adanın yaklaşık %81'i buzla kaplı.",
    "dene": {
-    "s": "Grönland'ın alanı ≈ 2,17 mn km², Afrika'nınki ≈ 30,4 mn km². Afrika kaç Grönland eder?",
-    "c": "≈ 14 kat",
-    "h": "30,365 ÷ 2,166 ≈ 14,02."
+    "s": "Grönland ≈ 2,17 mn km², Avrupa ≈ 10,2 mn km². Avrupa yaklaşık kaç Grönland eder?",
+    "c": "≈ 4,7 kat",
+    "h": "10,2 ÷ 2,17 ≈ 4,70."
    },
    "kaynak": "Britannica (Africa), Wikipedia (Greenland, Mercator projection), NSIDC; buz kalınlığı 3 km üzeri, alan küçük adalar dahil"
   },
@@ -949,9 +949,9 @@
    ],
    "mat": "Kanada'nın kıyısı dünyanın en uzunu, ama değer **cetvelin boyuna göre değişir**: Britanya kıyısı 100 km'lik cetvelle ≈ 2.800 km, 50 km'lik cetvelle ≈ 3.400 km çıkar. Buna kıyı paradoksu denir; Mandelbrot (1967) bu girintili şekilleri **fraktal** ile anlattı.",
    "dene": {
-    "s": "Britanya kıyısı 100 km'lik cetvelle 2.800 km, 50 km'lik cetvelle 3.400 km ölçülüyor. Cetvel yarıya inince uzunluk yaklaşık yüzde kaç artar?",
-    "c": "≈ %21",
-    "h": "(3.400 − 2.800) ÷ 2.800 ≈ 0,214 → %21."
+    "s": "Bir kıyı 50 km'lik cetvelle 1.250 km, 25 km'lik cetvelle 1.500 km ölçülüyor. Uzunluk yüzde kaç artar?",
+    "c": "%20",
+    "h": "(1.500 − 1.250) ÷ 1.250 = 0,2 → %20."
    },
    "kaynak": "Wikipedia (List of countries by length of coastline, kaynağı CIA World Factbook; Coastline paradox; Hudson Bay); kıyı uzunluğu ölçüm yöntemine bağlı"
   },
@@ -974,9 +974,9 @@
    ],
    "mat": "Beş gölün hacmi ≈ 22.671 km³, alanı ≈ 244.106 km². **Ortalama derinlik = hacim ÷ alan** ≈ 0,093 km, yani yaklaşık 93 m. Superior (≈ 146 m) çok daha derin, Erie (≈ 19 m) sığ.",
    "dene": {
-    "s": "Erie Gölü'nün hacmi ≈ 480 km³, alanı ≈ 25.667 km². Ortalama derinliği kaç metredir?",
-    "c": "≈ 19 m",
-    "h": "480 ÷ 25.667 ≈ 0,0187 km ≈ 18,7 m ≈ 19 m."
+    "s": "Bir gölün hacmi 600 km³, alanı 24.000 km². Ortalama derinliği kaç metredir?",
+    "c": "25 m",
+    "h": "600 ÷ 24.000 = 0,025 km = 25 m."
    },
    "kaynak": "Wikipedia (Great Lakes), EPA (PolitiFact alıntısı: %21); kaynağa göre pay %20–23 arası, hacimler küçük farklarla verilir"
   },
@@ -999,9 +999,9 @@
    ],
    "mat": "Duvarlardaki kaya katmanları yaklaşık **270 milyon ile 2 milyar yıl** arası yaşları gösterir: fark ≈ 1,73 milyar yıl. Harita ölçeğiyle de çalışılır: 1 cm = 50 km ölçekte 446 km'lik kanyon ≈ 8,9 cm olur.",
    "dene": {
-    "s": "1 cm = 50 km ölçekli bir haritada 446 km'lik kanyon kaç cm uzunlukta çizilir?",
-    "c": "≈ 8,9 cm",
-    "h": "446 ÷ 50 = 8,92 cm."
+    "s": "1 cm = 25 km ölçekli haritada iki şehir arası 6,4 cm ölçülüyor. Gerçek uzaklık kaç km'dir?",
+    "c": "160 km",
+    "h": "6,4 × 25 = 160 km."
    },
    "kaynak": "Wikipedia (Grand Canyon), NPS (278 nehir mili ≈ 447 km, ort. derinlik 1,6 km); Colorado Nehri'nin yaşı (5–6 mn yıl) tartışmalı"
   },
@@ -1149,9 +1149,9 @@
    ],
    "mat": "Everest'in 8.848,86 m'si **deniz seviyesinden** ölçülür. Mauna Kea'yı tabanından ölçersek ≈ 10.000 m'yi aşar ve Everest'ten **yaklaşık 1.100–1.400 m** yüksek çıkar. Yani yükseklik, **başlangıç noktasının** seçimine bağlıdır.",
    "dene": {
-    "s": "Mauna Kea tabandan ≈ 10.211 m, deniz seviyesinden ≈ 4.205 m yüksekse kaç metresi suyun altındadır?",
-    "c": "≈ 6.000 m",
-    "h": "10.211 − 4.205 = 6.006 m ≈ 6.000 m."
+    "s": "Okyanus tabanından 9.000 m yükselen bir ada dağının deniz üstündeki kısmı 3.400 m ise kaç metresi su altındadır?",
+    "c": "5.600 m",
+    "h": "9.000 − 3.400 = 5.600 m."
    },
    "kaynak": "USGS (deniz seviyesinden 4.205 m, tabandan ≈ 10.211 m); taban tanımına göre değer değişir"
   }
