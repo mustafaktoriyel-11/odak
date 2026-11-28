@@ -1915,3 +1915,38 @@ html.mf-hafif{--oeT:.3s}
   /* odak geçişinde pano yapısı korunur (zıplama olmasın); yalnız sabit yükseklik bırakılır */
   body.lv-odak #pg-sayac{min-height:0!important}
 }
+
+/* ===== Sonuç Simülatörü (uygulama içi) ===== */
+#sim-p .sheet-k{max-height:92vh;overflow-y:auto;overscroll-behavior:contain}
+.sim-ust h3{display:flex;align-items:center;gap:8px;margin:4px 0 4px;font-size:19px;color:#1E3BD6}.sim-ust h3 .ic{width:22px;height:22px}
+.sim-ust p{margin:0 0 12px;font-size:13.5px;color:#5A6699;line-height:1.45}
+.sim-sekme{display:flex;gap:8px;margin:0 0 12px}.sim-sekme button{flex:1;border:0;border-radius:999px;padding:10px;font:inherit;font-weight:700;font-size:15px;background:#E3E8FF;color:#1E3BD6;cursor:pointer}.sim-sekme button.on{background:#1E3BD6;color:#fff}
+.sim-top{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px;margin:0 0 10px}
+.sim-top div{background:linear-gradient(135deg,#1E3BD6,#14269A);color:#fff;border-radius:12px;padding:10px;text-align:center}.sim-top div.tur{background:linear-gradient(135deg,#FF8A1F,#E0700F)}
+.sim-top b{display:block;font-size:22px}.sim-top span{font-size:12px;opacity:.92}
+.sim-kart{background:#F4F6FF;border:1px solid #DCE2FF;border-radius:12px;padding:8px 12px;margin:0 0 12px}
+.sim-bas,.sim-satir{display:grid;grid-template-columns:1fr 52px 52px 54px;gap:8px;align-items:center}
+.sim-bas{font-size:12px;color:#7A8099;font-weight:600;padding:2px 0 6px;text-align:center}.sim-bas span:first-child{text-align:left}
+.sim-satir{padding:6px 0;border-top:1px solid #E3E7FA}
+.sim-ad{font-weight:600;font-size:14.5px;color:#27325E}.sim-ad small{display:block;font-weight:400;font-size:11.5px;color:#8A90A8}
+.sim-satir input{width:100%;box-sizing:border-box;border:1px solid #C9D2F5;border-radius:8px;padding:8px 2px;text-align:center;font-size:16px;background:#fff;color:#222}
+.sim-satir input.hata{border-color:#E5484D;background:#FFF0F0}
+.sim-net{display:block;text-align:center;font-weight:700;color:#1E3BD6;font-size:15px}
+.sim-puan{background:#fff;border:1px solid #DCE2FF;border-radius:12px;padding:12px;margin:0 0 12px}
+.sim-puan h4{margin:0 0 2px;font-size:17px;color:#1E3BD6}.sim-alt{font-size:12px;color:#8A90A8;margin:0 0 10px}
+.sim-obp{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 10px;font-size:14px;color:#3A4370}
+.sim-obp label{display:flex;align-items:center;gap:6px}.sim-obp input[type=number]{width:84px;border:1px solid #C9D2F5;border-radius:8px;padding:8px;text-align:center;font-size:16px}
+.sim-pt{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.sim-pt div{border:1px solid #E3E7FA;border-radius:10px;padding:9px;text-align:center;background:#F8F9FF}
+.sim-pt span{display:block;font-size:12px;color:#7A8099;font-weight:600}.sim-pt b{display:block;font-size:21px;color:#1E3BD6;margin:2px 0}.sim-pt small{font-size:11.5px;color:#8A90A8}
+.sim-robot{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;background:#FF8A1F;color:#fff!important;text-decoration:none!important;border-radius:14px;padding:12px;font-weight:700;font-size:14.5px;text-align:center}
+.sim-robot .ic{width:18px;height:18px;flex:none}.sim-robot.pasif{opacity:.45;pointer-events:none}
+.sim-not{font-size:12.5px;color:#7A8099;border-left:4px solid #FF8A1F;background:#FFF6EC;padding:9px 11px;border-radius:6px;margin:0 0 12px;line-height:1.45}
+.sim-alt-d{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.sim-temizle{background:none;border:0;color:#8A90A8;text-decoration:underline;font:inherit;font-size:13px;cursor:pointer;padding:0}
+html.mf-gece .sim-ust h3,html.mf-gece .sim-puan h4,html.mf-gece .sim-pt b,html.mf-gece .sim-net{color:#B7C5FF}
+html.mf-gece .sim-ust p,html.mf-gece .sim-obp{color:#AEB6D3}html.mf-gece .sim-ad{color:#E3E8FF}
+html.mf-gece .sim-kart,html.mf-gece .sim-puan{background:#1A2142;border-color:#2F3970}html.mf-gece #sim-p .sheet-k .sim-puan{background:#20284D}
+html.mf-gece .sim-satir{border-color:#2F3970}html.mf-gece .sim-satir input,html.mf-gece .sim-obp input[type=number]{background:#232B52;border-color:#3A4BA0;color:#fff}
+html.mf-gece .sim-pt div{background:#232B52;border-color:#2F3970}html.mf-gece .sim-sekme button{background:#232B52;color:#B7C5FF}html.mf-gece .sim-sekme button.on{background:#1E3BD6;color:#fff}
+html.mf-gece .sim-not{background:#2A2120;color:#C9B9A8}

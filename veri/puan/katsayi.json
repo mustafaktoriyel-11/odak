@@ -1,0 +1,11 @@
+{
+ "surum": 1,
+ "kaynak": "2026 YKS sonuçlarından hesaplanan yaklaşık katsayılar",
+ "tyt": [150.77, 2.71, 3.13, 3.25, 2.58],
+ "say": {"taban": [121.77, 1.23, 1.42, 1.47, 1.17], "ayt": [3.02, 2.53, 2.52, 2.61]},
+ "ea":  {"taban": [123.59, 1.20, 1.38, 1.43, 1.14], "ayt": [2.94, 3.28, 2.37, 2.55]},
+ "soz": {"taban": [122.83, 1.14, 1.32, 1.37, 1.09], "ayt": [3.13, 2.26, 2.43, 3.24, 2.93, 4.20, 1.99]},
+ "dil": {"taban": [109.65, 1.42, 1.64, 1.71, 1.35], "ydt": 2.59},
+ "obp": {"carpan": 5, "katsayi": 0.12, "yerlesen": 0.06},
+ "robot": "https://www.mustafaktoriyel.com/p/2027-yks-tercih-robotu.html"
+}
