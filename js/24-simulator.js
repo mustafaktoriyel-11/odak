@@ -28,10 +28,10 @@
       '<input type="number" inputmode="numeric" min="0" max="'+x[1]+'" placeholder="Y" aria-label="'+x[0]+' yanlış" value="'+(v[1]===''?'':v[1])+'">'+
       '<output class="sim-net">0</output></div>';}).join('');}
   function kur(){
-    p=document.createElement('div');p.id='sim-p';p.className='pm-sheet sim-p';p.setAttribute('role','dialog');p.setAttribute('aria-modal','true');p.setAttribute('aria-label','Sonuç Simülatörü');
+    p=document.createElement('div');p.id='sim-p';p.className='pm-sheet sim-p';p.setAttribute('role','dialog');p.setAttribute('aria-modal','true');p.setAttribute('aria-labelledby','sim-b');
     var kay=kayit();
     p.innerHTML='<div class="sheet-k"><div class="sheet-tut"></div>'+
-      '<div class="sim-ust"><h3><svg class="ic" aria-hidden="true"><use href="#i-hesap"/></svg>Sonuç Simülatörü</h3><p>Deneme sonuçlarını gir, netlerin ve tahmini puanın anında hesaplansın. <span id="sim-kural">4 yanlış 1 doğruyu götürür.</span></p></div>'+
+      '<div class="sheet-ust"><b id="sim-b"><svg class="ic" aria-hidden="true"><use href="#i-hesap"/></svg>Sonuç Simülatörü</b><span id="sim-kural">4 yanlış 1 doğruyu götürür</span></div>'+
       '<div class="sim-sinav"><button type="button" data-x="yks">YKS</button><button type="button" data-x="lgs">LGS</button></div>'+
       '<div class="sim-yks"><div class="sim-sekme"><button type="button" data-s="tyt" class="on">TYT</button><button type="button" data-s="ayt">AYT · YDT</button></div>'+
       '<div data-panel="tyt"><div class="sim-top"><div><b id="sim-t-tyt">0</b><span>TYT net</span></div><div class="tur"><b id="sim-t-mat">0</b><span>Matematik</span></div></div>'+
@@ -40,17 +40,18 @@
         '<div class="sim-kart"><div class="sim-bas"><span>Test</span><span>D</span><span>Y</span><span>Net</span></div>'+satirlar(AYT,'a',kay)+satirlar(YDT,'y',kay)+'</div></div>'+
       '<div class="sim-puan"><h4>Tahmini puan</h4><p class="sim-alt" id="sim-kaynak"></p>'+
         '<div class="sim-obp"><label>Diploma notu <input type="number" id="sim-dip" min="50" max="100" step="0.01" inputmode="decimal" placeholder="ör. 85" value="'+(kay.dip||'')+'"></label>'+
-        '<label class="sim-yer"><input type="checkbox" id="sim-yer"'+(kay.yer?' checked':'')+'> Geçen yıl bir programa yerleştim</label></div>'+
+        '<label class="pm-anahtar sim-yer"><input type="checkbox" id="sim-yer" role="switch"'+(kay.yer?' checked':'')+'><span class="ray" aria-hidden="true"></span><b>Geçen yıl bir programa yerleştim</b></label></div>'+
         '<div class="sim-pt">'+['tyt:TYT','say:Sayısal','ea:Eşit Ağırlık','soz:Sözel','dil:Dil'].map(function(x){var a=x.split(':');return '<div><span>'+a[1]+'</span><b id="sim-p-'+a[0]+'">–</b><small id="sim-y-'+a[0]+'"></small></div>';}).join('')+'</div>'+
-        '<a class="sim-robot pasif" id="sim-robot" target="_blank" rel="noopener" href="#"><svg class="ic" aria-hidden="true"><use href="#i-hedef"/></svg>Bu puanlarla hangi bölümlere girebilirim? Tercih Robotu ›</a>'+
+        '<a class="sim-robot pasif" id="sim-robot" target="_blank" rel="noopener" href="#"><svg class="ic" aria-hidden="true"><use href="#i-hedef"/></svg><span>Bu puanlarla hangi bölümlere girebilirim?<small>Tercih Robotu · sitede açılır</small></span><i aria-hidden="true">›</i></a>'+
         '<p class="sim-alt" id="sim-robot-not">Tercih robotu için diploma notunu da gir.</p></div></div>'+
       '<div class="sim-lgs" hidden><div class="sim-top"><div><b id="sim-l-net">0</b><span>Toplam net</span></div><div class="tur"><b id="sim-l-agr">0</b><span>Ağırlıklı net</span></div></div>'+
         '<div class="sim-kart"><div class="sim-bas"><span>Test</span><span>D</span><span>Y</span><span>Net</span></div>'+satirlar(LGS,'l',kay)+'</div>'+
         '<div class="sim-puan"><h4>Tahmini LGS puanı</h4><p class="sim-alt">3 yanlış 1 doğruyu götürür. Türkçe, Matematik ve Fen netleri 4, diğerleri 1 katsayıyla sayılır.</p>'+
         '<div class="sim-pt sim-pt1"><div><span>LGS (500 üzerinden)</span><b id="sim-l-puan">–</b><small>tahmini</small></div></div></div></div>'+
-      '<p class="sim-not sim-yks"><b>Puanlar tahminidir.</b> ÖSYM katsayıları önceden yayımlamaz; bu değerler bir önceki yılın sonuçlarından hesaplanmış yaklaşık katsayılardır ve sınavın zorluğuna göre değişir. Büyük sayı ham puan, altındaki OBP eklenmiş yerleştirme puanıdır.</p>'+
-      '<p class="sim-not sim-lgs" hidden><b>Puan tahminidir.</b> MEB, LGS puanını her dersin o yılki Türkiye ortalamasına göre standart puanla hesaplar. Bu tahmin 2026 LGS raporu ve 2026 yüzdelik dilimleri kullanılarak hesaplandı; yüksek puanlarda daha isabetli, düşük netlerde sapma artabilir.</p>'+
-      '<div class="sim-alt-d"><button type="button" class="sim-temizle" id="sim-temizle">Tümünü temizle</button><button type="button" class="mt-btn2 sim-kapat">Kapat</button></div></div>';
+      '<p class="sim-not sim-yks"><svg class="ic" aria-hidden="true"><use href="#i-uyari"/></svg><span><b>Puanlar tahminidir.</b> ÖSYM katsayıları önceden yayımlamaz; bu değerler bir önceki yılın sonuçlarından hesaplanmış yaklaşık katsayılardır ve sınavın zorluğuna göre değişir. Büyük sayı ham puan, altındaki OBP eklenmiş yerleştirme puanıdır.</span></p>'+
+      '<p class="sim-not sim-lgs" hidden><svg class="ic" aria-hidden="true"><use href="#i-uyari"/></svg><span><b>Puan tahminidir.</b> MEB, LGS puanını her dersin o yılki Türkiye ortalamasına göre standart puanla hesaplar. Bu tahmin 2026 LGS raporu ve 2026 yüzdelik dilimleri kullanılarak hesaplandı; yüksek puanlarda daha isabetli, düşük netlerde sapma artabilir.</span></p>'+
+      '<button type="button" class="sim-temizle" id="sim-temizle"><svg class="ic" aria-hidden="true"><use href="#i-cop"/></svg>Tümünü temizle</button>'+
+      '<button type="button" class="sheet-tamam sim-kapat">Tamam</button></div>';
     document.body.appendChild(p);
     var kap=function(){kaydet();if(window.LEX_GERI&&LEX_GERI.dus)LEX_GERI.dus('sim-p');p.classList.remove('gor');setTimeout(function(){p.classList.remove('acik');},280);};
     p._kap=kap;p.addEventListener('click',function(e){if(e.target===p&&Date.now()-(p._t||0)>450)kap();});
@@ -64,7 +65,7 @@
     $('sim-temizle').addEventListener('click',function(){[].forEach.call(p.querySelectorAll('input'),function(i){if(i.type==='checkbox')i.checked=false;else i.value='';});hesapla();kaydet();});
   }
   function sinavSec(x){sinav=x;if(!p)return;[].forEach.call(p.querySelectorAll('.sim-sinav button'),function(b){b.classList.toggle('on',b.getAttribute('data-x')===x);});
-    [].forEach.call(p.querySelectorAll('.sim-yks'),function(e){e.hidden=x!=='yks';});[].forEach.call(p.querySelectorAll('.sim-lgs'),function(e){e.hidden=x!=='lgs';});$('sim-kural').textContent=x==='lgs'?'3 yanlış 1 doğruyu götürür.':'4 yanlış 1 doğruyu götürür.';}
+    [].forEach.call(p.querySelectorAll('.sim-yks'),function(e){e.hidden=x!=='yks';});[].forEach.call(p.querySelectorAll('.sim-lgs'),function(e){e.hidden=x!=='lgs';});$('sim-kural').textContent=x==='lgs'?'3 yanlış 1 doğruyu götürür':'4 yanlış 1 doğruyu götürür';}
   function sayi(i){var v=parseInt(i.value,10);return isNaN(v)||v<0?0:v;}
   function yuv(x){return Math.round(x*100)/100;}
   var N={t:[],a:[],y:[],l:[]};
