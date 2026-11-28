@@ -260,7 +260,8 @@
     var sr=22050,n=Math.round(sr*2.2),o=new Float32Array(n);
     [0,0.35,0.7].forEach(function(dt,k){var f=[880,1047,1319][k],b=Math.round(dt*sr);
       for(var i=0;i<sr&&b+i<n;i++){var t=i/sr,env=t<0.02?t/0.02:Math.exp(-(t-0.02)*6);o[b+i]+=Math.sin(6.2832*f*t)*env*0.3;}});
-    zilA=new Audio(wavUrl(sr,o));zilA.preload='auto';
+    // MF Odak alarm imzası "π Çanı" (tasarim/muzik/alarm.py, gerçek enstrüman örnekleri); dosya yoksa üretilen zil
+    zilA=new Audio('ses/alarm/pi-cani.m4a');zilA.preload='auto';var yedekZil=wavUrl(sr,o);zilA.addEventListener('error',function(){if(zilA.src.indexOf('blob:')!==0)zilA.src=yedekZil;},{once:true});
     // ilk dokunusta sessizce bir kez calip kilidi ac (sonradan arka planda calabilsin)
     zilA.muted=true;var p=zilA.play();
     if(p&&p.then)p.then(function(){if(zilA.muted){zilA.pause();zilA.currentTime=0;zilA.muted=false;}}).catch(function(){zilA.muted=false;});

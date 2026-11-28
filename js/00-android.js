@@ -54,12 +54,12 @@
     var sonDurum='',izinSoruldu=false;
     // Süre bitişi için telefonun kendi alarm bildirimi: uygulama arka plandayken ya da ekran kilitliyken de çalar
     var LNp=P.LocalNotifications,kanalHazir=null;
-    function sureKanal(){if(!kanalHazir)kanalHazir=LNp.createChannel({id:'sure',name:'Süre doldu',description:'Odak turu ya da mola bitince',importance:5,visibility:1,vibration:true}).catch(function(){});return kanalHazir;}
+    function sureKanal(){if(!kanalHazir)kanalHazir=LNp.createChannel({id:'sure-pi',name:'Süre doldu',description:'Odak turu ya da mola bitince (π Çanı)',importance:5,visibility:1,vibration:true,sound:'mf_alarm.ogg'}).catch(function(){});return kanalHazir;}
     function sureBildirim(s){if(!LNp)return;
       LNp.cancel({notifications:[{id:7100}]}).catch(function(){}).then(function(){
         if(!(s&&s.calisiyor&&!s.serbest&&s.zaman>Date.now()+3000))return;
         return sureKanal().then(function(){return LNp.schedule({notifications:[{id:7100,title:s.calis?'Odak turu bitti':'Mola bitti',body:s.calis?'Süre doldu. Mola zamanı!':'Mola bitti, odaklanma zamanı.',
-          schedule:{at:new Date(s.zaman),allowWhileIdle:true},channelId:'sure',smallIcon:'mf_bildirim',iconColor:'#FF8A1F'}]});});
+          schedule:{at:new Date(s.zaman),allowWhileIdle:true},channelId:'sure-pi',sound:'mf_alarm.ogg',smallIcon:'mf_bildirim',iconColor:'#FF8A1F'}]});});
       }).catch(function(){});}
     // uygulama açıkken süre biterse uygulamanın kendi zili çalar; telefon bildirimi tekrar etmesin
     window.MF_SURE_GORULDU=function(){if(!LNp)return;LNp.cancel({notifications:[{id:7100}]}).catch(function(){});if(LNp.removeDeliveredNotifications)LNp.removeDeliveredNotifications({notifications:[{id:7100}]}).catch(function(){});};
