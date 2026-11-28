@@ -229,7 +229,7 @@
       var dx=bx-d.x,dy=by-d.y;
       if(d.rozet)h+='<path class="iz-bag" d="M'+d.x+' '+d.y+' L'+bx+' '+by+'" stroke="'+(ul?m:'#A8AEC8')+'" stroke-width="2" opacity=".7"/>';
       h+='<circle class="iz-sehir" cx="'+d.x+'" cy="'+d.y+'" r="6" fill="'+vv+'" stroke="'+(ul?m:'#A8AEC8')+'" stroke-width="2"/>';
-      h+='<g class="iz-durak'+(ul?' ul':'')+'" data-i="'+i+'" style="transform:translate(calc('+d.x+'px + '+dx+'px*var(--ro,1)),calc('+d.y+'px + '+dy+'px*var(--ro,1))) scale(var(--kd,1));"--m:'+mm+';--v:'+vv+'" opacity="'+(ul?1:.6)+'">';
+      h+='<g class="iz-durak'+(ul?' ul':'')+'" data-i="'+i+'" style="transform:translate(calc('+d.x+'px + '+dx+'px*var(--ro,1)),calc('+d.y+'px + '+dy+'px*var(--ro,1))) scale(var(--kd,1));--m:'+mm+';--v:'+vv+'" opacity="'+(ul?1:.6)+'">';
       if(simdi)h+='<circle class="iz-hale" r="42" fill="'+vr+'"/>';
       h+='<circle r="30" fill="'+(gece?'#1A2142':'#FFF8EA')+'" stroke="'+(ul?(gece?'#9FB2FF':'#141B3F'):'#A8AEC8')+'" stroke-width="'+(simdi?5:3)+'"/>';
       h+='<use href="#iz-s-'+d.simge+'" transform="translate(-22 -22) scale(.69)"/><circle r="40" fill="transparent"/></g>';
@@ -529,7 +529,7 @@
   }
   // Harita müziği "Seyyah" (ses/tema/seyyah.m4a): isteğe bağlı, varsayılan kapalı; yalnız harita ekranındayken, kısık çalar
   var HM={acik:false};try{HM.acik=localStorage.getItem('mf-iz-hm')==='1';}catch(e){}
-  function haritaEkrani(){var g=$('mt-giris');return document.body.classList.contains('s-mantik')&&g&&!g.hidden&&!document.querySelector('.iz-sahne');}
+  function haritaEkrani(){var g=$('mt-giris');return !SES.sahne&&document.body.classList.contains('s-mantik')&&g&&!g.hidden&&!document.querySelector('.iz-sahne');}
   function haritaMuzik(){
     if(HM.acik&&haritaEkrani()){if(SES.istenen!=='seyyah'||!SES.kaynak){SES.istenen='seyyah';sesCal('seyyah',.3,true);}}
     else if(SES.istenen==='seyyah'){SES.istenen=null;sesDur();}
@@ -540,6 +540,7 @@
   document.addEventListener('visibilitychange',function(){if(!SES.ctx)return;if(document.hidden)SES.ctx.suspend();else if(SES.kaynak)SES.ctx.resume();});
   function durakSahne(i,zoom,sonra){
     var D=V.rota.duraklar,r=D[i],d=V.dur[r.id]||{},st=kamSt||durum(),ul=st.toplam>=r.adim;
+    SES.sahne=true;if(SES.istenen==='seyyah'){SES.istenen=null;sesDur();} // durak sahnesi: harita müziği susar
     var kar=document.createElement('div');kar.className='iz-karart';document.body.appendChild(kar);
     var geri={s:kam.s,x:kam.x,y:kam.y};
     function ac(){
@@ -572,7 +573,7 @@
       }
       document.body.appendChild(sh);
       requestAnimationFrame(function(){sh.classList.add('acik');kar.classList.add('git');});
-      function kapat(){SES.istenen=null;sesDur();setTimeout(haritaMuzik,320);sh.classList.remove('acik');kar.classList.remove('git');kar.classList.add('tam');
+      function kapat(){SES.istenen=null;sesDur();SES.sahne=false;setTimeout(haritaMuzik,320);sh.classList.remove('acik');kar.classList.remove('git');kar.classList.add('tam');
         setTimeout(function(){sh.remove();if(zoom&&$('iz-harita')){kamGit(geri,650,yumusak);}kar.classList.remove('tam');setTimeout(function(){kar.remove();},350);if(sonra)sonra();},300);}
       sh.querySelector('.iz-sh-kapat').onclick=kapat;
     }
