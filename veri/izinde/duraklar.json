@@ -56,7 +56,11 @@
     "Papirüsün tarihi: Wikipedia kopyayı MÖ 1550 dolayı veriyor (Hyksos kralı Apophis'in 33. yılı); MacTutor Ahmes'in yaşamını MÖ 1680-1620 gösteriyor. Metinde 'MÖ 1550 dolayı (kopya)' tercih edildi.",
     "Problem sayısı kaynağa göre 84/87/91 değişiyor; metinde sayı verilmedi.",
     "Papirüsün Luksor'da (Teb) satın alındığı kesin; tam bulunduğu yer (Ramesseum yakını) 'rivayet' düzeyinde."
-   ]
+   ],
+   "eser": {
+    "alt": "Çapı 9 olan bir daire ile kenarı 8 olan bir karenin yan yana şeması; ikisinin alanı yaklaşık eşittir (64).",
+    "not": "Ahmes'in yöntemi: çapı 9 olan dairenin alanı ≈ kenarı 8 olan karenin alanı (64)"
+   }
   },
   {
    "id": "d03",
@@ -79,7 +83,11 @@
    "emin_degil": [
     "Piramit ölçümü hikâyesi rivayettir (Hieronymus'tan Diogenes Laertius aracılığıyla; Plinius ve Plutarkhos). Thales'e atfedilen teoremlerin çoğu da kesin değildir.",
     "Thales'in Mısır'a gittiği de geleneksel anlatıdır; belge yoktur."
-   ]
+   ],
+   "eser": {
+    "alt": "Güneş ışığında yere dikilmiş çubuk ile piramidin gölgeleri; iki benzer üçgenin oranı H/G = b/g.",
+    "not": "Çubuğun boy/gölge oranı, piramidin boy/gölge oranına eşittir: H/G = b/g"
+   }
   },
   {
    "id": "d04",
@@ -106,7 +114,11 @@
     "Plimpton 322'nin amacı (üçlü üretme tablosu mu, ters sayı çiftleri listesi mi) kesin değil; metin amacı söylemiyor.",
     "Plimpton 322'nin kesin tarihi ve yeri belirsiz (muhtemelen Larsa, MÖ 1800 dolayı).",
     "√2 değerinin ondalık doğruluğu (1,41421296...) tarafımızdan hesaplandı; ISAW sayfası basamakları vermiyor, MacTutor 1;24,51,10 değerini veriyor."
-   ]
+   ],
+   "eser": {
+    "alt": "Kenarı 30 olan bir kare ve köşegeni; köşegen oranı 60 tabanında 1;24,51,10, yani yaklaşık 1,41421 (√2).",
+    "not": "Tablet şeması: köşegen ÷ kenar = 1;24,51,10 ≈ 1,41421; 30 × bu sayı = 42;25,35"
+   }
   },
   {
    "id": "d05",
@@ -131,7 +143,11 @@
     "Pisagor'a ait hiçbir yazı kalmadı; erken biyografileri kısmen efsanevi. Teoremin kanıtı için 'olabilir' dili kullanıldı.",
     "İrrasyonel sayıların keşfi tek bir kişiye bağlanamıyor; metinde 'Pisagorculara atfedilir' denildi.",
     "Pisagor'un yaşam tarihleri kaynaklara göre 20 yıl kadar oynuyor."
-   ]
+   ],
+   "eser": {
+    "alt": "Kenarları 3, 4 ve 5 olan dik üçgenin her kenarında taşlarla dolu bir kare; taş sayıları 9, 16 ve 25.",
+    "not": "Dik kenarlardaki taşlar 9 + 16 = 25 eder; hipotenüsteki kare de 25 taştır"
+   }
   },
   {
    "id": "d06",
@@ -161,7 +177,11 @@
     "Öklid'in yaşamı hakkında neredeyse hiçbir şey bilinmiyor; MacTutor tarihleri yaklaşık MÖ 325-265 veriyor.",
     "Eratosthenes'in 'Dünya'nın Ölçülmesi' eseri kayıp; ayrıntılar başkalarının aktarımından. Stadion uzunluğu 157,2 m mi 166,7 m mi bilinmiyor.",
     "Bu durakta iki kişi var: Hypatia yerine Eratosthenes seçildi (kaynak doğrulaması daha sağlam); şema yan_kisi alanı ekledi."
-   ]
+   ],
+   "eser": {
+    "alt": "A ve B merkezli, AB yarıçaplı iki çember C noktasında kesişir; ABC eşkenar üçgendir.",
+    "not": "Elemanlar I.1: iki çemberin kesiştiği C, AB'nin üzerine eşkenar üçgen kurar"
+   }
   },
   {
    "id": "d07",
@@ -185,7 +205,11 @@
     "Cicero'nun mezarı bulması Cicero'nun kendi anlatısına dayanır (MÖ 75); modern doğrulama yok.",
     "'Eureka' hikâyesi bilerek kullanılmadı (MacTutor sayfasında yok, doğrulanamadı).",
     "Ölüm biçimi: Plutarkhos üç farklı anlatım verir; metinde ölüm anlatılmadı."
-   ]
+   ],
+   "eser": {
+    "alt": "Silindirin içine tam sığan bir küre; hacim ve yüzey oranlarının her ikisi de 2:3.",
+    "not": "Küre : silindir oranı hem hacimde hem yüzeyde 2 : 3 (silindir yüksekliği 2r)"
+   }
   },
   {
    "id": "d08",
@@ -209,7 +233,11 @@
     "Doğum yeri: büyük olasılıkla Kusumapura (Pataliputra yakını) ama kesin değil; Güney Hindistan ve Bengal de öne sürülüyor. Yer adı bu yüzden 'Pataliputra' bırakıldı ama bu belirsizlik not edildi.",
     "Sıfır ve yer değer sisteminden haberdar olup olmadığı tarihçilerce tartışmalı; metinde bahsedilmedi.",
     "Metindeki π değerini Aryabhata'nın 'yaklaşık' olarak verdiği bilinir; yine de özgün ifadeyi yalnız MacTutor üzerinden doğruladık."
-   ]
+   ],
+   "eser": {
+    "alt": "Çapı 20.000 olan bir daire ve açılmış çevresi; çevre yaklaşık 62.832, yani çapın 3,1416 katı.",
+    "not": "62.832 ÷ 20.000 = 3,1416: çevre yaklaşık üç çap ve çapın 0,1416 katıdır"
+   }
   },
   {
    "id": "d09",
@@ -233,7 +261,11 @@
     "Doğum yeri: MacTutor 'muhtemelen Ujjain' diyor; Bhinmal'ın doğum yeri olarak sıkça anıldığı doğrulanamadı (sayfa belirsiz). Yer adı proje listesindeki gibi bırakıldı.",
     "Sıfırla bölme kuralı: MacTutor 'a/0 = a/0' ve '0/0 = 0' ifadelerini aktarıyor; ikincisini yanlış sayıyor.",
     "Pell denklemi çözümü (61x²+1=y²) metne alınmadı, öğrenci düzeyine uygun değil."
-   ]
+   ],
+   "eser": {
+    "alt": "Sayı doğrusunda solda borç (eksi), sağda servet (artı) var; altında Brahmagupta'nın üç işlem kuralı örneklenmiş.",
+    "not": "Şema: sayı doğrusunda borç (−) ve servet (+); (−3)×(−4)=+12 gibi kurallar"
+   }
   },
   {
    "id": "d10",
@@ -258,7 +290,11 @@
     "Liu Hui'nin şerhinin tarihi (263) sonraki bir kaynaktan; kendisi tarih koymadı. Yaşam tarihleri yaklaşık.",
     "355/113'ün uzun süre en iyi yaklaşım olduğu iddiası (ve 'Milu' adı) MacTutor'da yok, bu yüzden metne alınmadı.",
     "3,1415926 < π < 3,1415927 aralığının nasıl bulunduğu (hangi çokgenle) tam bilinmiyor; Zhui shu kayıp."
-   ]
+   ],
+   "eser": {
+    "alt": "Bir çemberin içine çizilmiş 6 ve 12 kenarlı düzgün çokgenler; kenar sayısı arttıkça çevre π'ye yaklaşır.",
+    "not": "Şema: 6 ve 12 kenarlı çokgenin yarım çevresi (yarıçap 1): 3,000 ve 3,106; 3072 kenarla 3,14159"
+   }
   },
   {
    "id": "d11",
@@ -282,7 +318,11 @@
     "'İlk cebir kitabı' ifadesi tarihçiler arasında farklı değerlendiriliyor; metinde 'ilk kitaplardan sayılır' denildi.",
     "Hint rakamları kitabının Arapça aslı kayıp; yalnızca Latince çeviri var.",
     "x² + 10x = 39 örneği MacTutor Harezmi sayfasıyla doğrulandı (Opus, 21 Kasım)."
-   ]
+   ],
+   "eser": {
+    "alt": "Kenarı 8 olan büyük kare; ortada x², çevresinde dört dikdörtgen ve dört küçük kare, kareyi tamamlayarak x = 3 bulunuyor.",
+    "not": "Kareyi tamamlama: 39 + 25 = 64, kenar 8 = x + 5, yani x = 3 (modern gösterimle şema)"
+   }
   },
   {
    "id": "d12",
@@ -306,7 +346,11 @@
     "Celali takviminin 'kaç yılda bir gün sapar' gibi sayısal iddiaları doğrulanamadığı için yazılmadı.",
     "Hayyam Nişabur doğumlu; İsfahan'da ~18 yıl gözlemevi yönetti. Duraklar ikisini birlikte anıyor.",
     "Dene sorusu Hayyam'ın yöntemine değil, üçüncü derece denklem fikrine bağlı basit bir kontroldür."
-   ]
+   ],
+   "eser": {
+    "alt": "Bir parabol ile bir çemberin kesiştiği noktanın yatay uzaklığı, x³ + x = 10 denkleminin çözümü olan 2'yi verir.",
+    "not": "Hayyam'ın koni kesiti fikri, modern koordinatlarla: parabol y = x² ile çember kesişir, x = 2"
+   }
   },
   {
    "id": "d13",
@@ -332,7 +376,11 @@
     "Gözlemevi yapım tarihi: MacTutor Ulugh Beg sayfası 1428, el-Kâşi sayfası 1424 diyor; metinde tarih verilmedi.",
     "sin 1° hesabı: MacTutor el-Kâşi'ye (Chord and Sine risalesi, 16 basamak doğrulukta) ve Uluğ Bey sayfasında Uluğ Bey'e (8 ondalık doğrulukta) bağlıyor; metinde 'Semerkant okulu' ve yalnız ilk 6 basamak verildi.",
     "el-Kâşi'nin 2π değeri: 9 altmışlık basamak = 16 ondalık basamak (MacTutor)."
-   ]
+   ],
+   "eser": {
+    "alt": "Yarıçapı 1 olan çemberde küçük bir açının yayı ile sinüsü neredeyse aynı uzunluktadır; yanında π/180, sin 1° ve el-Kâşi'nin 2π değeri yazılı.",
+    "not": "Açı gösterim için büyütüldü; 1° için π/180 ile sin 1° arasındaki fark yalnız 0,0000009"
+   }
   },
   {
    "id": "d14",
@@ -353,7 +401,11 @@
     "Doğum tarihi Kültür ve Turizm Bakanlığı sayfasında bilinmiyor; MacTutor 1403 veriyor.",
     "Kopernik üzerindeki etkisi kesin değil; MacTutor 'dolaylı etkilemiş olabilir' diyor.",
     "Takiyüddin kullanılmadı; yalnız Ali Kuşçu ile durak yeterli doldu. Takiyüddin'in 1577 İstanbul Rasathanesi iddiaları ayrıca doğrulanmadı."
-   ]
+   ],
+   "eser": {
+    "alt": "Dünya merkezde, gezegen küçük bir çemberde dönerken o çember büyük çemberde dönüyor; Batlamyus'un gezegen modelinin şeması.",
+    "not": "Batlamyus'un çember içinde çember modeli (temsilî şema); Ali Kuşçu bazı modelleri eleştirdi"
+   }
   },
   {
    "id": "d15",
@@ -377,7 +429,11 @@
     "'Fibonacci' adı sonradan yaygınlaşmış bir lakap; adın nasıl doğduğu bu çalışmada doğrulanmadı, metinde yer almıyor.",
     "Dizinin Hindistan'da daha önce bilindiği iddiası doğrulanmadı, yazılmadı.",
     "Doğum yeri 'muhtemelen Pisa'."
-   ]
+   ],
+   "eser": {
+    "alt": "Kenarları 1, 1, 2, 3, 5 ve 8 olan kareler yan yana dizilmiş, içlerinden bir spiral geçiyor; yanında tavşan dizisi yazılı.",
+    "not": "Kenarları Fibonacci sayıları olan kareler; her sayı önceki ikisinin toplamıdır"
+   }
   },
   {
    "id": "d16",
@@ -402,7 +458,11 @@
     "Descartes'ın La Géométrie'de eğik koordinatlar kullandığı, bugünkü dik eksenli sistemin sonradan şekillendiği Stanford Felsefe Ansiklopedisi'nden; 'Kartezyen koordinat' adının kökeni ayrıca doğrulanmadı.",
     "Tavan ve sinek hikâyesi doğrulanamadığı için kullanılmadı.",
     "Üslü gösterimi 'icat etti' yerine 'yaygınlaştırdı' denildi; SEP sayfası 'yeni üslü gösterim' diyor."
-   ]
+   ],
+   "eser": {
+    "alt": "Koordinat düzleminde y = x² eğrisi ile y = x + 2 doğrusu, kesişim noktaları (−1, 1) ve (2, 4) işaretli.",
+    "not": "Şema: x² = x + 2 denkleminin çözümleri, eğri ile doğrunun kesiştiği x = −1 ve x = 2'dir"
+   }
   },
   {
    "id": "d17",
@@ -432,7 +492,11 @@
     "Newton-Leibniz öncelik tartışması: MacTutor Newton'un önce, Leibniz'in bağımsız bulduğunu belirtiyor ama Leibniz sayfası 'bağımsız' ifadesini açıkça kurmuyor; metinde 'bağımsız' ifadesi Newton sayfasına dayanıyor.",
     "Ramanujan'ın 1729 (taksi) anekdotu MacTutor'da yok; kullanılmadı.",
     "Ramanujan'ın Madras'a mı döndüğü doğrulanamadı; metinde yok."
-   ]
+   ],
+   "eser": {
+    "alt": "y = x² eğrisinde P noktasından geçen kirişler, Q noktası P'ye yaklaştıkça turuncu teğet doğrusuna yaklaşır.",
+    "not": "Şema: P = (1, 1) noktasında kiriş eğimleri 4, 3, 2,5 ve teğet eğimi 2 (türev 2x)"
+   }
   },
   {
    "id": "d18",
@@ -458,7 +522,11 @@
     "MacTutor f(x), e ve i için 'tanıttı' diyor; π sembolünü de listeliyor ama π'yi Euler'den önce başkaları kullandığı bilindiğinden metinde π anılmadı. Metindeki 'yaygın hâle getirdi' ifadesi temkinli bir sadeleştirmedir.",
     "e^(iπ)+1=0 kimliği MacTutor Euler sayfasında doğrulanmadığı için yazılmadı.",
     "Euler'in yer: Basel'de doğdu, Petersburg (1727-41, 1766-83) ve Berlin'de çalıştı; durak adı bu yüzden 'Basel / St. Petersburg'."
-   ]
+   ],
+   "eser": {
+    "alt": "Königsberg'in dört kara parçası ve yedi köprüsünün şeması ile aynı yapının graf hâli; düğüm dereceleri 5, 3, 3, 3.",
+    "not": "Şema: kara parçaları düğüm, köprüler kenar; derecelerin dördü de tek (5, 3, 3, 3)"
+   }
   },
   {
    "id": "d19",
@@ -489,7 +557,11 @@
     "1'den 100'e toplam anekdotu Wikipedia'da 'apokrif' olarak geçiyor; dene sorusunda 'rivayete göre' denildi.",
     "Gauss'un mezar taşında 17-gen olduğu iddiası doğrulanamadı, yazılmadı.",
     "Noether'in 1933'te görevden alınması ve ABD'ye göçü MacTutor'da var ama metne sığmadığı için alınmadı."
-   ]
+   ],
+   "eser": {
+    "alt": "1'den 100'e kadar sayıların uçlardan eşlenmesi: 1+100, 2+99, 3+98 ... 50+51, her çiftin toplamı 101.",
+    "not": "Şema: 50 çift, her biri 101; toplam 50 × 101 = 5050"
+   }
   },
   {
    "id": "d20",
@@ -515,7 +587,11 @@
     "Chiapa de Corzo Stela 2 (MÖ 36) yazıtı 'sıfırın dolaylı kanıtı' sayılıyor, sıfır içermiyor; metne alınmadı.",
     "'Bağımsız icat' ifadesi Wikipedia'da açıkça yok; çıkarım, ikincil kaynakla (PMC makalesi) teyit edilemedi. Mutlaka ek kaynakla doğrulanmalı.",
     "Kâtiplerin adı bilinmiyor; 'kâtip' tanımı Klasik Maya çağı yazı ustaları için genelleme."
-   ]
+   ],
+   "eser": {
+    "alt": "Maya nokta-çizgi rakamları 0'dan 19'a kadar (kabuk sıfır) ve 151 sayısının 20 tabanında dikey yazımı.",
+    "not": "Şema: nokta 1, çizgi 5, kabuk 0; 151 = 7 × 20 + 11 (üstte 7, altta 11)"
+   }
   },
   {
    "id": "d21",
@@ -538,7 +614,11 @@
    "emin_degil": [
     "Kâğıda çizim yapma (karalama) alışkanlığı MacTutor sayfasında doğrulanamadı; karşılaşma sahnesindeki çizim betimlemesi sahne anlatımıdır, tarihî iddia değildir.",
     "Dene sorusundaki hiperbolik yüzeyde açı toplamının 180°'den küçük olması standart geometri bilgisidir; MacTutor sayfasında geçmiyor."
-   ]
+   ],
+   "eser": {
+    "alt": "İki delikli bir yüzeyin üstten şeması ve yüzey üzerinde çizilmiş üç kapalı eğri.",
+    "not": "Şema: iki delikli yüzey ve üzerinde kapalı eğriler (sezgisel çizim, gerçek ölçekli değil)"
+   }
   },
   {
    "id": "d22",
@@ -567,7 +647,11 @@
     "Ölüm tarihi kaynaklarda 26 veya 27 Aralık 1997 olarak değişiyor; metne alınmadı.",
     "Banknot: 10 TL (E-9 serisi, 2009) arka yüz; kaynaklar Wikipedia ve Southampton makalesi.",
     "Şehir: haritada son durak Ankara (ODTÜ 1967-1980) olarak bırakıldı; İstanbul zaten d14. Arf değişmezi makalesi (1941) İstanbul Üniversitesi dönemine aittir; metin bunu yanlış göstermemeli (Mustafa onayladı, 21 Kasım)."
-   ]
+   ],
+   "eser": {
+    "alt": "Mod 2'de iki ikinci derece form, q = xy ve q = x² + xy + y², dört noktadaki değerleriyle; çoğunlukta çıkan değer Arf değişmezidir.",
+    "not": "Şema: q = xy için Arf = 0, q = x² + xy + y² için Arf = 1 (dört noktada çoğunluk değeri)"
+   }
   }
  ]
 }
