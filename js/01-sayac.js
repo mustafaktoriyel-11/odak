@@ -228,6 +228,11 @@
     return URL.createObjectURL(new Blob([buf],{type:'audio/wav'}));
   }
   var tutA=null,zilA=null,tutBiz=false,tutDis=false,wac=null,wosc=null;
+  // YouTube vb. dış müzik açıldıysa (bu oturumda), uyanık tutucu HTML sesi kullanmaz: Android ses odağını alıp müziği durdurmasın
+  function disMuzik(){try{return sessionStorage.getItem('mf-dis-muzik')==='1';}catch(e){return false;}}
+  if(disMuzik())tutDis=true;
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="youtube.com"],a[href*="youtu.be"],a[href*="spotify.com"]');if(!a)return;
+    try{sessionStorage.setItem('mf-dis-muzik','1');}catch(x){}tutDis=true;if(tutA&&!tutA.paused){tutBiz=true;tutA.pause();}if(d.calisiyor||alarmT)waBaslat();},true);
   // Yedek uyanik tutucu: Web Audio. Android'e "muzik caliyor" demez, YouTube gibi uygulamalari durdurmaz.
   function waHazir(){try{if(!wac){var C=window.AudioContext||window.webkitAudioContext;if(C)wac=new C();}}catch(e){}}
   function waBaslat(){
@@ -238,7 +243,7 @@
   function tutGuncelle(){
     var gerek=d.calisiyor||!!alarmT;
     if(!gerek){
-      if(d.kalan===d.toplam)tutDis=false;
+      if(d.kalan===d.toplam&&!disMuzik())tutDis=false;
       waDur();if(tutA&&!tutA.paused){tutBiz=true;tutA.pause();}
       return;
     }
