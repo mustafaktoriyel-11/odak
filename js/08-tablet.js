@@ -55,6 +55,11 @@
   var mq3=window.matchMedia('(min-width:760px)');
   function altYerlestir(){if(mq3.matches){if(!alt.parentNode)sayfa.appendChild(alt);altlar.forEach(function(e){if(e.parentNode!==alt)alt.appendChild(e);});}
     else{altlar.forEach(function(e,i){if(e.parentNode!==sayfa)altYer[i].parentNode.insertBefore(e,altYer[i].nextSibling);});if(alt.parentNode)alt.remove();}panoH();}
+  // dikey tablette "Bu hafta" tam genişlik ortada (sayacın altında boşluk kalmasın); yatayda sağ sütunda
+  var mqD=window.matchMedia('(min-width:760px) and (orientation:portrait)');
+  function haftaYerlestir(){if(mqD.matches){if(hk.parentNode!==sayfa)sayfa.insertBefore(hk,yan.nextSibling);}else if(hk.parentNode!==yan){var kcx=document.getElementById('pm-koc');yan.insertBefore(hk,kcx&&kcx.parentNode===yan?kcx:null);}
+    setTimeout(yolYaz,50);}
+  haftaYerlestir();if(mqD.addEventListener)mqD.addEventListener('change',haftaYerlestir);else if(mqD.addListener)mqD.addListener(haftaYerlestir);
   altYerlestir();if(mq3.addEventListener)mq3.addEventListener('change',altYerlestir);else if(mq3.addListener)mq3.addListener(altYerlestir);
   var dcx=document.getElementById('pm-ders-c');
   if(dcx){var tb=document.createElement('button');tb.type='button';tb.className='tb-tumu';
@@ -101,7 +106,7 @@
     }
     var G7=[],mx=1,KG=['Paz','Pzt','Sal','Çar','Per','Cum','Cmt'];
     for(var j=6;j>=0;j--){var t=Date.now()-j*864e5,v=(kay[gun(t)]||{}).dk||0;mx=Math.max(mx,v);G7.push({v:v,a:KG[new Date(t).getDay()],bu:j===0});}
-    o+='<div class="tb-hf"><b>Son 7 gün</b><div class="tb-cubuk">'+G7.map(function(x){return '<div'+(x.bu?' class="bu"':'')+'><em>'+(x.v?Math.round(x.v):'')+'</em><i style="height:'+Math.max(3,Math.round(x.v/mx*84))+'px"></i><small>'+x.a+'</small></div>';}).join('')+'</div></div>';
+    o+='<div class="tb-hf"><b>Son 7 gün</b><div class="tb-cubuk">'+G7.map(function(x){return '<div'+(x.bu?' class="bu"':'')+'><em>'+(x.v?Math.round(x.v):'')+'</em><i style="height:calc((100% - 38px)*'+(x.v/mx).toFixed(3)+')"></i><small>'+x.a+'</small></div>';}).join('')+'</div></div>';
     var hi=o.indexOf('<div class="tb-hf">');
     hk.innerHTML=hi>=0?'<h3>Bu hafta<small>'+sure(hafta)+'</small></h3>'+o.slice(hi).replace('<b>Son 7 gün</b>',''):'';
     k.innerHTML=(hi>=0?o.slice(0,hi):o);k.classList.toggle('bos',!L.length);

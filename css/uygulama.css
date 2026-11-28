@@ -1903,3 +1903,25 @@ html.mf-hafif{--oeT:.3s}
 @keyframes curuIc{0%,100%{transform:rotate(-8deg) translateY(0)}50%{transform:rotate(-10deg) translateY(3px)}}
 @media (prefers-reduced-motion:reduce){#pm-curu .curu-aslan{animation:none}}
 .st-elle{border:0;background:none;padding:0;font:inherit;font-weight:700;color:#1E3BD6;text-decoration:underline;cursor:pointer}html.mf-gece .st-elle{color:#9FB2FF}
+@media (min-width:760px) and (orientation:portrait){
+  /* dikey: üstte sayaç | (bugün · yolculuk · koç), ortada tam genişlik haftalık grafik (boşluğu o doldurur), altta kutucuklar */
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac{grid-template-rows:auto auto minmax(0,1fr) auto}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>section.kart:first-of-type{grid-row:2}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan{grid-row:2}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>#tb-hafta{grid-row:3;grid-column:1/-1;display:flex;flex-direction:column;min-height:180px}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>#tb-hafta .tb-cubuk{flex:1 1 auto;height:auto;min-height:100px}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-alt{grid-row:4}
+  .tb-yan>#tb-yol{flex:1 1 auto}
+  .tb-yan>#tb-yol .tb-yol-harita{flex:1 1 auto;min-height:96px;height:auto}
+}
+@media (min-width:760px){
+  /* haftalık grafik kartın tüm yüksekliğini kullanır, çubuklar orantılı uzar */
+  #tb-hafta .tb-hf{flex:1 1 auto;display:flex;flex-direction:column;min-height:0}
+  #tb-hafta .tb-cubuk>div{height:100%}
+}
+@media (min-width:760px) and (orientation:landscape){
+  /* çok ders çalışılan günde "Bugün" kartı uzayıp ekranı taşırmasın: kendi içinde kayar */
+  .tb-yan>#tb-bugun{max-height:190px;overflow-y:auto;overscroll-behavior:contain}
+  .tb-yan>#tb-hafta{min-height:110px!important}
+}
+@media (min-width:760px) and (orientation:portrait){.tb-yan>#tb-bugun{max-height:300px;overflow-y:auto;overscroll-behavior:contain}}
