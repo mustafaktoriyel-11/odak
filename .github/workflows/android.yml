@@ -105,6 +105,8 @@ jobs:
           sed -i 's#android:name=".MainActivity"#android:name=".MainActivity" android:clearTaskOnLaunch="true"#' $M
           # kilit ekranı sayacı için bildirim izni (Android 13+ ilk çalışmada sorulur)
           grep -q 'POST_NOTIFICATIONS' $M || sed -i 's#</manifest>#    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />\n</manifest>#' $M
+          # süre bitti bildirimi zamanında gelsin (Android 12-13'te varsayılan izinli; 14+'ta izin yoksa birkaç dakika sapabilir)
+          grep -q 'SCHEDULE_EXACT_ALARM' $M || sed -i 's#</manifest>#    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />\n</manifest>#' $M
           grep -n "clearTaskOnLaunch" $M
           tail -4 $M
 

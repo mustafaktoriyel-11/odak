@@ -283,6 +283,7 @@
       zil();
       if(navigator.vibrate)navigator.vibrate([300,150,300,150,300,150,300,150,300,150,300,150,300]);
     }
+    if(!document.hidden&&window.MF_SURE_GORULDU)window.MF_SURE_GORULDU();
     tur();alarmT=setInterval(tur,3000);tutGuncelle();
     bildir(B,M);alarmN=setInterval(function(){if(document.hidden)bildir(B,M);},2000);
   }
