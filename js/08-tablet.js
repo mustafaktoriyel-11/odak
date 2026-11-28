@@ -15,6 +15,12 @@
     var mq=window.matchMedia('(min-width:760px)');
     var ykYerlestir=function(){if(mq.matches){if(yk.parentNode!==yan)yan.insertBefore(yk,hk);}else if(ykYer.nextSibling!==yk)ykYer.parentNode.insertBefore(yk,ykYer.nextSibling);};
     ykYerlestir();if(mq.addEventListener)mq.addEventListener('change',ykYerlestir);else if(mq.addListener)mq.addListener(ykYerlestir);}
+  // koç kartı: tablette sağ sütunda, "Bu hafta"nın altında (telefonda yerinde)
+  var kc=document.getElementById('pm-koc');
+  if(kc){var kcYer=document.createComment('koc');kc.parentNode.insertBefore(kcYer,kc);
+    var mq2=window.matchMedia('(min-width:760px)');
+    var kcYerlestir=function(){if(mq2.matches){if(kc.parentNode!==yan)yan.appendChild(kc);}else if(kcYer.nextSibling!==kc)kcYer.parentNode.insertBefore(kc,kcYer.nextSibling);};
+    kcYerlestir();if(mq2.addEventListener)mq2.addEventListener('change',kcYerlestir);else if(mq2.addListener)mq2.addListener(kcYerlestir);}
   var dcx=document.getElementById('pm-ders-c');
   if(dcx){var tb=document.createElement('button');tb.type='button';tb.className='tb-tumu';
     function tbYaz(){var n=dcx.children.length;tb.hidden=n<7;tb.textContent=dcx.classList.contains('tb-tum')?'Daha az göster ▴':'Tüm dersler ('+n+') ▾';}

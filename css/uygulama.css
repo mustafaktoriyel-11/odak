@@ -1829,7 +1829,8 @@ html,body{overscroll-behavior-y:none}
 .iz-ic[data-z="3"] .iz-taban .hs-g3{display:none}
 @media (min-width:760px){
   /* tablet/masaüstü Çalışma: alt kartlar boşluk bırakmasın — rehber ve koç kartı tam genişlik, küçük bağlantılar yan yana */
-  body:not(.lv-odak) #pg-sayac>.pm-rehber,body:not(.lv-odak) #pg-sayac>.pm-koc{grid-column:1/-1!important}
+  body:not(.lv-odak) #pg-sayac>.pm-rehber{grid-column:1/-1!important}
+  .tb-yan>#pm-koc{margin:0}
 }
 
 /* Koç kartı kapalıyken sade tek satır (rehber satırıyla aynı görünüm) */
@@ -1842,3 +1843,9 @@ html,body{overscroll-behavior-y:none}
 #pm-koc.kapali .koc-ac .ic{width:20px;height:20px}
 html.mf-gece #pm-koc.kapali{background:#1A2142;border-color:#2F3970}
 html.mf-gece #pm-koc.kapali .koc-ac{color:#9FB2FF}
+
+.koc-ust{display:flex;align-items:center}
+.koc-kapat{margin-left:auto;width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-size:15px;line-height:1;cursor:pointer}
+
+/* Hafif animasyon (eski/yavaş cihaz, 14-sayac-katla.js ölçer): kısa süre, yerleşim animasyonu yok */
+html.mf-hafif{--oeT:.3s}

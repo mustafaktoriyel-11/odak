@@ -4,6 +4,19 @@
   var saat=$('pm-saat'),bb=$('pm-basla'),sy=$('pg-sayac');if(!saat||!bb||!sy)return;
   var az=matchMedia('(prefers-reduced-motion: reduce)');
   function sure(){return az.matches?0:620;}
+  // Hafif animasyon: ilk odak geçişinde kare hızı ölçülür; telefon zorlanıyorsa (eski cihaz) bundan sonra
+  // kartlar katlanmak yerine kısa bir solmayla kaybolur, sayaç kısa sürede büyür. Yeni cihazlarda hiçbir şey değişmez.
+  var HAFIF=false;try{HAFIF=localStorage.getItem('mf-hafif')==='1';}catch(e){}
+  function hafifYap(){HAFIF=true;document.documentElement.classList.add('mf-hafif');try{localStorage.setItem('mf-hafif','1');}catch(e){}}
+  if(HAFIF)document.documentElement.classList.add('mf-hafif');
+  window.MF_HAFIF=function(){return HAFIF;};
+  function olcum(){if(HAFIF||!sure()||!window.requestAnimationFrame)return;var t0=0,son=0,n=0,uzun=0;
+    function f(t){if(!t0){t0=son=t;requestAnimationFrame(f);return;}var d=t-son;son=t;n++;if(d>45)uzun++;
+      if(t-t0<sure()){requestAnimationFrame(f);return;}
+      // tek bir takılma yetmez: art arda iki yavaş geçişte hafif moda geçilir
+      var yavas=n>=4&&(uzun/n>.25||(t-t0)/n>32),k=0;try{k=+(localStorage.getItem('mf-hafif-n')||0);}catch(e){}
+      k=yavas?k+1:0;try{localStorage.setItem('mf-hafif-n',String(k));}catch(e){}if(k>=2)hafifYap();}
+    requestAnimationFrame(f);}
   // yüksekliği ölçerek yumuşak katla / aç
   function katla(e,k,aninda){
     if(!e)return;var tok=(e._oeTok||0)+1;e._oeTok=tok;
@@ -11,6 +24,8 @@
     if(k){
       if(e._oeK)return;e._oeK=1;e.inert=true;e.setAttribute('aria-hidden','true');
       e.classList.remove('seans-gizli');
+      if(HAFIF&&!aninda&&sure()){e.style.transition='opacity .18s ease';e.style.opacity='0';
+        setTimeout(function(){if(e._oeTok!==tok)return;e.style.transition='';e.style.opacity='';e.style.boxSizing='border-box';e.style.overflow='hidden';e.classList.add('oe-kt','oe-kapan');e.style.height='0px';},190);return;}
       var h=e.getBoundingClientRect().height;
       e.style.boxSizing='border-box';e.style.overflow='hidden';
       if(aninda||!sure()||!h){e.classList.add('oe-kt','oe-kapan');e.style.height='0px';return;}
@@ -18,10 +33,12 @@
       e.classList.add('oe-kt','oe-kapan');e.style.height='0px';
       setTimeout(bitir,sure()+60);
     }else{
-      if(!e._oeK)return;e._oeK=0;e.inert=false;e.removeAttribute('aria-hidden');e.classList.remove('seans-gizli');
+      if(!e._oeK)return;e._oeK=0;var hf=HAFIF&&!aninda&&sure();if(hf)aninda=true;e.inert=false;e.removeAttribute('aria-hidden');e.classList.remove('seans-gizli');
       var ec=e.classList.contains('oe-kt');e.classList.remove('oe-kt','oe-kapan');e.style.height='auto';
       var h2=e.getBoundingClientRect().height;
-      if(aninda||!sure()||!h2){e.style.height='';e.style.overflow='';e.style.boxSizing='';return;}
+      if(aninda||!sure()||!h2){e.style.height='';e.style.overflow='';e.style.boxSizing='';
+        if(hf){e.style.transition='none';e.style.opacity='0';void e.offsetHeight;e.style.transition='opacity .22s ease';e.style.opacity='';setTimeout(function(){if(e._oeTok===tok)e.style.transition='';},260);}
+        return;}
       e.classList.add('oe-kapan');e.style.height='0px';void e.offsetHeight;
       e.classList.add('oe-kt');e.classList.remove('oe-kapan');e.style.height=h2+'px';
       setTimeout(bitir,sure()+60);
@@ -70,6 +87,7 @@
     if(on)olc();
     hedefler().forEach(function(e){katla(e,on,aninda||ilk);});
     if(on)maskot();katla(mk,!on||maskotsuz,aninda||ilk);
+    if(on&&!ilk&&!aninda)olcum();
     if(on&&!ilk&&!aninda)window.scrollTo({top:0,behavior:az.matches?'auto':'smooth'});
   }
   new MutationObserver(function(){guncelle(false);}).observe(bb,{childList:true,characterData:true,subtree:true});

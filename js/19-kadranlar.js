@@ -44,7 +44,7 @@
   function odakMi(){return document.body.classList.contains('lv-odak');}
   // odak geçişi: 0 → 1 yumuşak (viewBox ve rakam boyu aniden sıçramasın, CSS scale ile aynı anda akar)
   var oa=odakMi()?1:0,oaHd=oa,oaT0=0,oaFrom=oa;function oaAdim(){var hd=odakMi()?1:0,n=performance.now();if(hd!==oaHd){oaHd=hd;oaT0=n;oaFrom=oa;}
-    var u=Math.min(1,(n-oaT0)/600),e=1-Math.pow(1-u,3.4);/* CSS --oeE ile uyumlu */oa=oaFrom+(hd-oaFrom)*e;if(u>=1)oa=hd;}
+    var u=Math.min(1,(n-oaT0)/((window.MF_HAFIF&&window.MF_HAFIF())?1:600)),e=1-Math.pow(1-u,3.4);/* CSS --oeE ile uyumlu */oa=oaFrom+(hd-oaFrom)*e;if(u>=1)oa=hd;}
   function lr(a,b){return a+(b-a)*oa;}
   // dijital: başlamadan önce kompakt (etiket ve bitiş satırı yok), başlayınca yumuşakça açılır
   var ba=-1,baHd=0,baT0=0,baFrom=0;function baAdim(hd){var n=performance.now();if(ba<0){ba=hd;baHd=hd;}if(hd!==baHd){baHd=hd;baT0=n;baFrom=ba;}
