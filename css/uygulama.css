@@ -1792,3 +1792,12 @@ html.mf-gece .bk-kara{fill:#4A4030}html.mf-gece .bk-kara2{fill:#55492F}html.mf-g
 }
 .iz-yak.iz-muz.acik,html.mf-gece .iz-yak.iz-muz.acik{background:#FF8A1F!important;border-color:#FF8A1F!important;color:#fff!important}
 .iz-muz .ic{width:14px;height:14px;vertical-align:-2px;margin-right:3px}
+/* Sınav düzeni: seçim işareti (doğru/yanlış set sonunda) */
+.iz-sec.secili{border-color:#1E3BD6;background:#EEF1FD;box-shadow:0 0 0 1px #1E3BD6 inset}.iz-sec.secili b{background:#1E3BD6;color:#fff}
+html.mf-gece .iz-sec.secili{background:#26306A;border-color:#7C93FF;box-shadow:0 0 0 1px #7C93FF inset}html.mf-gece .iz-sec.secili b{background:#7C93FF;color:#141B3F}
+.iz-noktalar i{cursor:pointer}.iz-noktalar i.cev{background:#8FA2F5}.iz-noktalar i.su{background:#1E3BD6}
+html.mf-gece .iz-noktalar i.cev{background:#4A5BB0}html.mf-gece .iz-noktalar i.su{background:#7C93FF}
+.iz-ipucu{margin:12px 2px 0;font-size:12.5px;color:#5A6699;line-height:1.4}html.mf-gece .iz-ipucu{color:#AEB6D3}
+.iz-gezin{display:flex;gap:10px;margin-top:12px}.iz-gezin .mt-btn{flex:1;margin:0}.iz-gezin .mt-btn2{flex:0 0 auto;margin:0;padding-left:18px;padding-right:18px}
+.iz-gezin .mt-btn:disabled{opacity:.45;cursor:not-allowed}
+.iz-gezin .mt-btn2{width:auto!important;flex:0 0 34%!important;min-height:0}.iz-gezin .mt-btn{width:auto!important;flex:1 1 0!important;min-width:0}
