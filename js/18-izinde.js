@@ -517,25 +517,30 @@
   // Durak müziği: özgün bölge temaları (ses/tema/*.m4a), Web Audio ile dikişsiz döngü; varsayılan kapalı, tercih hatırlanır
   var SES={ctx:null,tampon:{},kaynak:null,kazanc:null,acik:false};
   try{SES.acik=localStorage.getItem('mf-iz-ses')==='1';}catch(e){}
-  function sesDur(){var k=SES.kaynak,g=SES.kazanc;SES.kaynak=null;if(!k||!SES.ctx)return;var t=SES.ctx.currentTime;
-    try{g.gain.cancelScheduledValues(t);g.gain.setValueAtTime(g.gain.value,t);g.gain.linearRampToValueAtTime(0,t+.8);k.stop(t+.85);}catch(e){}}
+  // Tüm çalan kaynaklar SES.hepsi'de tutulur; sesDur hepsini durdurur ve bekleyen yüklemeleri geçersiz kılar (nesil sayacı)
+  SES.hepsi=[];SES.nesil=0;SES.bekleyen=null;
+  function sesDur(){SES.nesil++;SES.bekleyen=null;SES.kaynak=null;var l=SES.hepsi;SES.hepsi=[];if(!SES.ctx)return;var t=SES.ctx.currentTime;
+    l.forEach(function(x){try{x.g.gain.cancelScheduledValues(t);x.g.gain.setValueAtTime(x.g.gain.value,t);x.g.gain.linearRampToValueAtTime(0,t+.8);x.k.stop(t+.85);}catch(e){try{x.k.stop();}catch(e2){}}});}
   function sesCal(ad,duzey,zorla){
     sesDur();if(!ad||(!SES.acik&&!zorla))return;
     var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
     if(!SES.ctx){try{SES.ctx=new AC();}catch(e){return;}}
     var ctx=SES.ctx;if(ctx.state==='suspended')ctx.resume();
     var bekle=SES.tampon[ad]||(SES.tampon[ad]=fetch('ses/tema/'+ad+'.m4a').then(function(r){if(!r.ok)throw 0;return r.arrayBuffer();}).then(function(b){return new Promise(function(ok,no){ctx.decodeAudioData(b,ok,no);});}));
+    var ns=SES.nesil;SES.bekleyen=ad;
     bekle.then(function(buf){
-      if((!SES.acik&&!zorla)||SES.istenen!==ad)return;
+      if(ns!==SES.nesil||(!SES.acik&&!zorla)||SES.istenen!==ad)return;SES.bekleyen=null;
       var k=ctx.createBufferSource(),g=ctx.createGain();k.buffer=buf;k.loop=true;k.connect(g);g.connect(ctx.destination);
-      var t=ctx.currentTime;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(duzey||.55,t+(zorla?3.5:2.2));k.start(t);SES.kaynak=k;SES.kazanc=g;
+      var t=ctx.currentTime;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(duzey||.55,t+(zorla?3.5:2.2));k.start(t);SES.kaynak=k;SES.kazanc=g;SES.hepsi.push({k:k,g:g});
     }).catch(function(){delete SES.tampon[ad];});
   }
+  // Uygulama arka plana geçince ses durur, dönünce devam eder
+  document.addEventListener('visibilitychange',function(){if(!SES.ctx)return;try{if(document.hidden)SES.ctx.suspend();else SES.ctx.resume();}catch(e){}});
   // Harita müziği "Seyyah" (ses/tema/seyyah.m4a): isteğe bağlı, varsayılan kapalı; yalnız harita ekranındayken, kısık çalar
   var HM={acik:false};try{HM.acik=localStorage.getItem('mf-iz-hm')==='1';}catch(e){}
   function haritaEkrani(){var g=$('mt-giris');return !SES.sahne&&document.body.classList.contains('s-mantik')&&g&&!g.hidden&&!document.querySelector('.iz-sahne');}
   function haritaMuzik(){
-    if(HM.acik&&haritaEkrani()){if(SES.istenen!=='seyyah'||!SES.kaynak){SES.istenen='seyyah';sesCal('seyyah',.3,true);}}
+    if(HM.acik&&haritaEkrani()){if(SES.istenen!=='seyyah'||(!SES.kaynak&&SES.bekleyen!=='seyyah')){SES.istenen='seyyah';sesCal('seyyah',.3,true);}}
     else if(SES.istenen==='seyyah'){SES.istenen=null;sesDur();}
   }
   function hmDugme(){var b=$('iz-muz');if(!b)return;b.classList.toggle('acik',HM.acik);b.setAttribute('aria-pressed',HM.acik?'true':'false');
