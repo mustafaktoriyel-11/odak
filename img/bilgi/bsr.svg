@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs><linearGradient id="bsr-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#58C5D6"/><stop offset="1" stop-color="#14598A"/></linearGradient></defs>
+<rect width="640" height="360" fill="url(#bsr-g1)"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#fff">
+<text x="32" y="54" font-weight="700">Büyük Set Resifi ≈ 2.300 km</text>
+<rect x="32" y="62" width="460" height="14" rx="7" fill="#FFB27A"/>
+<text x="32" y="106">Türkiye'nin boyu ≈ 1.600 km</text>
+<rect x="32" y="114" width="320" height="14" rx="7" fill="#FFF1D2" opacity=".85"/>
+</g>
+<path d="M0 300 C60 270 90 300 140 280 C190 255 220 300 280 285 C340 268 380 300 440 280 C500 262 560 296 640 276 L640 360 L0 360Z" fill="#E9647A"/>
+<path d="M0 330 C80 310 140 335 220 322 C300 308 380 336 460 320 C540 306 600 330 640 322 L640 360 L0 360Z" fill="#B8456B"/>
+<g fill="#FFB27A"><path d="M90 290 l6 -30 l6 12 l6 -16 l6 34z M360 288 l6 -26 l6 10 l6 -14 l6 30z"/></g>
+<g fill="#FFD36B"><path d="M470 190 q16 -12 32 0 q-16 12 -32 0z M502 190 l12 -8 v16z"/><path d="M200 230 q14 -10 28 0 q-14 10 -28 0z M228 230 l10 -7 v14z"/></g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="sibirya-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9DB9DC"/><stop offset="1" stop-color="#E6EEF6"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#sibirya-g1)"/>
+<circle cx="520" cy="84" r="26" fill="#FFFFFF" opacity=".85"/>
+<path d="M0 210 L80 180 L160 200 L240 170 L330 196 L420 174 L520 198 L640 176 L640 360 L0 360Z" fill="#B8C6DA"/>
+<rect y="236" width="640" height="124" fill="#F3F6FA"/>
+<g fill="#4F7A66">
+<path d="M40 236 l12 -34 l12 34z"/><path d="M42 220 l10 -28 l10 28z"/>
+<path d="M70 236 l12 -34 l12 34z"/><path d="M72 220 l10 -28 l10 28z"/>
+<path d="M100 236 l12 -34 l12 34z"/><path d="M102 220 l10 -28 l10 28z"/>
+<path d="M132 236 l12 -34 l12 34z"/><path d="M134 220 l10 -28 l10 28z"/>
+<path d="M170 236 l12 -34 l12 34z"/><path d="M172 220 l10 -28 l10 28z"/>
+<path d="M210 236 l12 -34 l12 34z"/><path d="M212 220 l10 -28 l10 28z"/>
+<path d="M250 236 l12 -34 l12 34z"/><path d="M252 220 l10 -28 l10 28z"/>
+<path d="M300 236 l12 -34 l12 34z"/><path d="M302 220 l10 -28 l10 28z"/>
+<path d="M350 236 l12 -34 l12 34z"/><path d="M352 220 l10 -28 l10 28z"/>
+<path d="M420 236 l12 -34 l12 34z"/><path d="M422 220 l10 -28 l10 28z"/>
+<path d="M470 236 l12 -34 l12 34z"/><path d="M472 220 l10 -28 l10 28z"/>
+<path d="M520 236 l12 -34 l12 34z"/><path d="M522 220 l10 -28 l10 28z"/>
+<path d="M560 236 l12 -34 l12 34z"/><path d="M562 220 l10 -28 l10 28z"/>
+<path d="M600 236 l12 -34 l12 34z"/><path d="M602 220 l10 -28 l10 28z"/>
+</g>
+<rect x="138" y="276" width="33" height="22" fill="#5B7FB5"/>
+<rect x="171" y="276" width="33" height="22" fill="#7C9BCB"/>
+<rect x="204" y="276" width="33" height="22" fill="#5B7FB5"/>
+<rect x="237" y="276" width="33" height="22" fill="#7C9BCB"/>
+<rect x="270" y="276" width="33" height="22" fill="#5B7FB5"/>
+<rect x="303" y="276" width="33" height="22" fill="#7C9BCB"/>
+<rect x="336" y="276" width="33" height="22" fill="#5B7FB5"/>
+<rect x="369" y="276" width="33" height="22" fill="#7C9BCB"/>
+<rect x="402" y="276" width="33" height="22" fill="#5B7FB5"/>
+<rect x="435" y="276" width="33" height="22" fill="#7C9BCB"/>
+<rect x="468" y="276" width="33" height="22" fill="#5B7FB5"/>
+<rect x="138" y="276" width="363" height="22" fill="none" stroke="#3B3E66" stroke-width="1.5"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66">
+<text x="40" y="52" font-weight="700">Sibirya: 11 saat dilimi</text>
+<text x="320" y="324" text-anchor="middle" font-weight="700">UTC+2 → +12</text>
+</g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs><linearGradient id="japonya-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4B6A0"/><stop offset="1" stop-color="#FDE9C9"/></linearGradient></defs>
+<rect width="640" height="360" fill="url(#japonya-g1)"/>
+<path d="M80 312 C140 290 170 230 205 199 L255 199 C290 230 320 290 380 312Z" fill="#5B6FA0"/>
+<path d="M205 199 L255 199 L262 212 L252 208 L244 218 L232 208 L222 218 L214 208 L204 212Z" fill="#fff"/>
+<rect y="312" width="640" height="48" fill="#6C8A5A"/>
+<line x1="40" y1="47" x2="600" y2="47" stroke="#8A4F1F" stroke-dasharray="4 5" opacity=".7"/>
+<line x1="600" y1="199" x2="600" y2="312" stroke="#4A2E1A" stroke-width="1.5"/>
+<line x1="594" y1="199" x2="606" y2="199" stroke="#4A2E1A" stroke-width="1.5"/>
+<line x1="594" y1="47" x2="606" y2="47" stroke="#4A2E1A" stroke-width="1.5" opacity=".6"/>
+<line x1="262" y1="199" x2="594" y2="199" stroke="#4A2E1A" stroke-dasharray="3 4" opacity=".4"/>
+<rect x="420" y="110" width="140" height="80" rx="4" fill="#B9803F"/>
+<rect x="426" y="116" width="128" height="68" rx="2" fill="#E2B471"/>
+<circle cx="490" cy="150" r="24" fill="none" stroke="#7A4A22" stroke-width="2"/>
+<circle cx="466" cy="150" r="10" fill="none" stroke="#7A4A22" stroke-width="2"/>
+<circle cx="514" cy="150" r="10" fill="none" stroke="#7A4A22" stroke-width="2"/>
+<circle cx="490" cy="126" r="6" fill="none" stroke="#7A4A22" stroke-width="2"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#4A2E1A">
+<text x="40" y="40" font-size="11">Everest ≈ 2,3 kat</text>
+<text x="588" y="262" font-weight="700" text-anchor="end">3.776 m</text>
+<text x="490" y="104" font-size="11" text-anchor="middle">Sangaku</text>
+</g>
+</svg>

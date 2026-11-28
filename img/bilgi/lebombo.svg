@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="lebombo-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3A97A"/><stop offset=".6" stop-color="#FBD0A4"/><stop offset="1" stop-color="#FCE9CF"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#lebombo-g1)"/>
+<circle cx="520" cy="86" r="28" fill="#FFF3D6" opacity=".9"/>
+<path d="M0 190 L90 150 L170 170 L260 120 L340 160 L430 130 L520 170 L640 150 L640 360 L0 360Z" fill="#A58A7A"/>
+<path d="M0 230 C120 210 260 236 400 224 C500 216 580 226 640 220 L640 360 L0 360Z" fill="#C99A62"/>
+<rect x="0" y="250" width="640" height="110" fill="#B78650"/>
+<path d="M96 272 C96 258 108 252 120 258 C124 250 138 250 142 258 L498 258 C502 250 516 250 520 258 C532 252 544 258 544 272 C544 286 532 292 520 286 C516 294 502 294 498 286 L142 286 C138 294 124 294 120 286 C108 292 96 286 96 272Z" fill="#F4EAD4" stroke="#CDBB98" stroke-width="2"/>
+<g stroke="#7A5F3A" stroke-width="2.5" stroke-linecap="round">
+<line x1="150.0" y1="260" x2="150.0" y2="284"/>
+<line x1="162.4" y1="260" x2="162.4" y2="284"/>
+<line x1="174.8" y1="260" x2="174.8" y2="284"/>
+<line x1="187.2" y1="260" x2="187.2" y2="284"/>
+<line x1="199.6" y1="260" x2="199.6" y2="284"/>
+<line x1="212.0" y1="260" x2="212.0" y2="284"/>
+<line x1="224.4" y1="260" x2="224.4" y2="284"/>
+<line x1="236.8" y1="260" x2="236.8" y2="284"/>
+<line x1="249.2" y1="260" x2="249.2" y2="284"/>
+<line x1="261.6" y1="260" x2="261.6" y2="284"/>
+<line x1="274.0" y1="260" x2="274.0" y2="284"/>
+<line x1="286.4" y1="260" x2="286.4" y2="284"/>
+<line x1="298.8" y1="260" x2="298.8" y2="284"/>
+<line x1="311.2" y1="260" x2="311.2" y2="284"/>
+<line x1="323.6" y1="260" x2="323.6" y2="284"/>
+<line x1="336.0" y1="260" x2="336.0" y2="284"/>
+<line x1="348.4" y1="260" x2="348.4" y2="284"/>
+<line x1="360.8" y1="260" x2="360.8" y2="284"/>
+<line x1="373.2" y1="260" x2="373.2" y2="284"/>
+<line x1="385.6" y1="260" x2="385.6" y2="284"/>
+<line x1="398.0" y1="260" x2="398.0" y2="284"/>
+<line x1="410.4" y1="260" x2="410.4" y2="284"/>
+<line x1="422.8" y1="260" x2="422.8" y2="284"/>
+<line x1="435.2" y1="260" x2="435.2" y2="284"/>
+<line x1="447.6" y1="260" x2="447.6" y2="284"/>
+<line x1="460.0" y1="260" x2="460.0" y2="284"/>
+<line x1="472.4" y1="260" x2="472.4" y2="284"/>
+<line x1="484.8" y1="260" x2="484.8" y2="284"/>
+<line x1="497.2" y1="260" x2="497.2" y2="284"/>
+</g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66">
+<text x="40" y="52" font-weight="700">Lebombo kemiği</text>
+<text x="40" y="68" font-size="11" opacity=".85">Lebombo Dağları, Güney Afrika</text>
+<text x="320" y="324" text-anchor="middle" font-weight="700" fill="#FFFFFF">29 çentik</text>
+</g>
+</svg>

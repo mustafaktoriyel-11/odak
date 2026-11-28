@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="andlar-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6B98A"/><stop offset="1" stop-color="#FBE3C4"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#andlar-g1)"/>
+<circle cx="110" cy="84" r="30" fill="#FFF3D6" opacity=".9"/>
+<path d="M0 230 L40 190 L80 210 L130 160 L170 190 L220 140 L260 176 L300 150 L350 190 L400 130 L440 160 L470 70 L500 130 L520 118 L560 170 L600 150 L640 190 V300 H0Z" fill="#8E7F8F"/>
+<path d="M470 70 L500 130 L486 124 L476 138 L466 122 L452 132 L440 160 L452 110Z" fill="#FFFFFF"/>
+<path d="M220 140 L240 160 L226 156 L216 166 L204 158Z M400 130 L418 148 L404 146 L394 154 L384 146Z" fill="#FFFFFF" opacity=".9"/>
+<path d="M0 262 L90 244 L190 258 L300 238 L420 256 L520 240 L640 254 V300 H0Z" fill="#B9946A" opacity=".8"/>
+<path d="M0 290 H640 V360 H0Z" fill="#E3C38E"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66"><text x="470" y="58" text-anchor="middle" font-weight="700">Aconcagua</text>
+<text x="32" y="316" font-weight="700">≈ 8.900 km</text><text x="608" y="316" text-anchor="end" opacity=".9">6.959 m = uzunluğun binde 0,8'i</text></g>
+<rect x="32" y="326" width="576" height="10" rx="5" fill="#4A3F5E"/>
+<rect x="31.5" y="322" width="1" height="18" fill="#D9482B"/>
+</svg>

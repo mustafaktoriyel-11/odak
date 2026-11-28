@@ -110,7 +110,11 @@
       var kap=function(){if(window.LEX_GERI&&LEX_GERI.dus)LEX_GERI.dus('bk-p');p.classList.remove('gor');setTimeout(function(){p.classList.remove('acik');},280);};
       p.addEventListener('click',function(e){if(e.target===p&&Date.now()-(p._t||0)>450)kap();});p.querySelector('.bk-kapat').addEventListener('click',kap);p._kap=kap;
       if(typeof ksKapat==='function')ksKapat(p,kap,p);}
-    var o='<div class="bk-ust"><svg class="bk-ikon ik-'+esc(k.ikon)+'" viewBox="0 0 64 64" aria-hidden="true"><rect class="bk-zemin" width="64" height="64" rx="14"/>'+(BK_IKON[k.ikon]||BK_IKON.dag)+'</svg>'+
+    var f=k.foto,o='';
+    // Gerçek fotoğraf (Wikimedia Commons, serbest lisans): doğrudan Commons'tan yüklenir; yüklenemezse gizlenir
+    if(f&&f.url&&/^https:\/\/upload\.wikimedia\.org\//.test(f.url))o+='<figure class="bk-foto"><img src="'+esc(f.url)+'" alt="'+esc(f.aciklama||k.ad)+'" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.hidden=true"><figcaption>'+esc(f.aciklama||'')+'<span>Fotoğraf: '+esc(f.yazar||'?')+' · <a href="'+esc(f.sayfa||'')+'" target="_blank" rel="noopener">'+esc(f.lisans||'')+'</a> · Wikimedia Commons</span></figcaption></figure>';
+    else if(k.gorsel)o+='<figure class="bk-foto bk-cizim"><img src="img/bilgi/'+esc(k.id)+'.svg" alt="'+esc(k.ad)+' çizimi" draggable="false" loading="lazy" onerror="this.parentNode.hidden=true"></figure>';
+    o+='<div class="bk-ust"><svg class="bk-ikon ik-'+esc(k.ikon)+'" viewBox="0 0 64 64" aria-hidden="true"><rect class="bk-zemin" width="64" height="64" rx="14"/>'+(BK_IKON[k.ikon]||BK_IKON.dag)+'</svg>'+
       '<div><div class="bk-tur">'+esc(k.tur)+'</div><h3>'+esc(k.ad)+'</h3><div class="bk-yer">'+esc(k.yer)+'</div></div></div>';
     o+='<div class="bk-say">'+(k.sayilar||[]).map(function(x){return '<div><b>'+esc(x.d)+'</b><small>'+esc(x.e)+'</small></div>';}).join('')+'</div>';
     o+='<div class="bk-mat">'+kalin(k.mat)+'</div>';

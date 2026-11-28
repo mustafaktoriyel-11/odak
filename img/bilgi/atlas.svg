@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs><linearGradient id="atlas-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5FA8E0"/><stop offset=".4" stop-color="#2D6DB3"/><stop offset="1" stop-color="#0E2350"/></linearGradient></defs>
+<rect width="640" height="360" fill="#CFE6F7"/>
+<rect y="60" width="640" height="300" fill="url(#atlas-g1)"/>
+<path d="M0 60 Q20 54 40 60 T80 60 T120 60 T160 60 T200 60 T240 60 T280 60 T320 60 T360 60 T400 60 T440 60 T480 60 T520 60 T560 60 T600 60 T640 60" fill="none" stroke="#fff" stroke-width="2" opacity=".8"/>
+<path d="M0 200 L120 210 L220 230 L270 311 L390 311 L440 235 L540 215 L640 205 L640 360 L0 360Z" fill="#3A3150"/>
+<path d="M0 200 L120 210 L220 230 L270 311 L390 311 L440 235 L540 215 L640 205" fill="none" stroke="#7A6C9C" stroke-width="2"/>
+<path d="M250 311 L330 46 L410 311Z" fill="#E8EEF8" opacity=".35"/>
+<path d="M318 86 L330 46 L342 86 L335 80 L330 90 L324 80Z" fill="#fff" opacity=".6"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#fff">
+<line x1="560" y1="60" x2="560" y2="311" stroke="#fff" stroke-width="1.5" opacity=".7"/>
+<line x1="554" y1="60" x2="566" y2="60" stroke="#fff" stroke-width="1.5"/>
+<line x1="554" y1="311" x2="566" y2="311" stroke="#fff" stroke-width="1.5"/>
+<line x1="410" y1="311" x2="550" y2="311" stroke="#fff" stroke-dasharray="3 4" opacity=".5"/>
+<text x="572" y="80" opacity=".9">0 m</text>
+<text x="500" y="332" font-weight="700" text-anchor="end">8.380 m</text>
+<text x="330" y="250" text-anchor="middle" font-size="11" opacity=".95">Everest</text>
+</g>
+</svg>

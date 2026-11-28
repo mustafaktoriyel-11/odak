@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="titicaca-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FB8E0"/><stop offset="1" stop-color="#F6E6D0"/></linearGradient>
+<linearGradient id="titicaca-g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5FB0CF"/><stop offset="1" stop-color="#2D78A8"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#titicaca-g1)"/>
+<path d="M0 300 L0 150 L50 124 L100 150 L150 134 L210 201 L430 201 L490 134 L540 124 L600 150 L640 140 L640 300Z" fill="#8A7A96"/>
+<path d="M50 124 L66 134 L56 138 L44 132Z M540 124 L556 134 L546 138 L534 132Z" fill="#FFFFFF"/>
+<path d="M0 300 L0 262 C80 240 140 250 210 232 L430 232 C500 250 560 240 640 262 L640 300Z" fill="#B9A58A"/>
+<rect x="210" y="201" width="220" height="31" fill="url(#titicaca-g2)"/>
+<path d="M210 232 L430 232 L430 300 L210 300Z" fill="#5E7A8A" opacity="0"/>
+<rect y="300" width="640" height="60" fill="#5C6E4A" opacity="0"/>
+<path d="M300 198 C300 192 330 192 340 198Z" fill="#8A6A3A"/>
+<line x1="46" y1="70" x2="610" y2="70" stroke="#3B3E66" stroke-dasharray="3 4" opacity=".4"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66">
+<line x1="40" y1="70" x2="40" y2="300" stroke="#3B3E66" stroke-width="1.5" opacity=".6"/>
+<line x1="34" y1="70" x2="46" y2="70" stroke="#3B3E66" stroke-width="1.5"/>
+<line x1="34" y1="300" x2="46" y2="300" stroke="#3B3E66" stroke-width="1.5"/>
+<line x1="34" y1="201" x2="46" y2="201" stroke="#3B3E66" stroke-width="1.5"/>
+<text x="52" y="64">Everest 8.848 m</text>
+<text x="52" y="192" font-weight="700">≈ 3.810 m</text>
+<text x="320" y="324" text-anchor="middle" opacity=".85">Titicaca Gölü</text>
+</g>
+</svg>

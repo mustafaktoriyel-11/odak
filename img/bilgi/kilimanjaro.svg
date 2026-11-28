@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6B98A"/><stop offset=".55" stop-color="#FBD9B0"/><stop offset="1" stop-color="#FCE9CF"/></linearGradient>
+<linearGradient id="m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6E6A8E"/><stop offset="1" stop-color="#8E7F8F"/></linearGradient>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9C27A"/><stop offset="1" stop-color="#B89A52"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#g)"/>
+<circle cx="510" cy="92" r="34" fill="#FFF3D6" opacity=".9"/>
+<path d="M0 262 L95 212 L150 170 L172 138 L185 132 L198 142 L214 130 L232 150 L262 120 L300 84 C318 70 372 66 392 78 L430 108 L500 168 L560 206 L640 240 L640 360 L0 360Z" fill="url(#m)"/>
+<path d="M172 138 L185 132 L198 142 L214 130 L226 143 L210 150 L196 158 L184 150Z" fill="#E9E6F2"/>
+<path d="M300 84 C318 70 372 66 392 78 L414 96 L398 102 L384 96 L372 108 L356 98 L340 110 L326 100 L310 108 L292 100Z" fill="#FFFFFF"/>
+<path d="M0 262 L640 240 L640 290 L0 300Z" fill="#9C8F84" opacity=".35"/>
+<rect y="290" width="640" height="70" fill="url(#s)"/>
+<g fill="#5B4A3A">
+<rect x="470" y="236" width="6" height="62" rx="2"/>
+<path d="M473 244 L440 226 M473 244 L512 222 M473 254 L452 240" stroke="#5B4A3A" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="474" cy="222" rx="66" ry="13"/>
+<ellipse cx="438" cy="226" rx="26" ry="8"/>
+<ellipse cx="514" cy="220" rx="28" ry="9"/>
+</g>
+<g fill="#6D5A44" opacity=".8">
+<ellipse cx="120" cy="300" rx="40" ry="7"/><ellipse cx="300" cy="306" rx="60" ry="6"/>
+</g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66">
+<line x1="40" y1="76" x2="40" y2="292" stroke="#3B3E66" stroke-width="1.5" opacity=".6"/>
+<line x1="34" y1="76" x2="46" y2="76" stroke="#3B3E66" stroke-width="1.5"/>
+<line x1="34" y1="184" x2="46" y2="184" stroke="#3B3E66" stroke-width="1.5" opacity=".6"/>
+<text x="52" y="80" font-weight="700">5.895 m</text>
+<text x="52" y="188" opacity=".8">≈ 3.000 m</text>
+<line x1="300" y1="76" x2="70" y2="76" stroke="#3B3E66" stroke-dasharray="3 4" opacity=".5"/>
+</g>
+</svg>

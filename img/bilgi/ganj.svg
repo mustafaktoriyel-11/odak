@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="ganj-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFD9F0"/><stop offset="1" stop-color="#EAF3F8"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#ganj-g1)"/>
+<path d="M0 150 L60 90 L100 120 L150 56 L210 130 L250 100 L310 150 L380 128 L450 150 L520 134 L580 156 L640 148 V172 H0Z" fill="#7E7A9E"/>
+<path d="M150 56 L176 92 L160 88 L148 100 L136 86Z M60 90 L78 108 L64 106 L54 112Z" fill="#FFFFFF"/>
+<path d="M0 170 H640 V360 H0Z" fill="#B9C97E"/>
+<path d="M0 230 C140 215 320 245 640 225 V360 H0Z" fill="#9DB86A" opacity=".7"/>
+<path d="M120 126 C150 160 120 190 180 214 C230 232 260 222 290 250 C310 268 316 290 316 304" fill="none" stroke="#3F8FBF" stroke-width="9" stroke-linecap="round"/>
+<path d="M316 304 L276 330 M316 304 L316 336 M316 304 L354 330" stroke="#3F8FBF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M0 340 C100 330 300 345 640 332 V360 H0Z" fill="#5FA8E0"/>
+<rect x="388" y="196" width="220" height="92" rx="14" fill="#FFFFFF" opacity=".72"/>
+<g transform="translate(404 212)"><rect width="28" height="28" fill="#EAE3C8"/><rect x="30" width="28" height="28" fill="#EAE3C8"/><rect y="30" width="28" height="28" fill="#EAE3C8"/><rect x="30" y="30" width="28" height="28" fill="#EAE3C8"/><rect width="28" height="28" fill="#D9822B"/></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66"><text x="478" y="234" font-size="13" font-weight="700">≈ 1/4</text><text x="478" y="252">Hindistan'ın toprağı</text><text x="478" y="268">havzasında</text>
+<text x="32" y="316" font-weight="700" fill="#2E4A1E">Gangotri → Bengal Körfezi</text></g>
+</svg>

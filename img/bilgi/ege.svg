@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs><linearGradient id="ege-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCE7B8"/><stop offset="1" stop-color="#CFE6F7"/></linearGradient><linearGradient id="ege-g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4DB3D6"/><stop offset="1" stop-color="#123A6B"/></linearGradient></defs>
+<rect width="640" height="360" fill="url(#ege-g1)"/>
+<rect y="120" width="640" height="240" fill="url(#ege-g2)"/>
+<path d="M0 120 Q20 114 40 120 T80 120 T120 120 T160 120 T200 120 T240 120 T280 120 T320 120 T360 120 T400 120 T440 120 T480 120 T520 120 T560 120 T600 120 T640 120" fill="none" stroke="#fff" stroke-width="2" opacity=".8"/>
+<path d="M60 120 C80 92 110 88 130 104 C140 96 160 100 176 120Z" fill="#B58A55"/>
+<path d="M220 120 C236 104 256 102 270 120Z" fill="#C9A06A"/>
+<path d="M440 120 L440 92 L462 118Z" fill="#fff"/><path d="M430 122 L472 122 L462 130 L440 130Z" fill="#8A4F1F"/>
+<path d="M0 190 L160 200 L300 230 L380 296 L420 296 L480 240 L640 220 L640 360 L0 360Z" fill="#3A3150"/>
+<path d="M0 190 L160 200 L300 230 L380 296 L420 296 L480 240 L640 220" fill="none" stroke="#7A6C9C" stroke-width="2"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#fff">
+<line x1="560" y1="120" x2="560" y2="297" stroke="#fff" stroke-width="1.5" opacity=".7"/>
+<line x1="554" y1="120" x2="566" y2="120" stroke="#fff" stroke-width="1.5"/>
+<line x1="554" y1="297" x2="566" y2="297" stroke="#fff" stroke-width="1.5"/>
+<line x1="420" y1="297" x2="550" y2="297" stroke="#fff" stroke-dasharray="3 4" opacity=".5"/>
+<text x="572" y="140" opacity=".9">0 m</text>
+<text x="360" y="332" font-weight="700" text-anchor="end">3.544 m</text>
+<text x="32" y="170" font-size="11" opacity=".9">Ege adaları</text>
+</g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="firat-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6C58A"/><stop offset="1" stop-color="#FCE5BF"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#firat-g1)"/>
+<circle cx="540" cy="80" r="32" fill="#FFF3D6" opacity=".9"/>
+<path d="M0 190 L50 120 L80 150 L120 96 L170 160 L210 130 L250 190Z" fill="#8E7F8F"/>
+<path d="M120 96 L140 124 L124 120 L112 130 L104 118Z" fill="#FFFFFF"/><path d="M50 120 L62 138 L50 134 L40 140Z" fill="#FFFFFF"/>
+<path d="M0 190 H640 V360 H0Z" fill="#E3B873"/>
+<path d="M0 230 C140 210 260 250 420 232 C520 222 580 240 640 250 V360 H0Z" fill="#C9D48E" opacity=".75"/>
+<path d="M120 176 C170 200 200 214 260 224 C340 238 420 222 500 252 C540 268 580 266 640 290" fill="none" stroke="#3F8FBF" stroke-width="12" stroke-linecap="round"/>
+<path d="M210 168 C250 190 300 210 350 218 C420 228 470 246 520 262 C550 272 590 280 640 300" fill="none" stroke="#5FA8D6" stroke-width="7" stroke-linecap="round" opacity=".85"/>
+<path d="M560 262 C590 262 620 276 640 276 V360 H520Z" fill="#7EC3E8" opacity="0"/>
+<g transform="translate(420 74) rotate(-6)"><rect width="92" height="64" rx="10" fill="#B9774A"/><rect x="4" y="4" width="84" height="56" rx="8" fill="#C98A58"/>
+<g fill="#7A4A2A"><path d="M16 18 l9 4 -9 4z M32 18 l9 4 -9 4z M48 18 l9 4 -9 4z M64 18 l9 4 -9 4z M16 34 l9 4 -9 4z M32 34 l9 4 -9 4z M52 34 l9 4 -9 4z M16 48 l9 4 -9 4z M40 48 l9 4 -9 4z"/></g></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#4A2E1A">
+<text x="32" y="316" font-weight="700">Fırat ≈ 2.800 km</text><text x="608" y="316" text-anchor="end" opacity=".9">3 ülke</text></g>
+<rect x="32" y="326" width="242.4" height="12" rx="6" fill="#8A4F1F"/>
+<g stroke="#FFFFFF" stroke-width="1.5" opacity=".8"><line x1="118.6" y1="326" x2="118.6" y2="338"/><line x1="205.2" y1="326" x2="205.2" y2="338"/></g>
+</svg>

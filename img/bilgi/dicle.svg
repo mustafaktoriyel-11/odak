@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs><linearGradient id="dicle-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7C873"/><stop offset="1" stop-color="#FCE7B8"/></linearGradient></defs>
+<rect width="640" height="360" fill="url(#dicle-g1)"/>
+<circle cx="520" cy="80" r="36" fill="#FFF6DD"/>
+<path d="M0 170 L0 150 L70 90 L140 140 L200 100 L270 150 L330 120 L390 165 L420 170Z" fill="#C98A4B" opacity=".7"/>
+<path d="M0 170 L640 170 L640 360 L0 360Z" fill="#E9A85A"/>
+<path d="M40 175 C130 190 120 220 220 225 C330 230 330 195 420 205 C500 215 520 250 600 262" fill="none" stroke="#3F8FC9" stroke-width="16" stroke-linecap="round"/>
+<path d="M40 175 C130 190 120 220 220 225 C330 230 330 195 420 205 C500 215 520 250 600 262" fill="none" stroke="#9CCDEE" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+<g fill="#6B8E3A"><rect x="258" y="170" width="3" height="22" fill="#5A3B24"/><path d="M259 170 l-14 6 M259 170 l14 6 M259 170 l0 -10 M259 170 l-10 -6 M259 170 l10 -6" stroke="#4E7A2A" stroke-width="3" stroke-linecap="round"/></g>
+<path d="M440 175 h60 l-6 -14 h-48z M452 161 h36 l-5 -12 h-26z" fill="#8A4F1F"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#4A2E1A">
+<text x="32" y="306" font-weight="700">≈ 530 km</text>
+<rect x="32" y="316" width="300" height="12" rx="6" fill="#FFF1D2" opacity=".8"/>
+<rect x="32" y="316" width="83.7" height="12" rx="6" fill="#8A4F1F"/>
+<text x="344" y="326" font-weight="700">≈ 1.900 km</text>
+</g>
+</svg>

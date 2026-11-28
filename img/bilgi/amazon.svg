@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="amazon-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFE3D0"/><stop offset="1" stop-color="#F3F0D2"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#amazon-g1)"/>
+<path d="M0 300 L0 230 C60 200 110 215 150 195 C200 170 240 190 290 170 C350 148 400 170 450 150 C500 130 560 140 640 110 L640 360 L0 360Z" fill="#6FA66F"/>
+<path d="M0 330 L0 280 C70 250 120 262 170 242 C230 218 260 240 320 218 C380 196 430 214 480 196 C540 176 590 184 640 160 L640 360 L0 360Z" fill="#4E8A5A"/>
+<path d="M0 262 C60 236 110 246 150 228 C210 204 244 222 296 202 C356 180 402 200 452 182 C510 162 562 170 640 140" fill="none" stroke="#4FA3C7" stroke-width="16" stroke-linecap="round"/>
+<path d="M0 262 C60 236 110 246 150 228 C210 204 244 222 296 202 C356 180 402 200 452 182 C510 162 562 170 640 140" fill="none" stroke="#9AD0E6" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+<path d="M230 212 C250 170 270 150 300 120" fill="none" stroke="#4FA3C7" stroke-width="6" stroke-linecap="round"/>
+<path d="M420 188 C440 230 470 250 520 262" fill="none" stroke="#4FA3C7" stroke-width="6" stroke-linecap="round"/>
+<g fill="#2F6B43"><circle cx="90" cy="316" r="14"/><circle cx="130" cy="322" r="12"/><circle cx="560" cy="300" r="14"/><circle cx="600" cy="312" r="12"/></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#2B3A55">
+<text x="40" y="60" font-weight="700">Amazon: ≈ 6.400 km</text>
+<rect x="40" y="76" width="300" height="10" rx="5" fill="#FFFFFF" opacity=".7"/>
+<rect x="40" y="76" width="288" height="10" rx="5" fill="#2F7FA8"/>
+<text x="40" y="106" font-size="11" opacity=".85">tam çubuk: Nil ≈ 6.650 km</text>
+</g>
+</svg>

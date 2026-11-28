@@ -1723,7 +1723,7 @@ html.mf-gece .iz-gec-not{background:#3A2A1A;color:#FFB877}
 /* ---- Harita bilgi kartları ---- */
 .iz-bk{transition:opacity .25s;opacity:0;pointer-events:none}
 .iz-ic[data-z="1"] .iz-bk.l1,.iz-ic:not([data-z]) .iz-bk.l1,.iz-ic[data-z="2"] .iz-bk.l1,.iz-ic[data-z="2"] .iz-bk.l2,.iz-ic[data-z="3"] .iz-bk.l2,.iz-ic[data-z="3"] .iz-bk.l3{opacity:1}
-.bk-p .sheet-k{max-height:88vh;overflow-y:auto}
+.bk-p .sheet-k{max-height:88vh;overflow-y:auto;overscroll-behavior:contain}
 .bk-ust{display:flex;align-items:center;gap:12px;margin-bottom:12px}
 .bk-ikon{flex:0 0 60px;width:60px;height:60px}
 .bk-tur{font-size:11.5px;font-weight:700;letter-spacing:.04em;color:#E07400;text-transform:uppercase}
@@ -1806,3 +1806,9 @@ html.mf-gece .iz-noktalar i.cev{background:#4A5BB0}html.mf-gece .iz-noktalar i.s
 .iz-ic .iz-r2{stroke-width:calc(7px*var(--kd,1))}
 .iz-ic .iz-sehir{transform-box:fill-box;transform-origin:center;transform:scale(var(--kd,1))}
 .iz-ic .iz-bag{stroke-width:calc(2px*var(--kd,1));opacity:calc(.7*var(--ro,1))}
+/* bilgi kartı fotoğrafı */
+.bk-foto{margin:0 0 12px}.bk-foto img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:#EEF1FD}
+.bk-foto figcaption{margin-top:5px;font-size:12px;color:#5A6699;line-height:1.35}
+.bk-foto figcaption span{display:block;font-size:10.5px;color:#8A93BF}.bk-foto a{color:inherit}
+html.mf-gece .bk-foto img{background:#232B52}html.mf-gece .bk-foto figcaption{color:#AEB6D3}html.mf-gece .bk-foto figcaption span{color:#7E88B5}
+html.mf-gece .bk-cizim img{filter:brightness(.86)}

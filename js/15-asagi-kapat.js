@@ -19,6 +19,9 @@ function ksKapat(sayfa, kapatFn, perde){
   function hareket(e){
     if(y0===null)return;var p=e.touches?e.touches[0]:e,d=p.clientY-y0,dx=Math.abs(p.clientX-x0);
     if(!basladi){
+      // Aşağı yönlü ilk harekette tarayıcının kaydırma/esneme hareketini hemen engelle;
+      // yoksa Android hareketi sahiplenir ve paneli sürükleyemeyiz
+      if(d>0&&d>=dx&&e.cancelable)e.preventDefault();
       if(d>8&&d>dx){basladi=true;h=pan.offsetHeight||400;baz=bgA();pan.style.transition='none';fon.style.transition='none';}
       else if(Math.abs(d)>8||dx>8){y0=null;return;}
       else return;}

@@ -24,7 +24,8 @@
     "c": "≈ 2.000 m",
     "h": "45° için tan 45° = 1; yükseklik = 2.000 × 1 = 2.000 m."
    },
-   "kaynak": "Nepal–Çin ortak ölçümü (Aralık 2020), Britannica"
+   "kaynak": "Nepal–Çin ortak ölçümü (Aralık 2020), Britannica",
+   "gorsel": true
   },
   {
    "id": "mariana",
@@ -40,7 +41,7 @@
     },
     {
      "d": "10.900–11.000",
-     "e": "ölçümler arası fark (m)"
+     "e": "ölçümlere göre derinlik aralığı (m)"
     }
    ],
    "mat": "Everest buraya konsaydı zirvesi yüzeyin **yaklaşık 2.086 m** altında kalırdı: 10.935 − 8.849 = 2.086.",
@@ -53,7 +54,8 @@
    "yakin": [
     2400,
     700
-   ]
+   ],
+   "gorsel": true
   },
   {
    "id": "nil",
@@ -78,7 +80,8 @@
     "c": "≈ 222 gün",
     "h": "6.650 ÷ 30 ≈ 221,7 → yaklaşık 222 gün."
    },
-   "kaynak": "Britannica; uzunluk kaynağın tanımına göre değişir"
+   "kaynak": "Britannica; uzunluk kaynağın tanımına göre değişir",
+   "gorsel": true
   },
   {
    "id": "atlas",
@@ -103,7 +106,8 @@
     "c": "≈ 4,15 saat",
     "h": "3.320 ÷ 800 = 4,15 saat (yaklaşık 4 saat 9 dakika)."
    },
-   "kaynak": "Britannica (Atlantic Ocean); alan ve derinlik, komşu denizlerin dahil edilip edilmemesine göre değişir"
+   "kaynak": "Britannica (Atlantic Ocean); alan ve derinlik, komşu denizlerin dahil edilip edilmemesine göre değişir",
+   "gorsel": true
   },
   {
    "id": "hint",
@@ -128,7 +132,8 @@
     "c": "≈ %53",
     "h": "3.960 ÷ 7.450 ≈ 0,53 → yaklaşık %53, yani yarısından biraz fazla."
    },
-   "kaynak": "Britannica (Indian Ocean); alan kenar denizler hariç verilmiştir"
+   "kaynak": "Britannica (Indian Ocean); alan kenar denizler hariç verilmiştir",
+   "gorsel": true
   },
   {
    "id": "akdeniz",
@@ -153,7 +158,8 @@
     "c": "24.000 km",
     "h": "360 ÷ 12 = 30 → 30 × 800 = 24.000 km."
    },
-   "kaynak": "Britannica (Mediterranean Sea); Wikipedia (Eratosthenes), yalnızca destek olarak"
+   "kaynak": "Britannica (Mediterranean Sea); Wikipedia (Eratosthenes), yalnızca destek olarak",
+   "gorsel": true
   },
   {
    "id": "karadeniz",
@@ -178,7 +184,8 @@
     "c": "≈ 6 kat",
     "h": "2.510.000 ÷ 422.000 ≈ 5,95 → yaklaşık 6 kat."
    },
-   "kaynak": "Britannica (Black Sea); BM Bölgesel Denizler raporu (Karadeniz bölümü); oksijensiz tabaka sınırı yaklaşık 100–200 m, kaynağa göre değişir"
+   "kaynak": "Britannica (Black Sea); BM Bölgesel Denizler raporu (Karadeniz bölümü); oksijensiz tabaka sınırı yaklaşık 100–200 m, kaynağa göre değişir",
+   "gorsel": true
   },
   {
    "id": "hazar",
@@ -203,7 +210,8 @@
     "c": "≈ 202 m",
     "h": "Derinlik = hacim ÷ alan = 78.200 ÷ 386.400 ≈ 0,202 km ≈ 202 m."
    },
-   "kaynak": "Britannica (Caspian Sea); deniz mi göl mü sorusu hukuki ve bilimsel tanıma göre değişir"
+   "kaynak": "Britannica (Caspian Sea); deniz mi göl mü sorusu hukuki ve bilimsel tanıma göre değişir",
+   "gorsel": true
   },
   {
    "id": "aral",
@@ -228,7 +236,8 @@
     "c": "1/4",
     "h": "Hacim = alan × derinlik; 1/2 × 1/2 = 1/4."
    },
-   "kaynak": "Britannica (Aral Sea); 2010 sonrası doğu havzası kurudu, güncel alan kaynağa göre değişir"
+   "kaynak": "Britannica (Aral Sea); 2010 sonrası doğu havzası kurudu, güncel alan kaynağa göre değişir",
+   "gorsel": true
   },
   {
    "id": "ege",
@@ -253,7 +262,8 @@
     "c": "≈ 681 km",
     "h": "√(612² + 299²) = √463.945 ≈ 681 km (Pisagor)."
    },
-   "kaynak": "Britannica (Aegean Sea, Pythagoras); dikdörtgen yalnızca yaklaşık bir modeldir"
+   "kaynak": "Britannica (Aegean Sea, Pythagoras); dikdörtgen yalnızca yaklaşık bir modeldir",
+   "gorsel": true
   },
   {
    "id": "amazon",
@@ -278,7 +288,8 @@
     "c": "≈ %96",
     "h": "6.400 ÷ 6.650 ≈ 0,962 → yaklaşık %96."
    },
-   "kaynak": "Britannica (Amazon River); uzunluk kaynak noktası ve ölçüme göre değişir"
+   "kaynak": "Britannica (Amazon River); uzunluk kaynak noktası ve ölçüme göre değişir",
+   "gorsel": true
   },
   {
    "id": "firat",
@@ -303,7 +314,8 @@
     "c": "135",
     "h": "İlk basamak 60'lıktır: 2 × 60 = 120; 120 + 15 = 135."
    },
-   "kaynak": "Britannica (Euphrates; Mesopotamia); MacTutor (Babylonian numerals); uzunluk kaynağa göre değişir"
+   "kaynak": "Britannica (Euphrates; Mesopotamia); MacTutor (Babylonian numerals); uzunluk kaynağa göre değişir",
+   "gorsel": true
   },
   {
    "id": "dicle",
@@ -328,7 +340,8 @@
     "c": "≈ %28",
     "h": "530 ÷ 1.900 ≈ 0,279 → yaklaşık %28."
    },
-   "kaynak": "Britannica (Tigris River); Wikipedia (YBC 7289), destek amaçlı"
+   "kaynak": "Britannica (Tigris River); Wikipedia (YBC 7289), destek amaçlı",
+   "gorsel": true
   },
   {
    "id": "sariirmak",
@@ -353,7 +366,8 @@
     "c": "≈ 62,83 cm",
     "h": "Çevre = 2 × 10 × 355/113 = 7.100/113 ≈ 62,83 cm."
    },
-   "kaynak": "Britannica (Huang He); MacTutor (Chinese mathematics overview)"
+   "kaynak": "Britannica (Huang He); MacTutor (Chinese mathematics overview)",
+   "gorsel": true
   },
   {
    "id": "ganj",
@@ -378,7 +392,8 @@
     "c": "270",
     "h": "305 − 35 = 270; sıfır basamak değerini korur."
    },
-   "kaynak": "Britannica (Ganges River); MacTutor (A history of Zero)"
+   "kaynak": "Britannica (Ganges River); MacTutor (A history of Zero)",
+   "gorsel": true
   },
   {
    "id": "indus",
@@ -403,7 +418,8 @@
     "c": "≈ 26,5 g",
     "h": "1+2+4+8+16 = 31 birim → 31 × 0,856 ≈ 26,5 g."
    },
-   "kaynak": "Britannica (Indus River; Indus civilization); Harappa.com (ağırlıklar); Wikipedia (Indus River), destek"
+   "kaynak": "Britannica (Indus River; Indus civilization); Harappa.com (ağırlıklar); Wikipedia (Indus River), destek",
+   "gorsel": true
   },
   {
    "id": "ceyhun",
@@ -428,7 +444,8 @@
     "c": "12",
     "h": "Tersine işlem: 40 − 4 = 36; 36 ÷ 3 = 12."
    },
-   "kaynak": "Britannica (Amu Darya; al-Khwarizmi); MacTutor (Al-Khwarizmi); ada dair köken tartışmalıdır"
+   "kaynak": "Britannica (Amu Darya; al-Khwarizmi); MacTutor (Al-Khwarizmi); ada dair köken tartışmalıdır",
+   "gorsel": true
   },
   {
    "id": "andlar",
@@ -453,7 +470,8 @@
     "c": "1,5 mm",
     "h": "3.000 m = 3 km; 3 ÷ 20 = 0,15 cm = 1,5 mm."
    },
-   "kaynak": "Britannica (Andes; Aconcagua); GPS ölçümü 6.962 m, resmî değer 6.959 m"
+   "kaynak": "Britannica (Andes; Aconcagua); GPS ölçümü 6.962 m, resmî değer 6.959 m",
+   "gorsel": true
   },
   {
    "id": "toros",
@@ -478,7 +496,8 @@
     "c": "%0,5",
     "h": "(2.010 − 2.000) ÷ 2.000 = 0,005 → %0,5."
    },
-   "kaynak": "Küre Ansiklopedi (Toros Dağları); Wikipedia (Demirkazık, Kızılkaya); en yüksek zirve kaynağa göre değişir"
+   "kaynak": "Küre Ansiklopedi (Toros Dağları); Wikipedia (Demirkazık, Kızılkaya); en yüksek zirve kaynağa göre değişir",
+   "gorsel": true
   },
   {
    "id": "kafkas",
@@ -503,7 +522,8 @@
     "c": "≈ 5,5 °C",
     "h": "3 × 6,5 = 19,5 düşüş; 25 − 19,5 = 5,5 °C."
    },
-   "kaynak": "Britannica (Caucasus; Mount Elbrus; Lapse rate); Wikipedia (Caucasus Mountains), destek; Elbruz'un diğer zirvesi 5.595 m"
+   "kaynak": "Britannica (Caucasus; Mount Elbrus; Lapse rate); Wikipedia (Caucasus Mountains), destek; Elbruz'un diğer zirvesi 5.595 m",
+   "gorsel": true
   },
   {
    "id": "alpler",
@@ -528,7 +548,8 @@
     "c": "200 km",
     "h": "Alan ÷ uzunluk = 90.000 ÷ 450 = 200 km."
    },
-   "kaynak": "Britannica (Alps); Wikipedia (Mont Blanc: 2021'de 4.807,81 m, 2023'te 4.805,59 m), destek"
+   "kaynak": "Britannica (Alps); Wikipedia (Mont Blanc: 2021'de 4.807,81 m, 2023'te 4.805,59 m), destek",
+   "gorsel": true
   },
   {
    "id": "sahra",
@@ -553,7 +574,8 @@
     "c": "%25",
     "h": "6 ÷ 24 = 0,25 → %25."
    },
-   "kaynak": "Britannica (≈ 8,6 mn km²), Wikipedia (≈ 9,2 mn km²), ABD ve Afrika alanları; alan, çölün sınırının nasıl çizildiğine göre değişir"
+   "kaynak": "Britannica (≈ 8,6 mn km²), Wikipedia (≈ 9,2 mn km²), ABD ve Afrika alanları; alan, çölün sınırının nasıl çizildiğine göre değişir",
+   "gorsel": true
   },
   {
    "id": "nijer",
@@ -578,7 +600,8 @@
     "c": "1/6",
     "h": "1 − 1/2 − 1/3 = 6/6 − 3/6 − 2/6 = 1/6."
    },
-   "kaynak": "Wikipedia (Niger River), Hamburg Üniv. CSMC Timbuktu el yazmaları, Google Arts & Culture; UNESCO Dünya Mirası listesinde Timbuktu (whc.unesco.org/en/list/119); uzunluk kaynağa göre 4.180–4.200 km"
+   "kaynak": "Wikipedia (Niger River), Hamburg Üniv. CSMC Timbuktu el yazmaları, Google Arts & Culture; UNESCO Dünya Mirası listesinde Timbuktu (whc.unesco.org/en/list/119); uzunluk kaynağa göre 4.180–4.200 km",
+   "gorsel": true
   },
   {
    "id": "kilimanjaro",
@@ -603,7 +626,8 @@
     "c": "≈ 8,5 °C",
     "h": "3.000 m = 3 km; 3 × 6,5 = 19,5; 28 − 19,5 = 8,5 °C."
    },
-   "kaynak": "Britannica (Kibo 5.895 m), Wikipedia (sonraki ölçümler 5.892–5.902 m), Britannica (lapse rate ≈ 6,5 °C/km); gerçek değer hava durumuna göre değişir"
+   "kaynak": "Britannica (Kibo 5.895 m), Wikipedia (sonraki ölçümler 5.892–5.902 m), Britannica (lapse rate ≈ 6,5 °C/km); gerçek değer hava durumuna göre değişir",
+   "gorsel": true
   },
   {
    "id": "victoria",
@@ -628,7 +652,8 @@
     "c": "30 kat",
     "h": "780.000 ÷ 26.000 = 30."
    },
-   "kaynak": "Britannica (69.484 km²), Wikipedia (≈ 59.947 km²; kendi içinde tutarsız, ≈ 68.800 km² da geçer), Türkiye alanı: Wikipedia"
+   "kaynak": "Britannica (69.484 km²), Wikipedia (≈ 59.947 km²; kendi içinde tutarsız, ≈ 68.800 km² da geçer), Türkiye alanı: Wikipedia",
+   "gorsel": true
   },
   {
    "id": "rift",
@@ -653,7 +678,8 @@
     "c": "24 km",
     "h": "2.000.000 × 12 mm = 24.000.000 mm = 24.000 m = 24 km."
    },
-   "kaynak": "Wikipedia (8–9 mm/yıl); NBC News (≈ 5–13 mm/yıl); Britannica (≈ 6.400 km); hız bölgeye ve ölçüme göre değişir"
+   "kaynak": "Wikipedia (8–9 mm/yıl); NBC News (≈ 5–13 mm/yıl); Britannica (≈ 6.400 km); hız bölgeye ve ölçüme göre değişir",
+   "gorsel": true
   },
   {
    "id": "kongo",
@@ -678,7 +704,8 @@
     "c": "288 havuz",
     "h": "1 dakikada 12.000 × 60 = 720.000 m³; 720.000 ÷ 2.500 = 288."
    },
-   "kaynak": "Britannica (debi ≈ 41.000 m³/sn), Wikipedia (derinlik ≈ 220 m, ekvator, Amazon ≈ 219.530 m³/sn); Britannica'nın Amazon değeri (≈ 175.000 m³/sn) farklı; debi yıl içinde 23.000–75.000 m³/sn arası değişir"
+   "kaynak": "Britannica (debi ≈ 41.000 m³/sn), Wikipedia (derinlik ≈ 220 m, ekvator, Amazon ≈ 219.530 m³/sn); Britannica'nın Amazon değeri (≈ 175.000 m³/sn) farklı; debi yıl içinde 23.000–75.000 m³/sn arası değişir",
+   "gorsel": true
   },
   {
    "id": "lebombo",
@@ -703,7 +730,8 @@
     "c": "24.500 yıl",
     "h": "37.000 − 12.500 = 24.500."
    },
-   "kaynak": "Wikipedia (Lebombo bone: 42.000–43.000 yıl, 24 radyokarbon tarihlemesi), MathWorld (d'Errico vd. 2018: ≈ 42.300–42.600), Wikipedia (Ishango: ≈ 20.000, tartışmalı); tarihler yöntem ve tabakaya göre değişir"
+   "kaynak": "Wikipedia (Lebombo bone: 42.000–43.000 yıl, 24 radyokarbon tarihlemesi), MathWorld (d'Errico vd. 2018: ≈ 42.300–42.600), Wikipedia (Ishango: ≈ 20.000, tartışmalı); tarihler yöntem ve tabakaya göre değişir",
+   "gorsel": true
   },
   {
    "id": "baykal",
@@ -728,7 +756,8 @@
     "c": "60 m",
     "h": "1.800 ÷ 30.000 = 0,06 km = 60 m."
    },
-   "kaynak": "Britannica (Lake Baikal: ≈1.620 m, tatlı suyun yaklaşık beşte biri), Wikipedia (1.642 m, 23.615 km³, 31.722 km²), UNESCO; en derin nokta ve pay kaynağa göre değişir"
+   "kaynak": "Britannica (Lake Baikal: ≈1.620 m, tatlı suyun yaklaşık beşte biri), Wikipedia (1.642 m, 23.615 km³, 31.722 km²), UNESCO; en derin nokta ve pay kaynağa göre değişir",
+   "gorsel": true
   },
   {
    "id": "ural",
@@ -753,7 +782,8 @@
     "c": "2,8 milyon km²",
     "h": "8 × 35/100 = 2,8 milyon km²."
    },
-   "kaynak": "Britannica (Ural Mountains, Russia); Wikipedia (Russia: 17.098.246 km²); sınırın tam çizgisi tanıma göre değişir"
+   "kaynak": "Britannica (Ural Mountains, Russia); Wikipedia (Russia: 17.098.246 km²); sınırın tam çizgisi tanıma göre değişir",
+   "gorsel": true
   },
   {
    "id": "gobi",
@@ -778,7 +808,8 @@
     "c": "43 °C",
     "h": "31 − (−12) = 31 + 12 = 43 °C."
    },
-   "kaynak": "Britannica (Gobi); Wikipedia (Oviraptor: 1923 Flaming Cliffs yumurtası ≈ 14 cm), AMNH; sıcaklıklar uzun yıllık ortalamadır, uç değerler daha da geniştir"
+   "kaynak": "Britannica (Gobi); Wikipedia (Oviraptor: 1923 Flaming Cliffs yumurtası ≈ 14 cm), AMNH; sıcaklıklar uzun yıllık ortalamadır, uç değerler daha da geniştir",
+   "gorsel": true
   },
   {
    "id": "tibet",
@@ -803,7 +834,8 @@
     "c": "≈ 2.340.000 km²",
     "h": "780.000 × 3 = 2.340.000 km²."
    },
-   "kaynak": "Wikipedia (Tibetan Plateau: ortalama > 4.500 m, 2.500.000 km²), Britannica (Plateau of Tibet: 4.000–5.000 m, 2,5 mn km²); Türkiye alanı Wikipedia"
+   "kaynak": "Wikipedia (Tibetan Plateau: ortalama > 4.500 m, 2.500.000 km²), Britannica (Plateau of Tibet: 4.000–5.000 m, 2,5 mn km²); Türkiye alanı Wikipedia",
+   "gorsel": true
   },
   {
    "id": "japonya",
@@ -828,7 +860,8 @@
     "c": "≈ 2,3 kat",
     "h": "8.848,86 ÷ 3.776 ≈ 2,34 ≈ 2,3."
    },
-   "kaynak": "Wikipedia (Sangaku, Edo period: 1600/1603–1868), UNESCO (Fuji 3.776 m); Edo başlangıcı kaynağa göre 1600 veya 1603"
+   "kaynak": "Wikipedia (Sangaku, Edo period: 1600/1603–1868), UNESCO (Fuji 3.776 m); Edo başlangıcı kaynağa göre 1600 veya 1603",
+   "gorsel": true
   },
   {
    "id": "sibirya",
@@ -853,7 +886,8 @@
     "c": "7 saat",
     "h": "360° ÷ 24 = 15° → 1 saat; 105 ÷ 15 = 7 saat."
    },
-   "kaynak": "Britannica (Russia: 11 saat dilimi), Wikipedia (Time in Russia: UTC+2 ile UTC+12); saat dilimleri zamanla değişebilir"
+   "kaynak": "Britannica (Russia: 11 saat dilimi), Wikipedia (Time in Russia: UTC+2 ile UTC+12); saat dilimleri zamanla değişebilir",
+   "gorsel": true
   },
   {
    "id": "avustralya",
@@ -878,7 +912,8 @@
     "c": "35 kişi/km²",
     "h": "14.000.000 ÷ 400.000 = 35."
    },
-   "kaynak": "Wikipedia (Australia: 7.688.287 km², ≈27,8 mn kişi, Aralık 2025; Turkey: 86,09 mn, 2025 tahmini; Uluru), Britannica; nüfus yıla göre değişir"
+   "kaynak": "Wikipedia (Australia: 7.688.287 km², ≈27,8 mn kişi, Aralık 2025; Turkey: 86,09 mn, 2025 tahmini; Uluru), Britannica; nüfus yıla göre değişir",
+   "gorsel": true
   },
   {
    "id": "bsr",
@@ -903,7 +938,8 @@
     "c": "≈ 23 cm",
     "h": "2.300 ÷ 100 = 23 cm."
    },
-   "kaynak": "GBRMPA (≈2.300 km, 344.400 km²), Wikipedia; Britannica (Türkiye ≈ 1.000 mil ≈ 1.600 km, resif > 2.000 km diyor); uzunluk tanıma göre değişir"
+   "kaynak": "GBRMPA (≈2.300 km, 344.400 km²), Wikipedia; Britannica (Türkiye ≈ 1.000 mil ≈ 1.600 km, resif > 2.000 km diyor); uzunluk tanıma göre değişir",
+   "gorsel": true
   },
   {
    "id": "gronland",
@@ -928,7 +964,8 @@
     "c": "≈ 4,7 kat",
     "h": "10,2 ÷ 2,17 ≈ 4,70."
    },
-   "kaynak": "Britannica (Africa), Wikipedia (Greenland, Mercator projection), NSIDC; buz kalınlığı 3 km üzeri, alan küçük adalar dahil"
+   "kaynak": "Britannica (Africa), Wikipedia (Greenland, Mercator projection), NSIDC; buz kalınlığı 3 km üzeri, alan küçük adalar dahil",
+   "gorsel": true
   },
   {
    "id": "hudson",
@@ -953,7 +990,8 @@
     "c": "%20",
     "h": "(1.500 − 1.250) ÷ 1.250 = 0,2 → %20."
    },
-   "kaynak": "Wikipedia (List of countries by length of coastline, kaynağı CIA World Factbook; Coastline paradox; Hudson Bay); kıyı uzunluğu ölçüm yöntemine bağlı"
+   "kaynak": "Wikipedia (List of countries by length of coastline, kaynağı CIA World Factbook; Coastline paradox; Hudson Bay); kıyı uzunluğu ölçüm yöntemine bağlı",
+   "gorsel": true
   },
   {
    "id": "buyukgoller",
@@ -978,7 +1016,8 @@
     "c": "25 m",
     "h": "600 ÷ 24.000 = 0,025 km = 25 m."
    },
-   "kaynak": "Wikipedia (Great Lakes), EPA (PolitiFact alıntısı: %21); kaynağa göre pay %20–23 arası, hacimler küçük farklarla verilir"
+   "kaynak": "Wikipedia (Great Lakes), EPA (PolitiFact alıntısı: %21); kaynağa göre pay %20–23 arası, hacimler küçük farklarla verilir",
+   "gorsel": true
   },
   {
    "id": "kanyon",
@@ -1003,7 +1042,8 @@
     "c": "160 km",
     "h": "6,4 × 25 = 160 km."
    },
-   "kaynak": "Wikipedia (Grand Canyon), NPS (278 nehir mili ≈ 447 km, ort. derinlik 1,6 km); Colorado Nehri'nin yaşı (5–6 mn yıl) tartışmalı"
+   "kaynak": "Wikipedia (Grand Canyon), NPS (278 nehir mili ≈ 447 km, ort. derinlik 1,6 km); Colorado Nehri'nin yaşı (5–6 mn yıl) tartışmalı",
+   "gorsel": true
   },
   {
    "id": "yukatan",
@@ -1028,7 +1068,8 @@
     "c": "48",
     "h": "2 × 20 + (5 + 3) = 40 + 8 = 48."
    },
-   "kaynak": "Wikipedia (Maya numerals, Mesoamerican Long Count calendar); ilk sıfır kullanımının kökeni tartışmalı"
+   "kaynak": "Wikipedia (Maya numerals, Mesoamerican Long Count calendar); ilk sıfır kullanımının kökeni tartışmalı",
+   "gorsel": true
   },
   {
    "id": "cusco",
@@ -1053,7 +1094,8 @@
     "c": "304",
     "h": "3 × 100 + 0 × 10 + 4 = 304."
    },
-   "kaynak": "Britannica (quipu, Cuzco); kipu kullanım başlangıcı Britannica'da yaklaşık MÖ 2500 olarak geçer"
+   "kaynak": "Britannica (quipu, Cuzco); kipu kullanım başlangıcı Britannica'da yaklaşık MÖ 2500 olarak geçer",
+   "gorsel": true
   },
   {
    "id": "titicaca",
@@ -1078,7 +1120,8 @@
     "c": "≈ 91,5 km",
     "h": "√8.372 ≈ 91,5 km."
    },
-   "kaynak": "Wikipedia (Lake Titicaca: 3.812 m, 8.372 km²); 'en yüksek' iddiası yalnızca ticari gemiler için"
+   "kaynak": "Wikipedia (Lake Titicaca: 3.812 m, 8.372 km²); 'en yüksek' iddiası yalnızca ticari gemiler için",
+   "gorsel": true
   },
   {
    "id": "angel",
@@ -1103,7 +1146,8 @@
     "c": "80 m",
     "h": "½ × 10 × 4² = 5 × 16 = 80 m."
    },
-   "kaynak": "Wikipedia (Angel Falls); en yüksek şelale unvanı ölçümlere göre tartışmalı (Tugela ile birlikte anılır), 12,8 sn kaba hesap"
+   "kaynak": "Wikipedia (Angel Falls); en yüksek şelale unvanı ölçümlere göre tartışmalı (Tugela ile birlikte anılır), 12,8 sn kaba hesap",
+   "gorsel": true
   },
   {
    "id": "atacama",
@@ -1128,7 +1172,8 @@
     "c": "≈ 25,9 milyar km",
     "h": "300.000 × 86.400 = 25.920.000.000 km."
    },
-   "kaynak": "Wikipedia (Atacama Desert, ALMA, Light-year); yağış bölgeye göre 1–15 mm arası değişir"
+   "kaynak": "Wikipedia (Atacama Desert, ALMA, Light-year); yağış bölgeye göre 1–15 mm arası değişir",
+   "gorsel": true
   },
   {
    "id": "hawaii",
@@ -1153,7 +1198,8 @@
     "c": "5.600 m",
     "h": "9.000 − 3.400 = 5.600 m."
    },
-   "kaynak": "USGS (deniz seviyesinden 4.205 m, tabandan ≈ 10.211 m); taban tanımına göre değer değişir"
+   "kaynak": "USGS (deniz seviyesinden 4.205 m, tabandan ≈ 10.211 m); taban tanımına göre değer değişir",
+   "gorsel": true
   }
  ]
 }

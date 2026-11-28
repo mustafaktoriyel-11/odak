@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="alpler-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFD9F0"/><stop offset="1" stop-color="#EAF3F8"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#alpler-g1)"/>
+<path d="M0 316 V214 L50 176 L96 200 L150 150 L200 178 L244 128 L290 150 L305 90 L320 76 L340 92 L356 100 L390 130 L430 152 L470 126 L510 170 L560 150 L600 190 L640 210 V316Z" fill="#7C86A8"/>
+<path d="M305 90 L320 76 L340 92 L356 100 L372 118 L358 114 L344 124 L330 110 L316 124 L304 112 L292 124 L290 110Z" fill="#FFFFFF"/>
+<path d="M244 128 L262 150 L248 146 L238 156 L226 146Z M150 150 L166 170 L152 166 L142 172 L134 164Z M470 126 L488 148 L474 144 L464 152 L452 144Z" fill="#FFFFFF" opacity=".92"/>
+<path d="M0 300 C120 280 240 296 340 288 C460 280 560 300 640 290 V360 H0Z" fill="#9DB86A"/>
+<path d="M0 330 C140 318 300 336 640 322 V360 H0Z" fill="#86A559"/>
+<g fill="#3E5A2E"><path d="M60 300 l7 -22 7 22z M78 304 l6 -18 6 18z M520 296 l7 -22 7 22z M540 302 l6 -18 6 18z"/></g>
+<line x1="324" y1="76" x2="600" y2="76" stroke="#3B3E66" stroke-dasharray="3 4" opacity=".55"/>
+<line x1="608" y1="76" x2="608" y2="316" stroke="#3B3E66" stroke-width="1.5" opacity=".6"/><line x1="602" y1="76" x2="614" y2="76" stroke="#3B3E66" stroke-width="1.5"/><line x1="602" y1="316" x2="614" y2="316" stroke="#3B3E66" stroke-width="1.5"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66"><text x="596" y="68" text-anchor="end" font-weight="700">≈ 4.806 m</text><text x="320" y="64" text-anchor="middle">Mont Blanc</text>
+<text x="32" y="334" fill="#FFFFFF" font-weight="700">≈ 207.000 km² silsile alanı</text></g>
+</svg>

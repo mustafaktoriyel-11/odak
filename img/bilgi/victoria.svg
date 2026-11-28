@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="victoria-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6B98A"/><stop offset=".6" stop-color="#FBD9B0"/><stop offset="1" stop-color="#FCE9CF"/></linearGradient>
+<linearGradient id="victoria-g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5FB0CF"/><stop offset="1" stop-color="#2D78A8"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#victoria-g1)"/>
+<circle cx="530" cy="74" r="28" fill="#FFF3D6" opacity=".9"/>
+<path d="M0 190 C80 176 160 186 240 176 C340 164 440 184 640 170 L640 360 L0 360Z" fill="#C9A456"/>
+<path d="M120 200 C150 186 190 188 230 196 C280 190 340 200 380 214 C420 226 440 248 400 262 C360 276 300 270 250 278 C190 288 140 272 120 250 C108 232 108 212 120 200Z" fill="url(#victoria-g2)"/>
+<path d="M120 200 C150 186 190 188 230 196 C280 190 340 200 380 214 C420 226 440 248 400 262 C360 276 300 270 250 278 C190 288 140 272 120 250 C108 232 108 212 120 200Z" fill="none" stroke="#9C8040" stroke-width="3"/>
+<g fill="#4A3F2A"><rect x="510" y="150" width="4" height="30"/><path d="M490 150 C500 140 524 140 536 150 C520 146 506 146 490 150Z"/><rect x="570" y="156" width="4" height="26"/><path d="M552 156 C562 148 584 148 594 156 C580 152 566 152 552 156Z"/></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66">
+<text x="40" y="52" font-weight="700">Victoria Gölü</text>
+<text x="40" y="318" opacity=".85">Türkiye yüzölçümü (tam çubuk)</text>
+<rect x="40" y="326" width="400" height="10" rx="5" fill="#FFFFFF" opacity=".7"/>
+<rect x="40" y="326" width="35" height="10" rx="5" fill="#2D78A8"/>
+<text x="460" y="336" font-weight="700">≈ %8–9</text>
+</g>
+</svg>

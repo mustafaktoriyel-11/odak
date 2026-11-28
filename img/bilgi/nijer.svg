@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs><linearGradient id="nijer-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7C873"/><stop offset="1" stop-color="#FCE7B8"/></linearGradient></defs>
+<rect width="640" height="360" fill="url(#nijer-g1)"/>
+<path d="M0 230 C110 190 200 200 300 230 C400 255 520 220 640 215 L640 360 L0 360Z" fill="#E9A85A"/>
+<path d="M0 290 C110 260 220 270 330 290 C430 305 540 280 640 270 L640 360 L0 360Z" fill="#D98A3F"/>
+<path d="M90 280 C100 200 150 130 260 120 C360 112 430 160 470 220 C490 250 520 260 570 262" fill="none" stroke="#5BA3D0" stroke-width="12" stroke-linecap="round"/>
+<path d="M90 280 C100 200 150 130 260 120 C360 112 430 160 470 220 C490 250 520 260 570 262" fill="none" stroke="#2D6DB3" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+<circle cx="262" cy="120" r="6" fill="#8A4F1F"/><rect x="258" y="124" width="8" height="6" fill="#8A4F1F" opacity="0"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#4A2E1A">
+<text x="276" y="102" font-weight="700">Timbuktu</text>
+<text x="32" y="306" font-weight="700">≈ 4.180 km</text>
+<rect x="32" y="316" width="292.6" height="12" rx="6" fill="#FFF1D2" opacity=".8"/>
+<rect x="32" y="316" width="292.6" height="12" rx="6" fill="#8A4F1F"/>
+<g stroke="#FFF1D2" stroke-width="2"><line x1="102" y1="316" x2="102" y2="328"/><line x1="172" y1="316" x2="172" y2="328"/><line x1="242" y1="316" x2="242" y2="328"/></g>
+<text x="336" y="326" font-size="11" opacity=".85">her çizgi 1.000 km</text>
+</g>
+</svg>

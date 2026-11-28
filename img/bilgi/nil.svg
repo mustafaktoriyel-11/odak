@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="nil-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7C873"/><stop offset="1" stop-color="#FCE7B8"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#nil-g1)"/>
+<circle cx="520" cy="84" r="34" fill="#FFF3D6" opacity=".9"/>
+<path d="M0 220 C100 190 200 196 300 212 C420 232 520 200 640 208 L640 360 L0 360Z" fill="#E9B26A"/>
+<path d="M60 218 L130 150 L200 218Z" fill="#D69A55"/><path d="M130 150 L165 184 L130 218 L96 184Z" fill="#E8B779" opacity=".0"/>
+<path d="M130 150 L200 218 L160 218Z" fill="#B97D3F" opacity=".55"/>
+<path d="M230 218 L270 180 L310 218Z" fill="#D69A55"/><path d="M270 180 L310 218 L288 218Z" fill="#B97D3F" opacity=".55"/>
+<path d="M0 262 C120 240 200 270 320 262 C440 254 520 276 640 258 L640 360 L0 360Z" fill="#7FA05A"/>
+<path d="M0 278 C100 262 160 292 280 280 C380 270 470 296 640 276" fill="none" stroke="#3F8FBF" stroke-width="22" stroke-linecap="round"/>
+<path d="M0 278 C100 262 160 292 280 280 C380 270 470 296 640 276" fill="none" stroke="#7EC3E8" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+<g fill="#3E5A2E"><rect x="420" y="218" width="4" height="34" rx="2"/><ellipse cx="422" cy="214" rx="18" ry="6"/><ellipse cx="410" cy="218" rx="9" ry="4"/><ellipse cx="434" cy="218" rx="9" ry="4"/></g><g fill="#3E5A2E"><rect x="458" y="212" width="4" height="34" rx="2"/><ellipse cx="460" cy="208" rx="18" ry="6"/><ellipse cx="448" cy="212" rx="9" ry="4"/><ellipse cx="472" cy="212" rx="9" ry="4"/></g><g fill="#3E5A2E"><rect x="80" y="224" width="4" height="34" rx="2"/><ellipse cx="82" cy="220" rx="18" ry="6"/><ellipse cx="70" cy="224" rx="9" ry="4"/><ellipse cx="94" cy="224" rx="9" ry="4"/></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#4A2E1A"><text x="32" y="316" font-weight="700">Nil ≈ 6.650 km</text>
+<text x="608" y="316" text-anchor="end" opacity=".85">11 ülke</text></g>
+<rect x="32" y="326" width="576" height="12" rx="6" fill="#FFFFFF" opacity=".55"/><rect x="32" y="326" width="576.0" height="12" rx="6" fill="#8A4F1F"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="hazar-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6C99A"/><stop offset="1" stop-color="#FCE9CF"/></linearGradient>
+<linearGradient id="hazar-g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6BB5C9"/><stop offset="1" stop-color="#1F5A82"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#hazar-g1)"/>
+<path d="M300 40 C340 36 380 60 372 100 C366 128 392 140 384 172 C376 204 336 214 330 246 C326 270 350 290 330 318 C300 330 270 312 272 282 C274 250 252 236 262 204 C270 178 244 160 262 130 C276 106 262 84 280 60 C284 48 290 42 300 40Z" fill="url(#hazar-g2)" stroke="#C9A878" stroke-width="3"/>
+<path d="M300 150 C320 146 340 160 336 180 C330 196 306 192 300 176Z" fill="#FFFFFF" opacity=".12"/>
+<rect x="410" y="80" width="190" height="200" rx="10" fill="#FFFFFF" opacity=".35"/>
+<path d="M424 120 L586 120 L586 130 L560 150 L520 214 L480 258 L450 262 L438 190 L424 150Z" fill="#6BB5C9"/>
+<path d="M424 120 L586 120" stroke="#1F5A82" stroke-width="2"/>
+<path d="M424 150 L438 190 L450 262 L480 258 L520 214 L560 150 L586 130" fill="none" stroke="#8A6F4A" stroke-width="3"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66">
+<line x1="465" y1="120" x2="465" y2="262" stroke="#3B3E66" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="40" y="60" font-weight="700">Hazar Denizi</text>
+<text x="424" y="106" font-size="11" opacity=".8">kesit</text>
+<text x="474" y="162" font-weight="700">≈ 1.025 m</text>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="yukatan-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6C58A"/><stop offset="1" stop-color="#FCE9CF"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#yukatan-g1)"/>
+<circle cx="140" cy="86" r="30" fill="#FFF3D6" opacity=".9"/>
+<rect y="296" width="640" height="64" fill="#6F9A4E"/>
+<g><rect x="60" y="300" width="200" height="28" fill="#D8C7A6"/><rect x="60" y="323" width="200" height="5" fill="#B9A67F"/><rect x="80" y="272" width="160" height="28" fill="#D8C7A6"/><rect x="80" y="295" width="160" height="5" fill="#B9A67F"/><rect x="100" y="244" width="120" height="28" fill="#D8C7A6"/><rect x="100" y="267" width="120" height="5" fill="#B9A67F"/><rect x="120" y="216" width="80" height="28" fill="#D8C7A6"/><rect x="120" y="239" width="80" height="5" fill="#B9A67F"/><path d="M150 328 H170 L166 216 H154Z" fill="#B9A67F" opacity="0"/>
+<rect x="130" y="188" width="60" height="28" fill="#D8C7A6"/><rect x="124" y="180" width="72" height="8" fill="#B9A67F"/><rect x="152" y="196" width="16" height="20" fill="#7A6A4C"/>
+<path d="M150 216 H170 L178 300 H142Z" fill="#B9A67F" opacity=".8"/>
+<rect x="60" y="300" width="200" height="0"/></g>
+<g fill="#3E5A2E"><ellipse cx="300" cy="302" rx="26" ry="14"/><ellipse cx="42" cy="304" rx="24" ry="12"/></g>
+<rect x="352" y="64" width="256" height="224" rx="16" fill="#FFFFFF" opacity=".72"/>
+<g fill="#5A3B24"><ellipse cx="394" cy="140" rx="20" ry="11" fill="none" stroke="#5A3B24" stroke-width="3"/><path d="M378 140 H410 M386 134 V146 M394 131 V149 M402 134 V146" stroke="#5A3B24" stroke-width="2" fill="none"/>
+<circle cx="474" cy="140" r="8"/><rect x="522" y="133" width="66" height="14" rx="7"/>
+<g transform="translate(0 30)"><circle cx="420" cy="154" r="8"/><circle cx="460" cy="154" r="8"/><rect x="420" y="178" width="72" height="14" rx="7"/><circle cx="436" cy="204" r="8"/><circle cx="456" cy="204" r="8"/><circle cx="476" cy="204" r="8"/><rect x="420" y="170" width="0" height="0"/></g></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#4A2E1A"><text x="480" y="96" text-anchor="middle" font-weight="700" font-size="13">20 tabanlı</text>
+<text x="480" y="272" text-anchor="middle">kabuk 0 · nokta 1 · çubuk 5</text></g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="akdeniz-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5FA8E0"/><stop offset="1" stop-color="#9ED0EE"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#akdeniz-g1)"/>
+<path d="M0 104 L30 112 L60 100 L84 108 L110 96 L140 102 L168 88 L196 96 L230 84 L262 96 L300 86 L340 92 L380 108 L400 88 L440 96 L470 80 L520 92 L560 84 L600 96 L640 92 V0 H0Z" fill="#B8C98A"/><path d="M0 104 L30 112 L60 100 L84 108 L110 96 L140 102 L168 88 L196 96 L230 84 L262 96 L300 86 L340 92 L380 108 L400 88 L440 96 L470 80 L520 92 L560 84 L600 96 L640 92" fill="none" stroke="#8FA566" stroke-width="2"/>
+<path d="M0 262 L40 252 L90 254 L140 244 L200 248 L260 240 L320 246 L380 238 L440 244 L500 236 L560 242 L640 230 V360 H0Z" fill="#E3B873"/><path d="M0 262 L40 252 L90 254 L140 244 L200 248 L260 240 L320 246 L380 238 L440 244 L500 236 L560 242 L640 230" fill="none" stroke="#C99750" stroke-width="2"/>
+<path d="M170 148 C190 140 205 150 202 172 C198 160 186 156 176 162Z" fill="#B8C98A"/>
+<path d="M150 196 C160 188 172 190 170 200 C164 202 156 202 150 196Z" fill="#B8C98A"/>
+<path d="M380 168 C392 160 402 170 394 180Z" fill="#B8C98A"/>
+<g stroke="#FFFFFF" stroke-width="1.5" opacity=".55" fill="none"><path d="M60 150 q10-6 20 0 t20 0"/><path d="M440 200 q10-6 20 0 t20 0"/><path d="M300 215 q10-6 20 0 t20 0"/></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#12426B">
+<text x="320" y="150" text-anchor="middle" font-weight="700" fill="#FFFFFF">Akdeniz</text>
+<text x="32" y="296" font-weight="700">≈ 4.000 km</text><text x="596" y="296" text-anchor="end" opacity=".9">batı-doğu uzunluğu</text></g>
+<rect x="32" y="306" width="576" height="12" rx="6" fill="#FFFFFF" opacity=".6"/><rect x="32" y="306" width="576" height="12" rx="6" fill="#2D6DB3"/>
+<g stroke="#12426B" stroke-width="1.5" stroke-dasharray="3 4" opacity=".45"><line x1="32" y1="120" x2="32" y2="280"/><line x1="608" y1="120" x2="608" y2="304"/></g>
+</svg>

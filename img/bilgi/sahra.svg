@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="k" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7C873"/><stop offset="1" stop-color="#FCE7B8"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#k)"/>
+<circle cx="470" cy="96" r="44" fill="#FFF6DD"/>
+<path d="M0 214 C90 170 170 168 250 200 C320 228 380 176 470 168 C540 162 600 186 640 200 L640 360 L0 360Z" fill="#E9A85A"/>
+<path d="M120 190 C180 176 230 182 250 200 C200 196 160 196 120 190Z" fill="#F4C27E" opacity=".6"/>
+<path d="M0 268 C110 236 220 240 330 262 C430 282 540 250 640 240 L640 360 L0 360Z" fill="#D98A3F"/>
+<g fill="#5A3B24">
+<path d="M380 196 c4-10 10-12 14-8 c4-6 10-6 13 0 l6-6 c3-2 6 0 5 3 l-6 10 c0 6-2 10-6 12 l1 14 h-3 l-2-12 h-10 l-2 12 h-3 l0-14 c-6-2-8-6-7-11Z"/>
+<path d="M430 190 c4-10 10-12 14-8 c4-6 10-6 13 0 l6-6 c3-2 6 0 5 3 l-6 10 c0 6-2 10-6 12 l1 14 h-3 l-2-12 h-10 l-2 12 h-3 l0-14 c-6-2-8-6-7-11Z"/>
+<path d="M486 184 c4-10 10-12 14-8 c4-6 10-6 13 0 l6-6 c3-2 6 0 5 3 l-6 10 c0 6-2 10-6 12 l1 14 h-3 l-2-12 h-10 l-2 12 h-3 l0-14 c-6-2-8-6-7-11Z"/>
+</g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#4A2E1A">
+<text x="32" y="306" font-weight="700">Afrika'nın ≈ %30'u</text>
+<rect x="32" y="316" width="300" height="12" rx="6" fill="#FFF1D2" opacity=".8"/>
+<rect x="32" y="316" width="90" height="12" rx="6" fill="#8A4F1F"/>
+</g>
+</svg>

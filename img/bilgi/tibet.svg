@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="tibet-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6C58A"/><stop offset="1" stop-color="#FCE7C8"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#tibet-g1)"/>
+<circle cx="560" cy="70" r="30" fill="#FFF3D6" opacity=".9"/>
+<path d="M0 320 V230 L40 190 L80 140 L120 80 L150 130 L170 110 L200 185 L220 183 L300 187 L380 184 L440 186 L470 160 L520 130 L560 150 L600 170 L640 190 V320Z" fill="#8E6F5E"/>
+<path d="M120 80 L142 118 L128 114 L120 126 L110 112 L98 116Z M520 130 L540 146 L526 144 L518 152 L508 142Z" fill="#FFFFFF"/>
+<path d="M200 185 L220 183 L300 187 L380 184 L440 186 L452 172 L452 200 L200 200Z" fill="#C9A06A"/>
+<path d="M0 320 H640 V360 H0Z" fill="#E3C38E"/>
+<line x1="200" y1="185" x2="470" y2="185" stroke="#FFFFFF" stroke-dasharray="3 4" opacity=".0"/>
+<g stroke="#FFFFFF" stroke-width="1.5"><line x1="240" y1="185" x2="240" y2="320" opacity=".7"/><line x1="234" y1="185" x2="246" y2="185"/><line x1="234" y1="320" x2="246" y2="320"/></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#4A2E1A"><text x="252" y="258" font-weight="700" fill="#FFFFFF">&gt; 4.500 m</text><text x="335" y="170" text-anchor="middle" font-weight="700">Tibet Platosu</text><text x="520" y="118" text-anchor="middle">Kunlun</text></g>
+</svg>

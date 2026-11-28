@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="rift-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6B98A"/><stop offset="1" stop-color="#FCE3C4"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#rift-g1)"/>
+<circle cx="520" cy="70" r="30" fill="#FFF3D6" opacity=".9"/>
+<path d="M0 150 L190 150 L215 178 L250 178 L275 212 L365 212 L390 178 L425 178 L450 150 L640 150 V360 H0Z" fill="#C9854E"/>
+<path d="M0 150 L190 150 L215 178 L250 178 L275 212 L365 212 L390 178 L425 178 L450 150 L640 150" fill="none" stroke="#8A4F1F" stroke-width="3"/>
+<path d="M0 214 L190 214 L260 250 L380 250 L450 214 L640 214 V360 H0Z" fill="#A5673A"/>
+<ellipse cx="320" cy="268" rx="150" ry="28" fill="#E0613A" opacity=".85"/><ellipse cx="320" cy="268" rx="90" ry="14" fill="#F3A04A"/>
+<path d="M285 212 q35 -10 70 0 v6 h-70z" fill="#5FA8D6"/>
+<g stroke="#4A2E1A" stroke-width="3" stroke-linecap="round" fill="none"><path d="M170 118 H112 M122 108 L112 118 L122 128"/><path d="M470 118 H528 M518 108 L528 118 L518 128"/></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#4A2E1A"><text x="140" y="98" text-anchor="middle" font-weight="700">Nubia</text><text x="500" y="98" text-anchor="middle" font-weight="700">Somali</text>
+<text x="320" y="134" text-anchor="middle" font-weight="700">8–9 mm/yıl</text></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#FFFFFF"><text x="32" y="316" font-weight="700">≈ 6.400 km</text><text x="608" y="316" text-anchor="end" opacity=".9">toplam uzunluk</text></g>
+<rect x="32" y="324" width="576" height="8" rx="4" fill="#FFFFFF" opacity=".85"/>
+</svg>

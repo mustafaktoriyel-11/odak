@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="hawaii-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FC8EC"/><stop offset="1" stop-color="#E6F3FA"/></linearGradient>
+<linearGradient id="hawaii-g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2F85B8"/><stop offset="1" stop-color="#0E2F5A"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#hawaii-g1)"/>
+<rect y="153" width="640" height="207" fill="url(#hawaii-g2)"/>
+<path d="M0 153 Q20 147 40 153 T80 153 T120 153 T160 153 T200 153 T240 153 T280 153 T320 153 T360 153 T400 153 T440 153 T480 153 T520 153 T560 153 T600 153 T640 153" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8"/>
+<path d="M0 300 L120 292 L230 262 L300 200 L350 100 L372 50 L392 52 L420 110 L470 190 L540 262 L640 296 L640 360 L0 360Z" fill="#3A3150"/>
+<path d="M372 50 L392 52 L400 72 L388 78 L378 70 L366 76 L360 72Z" fill="#E4D9C6"/>
+<path d="M300 200 L350 100 L372 50 L392 52 L420 110 L470 190 L420 190 L380 175 L340 190Z" fill="#4C4A3A"/>
+<path d="M300 200 L350 100 L372 50 L392 52 L420 110 L470 190" fill="none" stroke="#8A7A6A" stroke-width="2"/>
+<line x1="372" y1="83" x2="590" y2="83" stroke="#3B3E66" stroke-dasharray="3 4" opacity=".55"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66">
+<text x="590" y="78" text-anchor="end">Everest 8.848 m</text>
+<line x1="110" y1="50" x2="110" y2="300" stroke="#3B3E66" stroke-width="1.5" opacity=".7"/>
+<line x1="104" y1="50" x2="116" y2="50" stroke="#3B3E66" stroke-width="1.5"/>
+<line x1="104" y1="300" x2="116" y2="300" stroke="#3B3E66" stroke-width="1.5"/>
+<line x1="150" y1="50" x2="150" y2="153" stroke="#3B3E66" stroke-width="1.5" opacity=".7"/>
+<line x1="144" y1="50" x2="156" y2="50" stroke="#3B3E66" stroke-width="1.5"/>
+<line x1="144" y1="153" x2="156" y2="153" stroke="#3B3E66" stroke-width="1.5"/>
+<text x="162" y="108" font-weight="700">≈ 4.205 m</text>
+</g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#FFFFFF">
+<text x="40" y="232" font-weight="700" transform="rotate(0)">≈ 10.211 m</text>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="aral-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2D5A0"/><stop offset="1" stop-color="#FBEBCB"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#aral-g1)"/>
+<path d="M0 300 C120 280 220 296 320 290 C440 284 540 300 640 286 V360 H0Z" fill="#D9B97A" opacity=".7"/>
+<g transform="translate(320 160)"><path d="M-150 -20 C-140 -80 -60 -100 20 -90 C90 -84 150 -60 150 -10 C150 50 80 90 0 90 C-80 90 -160 60 -150 -20Z" fill="#C9DFC0" opacity=".9"/><path d="M-150 -20 C-140 -80 -60 -100 20 -90 C90 -84 150 -60 150 -10 C150 50 80 90 0 90 C-80 90 -160 60 -150 -20Z" fill="none" stroke="#5E8FB0" stroke-width="2" stroke-dasharray="5 4"/>
+<g transform="scale(.707)"><path d="M-150 -20 C-140 -80 -60 -100 20 -90 C90 -84 150 -60 150 -10 C150 50 80 90 0 90 C-80 90 -160 60 -150 -20Z" fill="#4F9AD0"/><path d="M-150 -20 C-140 -80 -60 -100 20 -90 C90 -84 150 -60 150 -10 C150 50 80 90 0 90 C-80 90 -160 60 -150 -20Z" fill="none" stroke="#2D6DB3" stroke-width="2.5"/></g>
+<ellipse cx="60" cy="10" rx="18" ry="9" fill="#7BB6DE" opacity=".6"/></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66">
+<text x="192" y="164" text-anchor="middle" font-weight="700">1960</text>
+<text x="320" y="164" text-anchor="middle" font-weight="700" fill="#FFFFFF">1992</text>
+<text x="32" y="316" font-weight="700">≈ −%50</text><text x="608" y="316" text-anchor="end" opacity=".9">alan, 1960'tan 1992'ye</text></g>
+<rect x="32" y="326" width="576" height="10" rx="5" fill="#C9DFC0"/><rect x="32" y="326" width="288" height="10" rx="5" fill="#2D6DB3"/>
+</svg>

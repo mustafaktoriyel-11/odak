@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs><linearGradient id="indus-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9FD0F0"/><stop offset="1" stop-color="#FCE7B8"/></linearGradient></defs>
+<rect width="640" height="360" fill="url(#indus-g1)"/>
+<path d="M0 170 L60 90 L110 130 L170 60 L240 140 L290 110 L340 170Z" fill="#8C97B5"/>
+<path d="M150 90 L170 60 L190 95 L178 88 L168 98Z M45 108 L60 90 L74 112 L62 106Z" fill="#fff"/>
+<path d="M0 170 L640 170 L640 360 L0 360Z" fill="#E4B572"/>
+<path d="M170 140 C200 175 150 195 230 215 C310 235 360 200 430 225 C500 250 540 270 610 290" fill="none" stroke="#3F8FC9" stroke-width="12" stroke-linecap="round"/>
+<path d="M590 280 L640 270 L640 330 L600 330Z" fill="#6AB4DA" opacity=".8"/>
+<g fill="#8A6A52"><rect x="380" y="130" width="14" height="14"/><rect x="398" y="124" width="20" height="20"/><rect x="422" y="116" width="28" height="28"/><rect x="454" y="104" width="40" height="40"/></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#4A2E1A">
+<text x="32" y="270" font-weight="700">2.880–3.200 km</text>
+<rect x="32" y="280" width="300" height="12" rx="6" fill="#FFF1D2" opacity=".8"/>
+<rect x="32" y="280" width="270" height="12" rx="6" fill="#2D6DB3"/>
+<rect x="302" y="280" width="30" height="12" rx="6" fill="#7DB3DE"/>
+</g>
+</svg>

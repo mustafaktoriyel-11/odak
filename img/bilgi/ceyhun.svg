@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="ceyhun-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3B987"/><stop offset=".6" stop-color="#FBD9B0"/><stop offset="1" stop-color="#FCE9CF"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#ceyhun-g1)"/>
+<circle cx="540" cy="80" r="28" fill="#FFF3D6" opacity=".9"/>
+<path d="M0 150 L60 100 L110 130 L170 70 L230 120 L270 100 L320 150 L420 246 L420 360 L0 360Z" fill="#8E7F9C"/>
+<path d="M170 70 L196 92 L184 96 L170 90 L158 98 L148 90Z" fill="#FFFFFF"/>
+<path d="M0 220 C120 200 260 230 420 240 L640 250 L640 360 L0 360Z" fill="#E0AA68"/>
+<path d="M0 250 C120 238 260 260 420 270 L640 280 L640 360 L0 360Z" fill="#CC9450"/>
+<path d="M60 190 C110 215 140 240 190 252 C240 262 270 258 310 266" fill="none" stroke="#3E87B5" stroke-width="7" stroke-linecap="round"/>
+<path d="M150 150 C170 190 200 220 220 244 C250 262 280 262 310 266" fill="none" stroke="#3E87B5" stroke-width="7" stroke-linecap="round"/>
+<path d="M310 266 C360 272 400 282 450 292" fill="none" stroke="#3E87B5" stroke-width="12" stroke-linecap="round"/>
+<ellipse cx="500" cy="300" rx="70" ry="22" fill="#3E87B5"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#3B3E66">
+<text x="40" y="52" font-weight="700">2 kol</text>
+<text x="38" y="178" font-size="11" fill="#FFFFFF">Pandj</text>
+<text x="104" y="134" font-size="11" fill="#FFFFFF">Vahş</text>
+</g>
+</svg>

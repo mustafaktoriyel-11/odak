@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="hudson-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3EEF3"/><stop offset="1" stop-color="#F4F7F4"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#hudson-g1)"/>
+<path d="M0 0 H640 V360 H0Z" fill="#E9EEF2" opacity="0"/>
+<path d="M315 77 L471 47 L471 67 L325 99Z" fill="#7EB7DE"/>
+<path d="M131 163 L133 114 L168 59 L203 48 L227 41 L250 66 L285 61 L321 83 L327 136 L321 181 L332 225 L309 258 L309 302 L297 329 L274 302 L270 245 L239 241 L203 214 L151 198Z" fill="#5FA8D6" stroke="#2D6DB3" stroke-width="2.5" stroke-linejoin="round"/>
+<g stroke="#FFFFFF" stroke-width="1.5" opacity=".5" fill="none"><path d="M200 150 q10-6 20 0 t20 0"/><path d="M230 210 q10-6 20 0 t20 0"/></g>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#12426B"><text x="250" y="168" text-anchor="middle" font-weight="700" fill="#FFFFFF">Hudson Körfezi</text><text x="250" y="186" text-anchor="middle" fill="#FFFFFF">≈ 1,23 mn km²</text>
+<text x="460" y="276" font-weight="700">500 km</text></g>
+<g stroke="#12426B" stroke-width="2"><line x1="460" y1="288" x2="542.5" y2="288"/><line x1="460" y1="282" x2="460" y2="294"/><line x1="542.5" y1="282" x2="542.5" y2="294"/></g>
+</svg>

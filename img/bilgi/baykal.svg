@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="baykal-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDEBD0"/><stop offset="1" stop-color="#F3F6E6"/></linearGradient><linearGradient id="baykal-g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8EC7EA"/><stop offset="1" stop-color="#0E2F66"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="url(#baykal-g1)"/>
+<g fill="#6E8A64"><path d="M40 110 l24 -44 24 44z M72 120 l20 -34 20 34z M330 130 l26 -48 26 48z M366 138 l20 -34 20 34z M40 320 l24 -40 24 40z"/></g>
+<g fill="#FFFFFF" opacity=".9"><path d="M64 66 l8 15 -8 -3 -8 3z M356 82 l9 16 -9 -3 -9 3z"/></g>
+<path d="M180 318 C40 260 90 110 268 56 C170 140 150 240 180 318Z" fill="#3F8FBF"/>
+<path d="M180 318 C40 260 90 110 268 56 C170 140 150 240 180 318Z" fill="none" stroke="#2D6DB3" stroke-width="2.5"/>
+<rect x="476" y="70" width="40" height="246.3" rx="4" fill="url(#baykal-g2)"/>
+<line x1="470" y1="70" x2="522" y2="70" stroke="#3B3E66" stroke-width="1.5"/><line x1="470" y1="316.3" x2="522" y2="316.3" stroke="#3B3E66" stroke-width="2"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#2B3A55"><text x="496" y="58" text-anchor="middle">0 m</text><text x="464" y="312" text-anchor="end" font-weight="700">≈ 1.642 m</text>
+<text x="300" y="214" font-weight="700">Baykal Gölü</text><text x="300" y="232">≈ %20 tatlı su</text></g>
+</svg>

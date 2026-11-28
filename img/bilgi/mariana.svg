@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<defs>
+<linearGradient id="o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5FA8E0"/><stop offset=".35" stop-color="#2D6DB3"/><stop offset="1" stop-color="#0E2350"/></linearGradient>
+</defs>
+<rect width="640" height="360" fill="#CFE6F7"/>
+<rect y="40" width="640" height="320" fill="url(#o)"/>
+<path d="M0 40 Q20 34 40 40 T80 40 T120 40 T160 40 T200 40 T240 40 T280 40 T320 40 T360 40 T400 40 T440 40 T480 40 T520 40 T560 40 T600 40 T640 40" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8"/>
+<path d="M0 160 L150 170 L250 190 L330 344 L360 344 L420 200 L520 176 L640 168 L640 360 L0 360Z" fill="#3A3150"/>
+<path d="M0 160 L150 170 L250 190 L330 344 L360 344 L420 200 L520 176 L640 168" fill="none" stroke="#7A6C9C" stroke-width="2"/>
+<path d="M300 344 L345 108 L390 344Z" fill="#E8EEF8" opacity=".28"/>
+<path d="M330 145 L345 108 L360 145 L352 140 L345 150 L338 140Z" fill="#FFFFFF" opacity=".45"/>
+<g font-family="system-ui,sans-serif" font-size="12" fill="#FFFFFF">
+<line x1="560" y1="40" x2="560" y2="344" stroke="#FFFFFF" stroke-width="1.5" opacity=".7"/>
+<line x1="554" y1="344" x2="566" y2="344" stroke="#FFFFFF" stroke-width="1.5"/>
+<line x1="554" y1="108" x2="566" y2="108" stroke="#FFFFFF" stroke-width="1.5" opacity=".7"/>
+<text x="572" y="60" opacity=".85">0 m</text>
+<text x="500" y="340" font-weight="700" text-anchor="end">≈ 10.935 m</text>
+<text x="572" y="112" opacity=".9">≈ 2 km</text>
+<line x1="366" y1="344" x2="550" y2="344" stroke="#FFFFFF" stroke-dasharray="3 4" opacity=".5"/>
+<line x1="352" y1="108" x2="550" y2="108" stroke="#FFFFFF" stroke-dasharray="3 4" opacity=".5"/>
+<text x="345" y="240" text-anchor="middle" font-size="11" opacity=".9">Everest</text>
+<text x="345" y="254" text-anchor="middle" font-size="11" opacity=".9">sığardı</text>
+</g>
+<g fill="#FFFFFF" opacity=".5"><circle cx="90" cy="80" r="3"/><circle cx="98" cy="68" r="2"/><circle cx="470" cy="96" r="2.5"/></g>
+</svg>
