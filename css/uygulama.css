@@ -1831,3 +1831,14 @@ html,body{overscroll-behavior-y:none}
   /* tablet/masaüstü Çalışma: alt kartlar boşluk bırakmasın — rehber ve koç kartı tam genişlik, küçük bağlantılar yan yana */
   body:not(.lv-odak) #pg-sayac>.pm-rehber,body:not(.lv-odak) #pg-sayac>.pm-koc{grid-column:1/-1!important}
 }
+
+/* Koç kartı kapalıyken sade tek satır (rehber satırıyla aynı görünüm) */
+.koc-ac{display:none}
+#pm-koc.kapali{background:#F4F6FF;border:1px solid #DCE2FF;border-radius:14px;padding:0;box-shadow:none;color:#1E3BD6}
+#pm-koc.kapali::before{display:none}
+#pm-koc.kapali>*:not(.koc-ac){display:none!important}
+#pm-koc.kapali .koc-ac{display:flex;align-items:center;gap:8px;width:100%;background:none;border:0;padding:14px 16px;font:inherit;font-weight:700;font-size:16px;color:#1E3BD6;cursor:pointer;text-align:left}
+#pm-koc.kapali .koc-ac i{margin-left:auto;font-style:normal;font-size:20px;line-height:1}
+#pm-koc.kapali .koc-ac .ic{width:20px;height:20px}
+html.mf-gece #pm-koc.kapali{background:#1A2142;border-color:#2F3970}
+html.mf-gece #pm-koc.kapali .koc-ac{color:#9FB2FF}
