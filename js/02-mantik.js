@@ -2,7 +2,7 @@
 
 // ================= YANA KAYDIRARAK SEKME GECISI (yandaki sekme belirerek gelir) =================
 (function(){
-  var SIRA=['sayac','kutuphane','mantik','program'],m=document.getElementById('pm');
+  var SIRA=['sayac','kutuphane','program','mantik'],m=document.getElementById('pm');
   var x0=0,y0=0,dx=0,iz=false,kilit='',son=[],mesgul=false,hedef=null,hEl=null,sEl=null,yon=0;
   var az=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   function simdiki(){var b=document.body.classList;return b.contains('s-program')?'program':b.contains('s-istat')?'istat':b.contains('s-mantik')?'mantik':b.contains('s-kutuphane')?'kutuphane':'sayac';}
@@ -26,7 +26,7 @@
     hEl=sEl=hedef=null;
   }
   function onizleKur(){
-    SIRA[3]=window.LEX_TAKIP?window.LEX_TAKIP():'program';var i=SIRA.indexOf(simdiki()),j=i+yon;sEl=sayfaEl(simdiki());
+    SIRA[2]=window.LEX_TAKIP?window.LEX_TAKIP():'program';var i=SIRA.indexOf(simdiki()),j=i+yon;sEl=sayfaEl(simdiki());
     if(j<0||j>=SIRA.length){hedef=null;return;}
     hedef=SIRA[j];hEl=sayfaEl(hedef);
     if(window.MF_HAZIRLA)window.MF_HAZIRLA(hedef);
