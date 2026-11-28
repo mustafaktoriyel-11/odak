@@ -1815,3 +1815,12 @@ html.mf-gece .bk-cizim img{filter:brightness(.86)}
 
 /* Yanlışlıkla aşağı çekip sayfayı yenilemeyi engelle */
 html,body{overscroll-behavior-y:none}
+
+/* Harita çizgileri ve 2,5B derinlik yakınlaştıkça incelir (--kh, kamDur yazar); çok yakında gölge kopyası çizilmez */
+.iz-ic .iz-taban .hs-kiyi{stroke-width:max(.45px,calc(2.2px*var(--kh,1)))}
+.iz-ic .iz-taban .hs-gol{stroke-width:max(.5px,calc(1.4px*var(--kh,1)))}
+.iz-ic .iz-taban .hs-nehir{stroke-width:max(.45px,calc(1.1px*var(--kh,1)))}
+.iz-ic .iz-taban .hs-golge{stroke-width:calc(16px*var(--kh,1))}
+.iz-ic .iz-taban .hs-g3{transform:translate(calc(4px*var(--kh,1)),calc(9px*var(--kh,1)))}
+.iz-ic .iz-taban .hs-duvar{transform:translateY(calc(5px*var(--kh,1)));stroke-width:calc(2px*var(--kh,1))}
+.iz-ic[data-z="3"] .iz-taban .hs-g3{display:none}

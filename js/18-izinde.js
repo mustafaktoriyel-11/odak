@@ -263,7 +263,7 @@
     // yakınlaştıkça adlar büyümesin: belirdikleri boyutta kalsın (deniz adları 2,2×, dağ/nehir adları 3,6× yakınlıktan sonra küçülerek sabitlenir)
     // işaretler (rozet, şehir noktası, rota, maskot, "i") yakınlaştıkça ekranda yavaş büyür: kd; rozet z≥3,2'de şehrin üstüne oturur: ro
     ic.style.setProperty('--kd',Math.min(1,1.4/Math.pow(z,.85)).toFixed(3));ic.style.setProperty('--ro',Math.max(0,Math.min(1,(3.2-z)/2.2)).toFixed(3));
-    ic.style.setProperty('--k2',Math.min(1,2.2/z).toFixed(3));ic.style.setProperty('--k3',Math.min(1,3.6/z).toFixed(3));
+    ic.style.setProperty('--k2',Math.min(1,2.2/z).toFixed(3));ic.style.setProperty('--kh',Math.min(1,1.5/z).toFixed(3));ic.style.setProperty('--k3',Math.min(1,3.6/z).toFixed(3));
     ic.classList.remove('hareket');
   }
   function kamMerkez(px,py,s){var b=kamSinir();return {s:s,x:b.w/2-px*s,y:b.h*.55-py*s};}
