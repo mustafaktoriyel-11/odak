@@ -1801,3 +1801,8 @@ html.mf-gece .iz-noktalar i.cev{background:#4A5BB0}html.mf-gece .iz-noktalar i.s
 .iz-gezin{display:flex;gap:10px;margin-top:12px}.iz-gezin .mt-btn{flex:1;margin:0}.iz-gezin .mt-btn2{flex:0 0 auto;margin:0;padding-left:18px;padding-right:18px}
 .iz-gezin .mt-btn:disabled{opacity:.45;cursor:not-allowed}
 .iz-gezin .mt-btn2{width:auto!important;flex:0 0 34%!important;min-height:0}.iz-gezin .mt-btn{width:auto!important;flex:1 1 0!important;min-width:0}
+/* Yolculuk haritası: yakınlaştıkça işaretler yavaş büyür (--kd), rozet şehrin üstüne oturur (--ro) */
+.iz-ic .iz-r1{stroke-width:calc(5px*var(--kd,1))}
+.iz-ic .iz-r2{stroke-width:calc(7px*var(--kd,1))}
+.iz-ic .iz-sehir{transform-box:fill-box;transform-origin:center;transform:scale(var(--kd,1))}
+.iz-ic .iz-bag{stroke-width:calc(2px*var(--kd,1));opacity:calc(.7*var(--ro,1))}
