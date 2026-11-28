@@ -787,10 +787,15 @@
     }
     window.MF_HAZIRLA=hazirla;
     function sayfa(s){document.body.classList.toggle('s-kutuphane',s==='kutuphane');var tkb=document.querySelector('#alt-nav button[data-takip]');if(tkb&&(s==='program'||s==='istat')){tkb.dataset.s=s;try{localStorage.setItem('mf-takip',s);}catch(e){}}document.body.classList.toggle('s-program',s==='program');document.body.classList.toggle('s-istat',s==='istat');document.body.classList.toggle('s-mantik',s==='mantik');
-      try{history.replaceState(history.state,'',s==='mantik'?'#mantik':location.pathname+location.search);}catch(e){}hazirla(s);
+      try{history.replaceState(history.state,'',s==='mantik'?'#mantik':location.pathname+location.search);}catch(e){}hazirla(s);try{sessionStorage.setItem('mf-sekme',s);}catch(e){}
       [].forEach.call(document.querySelectorAll('#alt-nav button'),function(b){var on=b.dataset.s===s;b.classList.toggle('on',on);if(on)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
       if(s==='program'){secGun=bugunI();ciz2();}window.scrollTo(0,0);}
     [].forEach.call(document.querySelectorAll('#alt-nav button'),function(b){b.addEventListener('click',function(){sayfa(b.dataset.s);});});
+    // Sayfa yenilenirse (ör. yanlışlıkla aşağı çekince) son açık sekmeye dön; uygulama kapatılıp açılınca Çalışma'dan başlar
+    (function(){var son=null;try{son=sessionStorage.getItem('mf-sekme');}catch(e){}
+      if(['kutuphane','mantik','program','istat'].indexOf(son)<0)return;
+      var git=function(){if(!document.body.classList.contains('s-'+son))sayfa(son);};
+      if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',git);else setTimeout(git,0);})();
     // seans sonunda: bugunku programin ne kadari bitti
     window.MF_PR_GUN=function(){var bi=bugunI();if(!pr.g[bi].length)return null;return gunOzet(bi);};
     window.MF_PR_OZET=function(ders){

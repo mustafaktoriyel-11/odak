@@ -1812,3 +1812,6 @@ html.mf-gece .iz-noktalar i.cev{background:#4A5BB0}html.mf-gece .iz-noktalar i.s
 .bk-foto figcaption span{display:block;font-size:10.5px;color:#8A93BF}.bk-foto a{color:inherit}
 html.mf-gece .bk-foto img{background:#232B52}html.mf-gece .bk-foto figcaption{color:#AEB6D3}html.mf-gece .bk-foto figcaption span{color:#7E88B5}
 html.mf-gece .bk-cizim img{filter:brightness(.86)}
+
+/* Yanlışlıkla aşağı çekip sayfayı yenilemeyi engelle */
+html,body{overscroll-behavior-y:none}
