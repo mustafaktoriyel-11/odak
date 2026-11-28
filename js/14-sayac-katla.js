@@ -69,7 +69,10 @@
     maskotsuz=!M;document.body.style.setProperty('--omS',(M||64)+'px');
     var kd=window.MF_KD_ORAN&&window.MF_KD_ORAN();
     if(kd){ // yeni kadranlar kare değil: ölçek, en-boy oranına (+ etiket) göre ekrana sığacak şekilde; animasyon yine transform (scale) ile akıcı
-      var Wm=Math.min((saat.parentNode&&saat.parentNode.clientWidth)||avW,gen?760:560),Bw=saat.offsetWidth||300,Bh=Bw*kd.ra+kd.e;
+      var pw=(saat.parentNode&&saat.parentNode.clientWidth)||avW;
+      // geniş ekranda sütunlar akarak birleşir (animasyon sürerken kart henüz dar): son genişliği kartın kenar payından hesapla
+      if(gen){var kt=sy.querySelector('section.kart');if(kt&&saat.parentNode){var pay=kt.offsetWidth-saat.parentNode.clientWidth;pw=Math.max(pw,sy.clientWidth-pay);}}
+      var Wm=Math.min(pw,gen?760:560),Bw=saat.offsetWidth||300,Bh=Bw*kd.ra+kd.e;
       maskotsuz=true;M=0;document.body.style.setProperty('--omS','64px');
       var Sk=Math.max(1,Math.min(Wm/Bw,(H-EK-12)/Bh));
       saat.style.setProperty('--lvS',Sk.toFixed(4));saat.style.setProperty('--lvI',(1/Sk).toFixed(4));saat.style.setProperty('--lvM',(Bh*(Sk-1)/2).toFixed(1)+'px');
