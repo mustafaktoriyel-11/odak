@@ -82,6 +82,13 @@
     saat.style.setProperty('--lvS',S.toFixed(4));saat.style.setProperty('--lvI',(1/S).toFixed(4));saat.style.setProperty('--lvM',((W-B)/2).toFixed(1)+'px');
   }
   var acik=null,maskotsuz=false,OE_EK=115;
+  var ortalaT=null;
+  function ortala(){if(!acik||innerWidth<760)return;var dg=sy.querySelector('.pm-dugmeler');if(!dg)return;
+    var nav=$('alt-nav'),nr=nav?nav.getBoundingClientRect():null,navH=(nr&&nr.left<5&&nr.width>=innerWidth*.9)?Math.max(0,innerHeight-nr.top):0;
+    var ust=saat.getBoundingClientRect().top,alt=dg.getBoundingClientRect().bottom,blok=alt-ust,H=innerHeight-navH;
+    var simdi=parseFloat(getComputedStyle(document.body).getPropertyValue('--oeUst'))||14,hedef=Math.max(8,Math.round(simdi+((H-blok)/2-ust)));
+    if(Math.abs(hedef-simdi)>4)document.body.style.setProperty('--oeUst',hedef+'px');}
+  addEventListener('resize',function(){if(acik){clearTimeout(ortalaT);ortalaT=setTimeout(ortala,300);}});
   function sayacSayfasi(){return !/(^|\s)s-(program|istat|mantik|mevzuat|kutuphane)(\s|$)/.test(document.body.className);}
   function guncelle(aninda){
     var on=/Duraklat/.test(bb.textContent)&&sayacSayfasi();
@@ -90,6 +97,8 @@
     if(on)olc();
     hedefler().forEach(function(e){katla(e,on,aninda||ilk);});
     if(on)maskot();katla(mk,!on||maskotsuz,aninda||ilk);
+    // geniş ekranda: geçiş bitince görünen bloğun (kadran → düğmeler) gerçek yüksekliğini ölçüp dikeyde tam ortala
+    if(on){clearTimeout(ortalaT);ortalaT=setTimeout(ortala,(aninda||ilk)?60:sure()+120);}
     if(on&&!ilk&&!aninda)olcum();
     if(on&&!ilk&&!aninda)window.scrollTo({top:0,behavior:az.matches?'auto':'smooth'});
   }

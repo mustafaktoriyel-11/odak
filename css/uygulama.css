@@ -1789,7 +1789,8 @@ html.mf-gece .bk-kara{fill:#4A4030}html.mf-gece .bk-kara2{fill:#55492F}html.mf-g
   /* odak ekranı: tek sütun, sayaç ortada */
   /* iki sütun korunur, sağ sütun 0'a akarak daralır (grid-template-columns animasyonu): sayaç zıplamadan ortaya kayar */
   body.lv-odak #pg-sayac{grid-template-columns:minmax(0,1fr) minmax(0,0fr)!important;column-gap:0!important}
-  body.lv-odak #pg-sayac>*:not(.tb-yan){grid-column:1!important}
+  body.lv-odak #pg-sayac>*:not(.tb-yan):not(.tb-alt):not(#tb-hafta){grid-column:1!important}
+  body.lv-odak #pg-sayac>.tb-alt,body.lv-odak #pg-sayac>#tb-hafta{grid-column:1/-1!important}
   body.lv-odak #pg-sayac>.bl-serit,body.lv-odak #pg-sayac>#km-kutu,body.lv-odak #pg-sayac>.yukle,body.lv-odak #pg-sayac>.imza,body.lv-odak #pg-sayac>.tb-masa{grid-column:1/-1!important}
   body.lv-odak #pg-sayac>.tb-yan{grid-column:2!important;min-width:0;overflow:hidden}
 }
@@ -1852,13 +1853,13 @@ html.mf-hafif{--oeT:.3s}
 
 /* ===== Tablet Çalışma panosu: ekrana tam oturur (sayaç | bugün · yolculuk · hafta · koç), altta kutucuk satırı ===== */
 @media (min-width:760px){
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;min-height:var(--tbH,auto);align-items:stretch;align-content:stretch}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>section.kart:first-of-type{grid-row:2;grid-column:1;align-self:stretch}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan{grid-row:2;grid-column:2;align-self:stretch;display:flex;flex-direction:column;gap:16px;min-height:0}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#tb-hafta{flex:1 1 auto;display:flex;flex-direction:column;min-height:150px}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#tb-hafta .tb-cubuk{flex:1 1 auto;height:auto;min-height:90px}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-alt{grid-row:3;grid-column:1/-1}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.bl-serit,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>#km-kutu,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-masa,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.sn-kart,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.sn-ince,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.yukle{grid-row:1}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;min-height:var(--tbH,auto);align-items:stretch;align-content:stretch}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>section.kart:first-of-type{grid-row:2;grid-column:1;align-self:stretch}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-yan{grid-row:2;grid-column:2;align-self:stretch;display:flex;flex-direction:column;gap:16px;min-height:0}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-yan>#tb-hafta{flex:1 1 auto;display:flex;flex-direction:column;min-height:150px}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-yan>#tb-hafta .tb-cubuk{flex:1 1 auto;height:auto;min-height:90px}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-alt{grid-row:3;grid-column:1/-1}
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.bl-serit,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>#km-kutu,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-masa,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.sn-kart,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.sn-ince,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.yukle{grid-row:1}
   .tb-alt{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:start}
   .tb-alt>.alt-link{display:contents}
   .tb-alt>*{margin:0!important}
@@ -1873,16 +1874,11 @@ html.mf-hafif{--oeT:.3s}
   html.mf-gece .tb-yol-ust{color:#9FB2FF}html.mf-gece .tb-yol p{color:#AEB6D3}html.mf-gece .tb-yol-git.ikincil{background:#232B52;color:#B7C5FF}
 }
 @media (max-width:759px){.tb-yol{display:none}}
-@media (min-width:760px) and (orientation:landscape){
-  /* yatayda yükseklik kısıtlı: kutucuklar sağ sütunun altına (2×2), sayaç kartı tam boy */
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>section.kart:first-of-type{grid-row:2/4}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-alt{grid-row:3;grid-column:2;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:760px){html.tb-yatay /* yatayda yükseklik kısıtlı: kutucuklar sağ sütunun altına (2×2),html.tb-yatay sayaç kartı tam boy */
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>section.kart:first-of-type{grid-row:2/4}html.tb-yatay body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-alt{grid-row:3;grid-column:2;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 }
-@media (min-width:760px) and (orientation:landscape){
-  /* sağ sütun: Bugün | Yolculuk yan yana, altında haftalık grafik ve koç satırı */
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;gap:16px}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#tb-hafta,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#pm-koc,body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#lex-yakin{grid-column:1/-1}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan>#tb-hafta{min-height:130px}
+@media (min-width:760px){html.tb-yatay /* sağ sütun: Bugün | Yolculuk yan yana,html.tb-yatay altında haftalık grafik ve koç satırı */
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-yan{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;gap:16px}html.tb-yatay body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-yan>#tb-hafta,html.tb-yatay body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-yan>#pm-koc,html.tb-yatay body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-yan>#lex-yakin{grid-column:1/-1}html.tb-yatay body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-yan>#tb-hafta{min-height:130px}
 }
 @media (min-width:760px){
   .tb-yol-harita{position:relative;height:96px;border-radius:12px;overflow:hidden;background:#BCD3E4;flex:none}
@@ -1896,32 +1892,26 @@ html.mf-hafif{--oeT:.3s}
   @media (prefers-reduced-motion:reduce){.tb-iz-hale{animation:none}}
   html.mf-gece .tb-yol-harita{background:#0C1533}html.mf-gece .tb-yol-harita img{filter:brightness(.55) saturate(.8)}
 }
-@media (min-width:760px) and (orientation:landscape){.tb-yol-harita{height:54px}.tb-yol{gap:6px}}
+@media (min-width:760px){html.tb-yatay .tb-yol-harita{height:54px}html.tb-yatay .tb-yol{gap:6px}}
 
 /* Sıkı moddan çıkınca: üzgün aslan (biraz soluk, başı eğik, hafifçe iç çeker) */
 #pm-curu .curu-aslan{width:112px;height:112px;filter:grayscale(.35) saturate(.8);transform:rotate(-8deg);transform-origin:50% 80%;animation:curuIc 2.6s ease-in-out infinite}
 @keyframes curuIc{0%,100%{transform:rotate(-8deg) translateY(0)}50%{transform:rotate(-10deg) translateY(3px)}}
 @media (prefers-reduced-motion:reduce){#pm-curu .curu-aslan{animation:none}}
 .st-elle{border:0;background:none;padding:0;font:inherit;font-weight:700;color:#1E3BD6;text-decoration:underline;cursor:pointer}html.mf-gece .st-elle{color:#9FB2FF}
-@media (min-width:760px) and (orientation:portrait){
-  /* dikey: üstte sayaç | (bugün · yolculuk · koç), ortada tam genişlik haftalık grafik (boşluğu o doldurur), altta kutucuklar */
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac{grid-template-rows:auto auto minmax(0,1fr) auto}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>section.kart:first-of-type{grid-row:2}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-yan{grid-row:2}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>#tb-hafta{grid-row:3;grid-column:1/-1;display:flex;flex-direction:column;min-height:180px}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>#tb-hafta .tb-cubuk{flex:1 1 auto;height:auto;min-height:100px}
-  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane):not(.lv-odak) #pg-sayac>.tb-alt{grid-row:4}
-  .tb-yan>#tb-yol{flex:1 1 auto}
-  .tb-yan>#tb-yol .tb-yol-harita{flex:1 1 auto;min-height:96px;height:auto}
+@media (min-width:760px){html:not(.tb-yatay) /* dikey: üstte sayaç | (bugün · yolculuk · koç),html:not(.tb-yatay) ortada tam genişlik haftalık grafik (boşluğu o doldurur),html:not(.tb-yatay) altta kutucuklar */
+  body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac{grid-template-rows:auto auto minmax(0,1fr) auto}html:not(.tb-yatay) body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>section.kart:first-of-type{grid-row:2}html:not(.tb-yatay) body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-yan{grid-row:2}html:not(.tb-yatay) body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>#tb-hafta{grid-row:3;grid-column:1/-1;display:flex;flex-direction:column;min-height:180px}html:not(.tb-yatay) body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>#tb-hafta .tb-cubuk{flex:1 1 auto;height:auto;min-height:100px}html:not(.tb-yatay) body:not(.s-program):not(.s-istat):not(.s-mantik):not(.s-mevzuat):not(.s-kutuphane) #pg-sayac>.tb-alt{grid-row:4}html:not(.tb-yatay) .tb-yan>#tb-yol{flex:1 1 auto}html:not(.tb-yatay) .tb-yan>#tb-yol .tb-yol-harita{flex:1 1 auto;min-height:96px;height:auto}
 }
 @media (min-width:760px){
   /* haftalık grafik kartın tüm yüksekliğini kullanır, çubuklar orantılı uzar */
   #tb-hafta .tb-hf{flex:1 1 auto;display:flex;flex-direction:column;min-height:0}
   #tb-hafta .tb-cubuk>div{height:100%}
 }
-@media (min-width:760px) and (orientation:landscape){
-  /* çok ders çalışılan günde "Bugün" kartı uzayıp ekranı taşırmasın: kendi içinde kayar */
-  .tb-yan>#tb-bugun{max-height:190px;overflow-y:auto;overscroll-behavior:contain}
-  .tb-yan>#tb-hafta{min-height:110px!important}
+@media (min-width:760px){html.tb-yatay /* çok ders çalışılan günde "Bugün" kartı uzayıp ekranı taşırmasın: kendi içinde kayar */
+  .tb-yan>#tb-bugun{max-height:190px;overflow-y:auto;overscroll-behavior:contain}html.tb-yatay .tb-yan>#tb-hafta{min-height:110px!important}
 }
-@media (min-width:760px) and (orientation:portrait){.tb-yan>#tb-bugun{max-height:300px;overflow-y:auto;overscroll-behavior:contain}}
+@media (min-width:760px){html:not(.tb-yatay) .tb-yan>#tb-bugun{max-height:300px;overflow-y:auto;overscroll-behavior:contain}}
+@media (min-width:760px){
+  /* odak geçişinde pano yapısı korunur (zıplama olmasın); yalnız sabit yükseklik bırakılır */
+  body.lv-odak #pg-sayac{min-height:0!important}
+}

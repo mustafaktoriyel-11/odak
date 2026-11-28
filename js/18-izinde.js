@@ -624,6 +624,9 @@
   rozet();
   if(location.hash==='#mantik'&&window.MF_SAYFA)window.MF_SAYFA('mantik');
   // uygulama açılınca boşta: Yolculuk verisini önceden yükle (sekme anında açılsın)
-  (function onYukle(){var f=function(){temelVeri().then(function(){var x=sinif();mantikHavuz();if(x)return sorular(x);})['catch'](function(){});};
+  (function onYukle(){var f=function(){temelVeri().then(function(){return bilgiYukle();}).then(function(){var x=sinif();mantikHavuz();
+      // sekme ilk açıldığında boş görünüp sonra dolmasın: giriş ekranını arka planda bir kez hazırla
+      if(x&&!aktif&&!document.body.classList.contains('s-mantik')&&!$('mt-giris').innerHTML)giris();
+      if(x)return sorular(x);})['catch'](function(){});};
     if(window.requestIdleCallback)requestIdleCallback(f,{timeout:4000});else setTimeout(f,2500);})();
 })();

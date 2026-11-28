@@ -39,7 +39,7 @@
     sv.setAttribute('viewBox','0 0 '+W+' '+H);
     if(o.nx!=null){var b=p(o.nx,o.ny);h+='<line x1="'+a[0]+'" y1="'+a[1]+'" x2="'+b[0]+'" y2="'+b[1]+'" class="tb-iz-cizgi"/><circle cx="'+b[0]+'" cy="'+b[1]+'" r="5" class="tb-iz-sonraki"/>';}
     h+='<circle cx="'+a[0]+'" cy="'+a[1]+'" r="11" class="tb-iz-hale"/><circle cx="'+a[0]+'" cy="'+a[1]+'" r="6" class="tb-iz-burada"/>';sv.innerHTML=h;}
-  addEventListener('resize',function(){yolYaz();});
+  var yolW=innerWidth;addEventListener('resize',function(){if(innerWidth!==yolW){yolW=innerWidth;yolYaz();}});
   yolYaz();setTimeout(yolYaz,1500);setTimeout(yolYaz,4000);
   document.addEventListener('visibilitychange',function(){if(!document.hidden)yolYaz();});
   new MutationObserver(function(){if(!/(^|\s)s-/.test(document.body.className))yolYaz();}).observe(document.body,{attributes:true,attributeFilter:['class']});
@@ -47,7 +47,7 @@
     var navH=(nr&&nr.left<5&&nr.width>=innerWidth*.9)?Math.max(0,innerHeight-nr.top):0;
     var ust=sayfa.getBoundingClientRect().top+window.scrollY;
     sayfa.style.setProperty('--tbH',Math.max(560,Math.round(innerHeight-ust-navH-32))+'px');}
-  panoH();addEventListener('resize',panoH);setTimeout(panoH,600);
+  var panoW=0;panoH();panoW=innerWidth;addEventListener('resize',function(){if(innerWidth!==panoW){panoW=innerWidth;panoH();}});setTimeout(panoH,600);
   // alt kutucuklar (odak modu rehberi, simülatör/konular, odak turu nedir, imza) tablette tek satırda
   var alt=document.createElement('div');alt.className='tb-alt';
   var altlar=[sayfa.querySelector(':scope>details.pm-rehber'),sayfa.querySelector(':scope>.alt-link'),sayfa.querySelector(':scope>details.kart'),sayfa.querySelector(':scope>.imza')].filter(Boolean);
@@ -56,10 +56,15 @@
   function altYerlestir(){if(mq3.matches){if(!alt.parentNode)sayfa.appendChild(alt);altlar.forEach(function(e){if(e.parentNode!==alt)alt.appendChild(e);});}
     else{altlar.forEach(function(e,i){if(e.parentNode!==sayfa)altYer[i].parentNode.insertBefore(e,altYer[i].nextSibling);});if(alt.parentNode)alt.remove();}panoH();}
   // dikey tablette "Bu hafta" tam genişlik ortada (sayacın altında boşluk kalmasın); yatayda sağ sütunda
-  var mqD=window.matchMedia('(min-width:760px) and (orientation:portrait)');
+  // yön: ekranın kendi yönünden (klavye açılınca yükseklik küçülse de düzen değişmesin)
+  var sonW=-1;
+  function yatayMi(){var o=screen.orientation&&screen.orientation.type;if(o)return /landscape/.test(o);var sw=screen.width,sh=screen.height;return sw>sh;}
+  function yonGuncelle(){if(innerWidth===sonW)return false;sonW=innerWidth;var y=yatayMi();document.documentElement.classList.toggle('tb-yatay',y);return true;}
+  yonGuncelle();
+  var mqD={get matches(){return innerWidth>=760&&!document.documentElement.classList.contains('tb-yatay');}};
   function haftaYerlestir(){if(mqD.matches){if(hk.parentNode!==sayfa)sayfa.insertBefore(hk,yan.nextSibling);}else if(hk.parentNode!==yan){var kcx=document.getElementById('pm-koc');yan.insertBefore(hk,kcx&&kcx.parentNode===yan?kcx:null);}
     setTimeout(yolYaz,50);}
-  haftaYerlestir();if(mqD.addEventListener)mqD.addEventListener('change',haftaYerlestir);else if(mqD.addListener)mqD.addListener(haftaYerlestir);
+  haftaYerlestir();addEventListener('resize',function(){if(yonGuncelle()){haftaYerlestir();panoH();}});if(screen.orientation&&screen.orientation.addEventListener)screen.orientation.addEventListener('change',function(){sonW=-1;setTimeout(function(){yonGuncelle();haftaYerlestir();panoH();},120);});
   altYerlestir();if(mq3.addEventListener)mq3.addEventListener('change',altYerlestir);else if(mq3.addListener)mq3.addListener(altYerlestir);
   var dcx=document.getElementById('pm-ders-c');
   if(dcx){var tb=document.createElement('button');tb.type='button';tb.className='tb-tumu';

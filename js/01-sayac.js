@@ -793,6 +793,8 @@
       if(s==='kutuphane'&&window.LEX_KUT)window.LEX_KUT();
     }
     window.MF_HAZIRLA=hazirla;
+    // sekmeler ilk açıldığında içerik sonradan yüklenip zıplamasın: boşta bir kez önceden hazırla
+    (function(){var f=function(){try{hazirla('kutuphane');hazirla('program');}catch(e){}};if(window.requestIdleCallback)requestIdleCallback(f,{timeout:3000});else setTimeout(f,1500);})();
     function sayfa(s){document.body.classList.toggle('s-kutuphane',s==='kutuphane');var tkb=document.querySelector('#alt-nav button[data-takip]');if(tkb&&(s==='program'||s==='istat')){tkb.dataset.s=s;try{localStorage.setItem('mf-takip',s);}catch(e){}}document.body.classList.toggle('s-program',s==='program');document.body.classList.toggle('s-istat',s==='istat');document.body.classList.toggle('s-mantik',s==='mantik');
       try{history.replaceState(history.state,'',s==='mantik'?'#mantik':location.pathname+location.search);}catch(e){}hazirla(s);try{sessionStorage.setItem('mf-sekme',s);}catch(e){}
       [].forEach.call(document.querySelectorAll('#alt-nav button'),function(b){var on=b.dataset.s===s;b.classList.toggle('on',on);if(on)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
