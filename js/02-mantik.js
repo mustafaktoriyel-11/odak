@@ -391,7 +391,7 @@
     function onayli(v){try{var o=JSON.parse(localStorage.getItem('mf-koc-onay')||'null');return !!(o&&o.kod===v);}catch(e){return false;}}
     var pen=document.getElementById('koc-onay'),o1=document.getElementById('onay-1'),o2=document.getElementById('onay-2'),ot=document.getElementById('onay-tamam'),bekleyen='';
     // Kod yokken kart tek satır ("Koç kodun var mı?"); dokununca açılır. Kod varsa aktif kart görünür.
-    var kocAcik=false;document.getElementById('koc-ac').addEventListener('click',function(){kocAcik=true;arayuz();setTimeout(function(){ki.focus();},60);});
+    var kocAcik=false;document.getElementById('koc-ac').addEventListener('click',function(){kocAcik=true;arayuz();}); // klavye kendiliğinden açılmasın: öğrenci önce açıklamayı okur, isterse kutuya dokunur
     document.getElementById('koc-kapat').addEventListener('click',function(){kocAcik=false;arayuz();});
     function arayuz(){var kod=kayitliKod();document.getElementById('pm-koc').classList.toggle('kapali',!kod&&!kocAcik);document.getElementById('koc-kapat').hidden=!!kod||!kocAcik;document.getElementById('koc-ac').setAttribute('aria-expanded',String(!!(kod||kocAcik)));document.getElementById('koc-giris').hidden=!!kod;document.getElementById('pm-koc').classList.toggle('kucuk',!!kod);document.getElementById('koc-aktif').hidden=!kod;document.getElementById('koc-kod-goster').textContent=kod;if(!kod)ki.value='';
       var wa=document.getElementById('pm-wa'),wn=document.getElementById('pm-wa-not');if(wa)wa.style.display=kod?'none':'';if(wn)wn.style.display=kod?'none':'';}
