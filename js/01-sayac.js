@@ -28,8 +28,8 @@
   function calismaMi(m){return m==='odak'||m==='deneme';}
   // mola odak suresine gore otomatik: 25 dk -> 5/15, 40-50 dk -> 10/30
   // ozel sure: 5-720 dk (12 saat); mola: 40 dk altinda 5/15, 60 dk'ya kadar 10/30, daha uzunsa 15/30
-  function odakDk(){var v=$('pm-odak').value;if(v==='serbest')return 720;if(v==='ozel'){var x=Math.round(+$('pm-ozel').value);return Math.max(5,Math.min(720,x||25));}return +v||25;}
-  function molaDk(o){return o<40?5:(o<=60?10:15);}
+  function odakDk(){var v=$('pm-odak').value;if(v==='serbest')return 720;if(v==='ozel'){var x=Math.round(+$('pm-ozel').value);return Math.max(1,Math.min(720,x||25));}return +v||25;} // TEST: en az 1 dk (yayından önce 5'e dön)
+  function molaDk(o){return o<5?1:(o<40?5:(o<=60?10:15));} // TEST: 5 dk altı odakta 1 dk mola
   function sure(m){var o=odakDk(),mo=molaDk(o);if(m==='deneme'){var sv=SINAV[sinavKod()];if(sv.oturum){var f=(d&&d.faz)||1;return (f==='ara'?sv.ara:sv.oturum[f-1])*60000;}return sv.dk*60000;}return (m==='odak'?o:m==='kisa'?mo:Math.min(mo*3,30))*60000;}
   if(!d){d={mod:'odak',toplam:sure('odak'),bitis:null,kalan:sure('odak'),calisiyor:false,tur:0,ders:'',basla:null};}
   function kaydet(){yaz(DURUM_K,d);}
