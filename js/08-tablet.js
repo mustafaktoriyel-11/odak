@@ -93,7 +93,7 @@
     if(L.length){
       o+='<div class="tb-liste">'+L.map(function(a){return '<div class="tb-ders"><b>'+esc(a)+'</b><span>'+sure(d[a])+'</span><em><i style="width:'+Math.max(4,Math.round(d[a]/top*100))+'%"></i></em></div>';}).join('')+'</div>';
       o+='<div class="tb-toplam"><span>Toplam</span><b>'+sure(top)+'</b></div>';
-    }else o+='<p class="tb-bos">Bugün henüz kayıt yok. Sayacı başlat ya da sayaçsız çalıştıysan aşağıdan ekle.</p>';
+    }else o+='<p class="tb-bos">Bugün henüz kayıt yok. Sayacı başlat, çalışmaların burada birikir.</p>';
     if(hedef>0){var y=Math.min(100,Math.round(top/hedef*100));o+='<div class="tb-hedef" title="Bugünkü hedef"><i style="width:'+y+'%"></i></div><small class="tb-hy">Bugünkü hedef '+sure(hedef)+' · %'+y+' tamam</small>';}
     if(plan.length){
       var kalan=plan.filter(function(x){return !d[x.ders]||d[x.ders]<(+x.dk||0);});
@@ -104,7 +104,7 @@
     o+='<div class="tb-hf"><b>Son 7 gün</b><div class="tb-cubuk">'+G7.map(function(x){return '<div'+(x.bu?' class="bu"':'')+'><em>'+(x.v?Math.round(x.v):'')+'</em><i style="height:'+Math.max(3,Math.round(x.v/mx*84))+'px"></i><small>'+x.a+'</small></div>';}).join('')+'</div></div>';
     var hi=o.indexOf('<div class="tb-hf">');
     hk.innerHTML=hi>=0?'<h3>Bu hafta<small>'+sure(hafta)+'</small></h3>'+o.slice(hi).replace('<b>Son 7 gün</b>',''):'';
-    k.innerHTML=(hi>=0?o.slice(0,hi):o)+'<button type="button" class="tb-elle">＋ Unuttuğun çalışmayı ekle</button>';k.classList.toggle('bos',!L.length);
+    k.innerHTML=(hi>=0?o.slice(0,hi):o);k.classList.toggle('bos',!L.length);
   }
   k.addEventListener('click',function(e){if(e.target.closest('.tb-elle')&&window.MF_ELLE_AC)window.MF_ELLE_AC();});
   window.MF_BUGUN_CIZ=ciz;

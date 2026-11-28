@@ -1902,3 +1902,4 @@ html.mf-hafif{--oeT:.3s}
 #pm-curu .curu-aslan{width:112px;height:112px;filter:grayscale(.35) saturate(.8);transform:rotate(-8deg);transform-origin:50% 80%;animation:curuIc 2.6s ease-in-out infinite}
 @keyframes curuIc{0%,100%{transform:rotate(-8deg) translateY(0)}50%{transform:rotate(-10deg) translateY(3px)}}
 @media (prefers-reduced-motion:reduce){#pm-curu .curu-aslan{animation:none}}
+.st-elle{border:0;background:none;padding:0;font:inherit;font-weight:700;color:#1E3BD6;text-decoration:underline;cursor:pointer}html.mf-gece .st-elle{color:#9FB2FF}

@@ -36,4 +36,6 @@
     if(window.MF_BUGUN_CIZ)window.MF_BUGUN_CIZ();
   });
   window.MF_ELLE_AC=ac;
+  // giriş noktası: Takip › İstatistik › Çalışma Kayıtların (Çalışma ekranında yok: sayaçla çalışmak esas)
+  var se=$('st-elle');if(se)se.addEventListener('click',ac);
 })();
