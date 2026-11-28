@@ -1827,3 +1827,7 @@ html,body{overscroll-behavior-y:none}
 .iz-ic .iz-taban .hs-g3{transform:translate(calc(4px*var(--kh,1)),calc(9px*var(--kh,1)))}
 .iz-ic .iz-taban .hs-duvar{transform:translateY(calc(5px*var(--kh,1)));stroke-width:calc(2px*var(--kh,1))}
 .iz-ic[data-z="3"] .iz-taban .hs-g3{display:none}
+@media (min-width:760px){
+  /* tablet/masaüstü Çalışma: alt kartlar boşluk bırakmasın — rehber ve koç kartı tam genişlik, küçük bağlantılar yan yana */
+  body:not(.lv-odak) #pg-sayac>.pm-rehber,body:not(.lv-odak) #pg-sayac>.pm-koc{grid-column:1/-1!important}
+}
