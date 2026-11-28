@@ -133,7 +133,7 @@
   function cizDj(k){
     var dur=!S.calisiyor&&k!==S.toplam&&(S.serbest||k>0),son5=!S.serbest&&S.mod!=='kisa'&&S.mod!=='uzun'&&S.toplam>=900000&&k>0&&k<=300000,od=odakMi();
     $('kd-z').innerHTML=zamanSvg(k,80,110,son5?'var(--kd-v)':null,lr(206,282));
-    $('kd-z').style.opacity=dur?.42:1;
+    $('kd-z').style.opacity=1; // duraklatılınca da canlı (diğer kadranlarla aynı); durum üstteki DURAKLATILDI yazısıyla belli
     var u=S.serbest?'':(S.mod==='deneme'?'DENEME':(S.mola?'MOLA':'ODAK'))+' · '+(djGecen?'GEÇEN ⇄':'KALAN ⇄');if(dur)u='DURAKLATILDI';
     var basladi=S.calisiyor||k!==S.toplam;if(!basladi)u='';
     baAdim(basladi?1:0);var by=30*(1-ba);svg.setAttribute('viewBox','0 '+by.toFixed(1)+' 300 '+(222-50*(1-ba)-(S.mod==='deneme'?66:0)).toFixed(1));$('dj-pnl').setAttribute('transform','translate(0 '+(-20*(1-ba)).toFixed(1)+')');

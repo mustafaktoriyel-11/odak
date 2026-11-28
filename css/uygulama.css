@@ -1787,8 +1787,11 @@ html.mf-gece .bk-kara{fill:#4A4030}html.mf-gece .bk-kara2{fill:#55492F}html.mf-g
 @media (min-width:760px){body:not(.tb-calisiyor) .pm-saat .tb-ders-ad{display:none}}
 @media (min-width:760px){
   /* odak ekranı: tek sütun, sayaç ortada */
-  body.lv-odak #pg-sayac{grid-template-columns:minmax(0,1fr)!important}
-  body.lv-odak #pg-sayac>*{grid-column:1!important}
+  /* iki sütun korunur, sağ sütun 0'a akarak daralır (grid-template-columns animasyonu): sayaç zıplamadan ortaya kayar */
+  body.lv-odak #pg-sayac{grid-template-columns:minmax(0,1fr) minmax(0,0fr)!important;column-gap:0!important}
+  body.lv-odak #pg-sayac>*:not(.tb-yan){grid-column:1!important}
+  body.lv-odak #pg-sayac>.bl-serit,body.lv-odak #pg-sayac>#km-kutu,body.lv-odak #pg-sayac>.yukle,body.lv-odak #pg-sayac>.imza,body.lv-odak #pg-sayac>.tb-masa{grid-column:1/-1!important}
+  body.lv-odak #pg-sayac>.tb-yan{grid-column:2!important;min-width:0;overflow:hidden}
 }
 .iz-yak.iz-muz.acik,html.mf-gece .iz-yak.iz-muz.acik{background:#FF8A1F!important;border-color:#FF8A1F!important;color:#fff!important}
 .iz-muz .ic{width:14px;height:14px;vertical-align:-2px;margin-right:3px}
