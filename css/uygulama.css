@@ -1950,3 +1950,9 @@ html.mf-gece .sim-kart,html.mf-gece .sim-puan{background:#1A2142;border-color:#2
 html.mf-gece .sim-satir{border-color:#2F3970}html.mf-gece .sim-satir input,html.mf-gece .sim-obp input[type=number]{background:#232B52;border-color:#3A4BA0;color:#fff}
 html.mf-gece .sim-pt div{background:#232B52;border-color:#2F3970}html.mf-gece .sim-sekme button{background:#232B52;color:#B7C5FF}html.mf-gece .sim-sekme button.on{background:#1E3BD6;color:#fff}
 html.mf-gece .sim-not{background:#2A2120;color:#C9B9A8}
+
+.sim-sinav{display:flex;background:#EEF1FD;border-radius:14px;padding:4px;margin:0 0 12px}.sim-sinav button{flex:1;border:0;border-radius:11px;padding:9px;background:none;font:inherit;font-weight:800;font-size:15px;color:#5A6699;cursor:pointer}
+.sim-sinav button.on{background:#fff;color:#1E3BD6;box-shadow:0 2px 8px rgba(30,59,214,.15)}
+.sim-pt.sim-pt1{grid-template-columns:1fr}.sim-pt1 b{font-size:28px}
+html.mf-gece .sim-sinav{background:#151C3B}html.mf-gece .sim-sinav button{color:#8F9AC8}html.mf-gece .sim-sinav button.on{background:#232B52;color:#B7C5FF}
+.sim-temizle{white-space:nowrap}
