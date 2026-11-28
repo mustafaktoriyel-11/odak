@@ -16,6 +16,10 @@
       "launchFadeOutDuration": 180,
       "backgroundColor": "#141B3F",
       "showSpinner": false
+    },
+    "LocalNotifications": {
+      "smallIcon": "mf_bildirim",
+      "iconColor": "#FF8A1F"
     }
   }
 }

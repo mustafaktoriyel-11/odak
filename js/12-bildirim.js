@@ -4,17 +4,25 @@ var BL_FB={apiKey:'AIzaSyBT_8z_ffdfhjnsCopEF158ShGI14q7yCk',authDomain:'mf-odak.
 'use strict';
 var KEY='mf-bildirim',FBV='10.14.1';
 // Android uygulamasında (Capacitor) web push (Firebase) çalışmaz: bildirim özelliği uygulamada gizli (yerel bildirimlere geçilene dek)
-var HAZIR=String(BL_FB.apiKey).indexOf('FB_')!==0&&!window.Capacitor;
+// Android uygulamasında (Capacitor): telefonun yerel bildirimleri (@capacitor/local-notifications); hatırlatmalar cihazda planlanır, sunucu gerekmez
+var LN=window.Capacitor&&Capacitor.Plugins&&Capacitor.Plugins.LocalNotifications,YEREL=!!LN,lnIzin='default';
+var HAZIR=(String(BL_FB.apiKey).indexOf('FB_')!==0&&!window.Capacitor)||YEREL;
 function $(id){return document.getElementById(id);}
 function ls(k){try{return localStorage.getItem(k);}catch(e){return null;}}
 function lj(k){try{return JSON.parse(ls(k)||'null');}catch(e){return null;}}
 function anahtar(d){return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
 function oku(){var a=lj(KEY);return (a&&typeof a==='object')?a:{};}
 function yaz(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}}
-function desteklenir(){return ('Notification' in window)&&('serviceWorker' in navigator);}
-function izin(){return ('Notification' in window)?Notification.permission:'denied';}
+function desteklenir(){if(YEREL)return true;return ('Notification' in window)&&('serviceWorker' in navigator);}
+function izin(){if(YEREL)return lnIzin;return ('Notification' in window)?Notification.permission:'denied';}
+function lnDurum(x){var d=x&&x.display;lnIzin=d==='granted'?'granted':(d==='denied'?'denied':'default');return lnIzin;}
+function izinIste(){
+ if(YEREL)return LN.requestPermissions().then(lnDurum,function(){return lnIzin;});
+ try{return Notification.requestPermission();}catch(e){return Promise.resolve(izin());}
+}
 var desteksiz=!desteklenir();
 
+var ozetSon=null;
 // ---------- özet önbelleği (service worker localStorage okuyamaz) ----------
 function ozetYaz(){
  try{
@@ -32,6 +40,7 @@ function ozetYaz(){
   if(pr&&pr.g){var g=pr.g[(now.getDay()+6)%7]||[];for(i=0;i<g.length;i++)hedef+=(+g[i].dk||0);}
   var sn=lj('mf-sinif');
   var oz={gun:anahtar(now),t:Date.now(),bugun:Math.round(dk[0]),dun:Math.round(dk[1]),hedef:Math.round(hedef),h7:Math.round(h7),h7o:Math.round(h7o),aktif:aktif,seri:seri,enCok:enCok,koc:!!ls('mf-koc-kod'),sinif:sn&&sn.sinif?sn.sinif:''};
+  ozetSon=oz;
   if(window.caches&&caches.open){caches.open('mf-ozet').then(function(c){return c.put('./__ozet',new Response(JSON.stringify(oz),{headers:{'Content-Type':'application/json'}}));}).catch(function(){});}
  }catch(e){}
 }
@@ -63,6 +72,7 @@ function gonder(a,token){
  }catch(e){}
 }
 function tokenleGonder(a){
+ if(YEREL){planla();return Promise.resolve();}
  return tokenAl().then(function(t){
   if(t)a.token=t;
   if(!t&&a.acik&&!a.token)return;
@@ -70,6 +80,7 @@ function tokenleGonder(a){
  });
 }
 function gunlukYenile(){
+ if(YEREL){planla();return;}
  if(!HAZIR)return;
  var a=oku();
  if(!a.acik||izin()!=='granted'||a.tgon===anahtar(new Date()))return;
@@ -155,13 +166,13 @@ $('bl-kaydet').addEventListener('click',function(){
  if(!acikDeger){
   a.acik=false;yaz(a);gonder(a,'');satirGuncelle();P.kapatTikla();return;
  }
- if(desteksiz||!('Notification' in window)){uyari('Bu cihaz desteklemiyor');return;}
+ if(desteksiz||(!YEREL&&!('Notification' in window))){uyari('Bu cihaz desteklemiyor');return;}
  var sonra=function(){
   if(izin()!=='granted'){a.acik=false;yaz(a);satirGuncelle();uyari('Telefon ayarlarından izin ver');acikDeger=false;swCiz();return;}
   a.acik=true;yaz(a);satirGuncelle();P.kapatTikla();
   tokenleGonder(a).then(satirGuncelle);
  };
- if(izin()==='default'){Notification.requestPermission().then(sonra,sonra);}else{sonra();}
+ if(izin()==='default'){izinIste().then(sonra,sonra);}else{sonra();}
 });
 
 // ---------- izin sorma ----------
@@ -191,13 +202,13 @@ $('bl-evet').addEventListener('click',function(){
   else if(izin()==='denied'){a.acik=false;yaz(a);satirGuncelle();}
   else{a.tsor=(a.tsor||0)+1;a.tsonsor=Date.now();yaz(a);}
  };
- try{Notification.requestPermission().then(sonra,sonra);}catch(e){sonra();}
+ izinIste().then(sonra,sonra);
 });
 // ---------- koç kodlu öğrenci: izin yoksa her açılışta şerit ----------
 var serit=null;
 function seritGuncelle(){
  var sayfa=$('pg-sayac');if(!sayfa||!HAZIR||desteksiz)return;
- var a=oku(),gerek=!!kocKod()&&!(a.acik&&izin()==='granted');
+ var a=oku(),gerek=!YEREL&&!!kocKod()&&!(a.acik&&izin()==='granted');
  if(!gerek){if(serit)serit.hidden=true;return;}
  if(!serit){serit=document.createElement('button');serit.type='button';serit.className='bl-serit';
   var km=$('km-kutu');sayfa.insertBefore(serit,km?km.nextSibling:sayfa.firstChild);
@@ -205,7 +216,7 @@ function seritGuncelle(){
    if(izin()==='denied'){serit.classList.add('acik');return;}
    if(izin()==='granted'){ayarAc();acikDeger=true;swCiz();return;}
    var sonra=function(){var b=oku();if(izin()==='granted'){b.acik=true;yaz(b);satirGuncelle();tokenleGonder(b).then(satirGuncelle);}seritGuncelle();};
-   try{Notification.requestPermission().then(sonra,sonra);}catch(e){sonra();}
+   izinIste().then(sonra,sonra);
   });}
  serit.hidden=false;serit.classList.toggle('acik',izin()==='denied');
  serit.innerHTML=izin()==='denied'
@@ -215,6 +226,49 @@ function seritGuncelle(){
 var _sg=satirGuncelle;satirGuncelle=function(){_sg();seritGuncelle();};
 document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')seritGuncelle();});
 setTimeout(seritGuncelle,3000);
+// ---------- yerel bildirim planı (Android uygulaması) ----------
+// Önümüzdeki 7 günün iki saati (s1, s2) için bildirim kurulur; uygulama her açılıp kapandığında bugünün durumuna göre yenilenir.
+var LN_ID0=7000,lnKanal=false;
+function planla(){
+ if(!YEREL)return;
+ var ids=[];for(var i=0;i<14;i++)ids.push({id:LN_ID0+i});
+ var a=oku();
+ LN.cancel({notifications:ids}).catch(function(){}).then(function(){
+  if(!a.acik||lnIzin!=='granted')return;
+  var kanal=lnKanal?Promise.resolve():LN.createChannel({id:'hatirlatma',name:'Hatırlatmalar',description:'Günlük çalışma ve Yolculuk hatırlatmaları',importance:3}).then(function(){lnKanal=true;},function(){});
+  return kanal.then(function(){
+   ozetYaz();var oz=ozetSon||{},iz=null;try{iz=window.MF_IZ_OZET&&window.MF_IZ_OZET();}catch(e){}
+   var yol=!!(iz&&iz.sinif),now=new Date(),liste=[];
+   var gun1=[['Bugünün 5 sorusu hazır','Matematiğin izinde yeni bir gün. 10 dakikada çöz, haritada ilerle.'],['Odak vakti','Bir odak turu başlat, telefonu kenara koy. Gerisi kendiliğinden gelir.'],['Bugünün 5 sorusu seni bekliyor','Her gün 5 soru, dünya turunda bir adım daha.'],['Küçük bir başlangıç yeter','25 dakikalık bir odak turuyla güne başla.']];
+   var gun2=[['Gün bitmeden','Bugünün setini çözdün mü? Serin bozulmasın.'],['Günü kapatmadan','5 soru, 10 dakika. Yarın daha kolay başlarsın.'],['Bugün nasıl geçti?','Çalıştığın süreleri kaydetmeyi unutma.']];
+   function ekle(n,gunNo,saat,baslik,metin,git){
+    var p=(saat||'').split(':'),t=new Date(now.getFullYear(),now.getMonth(),now.getDate()+gunNo,+p[0]||17,+p[1]||0,0);
+    if(t.getTime()<=Date.now()+60000)return;
+    liste.push({id:LN_ID0+n,title:baslik,body:metin,schedule:{at:t,allowWhileIdle:true},channelId:'hatirlatma',smallIcon:'mf_bildirim',iconColor:'#FF8A1F',extra:{git:git||''}});
+   }
+   for(var d=0;d<7;d++){
+    var k=(now.getDate()+d)%4,b1=gun1[k],b2=gun2[(now.getDate()+d)%3],git1=yol?'mantik':'sayac';
+    if(!yol){b1=gun1[(d%2)?3:1];b2=gun2[2];}
+    if(d===0){
+     var kalan=Math.max(0,(oz.hedef||0)-(oz.bugun||0));
+     if(yol&&!iz.bugunTamam){b1=['Bugünün 5 sorusu hazır',iz.sonraki?'Sıradaki durak: '+iz.sonraki+'. 10 dakikada çöz, haritada ilerle.':'10 dakikada çöz, serini sürdür.'];}
+     else if(kalan>0){b1=['Çalışma vakti','Bugünkü planında '+kalan+' dk kaldı. Bir odak turuyla başla.'];git1='sayac';}
+     else if(oz.bugun>0){b1=null;}
+     if(yol&&!iz.bugunTamam)b2=iz.seri>0?['Serin '+iz.seri+' gün','Gün bitmeden bugünün setini çöz, serin bozulmasın.']:b2;
+     else if(oz.bugun>0)b2=null;
+    }
+    if(b1)ekle(d*2,d,a.s1||'17:00',b1[0],b1[1],git1);
+    if(b2)ekle(d*2+1,d,a.s2||'21:30',b2[0],b2[1],yol?'mantik':'sayac');
+   }
+   if(liste.length)return LN.schedule({notifications:liste});
+  });
+ }).catch(function(){});
+}
+if(YEREL){
+ try{LN.addListener('localNotificationActionPerformed',function(e){var g=e&&e.notification&&e.notification.extra&&e.notification.extra.git;if(g&&window.MF_SAYFA)setTimeout(function(){window.MF_SAYFA(g);},300);});}catch(e){}
+ LN.checkPermissions().then(function(x){lnDurum(x);satirGuncelle();planla();},function(){});
+ document.addEventListener('visibilitychange',function(){planla();});
+}
 // ---------- başlat ----------
 satirGuncelle();
 ozetYaz();

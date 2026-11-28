@@ -9,6 +9,7 @@
     "@capacitor/app": "latest",
     "@capacitor/filesystem": "latest",
     "@capacitor/share": "latest",
-    "@capacitor/splash-screen": "latest"
+    "@capacitor/splash-screen": "latest",
+    "@capacitor/local-notifications": "latest"
   }
 }
